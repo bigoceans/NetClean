@@ -101,7 +101,7 @@
 ### 方案 A：油猴直接安装（推荐）
 
 1. 安装浏览器扩展 [Tampermonkey](https://www.tampermonkey.net/)（Chrome / Edge / Firefox / Safari 全支持）
-2. 打开 [`ad-blocker.user.js`](./ad-blocker.user.js) → 内容会自动触发安装弹窗
+2. 打开 [`netclean.user.js`](./netclean.user.js) → 内容会自动触发安装弹窗
 3. 点击 **「安装」** 即可
 
 ### 方案 B：从 GreasyFork 安装（更稳定、有自动更新）
@@ -114,8 +114,8 @@
 
 ### 方案 C：从 GitHub Release 下载
 
-1. 访问 [Releases 页面](https://github.com/bigoceans/ad-blocker/releases)
-2. 下载最新 `ad-blocker.user.js`
+1. 访问 [Releases 页面](https://github.com/bigoceans/netclean/releases)
+2. 下载最新 `netclean.user.js`
 3. 拖入浏览器即可
 
 ### 系统要求
@@ -445,7 +445,7 @@ A: 检查三件事：
 4. 刷新页面（部分功能需 DOM 重建后生效）
 
 ### Q2: 某个站点的拦截失效了？
-A: 大概率是站点改版了。可在 [GitHub Issues](https://github.com/bigoceans/ad-blocker/issues) 报告，附上：
+A: 大概率是站点改版了。可在 [GitHub Issues](https://github.com/bigoceans/netclean/issues) 报告，附上：
 - 站点 URL
 - 期望拦截但没生效的元素（截图）
 - 控制台报错（按 F12 → Console）
@@ -485,7 +485,7 @@ Android 推荐 [Kiwi Browser](https://kiwibrowser.com/) + Tampermonkey。
 
 ### Q10: 怎么贡献代码 / 提建议？
 A: 欢迎 PR / Issue！
-- 仓库：https://github.com/bigoceans/ad-blocker
+- 仓库：https://github.com/bigoceans/netclean
 - Issue：报告 bug / 提功能建议
 - PR：fork → 改 → PR（请附 verify 脚本 + 截图）
 
@@ -526,8 +526,8 @@ A: 欢迎 PR / Issue！
 **bigoceans**
 
 - GitHub: [@bigoceans](https://github.com/bigoceans)
-- 仓库: [ad-blocker](https://github.com/bigoceans/ad-blocker)
-- Issues: [报告问题](https://github.com/bigoceans/ad-blocker/issues)
+- 仓库: [netclean](https://github.com/bigoceans/netclean)
+- Issues: [报告问题](https://github.com/bigoceans/netclean/issues)
 
 ---
 
@@ -565,7 +565,7 @@ SOFTWARE.
 
 如果这个项目对你有帮助，欢迎在 GitHub 上点 ⭐ Star 支持！
 
-[![Star History Chart](https://api.star-history.com/svg?repos=bigoceans/ad-blocker&type=Date)](https://star-history.com/#bigoceans/ad-blocker)
+[![Star History Chart](https://api.star-history.com/svg?repos=bigoceans/netclean&type=Date)](https://star-history.com/#bigoceans/netclean)
 
 ---
 
