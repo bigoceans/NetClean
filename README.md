@@ -149,7 +149,7 @@
 
 ### 方案 B：从 GreasyFork 安装（更稳定、有自动更新）
 
-> 🔗 GreasyFork 链接：*（上传后会更新此 URL）*
+> 🔗 GreasyFork 链接：*[`netclean.user.js`](https://update.greasyfork.org/scripts/594888/%E5%85%A8%E7%BD%91%E5%87%80%E5%8C%96%E5%A4%A7%E5%B8%88%20NetClean%20%E2%80%94%20%E5%B9%BF%E5%91%8A%E8%BF%87%E6%BB%A4%20%2B%20%E5%88%92%E8%AF%8D%E6%90%9C%E7%B4%A2%20%2B%20%E6%90%9C%E7%B4%A2%E7%BE%8E%E5%8C%96.user.js)*
 
 1. 打开 GreasyFork 脚本页面
 2. 点击 **「安装」** 按钮
