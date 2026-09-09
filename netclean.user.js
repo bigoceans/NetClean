@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         全网净化大师 NetClean — 广告过滤 + 划词搜索 + 搜索美化
 // @namespace    https://github.com/bigoceans
-// @version      1.0.4
+// @version      1.0.5
 // @author       bigoceans
 // @description  全站广告/弹窗屏蔽（百度/Google/Bing/360/知乎/微博/B站/优酷/腾讯视频/微信公号/YouTube 等 20+ 站点）+ 搜索结果卡片式美化、关键词网址过滤、干净复制、暗黑护眼模式 + 视频倍速、B站画质解锁、YouTube 旋转/翻转/填充+ 划词搜索（多引擎 + 划词翻译，默认开启）。支持配置导入/导出/WebDAV 同步、零数据外传；详细隐私声明与功能说明见主页 README。
 // @icon64       data:image/png;base64,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
@@ -40,6 +40,13 @@
 // @connect      baiducontent.com
 // @connect      zhihu.com
 // @connect      bilibili.com
+// @connect      dict.iciba.com
+// @connect      translate.googleapis.com
+// @connect      content-dictionaryextension-pa.googleapis.com
+// @connect      www.googleapis.com
+// @connect      api.dictionaryapi.dev
+// @connect      api-free.deepl.com
+// @connect      api.mymemory.translated.net
 // @license      MIT
 // @homepageURL  https://github.com/bigoceans
 // @supportURL   https://github.com/bigoceans
@@ -77,7 +84,7 @@
   // 导致「#kw 里输入关键词 → 回车 → 进入 /s?wd=... 搜索结果页后脚本整体失效」的恶性 bug（B-划词-02）。
   const HREF = () => location.href;
   const IS_MOBILE = /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i.test(navigator.userAgent);
-  const VERSION = '1.0.4';
+  const VERSION = '1.0.5';
   const NC_Z_TOP = 0x7FFFFFFF;   // 统一最高层级 z-index（替代散落的 NC_Z_TOP）
   // 调试日志开关：默认关闭，避免污染控制台。开启方式：URL 加 ?ncdebug，或在油猴里 GM_setValue('nc_debug', 1)
   window.__NC_DEBUG = /[?&]ncdebug/.test(location.search) || (typeof GM_getValue === 'function' && GM_getValue('nc_debug') === 1);
@@ -2870,7 +2877,10 @@
     try {
       const htmlEl = document.documentElement;
       if (!htmlEl || !htmlEl.classList.contains(DARK_CLASS)) return;
-      if (ncIsFineDarkSite() && !htmlEl.classList.contains(DARK_CLASS)) return;
+      /* 【v1.0.5 P2 清理】原此处有一行死分支 `ncIsFineDarkSite() && !contains(DARK_CLASS) return`——
+         上一行已确认 DARK_CLASS 存在，本条件恒 false，从未生效。
+         语义澄清：精修站点（百度/Google/Bing）【有意】也跑本扫描——扫描只标记
+         近白背景（lum≥235）的漏网容器，精修 CSS 压暗过的暗底不会被二次打标，无双暗化风险 */
       const list = document.body ? document.body.querySelectorAll('*') : [];
       const max = Math.min(list.length, 4000);
       for (let i = 0; i < max; i++) {
@@ -5736,7 +5746,7 @@
     selTheme: { title: '工具栏主题', effect: '划词工具条与翻译面板的配色：深色 / 浅色 / 跟随系统 / 跟随时间。', impl: 'applyThemeLive() 把主题映射为 CSS 变量（--sh-bg-rgb 等）写入 :root，运行时实时预览。', maintain: '选「跟随时间」按 6:00–18:00 为浅色、其余深色自动切换；修改即时生效无需刷新。', risk: '纯外观，关闭不影响功能。' },
     selOpacity: { title: '工具栏透明度', effect: '工具条与翻译面板的背景不透明度（50%~100%，越低越通透）。', impl: '透明度写入 --sh-opacity 变量，实时作用于 #sh-bar / #sh-trans 背景。', maintain: '拖动滑块即时预览；若觉得文字看不清，调高到 90%~100%。', risk: '纯外观偏好，无任何功能风险。' },
     selGlass: { title: '毛玻璃效果', effect: '给工具条 / 面板背景加背景模糊（backdrop-filter），更现代通透。', impl: '开启时 --sh-blur 设为 12px，关闭时为 0。', maintain: '低端设备或老浏览器可能卡顿 / 不支持，关闭即可。', risk: '视觉增强；个别浏览器不支持时自动忽略模糊，不影响使用。' },
-    selTransEngine: { title: '翻译引擎', effect: '划词翻译后端：iciba 词典（免费免密钥，推荐）/ Google（免费）/ DeepL（需密钥）/ 百度翻译（需 AppID+密钥）/ 自定义 API。', impl: 'translateWith() 按此值路由到对应翻译函数。', maintain: 'iciba 仅查词典（单词给音标/释义，句子自动翻译）；DeepL/百度需在下方填密钥；自定义支持 {q}{tl}{key} 占位符。', risk: '免费引擎无需配置；填错密钥会导致对应引擎失败，改回 iciba 即可。' },
+    selTransEngine: { title: '翻译引擎', effect: '划词翻译后端：iciba 词典（免费免密钥，推荐）/ MyMemory（免费免密钥，国内直连）/ Google（免费，海外推荐）/ DeepL（需密钥）/ 百度翻译（需 AppID+密钥）/ 自定义 API。', impl: 'translateWith() 按此值路由到对应翻译函数；iciba 引擎查不到（短语/未收录词）时自动用 Google 与 MyMemory 双引擎竞速兜底，谁先返回用谁（国内 MyMemory 快、海外 Google 快）。v1.0.5 已把 dict.iciba.com / translate.googleapis.com / api.mymemory.translated.net 等全部写入 @connect 白名单，Tampermonkey 不再拦截。', maintain: 'iciba 仅查词典（单词给音标/释义，短语自动走兜底）；DeepL/百度需在下方填密钥；自定义支持 {q}{tl}{key} 占位符；MyMemory 免费额度约 5000 字符/天/IP。', risk: '免费引擎无需配置；填错密钥会导致对应引擎失败，改回 iciba 即可；MyMemory 超额当天会退化到 Google 或报错。' },
     selTransAuto: { title: '自动翻译（翻译设置）', effect: '开启后在翻译面板打开时自动执行一次翻译，省去点按钮。', impl: 'showTransPanel 末尾依据 tr.auto 自动调用 doTranslateAndShow()。', maintain: '与总开关里的「自动翻译」联动；不想自动翻可关闭。', risk: '仅影响翻译触发；增加翻译请求次数。' },
     selTransTarget: { title: '目标语言', effect: '关闭「自动目标语言」时，固定把选中文字翻译到此语言（中/英/日/韩/法）。', impl: 'doTranslateAndShow 的 target 参数取值；forceAutoTarget 关闭时生效。', maintain: '一般保持「自动目标语言」开启即可自动判断中↔英；需要固定目标时再改本项。', risk: '纯偏好，无功能风险。' },
     selForceAutoTarget: { title: '自动目标语言', effect: '开启后按源文自动判断：中文→英、英文→中，其余保持自动检测。', impl: 'doTranslateAndShow 里依据源语言切换 target。', maintain: '想固定目标语言就关闭本项并在上方选「目标语言」。', risk: '纯偏好，无功能风险。' },
@@ -6946,7 +6956,8 @@
         +   '<div class="zk-set-group-title"><svg class="zk-set-gicon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> 划词翻译设置</div>'
         +   '<div class="zkss-field"><label>翻译引擎<span class="zk-set-help" data-help="selTransEngine">?</span></label><select class="zkss-trengine">'
         +     '<option value="iciba"' + (tr.engine === 'iciba' ? ' selected' : '') + '>iciba 词典（免费免密钥，推荐）</option>'
-        +     '<option value="google"' + (tr.engine === 'google' ? ' selected' : '') + '>Google 翻译（免费免密钥）</option>'
+        +     '<option value="mymemory"' + (tr.engine === 'mymemory' ? ' selected' : '') + '>MyMemory 翻译（免费免密钥，国内可达）</option>'
+        +     '<option value="google"' + (tr.engine === 'google' ? ' selected' : '') + '>Google 翻译（免费免密钥，海外推荐）</option>'
         +     '<option value="deepl"' + (tr.engine === 'deepl' ? ' selected' : '') + '>DeepL（需密钥）</option>'
         +     '<option value="baidu"' + (tr.engine === 'baidu' ? ' selected' : '') + '>百度翻译（需 AppID+密钥）</option>'
         +     '<option value="custom"' + (tr.engine === 'custom' ? ' selected' : '') + '>自定义 API</option>'
@@ -8250,7 +8261,8 @@
       let bootLast = window.location.href;
       if (trigger === 'global' || (trigger === 'whitelist' && inCapWl)) {
         observe(); tick();
-        setInterval(() => { if (window.location.href !== bootLast) { bootLast = window.location.href; tick(); } }, 1500);
+        /* 【v1.0.5 P3】带 id 注册：ncInterval 对同 id 先清旧再建新，脚本意外重复初始化时不会叠加多个轮询 */
+        setInterval(() => { if (window.location.href !== bootLast) { bootLast = window.location.href; tick(); } }, 1500, 'captcha-boot-poll');
       }
       // manual 模式：仅浮动按钮，不观察者、不轮询（零常驻开销）
     })();
@@ -8757,10 +8769,54 @@
       });
       return result.families.length ? result : null;
     }
+    /* 【v1.0.5 增强】dt=bd 追加词典块（词性 + 词条 + 反向翻译），兜底卡不再是干巴巴一行；
+       data[0] 仍是逐段译文，data[1] 是 [ [词性, [词条...], [反向...], 分数], ... ] */
     async function googleTranslate(text, target) {
-      const url = 'https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=' + target + '&dt=t&q=' + encodeURIComponent(text);
+      const url = 'https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=' + target + '&dt=t&dt=bd&q=' + encodeURIComponent(text);
       const data = await gmFetch(url);
-      return { text: (data[0] || []).map(s => s[0] || '').join(''), from: data[2] || '' };
+      const families = [];
+      (data[1] || []).forEach(g => {
+        if (!Array.isArray(g)) return;
+        const pos = g[0] || '';
+        const terms = (g[1] || []).filter(Boolean);
+        const rev = (g[2] || []).map(r => Array.isArray(r) ? r[0] : r).filter(Boolean);
+        if (pos || terms.length) families.push({ pos, terms, rev });
+      });
+      return { text: (data[0] || []).map(s => s[0] || '').join(''), from: data[2] || '', families };
+    }
+    /* 【v1.0.5 新增】MyMemory 免费翻译兜底（api.mymemory.translated.net）
+       为什么需要它：translate.googleapis.com 在国内被墙，GM_xmlhttpRequest 也翻不过 GFW，
+       导致「iciba 不收录 + Google 不可达」双失败。MyMemory 国内直连可达、免密钥（实测「售价」→ Selling price）。
+       注意免费额度：匿名约 5000 字符/天/IP，超限会返回 MYMEMORY WARNING 文本，须识别为失败 */
+    async function myMemoryTranslate(text, target) {
+      const from = detectLang(text) === 'zh' ? 'zh' : 'en';
+      const to = target || (from === 'zh' ? 'en' : 'zh');
+      if (from === to) throw new Error('源语言与目标语言相同');
+      const data = await gmFetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(text) + '&langpair=' + from + '|' + to);
+      const txt = (data && data.responseData && data.responseData.translatedText) || '';
+      if (!txt || /MYMEMORY WARNING/i.test(txt)) throw new Error('MyMemory 无结果（额度或语言对不支持）');
+      /* 全量适配：matches 是多译者候选（translation / match 置信度 / subject / created-by），
+         面板按候选列表渲染，不只甩一行 */
+      const candidates = (data.matches || [])
+        .filter(m => m && m.translation && m.translation !== txt)
+        .slice(0, 4)
+        .map(m => ({ t: m.translation, q: m.match, by: m['created-by'] || m.createdBy || m.subject || '' }));
+      return { text: txt, from: from, candidates };
+    }
+    /* 兜底竞速：Google 与 MyMemory 同时发起，谁先成功用谁 ——
+       国内 MyMemory 秒回（Google 要等 15s 超时才放弃），海外 Google 更快，两端体验都不劣化 */
+    function firstFulfilled(promises) {
+      return new Promise((resolve, reject) => {
+        const errs = []; let pending = promises.length;
+        if (!pending) { reject(new Error('无可用兜底引擎')); return; }
+        promises.forEach((p, i) => Promise.resolve(p).then(resolve, e => {
+          errs[i] = e || new Error('网络错误');
+          if (--pending === 0) reject(errs.find(Boolean));
+        }));
+      });
+    }
+    function translateRace(text, target) {
+      return firstFulfilled([googleTranslate(text, target), myMemoryTranslate(text, target)]);
     }
     async function icibaLookup(word) {
       if (!word || !word.trim()) return null;
@@ -8772,7 +8828,10 @@
       const query = 'client=6&key=1000006&timestamp=' + now + '&word=' + encodeURIComponent(w) + '&signature=' + signature;
       const apiUrl = 'https://dict.iciba.com/dictionary/word/query/web?' + query;
       let data;
-      try { data = await gmFetch(apiUrl); } catch (e) { return null; }
+      /* 【v1.0.5 修复】请求失败必须向上抛，不能吞成 null：
+         吞掉后 icibaErr 为空，面板会误报「词典未收录」，用户被引去怀疑词库而不是网络/TM授权。
+         真正的「未收录」走函数末尾的 result 空守卫返回 null，两种情况从此可区分 */
+      try { data = await gmFetch(apiUrl); } catch (e) { throw (e || new Error('网络错误')); }
       if (!data || data.status !== 1 || !data.message) return null;
       const msg = data.message;
       if ('baesInfo' in msg) { msg.baseInfo = msg.baesInfo; delete msg.baesInfo; }
@@ -8860,7 +8919,11 @@
         const url = 'https://fanyi-api.baidu.com/api/trans/vip/translate?q=' + encodeURIComponent(word)
           + '&from=zh&to=en&appid=' + appId + '&salt=' + salt + '&sign=' + sign + '&action=1';
         const data = await gmFetch(url);
-        if (!data || data.error_code) return null;
+        /* 【v1.0.5 P0 修复】不再把「密钥错/网络挂」吞成 null：
+           吞掉后用户配了百度密钥却查不到词，永远不知道是密钥错了。
+           error_code 带上 error_msg（如 54001 签名错误）向上抛，由调用方 dbg 记录并按需展示 */
+        if (!data) throw new Error('百度词典请求失败（网络）');
+        if (data.error_code) throw new Error('百度词典错误 ' + data.error_code + (data.error_msg ? '：' + data.error_msg : ''));
         const result = { pinyin: '', en: [], zh: [] };
         const dr = data.dict_result || {};
         try {
@@ -8903,7 +8966,7 @@
         result.en = Array.from(new Set(result.en.map(s => s.replace(/\s+/g, ' ').trim()).filter(Boolean)));
         result.zh = Array.from(new Set(result.zh.map(s => s.replace(/\s+/g, ' ').trim()).filter(Boolean))).slice(0, 5);
         return (result.pinyin || result.en.length || result.zh.length) ? result : null;
-      } catch (e) { return null; }
+      } catch (e) { throw (e || new Error('百度词典请求失败')); }
     }
     async function customTranslate(text, target, url, key) {
       if (!url) throw new Error('请在设置中填写自定义 API 地址');
@@ -8985,6 +9048,34 @@
         + '<div class="sh-tr-body"><div class="sh-tr-trans">' + esc(text) + '</div></div>'
         + '<div class="sh-tr-engine">' + esc(engine) + '</div>';
     }
+    /* 【v1.0.5 新增】兜底翻译富卡片：对齐 iciba 卡的信息密度 ——
+       主译文 + 词性/词条/反向翻译（Google dt=bd）+ 多译者候选（MyMemory matches），
+       不再是干巴巴一行字。所有块可选，缺就跳过 */
+    function renderTransRich(o) {
+      let html = '<div class="sh-tr-head"><span class="sh-tr-word">' + esc(o.src.length > 40 ? o.src.slice(0, 40) + '…' : o.src) + '</span>'
+        + '<span class="sh-tr-speak" data-word="' + esc(o.src) + '" data-lang="' + (o.from === 'zh' || detectLang(o.src) === 'zh' ? 'zh-CN' : 'en-US') + '">' + ICON_SPK + '</span>'
+        + (o.from ? '<span class="sh-tr-ph"><span class="sh-tr-spk">检测</span>' + esc(o.from) + '</span>' : '')
+        + '</div><div class="sh-tr-body">';
+      html += '<div class="sh-tr-trans">' + esc(o.text) + '</div>';
+      (o.families || []).forEach(f => {
+        html += '<div class="sh-tr-def">';
+        if (f.pos) html += '<span class="sh-tr-pos" style="display:inline-block;margin-right:6px">' + esc(f.pos) + '</span>';
+        if (f.terms && f.terms.length) html += f.terms.map(t => esc(t)).join('; ');
+        if (f.rev && f.rev.length) html += '<span style="opacity:.55;font-size:12px;margin-left:6px">⇄ ' + f.rev.slice(0, 4).map(r => esc(r)).join(' / ') + '</span>';
+        html += '</div>';
+      });
+      if (o.candidates && o.candidates.length) {
+        html += '<div style="opacity:.55;font-size:12px;margin-top:6px">其他候选</div>';
+        o.candidates.forEach(c => {
+          html += '<div class="sh-tr-def">' + esc(c.t)
+            + (c.q ? '<span style="opacity:.5;font-size:11px;margin-left:6px">匹配 ' + Math.round(c.q * 100) + '%</span>' : '')
+            + (c.by ? '<span style="opacity:.4;font-size:11px;margin-left:6px">' + esc(String(c.by).slice(0, 20)) + '</span>' : '')
+            + '</div>';
+        });
+      }
+      html += '</div><div class="sh-tr-engine">' + esc(o.engine || '兜底翻译') + '</div>';
+      return html;
+    }
     function renderIciba(d, transText, engineName) {
       const lang = d.isZh ? 'zh-CN' : 'en-US';
       let html = '<div class="sh-tr-head"><span class="sh-tr-word">' + esc(d.word) + '</span>'
@@ -9055,13 +9146,22 @@
       html += '</div><div class="sh-tr-engine">' + esc(o.engineName || '') + ' · 词典</div>';
       return html;
     }
-    const ENGINE_NAMES = { iciba: 'iciba 词典', google: 'Google Translate', deepl: 'DeepL', baidu: '百度翻译', custom: '自定义 API' };
+    const ENGINE_NAMES = { iciba: 'iciba 词典', mymemory: 'MyMemory', google: 'Google Translate', deepl: 'DeepL', baidu: '百度翻译', custom: '自定义 API' };
     async function translateWith(text, target) {
       const TR = ssTrans();
+      /* 【v1.0.5 P2 修复】未知引擎显式报错，不再静默当 Google 跑——
+         否则配置串损坏/未来新增引擎 id 时，用户看到的是 Google 超时，排查方向全错 */
+      const KNOWN_ENGINES = ['iciba', 'google', 'mymemory', 'deepl', 'baidu', 'custom'];
+      if (TR.engine && !KNOWN_ENGINES.includes(TR.engine)) throw new Error('未知翻译引擎：' + TR.engine + '（请到「划词搜索 → 翻译设置」重新选择）');
       if (TR.engine === 'deepl') return await deepLTranslate(text, target, TR.deeplKey);
       if (TR.engine === 'baidu') return await baiduTranslate(text, target, TR.baiduId, TR.baiduKey);
       if (TR.engine === 'custom') return await customTranslate(text, target, TR.customUrl, TR.customKey);
-      return await googleTranslate(text, target);
+      /* 【v1.0.5】显式选择了 google / mymemory 就直连该引擎（用户明确指定，不代做主）；
+         只有 iciba 词典引擎（仅能查词）的兜底才走 Google / MyMemory 竞速 */
+      if (TR.engine === 'mymemory') return await myMemoryTranslate(text, target);
+      if (TR.engine === 'google') return await googleTranslate(text, target);
+      /* 默认（含 iciba）：竞速兜底 —— 国内 MyMemory 快，海外 Google 快 */
+      return await translateRace(text, target);
     }
     function pickMainEngWord(text) {
       if (!text) return '';
@@ -9095,20 +9195,21 @@
         if (isEnWord) { const dict = await freeDictLookup(trimmed).catch(() => null); if (dict) { showResult(renderDict(dict)); return; } }
         let tgt = 'zh';
         if (TR.forceAutoTarget !== false) { if (srcLang === 'zh') tgt = 'en'; else if (srcLang === 'en') tgt = 'zh'; }
-        const r = await googleTranslate(trimmed, tgt).catch(e => ({ _err: e.message }));
-        if (r && !r._err) { showResult(renderTranslate(r.text, r.from, 'Google 兜底')); return; }
-        // iciba 仅查词典；句子/中文需走 Google 兜底，而 translate.googleapis.com 在国内常被拦截
+        const r = await translateRace(trimmed, tgt).catch(e => ({ _err: e.message }));
+        if (r && !r._err) { showResult(renderTransRich({ src: trimmed, text: r.text, from: r.from, families: r.families || [], candidates: r.candidates || [], engine: '兜底 · Google / MyMemory' })); return; }
+        // iciba 仅查词典；句子/中文需走兜底竞速，Google 在国内常被拦截、MyMemory 免费额度有限
         const reason = icibaErr ? ('iciba 请求失败：' + icibaErr) : 'iciba 词典未收录该内容（仅支持单词释义，句子请走翻译引擎）';
         const tip = (!TR.proxyUrl)
-          ? '。国内网络可能拦截 Google 兜底：可在「划词搜索 → 翻译设置」填 CORS 代理前缀，或把引擎改为 DeepL / 百度翻译并填密钥'
+          ? '。两条兜底都失败：可在「划词搜索 → 翻译设置」填 CORS 代理前缀，或把引擎改为 DeepL / 百度翻译并填密钥'
           : '';
         showResult('<div class="sh-tr-err">' + esc(reason) + '，兜底翻译也失败：' + esc(r ? r._err : '请检查网络') + esc(tip) + '</div>');
         return;
       }
         if (isWord) {
           const tgt = isZhWord ? 'en' : 'zh';
+          let baiduDictErr = null;
           const [icibaRes, transRes] = await Promise.all([
-            icibaLookup(trimmed).catch(() => null),
+            icibaLookup(trimmed).catch(e => { dbg('[NetClean] 辅助 iciba 查询失败：' + ((e && e.message) || e)); return null; }),
             translateWith(trimmed, tgt).catch(e => ({ _err: e.message }))
           ]);
           const trans = (transRes && !transRes._err) ? transRes : null;
@@ -9120,17 +9221,19 @@
           } else {
             const engWord = trans ? pickMainEngWord(trans.text) : '';
             const dict = engWord ? await freeDictLookup(engWord).catch(() => null) : null;
-            const baiduDict = (TR.baiduId && TR.baiduKey) ? await baiduDictLookup(trimmed, TR.baiduId, TR.baiduKey).catch(() => null) : null;
+            /* 【v1.0.5】百度词典错误不再与「无词条」混同：记录错误，全失败时如实展示 */
+            const baiduDict = (TR.baiduId && TR.baiduKey) ? await baiduDictLookup(trimmed, TR.baiduId, TR.baiduKey).catch(e => { baiduDictErr = (e && e.message) || '请求失败'; dbg('[NetClean] 百度词典查询失败：' + baiduDictErr); return null; }) : null;
             if (baiduDict || dict) { showResult(renderFull({ src: trimmed, srcLang: 'zh', trans: trans ? trans.text : null, dict: dict, baiduDict: baiduDict, engineName })); return; }
           }
           if (trans) { showResult(renderTranslate(trans.text, trans.from || '', engineName)); return; }
-          showResult('<div class="sh-tr-err">翻译失败：' + esc(transRes ? transRes._err : '未知错误') + '</div>');
+          showResult('<div class="sh-tr-err">翻译失败：' + esc(transRes ? transRes._err : '未知错误') + (baiduDictErr ? '（百度词典：' + esc(baiduDictErr) + '）' : '') + '</div>');
           return;
         }
         let tgt = TR.target || 'zh';
         if (TR.forceAutoTarget !== false) { if (srcLang === 'zh') tgt = 'en'; else if (srcLang === 'en') tgt = 'zh'; }
         const r = await translateWith(text, tgt);
-        showResult(renderTranslate(r.text, r.from, engineName));
+        /* 【v1.0.5】短语结果也走富卡片：带出 Google 词典块 / MyMemory 候选列表，与 iciba 卡同信息密度 */
+        showResult(renderTransRich({ src: String(text).trim(), text: r.text, from: r.from, families: r.families || [], candidates: r.candidates || [], engine: engineName }));
       } catch (e) {
         if (seq === transSeq) showTransPanel(rect, '<div class="sh-tr-err">翻译失败：' + esc(e.message) + '</div>');
       }
@@ -9551,18 +9654,26 @@
         };
         window.addEventListener('popstate', onSpaUrlChange);
         // 拦截 pushState/replaceState（Baidu SPA submit 用 replaceState）
-        const origReplace = history.replaceState;
-        history.replaceState = function() {
-          const r = origReplace.apply(this, arguments);
-          try { onSpaUrlChange(); } catch (e) { dbg('[NetClean] replaceState 后 SPA 处理失败', e); }
-          return r;
-        };
-        const origPush = history.pushState;
-        history.pushState = function() {
-          const r = origPush.apply(this, arguments);
-          try { onSpaUrlChange(); } catch (e) { dbg('[NetClean] pushState 后 SPA 处理失败', e); }
-          return r;
-        };
+        // 【v1.0.5 P3 修复】幂等守卫：脚本因故重复执行时不再把包装函数再包一层（否则每次 SPA
+        // 跳转会触发 N 次 onSpaUrlChange，处理量随重载次数线性膨胀）
+        if (!history.replaceState._ncPatched) {
+          const origReplace = history.replaceState;
+          history.replaceState = function() {
+            const r = origReplace.apply(this, arguments);
+            try { onSpaUrlChange(); } catch (e) { dbg('[NetClean] replaceState 后 SPA 处理失败', e); }
+            return r;
+          };
+          history.replaceState._ncPatched = true;
+        }
+        if (!history.pushState._ncPatched) {
+          const origPush = history.pushState;
+          history.pushState = function() {
+            const r = origPush.apply(this, arguments);
+            try { onSpaUrlChange(); } catch (e) { dbg('[NetClean] pushState 后 SPA 处理失败', e); }
+            return r;
+          };
+          history.pushState._ncPatched = true;
+        }
       } catch (e) { console.error('[NetClean] 阶段 3 SPA 监听注册失败', e); }
     });
 

@@ -4,7 +4,7 @@
 > 全部配置仅保存在你本地浏览器，**零数据外传**。
 
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
-![version](https://img.shields.io/badge/version-1.0.4-brightgreen.svg)
+![version](https://img.shields.io/badge/version-1.0.5-brightgreen.svg)
 ![tampermonkey](https://img.shields.io/badge/Tampermonkey-4.19%2B-orange.svg)
 ![size](https://img.shields.io/badge/size-~632KB-lightgrey.svg)
 ![verified](https://img.shields.io/badge/verify-169%2F169-brightgreen.svg)
@@ -549,7 +549,30 @@ A: 欢迎 PR / Issue！
 
 ## 📝 更新日志
 
-### v1.0.4（当前版本 · 2026-09-09）
+### v1.0.5（当前版本 · 2026-09-09）
+
+划词翻译大修 + 全量代码复盘。起因：用户划「售价」报「iciba 未收录 + Google 兜底网络错误」。
+
+#### 🌐 翻译链路修复与增强
+- **根因**：`@connect` 白名单缺 `dict.iciba.com` / `translate.googleapis.com`——新版 Tampermonkey（Chrome 152 / MV3）收紧跨域策略后请求被拦，iciba 失败又被吞成"未收录"，误导排查方向
+- **补全 @connect**：新增 dict.iciba.com / translate.googleapis.com / content-dictionaryextension-pa.googleapis.com / api.dictionaryapi.dev / api-free.deepl.com / api.mymemory.translated.net / www.googleapis.com（网盘同步也受益）
+- **新增 MyMemory 免费引擎**（免密钥、国内直连，实测「售价」→ Selling price 双向 0.99 匹配），进翻译引擎下拉框
+- **Google / MyMemory 兜底竞速**：iciba 查不到（短语/未收录词）时两引擎同时发起、谁先返回用谁——国内 MyMemory 秒回，海外 Google 快，两端都不劣化；显式选择 google/mymemory 引擎时直连不代做主
+- **兜底富卡片**（`renderTransRich`）：Google `dt=bd` 词典块（词性/词条/反向翻译）+ MyMemory 多译者候选（匹配度/来源）全量渲染，与 iciba 卡同信息密度，不再是干巴巴一行
+- **错误不再混淆**：iciba/百度词典请求失败如实报"请求失败+原因"，与"词典未收录"彻底区分；百度词典 error_code 带 error_msg 上抛（如 54001 签名错误），配置错密钥能当场看到原因
+- **未知引擎显式报错**：`translateWith` 遇到未知引擎 id 抛"未知翻译引擎"，不再静默当 Google 跑
+- 有道老接口实测已死（302 要求签名）、LibreTranslate 公共实例强制要 key（403）、Edge 免费接口在用户网络不可达——均未采用
+
+#### 🔍 全量复盘修复（子代理审查 16 项，落地 8 项）
+- P0：`baiduDictLookup` 吞错误（密钥错被当"无词条"）
+- P2：`ncForceDarkScan` 恒 false 死分支清理（语义澄清：精修站点有意参与扫描）
+- P2：isWord 路径 iciba 失败静默 → 记入 dbg 日志
+- P3：`history.pushState/replaceState` 补丁加幂等守卫（重复执行不再套娃）
+- P3：验证码轮询 setInterval 带 id 注册（意外重复初始化不再叠加）
+- 其余 2 项（ENGINE_NAMES/translateWith 缺 mymemory）在引擎扩展中已同步解决；设置面板 label 硬编码中文的 i18n 项留作后续（涉及面大，行为无影响）
+- HELP 字典 `selTransEngine` 同步最新引擎列表 / 竞速逻辑 / @connect 说明 / MyMemory 额度
+
+### v1.0.4（2026-09-09）
 
 百度**首页**中央白底输入区 + 热搜框的精修补漏 —— 之前暗黑模式只覆盖了百度**搜索结果页**(`/s?*`)的卡片，**首页**(`baidu.com/`)专有的 chat 输入卡 / 文心胶囊 / 热搜 ul 还残留白底。
 
@@ -753,5 +776,5 @@ SOFTWARE.
 ---
 
 **最后更新**：2026-09-09
-**当前版本**：v1.0.4
+**当前版本**：v1.0.5
 **作者**：bigoceans
