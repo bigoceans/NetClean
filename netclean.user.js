@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         全网净化大师 NetClean — 广告过滤 + 划词搜索 + 搜索美化
 // @namespace    https://github.com/bigoceans
-// @version      1.0.0
+// @version      1.0.4
 // @author       bigoceans
 // @description  全站广告/弹窗屏蔽（百度/Google/Bing/360/知乎/微博/B站/优酷/腾讯视频/微信公号/YouTube 等 20+ 站点）+ 搜索结果卡片式美化、关键词网址过滤、干净复制、暗黑护眼模式 + 视频倍速、B站画质解锁、YouTube 旋转/翻转/填充+ 划词搜索（多引擎 + 划词翻译，默认开启）。支持配置导入/导出/WebDAV 同步、零数据外传；详细隐私声明与功能说明见主页 README。
 // @icon64       data:image/png;base64,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
@@ -43,6 +43,8 @@
 // @license      MIT
 // @homepageURL  https://github.com/bigoceans
 // @supportURL   https://github.com/bigoceans
+// @downloadURL https://update.greasyfork.org/scripts/594888/%E5%85%A8%E7%BD%91%E5%87%80%E5%8C%96%E5%A4%A7%E5%B8%88%20NetClean%20%E2%80%94%20%E5%B9%BF%E5%91%8A%E8%BF%87%E6%BB%A4%20%2B%20%E5%88%92%E8%AF%8D%E6%90%9C%E7%B4%A2%20%2B%20%E6%90%9C%E7%B4%A2%E7%BE%8E%E5%8C%96.user.js
+// @updateURL https://update.greasyfork.org/scripts/594888/%E5%85%A8%E7%BD%91%E5%87%80%E5%8C%96%E5%A4%A7%E5%B8%88%20NetClean%20%E2%80%94%20%E5%B9%BF%E5%91%8A%E8%BF%87%E6%BB%A4%20%2B%20%E5%88%92%E8%AF%8D%E6%90%9C%E7%B4%A2%20%2B%20%E6%90%9C%E7%B4%A2%E7%BE%8E%E5%8C%96.meta.js
 // ==/UserScript==
 
 (function() {
@@ -75,7 +77,7 @@
   // 导致「#kw 里输入关键词 → 回车 → 进入 /s?wd=... 搜索结果页后脚本整体失效」的恶性 bug（B-划词-02）。
   const HREF = () => location.href;
   const IS_MOBILE = /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i.test(navigator.userAgent);
-  const VERSION = '1.0.0';
+  const VERSION = '1.0.4';
   const NC_Z_TOP = 0x7FFFFFFF;   // 统一最高层级 z-index（替代散落的 NC_Z_TOP）
   // 调试日志开关：默认关闭，避免污染控制台。开启方式：URL 加 ?ncdebug，或在油猴里 GM_setValue('nc_debug', 1)
   window.__NC_DEBUG = /[?&]ncdebug/.test(location.search) || (typeof GM_getValue === 'function' && GM_getValue('nc_debug') === 1);
@@ -273,6 +275,9 @@
       kgweiboed: false, kgweiboad: false, kgweibomv: false,
       kgpingbis: false, kgpingbiiframe: false,
       darkMode: false, cleanCopy: false, videoSpeed: 1,
+      // 暗黑模式按站点让行：darkSkipHosts 里的域名「交给网站自己的深色模式」；
+      // darkForceHosts 里的域名「无视站点自带深色，强制用脚本统一暗色」
+      darkSkipHosts: [], darkForceHosts: [],
       // 界面语言：zh-CN（默认简体）/ zh-TW（繁體，由简中转）/ en（English）
       uiLang: 'zh-CN',
       shortcutPanel: false, shortcutPause: false, shortcutYtp: false,
@@ -459,6 +464,7 @@
   const I18N = {
     'menu.panel':          { 'zh-CN': '【⚙ 控制面板】', 'en': '【⚙ Control Panel】' },
     'menu.rescue':         { 'zh-CN': '【🧹 状态 / 恢复】', 'en': '【🧹 Status / Restore】' },
+    'menu.darkOwner':      { 'zh-CN': '【🌙 暗黑：本站「交给网站 / 脚本接管」切换】', 'en': '【🌙 Dark: toggle site-handled / script-handled】' },
     'panel.title':         { 'zh-CN': '⚙ 控制面板', 'en': '⚙ Control Panel' },
     'panel.search':        { 'zh-CN': '搜索设置', 'en': 'Search settings' },
     'panel.searchPh':      { 'zh-CN': '搜索设置项…', 'en': 'Search settings…' },
@@ -2847,10 +2853,91 @@
     GM_addStyle(ncCardCss(scopes.map(s => s + ' .' + NC_CARD_CLS).join(', ')));
   }
 
-  // 暗黑模式注入
+  // 暗黑模式注入（两级策略）
+  //   ① 精修站点（百度 / Google / Bing）：选择器级重配色，卡片质感最好
+  //   ② 其余站点：整页 CSS filter 反色（invert + hue-rotate）
+  //      渲染层像素级反转 → 背景与文字颜色自动对调，无需逐站适配；
+  //      图片/视频/脚本自身 UI 再二次反转还原
+  // 运行时「残留亮块」自适应扫描：静态选择器无法覆盖站点运行时生成的未知容器（打不完的地鼠），
+  // 这里反其道而行——不猜是谁画的，直接遍历 DOM 找「体积够大 + 背景接近纯白」的块，打标后统一压暗。
+  // 体积下限与透明度下限用于避开图标/小按钮；跳过脚本自身 UI，避免把设置面板也一并压暗。
+  const NC_FORCED_DARK = 'nc-forced-dark';
+  const NC_SCAN_FLAG = 'ncScanDone';
+  const _ncStandDownNotified = {};
+  let _ncForceScanTimer = null;
+  let _ncForceObserverInited = false;
+  function ncForceDarkScan() {
+    try {
+      const htmlEl = document.documentElement;
+      if (!htmlEl || !htmlEl.classList.contains(DARK_CLASS)) return;
+      if (ncIsFineDarkSite() && !htmlEl.classList.contains(DARK_CLASS)) return;
+      const list = document.body ? document.body.querySelectorAll('*') : [];
+      const max = Math.min(list.length, 4000);
+      for (let i = 0; i < max; i++) {
+        const el = list[i];
+        if (el.dataset && el.dataset[NC_SCAN_FLAG] === '1') continue;
+        if (!(el instanceof window.HTMLElement)) continue;
+        if (el.dataset) el.dataset[NC_SCAN_FLAG] = '1';
+        const tag = el.tagName.toLowerCase();
+        if (tag === 'script' || tag === 'style' || tag === 'svg' || tag === 'img' ||
+            tag === 'video' || tag === 'canvas' || tag === 'iframe' || tag === 'br' || tag === 'hr') continue;
+        // 表单控件与其容器不参与压暗：输入框/文本域保持浅色才好输入（白底深字是正确观感）
+        if (tag === 'input' || tag === 'textarea' || tag === 'select' || tag === 'button' ||
+            tag === 'option' || tag === 'label') continue;
+        if (el.isContentEditable) continue;
+        // 输入区整体让行：搜索框/聊天输入框这类「白底深字」是正确观感，不该被压暗
+        // 注意：只跳过真正承担输入职责的容器（form + id/input 命名的输入条自身），
+        // 不要再用 [class*="chat"] 整个 class 含 chat 的模块都会跳过——
+        // 百度首页中央 .chat-input-background_3edHa 就是反例（白底容器需要被压暗，
+        // 否则用户看到的还是"中间一个白盒"）。
+        if (el.closest && el.closest('form,[id*="input"],[id*="Input"],textarea#chat-textarea')) continue;
+        // 先清掉旧标记：脚本更新后规则变严，之前误打的标记要能被撤销
+        if (el.classList.contains(NC_FORCED_DARK)) el.classList.remove(NC_FORCED_DARK);
+        // 跳过脚本自身 UI（设置面板 / toast / 弹窗 / 护眼蒙版 / 划词条）
+        const idAttr = el.id || '';
+        if (idAttr && /^(zk-|nc-|sh-)/.test(idAttr)) continue;
+        if (el.closest && el.closest('#zk-set-cleaner-settings,#zk-toast,#zk-dlg,#nc-modal,#nc-eye-overlay,#sh-bar')) continue;
+        let cs;
+        try { cs = window.getComputedStyle(el); } catch (e) { continue; }
+        const bg = (cs && cs.backgroundColor) || '';
+        const m = bg.match(/rgba?\(([^)]+)\)/);
+        if (!m) continue;
+        const p = m[1].split(',').map(Number);
+        const alpha = p.length > 3 ? p[3] : 1;
+        if (alpha < 0.5) continue;                       // 半透明/透明背景不处理
+        const lum = 0.2126 * p[0] + 0.7152 * p[1] + 0.0722 * p[2];
+        if (lum < 235) continue;                          // 只命中「接近纯白」的块
+        const r = el.getBoundingClientRect();
+        if (r.width * r.height < 4000) continue;          // 小图标/小按钮不处理
+        el.classList.add(NC_FORCED_DARK);
+      }
+    } catch (e) {}
+  }
+  function ncScheduleForceScan(delay) {
+    try {
+      if (_ncForceScanTimer) clearTimeout(_ncForceScanTimer);
+      _ncForceScanTimer = setTimeout(() => { _ncForceScanTimer = null; ncForceDarkScan(); }, delay || 400);
+    } catch (e) {}
+  }
+  function ncInitForceDarkObserver() {
+    try {
+      if (_ncForceObserverInited || !window.MutationObserver || !document.body) return;
+      _ncForceObserverInited = true;
+      const mo = new MutationObserver(() => ncScheduleForceScan(400));
+      mo.observe(document.body, { childList: true, subtree: true });
+      window.addEventListener('load', () => ncScheduleForceScan(600), { once: true });
+    } catch (e) {}
+  }
+
+  function ncIsFineDarkSite() {
+    return inHost('baidu.com') || inHost('google.com') || inHost('google.com.hk') || inHost('bing.com');
+  }
   function injectDarkModeCSS() {
     if (!prefersDark.matches && !getScriptCfg().darkMode) return;
-    GM_addStyle(`
+
+    /* ---- ① 精修站点：原有选择器级方案 + 文字对比度修复 ---- */
+    if (ncIsFineDarkSite()) {
+      GM_addStyle(`
       html.adc-dark-mode,html.adc-dark-mode body{background:#1a1a2e!important;color:#e0e0e0!important}
       html.adc-dark-mode :is(
         #wrapper #content_left>.c-container,#wrapper #content_left>.result-op,
@@ -2888,6 +2975,101 @@
       html.adc-dark-mode a{color:#7eb8ff!important}
       html.adc-dark-mode a:visited{color:#b388ff!important}
       html.adc-dark-mode input{background:#16213e!important;color:#e0e0e0!important;border-color:#333!important}
+      /* 运行时自适应扫描兜底：任何"体积够大 + 接近纯白"的未知容器都会被打上此标记并统一压暗 */
+      html.adc-dark-mode .nc-forced-dark{background-color:#1a1a2e!important}
+      html.adc-dark-mode .nc-forced-dark :not(a):not(a *):not(svg):not(svg *):not(img):not(script):not(style){color:#ccc!important}
+      html.adc-dark-mode .nc-forced-dark :is(a,a *){color:#7eb8ff!important}
+      /* 卡内正文统一浅色：站点自带深灰/红色描述文字在暗底上不可读 */
+      html.adc-dark-mode #wrapper #content_left :not(a):not(a *):not(script):not(style):not(svg):not(svg *):not(img){color:#ccc!important}
+      /* 关键词高亮由站点红色改为暖橙，暗底可读且保留强调语义 */
+      html.adc-dark-mode #wrapper #content_left em{color:#ffb454!important;font-style:normal}
+      /* 右侧栏 / 热搜面板 / 头部搜索区补暗色 */
+      html.adc-dark-mode :is(#content_right,.cr-content,.s-hotsearch-wrapper,#con-ceiling-wrapper,#head,.s_form,#form,.s_tab,#s_tab){
+        background:#16213e!important;color:#ccc!important;border-color:rgba(255,255,255,.06)!important
+      }
+      html.adc-dark-mode :is(#content_right,.cr-content,.s-hotsearch-wrapper,#con-ceiling-wrapper) :not(a):not(a *):not(svg):not(svg *):not(img){color:#ccc!important}
+      /* 页面级结构容器压暗（百度 body/#wrapper_wrapper 自带白底，卡片间露白即来源于此） */
+      html.adc-dark-mode :is(#wrapper,#wrapper_wrapper,#container){background:transparent!important}
+      html.adc-dark-mode :is(#content_left,#content_right,#con-ar,#s_wrap,#page,#rs_new,#help,.se_common_footer,#foot,.s-bottom){
+        background:#1a1a2e!important
+      }
+      /* 链接颜色加强压制：百度自带规则（#wrapper #content_left h3 a 等）两级 id + !important，
+         单层 html.adc-dark-mode a 压不住，此处用同等特异性 + 后置注入反压 */
+      html.adc-dark-mode #wrapper_wrapper :is(#content_left,#content_right,#con-ar,#rs_new,#page) :is(a,a *):not(em):not(em *){
+        color:#7eb8ff!important
+      }
+      html.adc-dark-mode #wrapper_wrapper :is(#content_left,#content_right,#con-ar,#rs_new,#page) :is(a,a *):not(em):not(em *):visited{
+        color:#b388ff!important
+      }
+      /* 链接内关键词高亮保持暖橙（后置覆盖链接蓝） */
+      html.adc-dark-mode #wrapper_wrapper #content_left a em{color:#ffb454!important}
+      /* 百度 CSS 变量修正：首页组件消费 html 内联的 --sh-* 变量（白底/深字来源），
+         样式表 !important 可覆盖非 important 的内联变量，整体翻转成暗色 token */
+      html.adc-dark-mode{--sh-bg-rgb:26,26,46!important;--sh-text:#e0e0e0!important;--sh-hover-rgb:255,255,255!important;--sh-hover-op:.08!important;--sh-opacity:1!important;--sh-blur:0px!important;--sh-border:rgba(255,255,255,.08)!important}
+      /* 百度首页：顶部导航条 / 热榜卡片 / 底部栏（#head 双 id 链提高特异性） */
+      html.adc-dark-mode #head :is(#s-top-bar,#s-top-left,#s-hotsearch-wrapper,#hotsearch-content-wrapper,.s-hotsearch-title,.s-hotsearch-content,.hotsearch-item,#lm-new,#bottom_layer,#head_wrapper,.s-center-box,.s-top-nav){
+        background:#16213e!important;color:#ccc!important
+      }
+      html.adc-dark-mode #head :is(#s-hotsearch-wrapper,#hotsearch-content-wrapper,#lm-new) :is(a,a *):not(svg *):not(em):not(em *){
+        color:#7eb8ff!important
+      }
+      /* 百度首页（baidu.com/）特殊结构：中央 chat 输入区 + 热搜框自带白底
+         - 稳定 id：#main-wrapper(ai-input) / #input-root / #chat-input-main / #chat-submit-button
+         - hash class（可能变）：.chat-input-background_3edHa / .san-card / .chat-input-wrapper / .right-tools-wrapper
+         - .s-hotsearch-content 整个 ul 是 #fff
+         - #s_kw_wrap / #s_btn_wr / .s_btn 是经典搜索框
+         这部分不能用 runtime scan 兜底（chat 容器之前被 [class*="chat"] 排除），所以直接精修；
+         id 选择器特异性高，能压过百度内联/普通规则；hash class 作第二层共存（百度前端改版也不受影响） */
+      html.adc-dark-mode :is(#main-wrapper,#input-root,#chat-input-main,.san-card,.chat-input-background_3edHa,.chat-input-wrapper,.chat-input-container,.right-tools-wrapper){
+        background:#16213e!important;color:#e0e0e0!important;border-color:rgba(255,255,255,.08)!important
+      }
+      /* 聊天输入框内的文本域保持可输入、文字浅色（textarea 本体不压暗，只改文字/占位色） */
+      html.adc-dark-mode :is(#main-wrapper,#chat-input-main) textarea{background:transparent!important;color:#e0e0e0!important}
+      html.adc-dark-mode :is(#main-wrapper,#chat-input-main) textarea::placeholder{color:#6b7280!important}
+      /* 输入区内的链接文字（文心助手跳转等）浅蓝 */
+      html.adc-dark-mode :is(#main-wrapper,#input-root,#chat-input-main,.san-card) :is(a,a *):not(svg *):not(em):not(em *){color:#7eb8ff!important}
+      /* 提交按钮"百度一下"：白底蓝字 → 暗底浅蓝 */
+      html.adc-dark-mode #chat-submit-button{background:#1a1a2e!important;color:#7eb8ff!important;border-color:rgba(126,184,255,.5)!important}
+      html.adc-dark-mode #chat-submit-button:hover{background:#16213e!important;color:#a8caff!important}
+      /* 经典搜索框：#s_kw_wrap/.s_ipt_wr 输入条 + #s_btn_wr/.s_btn 提交按钮（备用入口） */
+      html.adc-dark-mode :is(#s_kw_wrap,.s_ipt_wr,#s_btn_wr,.s_btn){
+        background:#16213e!important;color:#e0e0e0!important;border-color:rgba(255,255,255,.08)!important
+      }
+      html.adc-dark-mode :is(#s_kw_wrap,.s_ipt_wr) input{background:transparent!important;color:#e0e0e0!important}
+      /* 热搜 ul/li：内容是 #fff */
+      html.adc-dark-mode :is(.s-hotsearch-content,.s-hotsearch-wrapper,#s-hotsearch-wrapper,.s-menu-container,#hotsearch-content-wrapper){
+        background:#16213e!important;color:#e0e0e0!important;border-color:rgba(255,255,255,.08)!important
+      }
+      html.adc-dark-mode :is(.s-hotsearch-content,#hotsearch-content-wrapper) :is(a,a *):not(svg *){color:#e0e0e0!important}
+      html.adc-dark-mode :is(.s-hotsearch-content,#hotsearch-content-wrapper) :is(a,a *):hover{color:#7eb8ff!important}
+      /* 热搜标红徽章（热/新）在暗底上保持可辨 */
+      html.adc-dark-mode .c-text-hot,html.adc-dark-mode .c-text-new{color:#ffb454!important}
+      /* 文心助手胶囊按钮：白底蓝字 → 暗底浅蓝 */
+      html.adc-dark-mode .guide-bub_2c8ND{background:rgba(78,110,242,.15)!important;color:#a8caff!important;border-color:rgba(126,184,255,.25)!important}
+      /* 谷歌：补齐未被美化的裸 MjjYud 卡片与 .g 块；正文浅灰、链接用 Google 官方暗色蓝 #8ab4f8 */
+      html.adc-dark-mode :is(#rso,#search) :is(.MjjYud,.g){
+        background:#16213e!important;color:#ccc!important;
+        border-color:rgba(255,255,255,.06)!important;
+        box-shadow:0 1px 2px rgba(0,0,0,.2),0 4px 12px rgba(0,0,0,.25)!important
+      }
+      html.adc-dark-mode #rso :not(a):not(a *):not(svg):not(svg *):not(img):not(script):not(style){color:#ccc!important}
+      html.adc-dark-mode :is(#search,#rso) :is(a,a *):not(svg *){color:#8ab4f8!important}
+      html.adc-dark-mode :is(#search,#rso) :is(a,a *):not(svg *):visited{color:#c58af9!important}
+      `);
+      return;
+    }
+
+    /* ---- ② 通用兜底：整页 filter 反色，全站生效 ---- */
+    GM_addStyle(`
+      html.adc-dark-mode{filter:invert(1) hue-rotate(180deg)!important;background:#fff!important}
+      /* 媒体内容二次反转，避免照片/视频变负片 */
+      html.adc-dark-mode :is(img,video,picture,canvas,iframe,embed,object,svg,[style*="background-image"]){filter:invert(1) hue-rotate(180deg)}
+      /* 脚本自身 UI 二次反转，保持安东蓝原色 */
+      html.adc-dark-mode :is(#zk-set-cleaner-settings,#zk-set-help-backdrop,#zk-set-help-pop,#zk-bk-mgr,#zk-dlg,#nc-modal,#zk-toast,#zk-pause-indicator,#nc-paused-badge,#nc-rescue-box,#sh-bar){filter:invert(1) hue-rotate(180deg)}
+      /* filter 会让 position:fixed 相对 html 定位（吸顶元素随页滚动）；
+         护眼蒙版改为 absolute + 撑满 body 文档高度，保证仍覆盖整页 */
+      html.adc-dark-mode body{position:relative!important}
+      html.adc-dark-mode #nc-eye-overlay{position:absolute!important;height:100%!important;filter:invert(1) hue-rotate(180deg)}
     `);
   }
 
@@ -5224,20 +5406,101 @@
     else document.documentElement.classList.remove('adc-hide-baiduhot');
   }
 
+  // 站点「自带深色模式」判定：不能只看"当前渲染成暗色"——本脚本的美化 CSS / 护眼蒙版也会把页面染暗，
+  // 那样会误判（谷歌白卡 bug 的根因）。这里只认站点自己的深色信号：html/根元素上的深色类名、
+  // data-theme、color-scheme 声明（meta 或 computed）。判定前先剔除本脚本自己加的类，避免自证循环。
+  function ncSiteNativeDarkCapable() {
+    try {
+      const htmlEl = document.documentElement;
+      if (!htmlEl) return false;
+      const cls = (htmlEl.className || '').replace(DARK_CLASS, '').replace('adc-hide-baiduhot', '');
+      if (/darkmode|dark-mode|theme-dark|night|\bdark\b/i.test(cls)) return true;
+      const dt = htmlEl.getAttribute && (htmlEl.getAttribute('data-theme') || '');
+      if (/dark/i.test(dt)) return true;
+      const cs = window.getComputedStyle(htmlEl);
+      const scheme = cs ? String(cs.getPropertyValue('color-scheme') || '') : '';
+      if (/dark/i.test(scheme)) return true;
+      const meta = document.querySelector('meta[name="color-scheme"]');
+      if (meta && /dark/i.test(meta.getAttribute('content') || '')) return true;
+    } catch (e) {}
+    return false;
+  }
+
+  // 当前域名是否命中用户手动名单（精确域名或父域）
+  function ncHostInList(list) {
+    try {
+      const host = String(HOST || location.hostname || '').toLowerCase();
+      if (!host || !Array.isArray(list)) return false;
+      return list.some(h => { const d = String(h || '').toLowerCase(); return !!d && (host === d || host.endsWith('.' + d)); });
+    } catch (e) { return false; }
+  }
+
+  // 暗黑模式按站点让行 / 强制接管（供油猴菜单调用）
+  function ncToggleDarkHostOwnership() {
+    try {
+      const cfg = getScriptCfg();
+      const host = String(HOST || location.hostname || '').toLowerCase();
+      if (!host) return;
+      cfg.darkSkipHosts = Array.isArray(cfg.darkSkipHosts) ? cfg.darkSkipHosts : [];
+      cfg.darkForceHosts = Array.isArray(cfg.darkForceHosts) ? cfg.darkForceHosts : [];
+      const i = cfg.darkSkipHosts.indexOf(host);
+      const j = cfg.darkForceHosts.indexOf(host);
+      if (i >= 0) { cfg.darkSkipHosts.splice(i, 1); cfg.darkForceHosts.push(host); notify('本站：已强制由脚本接管暗黑'); }
+      else if (j >= 0) { cfg.darkForceHosts.splice(j, 1); notify('本站：已恢复自动判断'); }
+      else { cfg.darkSkipHosts.push(host); notify('本站：交给网站自己的深色模式'); }
+      try { setConfig(getConfig()); } catch (e) {}
+      applyDarkMode();
+    } catch (e) {}
+  }
+
+  // 页面本身已是深色（暗黑系站点）：跳过反色，避免被洗成刺眼亮色
+  function ncSiteAlreadyDark() {
+    try {
+      const el = document.body || document.documentElement;
+      if (!el) return false;
+      const bg = getComputedStyle(el).backgroundColor || '';
+      const m = bg.match(/rgba?\(([^)]+)\)/);
+      if (!m) return false;
+      const p = m[1].split(',').map(Number);
+      const alpha = p.length > 3 ? p[3] : 1;
+      if (alpha < 0.1) return false;          // 背景透明无从判断，按亮色处理
+      const lum = 0.2126 * p[0] + 0.7152 * p[1] + 0.0722 * p[2];
+      return lum < 70;                         // 亮度足够低 → 视为深色站点
+    } catch (e) { return false; }
+  }
+
   // 暗黑模式
   function applyDarkMode() {
     const cfg = getScriptCfg();
     updateBaiduHotClass();
-    if (cfg.darkMode) {
-      document.documentElement.classList.add(DARK_CLASS);
-    } else if (prefersDark.matches && cfg.darkMode === true) {
-      document.documentElement.classList.add(DARK_CLASS);
+    const htmlEl = document.documentElement;
+    const host = String(HOST || (location && location.hostname) || '').toLowerCase();
+    const forced = ncHostInList(cfg.darkForceHosts);
+    const skipped = ncHostInList(cfg.darkSkipHosts);
+    // 让行策略（用户明确要求，简单可预期）：
+    //   站点自带深色模式 / 当前已渲染为深色 → 脚本暗黑直接禁用，交给网站自己处理。
+    //   否则两套暗色（站点的 + 脚本的）会同时生效、互相打架，观感最差。
+    //   优先级：用户手动 darkForceHosts 强制接管 > 让行判定 > darkSkipHosts 用户手动让行。
+    let wantDark = !!cfg.darkMode;
+    let standDown = false;
+    if (wantDark && !forced && (skipped || ncSiteAlreadyDark() || ncSiteNativeDarkCapable())) {
+      wantDark = false; standDown = true;
     }
+    htmlEl.classList.toggle(DARK_CLASS, wantDark);
+    // 让行时提示一次，避免用户以为脚本坏了（自带深色站点本来就没变化）
+    if (standDown && host && !_ncStandDownNotified[host]) {
+      _ncStandDownNotified[host] = 1;
+      try { notify('本站已自带深色模式，脚本已让行（油猴菜单可强制接管）'); } catch (e) {}
+    }
+    // 暗黑 × 护眼联动：切换暗色后立即刷新护眼蒙版配色，避免两者叠加越叠越暗
+    try { if (getScriptCfg().baidueye) applyEyeCare(); } catch (e) {}
+    // 运行时残留亮块扫描：静态选择器覆盖不到的未知容器，交给自适应扫描兜底
+    if (wantDark) { try { ncInitForceDarkObserver(); ncScheduleForceScan(500); } catch (e) {} }
 
     prefersDark.addEventListener('change', (e) => {
-      if (getScriptCfg().darkMode === true) {
-        document.documentElement.classList.toggle(DARK_CLASS, e.matches);
-      }
+      if (getScriptCfg().darkMode !== true) return;
+      htmlEl.classList.toggle(DARK_CLASS, ncIsFineDarkSite() || (!ncSiteAlreadyDark() && e.matches));
+      try { if (getScriptCfg().baidueye) applyEyeCare(); } catch (e) {}
     });
   }
 
@@ -5247,6 +5510,20 @@
   //      蒙版的真实作用是减少纯白刺眼 + 降对比度 + 画面柔和）
   //   * 行为护眼层（20-20-20 提醒）：每 20 分钟 zkToast 提醒「远眺 20 英尺外的物体 20 秒」—— 科学共识最有效的护眼手段
   //   * 全站生效（bootCore 阶段3 全局）、覆盖全面、不遮挡脚本面板（z-index 2147483640 < 2147483646）
+  // 暗黑模式下的护眼色自适应：把预设暖色按 ratio 向白提亮后再参与 multiply。
+  // 数学依据——multiply 结果 = 底色 × 蒙版色。暗底（如 #16213e）再乘强暖色会越叠越暗、糊成一团；
+  // 把蒙版色提亮到接近白后，乘法结果接近底色并带上暖色调 —— 即「只染色、不压暗」。
+  // 混合方式仍为 multiply（HELP 与 verify_eyecare_overlay 均以此为准），不引入反色。
+  function ncLightenForDark(color, ratio) {
+    try {
+      const m = color.match(/(\d+(?:\.\d+)?)\D+(\d+(?:\.\d+)?)\D+(\d+(?:\.\d+)?)/);
+      if (!m) return 'rgba(255,250,240,1)';
+      const k = ratio || 0.78;
+      const lift = (v) => Math.round(Number(v) + (255 - Number(v)) * k);
+      return 'rgba(' + lift(m[1]) + ',' + lift(m[2]) + ',' + lift(m[3]) + ',1)';
+    } catch (e) { return 'rgba(255,250,240,1)'; }
+  }
+
   function applyEyeCare() {
     const cfg = getScriptCfg();
     const existingOverlay = document.getElementById('nc-eye-overlay');
@@ -5256,7 +5533,11 @@
     const strength = cfg.baidueyestrength || 'standard';
     const alphaMap = { soft: 0.16, standard: 0.26, strong: 0.38 };
     const alpha = Object.prototype.hasOwnProperty.call(alphaMap, strength) ? alphaMap[strength] : 0.26;
-    const overlayBg = ncColorToRgba(color, alpha);
+    // 与暗黑模式相辅相成：暗底下把暖色提亮 + 降 alpha，避免乘法叠加导致画面过暗
+    const isDarkNow = document.documentElement.classList.contains(DARK_CLASS);
+    const overlayBg = isDarkNow
+      ? ncColorToRgba(ncLightenForDark(color), Math.min(alpha, 0.14))
+      : ncColorToRgba(color, alpha);
     let overlayEl = existingOverlay;
     if (!overlayEl) {
       overlayEl = document.createElement('div');
@@ -5417,7 +5698,7 @@
     kgweixined: { title: '微信公号广告过滤', effect: '过滤微信公众文章里插入的广告与底部推广区域。', impl: 'processWeixin 隐藏文章内广告卡片与底部推广容器。', maintain: '失效时在 processWeixin 更新广告容器选择器。', risk: '关闭恢复公号广告；个别原生推广位可能漏过。' },
     kgweixinad: { title: '微信公号关键词过滤', effect: '按关键词过滤微信公众文章段落内容。', impl: 'processWeixin 读取关键词库移除命中段落。', maintain: '维护同百度关键词过滤，在「过滤列表」编辑。', risk: '关键词过宽会误删正常段落。' },
     pojieSignIn: { title: '吾爱破解自动签到', effect: '进入吾爱破解论坛后自动完成每日打卡签到，无需手动点击。', impl: 'process52pojie 轮询签到入口链接（Discuz 任务 id=2），找到后用隐藏 iframe 打开签到页完成打卡，并弹出完成提示。', maintain: '站点改版时主要调整两处：SIGN_TASK_ID（任务 ID）与 selector（入口链接规则）；逻辑集中在 process52pojie()。', risk: '依赖论坛“每日打卡”任务入口存在；若论坛改版移除该任务或改 URL 规则会失效；仅当开启时生效，关闭则不签到。' },
-    darkMode: { title: '暗黑模式', effect: '跟随系统自动切换或强制暗色主题，夜间护眼；可与「护眼模式」蒙版叠加（暗色+暖色）。', impl: 'applyDarkMode() 在 html 上加 adc-dark-mode 类，injectDarkModeCSS() 注入暗色配色，并监听系统偏好变化。', maintain: '失效时检查 injectDarkModeCSS() 选择器是否覆盖新版站点结构。', risk: '部分未被覆盖的第三方组件可能配色异常；关闭即恢复亮色。' },
+    darkMode: { title: '暗黑模式', effect: '全站通用暗色主题，夜间护眼；可与「护眼模式」蒙版叠加（暗色+暖色）。百度/Google/Bing 走精修配色，其余站点整页反色适配。', impl: 'applyDarkMode() 在 html 上加 adc-dark-mode 类；injectDarkModeCSS() 两级注入——精修站点用选择器重配色（含卡内文字对比度修复），其余站点用 filter:invert+hue-rotate 整页反色，媒体与脚本自身 UI 二次反转还原；已检测到深色站点自动跳过。', maintain: '精修站点失效时检查 injectDarkModeCSS() 选择器；通用反色对个别 position:fixed 吸顶元素可能随页滚动。', risk: '整页反色为渲染级近似方案，个别半透明元素/含文字图片观感欠佳；关闭即恢复亮色。' },
     cleanCopy: { title: '干净复制', effect: '复制链接/文本时自动去除 utm_/spm 等追踪参数。', impl: 'initCleanCopy() 监听 copy 事件并清理常见追踪参数。', maintain: '新增追踪参数规则时，在 initCleanCopy() 正则处追加。', risk: '关闭后复制内容带回原始追踪参数；当前为轻量实现，复杂场景可能清理不彻底。' },
     kgpingbis: { title: '被动去广告', effect: '通用算法分析并过滤绝大部分网页的悬浮/弹窗牛皮癣广告。', impl: 'passiveAdBlock() 扫描页面大面积图片/固定定位元素，按尺寸与占比判定广告并移除。', maintain: '误杀或漏过时在 passiveAdBlock() 调整尺寸阈值与判定规则。', risk: '算法判定，偶尔可能误删正常大图或浮层（如登录二维码）；如对某站误杀，可关闭或用白名单。' },
     kgpingbiiframe: { title: '禁用第三方 iframe', effect: '屏蔽来自其他域名的嵌入式框架，阻断大量联盟广告与跟踪。', impl: 'passiveAdBlock() 移除 src 指向非本站且不在白名单的 iframe。', maintain: '误屏蔽正常功能时在 passiveAdBlock() 的 safeIframes 白名单追加域名。', risk: '可能误伤正常嵌入内容（如支付、验证码、地图）；如某功能异常，优先关闭此项并加白名单。' },
@@ -9322,6 +9603,7 @@
 
     // 阶段 6：菜单注册
     try { GM_registerMenuCommand(t('menu.panel'), () => openSettings()); } catch (e) { console.error('[NetClean] 阶段 6 菜单注册失败', e); }
+    try { GM_registerMenuCommand(t('menu.darkOwner'), ncToggleDarkHostOwnership); } catch (e) {}
 
     // 阶段 6b：全局 Esc 关闭已打开的设置面板 / 欢迎页（单次注册，无 keydown 泄漏）
     try {
