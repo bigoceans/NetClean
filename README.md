@@ -158,7 +158,7 @@
 
 ### 方案 B：从 GreasyFork 安装（更稳定、有自动更新）
 
-> 🔗 GreasyFork 链接：*（上传后会更新此 URL）*
+> 🔗 [GreasyFork 链接]（https://greasyfork.org/zh-CN/scripts/594888)
 
 1. 打开 GreasyFork 脚本页面
 2. 点击 **「安装」** 按钮
