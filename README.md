@@ -4,7 +4,7 @@
 > 全部配置仅保存在你本地浏览器，**零数据外传**。
 
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
-![version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)
+![version](https://img.shields.io/badge/version-1.0.4-brightgreen.svg)
 ![tampermonkey](https://img.shields.io/badge/Tampermonkey-4.19%2B-orange.svg)
 ![size](https://img.shields.io/badge/size-~632KB-lightgrey.svg)
 ![verified](https://img.shields.io/badge/verify-169%2F169-brightgreen.svg)
@@ -51,27 +51,25 @@
 ```
 [设置面板截图：① 通用防护 · ② 搜索净化 · ③ 视频 · ④ 划词翻译 4 大组]
 ```
-![](https://i.imgs.ovh/2026/09/08/d9e4321cdc5c6b90728321457365ff25.png)
-![](https://i.imgs.ovh/2026/09/08/f176ae6b10969146cae8a77f9422440a.png)
-![](https://i.imgs.ovh/2026/09/08/7028976878b22633b42632bdde2583bc.png)
+
 ### 护眼模式效果对比
 <!-- 截图占位：护眼前 / 护眼后 -->
 ```
 [护眼前：纯白刺眼]  →  [护眼后：暖色蒙版柔和]
 ```
-![](https://i.imgs.ovh/2026/09/08/63cc51fcad27dec78d93f67c70b856ad.png)
+
 ### 搜索结果卡美化
 <!-- 截图占位：百度 vs Google 搜索结果 -->
 ```
 [百度搜索：现代卡片式布局]   [Google 搜索：极简卡片]
 ```
-![](https://i.imgs.ovh/2026/09/08/465199cfb76dc6f4ed9fcc71b1e095b5.png)
+
 ### 划词搜索弹窗
 <!-- 截图占位：选中文字后弹窗 -->
 ```
 [划词后：9 引擎 + 译按钮 + 打开链接]
 ```
-![](https://i.imgs.ovh/2026/09/08/553e805f7fb8ab6214ae8dd392b42097.png)
+
 > 📷 **贡献截图**：欢迎在 [GitHub Issues](https://github.com/bigoceans/netclean/issues) 附图投稿，被采纳会加到本节并致谢。
 
 ---
@@ -89,7 +87,7 @@
 | **干净复制** | 去除复制链接中的 `utm_*` / `spm` / `from` / `source` / `ref` / `tracking` 等追踪参数 | ⚪ 关 |
 | **护眼模式** | 全屏 multiply 暖色蒙版 + 5 种预设昏黄系色板 + 三档强度 | ⚪ 关 |
 | **20-20-20 休息提醒** | 每 20 分钟 toast 提醒远眺（开启护眼时生效） | ⚪ 随护眼 |
-| **暗黑模式** | 系统级深色（跟随系统偏好自动切换） + 自定义强制暗色 | ⚪ 关 |
+| **暗黑模式** | 全站通用：百度/Google/Bing 精修配色，其余站点整页反色自动适配；跟随系统偏好或强制开启 | ⚪ 关 |
 | **视频倍速** | 全站 `<video>` 元素可设自定义倍速 | ⚪ 1x |
 | **B 站画质解锁** | 未登录状态解锁 1080P 画质选项 | ⚪ 关 |
 | **YouTube 旋转 / 翻转 / 填充** | 视频画面 90°/180°/270° 旋转、水平/垂直翻转、自定义宽高比填充 | ⚪ 关 |
@@ -144,12 +142,12 @@
 ### 方案 A：油猴直接安装（推荐）
 
 1. 安装浏览器扩展 [Tampermonkey](https://www.tampermonkey.net/)（Chrome / Edge / Firefox / Safari 全支持）
-2. 打开 [`netclean.user.js`](https://update.greasyfork.org/scripts/594888/%E5%85%A8%E7%BD%91%E5%87%80%E5%8C%96%E5%A4%A7%E5%B8%88%20NetClean%20%E2%80%94%20%E5%B9%BF%E5%91%8A%E8%BF%87%E6%BB%A4%20%2B%20%E5%88%92%E8%AF%8D%E6%90%9C%E7%B4%A2%20%2B%20%E6%90%9C%E7%B4%A2%E7%BE%8E%E5%8C%96.user.js) → 内容会自动触发安装弹窗
+2. 打开 [`netclean.user.js`](./netclean.user.js) → 内容会自动触发安装弹窗
 3. 点击 **「安装」** 即可
 
 ### 方案 B：从 GreasyFork 安装（更稳定、有自动更新）
 
-> 🔗 GreasyFork 链接：*[`netclean.user.js`](https://update.greasyfork.org/scripts/594888/%E5%85%A8%E7%BD%91%E5%87%80%E5%8C%96%E5%A4%A7%E5%B8%88%20NetClean%20%E2%80%94%20%E5%B9%BF%E5%91%8A%E8%BF%87%E6%BB%A4%20%2B%20%E5%88%92%E8%AF%8D%E6%90%9C%E7%B4%A2%20%2B%20%E6%90%9C%E7%B4%A2%E7%BE%8E%E5%8C%96.user.js)*
+> 🔗 GreasyFork 链接：*（上传后会更新此 URL）*
 
 1. 打开 GreasyFork 脚本页面
 2. 点击 **「安装」** 按钮
@@ -540,7 +538,68 @@ A: 欢迎 PR / Issue！
 
 ## 📝 更新日志
 
-### v1.0.0（当前版本 · 2026-09-08）
+### v1.0.4（当前版本 · 2026-09-09）
+
+百度**首页**中央白底输入区 + 热搜框的精修补漏 —— 之前暗黑模式只覆盖了百度**搜索结果页**(`/s?*`)的卡片，**首页**(`baidu.com/`)专有的 chat 输入卡 / 文心胶囊 / 热搜 ul 还残留白底。
+
+- **首页 chat 输入区** `.chat-input-background_3edHa` / `.san-card` / `.chat-input-wrapper .chat-input-container` / `.right-tools-wrapper` → 暗底 `#16213e`
+- **「百度一下」按钮** `#chat-submit-button` → 暗底浅蓝（白底蓝字 → `#1a1a2e` 底 `#7eb8ff` 字）
+- **经典搜索框** `#s_kw_wrap` / `.s_ipt_wr` / `#s_btn_wr` / `.s_btn`（备用入口）→ 同样压暗
+- **热搜列表** `.s-hotsearch-content` / `.s-hotsearch-wrapper` / `#s-hotsearch-wrapper` / `.s-menu-container` → 暗底
+- **文心助手胶囊** `.guide-bub_2c8ND` → 暗底浅蓝（保留蓝色语义）
+- **scan 排除规则放宽**：之前的 `[class*="chat"]` 会把整个 chat 模块容器都跳过（导致中央白盒永远不会被压暗），改为只跳过真正承担输入职责的容器（`form` / `[id*="input"]` / `[id*="Input"]` / `textarea#chat-textarea`），容器本身（`.chat-input-background_3edHa` 等）现在能被 scan 兜底
+
+### v1.0.3（2026-09-09）
+
+暗黑模式"站点自带深色即让行"——按用户明确诉求实现的**简单可预期策略**。
+
+- **遇到自带深色 / 已是暗色 → 脚本暗黑直接让行**，不再有"精修站点例外"。两套暗色（站点原生 + 脚本）同时存在时观感最差，现在按用户的意愿让给站点
+- 新增自动检测（`ncSiteNativeDarkCapable()`）：判断 html 类名（`darkmode` / `dark-mode` / `theme-dark` / `night`）、`data-theme` 属性、`<meta name="color-scheme">` 与 `getComputedStyle` 的 `color-scheme` —— **排除本脚本自己的类**，避免自证循环
+- 新增按站点手动名单 `darkSkipHosts`（让行）/ `darkForceHosts`（强制接管），存储在 `GM_setValue` 中
+- 油猴菜单新增：`🌙 暗黑：本站「交给网站 / 脚本接管」切换` —— 一键循环 `让行 → 强制 → 自动`
+- 让行时一次性 toast 提示，避免用户以为脚本失效
+- 优先级：`darkForceHosts` > 让行判定 > `darkSkipHosts`
+
+### v1.0.2（2026-09-09）
+
+暗黑模式深度补漏 + 运行时自适应扫描兜底。
+
+- **运行时残留亮块扫描**（`ncForceDarkScan`）：静态选择器覆盖不到站点运行时生成的未知容器（打不完的地鼠），遍历 DOM 找"体积够大 + 背景接近纯白"的块统一压暗
+- 跳过脚本自身 UI（设置面板 / toast / 弹窗 / 护眼蒙版 / 划词条）和表单控件（避免误伤搜索框）
+- 体积 / 透明度下限避开图标小按钮
+- `MutationObserver` 监听 DOM 变化，400ms 防抖重扫
+
+---
+
+### v1.0.1（2026-09-09）
+
+暗黑模式全站适配重构 —— **日趋完善**。
+
+#### 🌗 暗黑模式：从「只在百度生效」到全站可用
+- **根因**：旧实现只写了百度/Google/Bing 的选择器级 CSS，其余站点仅改 html/body 背景，深层容器自带白底深字纹丝不动
+- **两级策略**：搜索引擎走精修配色；其余站点整页 `filter:invert+hue-rotate` 渲染级反色，深色字体自动翻浅色
+- **多层定制補漏**（对照真实 DOM 逐步修正）：
+  - `#wrapper_wrapper/#wrapper` 结构层白底 → 透明化
+  - `#head` 内联 `background:rgb(255,255,255)` → 同级 `!important` 压制
+  - 标题链接被百度两级 id + `!important` 规则压住 → 同特异性双 id 链反压；链接内 `em` 关键词保持暖橙
+  - 首页组件消费 html 内联 `--sh-*` 变量（白底深字本体）→ 样式表 `!important` 覆盖变量取值
+  - 首页顶部导航条 / 热榜卡片 / 底部栏统一暗色
+  - 谷歌 15 张未打标的裸 `.MjjYud` 卡片补齐；链接改用 Google 官方暗色蓝 `#8ab4f8`
+- **深色站点自动跳过**（`ncSiteAlreadyDark()`）避免把暗色站洗白，**仅作用于通用反色层**
+
+#### 🐛 修复：暗黑 × 其他功能的冲突
+- 谷歌白卡 bug：搜索美化 CSS 提前染暗页面 → `ncSiteAlreadyDark()` 误判跳过 → 类没加上卡片全失效。**现已改为精修站点固定走暗黑**，误跳过策略只保留给通用层
+- 护眼蒙版越叠越暗：multiply 是乘法运算，暗底 × 强暖色会糊成一团。**新增 `ncLightenForDark()`** —— 暗黑模式下把预设暖色按 0.78 向白提亮、alpha 降至 ≤0.14，做到「只染色、不压暗」；混合方式仍保持 `multiply`（不引入反色）
+- 暗黑切换后护眼蒙版不联动：**现在会即时刷新**护眼色
+
+#### ✅ 验证
+- `node --check` ✅ 0 错
+- eyecare 12/12 + presets 11/11 + eyecolor 16/16 + e2e 32/32 + baidu_card 19/19 + search_renew 8/8 + settings 11/11 + dialog 11/11 + i18n 42/42 + 405 21/21
+- 版本断言同步更新（verify_baidu_group_card_fix S10/S11 → 1.0.1）
+
+---
+
+### v1.0.0（2026-09-08）
 
 #### 🎨 护眼模式（重大重构）
 - 全新 multiply 暖色蒙版：全屏 `position:fixed` + `mix-blend-mode:multiply`，**视频绝不反色**
@@ -682,6 +741,6 @@ SOFTWARE.
 
 ---
 
-**最后更新**：2026-09-08
-**当前版本**：v1.0.0
+**最后更新**：2026-09-09
+**当前版本**：v1.0.4
 **作者**：bigoceans
