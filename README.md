@@ -4,7 +4,7 @@
 > 全部配置仅保存在你本地浏览器，**零数据外传**。
 
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
-![version](https://img.shields.io/badge/version-1.0.5-brightgreen.svg)
+![version](https://img.shields.io/badge/version-1.0.6-brightgreen.svg)
 ![tampermonkey](https://img.shields.io/badge/Tampermonkey-4.19%2B-orange.svg)
 ![size](https://img.shields.io/badge/size-~632KB-lightgrey.svg)
 ![verified](https://img.shields.io/badge/verify-169%2F169-brightgreen.svg)
@@ -549,13 +549,24 @@ A: 欢迎 PR / Issue！
 
 ## 📝 更新日志
 
-### v1.0.5（当前版本 · 2026-09-09）
+### v1.0.6（当前版本 · 2026-09-10）
+
+跨域白名单拉网补齐 —— 修复「云端配置管理点任何按钮都报网络请求失败」及同类问题。
+
+- **根因延续**：与 v1.0.5 划词翻译事故同根——新版 Tampermonkey（Chrome 152 / MV3）对 `@connect` 未声明域名静默拦截（老版本只弹一次授权框，升级后授权状态被洗掉）
+- **拉网排查全部 20 个跨域请求点**，补齐 7 个缺失域名：
+  - 云同步：`jianguoyun.com`（坚果云）/ `github.com`（Gist）/ `dropboxapi.com`（Dropbox）/ `microsoft.com`（OneDrive）/ `yandex.net`（Yandex Disk）
+  - 验证码：`jfbym.com`（云码）/ `like996.icu`（精准引擎）
+- **错误文案区分**：7 处云同步请求的 onerror 现在区分「服务器无响应（跨域授权被拒/断网/地址错）」与「HTTP 状态码」，排查方向不再混淆
+- 若仍遇"网络请求失败"，请检查：`chrome://extensions/` → Tampermonkey → 详情 → 网站访问权限 =「在所有网站上」；TM 设置 → 安全 → @connect 检查 =「询问」；自建 WebDAV 域名首次使用时在油猴弹窗中允许
+
+### v1.0.5（2026-09-09）
 
 划词翻译大修 + 全量代码复盘。起因：用户划「售价」报「iciba 未收录 + Google 兜底网络错误」。
 
 #### 🌐 翻译链路修复与增强
 - **根因**：`@connect` 白名单缺 `dict.iciba.com` / `translate.googleapis.com`——新版 Tampermonkey（Chrome 152 / MV3）收紧跨域策略后请求被拦，iciba 失败又被吞成"未收录"，误导排查方向
-- **补全 @connect**：新增 dict.iciba.com / translate.googleapis.com / content-dictionaryextension-pa.googleapis.com / api.dictionaryapi.dev / api-free.deepl.com / api.mymemory.translated.net / www.googleapis.com（网盘同步也受益）
+- **补全翻译类 @connect**：dict.iciba.com / translate.googleapis.com / content-dictionaryextension-pa.googleapis.com / api.dictionaryapi.dev / api-free.deepl.com / api.mymemory.translated.net / www.googleapis.com（网盘同步）
 - **新增 MyMemory 免费引擎**（免密钥、国内直连，实测「售价」→ Selling price 双向 0.99 匹配），进翻译引擎下拉框
 - **Google / MyMemory 兜底竞速**：iciba 查不到（短语/未收录词）时两引擎同时发起、谁先返回用谁——国内 MyMemory 秒回，海外 Google 快，两端都不劣化；显式选择 google/mymemory 引擎时直连不代做主
 - **兜底富卡片**（`renderTransRich`）：Google `dt=bd` 词典块（词性/词条/反向翻译）+ MyMemory 多译者候选（匹配度/来源）全量渲染，与 iciba 卡同信息密度，不再是干巴巴一行
@@ -776,5 +787,5 @@ SOFTWARE.
 ---
 
 **最后更新**：2026-09-09
-**当前版本**：v1.0.5
+**当前版本**：v1.0.6
 **作者**：bigoceans
