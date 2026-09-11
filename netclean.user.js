@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         全网净化大师 NetClean — 广告过滤 + 划词搜索 + 搜索美化
 // @namespace    https://github.com/bigoceans
-// @version      1.0.6
+// @version      1.0.7
 // @author       bigoceans
 // @description  全站广告/弹窗屏蔽（百度/Google/Bing/360/知乎/微博/B站/优酷/腾讯视频/微信公号/YouTube 等 20+ 站点）+ 搜索结果卡片式美化、关键词网址过滤、干净复制、暗黑护眼模式 + 视频倍速、B站画质解锁、YouTube 旋转/翻转/填充+ 划词搜索（多引擎 + 划词翻译，默认开启）。支持配置导入/导出/WebDAV 同步、零数据外传；详细隐私声明与功能说明见主页 README。
 // @icon64       data:image/png;base64,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
@@ -91,7 +91,10 @@
   // 导致「#kw 里输入关键词 → 回车 → 进入 /s?wd=... 搜索结果页后脚本整体失效」的恶性 bug（B-划词-02）。
   const HREF = () => location.href;
   const IS_MOBILE = /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i.test(navigator.userAgent);
-  const VERSION = '1.0.6';
+  const VERSION = '1.0.7';
+  // 免责声明指纹：仅当「条款正文」发生实质变化时才会改变，用于判断是否需要重新征询用户同意。
+  // 修改免责声明文案时请同步更新此值（改一个字符即可）。
+  const LEGAL_HASH = '2026-09-terms-v1';
   const NC_Z_TOP = 0x7FFFFFFF;   // 统一最高层级 z-index（替代散落的 NC_Z_TOP）
   // 调试日志开关：默认关闭，避免污染控制台。开启方式：URL 加 ?ncdebug，或在油猴里 GM_setValue('nc_debug', 1)
   window.__NC_DEBUG = /[?&]ncdebug/.test(location.search) || (typeof GM_getValue === 'function' && GM_getValue('nc_debug') === 1);
@@ -139,22 +142,41 @@
     if (now - _lastCountTime < 1500) return;
     _lastCountTime = now;
     let added = 0;
-    BLOCKED_SELECTORS.forEach(sel => {
-      try {
-        document.querySelectorAll(sel).forEach(el => {
+    // 合并查询：BLOCKED_SELECTORS 可达数百条，逐个全文档查询在重站点上可感知卡顿。
+    // 分批 join（每批 30 条）合并为一次 querySelectorAll；某批含非法选择器时整体会抛错，
+    // 此时回退到该批内逐个查询，保证不因一个坏选择器丢掉整批。
+    const BATCH = 30;
+    for (let i = 0; i < BLOCKED_SELECTORS.length; i += BATCH) {
+      const batch = BLOCKED_SELECTORS.slice(i, i + BATCH);
+      let nodes = null;
+      try { nodes = document.querySelectorAll(batch.join(',')); } catch (e) { nodes = null; }
+      if (nodes) {
+        nodes.forEach(el => {
           if (!COUNTED_ADS.has(el)) {
             COUNTED_ADS.add(el);
             added++;
           }
         });
-      } catch(e) {}
-    });
+      } else {
+        batch.forEach(sel => {
+          try {
+            document.querySelectorAll(sel).forEach(el => {
+              if (!COUNTED_ADS.has(el)) {
+                COUNTED_ADS.add(el);
+                added++;
+              }
+            });
+          } catch(e) {}
+        });
+      }
+    }
     if (added) {
       STATS.skippedAds += added;
       STATS.css += added;
       totalBlocked += added;
       siteBlocked[HOST] = (siteBlocked[HOST] || 0) + added;
       persistTotalStats();
+      try { ncScheduleAdBadge(); } catch (e) {}
     }
   }
 
@@ -303,10 +325,15 @@
       csdnAd: false, csdnLink: false, csdnExpand: false, csdnClean: false, xhsclean: false, juejinclean: false, sfclean: false,
       // —— 性能优化 ——
       perfWhitelist: false, scriptBlacklistEnabled: false, passiveGlobal: false, adStats: true,
+      // 右下角拦截计数常驻角标（默认关闭：避免遮挡页面内容，用户可在「性能与高级 → 统计与显示」开启）
+      adBadge: false,
       // —— 验证码（可选模块，默认关闭）——
       captchaEnabled: false, captchaEngine: 'auto', captchaTrigger: 'manual',
       captchaAutoFind: true, captchaShowHint: true, captchaSlide: true,
       captchaPreciseId: '', captchaYunmaToken: '',
+      // 云码平台的「开发者标识」（developer_tag）：用于把识别调用归属到你的云码账号。留空则请求不带该字段，
+      // 由云码平台自行归属。本脚本不内置任何开发者标识。
+      captchaYunmaDev: '',
       // 识别接口地址：默认留空 = 不发起任何外部请求。本脚本不内置任何第三方打码平台地址，
       // 需你自行在下方粘贴信任的接口（如 like996 公益接口或自建接口）；留空时「极速/精准」引擎直接跳过，不会上传任何图片。
       captchaApiFast: '', captchaApiPrecise: '',
@@ -374,8 +401,28 @@
     img.style.cssText =
       'width:100%!important;height:100%!important;object-fit:contain!important;' +
       'border-radius:2px!important;display:block!important';
-    img.src = FAVICON_API + domain + '?size=32';
-    img.onerror = function() { wrap.style.display = 'none'; };
+    // 走 GM_xmlhttpRequest 拉取二进制：<img src> 属页面级请求，不受 @connect 保护，
+    // 且会被站点 CSP（img-src）拦截（GitHub 等严格站点必失败）。GM 请求在沙箱层，
+    // 不受页面 CSP 限制。yandex.net 已在 @connect 白名单内。
+    try {
+      GM_xmlhttpRequest({
+        method: 'GET',
+        url: FAVICON_API + domain + '?size=32',
+        responseType: 'blob',
+        timeout: 8000,
+        onload: function (r) {
+          try {
+            if (r.status >= 200 && r.status < 300 && r.response) {
+              const objUrl = URL.createObjectURL(r.response);
+              img.onload = function () { try { URL.revokeObjectURL(objUrl); } catch (e) {} };
+              img.src = objUrl;
+            } else { wrap.style.display = 'none'; }
+          } catch (e) { wrap.style.display = 'none'; }
+        },
+        onerror: function () { try { wrap.style.display = 'none'; } catch (e) {} },
+        ontimeout: function () { try { wrap.style.display = 'none'; } catch (e) {} }
+      });
+    } catch (e) { try { wrap.style.display = 'none'; } catch (e2) {} }
     wrap.appendChild(img);
     parentNode.appendChild(wrap);
     return wrap;
@@ -427,16 +474,67 @@
     if (!raw) { cfg = JSON.parse(JSON.stringify(DEFAULT_CONFIG)); GM_setValue('allconfig', cfg); }
     else { cfg = deepMerge(DEFAULT_CONFIG, raw); }
     _configCache = cfg;
+    // 记录「已知落盘版本」基线：首次改动落盘时，用它作为历史快照的第一版
+    try { _configPersistedSnapshot = JSON.stringify(cfg); } catch (e) { _configPersistedSnapshot = ''; }
     return cfg;
   }
   // 配置落盘：内存缓存立即更新（所有读都走 _configCache，即时正确），
   // 但 GM_setValue 全量序列化合并到 400ms 防抖窗口，避免拖开关/拖滑块/连续输入时
   // 频繁跨沙箱写盘造成主线程卡顿（划词引擎那一处早已用局部 persistLater 防抖，这里是全局统一）。
   // 关键写操作（重置/导入/恢复顺序）与页面隐藏时调用 flushConfig() 立即落盘，防止丢失最近改动。
+  // 配置历史（环形快照）：记录「上一次已落盘」的配置，供面板「配置历史 / 回滚」使用。
+  //   * 只存 8 份，超出丢弃最旧；每份带时间戳，便于用户辨认。
+  //   * 快照存在独立 key（configHistory）里，与 allconfig 分开，避免互相污染。
+  //   * 仅记录「实质变更」：与最新快照完全相同（JSON 相等）时跳过，避免拖滑块刷屏。
+  //   ⚠ 关键：设置面板大量使用「const cfg = getConfig(); cfg.x = v; setConfig(cfg)」的原地改模式，
+  //     此时 _configCache 与 cfg 是同一对象、且已被改过 —— 若在 writeConfig 里读 _configCache 作快照，
+  //     拿到的永远是「改后」的值（等于没存历史）。因此这里维护一份**上次落盘时的序列化副本**
+  //     _configPersistedSnapshot，只在真正落盘（_flushConfigNow）后更新，作为可靠的「上一版」来源。
+  const CONFIG_HISTORY_MAX = 8;
+  let _configPersistedSnapshot = '';   // 上次落盘后的 JSON 字符串
+  function _pushConfigHistory(prevSnapshot, label) {
+    try {
+      if (!prevSnapshot || typeof prevSnapshot !== 'string') return;
+      const prevArr = GM_getValue('configHistory', []);
+      const list = Array.isArray(prevArr) ? prevArr : [];
+      if (list.length && list[0] && list[0].data === prevSnapshot) return; // 与最新快照相同，去重
+      list.unshift({ at: Date.now(), label: label || '', data: prevSnapshot });
+      GM_setValue('configHistory', list.slice(0, CONFIG_HISTORY_MAX));
+    } catch (e) {}
+  }
+  function getConfigHistory() {
+    try { const a = GM_getValue('configHistory', []); return Array.isArray(a) ? a : []; } catch (e) { return []; }
+  }
+  function clearConfigHistory() { try { GM_setValue('configHistory', []); } catch (e) {} }
+  // 回滚到指定历史快照：当前配置会先被压入历史（可再回滚回来），再整体替换。
+  function rollbackConfigTo(at) {
+    const list = getConfigHistory();
+    const hit = list.filter(h => h && h.at === at)[0];
+    if (!hit) return { ok: false, msg: '该历史记录已不存在' };
+    let parsed = null;
+    try { parsed = JSON.parse(hit.data); } catch (e) { return { ok: false, msg: '历史快照已损坏' }; }
+    if (!parsed || typeof parsed !== 'object' || !parsed.baidu) return { ok: false, msg: '历史快照格式不正确' };
+    // 先把「当前已落盘版本」压入历史，保证回滚可逆（用户可再滚回来）
+    try { if (_configPersistedSnapshot) _pushConfigHistory(_configPersistedSnapshot, '回滚前自动备份'); } catch (e) {}
+    const restored = deepMerge(DEFAULT_CONFIG, parsed);
+    _configCache = restored;
+    _flushConfigNow();
+    try { scheduleCloudSyncUp(); } catch (e) {}
+    return { ok: true, msg: '已回滚到 ' + new Date(at).toLocaleString() + ' 的配置' };
+  }
+
   let _writeTimer = null;
   function _flushConfigNow() {
     if (_writeTimer) { clearTimeout(_writeTimer); _writeTimer = null; }
-    try { GM_setValue('allconfig', _configCache); } catch (e) {}
+    try {
+      const serialized = JSON.stringify(_configCache);
+      // 落盘前把「上一版（上次落盘的值）」存入历史；首次落盘无上一版则跳过
+      if (_configPersistedSnapshot && _configPersistedSnapshot !== serialized) {
+        _pushConfigHistory(_configPersistedSnapshot, '');
+      }
+      GM_setValue('allconfig', _configCache);
+      _configPersistedSnapshot = serialized;
+    } catch (e) { console.error('[NetClean] 配置落盘失败（用户改动可能丢失）', e); }
   }
   function flushConfig() { _flushConfigNow(); }
   function writeConfig(cfg, skipSync) {
@@ -453,10 +551,8 @@
   //   * 历史命名：脚本早期只面向百度搜索结果页，所有配置都挂在 getConfig().baidu 子对象下；
   //   * 现状：经多年迭代，脚本已发展为「全站净化大师」通用方案，但 `cfg.baidu` 这个 key 已通过
   //     GM_setValue 持久化在用户硬盘里，**绝不能改名**（改了就丢用户全部配置）。
-  //   * 故采用「保留配置 key + 改内部命名」的双轨：业务代码统一调 getScriptCfg()，并保留
-  //     cfgBaidu 作为历史 alias（兼容旧调用点 + 防止遗漏场景崩溃）。
+  //   * 故采用「保留配置 key + 改内部命名」的双轨：配置 key 保持 `baidu` 不变，业务统一走 getScriptCfg()。
   function getScriptCfg() { return getConfig().baidu; }
-  const cfgBaidu = getScriptCfg; // 历史 alias（保留兼容，业务代码统一改用 getScriptCfg）
 
   /* ================================================================
    *  0.0c 界面语言（i18n）：简体中文（默认） / 繁體中文
@@ -476,9 +572,11 @@
    *  ================================================================ */
   const UI_LANGS = [['zh-CN', '简体中文'], ['zh-TW', '繁體中文'], ['en', 'English']];
   const I18N = {
-    'menu.panel':          { 'zh-CN': '【⚙ 控制面板】', 'en': '【⚙ Control Panel】' },
-    'menu.rescue':         { 'zh-CN': '【🧹 状态 / 恢复】', 'en': '【🧹 Status / Restore】' },
-    'menu.darkOwner':      { 'zh-CN': '【🌙 暗黑：本站「交给网站 / 脚本接管」切换】', 'en': '【🌙 Dark: toggle site-handled / script-handled】' },
+    'menu.panel':          { 'zh-CN': '⚙ 控制面板', 'en': '⚙ Control Panel' },
+    'menu.rescue':         { 'zh-CN': '🧹 状态 / 恢复', 'en': '🧹 Status / Restore' },
+    'menu.darkOwner':      { 'zh-CN': '🌙 暗黑模式：本站交给网站 / 脚本接管', 'en': '🌙 Dark mode: site-handled / script-handled' },
+    'menu.pauseToggle':    { 'zh-CN': '⏸ 暂停 / 恢复全网净化', 'en': '⏸ Pause / resume blocking' },
+    'menu.pauseSite':      { 'zh-CN': '🚫 暂停 / 恢复本站', 'en': '🚫 Pause / resume this site' },
     'panel.title':         { 'zh-CN': '⚙ 控制面板', 'en': '⚙ Control Panel' },
     'panel.search':        { 'zh-CN': '搜索设置', 'en': 'Search settings' },
     'panel.searchPh':      { 'zh-CN': '搜索设置项…', 'en': 'Search settings…' },
@@ -493,7 +591,7 @@
     'toast.needReload':    { 'zh-CN': '，刷新后生效', 'en': '. Reload to apply.' },
     'toast.opening':       { 'zh-CN': '正在打开云备份管理…', 'en': 'Opening cloud backup manager…' },
     'toast.openFailed':    { 'zh-CN': '打开失败：', 'en': 'Failed to open: ' },
-    'toast.notAccepted':   { 'zh-CN': '你未接受使用条款，脚本本次未启用；刷新页面可重新查看并同意', 'en': 'Terms not accepted — script disabled this session. Reload to review and accept.' },
+    'toast.notAccepted':   { 'zh-CN': '脚本本次未启用；刷新页面可重新查看并同意使用条款', 'en': 'Script disabled this session — reload to review and accept the terms.' },
     'toast.updated':       { 'zh-CN': '✨ 全网净化大师已更新至 v{ver}（控制面板 → 关于 查看新功能）', 'en': '✨ NetClean updated to v{ver} (Control Panel → About for what\'s new)' },
     'toast.langSwitched':  { 'zh-CN': '界面语言已切换，油猴菜单项需刷新页面后生效', 'en': 'UI language switched. Tampermonkey menu items need a page reload.' }
 ,
@@ -584,6 +682,7 @@
     'item.t.darkMode': { 'zh-CN': '暗黑模式', 'en': 'Dark mode' },
     'item.t.cleanCopy': { 'zh-CN': '干净复制', 'en': 'Clean copy' },
     'item.t.adStats': { 'zh-CN': '广告拦截统计', 'en': 'Ad-block stats' },
+    'item.t.adBadge': { 'zh-CN': '右下角拦截计数角标', 'en': 'Corner block-count badge' },
     'item.t.scriptBlacklistEnabled': { 'zh-CN': '启用脚本站点黑名单', 'en': 'Enable site blacklist' },
     'item.t.shortcutPanel': { 'zh-CN': '打开控制面板', 'en': 'Open control panel' },
     'item.t.shortcutPause': { 'zh-CN': '暂停/恢复净化', 'en': 'Pause/resume blocking' },
@@ -648,6 +747,7 @@
     'item.d.captchaApiPrecise': { 'zh-CN': '「精准」引擎（含滑块）调用的服务地址。留空 = 精准引擎直接跳过。填写后验证码图片、识别码与当前网页网址会发送给该服务器；常用 like996 公益接口（官网 https://www.like996.icu:1205/，第三方服务，与本脚本无关），点击右侧「接口说明」可直达注册页。', 'en': 'API URL for the Precise engine (slide captcha). Leave blank to skip. Captcha images, your ID and current page URL are sent to this server. Common choice: like996 free public API (https://www.like996.icu:1205/, third-party service — not affiliated with this script). Click "API guide" for the signup page.' },
     'item.d.captchaPreciseId': { 'zh-CN': '仅「精准 / 自动」模式需要，由你所填写的精准接口服务方提供（原 like996 为 32 位）。留空则精准模式跳过识别。', 'en': 'Only needed for Precise / Auto mode. Provided by the API service you filled above (e.g. 32-char ID from like996). Leave blank to skip precise mode.' },
     'item.d.captchaYunmaToken': { 'zh-CN': '仅「算术验证码」需要（如「3+5=?」图片）。在 jfbym.com 获取 Token（商业服务，按识别次数计费，需充值积分，官网 https://www.jfbym.com，第三方服务，与本脚本无关）；留空则算术图跳过识别。点击右侧「接口说明」可直达注册页。', 'en': 'Only needed for arithmetic captchas (e.g. "3+5=?"). Get a token at jfbym.com (paid service, billed per solve — https://www.jfbym.com, third-party, not affiliated with this script). Leave blank to skip arithmetic. Click "API guide" for signup.' },
+    'item.d.captchaYunmaDev': { 'zh-CN': '在 jfbym.com 后台获取的开发者标识（developer_tag），用于把识别调用归属到你的账号。可选，留空则请求不带该标识（由云码平台自行归属），不影响识别功能。', 'en': 'Developer tag (developer_tag) from your jfbym.com console, used to attribute recognition calls to your account. Optional — leave blank and requests omit it (jfbym will attribute it itself); recognition still works.' },
     'item.d.captchaAutoFind': { 'zh-CN': '无手动规则时，按属性关键词（code/captcha/yzm…）自动定位验证码与输入框并填充。', 'en': 'When no manual rules, auto-locate captcha and input by attribute keywords (code/captcha/yzm…).' },
     'item.d.captchaShowHint': { 'zh-CN': '顶部灰条显示识别状态（识别中 / 完成 / 错误）。', 'en': 'Top banner shows solving state (solving / done / error).' },
     'item.d.captchaSlide': { 'zh-CN': '启用滑动拼图 / 滑块行为验证码的自动识别与拖拽。需「精准引擎 + 识别码」。', 'en': 'Auto-solve and drag slide / puzzle captchas. Requires Precise engine + ID.' },
@@ -660,6 +760,7 @@
     'item.d.darkMode': { 'zh-CN': '跟随系统自动切换暗黑模式', 'en': 'Auto-switch dark mode based on system preference' },
     'item.d.cleanCopy': { 'zh-CN': '复制链接时自动去除追踪参数', 'en': 'Strip tracking parameters when copying links' },
     'item.d.adStats': { 'zh-CN': '统计并显示本次/累计/当前站点拦截数量。关闭后不再扫描 DOM，可略微降低开销，设置面板仍显示「统计已关闭」', 'en': 'Show per-session / total / per-site block counts. When off, DOM scan stops for stats — minor perf gain. Panel still shows "stats off".' },
+    'item.d.adBadge': { 'zh-CN': '在页面右下角常驻一个小盾牌，显示本次已拦截的广告数量，点击可查看明细（本次/累计/当前站点）。默认关闭，避免遮挡页面内容。', 'en': 'Show a small persistent shield at the bottom-right with the session block count; click for details (session / total / this site). Off by default to avoid covering page content.' },
     'item.d.scriptBlacklistEnabled': { 'zh-CN': '开启后，本表内的站点脚本整体暂停（不注入任何净化/美化/划词/验证码）。改动需刷新页面生效。', 'en': 'When enabled, the script is fully paused on listed sites (no ad/beautify/selection-search/captcha). Reload after changes.' },
     'item.d.shortcutPanel': { 'zh-CN': 'Ctrl+Shift+A 一键打开设置面板', 'en': 'Ctrl+Shift+A opens the control panel' },
     'item.d.shortcutPause': { 'zh-CN': 'Ctrl+Shift+P 全局暂停或恢复广告净化', 'en': 'Ctrl+Shift+P globally pauses or resumes ad blocking' },
@@ -978,6 +1079,70 @@
       } catch(e) { /* 忽略单级失败，最终 PUT 会暴露真实错误 */ }
     }
   }
+  /* ================================================================
+   *  云同步失败可见化 + 失败状态持久化
+   *
+   *  背景：自动同步（配置变更后防抖上传 / 启动时自动下载）此前完全静默——
+   *  令牌过期后长期失败用户毫不知情，误以为配置已备份，换设备才发现云端是旧版。
+   *
+   *  设计约束：
+   *   1. 节流：同类失败 5 分钟内只弹一次 toast，避免配置频繁变更（每次 writeConfig
+   *      都会触发 scheduleCloudSyncUp）时连环弹窗淹没用户；
+   *   2. 计数：连续失败次数仅存内存（不必持久化），成功一次即清零；
+   *   3. 持久化：失败详情写入 cfg.cloudSync.lastSyncError / lastSyncOk，
+   *      供设置面板「上次同步」状态区展示。
+   * ================================================================ */
+  const _CLOUD_FAIL_NOTIFY_INTERVAL = 5 * 60 * 1000; // 同类失败提示节流窗口：5 分钟
+  let _cloudAutoFailCount = 0;       // 自动同步连续失败次数（内存态）
+  let _cloudLastFailNotifyAt = 0;    // 上次失败 toast 的时间戳（节流用）
+  let _cloudLastFailHandledAt = 0;   // 上次已记账（写盘+计数）的失败时间戳，去重同一失败
+  // 自动同步失败统一处理：计数 + 写盘 + 节流提示。manual=true 表示用户手动点击（不节流、不计数）
+  function _handleCloudSyncFailure(stage, msg, manual) {
+    const text = String(msg == null ? '' : msg).slice(0, 80);
+    if (!manual) {
+      // 启动自动下载失败后会紧接着触发上传，两次失败同属一轮：1.2 秒内只记一次账
+      const now = Date.now();
+      if (now - _cloudLastFailHandledAt > 1200) {
+        _cloudLastFailHandledAt = now;
+        _cloudAutoFailCount++;
+        try {
+          const cfg = getConfig();
+          if (!cfg.cloudSync) cfg.cloudSync = {};
+          cfg.cloudSync.lastSyncError = text;
+          cfg.cloudSync.lastSyncOk = false;
+          writeConfig(cfg, true); // skipSync：避免写盘又触发 scheduleCloudSyncUp 递归
+        } catch (e) {}
+      }
+    }
+    try {
+      const tag = manual ? '' : '（自动同步）';
+      const tries = _cloudAutoFailCount > 1 ? '，已连续失败 ' + _cloudAutoFailCount + ' 次' : '';
+      console.warn('[NetClean] 云同步' + (stage === 'down' ? '下载' : '上传') + '失败' + tag + '：' + text);
+      // 自动路径节流；手动路径不节流（用户显式操作，必须立即给反馈）
+      const now2 = Date.now();
+      if (manual || now2 - _cloudLastFailNotifyAt > _CLOUD_FAIL_NOTIFY_INTERVAL) {
+        _cloudLastFailNotifyAt = now2;
+        if (typeof zkToast === 'function') zkToast('云同步失败：' + text + tries, { type: 'warn', dur: 5000 });
+      }
+    } catch (e) {}
+  }
+  // 自动同步成功：清零失败计数并清除持久化的错误状态
+  function _clearCloudSyncFailure() {
+    _cloudAutoFailCount = 0;
+    try {
+      const cfg = getConfig();
+      if (cfg.cloudSync && (cfg.cloudSync.lastSyncError || cfg.cloudSync.lastSyncOk === false)) {
+        cfg.cloudSync.lastSyncError = '';
+        cfg.cloudSync.lastSyncOk = true;
+        writeConfig(cfg, true); // skipSync：避免上传成功后回写又触发一次上传
+      }
+    } catch (e) {}
+  }
+  // 下载失败统一出口：记账 + 节流提示，再原样返回 { ok:false, msg } 供调用方使用
+  function _cloudSyncDownFail(force, msg) {
+    _handleCloudSyncFailure('down', msg, force === true);
+    return { ok: false, msg: msg };
+  }
   async function cloudSyncUp(force) {
     const cfg = getConfig();
     const cs = cfg.cloudSync || {};
@@ -986,9 +1151,9 @@
     if (cs.type === 'webdav') {
       if (!cs.server || !cs.username) return { ok: false, msg: '服务器/用户名未填写' };
     } else if (cs.type === 'gist') {
-      if (!cs.gistToken) return { ok: false, msg: 'GitHub Token 未填写' };
+      if (!cs.gistToken) return { ok: false, msg: 'GitHub 访问令牌未填写' };
     } else {
-      if (!cs.oauthToken) return { ok: false, msg: 'Access Token 未填写' };
+      if (!cs.oauthToken) return { ok: false, msg: '访问令牌未填写' };
     }
     try {
       const exportCfg = JSON.parse(JSON.stringify(cfg));
@@ -1002,11 +1167,16 @@
         if (!cfgNow.cloudSync) cfgNow.cloudSync = {};
         cfgNow.cloudSync.lastSync = Date.now();
         try { writeConfig(cfgNow, true); } catch(e) {}
+        _clearCloudSyncFailure();
+      } else {
+        _handleCloudSyncFailure('up', r.msg, force === true);
       }
       return r.ok ? { ok: true, msg: '已上传到云端' } : r;
     } catch(e) {
       const t = e.resp ? webdavErrText(e.resp) : '';
-      return { ok: false, msg: e.message + (t ? '：' + t : '') };
+      const m = e.message + (t ? '：' + t : '');
+      _handleCloudSyncFailure('up', m, force === true);
+      return { ok: false, msg: m };
     }
   }
   async function cloudSyncDown(force) {
@@ -1017,9 +1187,9 @@
     if (cs.type === 'webdav') {
       if (!cs.server || !cs.username) return { ok: false, msg: '服务器/用户名未填写' };
     } else if (cs.type === 'gist') {
-      if (!cs.gistToken) return { ok: false, msg: 'GitHub Token 未填写' };
+      if (!cs.gistToken) return { ok: false, msg: 'GitHub 访问令牌未填写' };
     } else {
-      if (!cs.oauthToken) return { ok: false, msg: 'Access Token 未填写' };
+      if (!cs.oauthToken) return { ok: false, msg: '访问令牌未填写' };
     }
     try {
       // 先列出，找到主配置文件名对应项
@@ -1027,39 +1197,57 @@
       let content = '';
       if (cs.type === 'webdav') {
         const r = await webdavRequest({ method: 'GET' });
-        if (r.status === 404) return { ok: false, msg: '云端暂无配置文件（先用「上传到云端」创建）' };
-        if (r.status === 401) return { ok: false, msg: 'HTTP 401：账号或密码错误（坚果云需用「应用密码」而非登录密码）' };
-        if (r.status < 200 || r.status >= 300) return { ok: false, msg: '下载失败 HTTP ' + r.status };
+        if (r.status === 404) return _cloudSyncDownFail(force, '云端暂无配置文件（先用「上传到云端」创建）');
+        if (r.status === 401) return _cloudSyncDownFail(force, 'HTTP 401：账号或密码错误（坚果云需用「应用密码」而非登录密码）');
+        if (r.status < 200 || r.status >= 300) return _cloudSyncDownFail(force, '下载失败 HTTP ' + r.status);
         content = String(r.responseText == null ? (r.response == null ? '' : r.response) : r.responseText);
       } else {
         const listRes = await p.list(cfg);
-        if (!listRes.ok) return listRes;
+        if (!listRes.ok) return _cloudSyncDownFail(force, listRes.msg);
         const item = listRes.files.find(f => f.name === mainName);
-        if (!item) return { ok: false, msg: '云端未找到主配置文件 ' + mainName };
+        if (!item) return _cloudSyncDownFail(force, '云端未找到主配置文件 ' + mainName);
         const r = await p.importItem(cfg, item);
-        if (!r.ok) return r;
+        if (!r.ok) return _cloudSyncDownFail(force, r.msg);
         content = r.content;
       }
       if (content.slice(0, 4) === 'enc:') {
-        if (!cs.password) return { ok: false, msg: '云端配置是加密格式，但本机未填写同步密码。请先在上方「密码 / 应用密码」填入与上传时相同的密码，再点「从云端下载」' };
+        if (!cs.password) return _cloudSyncDownFail(force, '云端配置是加密格式，但本机未填写同步密码。请先在上方「密码 / 应用密码」填入与上传时相同的密码，再点「从云端下载」');
         content = xorDecrypt(content, cs.password);
       }
       let cloudCfg;
       try { cloudCfg = JSON.parse(content); }
-      catch(pe) { return { ok: false, msg: '云端配置解析失败：' + (cs.password ? '解密后不是合法 JSON，通常是同步密码与备份时不一致' : '云端内容不是合法 JSON') + '（' + pe.message + '）' }; }
-      if (!cloudCfg || typeof cloudCfg !== 'object') return { ok: false, msg: '云端配置格式异常' };
+      catch(pe) { return _cloudSyncDownFail(force, '云端配置解析失败：' + (cs.password ? '解密后不是合法 JSON，通常是同步密码与备份时不一致' : '云端内容不是合法 JSON') + '（' + pe.message + '）'); }
+      if (!cloudCfg || typeof cloudCfg !== 'object') return _cloudSyncDownFail(force, '云端配置格式异常');
       const localCfg = getConfig();
+      // ===== 自动下载的覆盖保护（仅自动路径；force=true 是用户手动点击，显式意图，无条件执行）=====
+      // 启动时自动下载若无条件覆盖本地，会把用户刚在本机改完的配置冲回云端旧版（换设备/多端场景高发）。
+      // 策略：自动路径下若本地 modifiedAt 不早于云端，则跳过本次覆盖，把胜负交给已有的「本地上传」路径。
+      if (!force) {
+        const localT = Number(localCfg.modifiedAt) || 0;
+        const cloudT = Number(cloudCfg.modifiedAt) || 0;
+        if (localT && cloudT && localT > cloudT + 1000) {
+          try { console.info('[NetClean] 自动同步：本地配置较新（本地 ' + new Date(localT).toLocaleString() + ' > 云端 ' + new Date(cloudT).toLocaleString() + '），跳过自动下载以免覆盖本地改动。'); } catch(e) {}
+          return { ok: true, msg: '本地配置较新，已跳过自动下载' };
+        }
+      }
       const localSync = JSON.parse(JSON.stringify(localCfg.cloudSync || {}));
       const downed = Object.assign({}, cloudCfg, { cloudSync: Object.assign({}, localSync, cloudCfg.cloudSync || {}, { password: localSync.password }) });
       const merged = deepMerge(DEFAULT_CONFIG, downed);
       if (!cloudCfg.ui && localCfg.ui) merged.ui = JSON.parse(JSON.stringify(localCfg.ui));
       merged.cloudSync.lastSync = Date.now();
-      merged.modifiedAt = cloudCfg.modifiedAt || Date.now();
+      // modifiedAt 取两者较大值：若直接沿用云端时间戳，本地时钟快于云端（或云端配置由旧设备上传）
+      // 时，下一次比较会得出「本地更旧」的错误结论，导致刚下载的配置又被云端旧版覆盖（反复横跳）。
+      const _localT2 = Number(localCfg.modifiedAt) || 0;
+      const _cloudT2 = Number(cloudCfg.modifiedAt) || 0;
+      merged.modifiedAt = Math.max(_localT2, _cloudT2, Date.now());
+      merged.cloudSync.lastSyncOk = true;
+      merged.cloudSync.lastSyncError = '';
       writeConfig(merged, true);
+      _clearCloudSyncFailure();
       return { ok: true, msg: '已从云端下载并合并到本地配置' };
     } catch(e) {
       const t = e.resp ? webdavErrText(e.resp) : '';
-      return { ok: false, msg: e.message + (t ? '：' + t : '') };
+      return _cloudSyncDownFail(force, e.message + (t ? '：' + t : ''));
     }
   }
   // 测试连接：依次 PROPFIND 根、尝试写入临时文件再删除，验证账号/密码/可写
@@ -1227,38 +1415,50 @@
         +   '<button class="zk-bk-mgr-btn zk-bk-create">➕ 立即备份当前配置</button>'
         + '</div></div>';
       // 为每个 item 绑定数据对象（避免靠 data-id 反查）
+      // 统一包装：禁用 + 文案切换 + 异常兜底。reload() 会重建列表 DOM，
+      //   原按钮可能已脱离文档，故恢复语句整体 try 包住（失败无害）。
+      function wrapBtn(btn, busyText, restoreText, fn) {
+        if (!btn) return;
+        btn.onclick = async () => {
+          if (btn.disabled) return;
+          btn.disabled = true;
+          btn.textContent = busyText;
+          try { await fn(); }
+          catch (e) {
+            try { await zkAlert('操作失败：' + ((e && e.message) || e), { title: '操作失败', danger: true }); } catch (x) {}
+            try { console.error('[NetClean] 云备份管理按钮异常:', e && e.stack || e); } catch (x) {}
+          }
+          finally {
+            try { btn.disabled = false; btn.textContent = restoreText; } catch (e) {}
+          }
+        };
+      }
       body.querySelectorAll('.zk-bk-mgr-item').forEach((itemEl, idx) => {
         const item = files[idx];
         const name = item.name;
-        itemEl.querySelector('.zk-bk-import').onclick = async () => {
-          if (!(await zkConfirm('从云备份「' + name + '」导入将覆盖当前本地配置，确定继续？', { title: '导入云备份', okText: '确定导入', danger: false }))) return;
-          const btn = itemEl.querySelector('.zk-bk-import'); btn.textContent = '导入中…';
+        wrapBtn(itemEl.querySelector('.zk-bk-import'), '导入中…', '导入', async () => {
+          if (!(await zkConfirm('从云备份「' + name + '」导入将覆盖当前本地配置，确定继续？', { title: t('sec.导入云备份'), okText: '确定导入', danger: false }))) return;
           const r = await cloudBackupImport(item);
-          if (r.ok) { btn.textContent = '导入'; await zkAlert(r.msg, { title: '导入成功' }); } else { btn.textContent = '导入'; await zkAlert(r.msg, { title: '导入失败', danger: true }); }
+          if (r.ok) { await zkAlert(r.msg, { title: '导入成功' }); } else { await zkAlert(r.msg, { title: '导入失败', danger: true }); }
           if (r.ok) reload();
-        };
-        itemEl.querySelector('.zk-bk-dl').onclick = async () => {
-          const btn = itemEl.querySelector('.zk-bk-dl'); btn.textContent = '下载中…';
+        });
+        wrapBtn(itemEl.querySelector('.zk-bk-dl'), '下载中…', '下载', async () => {
           const r = await cloudBackupDownload(item, name);
-          btn.textContent = '下载';
-          if (!r.ok) await zkAlert(r.msg, { title: '下载失败', danger: true });
-        };
-        itemEl.querySelector('.zk-bk-del').onclick = async () => {
-          if (!(await zkConfirm('确定从云端删除「' + name + '」？此操作不可撤销。', { title: '删除云备份', okText: '确定删除', danger: true }))) return;
-          const btn = itemEl.querySelector('.zk-bk-del'); btn.textContent = '删除中…';
+          if (!r.ok) await zkAlert(r.msg, { title: t('sec.下载失败'), danger: true });
+        });
+        wrapBtn(itemEl.querySelector('.zk-bk-del'), '删除中…', '删除', async () => {
+          if (!(await zkConfirm('确定从云端删除「' + name + '」？此操作不可撤销。', { title: t('sec.删除云备份'), okText: '确定删除', danger: true }))) return;
           const r = await cloudBackupDelete(item);
           await zkAlert(r.msg, { title: r.ok ? '删除成功' : '删除失败', danger: !r.ok });
           reload();
-        };
+        });
       });
-      body.querySelector('.zk-bk-mgr-refresh').onclick = reload;
-      body.querySelector('.zk-bk-create').onclick = async () => {
-        const btn = body.querySelector('.zk-bk-create'); btn.textContent = '备份中…';
+      wrapBtn(body.querySelector('.zk-bk-mgr-refresh'), '刷新中…', '🔄 刷新列表', () => reload());
+      wrapBtn(body.querySelector('.zk-bk-create'), '备份中…', '➕ 立即备份当前配置', async () => {
         const r = await cloudBackupCreate();
-        btn.textContent = '➕ 立即备份当前配置';
         await zkAlert(r.msg, { title: r.ok ? '备份成功' : '备份失败', danger: !r.ok });
         if (r.ok) reload();
-      };
+      });
     }
     reload().catch(e => { console.error('[openCloudBackupManager] reload rejected:', e && e.stack || e); setStatus('加载失败：' + (e && e.message || e), 'err'); });
   }
@@ -1272,7 +1472,7 @@
     let done = false;
     setTimeout(() => {
       if (!done && !document.getElementById('zk-bk-mgr')) {
-        zkAlert('云备份管理弹窗未能挂载。\n\n可能原因：\n1) 当前页面 body 被框架拦截，无法插入弹层\n2) 浏览器/扩展拦截了 document.body.appendChild\n3) 脚本被 CSP 限制\n\n请打开浏览器开发者工具 → Console 查看详细错误。', { title: '打开失败' });
+        zkAlert('云备份管理窗口没能打开。\n\n可能是当前页面的安全策略限制，或浏览器插件拦截了弹窗。\n建议：刷新页面后重试，或换一个普通网页再试。', { title: t('sec.打开失败') });
         console.error('[openCloudBackupManager] timeout: modal not mounted after 1.5s');
       }
     }, 1500);
@@ -1283,7 +1483,7 @@
       } catch (e) {
         done = true;
         console.error('[openCloudBackupManager] error:', e && e.stack || e);
-        zkAlert('打开云备份管理失败：' + (e && e.message || e) + '\n\n请检查浏览器 Console 获取详细信息。', { title: '打开失败' });
+        zkAlert('打开云备份管理失败。\n\n请刷新页面后重试；若仍失败，可在油猴菜单里反馈该问题。', { title: t('sec.打开失败') });
         try { zkToast(t('toast.openFailed') + (e && e.message || e), { type: 'err', dur: 4000 }); } catch (e2) {}
       }
     })();
@@ -1394,9 +1594,9 @@
       }
     },
     gist: {
-      label: 'GitHub Gist（Personal Access Token）',
+      label: 'GitHub Gist（GitHub 访问令牌）',
       fields: [
-        { key: 'gistToken', label: 'GitHub Token', type: 'password', placeholder: 'ghp_xxxxxxxxxxxxxxxxxxxx', help: '在 GitHub Settings → Developer settings → Personal access tokens 生成，只需 gists 权限' },
+        { key: 'gistToken', label: 'GitHub 访问令牌', type: 'password', placeholder: 'ghp_xxxxxxxxxxxxxxxxxxxx', help: '在 GitHub Settings → Developer settings → Personal access tokens 生成，只需 gists 权限' },
         { key: 'gistDescription', label: 'Gist 描述', type: 'text', placeholder: 'NetClean config backup', help: '新建 Gist 时使用的描述，方便在 GitHub 上识别' }
       ],
       async _request(token, opts) {
@@ -1420,10 +1620,10 @@
       },
       async test(cfg) {
         const cs = cfg.cloudSync || {};
-        if (!cs.gistToken) return { ok: false, msg: '请填写 GitHub Personal Access Token' };
+        if (!cs.gistToken) return { ok: false, msg: '请填写 GitHub 访问令牌' };
         try {
           const r = await this._request(cs.gistToken, { url: 'https://api.github.com/user', method: 'GET' });
-          if (r.status === 401) return { ok: false, msg: 'Token 无效或已过期' };
+          if (r.status === 401) return { ok: false, msg: '令牌无效或已过期' };
           if (r.status < 200 || r.status >= 300) return { ok: false, msg: '连接失败 HTTP ' + r.status };
           const u = JSON.parse(r.responseText || '{}');
           return { ok: true, msg: 'GitHub 连接正常（' + (u.login || 'unknown') + '）' };
@@ -1431,7 +1631,7 @@
       },
       async list(cfg) {
         const cs = cfg.cloudSync || {};
-        if (!cs.gistToken) return { ok: false, msg: '请填写 GitHub Personal Access Token' };
+        if (!cs.gistToken) return { ok: false, msg: '请填写 GitHub 访问令牌' };
         try {
           const r = await this._request(cs.gistToken, { url: 'https://api.github.com/gists?per_page=100', method: 'GET' });
           if (r.status < 200 || r.status >= 300) return { ok: false, msg: '列出 Gist 失败 HTTP ' + r.status };
@@ -1449,7 +1649,7 @@
       },
       async create(cfg, body, filename) {
         const cs = cfg.cloudSync || {};
-        if (!cs.gistToken) return { ok: false, msg: '请填写 GitHub Personal Access Token' };
+        if (!cs.gistToken) return { ok: false, msg: '请填写 GitHub 访问令牌' };
         try {
           const payload = JSON.stringify({ description: cs.gistDescription || 'NetClean config backup', public: false, files: { [filename]: { content: body } } });
           const r = await this._request(cs.gistToken, { url: 'https://api.github.com/gists', method: 'POST', data: payload });
@@ -1490,9 +1690,9 @@
       }
     },
     dropbox: {
-      label: 'Dropbox（Access Token）',
+      label: 'Dropbox（访问令牌）',
       fields: [
-        { key: 'oauthToken', label: 'Dropbox Access Token', type: 'password', placeholder: 'sl.xxxxxxxxxxxxxxxxxxxxxxxx', help: '在 https://www.dropbox.com/developers/apps 创建 App 并生成 access token，或从 OAuth 回调 URL 中复制 access_token=' },
+        { key: 'oauthToken', label: 'Dropbox 访问令牌', type: 'password', placeholder: 'sl.xxxxxxxxxxxxxxxxxxxxxxxx', help: '在 https://www.dropbox.com/developers/apps 创建 App 并生成访问令牌，或从授权回调网址中复制 access_token=' },
         { key: 'oauthFolder', label: '远程文件夹', type: 'text', placeholder: '/netclean-backups', help: '备份文件存放路径，不存在会自动创建' }
       ],
       async _request(token, opts) {
@@ -1520,17 +1720,17 @@
       _path(cfg, filename) { return this._folder(cfg) + '/' + filename; },
       async test(cfg) {
         const cs = cfg.cloudSync || {};
-        if (!cs.oauthToken) return { ok: false, msg: '请填写 Dropbox Access Token' };
+        if (!cs.oauthToken) return { ok: false, msg: '请填写 Dropbox 访问令牌' };
         try {
           const r = await this._request(cs.oauthToken, { url: 'https://api.dropboxapi.com/2/users/get_current_account', method: 'POST', json: true, data: 'null' });
-          if (r.status === 401) return { ok: false, msg: 'Access Token 无效或已过期' };
+          if (r.status === 401) return { ok: false, msg: '访问令牌无效或已过期' };
           if (r.status < 200 || r.status >= 300) return { ok: false, msg: '连接失败 HTTP ' + r.status };
           return { ok: true, msg: 'Dropbox 连接正常' };
         } catch(e) { return { ok: false, msg: e.message }; }
       },
       async list(cfg) {
         const cs = cfg.cloudSync || {};
-        if (!cs.oauthToken) return { ok: false, msg: '请填写 Dropbox Access Token' };
+        if (!cs.oauthToken) return { ok: false, msg: '请填写 Dropbox 访问令牌' };
         const folder = this._folder(cfg);
         try {
           const r = await this._request(cs.oauthToken, { url: 'https://api.dropboxapi.com/2/files/list_folder', method: 'POST', json: true, data: JSON.stringify({ path: folder === '/' ? '' : folder }) });
@@ -1542,7 +1742,7 @@
       },
       async create(cfg, body, filename) {
         const cs = cfg.cloudSync || {};
-        if (!cs.oauthToken) return { ok: false, msg: '请填写 Dropbox Access Token' };
+        if (!cs.oauthToken) return { ok: false, msg: '请填写 Dropbox 访问令牌' };
         try {
           // 先尝试上传，若文件夹不存在会返回 409 path_not_found
           const r = await this._request(cs.oauthToken, {
@@ -1607,9 +1807,9 @@
       }
     },
     onedrive: {
-      label: 'OneDrive（Access Token）',
+      label: 'OneDrive（访问令牌）',
       fields: [
-        { key: 'oauthToken', label: 'OneDrive Access Token', type: 'password', placeholder: 'Ewxxxxxxxxxxxxxxxxxxxx', help: '在 https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps 注册应用并获取 token，或从 OAuth 回调 URL 复制 access_token=' },
+        { key: 'oauthToken', label: 'OneDrive 访问令牌', type: 'password', placeholder: 'Ewxxxxxxxxxxxxxxxxxxxx', help: '在 https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps 注册应用并获取令牌，或从授权回调网址复制 access_token=' },
         { key: 'oauthFolder', label: '远程文件夹', type: 'text', placeholder: '/netclean-backups', help: '位于 OneDrive 根目录下的文件夹路径' }
       ],
       _base: 'https://graph.microsoft.com/v1.0/me/drive/root:',
@@ -1639,17 +1839,17 @@
       },
       async test(cfg) {
         const cs = cfg.cloudSync || {};
-        if (!cs.oauthToken) return { ok: false, msg: '请填写 OneDrive Access Token' };
+        if (!cs.oauthToken) return { ok: false, msg: '请填写 OneDrive 访问令牌' };
         try {
           const r = await this._request(cs.oauthToken, { url: 'https://graph.microsoft.com/v1.0/me', method: 'GET' });
-          if (r.status === 401) return { ok: false, msg: 'Access Token 无效或已过期' };
+          if (r.status === 401) return { ok: false, msg: '访问令牌无效或已过期' };
           if (r.status < 200 || r.status >= 300) return { ok: false, msg: '连接失败 HTTP ' + r.status };
           return { ok: true, msg: 'OneDrive 连接正常' };
         } catch(e) { return { ok: false, msg: e.message }; }
       },
       async list(cfg) {
         const cs = cfg.cloudSync || {};
-        if (!cs.oauthToken) return { ok: false, msg: '请填写 OneDrive Access Token' };
+        if (!cs.oauthToken) return { ok: false, msg: '请填写 OneDrive 访问令牌' };
         const folder = cs.oauthFolder || '/netclean-backups';
         try {
           const url = this._base + encodeURIComponent(folder).replace(/%2F/g, '/') + ':/children';
@@ -1662,7 +1862,7 @@
       },
       async create(cfg, body, filename) {
         const cs = cfg.cloudSync || {};
-        if (!cs.oauthToken) return { ok: false, msg: '请填写 OneDrive Access Token' };
+        if (!cs.oauthToken) return { ok: false, msg: '请填写 OneDrive 访问令牌' };
         try {
           const url = this._itemUrl(cfg, filename) + ':/content';
           const r = await this._request(cs.oauthToken, { url, method: 'PUT', headers: { 'Content-Type': 'application/json' }, data: body });
@@ -1701,9 +1901,9 @@
       }
     },
     gdrive: {
-      label: 'Google Drive（Access Token）',
+      label: 'Google Drive（访问令牌）',
       fields: [
-        { key: 'oauthToken', label: 'Google Drive Access Token', type: 'password', placeholder: 'ya29.xxxxxxxxxxxxxxxxxxxxxxxx', help: '通过 Google OAuth 获取，或从回调 URL 复制 access_token=' },
+        { key: 'oauthToken', label: 'Google Drive 访问令牌', type: 'password', placeholder: 'ya29.xxxxxxxxxxxxxxxxxxxxxxxx', help: '通过 Google 授权获取，或从授权回调网址复制 access_token=' },
         { key: 'oauthFolder', label: '远程文件夹', type: 'text', placeholder: '/netclean-backups', help: '位于 Google Drive 根目录下的文件夹名称' }
       ],
       async _request(token, opts) {
@@ -1740,17 +1940,17 @@
       },
       async test(cfg) {
         const cs = cfg.cloudSync || {};
-        if (!cs.oauthToken) return { ok: false, msg: '请填写 Google Drive Access Token' };
+        if (!cs.oauthToken) return { ok: false, msg: '请填写 Google Drive 访问令牌' };
         try {
           const r = await this._request(cs.oauthToken, { url: 'https://www.googleapis.com/drive/v3/about?fields=user', method: 'GET' });
-          if (r.status === 401) return { ok: false, msg: 'Access Token 无效或已过期' };
+          if (r.status === 401) return { ok: false, msg: '访问令牌无效或已过期' };
           if (r.status < 200 || r.status >= 300) return { ok: false, msg: '连接失败 HTTP ' + r.status };
           return { ok: true, msg: 'Google Drive 连接正常' };
         } catch(e) { return { ok: false, msg: e.message }; }
       },
       async list(cfg) {
         const cs = cfg.cloudSync || {};
-        if (!cs.oauthToken) return { ok: false, msg: '请填写 Google Drive Access Token' };
+        if (!cs.oauthToken) return { ok: false, msg: '请填写 Google Drive 访问令牌' };
         try {
           const folderId = await this._ensureFolder(cfg);
           const q = "'" + folderId + "' in parents and trashed=false";
@@ -1763,7 +1963,7 @@
       },
       async create(cfg, body, filename) {
         const cs = cfg.cloudSync || {};
-        if (!cs.oauthToken) return { ok: false, msg: '请填写 Google Drive Access Token' };
+        if (!cs.oauthToken) return { ok: false, msg: '请填写 Google Drive 访问令牌' };
         try {
           const folderId = await this._ensureFolder(cfg);
           const metadata = JSON.stringify({ name: filename, parents: [folderId] });
@@ -1810,9 +2010,9 @@
       }
     },
     yandex: {
-      label: 'Yandex.Disk（Access Token）',
+      label: 'Yandex.Disk（访问令牌）',
       fields: [
-        { key: 'oauthToken', label: 'Yandex OAuth Token', type: 'password', placeholder: 'y0_Agxxxxxxxxxxxxxxxxxxxxxx', help: '在 https://oauth.yandex.com/ 创建应用并获取 token，或从回调 URL 复制 access_token=' },
+        { key: 'oauthToken', label: 'Yandex 访问令牌', type: 'password', placeholder: 'y0_Agxxxxxxxxxxxxxxxxxxxxxx', help: '在 https://oauth.yandex.com/ 创建应用并获取令牌，或从授权回调网址复制 access_token=' },
         { key: 'oauthFolder', label: '远程文件夹', type: 'text', placeholder: '/netclean-backups', help: '位于 Yandex.Disk 根目录下的文件夹路径' }
       ],
       _base: 'https://cloud-api.yandex.net/v1/disk/resources',
@@ -1841,17 +2041,17 @@
       },
       async test(cfg) {
         const cs = cfg.cloudSync || {};
-        if (!cs.oauthToken) return { ok: false, msg: '请填写 Yandex OAuth Token' };
+        if (!cs.oauthToken) return { ok: false, msg: '请填写 Yandex 访问令牌' };
         try {
           const r = await this._request(cs.oauthToken, { url: this._base + '?path=disk%3A%2F', method: 'GET' });
-          if (r.status === 401) return { ok: false, msg: 'OAuth Token 无效或已过期' };
+          if (r.status === 401) return { ok: false, msg: '访问令牌无效或已过期' };
           if (r.status < 200 || r.status >= 300) return { ok: false, msg: '连接失败 HTTP ' + r.status };
           return { ok: true, msg: 'Yandex.Disk 连接正常' };
         } catch(e) { return { ok: false, msg: e.message }; }
       },
       async list(cfg) {
         const cs = cfg.cloudSync || {};
-        if (!cs.oauthToken) return { ok: false, msg: '请填写 Yandex OAuth Token' };
+        if (!cs.oauthToken) return { ok: false, msg: '请填写 Yandex 访问令牌' };
         const path = (cs.oauthFolder || '/netclean-backups').replace(/^\//, '');
         try {
           const r = await this._request(cs.oauthToken, { url: this._base + '?path=' + encodeURIComponent(path) + '&limit=100', method: 'GET' });
@@ -1864,7 +2064,7 @@
       },
       async create(cfg, body, filename) {
         const cs = cfg.cloudSync || {};
-        if (!cs.oauthToken) return { ok: false, msg: '请填写 Yandex OAuth Token' };
+        if (!cs.oauthToken) return { ok: false, msg: '请填写 Yandex 访问令牌' };
         try {
           const uploadReq = await this._request(cs.oauthToken, { url: this._base + '/upload?path=' + encodeURIComponent(this._path(cfg, filename).replace(/^\//, '')) + '&overwrite=true', method: 'GET' });
           const uploadData = JSON.parse(uploadReq.responseText || '{}');
@@ -1970,12 +2170,18 @@
     const cs = getConfig().cloudSync || {};
     if (!cs.enabled) return;
     clearTimeout(_cloudSyncTimer);
-    _cloudSyncTimer = setTimeout(() => cloudSyncUp(true), 3000);
+    // 失败处理（计数 / 持久化 / 节流提示）已在 cloudSyncUp 内部完成，此处 await + catch 兜底，
+    // 避免静默丢弃 Promise 造成 unhandledRejection。
+    _cloudSyncTimer = setTimeout(async () => {
+      try { await cloudSyncUp(true); } catch (e) { _handleCloudSyncFailure('up', (e && e.message) || e, false); }
+    }, 3000);
   }
-  // 启动时若开启自动同步，延迟拉取一次云端配置
-  setTimeout(() => {
+  // 启动时若开启自动同步，延迟拉取一次云端配置。
+  // 注意：force=false 为自动路径，cloudSyncDown 内部已对「本地较新」做覆盖保护，不会冲掉本机新改动。
+  setTimeout(async () => {
     const cs = getConfig().cloudSync || {};
-    if (cs.enabled) cloudSyncDown(false);
+    if (!cs.enabled) return;
+    try { await cloudSyncDown(false); } catch (e) { _handleCloudSyncFailure('down', (e && e.message) || e, false); }
   }, 8000);
   function cfgPingbiurl() { return getConfig().pingbiurl || []; }
   function cfgWhiteurl() { return getConfig().whiteurl || []; }
@@ -1998,7 +2204,7 @@
   })();
 
   /* ================================================================
-   *  0.8 启动早退「状态 / 恢复」入口（v12.0.0）
+   *  0.8 启动早退「状态 / 恢复」入口
    *  —— 必须注册在下面三道启动闸之前 ——
    *  背景：whiteurl / scriptBlacklist / perfWhitelist 三道闸都在设置面板
    *        定义之前直接 return，而「控制面板」菜单注册在阶段 6（最末）。
@@ -2189,12 +2395,108 @@
           ncOpenRescue();
         });
         (document.body || document.documentElement).appendChild(pill);
-      } catch (e) {}
+      } catch (e) { console.error('[NetClean] 暂停提示胶囊渲染失败', e); }
     });
   }
 
-  // 阶段 0：菜单先落地（早退时它是唯一的自救通道）
-  try { GM_registerMenuCommand(t('menu.rescue'), ncOpenRescue); } catch (e) {}
+  // 拦截计数常驻角标（默认关闭，配置项 adBadge）
+  //   * 右下角一枚小盾牌 + 本次会话拦截数，点击展开明细（本次 / 累计 / 当前站点）。
+  //   * 首次拦截时弹一次 toast 告知入口，帮助用户发现该功能；之后静默。
+  //   * 与「本站已暂停」胶囊（#nc-paused-badge）同为右下角：暂停站点根本不 bootCore，
+  //     两者不会同页共存，但仍做 id 互斥保护。
+  let _adBadgeEl = null, _adBadgeFirstToastDone = false, _adBadgeRafPending = false;
+  function ncUpdateAdBadge() {
+    try {
+      const cfg = getScriptCfg();
+      if (cfg.adBadge !== true) { if (_adBadgeEl) { _adBadgeEl.remove(); _adBadgeEl = null; } return; }
+      if (BLOCKING_PAUSED) return;
+      if (!_adBadgeEl || !document.body || !document.body.contains(_adBadgeEl)) {
+        if (document.getElementById('nc-paused-badge')) return;
+        _adBadgeEl = ncEl('div', 'position:fixed;right:14px;bottom:14px;z-index:2147483646;display:flex;align-items:center;gap:6px;' +
+          'background:rgba(22,119,255,.94);color:#fff;padding:7px 11px;border-radius:999px;' +
+          'font:600 12px/1.3 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;' +
+          'box-shadow:0 8px 24px rgba(22,119,255,.32);cursor:pointer;user-select:none;transition:transform .18s, box-shadow .18s');
+        _adBadgeEl.id = 'nc-ad-badge';
+        _adBadgeEl.title = 'NetClean：本次已拦截的广告数量，点击查看明细 / 管理';
+        _adBadgeEl.addEventListener('mouseenter', function () { _adBadgeEl.style.transform = 'translateY(-2px)'; });
+        _adBadgeEl.addEventListener('mouseleave', function () { _adBadgeEl.style.transform = ''; });
+        _adBadgeEl.addEventListener('click', function () { ncShowAdBadgeDetail(); });
+        (document.body || document.documentElement).appendChild(_adBadgeEl);
+      }
+      const n = STATS.skippedAds;
+      _adBadgeEl.innerHTML = '<span style="font-size:13px">\u{1F6E1}</span><span>' + (n > 9999 ? '9999+' : n) + '</span>';
+      // 首次出现拦截数字时做一次「发现性」提示（每个页面生命周期一次）
+      if (n > 0 && !_adBadgeFirstToastDone) {
+        _adBadgeFirstToastDone = true;
+        try { zkToast('已拦截 ' + n + ' 个广告 · 右下角可查看明细', { type: 'ok', dur: 3200 }); } catch (e) {}
+      }
+    } catch (e) {}
+  }
+  // 高频累加点调用：用 rAF 合并，避免连续累加触发多次 DOM 写入
+  function ncScheduleAdBadge() {
+    if (_adBadgeRafPending) return;
+    _adBadgeRafPending = true;
+    const run = function () { _adBadgeRafPending = false; ncUpdateAdBadge(); };
+    try { requestAnimationFrame(run); } catch (e) { run(); }
+  }
+  // 点击角标展开的明细面板
+  function ncShowAdBadgeDetail() {
+    try {
+      const old = document.getElementById('nc-ad-badge-detail'); if (old) old.remove();
+      const total = totalBlocked, site = siteBlocked[HOST] || 0, sess = STATS.skippedAds;
+      const d = ncEl('div', 'position:fixed;right:14px;bottom:60px;z-index:2147483647;min-width:210px;' +
+        'background:#fff;color:#1f2937;border-radius:12px;padding:14px 16px;' +
+        'box-shadow:0 16px 44px rgba(15,23,42,.22);font:400 12.5px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;');
+      d.id = 'nc-ad-badge-detail';
+      const row = (k, v) => '<div style="display:flex;justify-content:space-between;gap:18px"><span style="color:#64748b">' + k + '</span><b style="color:#0f172a">' + v + '</b></div>';
+      d.innerHTML = ''
+        + '<div style="font-size:13px;font-weight:700;margin-bottom:8px;color:#0f172a">\u{1F6E1} 广告拦截明细</div>'
+        + row('本次访问', sess)
+        + row('累计拦截', total)
+        + row('当前站点（' + (HOST || '—') + '）', site)
+        + '<div style="display:flex;gap:8px;margin-top:12px">'
+        +   '<button type="button" data-act="open" style="flex:1;padding:7px 10px;border:none;border-radius:8px;background:#1677ff;color:#fff;font-size:12px;font-weight:600;cursor:pointer">打开设置</button>'
+        +   '<button type="button" data-act="close" style="padding:7px 12px;border:1px solid #e2e8f0;border-radius:8px;background:#fff;color:#475569;font-size:12px;font-weight:600;cursor:pointer">关闭</button>'
+        + '</div>';
+      (document.body || document.documentElement).appendChild(d);
+      const dismiss = (e) => {
+        if (d.contains(e.target)) return;
+        d.remove(); document.removeEventListener('click', dismiss, true);
+      };
+      setTimeout(() => { document.addEventListener('click', dismiss, true); }, 0);
+      d.querySelector('[data-act="open"]').onclick = () => { d.remove(); try { openSettings(); } catch (e) {} };
+      d.querySelector('[data-act="close"]').onclick = () => { d.remove(); };
+    } catch (e) {}
+  }
+
+  // 面板内的暂停按钮态同步钩子：面板打开时被赋值为其内部 updatePauseUI，关闭后置空。
+  // 让模块级的 ncTogglePauseGlobal 能在快捷键/菜单触发时反向刷新已打开的面板按钮。
+  // ⚠ 必须声明在三道早退闸之前：早退页面（白名单/黑名单/仅白名单域名命中）虽会 return 跳过大部分初始化，
+  //   但用户仍可能在此类站点点油猴菜单打开设置面板 —— 若声明在闸后，let 处于永久 TDZ，
+  //   面板内 `_syncPauseUI = ...` 赋值会抛 ReferenceError，导致面板「关闭」按钮绑定被中断、关不掉面板。
+  let _syncPauseUI = null;
+
+  // 阶段 0：菜单先落地
+  // ── 注册顺序说明（Tampermonkey 菜单按注册时间自上而下排列，无法运行时重排）──
+  //   高频优先：① 控制面板（配置入口）② 暂停/恢复（最高频临时操作）③ 状态/恢复（急救，
+  //   早退时唯一出路）④ 暗黑归属（低频）。
+  //   之所以把「控制面板/暂停」也放在早退检查之前注册：菜单排序由注册时机决定，
+  //   若只在 bootCore 里注册就会排在「状态/恢复」之后（实测用户找不到常用的面板入口）。
+  //   早退场景下这两项依然可用：面板会显示「本站已暂停」状态并给出恢复引导，
+  //   暂停项在未运行时切换无副作用——不会造成误操作。
+  try { GM_registerMenuCommand(t('menu.panel'), () => openSettings()); } catch (e) { console.error('[NetClean] 阶段 0 面板菜单注册失败', e); }
+  try { GM_registerMenuCommand(t('menu.pauseToggle'), ncTogglePauseGlobal); } catch (e) { console.error('[NetClean] 阶段 0 暂停菜单注册失败', e); }
+  try { GM_registerMenuCommand(t('menu.pauseSite'), ncTogglePauseSite); } catch (e) { console.error('[NetClean] 阶段 0 本站暂停菜单注册失败', e); }
+  try { GM_registerMenuCommand(t('menu.rescue'), ncOpenRescue); } catch (e) { console.error('[NetClean] 阶段 0 急救菜单注册失败', e); }
+
+  // ⚠ 三道闸门统一走 `NC_EARLY_EXIT_HIT` 标记，**不能直接 return**：
+  //   本 IIFE 在闸门之后还有大量顶层 const/let（onDomReady / setInterval / HELP / groups 等，L2618~L6094）。
+  //   顶层 return 会跳过这些初始化，使其处于**永久 TDZ**；而 openSettings / maybeShowOnboarding 是
+  //   函数声明会被提升、依然可被油猴菜单调用 —— 一旦它们读取这些绑定就抛
+  //   `ReferenceError: Cannot access 'HELP' before initialization`，
+  //   表现为「早退站点（白名单/黑名单/仅白名单域名命中）点菜单打不开设置面板」。
+  //   故这里只置标记 + 提示，把真正的早退检查推迟到所有顶层声明执行完毕之后（见文件末尾 NC_EARLY_EXIT_HIT 分支）。
+  let NC_EARLY_EXIT_HIT = false;
 
   // 白名单检查（豁免名单：命中的站点脚本常驻暂停）
   function isWhitelisted() {
@@ -2204,11 +2506,11 @@
   if (isWhitelisted()) {
     ncMarkEarlyExit('whiteurl', 'whiteurl', '白名单域名');
     ncShowPausedBadge();
-    return;
+    NC_EARLY_EXIT_HIT = true;
   }
 
   // 脚本启用站点黑名单（敏感站点排除）：开启后，命中名单的站点脚本整体暂停。
-  // 默认关闭；名单预置敏感站点，由用户手动启用。与 isWhitelisted 同路径（启动早期直接 return）。
+  // 默认关闭；名单预置敏感站点，由用户手动启用。与 isWhitelisted 同路径（启动早期直接早退）。
   // 设计说明：命中即「完全不介入」而非「部分停用」。对银行 / 支付 / 政务这类站点，
   // 半启用（继续改 DOM、继续跑自动化）反而会带来不可预期的风险，故不做「仅停用自动化」的折中档。
   function isScriptBlacklisted() {
@@ -2220,27 +2522,106 @@
     dbg('[NetClean] 命中脚本启用站点黑名单：' + m + '（host=' + HOST + '），脚本在本页整体暂停');
     return true;
   }
-  if (isScriptBlacklisted()) {
+  if (!NC_EARLY_EXIT_HIT && isScriptBlacklisted()) {
     ncMarkEarlyExit('scriptBlacklist', 'scriptBlacklist', '脚本启用站点黑名单');
     ncShowPausedBadge();
-    return;
+    NC_EARLY_EXIT_HIT = true;
+  }
+
+  // 「本站暂停 / 恢复」：针对"当前这一个站点"快速开关（区别于全局暂停）。
+  // 场景：用户在某个银行/内网站点发现脚本干扰了页面，想临时放过这一站、但不想影响其他站点，
+  //   此前只能手动去设置面板的白名单列表里输入域名（要跳页面、要懂"白名单域名"这个概念）。
+  // 实现：直接在当前 HOST 与 whiteurl 名单间切换（该名单本就是"命中即整站暂停"的语义）。
+  // 注意：白名单是启动早期判定的（刷新后才生效），故切换后必须提示用户刷新页面。
+  // 匹配口径必须与 isWhitelisted() 保持一致（单向 HOST.includes(条目)）：
+  //   ⚠ 不可用双向 includes —— 否则在 baidu.com 页面遇到名单里的 www.baidu.com 时，
+  //   isWhitelisted 判定「本站未暂停」，而本函数却会误判「已暂停」并静默删掉那条条目。
+  function ncTogglePauseSite() {
+    try {
+      const wl = cfgWhiteurl();
+      // 只删「与当前 HOST 同口径」的条目；同时把用户手输的等值条目（如带 www / 带协议）也一并归一识别，
+      // 但绝不因条目是当前 HOST 的父/子串而误删。
+      const norm = (s) => String(s || '').trim().toLowerCase().replace(/^https?:\/\//, '').replace(/\/.*$/, '');
+      const hostNorm = norm(HOST);
+      const hitIdx = wl.findIndex(u => {
+        if (!u) return false;
+        const un = norm(u);
+        // 完全相等，或条目是当前主域（HOST 含条目，与启动判定一致）
+        return un === hostNorm || HOST.toLowerCase().includes(un);
+      });
+      const c = getConfig();
+      if (!c.whiteurl) c.whiteurl = [];
+      if (hitIdx >= 0) {
+        // 已在名单 → 移出，恢复本站脚本
+        const removed = c.whiteurl.splice(hitIdx, 1)[0];
+        setConfig(c);
+        notify('▶ 已恢复本站运行（' + removed + '）· 刷新页面后生效', 'ok');
+      } else {
+        // 未在名单 → 加入，本站暂停。写入归一化后的域名，避免 http:// 前缀导致判空不一致
+        c.whiteurl.push(hostNorm);
+        setConfig(c);
+        notify('⏸ 已将本站加入暂停名单（' + hostNorm + '）· 刷新页面后生效', 'warn');
+      }
+      flushConfig();
+    } catch (e) {
+      console.error('[NetClean] 本站暂停切换失败', e);
+      try { notify('操作失败：' + ((e && e.message) || e), 'err'); } catch (x) {}
+    }
   }
 
   // 性能优化：仅白名单域名启用（内部激活白名单）
-  // 开启后，当前域名既不在「启用域名」也不在「已知站点」时，脚本主 IIFE 直接退出，几乎零开销。
+  // 开启后，当前域名既不在「启用域名」也不在「已知站点」时，脚本主体不启动，几乎零开销。
   // 说明：油猴 @match 为静态元数据、运行时不可改，此项通过注入后早退实现「域名内」而非「全局」。
-  if (getScriptCfg().perfWhitelist) {
+  if (!NC_EARLY_EXIT_HIT && getScriptCfg().perfWhitelist) {
     const wl = getConfig().scopeWhitelist || [];
     const inWl = wl.some(u => u && HOST.indexOf(u) !== -1);
     if (!inWl && !inKnownDomain()) {
       ncMarkEarlyExit('perfWhitelist', 'scopeWhitelist', '仅白名单域名启用');
       ncShowPausedBadge();
-      return; // 非白名单/未知站点：直接退出整个脚本，不做任何处理
+      // 非白名单/未知站点：标记早退，文件末尾统一跳过 bootCore（不做任何 DOM/CSS/Observer 工作）
+      NC_EARLY_EXIT_HIT = true;
     }
   }
 
   // 全局暂停：白名单后不初始化任何功能
   function isPaused() { return BLOCKING_PAUSED; }
+
+  // 全局暂停开关（供快捷键、油猴菜单、设置面板共用）。
+  // ── 统一说明（BLOCKING_PAUSED 是内存态变量，刷新页面即恢复，不写盘）──
+  //   onlyToast=true  → 面板内点击：只弹轻提示，不弹顶部胶囊（面板自带按钮态，重复弹胶囊反而吵）
+  //   onlyToast=false → 快捷键/菜单触发：面板未打开，必须有可见反馈，弹顶部胶囊
+  // 无论哪条路径，暂停态都会挂一个持久角标 #zk-pause-indicator（不再 2.5s 后消失），
+  // 因为"我以为广告拦着呢、其实早被我自己暂停了"是用户最常踩的坑，必须一直可见。
+  function ncTogglePauseGlobal(onlyToast) {
+    BLOCKING_PAUSED = !BLOCKING_PAUSED;
+    try {
+      // 顶部状态胶囊：常驻显示当前是否暂停；恢复时 3s 后自动淡出（恢复是不需要提醒的状态）
+      const old = document.getElementById('zk-pause-indicator');
+      if (old) old.remove();
+      const div = document.createElement('div');
+      div.id = 'zk-pause-indicator';
+      div.style.cssText = 'position:fixed;top:10px;left:50%;transform:translateX(-50%);background:' + (BLOCKING_PAUSED ? '#ff5252' : '#009688') + ';color:#fff;padding:6px 20px;border-radius:20px;font-size:12px;z-index:' + NC_Z_TOP + ';font-family:sans-serif;box-shadow:0 2px 10px rgba(0,0,0,.18);' + (BLOCKING_PAUSED ? '' : 'pointer-events:none;');
+      div.textContent = BLOCKING_PAUSED
+        ? '⏸ 全网净化已暂停（点此恢复）'
+        : ('▶ 全网净化已恢复 · 已拦截 ' + STATS.skippedAds + ' 个广告');
+      // 暂停态可点击恢复（持久，不自动消失）；恢复态 3s 后淡出
+      if (BLOCKING_PAUSED) {
+        div.style.cursor = 'pointer';
+        div.title = '点击恢复全网净化';
+        div.addEventListener('click', function (ev) { ev.stopPropagation(); ncTogglePauseGlobal(); });
+      } else {
+        setTimeout(function () { if (div.parentNode) div.remove(); }, 3000);
+      }
+      (document.body || document.documentElement).appendChild(div);
+    } catch (e) {}
+    // 面板若开着，同步按钮态（此前面板内点暂停会与胶囊不同步）
+    try { if (typeof _syncPauseUI === 'function') _syncPauseUI(); } catch (e) {}
+    // 面板内触发时补一条轻提示，避免"点了没反应"的错觉
+    if (onlyToast) {
+      try { notify(BLOCKING_PAUSED ? '⏸ 全网净化已暂停（刷新页面自动恢复）' : '▶ 全网净化已恢复', BLOCKING_PAUSED ? 'warn' : 'ok'); } catch (e) {}
+    }
+    return BLOCKING_PAUSED;
+  }
 
   // 全局键盘快捷键 Ctrl+Shift+A
   document.addEventListener('keydown', function(e) {
@@ -2251,24 +2632,8 @@
     // Ctrl+Shift+P 暂停/恢复
     if (e.ctrlKey && e.shiftKey && e.key === 'P' && getScriptCfg().shortcutPause) {
       e.preventDefault();
-      BLOCKING_PAUSED = !BLOCKING_PAUSED;
-      const indicator = document.getElementById('zk-pause-indicator');
-      if (BLOCKING_PAUSED) {
-        const div = document.createElement('div');
-        div.id = 'zk-pause-indicator';
-        div.style.cssText = 'position:fixed;top:10px;left:50%;transform:translateX(-50%);background:#ff5252;color:#fff;padding:6px 20px;border-radius:20px;font-size:12px;z-index:' + NC_Z_TOP + ';font-family:sans-serif;pointer-events:none';
-        div.textContent = '⏸ 广告净化已暂停';
-        document.body.appendChild(div);
-        setTimeout(() => { if (div.parentNode) div.remove(); }, 2500);
-      } else {
-        if (indicator) indicator.remove();
-        const div = document.createElement('div');
-        div.id = 'zk-pause-indicator';
-        div.style.cssText = 'position:fixed;top:10px;left:50%;transform:translateX(-50%);background:#009688;color:#fff;padding:6px 20px;border-radius:20px;font-size:12px;z-index:' + NC_Z_TOP + ';font-family:sans-serif;pointer-events:none';
-        div.textContent = '▶ 广告净化已恢复 · 已拦截 ' + STATS.skippedAds + ' 个广告';
-        document.body.appendChild(div);
-        setTimeout(() => { if (div.parentNode) div.remove(); }, 2500);
-      }
+      ncTogglePauseGlobal();
+      return;
     }
   });
 
@@ -2313,18 +2678,28 @@
     //   en 模式调用方需自行包 t()（t() 内 en 缺失键自动回退简中，至少用户看到 key 字符串而非乱码）。
     if (uiLang() === 'zh-TW' && typeof msg === 'string') msg = s2t(msg);
     const type = opts.type || 'ok';
-    const dur = opts.dur || 2600;
+    // actionBtn：可选撤销操作。设置后 toast 可点击、持续时间自动延长到 5s（给用户反应时间）。
+    const action = opts.action;
+    const dur = opts.dur || (action ? 5000 : 2600);
     const top = !!opts.top;
+    // 容器 id：顶部提示（top:true，验证码模块用）走独立 id，**不与底部轻提示共用单例**。
+    //   原因：原实现全局只有一个 #zk-toast，后弹的会 remove 掉前一条。验证码的「手动加规则」
+    //   等指引类提示时长可达 20s，期间用户若触发「本站暂停」等 notify()，会直接把指引顶掉。
+    //   分离容器后两条互不干扰（各自仍保持「同容器内后到覆盖前条」的单例语义）。
+    const elId = opts.elId || (top ? 'zk-toast-top' : 'zk-toast');
+    let killTimer = null;
     try {
-      let el = document.getElementById('zk-toast');
+      let el = document.getElementById(elId);
       if (el) el.remove();
       el = document.createElement('div');
-      el.id = 'zk-toast';
-      const bg = type === 'err'
+      el.id = elId;
+      const isErr = type === 'err';
+      const isWarn = type === 'warn';
+      const bg = isErr
         ? 'linear-gradient(135deg,#ff5252,#ff7875)'
-        : 'linear-gradient(135deg,#1677ff,#38bdf8)';
-      const ring = type === 'err' ? 'rgba(255,82,82,.35)' : 'rgba(22,119,255,.35)';
-      const glyph = type === 'err' ? '\u2715' : '\u2713';
+        : (isWarn ? 'linear-gradient(135deg,#faad14,#fbbf24)' : 'linear-gradient(135deg,#1677ff,#38bdf8)');
+      const ring = isErr ? 'rgba(255,82,82,.35)' : (isWarn ? 'rgba(250,173,20,.35)' : 'rgba(22,119,255,.35)');
+      const glyph = isErr ? '\u2715' : (isWarn ? '\u26a0' : '\u2713');
       el.innerHTML = '';
       const ic = document.createElement('span');
       ic.textContent = glyph;
@@ -2332,12 +2707,29 @@
       const tx = document.createElement('span');
       tx.textContent = msg;
       el.appendChild(ic); el.appendChild(tx);
+      if (action && typeof action.fn === 'function') {
+        const ab = document.createElement('button');
+        ab.type = 'button';
+        ab.className = 'zk-toast-action';
+        ab.textContent = action.label || '撤销';
+        ab.style.cssText = 'margin-left:12px;padding:3px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.55);' +
+          'background:rgba(255,255,255,.16);color:#fff;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;flex:0 0 auto;outline:none';
+        ab.addEventListener('click', function (ev) {
+          ev.stopPropagation();
+          clearTimeout(killTimer);
+          try { action.fn(); } catch (e) {}
+          el.remove();
+        });
+        ab.addEventListener('mouseenter', function () { ab.style.background = 'rgba(255,255,255,.3)'; });
+        ab.addEventListener('mouseleave', function () { ab.style.background = 'rgba(255,255,255,.16)'; });
+        el.appendChild(ab);
+      }
       const offY = top ? '-14px' : '14px';
-      el.style.cssText = 'position:fixed;' + (top ? 'top:60px;' : 'bottom:30px;') + 'left:50%;z-index:' + NC_Z_TOP + ';' +
+      el.style.cssText = 'position:fixed;' + (top ? 'top:calc(60px + env(safe-area-inset-top,0px));' : 'bottom:calc(30px + env(safe-area-inset-bottom,0px));') + 'left:50%;z-index:' + NC_Z_TOP + ';' +
         'background:' + bg + ';color:#fff;padding:10px 22px;border-radius:999px;' +
         'font-size:13px;font-weight:500;font-family:-apple-system,"Microsoft YaHei",sans-serif;' +
         'box-shadow:0 8px 28px ' + ring + ',0 2px 8px rgba(15,23,42,.18);' +
-        'display:inline-flex;align-items:center;pointer-events:none;max-width:min(86vw,460px);' +
+        'display:inline-flex;align-items:center;pointer-events:' + (action ? 'auto' : 'none') + ';max-width:min(86vw,460px);' +
         'opacity:0;transform:translateX(-50%) translateY(' + offY + ') scale(.94);' +
         'transition:opacity .26s ease,transform .32s cubic-bezier(.25,.8,.25,1)';
       requestAnimationFrame(function () {
@@ -2345,16 +2737,16 @@
         el.style.transform = 'translateX(-50%) translateY(0) scale(1)';
       });
       (document.body || document.documentElement).appendChild(el);
-      setTimeout(() => {
+      killTimer = setTimeout(() => {
         el.style.opacity = '0';
         el.style.transform = 'translateX(-50%) translateY(' + (top ? '-10px' : '10px') + ') scale(.96)';
-        setTimeout(() => el.remove(), 320);
+        setTimeout(() => { try { el.remove(); } catch (e) {} }, 320);
       }, dur);
     } catch (e) {}
   }
 
   // 全局轻提示（供各站点处理器反馈状态，转发到统一 zkToast）
-  function notify(msg, type) { zkToast(msg, { type: type === 'err' ? 'err' : 'ok', dur: 2600 }); }
+  function notify(msg, type) { zkToast(msg, { type: type || 'ok', dur: 2600 }); }
 
   /* ----------------------------------------------------------------
    * 主题化对话框（替代浏览器原生 confirm/alert）
@@ -2456,7 +2848,7 @@
     const cfg = getScriptCfg();
     const rules = [];
 
-    /* ── 域名作用域守卫（v10.2.0 性能整改）──────────────────────────────
+    /* ── 域名作用域守卫（性能整改）──────────────────────────────
      * 历史问题：本函数过去只按「配置开关」拼接 CSS，完全不判断当前域名。
      * 于是在 youtube.com 看视频时，百度贴吧/文库/经验/图片、知乎、B站、
      * CSDN 等上百条与当前页无关的选择器仍被 GM_addStyle 全量注入，
@@ -2904,7 +3296,11 @@
   // 这里反其道而行——不猜是谁画的，直接遍历 DOM 找「体积够大 + 背景接近纯白」的块，打标后统一压暗。
   // 体积下限与透明度下限用于避开图标/小按钮；跳过脚本自身 UI，避免把设置面板也一并压暗。
   const NC_FORCED_DARK = 'nc-forced-dark';
+  // 【v1.0.7】扫描完成标记按「规则版本」取值：旧版用 '1'，标记后元素会被永久跳过，
+  // 导致脚本更新（规则变严）后，旧元素无法被重新评估/撤销「误打的压暗标记」。
+  // 改成版本串后，规则变更只需递增此值，全量元素即自动复检一次。
   const NC_SCAN_FLAG = 'ncScanDone';
+  const NC_SCAN_VER = 'v7';
   const _ncStandDownNotified = {};
   let _ncForceScanTimer = null;
   let _ncForceObserverInited = false;
@@ -2920,9 +3316,9 @@
       const max = Math.min(list.length, 4000);
       for (let i = 0; i < max; i++) {
         const el = list[i];
-        if (el.dataset && el.dataset[NC_SCAN_FLAG] === '1') continue;
+        if (el.dataset && el.dataset[NC_SCAN_FLAG] === NC_SCAN_VER) continue;
         if (!(el instanceof window.HTMLElement)) continue;
-        if (el.dataset) el.dataset[NC_SCAN_FLAG] = '1';
+        if (el.dataset) el.dataset[NC_SCAN_FLAG] = NC_SCAN_VER;
         const tag = el.tagName.toLowerCase();
         if (tag === 'script' || tag === 'style' || tag === 'svg' || tag === 'img' ||
             tag === 'video' || tag === 'canvas' || tag === 'iframe' || tag === 'br' || tag === 'hr') continue;
@@ -2935,13 +3331,21 @@
         // 不要再用 [class*="chat"] 整个 class 含 chat 的模块都会跳过——
         // 百度首页中央 .chat-input-background_3edHa 就是反例（白底容器需要被压暗，
         // 否则用户看到的还是"中间一个白盒"）。
-        if (el.closest && el.closest('form,[id*="input"],[id*="Input"],textarea#chat-textarea')) continue;
+        // 【P2 收窄】原 [id*="input"]/[id*="Input"] 是「容器级」跳过：任何 id 含 input 的外层
+        // 大白块都会被整块放过（百度首页「中间还是白盒」的根因）。改为只跳过输入元素自身。
+        // 注：input/textarea 已在函数开头的 tag 判断中跳过，此处再判一次是为了覆盖
+        // 非 input 标签但承担输入职责的元素（role="textbox"）。
+        if (el.closest && el.closest('form,textarea#chat-textarea')) continue;
+        if (!ncIsFineDarkSite() && el.closest && el.closest('[id$="input"],[id$="Input"],[id*="input-"],[id*="input_"],[id*="-input"],[id*="-Input"]')) continue;
+        if ((el.tagName || '').toLowerCase() === 'input' ||
+            (el.tagName || '').toLowerCase() === 'textarea' ||
+            el.getAttribute('role') === 'textbox') continue;
         // 先清掉旧标记：脚本更新后规则变严，之前误打的标记要能被撤销
         if (el.classList.contains(NC_FORCED_DARK)) el.classList.remove(NC_FORCED_DARK);
         // 跳过脚本自身 UI（设置面板 / toast / 弹窗 / 护眼蒙版 / 划词条）
         const idAttr = el.id || '';
-        if (idAttr && /^(zk-|nc-|sh-)/.test(idAttr)) continue;
-        if (el.closest && el.closest('#zk-set-cleaner-settings,#zk-toast,#zk-dlg,#nc-modal,#nc-eye-overlay,#sh-bar')) continue;
+        if (idAttr && /^(zk-|nc-|sh-|adc-)/.test(idAttr)) continue;
+        if (el.closest && el.closest('#zk-set-cleaner-settings,#zk-toast,#zk-toast-top,#zk-dlg,#nc-modal,#nc-eye-overlay,#sh-bar,#adc-onboard,#sh-trans')) continue;
         let cs;
         try { cs = window.getComputedStyle(el); } catch (e) { continue; }
         const bg = (cs && cs.backgroundColor) || '';
@@ -2968,8 +3372,12 @@
     try {
       if (_ncForceObserverInited || !window.MutationObserver || !document.body) return;
       _ncForceObserverInited = true;
-      const mo = new MutationObserver(() => ncScheduleForceScan(400));
-      mo.observe(document.body, { childList: true, subtree: true });
+      // 复用统一 MutationObserver 管理器（按 target 合并，与其他模块共享同一 observer）
+      ncObserve(document.body, function (muts) {
+        // 仅「新增了元素节点」才值得重扫：纯文本/属性改动不会引入新的白色块
+        if (!muts.some(m => m.addedNodes && m.addedNodes.length)) return;
+        ncScheduleForceScan(400);
+      }, { childList: true, subtree: true });
       window.addEventListener('load', () => ncScheduleForceScan(600), { once: true });
     } catch (e) {}
   }
@@ -3108,9 +3516,13 @@
     GM_addStyle(`
       html.adc-dark-mode{filter:invert(1) hue-rotate(180deg)!important;background:#fff!important}
       /* 媒体内容二次反转，避免照片/视频变负片 */
-      html.adc-dark-mode :is(img,video,picture,canvas,iframe,embed,object,svg,[style*="background-image"]){filter:invert(1) hue-rotate(180deg)}
+      html.adc-dark-mode :is(img,video,picture,canvas,iframe,embed,object,[style*="background-image"]){filter:invert(1) hue-rotate(180deg)}
+      /* SVG 图标本身多为单色线条，二次反转会反成亮色错位。
+         注意：带 background-image 的 svg 已被上一行的通用属性选择器覆盖，此处不再重复；
+         这里只补「以 .svg 为图片源」的 img（含 ?v= 等 query 后缀，故用 *= 而非 $=）。 */
+      html.adc-dark-mode img[src*=".svg"]{filter:invert(1) hue-rotate(180deg)}
       /* 脚本自身 UI 二次反转，保持安东蓝原色 */
-      html.adc-dark-mode :is(#zk-set-cleaner-settings,#zk-set-help-backdrop,#zk-set-help-pop,#zk-bk-mgr,#zk-dlg,#nc-modal,#zk-toast,#zk-pause-indicator,#nc-paused-badge,#nc-rescue-box,#sh-bar){filter:invert(1) hue-rotate(180deg)}
+      html.adc-dark-mode :is(#zk-set-cleaner-settings,#zk-set-help-backdrop,#zk-set-help-pop,#zk-bk-mgr,#zk-dlg,#nc-modal,#zk-toast,#zk-toast-top,#zk-pause-indicator,#nc-paused-badge,#nc-ad-badge,#nc-ad-badge-detail,#nc-rescue-box,#sh-bar,#sh-trans,.sh-toast,#adc-onboard){filter:invert(1) hue-rotate(180deg)}
       /* filter 会让 position:fixed 相对 html 定位（吸顶元素随页滚动）；
          护眼蒙版改为 absolute + 撑满 body 文档高度，保证仍覆盖整页 */
       html.adc-dark-mode body{position:relative!important}
@@ -3148,6 +3560,7 @@
       totalBlocked += count;
       siteBlocked[HOST] = (siteBlocked[HOST] || 0) + count;
       persistTotalStats();
+      try { ncScheduleAdBadge(); } catch (e) {}
     }
 
     // Hook fetch
@@ -3759,7 +4172,7 @@
     if (!inHost('so.com')) return;
     const cfg = getScriptCfg();
 
-    // 结果卡片打标：美化 CSS 依赖 .nc-result-card（v13.1.2 修复：此前漏调，导致 360 结果页无卡片美化）
+    // 结果卡片打标：美化 CSS 依赖 .nc-result-card（修复：此前漏调，导致 360 结果页无卡片美化）
     ncTagResultUnits();
 
     if (HREF() === 'https://www.so.com/' || HREF() === 'https://www.so.com' || inHref('www.so.com/?')) {
@@ -3834,7 +4247,7 @@
   function processYandex() {
     if (!inHost('yandex.com')) return;
     const cfg = getScriptCfg();
-    // 结果卡片打标：美化 CSS 依赖 .nc-result-card（v13.1.2 修复：此前漏调，导致 Yandex 结果页无卡片美化）
+    // 结果卡片打标：美化 CSS 依赖 .nc-result-card（修复：此前漏调，导致 Yandex 结果页无卡片美化）
     // 须在「去广告」开关（kgyandexed）之前执行，使美化独立于去广告生效
     ncTagResultUnits();
     if (!cfg.kgyandexed) return;
@@ -4931,7 +5344,7 @@
     /* ============================================================
      * Shorts — 按钮注入
      *
-     * v12.1.0 重写要点（修复「Shorts 旋转/镜像/下载失效」）：
+     * 重写要点（修复「Shorts 旋转/镜像/下载失效」）：
      *  1. 控件容器只在**当前 reel 内部**查找，绝不跨 reel 回退。
      *     旧实现优先取 `ytd-reel-video-renderer[selected]`，甚至 document 级兜底，
      *     导致 A reel 的按钮被塞进 B reel 的控件条，而 handler 闭包里握的是 A 的 video —
@@ -5315,11 +5728,13 @@
     /* ============================================================
      * 兜底轮询 — 每 5s 扫描未标记播放器
      * ============================================================ */
-    let _backupTimer = null;
-    _backupTimer = setInterval(() => {
+    // 与上方 MutationObserver 职责不同：MO 是响应式（DOM 一变动就跑），本项是 5s 兜底，
+    // 覆盖 MO 漏掉的场景（如 SPA 内的样式/状态变化但无节点增删）。用 ncInterval 收口，
+    // 由 pagehide 统一清理，并给稳定 id 便于重复调用时去重。
+    ncInterval(() => {
       if (document.hidden) return;
       try { scanAndSetup(); } catch (e) {}
-    }, 5000);
+    }, 5000, 'ytp-rotate-backup-scan');
 
     /* ============================================================
      * Shorts 滑动切换监听
@@ -5492,7 +5907,7 @@
       const j = cfg.darkForceHosts.indexOf(host);
       if (i >= 0) { cfg.darkSkipHosts.splice(i, 1); cfg.darkForceHosts.push(host); notify('本站：已强制由脚本接管暗黑'); }
       else if (j >= 0) { cfg.darkForceHosts.splice(j, 1); notify('本站：已恢复自动判断'); }
-      else { cfg.darkSkipHosts.push(host); notify('本站：交给网站自己的深色模式'); }
+      else { cfg.darkSkipHosts.push(host); notify('本站：交给网站自己的暗黑模式'); }
       try { setConfig(getConfig()); } catch (e) {}
       applyDarkMode();
     } catch (e) {}
@@ -5514,6 +5929,9 @@
     } catch (e) { return false; }
   }
 
+  // prefersDark change 监听只需注册一次：applyDarkMode 在开关切换时会被反复调用，
+  // 无幂等守卫会持续叠加监听器（闭包还持有旧的 htmlEl）。用模块级标志保证单次注册。
+  let _ncPrefersDarkBound = false;
   // 暗黑模式
   function applyDarkMode() {
     const cfg = getScriptCfg();
@@ -5532,21 +5950,32 @@
       wantDark = false; standDown = true;
     }
     htmlEl.classList.toggle(DARK_CLASS, wantDark);
+    // 让行状态打在 html 上，供设置面板渲染时读取并显式告知用户
+    // （开关仍显示「已勾选」但页面无变化时，用户会误判脚本失效）
+    try {
+      if (standDown) htmlEl.setAttribute('data-nc-dark-standdown', '1');
+      else htmlEl.removeAttribute('data-nc-dark-standdown');
+    } catch (e) {}
     // 让行时提示一次，避免用户以为脚本坏了（自带深色站点本来就没变化）
     if (standDown && host && !_ncStandDownNotified[host]) {
       _ncStandDownNotified[host] = 1;
-      try { notify('本站已自带深色模式，脚本已让行（油猴菜单可强制接管）'); } catch (e) {}
+      try { notify('本站已自带暗黑模式，脚本已让行（可在油猴菜单里强制接管）'); } catch (e) {}
     }
     // 暗黑 × 护眼联动：切换暗色后立即刷新护眼蒙版配色，避免两者叠加越叠越暗
     try { if (getScriptCfg().baidueye) applyEyeCare(); } catch (e) {}
     // 运行时残留亮块扫描：静态选择器覆盖不到的未知容器，交给自适应扫描兜底
     if (wantDark) { try { ncInitForceDarkObserver(); ncScheduleForceScan(500); } catch (e) {} }
 
-    prefersDark.addEventListener('change', (e) => {
-      if (getScriptCfg().darkMode !== true) return;
-      htmlEl.classList.toggle(DARK_CLASS, ncIsFineDarkSite() || (!ncSiteAlreadyDark() && e.matches));
-      try { if (getScriptCfg().baidueye) applyEyeCare(); } catch (e) {}
-    });
+    if (!_ncPrefersDarkBound) {
+      _ncPrefersDarkBound = true;
+      prefersDark.addEventListener('change', (e) => {
+        if (getScriptCfg().darkMode !== true) return;
+        // 每次重新取 documentElement：SPA 场景下旧闭包捕获的节点可能已脱离文档
+        const h = document.documentElement;
+        h.classList.toggle(DARK_CLASS, ncIsFineDarkSite() || (!ncSiteAlreadyDark() && e.matches));
+        try { if (getScriptCfg().baidueye) applyEyeCare(); } catch (e) {}
+      });
+    }
   }
 
   // 护眼模式（全新护眼蒙版重构，版本号维持 1.0.0 回归基线）：
@@ -5727,7 +6156,7 @@
     kgweiboad: { title: '微博关键词过滤', effect: '按关键词过滤微博内容。', impl: 'processWeibo 读取关键词库移除命中微博。', maintain: '维护同百度关键词过滤，在「过滤列表」编辑。', risk: '关键词过宽会误删正常微博。' },
     kgweibomv: { title: '微博视频下载', effect: '在微博视频旁添加下载按钮，跳转到解析站下载。', impl: 'processWeibo 注入下载入口，点击后打开第三方解析站并回填视频地址。', maintain: '解析站地址变化时，在 processWeibo 视频下载段更新站点列表。', risk: '依赖第三方解析站可用性；下载需自备网络环境，属辅助功能。' },
     ytpRotate: { title: 'YouTube 视频旋转/翻转', effect: '在 YouTube 播放器控制栏（含 Shorts）嵌入旋转、翻转、填充工具栏，可把竖屏/横屏视频任意旋转 90°、水平/垂直翻转、填充全屏；并支持右键菜单与快捷键（Alt+Shift+R/F/H/V）。', impl: 'initYoutubeRotate() 把视频元素的 transform 写入 CSS 变量（--ytp-r-tf）并加过渡动画；普通视频克隆设置按钮嵌入 ytp-right-controls，Shorts 嵌入原生 #right-controls；全局 MutationObserver + yt-navigate-finish + 5s 兜底轮询 + 2s 自愈轮询保证按钮在 SPA 导航/滚动切视频时不丢失；旋转偏好存 localStorage（ytp-rotate-state）。', maintain: '失效时优先检查 SELECTORS 常量里的 YT DOM 选择器（如 .html5-video-player、#right-controls、ytd-reel-video-renderer 是否改名）；按钮不显示通常是对应的容器没找到，在 _findShortsRightControls / _addNormalButton 处断点排查。', risk: '属于视觉增强，关闭后仅移除工具栏、不影响广告屏蔽等其他功能；transform 覆盖视频原生变换，极少数页面特效视频可能显示异常，关闭即可恢复；依赖 YouTube 前端结构，改版时需同步更新选择器。' },
-    kgyoued: { title: 'YouTube 广告过滤', effect: '自动跳过/加速 YouTube 贴片广告，并移除广告元素。', impl: 'processYoutube 智能轮询检测广告按钮点击跳过；检测到广告时加速 playbackRate；同时移除广告 DOM。', maintain: 'YouTube 频繁改广告结构，失效时在 processYoutube 更新按钮/skip 选择器与轮询逻辑。', risk: '关闭后广告恢复；加速播放可能短暂影响观看体验；依赖页面脚本，偶有漏跳。' },
+    kgyoued: { title: '视频平台广告过滤（YouTube / 优酷 / 腾讯）', effect: '自动跳过 / 加速 YouTube、优酷、腾讯视频三家平台的贴片广告，并移除广告元素（同一开关同时覆盖三家）。', impl: 'processYoutube / processYouku / processTencentVideo 各自智能轮询检测广告按钮并点击跳过；检测到广告时加速 playbackRate；同时移除广告 DOM。', maintain: '三家平台频繁改广告结构，失效时需分别在 processYoutube / processYouku / processTencentVideo 更新按钮与 skip 选择器及轮询逻辑。', risk: '关闭后三家广告一起恢复；加速播放可能短暂影响观看体验；依赖页面脚本，偶有漏跳。' },
     kgyouad: { title: 'YouTube 关键词过滤', effect: '按关键词过滤 YouTube 推荐视频与评论。', impl: 'processYoutube 读取关键词库移除命中视频/评论条目。', maintain: '维护同百度关键词过滤，在「过滤列表」编辑。', risk: '关键词过宽会误删正常视频/评论。' },
     kgyoumv: { title: 'YouTube 视频下载', effect: '在 YouTube 播放页（普通视频与 Shorts）播放器工具栏添加下载按钮，点击直接跳转到设置页所选下载站并预填视频链接。', impl: 'initYoutubeRotate 工具栏注入下载按钮，handler 调用 openVideoDownloader(location.href)，按配置站点模板把 {url} 替换为编码后的视频链接后 window.open。', maintain: '下载站地址/模板在设置页「视频下载」分组维护；跳转后自动填入由 processVideoDownloader 处理。', risk: '依赖第三方解析站；下载需自备网络环境。' },
     kgtwied: { title: 'Twitter 广告过滤', effect: '隐藏 Twitter/X 中的推广推文。', impl: 'processTwitter 识别含「推荐/推广/Promoted/Ad」标记的推文并隐藏。', maintain: '失效时在 processTwitter 更新推广识别规则。', risk: '关闭恢复推广推文；算法推广偶有漏网。' },
@@ -5751,29 +6180,31 @@
     baidueyestrength: { title: '护眼强度', effect: '护眼蒙版深浅：柔和(.16)/标准(.26)/增强(.38)。alpha 越大蒙版越不透明、画面越柔和（视觉柔和更强），但不改变屏幕蓝光发射量。', impl: 'applyEyeCare() 读 baidueyestrength 查 alphaMap 得 alpha；alpha 越大蒙版越不透明。', maintain: '①组下拉即时切换，无需刷新。', risk: '增强档在纯白页更明显，过暗可退回柔和。' },
     pingbiurl: { title: '网址过滤列表', effect: '维护一份网址关键词黑名单，命中即屏蔽对应搜索结果。', impl: 'cfgPingbiurl() 供各站点处理器读取，命中即移除结果。', maintain: '在「过滤列表」页直接添加/删除条目；逻辑入口为 cfgPingbiurl()，被 processBaidu/Google/Bing 等调用。', risk: '条目过短（<4 字）易误伤；建议填具区分度的域名片段。' },
     pingbikw: { title: '关键词过滤列表', effect: '维护一份关键词黑名单，命中即屏蔽对应搜索结果与评论。', impl: 'cfgPingbikw() 供各站点处理器读取，命中即移除内容。', maintain: '在「过滤列表」页直接添加/删除条目；逻辑入口为 cfgPingbikw()。', risk: '关键词过短（<2 字）或过于通用会大面积误删正常内容，请谨慎添加。' },
-    shortcutPanel: { title: '打开控制面板快捷键', effect: 'Ctrl+Shift+A 一键打开脚本设置面板（控制面板）。', impl: '主脚本启动时在 document 上注册全局 keydown 监听，命中 Ctrl+Shift+A 即调用 openSettings() 打开面板。', maintain: '若快捷键被站点自身占用或失效，可直接点击页面右上角「⚙ 控制面板」入口，或在油猴菜单点【⚙ 控制面板】。', risk: '关闭后仅失去键盘打开方式，不影响任何屏蔽功能；极少数站点会抢占该组合键。' },
+    shortcutPanel: { title: '打开控制面板快捷键', effect: 'Ctrl+Shift+A 一键打开脚本设置面板（控制面板）。', impl: '主脚本启动时在 document 上注册全局 keydown 监听，命中 Ctrl+Shift+A 即调用 openSettings() 打开面板。', maintain: '若快捷键被站点自身占用或失效，可直接点击页面右上角「⚙ 控制面板」入口，或在油猴菜单点「⚙ 控制面板」。', risk: '关闭后仅失去键盘打开方式，不影响任何屏蔽功能；极少数站点会抢占该组合键。' },
     shortcutPause: { title: '暂停/恢复快捷键', effect: 'Ctrl+Shift+P 全局暂停或恢复广告净化（页面顶栏会提示状态）。', impl: '同一全局 keydown 监听中命中 Ctrl+Shift+P，切换 BLOCKING_PAUSED 标志并弹出状态提示。', maintain: '暂停等效于白名单当前页；若快捷键无效，可用设置面板底部的「⏸ 暂停全部」按钮。', risk: '暂停期间所有站点广告与美化全部停用，恢复后即生效；属临时开关，无持久副作用。' },
     shortcutYtp: { title: 'YouTube 旋转快捷键', effect: 'Alt+Shift+R/F/H/V 分别对视频执行旋转90°、填充全屏、水平翻转、垂直翻转（仅 YouTube）。', impl: 'initYoutubeRotate() 内注册 keydown 监听，命中组合键后对当前可见播放器调用对应变换函数。', maintain: '快捷键仅在 YouTube 且「视频旋转/翻转」总开关开启时生效；失效请检查 initYoutubeRotate 的 keydown 分支与 findActiveVideoCtx()。', risk: '仅作用于 YouTube 视频变换，关闭后工具栏按钮仍可用（鼠标点击），不影响广告屏蔽等其他功能。' },
     haokanPauseAd: { title: '好看视频暂停广告屏蔽', effect: '自动关闭好看视频（haokan.baidu.com）播放时点击暂停弹出的联盟暂停广告（.lianmeng-pause），每次暂停都会即时关掉，避免反复弹出影响观看。', impl: 'initHaokanPauseAd() 在 haokan 域初始化：①注入 CSS 把 .lianmeng-pause 永久 display:none 兜底防闪烁；②MutationObserver 监听该广告容器出现或加上 -show 显示态时，即时点击官方关闭按钮 .mediago-pause-close，并强制移除显示态/隐藏兜底；③监听 <video> 的 pause 事件与 1.2s 自愈轮询双保险，确保每次暂停都关得掉。', maintain: '失效时检查三处选择器：广告容器 .lianmeng-pause、显示态类 -show、关闭按钮 .mediago-pause-close 是否被好看前端改名；逻辑集中在 initHaokanPauseAd()。', risk: '属于针对性屏蔽，关闭后好看视频暂停广告恢复弹出；仅作用于好看视频域名，不影响其他站点与脚本其余功能；CSS 隐藏层仅针对 .lianmeng-pause 广告容器，不会误伤正常播放控件。' },
     perfWhitelist: { title: '仅白名单域名启用', effect: '性能总闸：开启后脚本只在「启用域名」与已知站点运行，其余页面注入后立即退出，几乎零开销。', impl: '启动早期读取此开关与 scopeWhitelist，若当前域名不在名单且非已知站点则直接 return，不做任何 DOM/CSS/Observer 工作。', maintain: '油猴 @match 为静态元数据、运行时不可改，所以本项靠「注入后早退」实现域名内效果，而非真删 @match；想进一步彻底不注入未知页，需手动精简 @match 行。', risk: '开启后未在名单的站点所有功能停用；若某站突然不生效，先把它加入「启用域名」或关闭本项。' },
     passiveGlobal: { title: '被动扫描全局化', effect: '决定通用被动广告扫描（kgpingbis/kgpingbiiframe）的作用范围：关闭时只在已知站点运行，开启后扫描所有页面。', impl: 'passiveAdBlock() 入口处判断此开关，关闭且非已知域名则直接 return。', maintain: '若需在全站（含未知站点）清理悬浮广告/iframe，开启此项；发现误杀再关回即可。', risk: '开启会显著增加全站 CPU/扫描开销，属最重的全局项，默认关闭。' },
-    scopeWhitelist: { title: '启用域名（内部白名单）', effect: '与「仅白名单域名启用」配合：填写的域名会被脚本正常处理，其余未知站点秒退。', impl: '在「性能优化」页以列表维护，保存即存入配置；启动闸门的 inScopeWhitelist() 按 HOST.includes(条目) 匹配（填主域名即可覆盖子域）。', maintain: '例：baidu.com、youtube.com、taobao.com。留空则仅 KNOWN_DOMAINS 已知站点生效。', risk: '仅影响性能模式的生效范围，无功能副作用；填错域名只会让对应站不被处理。' },
+    scopeWhitelist: { title: '启用域名（内部白名单）', effect: '与「仅白名单域名启用」配合：填写的域名会被脚本正常处理，其余未知站点秒退。', impl: '在「性能与高级」页以列表维护，保存即存入配置；启动闸门的 inScopeWhitelist() 按 HOST.includes(条目) 匹配（填主域名即可覆盖子域）。', maintain: '例：baidu.com、youtube.com、taobao.com。留空则仅 KNOWN_DOMAINS 已知站点生效。', risk: '仅影响性能模式的生效范围，无功能副作用；填错域名只会让对应站不被处理。' },
     captchaEnabled: { title: '启用验证码识别', effect: '开启后按「触发方式」自动识别并填充网页验证码（数英/算术/滑动）。默认关闭，按需开启。', impl: 'initCaptcha() 据此闸门初始化；关闭时整模块不加载、零开销。', maintain: '接口失效见各引擎说明；整页不识别先查本开关与油猴是否已启用脚本。', risk: '仅影响验证码自动填写；关闭后需手动输入。属绕过安全校验功能，请仅在合规场景使用。' },
     captchaTrigger: { title: '验证码触发方式', effect: '控制识别模块的常驻程度：手动（点按钮才扫，最省）/ 白名单站点（仅白名单自动）/ 全局常驻（全站扫描，最耗）。', impl: 'initCaptcha() 按此值决定：manual 仅挂浮动按钮、不观察者；whitelist 仅当 HOST 在 captchaWhitelist 时挂观察者+轮询；global 全站常驻观察者+1.5s 轮询。', maintain: '性能敏感者选 manual/whitelist；global 会全页 MutationObserver + 周期轮询，开销最大。', risk: 'global 模式对浏览器性能压力明显，默认 manual；白名单模式需先填「验证码自动启用站点」。' },
     captchaEngine: { title: '识别引擎', effect: '数英/算术验证码的识别后端：自动（极速优先回退精准）/ 极速（免Token）/ 精准（需识别码）。', impl: 'recognizeText() 按引擎策略调用 recFast / recPrecise / recMath；自动模式极速失败再试精准。', maintain: '两个引擎都需在下方「极速/精准接口地址」自行填写服务地址；本脚本不内置任何第三方打码平台。任一方长期 5xx/超时即视为失效，换地址即可。', risk: '自动模式多一次网络往返；极速误识率高可切精准；未填接口地址时对应引擎直接跳过，不发起任何外部请求。' },
     captchaApiFast: { title: '极速接口地址', effect: '「极速」引擎调用的服务地址。留空则极速引擎直接跳过，不会向任何外部服务器上传验证码图片。', impl: 'recFast() 读取本项作为 base，拼 /identify_GeneralCAPTCHA 后 POST 图片 base64；未填写时立即返回，不发起请求。', maintain: '需自行搭建或选用可信的识别服务后填写，形如 https://your-server/ 。本脚本不内置、不推荐任何第三方打码平台。', risk: '填写即表示你信任该服务器：验证码图片会上传给它。请确认对方可信与合规后再启用；留空最安全。' },
     captchaApiPrecise: { title: '精准接口地址', effect: '「精准」引擎（含滑块）调用的服务地址。留空则精准引擎直接跳过，不会向任何外部服务器上传数据。', impl: 'recPrecise() 读取本项作为 base，拼 /hello 后 POST 图片与识别码；请求还会带上你的 idCard 与当前页面网址。', maintain: '需自行搭建或选用可信服务后填写，形如 https://your-server/ ；配合下方识别码使用。本脚本不内置任何第三方打码平台。', risk: '填写即表示你信任该服务器：验证码图片、你的识别码与当前网址都会发送。请确认可信与合规；留空最安全。' },
     captchaAutoFind: { title: '自动查找验证码', effect: '对无手动规则的网站，按属性关键词（code/captcha/yzm/验证码…）自动定位并填充。', impl: '扫描 img/canvas/div 背景图，结合宽高与可见性判定，再向上 4 层找输入框。', maintain: '规则见 HINTS 与 isCodeLike；网站改版漏识别时，用右键手动加规则更稳。', risk: '可能误判带 code 字样的普通图片；频繁误判可关闭或加黑名单。' },
-    captchaShowHint: { title: '显示提示条', effect: '顶部灰条提示识别状态（识别中/完成/错误）。', impl: 'topNotice() 创建固定定位 div，数秒后自动移除。', maintain: '若提示被页面覆盖属 CSS 优先级问题，不影响功能。', risk: '仅视觉提示；关闭后无顶部提示但功能正常。' },
+    captchaShowHint: { title: '显示提示条', effect: '顶部提示条展示识别状态（识别中/完成/错误）。', impl: 'topNotice() 统一转发到全局 zkToast（top 变体），按文案自动选 ok/warn/err 配色，并以串行队列逐条播放，避免连续操作时提示互相覆盖。', maintain: '若提示被页面覆盖属 CSS 优先级问题，不影响功能。', risk: '仅视觉提示；关闭后无顶部提示但功能正常。' },
     captchaSlide: { title: '滑动验证码', effect: '启用滑动拼图与滑块行为验证码的自动识别与拖拽。', impl: '对带 big/small/move 结构的滑块，识别距离后用原生 MouseEvent 模拟人工拖拽。', maintain: '依赖精准引擎（like996 识别码）；结构识别在 slideSolve / slideBehaviorSolve。', risk: '模拟拖拽有概率失败；部分站点有轨迹风控，失败请手动完成。需开启引擎=精准/自动且填识别码。' },
     captchaPreciseId: { title: '精准引擎识别码', effect: '精准引擎（支持滑块）所需的识别码（原 like996 为 32 位）。', impl: '请求时作为 idCard 字段随「精准接口地址」一同发送。', maintain: '由你填写的精准接口服务方提供；未填则自动/精准模式跳过精准回退。本脚本不内置任何平台地址。', risk: '可向服务器标识你的配额；勿外泄。调试日志中已做掩码处理。' },
     captchaYunmaToken: { title: '云码 Token', effect: '算术验证码（如「3+5=?」图片）识别所需的云码 Token（jfbym.com 商业服务，按识别次数计费）。', impl: '识别算术图时调用 jfbym.com 接口并携带本 Token。', maintain: 'Token 失效或余额不足时顶部提示；在设置面板重填即可。', risk: '仅算术验证码需要；不填则算术图跳过识别。Token 属个人凭证，勿泄露。' },
+    captchaYunmaDev: { title: '云码开发者标识（可选）', effect: '在 jfbym.com 后台获取的开发者标识（developer_tag），用于把识别调用归属到你的账号，便于在云码后台查看调用与消耗统计。属可选项，不是识别成功的必要条件。', impl: 'recMath() 在构造请求体时读取本项；用户填写后才附加 developer_tag 字段，留空则请求体中不含该字段（而非传空字符串）。', maintain: '留空不影响功能，仅影响云码后台的调用归属统计（缺失时云码按「无归属」记账）。在设置面板「② 识别引擎与凭证」中填写或清空即可，改动刷新页面后生效。', risk: '需与「云码 Token」配合使用；开启算术验证码识别时，验证码图片会上传至 jfbym.com（第三方商业服务）完成识别。开发者标识属个人账号信息，勿外泄；如担心归属信息被关联，可留空。' },
     captchaWhitelist: { title: '验证码自动启用站点', effect: 'captchaTrigger=白名单 时，只有这些站点会自动扫描识别。', impl: 'initCaptcha() 的 whitelist 分支对条目做域名归一化（去掉 scheme/通配符/路径）后按 HOST.includes(主体) 决定是否挂载观察者，所以填完整 URL 或带 /* 也有效。', maintain: '例：example.com，或 https://www.example.com/、*.example.com 均可。留空则白名单模式无站点自动识别（仍可手动触发）。', risk: '仅控制验证码自动化的范围；填错只会让对应站不自动识别。' },
     captchaBlacklist: { title: '验证码识别黑名单', effect: 'URL 含其中字符串的网页将被跳过验证码识别。', impl: 'inBlacklist() 在识别前比对当前 URL，命中则直接跳过。', maintain: '在「验证码识别黑名单」列表添加/删除条目即可。', risk: '仅影响验证码识别；误加会导致该站不识别，删除即恢复。' },
-    scriptBlacklistEnabled: { title: '脚本启用站点黑名单', effect: '敏感站点排除总开关：开启后，「黑名单站点」中的网站脚本整体暂停（不注入任何净化/美化/划词/验证码），等效于整站关闭。', impl: '启动早期读取本开关与 scriptBlacklist，命中即直接 return，不做任何 DOM/CSS/Observer 工作（与白名单域名、仅白名单域名启用同路径）。', maintain: '默认关闭；开启后仅对名单内站点生效，其余站点全部正常。想恢复某站：移除该站条目、或关闭本开关，改动刷新页面后生效。', risk: '开启后名单内站点所有功能停用（含广告恢复）；属整站开关，无持久副作用。v12.0.0 起即使被暂停，油猴菜单仍保留【🧹 状态 / 恢复】入口，页面右下角也会出现「本站已暂停」胶囊，可就地一键解封，不再需要切到别的站点改配置。' },
+    scriptBlacklistEnabled: { title: '脚本启用站点黑名单', effect: '敏感站点排除总开关：开启后，「黑名单站点」中的网站脚本整体暂停（不注入任何净化/美化/划词/验证码），等效于整站关闭。', impl: '启动早期读取本开关与 scriptBlacklist，命中即直接 return，不做任何 DOM/CSS/Observer 工作（与白名单域名、仅白名单域名启用同路径）。', maintain: '默认关闭；开启后仅对名单内站点生效，其余站点全部正常。想恢复某站：移除该站条目、或关闭本开关，改动刷新页面后生效。', risk: '开启后名单内站点所有功能停用（含广告恢复）；属整站开关，无持久副作用。即使被暂停，油猴菜单仍保留「🧹 状态 / 恢复」入口，页面右下角也会出现「本站已暂停」胶囊，可就地一键解封，不再需要切到别的站点改配置。' },
     scriptBlacklist: { title: '黑名单站点', effect: '脚本启用站点黑名单的域名列表；命中即整站暂停。已预置银行/支付/政府/邮箱/本地内网等敏感站点，默认随总开关关闭不生效。', impl: '与 scriptBlacklistEnabled 配合：启动闸门 isScriptBlacklisted() 按 HOST.includes(条目) 匹配（填主域名即可覆盖子域）。', maintain: '支持就地编辑（点「编辑」改完回车保存）、上移/下移、删除；「导入预设敏感站点」一键补齐作者维护的敏感站点清单，「清空黑名单」移除全部条目（均有二次确认）。名单仅本地保存，不上传。', risk: '误加常用站点会让该站广告恢复、美化失效；删除或关闭总开关即恢复。匹配为子串包含，短域名（如 gov.cn）会覆盖其所有子域；添加会命中当前站点的条目时会弹确认提醒。' },
-    whiteurl: { title: '白名单域名', effect: '在这些网站中脚本整体暂停运行，相当于关闭所有功能（与「黑名单站点」效果相同，区别是本表无开关、填入即生效）。', impl: 'isWhitelisted() 在启动时检测当前域名是否命中白名单，命中则直接 return 不初始化任何功能。', maintain: '在「性能与高级-白名单域名」列表添加/删除/编辑域名即可。v12.0.0 起被暂停的站点同样有【🧹 状态 / 恢复】菜单与「本站已暂停」胶囊可就地解封。', risk: '加入白名单后该站所有屏蔽与美化全部失效；误加可用域名会导致广告恢复，注意核对。' },
+    whiteurl: { title: '白名单域名', effect: '在这些网站中脚本整体暂停运行，相当于关闭所有功能（与「黑名单站点」效果相同，区别是本表无开关、填入即生效）。', impl: 'isWhitelisted() 在启动时检测当前域名是否命中白名单，命中则直接 return 不初始化任何功能。', maintain: '两种添加方式：① 本列表手动添加/删除/编辑域名；② 直接点油猴菜单「🚫 暂停 / 恢复本站」一键切换当前站点（无需手输域名）。两者都需刷新页面后生效。被暂停的站点可用「🧹 状态 / 恢复」菜单与「本站已暂停」胶囊就地解封。', risk: '加入白名单后该站所有屏蔽与美化全部失效；误加可用域名会导致广告恢复，注意核对。' },
     adStats: { title: '广告拦截统计', effect: '统计并显示本次访问、累计、以及当前站点已拦截的广告数量，便于直观了解脚本工作量。', impl: '各处理器在移除广告时累加 STATS.skippedAds 与按域名的 siteBlocked[HOST]；设置面板底部实时读取并展示三项数据。', maintain: '关闭后不再扫描 DOM 统计，可略微降低开销；如需重新显示，重新开启本项即可，历史累计数据仍保留。', risk: '仅展示数据，不影响任何屏蔽功能；关闭后设置面板底部显示「统计已关闭」。' },
+    adBadge: { title: '右下角拦截计数角标', effect: '在页面右下角常驻一枚蓝色小盾牌，实时显示本次访问已拦截的广告数量；点击展开明细（本次 / 累计 / 当前站点），并可一键打开设置面板。', impl: 'ncUpdateAdBadge() 读写 STATS.skippedAds / totalBlocked / siteBlocked[HOST]；各累加点通过 ncScheduleAdBadge() 以 requestAnimationFrame 合并刷新，避免连续拦截时频繁写 DOM。', maintain: '默认关闭（避免遮挡页面内容），在「性能与高级 → 统计与显示」开启或关闭，改动即时生效无需刷新。数据源为「广告拦截统计」同源数据；当该项关闭时数字不再增长。', risk: '仅在右下角叠加一个小胶囊，可随时关闭；与「本站已暂停」胶囊（#nc-paused-badge）互斥显示，不会重叠。暂停净化时不显示。' },
     selectionSearch: { title: '划词搜索总开关', effect: '选中网页任意文字即弹出工具条，可一键搜索 / 复制 / 翻译。默认开启。', impl: 'initSelectionSearch() 据此闸门初始化；关闭时整模块不加载、零开销。', maintain: '整页不出现工具条先查本开关与油猴是否已启用脚本；修改后需刷新页面生效。', risk: '仅影响划词工具条；关闭后需手动复制搜索，不影响任何广告屏蔽。' },
     selSearchShowTranslate: { title: '显示翻译按钮', effect: '在划词工具条末尾显示「译」按钮，点按可对选中文字划词翻译。', impl: 'initSelectionSearch 依据 getScriptCfg().selSearchShowTranslate 决定是否插入翻译按钮。', maintain: '需先打开上方「启用划词搜索」总开关；刷新页面后生效。', risk: '仅控制按钮显隐；不影响搜索功能。' },
     selSearchTransAuto: { title: '自动翻译', effect: '划词后立即自动翻译，无需点「译」按钮（默认关闭以免打扰）。', impl: '本开关与「划词搜索 → 翻译设置」里的「自动翻译」是同一项（同读写 selSearchTrans.auto），两处任改一处即同步生效；划词完成后由 initSelectionSearch 判断该字段并调用 doTranslateAndShow()。', maintain: '若觉得自动弹出打扰，关闭本项改用手动点「译」。', risk: '仅影响翻译触发方式；开启会增加每次划词的翻译请求。' },
@@ -5781,11 +6212,12 @@
     selTheme: { title: '工具栏主题', effect: '划词工具条与翻译面板的配色：深色 / 浅色 / 跟随系统 / 跟随时间。', impl: 'applyThemeLive() 把主题映射为 CSS 变量（--sh-bg-rgb 等）写入 :root，运行时实时预览。', maintain: '选「跟随时间」按 6:00–18:00 为浅色、其余深色自动切换；修改即时生效无需刷新。', risk: '纯外观，关闭不影响功能。' },
     selOpacity: { title: '工具栏透明度', effect: '工具条与翻译面板的背景不透明度（50%~100%，越低越通透）。', impl: '透明度写入 --sh-opacity 变量，实时作用于 #sh-bar / #sh-trans 背景。', maintain: '拖动滑块即时预览；若觉得文字看不清，调高到 90%~100%。', risk: '纯外观偏好，无任何功能风险。' },
     selGlass: { title: '毛玻璃效果', effect: '给工具条 / 面板背景加背景模糊（backdrop-filter），更现代通透。', impl: '开启时 --sh-blur 设为 12px，关闭时为 0。', maintain: '低端设备或老浏览器可能卡顿 / 不支持，关闭即可。', risk: '视觉增强；个别浏览器不支持时自动忽略模糊，不影响使用。' },
-    selTransEngine: { title: '翻译引擎', effect: '划词翻译后端：iciba 词典（免费免密钥，推荐）/ MyMemory（免费免密钥，国内直连）/ Google（免费，海外推荐）/ DeepL（需密钥）/ 百度翻译（需 AppID+密钥）/ 自定义 API。', impl: 'translateWith() 按此值路由到对应翻译函数；iciba 引擎查不到（短语/未收录词）时自动用 Google 与 MyMemory 双引擎竞速兜底，谁先返回用谁（国内 MyMemory 快、海外 Google 快）。v1.0.5 已把 dict.iciba.com / translate.googleapis.com / api.mymemory.translated.net 等全部写入 @connect 白名单，Tampermonkey 不再拦截。', maintain: 'iciba 仅查词典（单词给音标/释义，短语自动走兜底）；DeepL/百度需在下方填密钥；自定义支持 {q}{tl}{key} 占位符；MyMemory 免费额度约 5000 字符/天/IP。', risk: '免费引擎无需配置；填错密钥会导致对应引擎失败，改回 iciba 即可；MyMemory 超额当天会退化到 Google 或报错。' },
+    selTransEngine: { title: '翻译引擎', effect: '划词翻译后端：iciba 词典（免费免密钥，推荐）/ MyMemory（免费免密钥，国内直连）/ Google（免费，海外推荐）/ DeepL（需密钥）/ 百度翻译（需 AppID+密钥）/ 自定义 API。', impl: 'translateWith() 按此值路由到对应翻译函数；iciba 引擎查不到（短语/未收录词）时自动用 Google 与 MyMemory 双引擎竞速兜底，谁先返回用谁（国内 MyMemory 快、海外 Google 快）。', maintain: 'iciba 仅查词典（单词给音标/释义，短语自动走兜底）；DeepL/百度需在下方填密钥；自定义支持 {q}{tl}{key} 占位符；MyMemory 免费额度约 5000 字符/天/IP。若某引擎报错，优先检查网络是否可达该服务，或换用其他引擎。', risk: '划词翻译会把选中的文字发送给你所选的翻译服务商（iciba / Google / MyMemory / DeepL / 百度等第三方），请勿翻译敏感信息。免费引擎无需配置；填错密钥会导致对应引擎失败，改回 iciba 即可；MyMemory 超额当天会退化到 Google 或报错。' },
     selTransAuto: { title: '自动翻译（翻译设置）', effect: '开启后在翻译面板打开时自动执行一次翻译，省去点按钮。', impl: 'showTransPanel 末尾依据 tr.auto 自动调用 doTranslateAndShow()。', maintain: '与总开关里的「自动翻译」联动；不想自动翻可关闭。', risk: '仅影响翻译触发；增加翻译请求次数。' },
     selTransTarget: { title: '目标语言', effect: '关闭「自动目标语言」时，固定把选中文字翻译到此语言（中/英/日/韩/法）。', impl: 'doTranslateAndShow 的 target 参数取值；forceAutoTarget 关闭时生效。', maintain: '一般保持「自动目标语言」开启即可自动判断中↔英；需要固定目标时再改本项。', risk: '纯偏好，无功能风险。' },
     selForceAutoTarget: { title: '自动目标语言', effect: '开启后按源文自动判断：中文→英、英文→中，其余保持自动检测。', impl: 'doTranslateAndShow 里依据源语言切换 target。', maintain: '想固定目标语言就关闭本项并在上方选「目标语言」。', risk: '纯偏好，无功能风险。' },
-    selProxy: { title: 'CORS 代理前缀（兜底）', effect: '为翻译请求套一层 CORS 代理，用于国内访问 Google / 自定义 API 被墙的场景。留空即可。', impl: 'gmFetch 检测到 proxyUrl 后，把目标 URL 按 {u} 占位符或 ?url= 拼接到代理前。', maintain: '仅当翻译报错「网络错误 / 代理错误」时填写；填错代理反而会导致所有翻译失败。', risk: '留空不影响；填了错误代理会让翻译全部走不通，请确认代理可用。' }
+    selProxy: { title: 'CORS 代理前缀（兜底）', effect: '为翻译请求套一层 CORS 代理，用于国内访问 Google / 自定义 API 被墙的场景。留空即可。', impl: 'gmFetch 检测到 proxyUrl 后，把目标 URL 按 {u} 占位符或 ?url= 拼接到代理前。', maintain: '仅当翻译报错「网络错误 / 代理错误」时填写；填错代理反而会导致所有翻译失败。', risk: '留空不影响；填了错误代理会让翻译全部走不通，请确认代理可用。' },
+    cloudSync: { title: '云端配置同步', effect: '把你的脚本配置（开关状态、过滤名单、白名单等）备份到你自己的云盘，换设备时一键恢复。支持 WebDAV（坚果云 / Nextcloud 等）与 GitHub Gist 两种方式，均为可选。', impl: 'cloudSyncUp / cloudSyncDown 通过 WebDAV 或 Gist 接口读写一份 JSON 配置；开启「自动同步」后，本机改配置会在 3 秒后自动上传，启动时也会尝试从云端拉取合并。', maintain: '数据只上传到你自己填写的服务器，脚本作者不接触任何数据。坚果云须用「应用密码」而非登录密码；可选「密码保护」用 XOR 加密。若自动同步失败，设置面板会显示「上次同步：失败（原因）」，本机改动不会丢失。', risk: '自动同步会用云端配置合并到本地；若本地和云端各改过，以较新时间为准，不会让本机新改动被旧云端数据覆盖。Token / 密码请妥善保管。' }
   };
 
   function openSettings(forceRebuild) {
@@ -5801,7 +6233,7 @@
     const baidu = cfg.baidu;
 
     // Toast（转发到统一 zkToast）
-    function toast(msg, type) { zkToast(msg, { type: type === 'err' ? 'err' : 'ok', dur: 1800 }); }
+    function toast(msg, type) { zkToast(msg, { type: (type === 'err' || type === 'warn') ? type : 'ok', dur: 1800 }); }
 
     // 自动保存单个开关
     function autoSave(key, val) {
@@ -5860,7 +6292,12 @@
               ]
             },
             // 护眼强度：柔和/标准/增强 → 蒙版 alpha 0.16/0.26/0.38（用 select 非 switch，buildGroupToggle 已排除它）
-            { k: 'baidueyestrength', t: '护眼强度', d: '护眼蒙版深浅：柔和不刺眼，增强更暖画面（视觉柔和更强）', type: 'select', opts: [['soft','柔和'],['standard','标准'],['strong','增强']] }
+            { k: 'baidueyestrength', t: '护眼强度', d: '护眼蒙版深浅：柔和不刺眼，增强更暖画面（视觉柔和更强）', type: 'select', opts: [['soft','柔和'],['standard','标准'],['strong','增强']] },
+            // 【暗黑归位】暗黑模式原先被放在「性能与高级」分组的「全局增强」里，与「护眼模式」分属两类，
+            //  而二者本质都是「显示外观」，用户找暗黑会直觉去外观相关处、不会想到点开「性能与高级」。
+            //  现统一归入「① 通用防护（全站生效）」与护眼模式同框（该节标题已含"全站生效"语义）。
+            { k: 'darkMode', t: '暗黑模式', d: '跟随系统自动切换暗黑模式（本站自带暗黑时脚本自动让行，可在油猴菜单强制接管）' },
+            { k: 'cleanCopy', t: '干净复制', d: '复制链接时自动去除追踪参数' }
           ]},
           { title: '② 搜索引擎 · 广告过滤', items: [
             { k: 'kgbaidued', t: '百度广告过滤', d: '过滤百度搜索系全站广告（含知道 / 百科 / 文库 / 贴吧）' },
@@ -5943,7 +6380,8 @@
             { k: 'captchaApiFast', t: '极速接口地址', d: '「极速」引擎调用的服务地址。留空 = 极速引擎直接跳过，不向任何外部服务器发送数据。请自行搭建或选用可信 OCR 服务后填写；验证码图片将上传至该地址。点击右侧「接口说明」查看填写方式。', type: 'text', tip: '粘贴你信任的 OCR 服务地址（可自建/社区/商业接口）', preset: 'captchaApiFast' },
             { k: 'captchaApiPrecise', t: '精准接口地址', d: '「精准」引擎（含滑块）调用的服务地址。留空 = 精准引擎直接跳过。填写后验证码图片、识别码与当前网页网址会发送给该服务器；常用 like996 公益接口（官网 https://www.like996.icu:1205/，第三方服务，与本脚本无关），点击右侧「接口说明」可直达注册页。', type: 'text', tip: '粘贴精准接口地址（如 like996）', preset: 'captchaApiPrecise' },
             { k: 'captchaPreciseId', t: '精准引擎识别码', d: '仅「精准 / 自动」模式需要，由你所填写的精准接口服务方提供（原 like996 为 32 位）。留空则精准模式跳过识别。', type: 'text', tip: '精准引擎识别码' },
-            { k: 'captchaYunmaToken', t: '云码 Token', d: '仅「算术验证码」需要（如「3+5=?」图片）。在 jfbym.com 获取 Token（商业服务，按识别次数计费，需充值积分，官网 https://www.jfbym.com，第三方服务，与本脚本无关）；留空则算术图跳过识别。点击右侧「接口说明」可直达注册页。', type: 'text', tip: '算术验证码用', preset: 'captchaYunmaToken' }
+            { k: 'captchaYunmaToken', t: '云码 Token', d: '仅「算术验证码」需要（如「3+5=?」图片）。在 jfbym.com 获取 Token（商业服务，按识别次数计费，需充值积分，官网 https://www.jfbym.com，第三方服务，与本脚本无关）；留空则算术图跳过识别。点击右侧「接口说明」可直达注册页。', type: 'text', tip: '算术验证码用', preset: 'captchaYunmaToken' },
+            { k: 'captchaYunmaDev', t: '云码开发者标识（可选）', d: '在 jfbym.com 后台获取的开发者标识（developer_tag），用于把识别调用归属到你的账号。可选，留空则请求不带该标识（由云码平台自行归属），不影响识别功能。', type: 'text', tip: '云码 developer_tag（可留空）' }
           ]},
           { title: '③ 智能与防护', items: [
             { k: 'captchaAutoFind', t: '自动查找验证码', d: '无手动规则时，按属性关键词（code/captcha/yzm…）自动定位验证码与输入框并填充。' },
@@ -5979,13 +6417,11 @@
             { k: 'perfWhitelist', t: '仅白名单域名启用', d: '开启后仅在「启用域名」与已知站点运行，其余页面注入后秒退（近零开销）。油猴 @match 为静态元数据无法运行时切换，此项以注入后早退实现「域名内」' },
             { k: 'passiveGlobal', t: '被动扫描全局化', d: '关闭时通用被动广告扫描只在已知站点运行；开启后扫描所有页面（更重，慎开）' }
           ]},
-          { title: '全局增强', items: [
-            { k: 'darkMode', t: '暗黑模式', d: '跟随系统自动切换暗黑模式' },
-            { k: 'cleanCopy', t: '干净复制', d: '复制链接时自动去除追踪参数' }
-            // 界面语言 uiLang 已移至左栏（藏在"性能与高级"太难找，用户需求）
-          ]},
+          // 「全局增强」section 已撤销：darkMode（暗黑模式）与 cleanCopy（干净复制）归位到
+          // 「净化增强 → ① 通用防护（全站生效）」与护眼模式同框；界面语言 uiLang 移至左栏。
           { title: '统计与显示', items: [
-            { k: 'adStats', t: '广告拦截统计', d: '统计并显示本次/累计/当前站点拦截数量。关闭后不再扫描 DOM，可略微降低开销，设置面板仍显示「统计已关闭」' }
+            { k: 'adStats', t: '广告拦截统计', d: '统计并显示本次/累计/当前站点拦截数量。关闭后不再扫描 DOM，可略微降低开销，设置面板仍显示「统计已关闭」' },
+            { k: 'adBadge', t: '右下角拦截计数角标', d: '在页面右下角常驻一个小盾牌，显示本次已拦截的广告数量，点击可查看明细（本次/累计/当前站点）。默认关闭，避免遮挡页面内容。' }
           ]}
         ],
         listSections: [
@@ -6079,7 +6515,16 @@
       //   若希望繁体也对 t/d 转繁，单独加 s2t 处理（当前 t() 已对字典缺失 zh-TW 键自动 s2t 回退），
       //   但 t() 只对 I18N 字典生效，这里 item.t 是 data 字符串，需手动调 tTree 才能覆盖。
       const tLabel = tp('item.t.' + item.k, item.t);
-      const tDesc = tp('item.d.' + item.k, item.d);
+      let tDesc = tp('item.d.' + item.k, item.d);
+      // 暗黑让行可见性：开关仍为「已开启」但本站已自带暗黑时，脚本实际让行不生效，
+      //   若不在描述里点明，用户会误判脚本坏了。标记由 applyDarkMode() 写在 <html> 上。
+      if (item.k === 'darkMode') {
+        try {
+          if (document.documentElement && document.documentElement.hasAttribute('data-nc-dark-standdown')) {
+            tDesc += '（本站自带暗黑模式，脚本已让行；可用油猴菜单强制接管）';
+          }
+        } catch (e) {}
+      }
       return `<div class="zk-set-row" data-key="${item.k}">
         <div class="zk-set-row-info"><div class="zk-set-row-label">${tLabel}${help}</div><div class="zk-set-row-desc">${tDesc}</div></div>
         ${ctrl}
@@ -6110,7 +6555,7 @@
       return h;
     }
 
-    // 生成列表 section 的 HTML（v12.0.0：支持在卡片内挂载归属开关，开关与名单同框）
+    // 生成列表 section 的 HTML（支持在卡片内挂载归属开关，开关与名单同框）
     function buildListSectionsHtml(listSections) {
       let h = '';
       for (const ls of listSections) {
@@ -6171,7 +6616,7 @@
         #zk-set-settings-sidebar .zk-set-lang{margin:8px 12px}
       }
       #zk-set-settings-main{flex:1;display:flex;flex-direction:column;min-width:0;background:linear-gradient(180deg,#f8fafc 0%,#f1f5f9 100%)}
-      #zk-set-settings-header{padding:18px 26px;border-bottom:1px solid #e2e8f0;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);position:relative;z-index:2}
+      #zk-set-settings-header{padding:18px 26px;border-bottom:1px solid #e2e8f0;display:flex;justify-content:space-between;align-items:center;background:#fff;position:relative;z-index:2}
       #zk-set-settings-header h2{margin:0;font-size:18px;color:#0f172a;font-weight:700;letter-spacing:-.3px}
       #zk-set-settings-close{width:36px;height:36px;border:none;background:#f1f5f9;font-size:22px;line-height:36px;cursor:pointer;color:#64748b;border-radius:50%;transition:all .2s;display:flex;align-items:center;justify-content:center}
       #zk-set-settings-close:hover{background:#e2e8f0;color:#0f172a;transform:rotate(90deg)}
@@ -6185,7 +6630,7 @@
       #zk-set-settings-body::-webkit-scrollbar{width:6px}
       #zk-set-settings-body::-webkit-scrollbar-track{background:transparent}
       #zk-set-settings-body::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:3px}
-      #zk-set-settings-footer{padding:16px 26px;border-top:1px solid #e2e8f0;display:flex;gap:10px;justify-content:space-between;align-items:center;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);white-space:nowrap}
+      #zk-set-settings-footer{padding:16px 26px;border-top:1px solid #e2e8f0;display:flex;gap:10px;justify-content:space-between;align-items:center;background:#fff;white-space:nowrap}
       #zk-set-settings-footer .zk-set-status{font-size:12px;color:#64748b;display:flex;align-items:center;gap:6px}
       #zk-set-settings-footer .zk-set-status .zk-set-auto{margin-left:4px;padding:3px 10px;border-radius:12px;background:#dcfce7;color:#16a34a;font-weight:500;border:1px solid rgba(22,163,74,.12)}
       .zk-set-group{margin-bottom:26px;background:rgba(255,255,255,.95);border:1px solid rgba(226,232,240,.8);border-radius:16px;padding:22px 26px;box-shadow:0 4px 20px rgba(15,23,42,.04),0 1px 3px rgba(15,23,42,.03);transition:box-shadow .25s ease,transform .25s ease}
@@ -6295,7 +6740,7 @@
       .zkss-erow input:focus{border-color:#1677ff}
       /* —— 移动端响应式（≤640px）：侧边栏折叠为顶部横向 tab —— */
       @media (max-width:640px){
-        #zk-set-settings-box{flex-direction:column;width:100%;height:100%;max-width:100vw;max-height:100vh;border-radius:0}
+        #zk-set-settings-box{flex-direction:column;width:100%;height:100%;max-width:100vw;max-height:100vh;border-radius:0;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
         #zk-set-settings-sidebar{width:100%!important;flex-direction:row!important;overflow-x:auto;overflow-y:hidden;flex-shrink:0;padding:0;border-bottom:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,#16273f,#0f1d31)}
         #zk-set-settings-sidebar .zk-set-logo{display:none}
         #zk-set-settings-sidebar .zk-set-cat{padding:13px 14px;white-space:nowrap;border-left:none;border-bottom:3px solid transparent}
@@ -6304,6 +6749,7 @@
         #zk-set-settings-main{min-width:0}
         #zk-set-settings-body{padding:16px 14px}
         #zk-set-settings-header{padding:14px 16px}
+        #zk-set-settings-footer{padding:14px 16px calc(14px + env(safe-area-inset-bottom,0px))}
         #zk-set-settings-header h2{font-size:16px}
         .zk-set-group{padding:14px 14px;margin-bottom:14px}
         .zk-set-row{padding:13px 0}
@@ -6384,6 +6830,17 @@
       .zk-about-ver{font-size:11px;color:#1677ff;background:rgba(22,119,255,.12);padding:4px 12px;border-radius:12px;border:1px solid rgba(22,119,255,.25);font-weight:600;flex-shrink:0}
       .zk-about-desc{font-size:13px;color:#475569;line-height:1.7;background:#eef4ff;border:1px solid #dbeafe;border-radius:10px;padding:12px 14px;margin:0 0 14px}
       .zk-about-desc b{color:#1677ff}
+      .zk-about-intro{margin:0 0 14px;border:1px solid #e2e8f0;border-radius:10px;background:#f8fafc;overflow:hidden}
+      .zk-about-intro>summary{cursor:pointer;padding:11px 14px;font-size:13px;font-weight:600;color:#334155;list-style:none;user-select:none}
+      .zk-about-intro>summary::-webkit-details-marker{display:none}
+      .zk-about-intro>summary:before{content:'▸ ';color:#94a3b8}
+      .zk-about-intro[open]>summary:before{content:'▾ '}
+      .zk-about-intro-body{padding:0 14px 12px;font-size:12.5px;color:#475569;line-height:1.75}
+      .zk-about-intro-body p{margin:0 0 8px}
+      .zk-about-intro-body b{color:#1677ff}
+      .zk-about-links a{color:#1677ff;text-decoration:none}
+      .zk-about-links a:hover{text-decoration:underline}
+      .zk-about-sep{color:#cbd5e1;margin:0 6px;-webkit-user-select:none;user-select:none}
       .zk-about-search{width:100%;padding:10px 14px;border:1px solid #cbd5e1;border-radius:10px;font-size:13px;outline:none;margin-bottom:12px;box-sizing:border-box;background:#fff}
       .zk-about-search:focus{border-color:#1677ff;box-shadow:0 0 0 3px rgba(22,119,255,.1)}
       .zk-about-list{max-height:430px;overflow-y:auto;padding-right:4px}
@@ -6511,6 +6968,17 @@
           if (key === 'baiduhot') {
             updateBaiduHotClass();
           }
+          // 拦截角标：开关即时生效（无需刷新），联动「广告拦截统计」做前置提示
+          if (key === 'adBadge') {
+            try { ncUpdateAdBadge(); } catch (e) {}
+            if (this.checked && getConfig().baidu.adStats === false) {
+              toast('已开启角标，但「广告拦截统计」当前关闭，数字不会增长；建议同时开启上一项', 'warn');
+            } else if (this.checked) {
+              toast('已开启：右下角将显示拦截计数');
+            } else {
+              toast('已关闭右下角拦截计数角标');
+            }
+          }
           if (['baiducss','googlecss','bingcss','yandexcss','so360css'].includes(key)) {
             toast('搜索美化设置已保存，刷新页面后生效');
           }
@@ -6565,7 +7033,7 @@
             try { applyEyeCare(); } catch (e) {}
             toast('已立即应用护眼强度');
           }
-          if (['baiducss','googlecss','bingcss','captchaEngine','captchaTrigger','captchaPreciseId','captchaYunmaToken'].includes(key)) {
+          if (['baiducss','googlecss','bingcss','captchaEngine','captchaTrigger','captchaPreciseId','captchaYunmaToken','captchaYunmaDev'].includes(key)) {
             toast('设置已保存，刷新页面后生效');
           }
         }
@@ -6645,9 +7113,26 @@
         if (!ts) return '未同步';
         try { return new Date(ts).toLocaleString('zh-CN', { hour12: false }); } catch(e) { return '未知'; }
       }
+      // 上次同步状态行：成功显示绿色时间；失败显示红色「时间（原因）」。
+      // 失败原因取本次会话内的 cs.lastSyncError，截断到 60 字避免撑破面板。
+      function fmtSyncStatus() {
+        if (cs.lastSyncOk === false && cs.lastSyncError) {
+          const t0 = cs.lastSync ? '（' + fmtTime(cs.lastSync) + '）' : '';
+          return { text: '上次同步：失败' + t0 + ' ' + String(cs.lastSyncError).slice(0, 60), color: '#ff5252' };
+        }
+        return { text: '上次同步：' + fmtTime(cs.lastSync), color: '#888' };
+      }
       function setStatus(msg, type) {
         const el = root.querySelector('.zkcs-status');
         if (el) { el.textContent = msg; el.style.color = type === 'err' ? '#ff5252' : (type === 'ok' ? '#52c41a' : '#888'); }
+      }
+      // 复位为「上次同步」信息行（手动按钮成功/失败后的短暂反馈会随后复位到它）
+      function refreshStatus() {
+        const el = root.querySelector('.zkcs-status');
+        if (!el) return;
+        const st = fmtSyncStatus();
+        el.textContent = st.text;
+        el.style.color = st.color;
       }
       const provider = getCloudProvider(cs.type);
       const typeOptions = Object.keys(CLOUD_PROVIDERS).map(k => '<option value="' + k + '" ' + (cs.type === k ? 'selected' : '') + '>' + escHtml(CLOUD_PROVIDERS[k].label) + '</option>').join('');
@@ -6664,19 +7149,19 @@
       // 提示：OAuth 类 provider 需要 token
       const isOAuth = ['dropbox','onedrive','gdrive','yandex'].indexOf(cs.type) >= 0;
       const oauthNotice = isOAuth
-        ? '<div class="zkcs-notice">该类型需要你先自行获取 Access Token：在对应云盘开发者后台创建应用 → 授权 → 把回调 URL 中的 <code>access_token=...</code> 或生成的 Token 粘贴到上方。</div>'
+        ? '<div class="zkcs-notice">该方式需要你先获取访问令牌：在对应云盘的开发者后台创建应用 → 完成授权 → 把回调网址里的 <code>access_token=...</code>（或后台生成的令牌）粘贴到上方。</div>'
         : '';
       root.innerHTML = ''
         + '<div class="zk-set-group">'
-        +   '<div class="zk-set-group-title"><svg class="zk-set-gicon" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg> 云端配置管理</div>'
-        +   '<div class="zk-set-row-desc zkcs-note">选择一个云端 provider 后填写对应凭证。开启自动同步后，配置变更会自动上传云端，启动时按「本地修改时间」自动拉取（本地较新则保留本地）。<b>WebDAV（推荐国内）</b>：坚果云/Nextcloud 直接可用；<b>GitHub Gist</b>：只需一个 PAT；<b>Dropbox/OneDrive/Google Drive/Yandex</b>：需自行获取 OAuth Access Token。</div>'
+        +   '<div class="zk-set-group-title"><svg class="zk-set-gicon" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg> 云端配置同步</div>'
+        +   '<div class="zk-set-row-desc zkcs-note">选择一个云端存储方式后填写对应凭证。开启自动同步后，配置变更会自动上传到云端，启动时按「本地修改时间」自动拉取（本地较新则保留本地）。<b>WebDAV（推荐国内）</b>：坚果云 / Nextcloud 直接可用；<b>GitHub Gist</b>：只需一个 GitHub 访问令牌；<b>Dropbox / OneDrive / Google Drive / Yandex</b>：需要自行获取访问令牌。</div>'
         +   '<div class="zkcs-field"><label>云备份方式</label><select class="zkcs-type">' + typeOptions + '</select></div>'
         +   oauthNotice
         +   fieldsHtml
         +   '<div class="zkcs-field zkcs-inline"><label>自动同步</label><div class="zkss-sw ' + (cs.enabled ? 'on' : '') + '" id="zkcs-enabled"><i></i></div><span class="zkcs-tip">配置变更后自动上传，启动时自动下载</span></div>'
         +   '<div class="zkcs-actions"><button class="zkss-btn zkcs-test">🔌 测试连接</button><button class="zkss-btn zkcs-up">⬆ 上传到云端</button><button class="zkss-btn zkcs-down">⬇ 从云端下载</button></div>'
         +   '<div class="zkcs-actions"><button class="zkss-btn zkcs-backup-now" title="将当前配置另存为一份带时间戳的云备份文件">💾 备份当前配置</button><button class="zkss-btn zkcs-backup-mgr" title="查看云端已备份的文件，支持导入/删除/下载到磁盘">📋 管理云备份</button></div>'
-        +   '<div class="zkcs-status">上次同步：' + fmtTime(cs.lastSync) + '</div>'
+        +   '<div class="zkcs-status" style="color:' + fmtSyncStatus().color + '">' + escHtml(fmtSyncStatus().text) + '</div>'
         + '</div>'
         + '<div class="zk-set-group">'
         +   '<div class="zk-set-group-title"><svg class="zk-set-gicon" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg> 本地配置管理</div>'
@@ -6685,8 +7170,9 @@
         +     '<button class="zkss-btn zkcs-pause" title="临时暂停 / 恢复全部净化（刷新页面后生效）">⏸ 暂停全部</button>'
         +     '<button class="zkss-btn zkcs-import" title="从本地 JSON 文件导入配置（将覆盖当前配置，需确认）">📥 导入</button>'
         +     '<button class="zkss-btn zkcs-export" title="把当前配置导出为 JSON 文件以便备份">📤 导出</button>'
+        +     '<button class="zkss-btn zkcs-history" title="查看最近 ' + CONFIG_HISTORY_MAX + ' 次配置改动并回滚到其中任意一版">🕘 配置历史</button>'
         +     '<button class="zkss-btn zkcs-resetorder" title="仅恢复左侧菜单分类的默认顺序，不影响其他设置">↕ 恢复菜单顺序</button>'
-        +     '<button class="zkss-btn zkcs-reset danger" title="恢复全部默认设置（自定义列表 / 白名单也会被清空，不可撤销）">🔄 重置</button>'
+        +     '<button class="zkss-btn zkcs-reset danger" title="恢复全部默认设置（自定义列表 / 白名单也会被清空；操作后可在「配置历史」中回滚）">🔄 重置</button>'
         +   '</div>'
         + '</div>';
 
@@ -6728,27 +7214,47 @@
         persist();
         setStatus(cs.enabled ? '已开启自动同步' : '已关闭自动同步', 'ok');
       };
-      root.querySelector('.zkcs-up').onclick = async () => {
+      // 异步按钮统一包装：进入时禁用 + 文案切换，结束（成功/异常/超时）后恢复
+      function ncAsyncBtn(btn, busyText, fn) {
+        if (!btn) return;
+        btn.onclick = async () => {
+          if (btn.disabled) return;
+          const orig = btn.textContent;
+          btn.disabled = true;
+          btn.textContent = busyText;
+          try {
+            await fn();
+          } catch (e) {
+            setStatus('操作失败：' + ((e && e.message) || e || '未知错误'), 'err');
+            try { console.error('[NetClean] 云同步按钮异常:', e && e.stack || e); } catch (x) {}
+          } finally {
+            btn.disabled = false;
+            btn.textContent = orig;
+          }
+        };
+      }
+      ncAsyncBtn(root.querySelector('.zkcs-up'), '上传中…', async () => {
         readForm();
         setStatus('正在上传…');
         const r = await cloudSyncUp(true);
         setStatus(r.msg, r.ok ? 'ok' : 'err');
-        if (r.ok) root.querySelector('.zkcs-status').textContent = '上次同步：' + fmtTime(cs.lastSync);
-      };
-      root.querySelector('.zkcs-down').onclick = async () => {
-        if (!(await zkConfirm('从云端下载会覆盖当前本地配置，确定继续？', { title: '从云端下载', okText: '确定下载' }))) return;
+        if (r.ok) setTimeout(refreshStatus, 1500); // 成功提示短暂展示后复位为「上次同步：成功 时间」
+      });
+      ncAsyncBtn(root.querySelector('.zkcs-down'), '下载中…', async () => {
+        if (!(await zkConfirm('从云端下载会覆盖当前本地配置，确定继续？', { title: t('sec.从云端下载'), okText: '确定下载' }))) return;
         readForm();
         setStatus('正在下载…');
         const r = await cloudSyncDown(true);
         setStatus(r.msg, r.ok ? 'ok' : 'err');
-      };
-      root.querySelector('.zkcs-test').onclick = async () => {
+        if (r.ok) setTimeout(refreshStatus, 1500);
+      });
+      ncAsyncBtn(root.querySelector('.zkcs-test'), '测试中…', async () => {
         readForm();
         setStatus('正在测试连接…');
         const p = getCloudProvider(cs.type);
         const r = await p.test(getConfig());
         setStatus(r.msg, r.ok ? 'ok' : 'err');
-      };
+      });
       // 云备份文件管理：带错误兜底，解决用户反馈的按钮无反应
       const lBkNow = root.querySelector('.zkcs-backup-now');
       if (lBkNow) lBkNow.onclick = async () => {
@@ -6777,6 +7283,7 @@
       const lExp = root.querySelector('.zkcs-export'); if (lExp) lExp.onclick = () => { doExport(); };
       const lRo = root.querySelector('.zkcs-resetorder'); if (lRo) lRo.onclick = () => { doResetOrder(); };
       const lRst = root.querySelector('.zkcs-reset'); if (lRst) lRst.onclick = () => { doReset(); };
+      const lHis = root.querySelector('.zkcs-history'); if (lHis) lHis.onclick = () => { openConfigHistory(); };
     }
 
     // ===== 视频下载自定义面板（站点选择 / 添加 / 删除）=====
@@ -6861,23 +7368,27 @@
           tplI.oninput = () => { s.tpl = tplI.value; save(); };
           tagI.oninput = () => { s.tag = tagI.value; save(); };
           radio.onchange = () => { if (radio.checked) { vd.active = key; persist(); render(); } };
-          del.onclick = () => {
+          del.onclick = async () => {
+            const nm = (s && s.name) || '该站点';
+            if (!(await zkConfirm('确定删除「' + nm + '」？此操作不可撤销。', { title: '删除下载站点', okText: '确定删除', danger: true }))) return;
             vd.sites = vd.sites.filter(x => x.key !== key);
             if (vd.active === key && vd.sites[0]) vd.active = vd.sites[0].key;
             persist(); render();
+            try { zkToast('已删除「' + nm + '」', { type: 'ok' }); } catch (e) {}
           };
         });
         root.querySelector('.zkvd-add-btn').onclick = async () => {
           const name = root.querySelector('.zkvd-add-name').value.trim();
           const tpl = root.querySelector('.zkvd-add-tpl').value.trim();
-          if (!name || !tpl) { await zkAlert('请填写站点名称和模板', { title: '无法添加' }); return; }
-          vd.sites.push({ key: 'custom_' + Date.now(), name: name, tpl: tpl, tag: '自定义' });
+          if (!name || !tpl) { await zkAlert('请填写站点名称和模板', { title: t('sec.无法添加') }); return; }
+          vd.sites.push({ key: 'custom_' + Date.now() + '_' + Math.random().toString(36).slice(2, 7), name: name, tpl: tpl, tag: '自定义' });
           persist();
           root.querySelector('.zkvd-add-name').value = '';
           root.querySelector('.zkvd-add-tpl').value = '';
           render();
         };
-        root.querySelector('.zkvd-reset').onclick = () => {
+        root.querySelector('.zkvd-reset').onclick = async () => {
+          if (!(await zkConfirm('将恢复为内置默认下载站点，你添加的自定义站点会被移除。确定继续？', { title: '恢复默认站点', okText: '确定恢复', danger: true }))) return;
           vd.sites = JSON.parse(JSON.stringify(DEFAULT_CONFIG.videoDownload.sites));
           vd.active = DEFAULT_CONFIG.videoDownload.active;
           persist(); render();
@@ -6909,6 +7420,15 @@
             <div class="zk-about-ver">当前版本 v${VERSION}</div>
           </div>
           <p class="zk-about-desc">广告过滤 · 划词搜索 · 验证码识别 · 视频下载 一体化浏览器增强脚本。下方为<b>全部功能的详细说明</b>，可搜索关键词快速定位，点击展开查看作用 / 原理 / 维护 / 风险。</p>
+          <details class="zk-about-intro">
+            <summary>📖 这个脚本是做什么的？（点开看简介 · 隐私说明 · 反馈渠道）</summary>
+            <div class="zk-about-intro-body">
+              <p><b>能做什么</b>：① 过滤全站广告（含百度 / Google / B站 / 知乎 / 微博等 20+ 站点，并自动跳过 YouTube、优酷、腾讯视频的贴片广告）；② 划词搜索与翻译（选中文字即弹出工具条）；③ 验证码自动识别填充；④ 视频下载与画质增强；⑤ 暗黑模式、护眼模式、搜索结果卡片美化等外观增强。所有功能都可在左侧分类逐项开关，改完自动保存。</p>
+              <p><b>不会做什么</b>：不收集、不上传你的任何浏览记录。所有过滤规则都在本地运行。仅当你<b>主动开启</b>验证码识别并填写了接口地址，或<b>使用划词翻译</b>时，相关图片 / 文字才会发送到<b>你自己选择</b>的第三方服务；云同步也只上传到<b>你自己填写的</b>服务器。</p>
+              <p><b>遇到问题</b>：想临时关掉某个站点的脚本，可用油猴菜单「🚫 暂停 / 恢复本站」；想全局临时关掉，用「⏸ 暂停 / 恢复全网净化」；脚本在本站没生效时，用「🧹 状态 / 恢复」查看原因。</p>
+              <p class="zk-about-links">项目主页 · 更新日志 · 问题反馈：<a href="https://greasyfork.org/scripts/594888/feedback" target="_blank" rel="noopener">GreasyFork</a><span class="zk-about-sep">｜</span><a href="https://github.com/bigoceans/NetClean/issues" target="_blank" rel="noopener">GitHub Issues</a></p>
+            </div>
+          </details>
           <input class="zk-about-search" type="text" placeholder="搜索功能说明（如 广告 / 验证码 / 翻译 / 画质）">
           <div class="zk-about-list">${items}</div>
         </div>`;
@@ -7097,7 +7617,7 @@
         .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
     }
 
-    // 列表渲染（v12.0.0：支持就地编辑 / 上移 / 下移 / 删除，且全部转义）
+    // 列表渲染（支持就地编辑 / 上移 / 下移 / 删除，且全部转义）
     function renderList(listKey) {
       const container = sr.querySelector(`.zk-set-list[data-list="${listKey}"] .zk-set-items`);
       if (!container) return;
@@ -7119,23 +7639,41 @@
       ).join('');
       container.querySelectorAll('.zk-set-list-btn').forEach(btn => {
         btn.addEventListener('click', async () => {
-          const item = btn.closest('.zk-set-list-item');
-          if (!item) return;
-          const idx = parseInt(item.getAttribute('data-idx'));
-          const act = btn.getAttribute('data-act');
-          const list = cfg[listKey] || [];
-          if (act === 'del') {
-            if (!(await zkConfirm('确定删除「' + list[idx] + '」？此操作不可撤销。', { title: '删除条目', okText: '确定删除', danger: true }))) return;
-            list.splice(idx, 1);
-            setConfig(cfg); renderList(listKey); toast('已删除', 'ok');
-          } else if (act === 'up' && idx > 0) {
-            const t = list[idx]; list[idx] = list[idx - 1]; list[idx - 1] = t;
-            setConfig(cfg); renderList(listKey);
-          } else if (act === 'down' && idx < list.length - 1) {
-            const t = list[idx]; list[idx] = list[idx + 1]; list[idx + 1] = t;
-            setConfig(cfg); renderList(listKey);
-          } else if (act === 'edit') {
-            startListEdit(item, idx, list[idx], listKey);
+          try {
+            const item = btn.closest('.zk-set-list-item');
+            if (!item) return;
+            const idx = parseInt(item.getAttribute('data-idx'));
+            const act = btn.getAttribute('data-act');
+            const list = cfg[listKey] || [];
+            // 越界防护：DOM 与配置可能不同步（并发修改 / 面板未重绘），
+            // 若不校验，list.splice(undefined,1) 会被 ToInteger 成 0 而误删首项
+            if (!Number.isInteger(idx) || idx < 0 || idx >= list.length) {
+              toast('数据已过期，请重新打开设置面板', 'err');
+              return;
+            }
+            if (act === 'del') {
+              if (!(await zkConfirm('确定删除「' + list[idx] + '」？删除后 5 秒内可撤销。', { title: '删除条目', okText: '确定删除', danger: true }))) return;
+              const removed = list[idx];
+              list.splice(idx, 1);
+              setConfig(cfg); renderList(listKey);
+              zkToast('已删除「' + removed + '」', { type: 'ok', action: { label: '撤销', fn: () => {
+                const cur = cfg[listKey] || [];
+                if (cur.indexOf(removed) !== -1) return;   // 已被重新加回，不重复插入
+                cur.splice(Math.min(idx, cur.length), 0, removed);
+                setConfig(cfg); renderList(listKey); toast('已恢复「' + removed + '」', 'ok');
+              } } });
+            } else if (act === 'up' && idx > 0) {
+              const t = list[idx]; list[idx] = list[idx - 1]; list[idx - 1] = t;
+              setConfig(cfg); renderList(listKey);
+            } else if (act === 'down' && idx < list.length - 1) {
+              const t = list[idx]; list[idx] = list[idx + 1]; list[idx + 1] = t;
+              setConfig(cfg); renderList(listKey);
+            } else if (act === 'edit') {
+              startListEdit(item, idx, list[idx], listKey);
+            }
+          } catch (e) {
+            console.error('[NetClean] 列表操作失败:', e);
+            toast('操作失败：' + ((e && e.message) || e), 'err');
           }
         });
       });
@@ -7161,7 +7699,7 @@
         if (!v || v === oldVal) return false;
         const list = cfg[listKey] || [];
         const dup = list.indexOf(v);
-        if (dup >= 0 && dup !== idx) { toast('已存在相同条目', 'err'); return false; }
+        if (dup >= 0 && dup !== idx) { toast('已存在相同条目', 'warn'); return false; }
         list[idx] = v; oldVal = v;
         setConfig(cfg);
         return true;
@@ -7186,7 +7724,7 @@
     ['pingbiurl', 'pingbikw', 'whiteurl', 'scopeWhitelist', 'captchaWhitelist', 'captchaBlacklist', 'scriptBlacklist'].forEach(renderList);
 
     // 脚本启用站点黑名单：批量「导入预设敏感站点」/「清空黑名单」
-    // v12.0.0：两个批量操作都是破坏性的（清空=整份名单失效），补二次确认与空操作识别。
+    // 两个批量操作都是破坏性的（清空=整份名单失效），补二次确认与空操作识别。
     function blacklistHint(extra) {
       if (!cfg.baidu.scriptBlacklistEnabled) return extra + '（上方开关当前关闭，名单不会生效）';
       return extra + '（刷新页面后生效）';
@@ -7199,17 +7737,21 @@
           if (act === 'import-preset') {
             const cur = cfg.scriptBlacklist || [];
             const add = SCRIPT_BLACKLIST_PRESET.filter(d => cur.indexOf(d) === -1);
-            if (!add.length) { toast('预设敏感站点已全部在名单中', 'err'); return; }
+            if (!add.length) { toast('预设敏感站点已全部在名单中', 'warn'); return; }
             if (!(await zkConfirm('将导入 ' + add.length + ' 个预设敏感站点（银行/支付/政务/邮箱等）。\n导入后需开启上方开关才会生效。继续？', { title: '导入预设站点', okText: '确定导入' }))) return;
             const merged = Array.from(new Set([...SCRIPT_BLACKLIST_PRESET, ...cur])).slice(0, 999);
             cfg.scriptBlacklist = merged; setConfig(cfg); renderList('scriptBlacklist');
             toast(blacklistHint('已导入 ' + add.length + ' 个，共 ' + merged.length + ' 个'));
           } else if (act === 'clear') {
             const n = (cfg.scriptBlacklist || []).length;
-            if (!n) { toast('黑名单已经是空的', 'err'); return; }
-            if (!(await zkConfirm('确定清空黑名单（' + n + ' 个站点）？\n清空后脚本将在这些站点恢复运行。继续？', { title: '清空黑名单', okText: '确定清空', danger: true }))) return;
+            if (!n) { toast('黑名单已经是空的', 'warn'); return; }
+            if (!(await zkConfirm('确定清空黑名单（' + n + ' 个站点）？\n清空后脚本将在这些站点恢复运行（5 秒内可撤销）。继续？', { title: '清空黑名单', okText: '确定清空', danger: true }))) return;
+            const backup = (cfg.scriptBlacklist || []).slice();
             cfg.scriptBlacklist = []; setConfig(cfg); renderList('scriptBlacklist');
-            toast('已清空黑名单' + (cfg.baidu.scriptBlacklistEnabled ? '（刷新页面后生效）' : ''));
+            zkToast('已清空黑名单（' + backup.length + ' 个站点）', { type: 'ok', action: { label: '撤销', fn: () => {
+              cfg.scriptBlacklist = backup; setConfig(cfg); renderList('scriptBlacklist');
+              toast('已恢复 ' + backup.length + ' 个黑名单站点', 'ok');
+            } } });
           }
         });
       });
@@ -7253,7 +7795,7 @@
     // 设置项全局搜索过滤
     const searchInput = sr.querySelector('#zk-set-search');
     const searchClear = sr.querySelector('#zk-set-search-clear');
-    // v12.0.0：列表条目（.zk-set-list-item）也纳入搜索范围 —— 之前搜「icbc」搜不到黑名单里的条目
+    // 列表条目（.zk-set-list-item）也纳入搜索范围 —— 之前搜「icbc」搜不到黑名单里的条目
     const NC_FILTER_ROWS = '.zk-set-row, .zkvd-row, .zk-about-li, .zk-set-list-item';
     function clearFilter() {
       searchInput.value = '';
@@ -7395,6 +7937,10 @@
         pauseBtn.style.color = BLOCKING_PAUSED ? '#ff5252' : '';
       }
     }
+    // 供模块级的 ncTogglePauseGlobal 反向调用：快捷键/菜单切换暂停后，面板若开着需同步按钮态。
+    // 面板关闭后 _syncPauseUI 置空，避免闭包持有已卸载的 DOM。
+    // 用 try 包裹：此行若抛错会中断其后的「关闭」按钮绑定（面板将无法关闭），绝不能让它逃逸。
+    try { _syncPauseUI = function () { try { updatePauseUI(); } catch (e) {} }; } catch (e) {}
     function updateStats() {
       const el = sr.querySelector('#zk-set-stats');
       if (el) {
@@ -7407,9 +7953,11 @@
     const statsTimer = setInterval(updateStats, 2000);
 
     function doPauseToggle() {
-      BLOCKING_PAUSED = !BLOCKING_PAUSED;
-      updatePauseUI();
-      toast(BLOCKING_PAUSED ? '⏸ 广告净化已全局暂停，刷新页面后生效' : '▶ 广告净化已恢复');
+      // 复用模块级实现，确保与快捷键/菜单路径行为完全一致（此前两边分裂：
+      // 面板内只改按钮文字、不弹胶囊；快捷键弹胶囊但 2.5s 后消失）。
+      // 传 onlyToast=true：面板内已有按钮态反馈，由 ncTogglePauseGlobal 统一负责 toast
+      // （此前此处再 toast 一次会与内部 notify 重复弹两条，虽然后者会被覆盖，但属冗余）。
+      ncTogglePauseGlobal(true);
     }
     function doExport() {
       const blob = new Blob([JSON.stringify(cfg, null, 2)], { type: 'application/json' });
@@ -7455,8 +8003,80 @@
       close(); openSettings();
     }
 
+    // ===== 配置历史 / 回滚 =====
+    // 展示最近 CONFIG_HISTORY_MAX 份「改动前快照」，点击即回滚。回滚前会自动把当前配置存一份，可再回滚回来。
+    function openConfigHistory() {
+      const old = document.getElementById('zk-cfg-hist'); if (old) old.remove();
+      const list = getConfigHistory();
+      const box = document.createElement('div');
+      box.id = 'zk-cfg-hist';
+      box.style.cssText = 'position:fixed;inset:0;z-index:' + NC_Z_TOP + ';background:rgba(15,23,42,.55);display:flex;align-items:center;justify-content:center;padding:20px;';
+      const card = document.createElement('div');
+      card.setAttribute('role', 'dialog'); card.setAttribute('aria-modal', 'true');
+      card.style.cssText = 'background:#fff;border-radius:14px;width:520px;max-width:100%;max-height:82vh;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.3);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;color:#1f2937;overflow:hidden;';
+
+      const fmtTime = (ts) => { try { return new Date(ts).toLocaleString(); } catch (e) { return String(ts); } };
+      const rowsHtml = list.length
+        ? list.map((h, i) => {
+            let summary = '';
+            try {
+              const p = JSON.parse(h.data);
+              const b = p.baidu || {};
+              const lists = ['whiteurl', 'pingbiurl', 'pingbikw', 'scriptBlacklist'].map(k => (b[k] && b[k].length) ? k + ':' + b[k].length : null).filter(Boolean);
+              summary = lists.length ? lists.join(' · ') : '常规开关变更';
+            } catch (e) { summary = '快照'; }
+            return '<div class="zk-hist-row" data-at="' + h.at + '" style="display:flex;align-items:center;gap:12px;padding:11px 14px;border:1px solid #eef2f7;border-radius:10px;margin-bottom:8px;cursor:pointer;transition:background .15s,border-color .15s">'
+              + '<div style="flex:1;min-width:0">'
+              +   '<div style="font-size:13px;font-weight:600;color:#0f172a">' + (i === 0 ? '最近一次改动前 · ' : '') + zkEscH(fmtTime(h.at)) + '</div>'
+              +   '<div style="font-size:11.5px;color:#94a3b8;margin-top:3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">' + zkEscH(summary) + '</div>'
+              + '</div>'
+              + '<button type="button" class="zk-hist-rollback" data-at="' + h.at + '" style="padding:6px 14px;border:1px solid #bfdbfe;background:#eff6ff;color:#1677ff;font-size:12px;font-weight:600;border-radius:8px;cursor:pointer;flex:0 0 auto">回滚到此</button>'
+              + '</div>';
+          }).join('')
+        : '<div style="padding:34px 14px;text-align:center;color:#94a3b8;font-size:13px">暂无历史记录<br><span style="font-size:12px">修改任意设置后会自动生成快照</span></div>';
+
+      card.innerHTML = ''
+        + '<div style="padding:18px 20px 14px;border-bottom:1px solid #eef2f7;display:flex;align-items:center;justify-content:space-between">'
+        +   '<div><div style="font-size:15px;font-weight:700;color:#0f172a">🕘 配置历史</div>'
+        +   '<div style="font-size:11.5px;color:#94a3b8;margin-top:3px">保留最近 ' + CONFIG_HISTORY_MAX + ' 次改动前的配置，可随时回滚</div></div>'
+        +   '<button type="button" class="zk-hist-close" style="border:none;background:transparent;font-size:20px;line-height:1;color:#94a3b8;cursor:pointer">×</button>'
+        + '</div>'
+        + '<div style="padding:14px 20px;overflow-y:auto;flex:1">' + rowsHtml + '</div>'
+        + '<div style="padding:12px 20px 16px;border-top:1px solid #eef2f7;display:flex;justify-content:space-between;align-items:center">'
+        +   '<button type="button" class="zk-hist-clear" style="padding:7px 14px;border:1px solid #fecaca;background:#fff;color:#ef4444;font-size:12px;font-weight:600;border-radius:8px;cursor:pointer">清空历史</button>'
+        +   '<span style="font-size:11.5px;color:#94a3b8">回滚后配置立即生效</span>'
+        + '</div>';
+      box.appendChild(card);
+      (document.body || document.documentElement).appendChild(box);
+
+      const closeHist = () => { try { box.remove(); } catch (e) {} };
+      const onEsc = (e) => { if (e.key === 'Escape') { document.removeEventListener('keydown', onEsc); closeHist(); } };
+      document.addEventListener('keydown', onEsc);
+      box.addEventListener('click', (e) => { if (e.target === box) { document.removeEventListener('keydown', onEsc); closeHist(); } });
+      card.querySelector('.zk-hist-close').onclick = () => { document.removeEventListener('keydown', onEsc); closeHist(); };
+      card.querySelector('.zk-hist-clear').onclick = async () => {
+        if (!(await zkConfirm('确定清空全部配置历史？清空后无法再回滚到旧版本。', { title: '清空配置历史', okText: '确定清空', danger: true }))) return;
+        clearConfigHistory(); closeHist(); toast('配置历史已清空', 'ok');
+      };
+      card.querySelectorAll('.zk-hist-row').forEach(row => {
+        row.addEventListener('mouseenter', () => { row.style.background = '#f8fafc'; row.style.borderColor = '#bfdbfe'; });
+        row.addEventListener('mouseleave', () => { row.style.background = ''; row.style.borderColor = '#eef2f7'; });
+      });
+      card.querySelectorAll('.zk-hist-rollback').forEach(btn => {
+        btn.addEventListener('click', async (ev) => {
+          ev.stopPropagation();
+          const at = parseInt(btn.getAttribute('data-at'), 10);
+          if (!(await zkConfirm('将把全部设置回滚到 ' + fmtTime(at) + ' 的版本。\n当前配置会自动备份一份（可在历史里再回滚回来）。继续？', { title: '回滚配置', okText: '确定回滚', danger: true }))) return;
+          const r = rollbackConfigTo(at);
+          closeHist();
+          if (r.ok) { toast(r.msg, 'ok'); setTimeout(() => { close(); openSettings(); }, 700); }
+          else toast(r.msg || '回滚失败', 'err');
+        });
+      });
+    }
+
     // 关闭
-    function close() { clearInterval(statsTimer); document.removeEventListener('click', onDocClick, true); box.remove(); if (_prevFocus && _prevFocus.focus) { try { _prevFocus.focus(); } catch (e) {} } }
+    function close() { clearInterval(statsTimer); document.removeEventListener('click', onDocClick, true); box.remove(); _syncPauseUI = null; if (_prevFocus && _prevFocus.focus) { try { _prevFocus.focus(); } catch (e) {} } }
     box._close = close; // 供全局 Esc 监听复用，避免重复注册 keydown 造成泄漏
     box._doPauseToggle = doPauseToggle;
     box._doExport = doExport;
@@ -7519,7 +8139,7 @@
       // 与本脚本自身版本号（VERSION）解耦，避免服务端误判"版本过低"。
       const LIKE996_API_VERSION = '7.0';
       const API_YUNMA = 'https://www.jfbym.com/api/YmServer/customApi';
-      const YUNMA_DEV = '41acabfb0d980a24e6022e89f9c1bfa4';
+      // 云码「开发者标识」(developer_tag) 由用户在「设置 → 验证码识别」中自行填写，本脚本不内置。
       const cache = {};
       const cacheGet = (k) => { const v = cache[k]; if (v && v.exp > Date.now()) return v.val; return null; };
       const cacheSet = (k,  v, ttl) => { cache[k] = { val: v, exp: Date.now() + (ttl || 600000) }; };
@@ -7527,23 +8147,36 @@
       function strHash(input) { let h = 5381; input = String(input || ''); for (let i = 0; i < input.length; i++) { h = ((h << 5) + h) + input.charCodeAt(i); } return (h >>> 0).toString(36); }
       const HINTS = ['code', 'captcha', 'yzm', 'check', 'random', 'veri', 'vcode', 'verify', 'yanzhengma', '验证码', '看不清', '换一张', 'login'];
 
+      // 顶部提示：统一转发到全局 zkToast 的 top 变体（安东蓝主题一致，不再自带一套样式）。
+      //   * 类型推断：文案含「错误 / 失败 / 超时 / 不可用 / 不足 / 未设置 / 未开启 / 未找到 / 请先」
+      //     等否定词 → warn/err 配色；其余按普通状态（ok 蓝）显示，与原 #cat_topNotice 观感一致。
+      //   * 队列：原实现同一时刻只显示一条（后到覆盖前条）。改为「串行队列」，
+      //     连续调用时逐条播放，避免「手动加规则」这种需要用户读多步指引的场景被后一条冲掉。
+      //   * 容器：zkToast 的 top 变体走独立 id #zk-toast-top，不会与底部 notify() 互抢。
+      const _tnQueue = [];
+      let _tnBusy = false;
+      function _tnKind(msg) {
+        const s = String(msg || '');
+        if (/错误|失败|出错/.test(s)) return 'err';
+        if (/超时|不可用|不足|未设置|未开启|未找到|请先|请检查|无规则|过短/.test(s)) return 'warn';
+        return 'ok';
+      }
+      function _tnDrain() {
+        if (_tnBusy || !_tnQueue.length) return;
+        _tnBusy = true;
+        const item = _tnQueue.shift();
+        let finished = false;
+        const done = () => { if (finished) return; finished = true; _tnBusy = false; setTimeout(_tnDrain, 120); };
+        try { zkToast(item.msg, { type: item.kind, dur: item.dur, top: true }); } catch (e) {}
+        // +420ms：等 zkToast 自身的 320ms 淡出动画播完再放下一条，避免后条 remove 掉正在淡出的前条
+        setTimeout(done, item.dur + 420);
+      }
       function topNotice(msg, dur) {
-        dur = dur || 3500;
-        const id = 'cat_topNotice';
-        let div = document.getElementById(id);
-        if (!div) {
-          div = document.createElement('div');
-          div.id = id;
-          div.style.cssText = 'position:fixed;top:14px;left:50%;z-index:' + NC_Z_TOP + ';max-width:min(92vw,520px);padding:10px 20px;border-radius:999px;background:linear-gradient(135deg,rgba(22,119,255,.96),rgba(56,189,248,.96));color:#fff;display:flex;justify-content:center;align-items:center;font-family:-apple-system,"Microsoft YaHei",sans-serif;text-align:center;font-size:13px;font-weight:500;box-shadow:0 8px 28px rgba(22,119,255,.3),0 2px 8px rgba(15,23,42,.16);opacity:0;transform:translateX(-50%) translateY(-12px) scale(.96);transition:opacity .25s ease,transform .3s cubic-bezier(.25,.8,.25,1)';
-          requestAnimationFrame(function () {
-            div.style.opacity = '1';
-            div.style.transform = 'translateX(-50%) translateY(0) scale(1)';
-          });
-          (document.body || document.documentElement).appendChild(div);
-        }
-        div.textContent = msg;
-        clearTimeout(div._t);
-        div._t = setTimeout(() => { if (div && div.parentNode) div.parentNode.removeChild(div); }, dur);
+        if (!msg) return;
+        // 队列过长时丢弃早期条目（避免用户点了 10 次后要看 10 条 20 秒的提示）
+        if (_tnQueue.length >= 4) _tnQueue.shift();
+        _tnQueue.push({ msg: msg, dur: Math.max(1200, dur || 3500), kind: _tnKind(msg) });
+        _tnDrain();
       }
       function attrHit(el) {
         const list = ['id', 'title', 'alt', 'name', 'className', 'src', 'placeholder'];
@@ -7629,9 +8262,9 @@
             if (src && src.indexOf('data:') === 0) { resolve(src.split(',')[1]); return; }
             if (src && (src.indexOf('http') === 0 || src.indexOf('//') === 0) && src.indexOf(window.location.host) === -1) {
               const abs = src.indexOf('//') === 0 ? window.location.protocol + src : src;
-              GM_xmlhttpRequest({ url: abs, method: 'GET', responseType: 'blob',
+              GM_xmlhttpRequest({ url: abs, method: 'GET', responseType: 'blob', timeout: 10000,
                 onload: (r) => { if (r.status !== 200) { reject('跨域拉取失败'); return; } const fr = new FileReader(); fr.onloadend = (e) => resolve(e.target.result.split(',')[1]); fr.readAsDataURL(r.response); },
-                onerror: () => reject('跨域拉取异常') });
+                onerror: () => reject('跨域拉取异常'), ontimeout: () => reject('跨域拉取超时') });
               return;
             }
             if (!img.width || !img.height) { reject('图片尺寸为 0'); return; }
@@ -7689,7 +8322,7 @@
           // 未填写接口地址：不向任何外部服务器发起请求，静默跳过（仅在调试模式记录）
           if (!base) { dbg('[NetClean:recFast] 未填写极速接口地址，已跳过（脚本不内置第三方打码平台）'); resolve(''); return; }
           GM_xmlhttpRequest({ method: 'POST', url: base + '/identify_GeneralCAPTCHA', data: JSON.stringify({ ImageBase64: String(code) }),
-            headers: { 'Content-Type': 'application/json' }, responseType: 'json',
+            headers: { 'Content-Type': 'application/json' }, responseType: 'json', timeout: 15000,
             onload: (r) => {
               dbg('[NetClean:recFast] recFast onload status=' + r.status + ' response=', r.response);
               if (r.status === 200 && r.response && r.response.result) resolve(r.response.result);
@@ -7703,7 +8336,8 @@
               const detail = e && typeof e === 'object' ? JSON.stringify({ status: e.status, statusText: e.statusText, error: e.error, response: e.responseText || e.response, readyState: e.readyState, finalUrl: e.finalUrl }) : String(e);
               dbg('[NetClean:recFast] 请求异常：', e, detail);
               resolve('');
-            } });
+            },
+            ontimeout: () => { dbg('[NetClean:recFast] 请求超时（15s）'); resolve(''); } });
         });
       }
       function recPrecise(postData) {
@@ -7716,7 +8350,7 @@
           // 注意：请求会带上你的识别码 idCard 与当前页面网址（header path）。
           // 该地址由你自行填写，请确认对方可信后再启用。
           GM_xmlhttpRequest({ method: 'POST', url: base + '/hello', data: JSON.stringify(postData),
-            headers: { 'Content-Type': 'application/json; charset=UTF-8', 'path': window.location.href }, responseType: 'json',
+            headers: { 'Content-Type': 'application/json; charset=UTF-8', 'path': window.location.href }, responseType: 'json', timeout: 20000,
             onload: (r) => {
               const d = r.response || {};
               // like996 成功时返回 code=200，同时 description 可能附带版本警告/升级链接
@@ -7737,18 +8371,24 @@
               if (err && cap().captchaShowHint) topNotice('识别错误：' + err, 5000);
               resolve(null);
             },
-            onerror: (e) => { dbg('[NetClean:recPrecise] 请求异常：', e); resolve(null); } });
+            onerror: (e) => { dbg('[NetClean:recPrecise] 请求异常：', e); resolve(null); },
+            ontimeout: () => { dbg('[NetClean:recPrecise] 请求超时（20s）'); resolve(null); } });
         });
       }
       function recMath(code) {
         return new Promise((resolve) => {
           const token = (cap().captchaYunmaToken || '').replace(/\+/g, '%2B');
           if (!token) { topNotice('算术验证码请先填写云码 Token'); resolve(''); return; }
-          GM_xmlhttpRequest({ method: 'POST', url: API_YUNMA, data: JSON.stringify({ image: String(code), type: '50100', token: token, developer_tag: YUNMA_DEV }),
-            headers: { 'Content-Type': 'application/json' }, responseType: 'json',
+          // 开发者标识为可选项：用户未填写时请求体不含 developer_tag 字段（而非传空值），
+          // 缺失时由云码平台按「无归属」记账，属预期行为。
+          const yunmaDev = String(cap().captchaYunmaDev || '').trim();
+          const yunmaData = { image: String(code), type: '50100', token: token };
+          if (yunmaDev) yunmaData.developer_tag = yunmaDev;
+          GM_xmlhttpRequest({ method: 'POST', url: API_YUNMA, data: JSON.stringify(yunmaData),
+            headers: { 'Content-Type': 'application/json' }, responseType: 'json', timeout: 15000,
             onload: (r) => { const d = r.response || {}; if (d.msg === '识别成功' && d.data && d.data.data) resolve(String(d.data.data));
               else if (d.msg === '余额不足') { topNotice('云码积分不足，请自行充值'); resolve(''); } else { topNotice('请检查云码 Token 是否正确'); resolve(''); } },
-            onerror: () => resolve('') });
+            onerror: () => resolve(''), ontimeout: () => { topNotice('云码接口超时，请稍后重试'); resolve(''); } });
         });
       }
       async function recognizeText(code, isMath) {
@@ -7983,13 +8623,13 @@
           else {
             const isFile = window.location.protocol === 'file:';
             const msg = isFile
-              ? '未识别出结果：当前是 file:// 本地文件，浏览器安全策略可能阻止了向识别接口发请求。建议把测试页放到本地 http 服务器（python -m http.server）或用 https 站点测试。'
-              : '未识别出结果：fast 接口返回空或服务不可用（503）/ precise 识别码未设置。请在设置填写 like996 识别码切换到 precise 接口，或检查 identify_GeneralCAPTCHA 的 Network 返回。';
+              ? '识别失败：本地文件页面不允许联网识别。请换一个正常的 https 网页再试。'
+              : '识别失败：识别服务暂时没有返回结果。可在设置「验证码识别」里填写识别码后重试，或稍后再试一次。';
             topNotice(msg, 7000);
           }
         } catch (err) {
           dbg('[NetClean] forceRecognize 识别异常：', err);
-          topNotice('识别过程异常：' + (err && err.message ? err.message : String(err)), 5000);
+          topNotice('识别出错，请稍后重试', 5000);
         }
       }
       let moTimer = null;
@@ -8032,7 +8672,7 @@
           if (e.button !== 2) return; e.preventDefault(); document.removeEventListener('contextmenu', onCtx, true);
           const img = e.target;
           // 用 zkConfirm 替代原生 confirm。正文用「文字类/滑动类」与按钮 oktText/cancelText 对齐
-          const isText = await zkConfirm('请选择该验证码的类型：\n【文字类】数字 / 字母 / 算术验证码（需要填字）\n【滑动类】滑动拼图 / 滑块行为验证码', { title: '验证码类型', okText: '文字类', cancelText: '滑动类' });
+          const isText = await zkConfirm('请选择该验证码的类型：\n· 文字类：数字 / 字母 / 算术验证码（需要填字）\n· 滑动类：滑动拼图 / 滑块行为验证码', { title: '验证码类型', okText: '文字类', cancelText: '滑动类' });
           if (!isText) { setupSlideRule(img); return; }
           topNotice('请左键点击验证码输入框', 20000);
           const onClick = async (ev) => {
@@ -8040,7 +8680,7 @@
             const input = ev.target;
             if (input.tagName !== 'INPUT') { topNotice('请点击 INPUT 输入框'); addRuleManually(); return; }
             // 用 zkConfirm 替代原生 confirm。正文用「算术/数英」与按钮 oktText/cancelText 对齐
-            const isMath = await zkConfirm('请选择该验证码的子类：\n【算术】算术题（需云码 Token 识别）\n【数英】纯数字 / 字母（本地识别）', { title: '验证码子类', okText: '算术', cancelText: '数英' });
+            const isMath = await zkConfirm('请选择该验证码的子类：\n· 算术：算术题（需云码 Token 识别）\n· 数英：纯数字 / 字母（本地识别）', { title: '验证码子类', okText: '算术', cancelText: '数英' });
             const rules = getRules();
             const isDiscuz = /^imgseccode_/i.test(img.id || '');
             rules[urlKey()] = { type: img.tagName.toLowerCase() === 'canvas' ? 'canvas' : 'img', img: genSelector(img), input: genSelector(input), imgIndex: indexOfEl('canvas', img), inputIndex: indexOfEl('input', input), math: isMath, discuz: isDiscuz };
@@ -8089,11 +8729,11 @@
             .nc-modal-wrap{width:${width || '520px'};max-width:94vw;max-height:86vh;display:flex;flex-direction:column;background:rgba(255,255,255,.98);border-radius:16px;box-shadow:0 24px 80px rgba(0,0,0,.35),0 0 0 1px rgba(255,255,255,.2) inset;border:1px solid rgba(255,255,255,.15);animation:ncModalIn .25s ease;pointer-events:auto}
             .nc-modal-head{padding:14px 18px;background:linear-gradient(90deg,#0f172a,#1e293b);color:#fff;font-weight:700;font-size:15px;display:flex;justify-content:space-between;align-items:center;border-radius:16px 16px 0 0}
             .nc-modal-head span{letter-spacing:-.2px}
-            .nc-modal-close{width:28px;height:28px;border:none;background:rgba(255,255,255,.15);color:#fff;border-radius:50%;cursor:pointer;font-size:18px;line-height:28px;display:flex;align-items:center;justify-content:center;transition:all .2s}
+            .nc-modal-close{width:28px;height:28px;border:none;background:rgba(255,255,255,.15);color:#fff;border-radius:50%;cursor:pointer;font-size:18px;line-height:28px;display:flex;align-items:center;justify-content:center;transition:background .2s,transform .2s}
             .nc-modal-close:hover{background:rgba(255,255,255,.28);transform:rotate(90deg)}
             .nc-modal-body{padding:18px;overflow-y:auto;color:#1e293b}
             .nc-modal-foot{padding:14px 18px;border-top:1px solid #e2e8f0;display:flex;justify-content:flex-end;gap:10px;background:#f8fafc;border-radius:0 0 16px 16px}
-            .nc-btn{border:none;padding:8px 16px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:500;transition:all .2s}
+            .nc-btn{border:none;padding:8px 16px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:500;transition:background .2s,color .2s,box-shadow .2s,transform .2s}
             .nc-btn.primary{background:linear-gradient(90deg,#1677ff,#38bdf8);color:#fff;box-shadow:0 2px 8px rgba(22,119,255,.25)}
             .nc-btn.primary:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(22,119,255,.35)}
             .nc-btn.secondary{background:#fff;color:#475569;border:1px solid #cbd5e1}
@@ -8101,6 +8741,8 @@
             .nc-btn.danger{background:transparent;color:#ef4444;border:1px solid #fecaca}
             .nc-btn.danger:hover{background:#fef2f2}
             @keyframes ncModalIn{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+            /* 键盘可达性：弹窗内按钮补可见焦点环 */
+            .nc-btn:focus-visible,.nc-modal-close:focus-visible{outline:2px solid #1677ff;outline-offset:2px}
             @media (prefers-reduced-motion: reduce){.nc-modal-wrap{animation:none!important;transition:none!important}}
             .nc-empty{text-align:center;color:#94a3b8;font-size:13px;padding:22px 0}
           </style>
@@ -8207,6 +8849,10 @@
         gear.id = 'cat_gear';
         gear.textContent = '识';
         gear.title = '拖动调整位置｜左键打开菜单｜右键隐藏（刷新恢复）';
+        // 键盘可达性：div 默认不可聚焦；补 tabindex/role/aria 后可 Tab 到并按 Enter/Space 打开菜单
+        gear.setAttribute('tabindex', '0');
+        gear.setAttribute('role', 'button');
+        gear.setAttribute('aria-label', '验证码识别工具');
         gear.style.cssText = 'position:fixed;right:calc(12px + env(safe-area-inset-right));bottom:calc(120px + env(safe-area-inset-bottom));width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#1677ff,#38bdf8);color:#fff;font-size:18px;font-weight:700;line-height:44px;text-align:center;cursor:pointer;z-index:2147483646;box-shadow:0 6px 20px rgba(22,119,255,.35);transition:box-shadow .2s,filter .2s;user-select:none;touch-action:none;';
         // 恢复上次拖拽位置
         try {
@@ -8217,6 +8863,9 @@
           }
         } catch(e) {}
         makeDraggable(gear);
+        gear.addEventListener('keydown', (ev) => {
+          if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); gear.click(); }
+        });
         gear.onclick = (e) => {
           if (gear._dragged) { gear._dragged = false; return; }
           let menu = document.getElementById('cat_menu');
@@ -8634,15 +9283,41 @@
       nodes.forEach(e => {
         const b = document.createElement('div');
         b.className = 'sh-btn'; b.title = e.name;
+        // 键盘可达性：div 默认不可聚焦，补 tabindex/role/aria + Enter/Space 触发
+        b.setAttribute('tabindex', '0');
+        b.setAttribute('role', 'button');
+        b.setAttribute('aria-label', e.name);
         b.innerHTML = renderIcon(e.icon);
         b.onclick = ev => { ev.stopPropagation(); exec(e, text); removeBar(); };
+        b.addEventListener('keydown', ev => {
+          if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); ev.stopPropagation(); exec(e, text); removeBar(); }
+        });
         frag.appendChild(b);
       });
       if (getScriptCfg().selSearchShowTranslate) {
         const tb = document.createElement('div');
         tb.className = 'sh-btn'; tb.title = '翻译';
+        tb.setAttribute('tabindex', '0');
+        tb.setAttribute('role', 'button');
+        tb.setAttribute('aria-label', '翻译');
         tb.innerHTML = ICONS.translate;
-        tb.onclick = ev => { ev.stopPropagation(); doTranslateAndShow(text, rect); };
+        // loading 锁：慢网络下连点会并发多个请求并叠加多张结果卡。
+        // doTranslateAndShow 内部有 transSeq 竞态保护，但无「完成」回调可挂，
+        // 故用 1200ms 视觉/防抖锁作为折中（结果面板出现后自然恢复可点）。
+        let _transPending = false;
+        const _transRun = () => {
+          if (_transPending) return;
+          _transPending = true;
+          tb.style.opacity = '.5';
+          tb.style.cursor = 'default';
+          try { doTranslateAndShow(text, rect); } finally {
+            setTimeout(() => { _transPending = false; tb.style.opacity = ''; tb.style.cursor = ''; }, 1200);
+          }
+        };
+        tb.onclick = ev => { ev.stopPropagation(); _transRun(); };
+        tb.addEventListener('keydown', ev => {
+          if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); ev.stopPropagation(); _transRun(); }
+        });
         frag.appendChild(tb);
       }
       _bsr.appendChild(frag);
@@ -9500,11 +10175,11 @@
     card.className = 'adc-onboard-backdrop';
     card.style.cssText = 'position:fixed;inset:0;background:rgba(15,23,42,.55);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);z-index:' + NC_Z_TOP + ';display:flex;align-items:center;justify-content:center;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;padding:20px;';
     const features = [
-      { icon: '🔍', t: '搜索结果美化', badge: '已开启', d: '百度 / Google / Bing 结果改为卡片式布局，安装即生效。' },
-      { icon: '🛡', t: '广告过滤', badge: '按需开启', d: '覆盖百度、Google、B站、YouTube、知乎等 20+ 站点广告与推广。' },
-      { icon: '🎬', t: '视频与社区工具', badge: '按需开启', d: 'B站画质解锁、YouTube 旋转/翻转、好看视频暂停广告屏蔽等。' },
+      { icon: '🔍', t: '搜索美化', badge: '已开启', d: '百度 / Google / Bing 结果改为卡片式布局，安装即生效（可在「净化增强」页的搜索引擎分区调整）。' },
+      { icon: '🛡', t: '净化增强', badge: '按需开启', d: '覆盖百度、Google、B站、YouTube、知乎等 20+ 站点广告与推广，可在「净化增强」页逐项开关。' },
+      { icon: '🎬', t: '视频下载', badge: '按需开启', d: 'B站画质解锁、YouTube 旋转/翻转、好看视频暂停广告屏蔽等，可在「视频下载」页配置下载站点。' },
       { icon: '🔑', t: '验证码识别', badge: '可选', d: '独立可选模块，默认关闭；可在「验证码识别」页开启并按站点触发。' },
-      { icon: '⚡', t: '性能优化', badge: '按需开启', d: '默认仅美化开启；其余功能默认关闭，可在「性能优化」页按域名精细控制。' }
+      { icon: '⚡', t: '性能与高级', badge: '按需开启', d: '默认仅美化开启；其余功能默认关闭，可在「性能与高级」页按域名精细控制。' }
     ];
     card.innerHTML = `
       <div class="adc-onboard-card" role="dialog" aria-modal="true">
@@ -9512,14 +10187,14 @@
           <div class="adc-onboard-brand">
             <div class="adc-onboard-logo">🛡</div>
             <div>
-              <div class="adc-onboard-title">欢迎使用 广告净化</div>
+              <div class="adc-onboard-title">欢迎使用 全网净化大师 NetClean</div>
               <div class="adc-onboard-subtitle">智能过滤 · 搜索美化 · 安全省流</div>
             </div>
           </div>
           <span class="adc-onboard-ver">v${VERSION}</span>
         </div>
         <div class="adc-onboard-body">
-          <p class="adc-onboard-intro">为兼顾性能与隐私，安装后仅「搜索结果美化」默认开启，其余功能请按需打开。下面是核心能力一览：</p>
+          <p class="adc-onboard-intro">为兼顾性能与隐私，安装后仅「搜索美化」默认开启，其余功能请按需打开。下面是核心能力一览：</p>
           <div class="adc-onboard-features">
             ${features.map(f => `
               <div class="adc-onboard-feature">
@@ -9544,7 +10219,7 @@
           </div>
         </div>
         <div class="adc-onboard-footer">
-          <button id="adc-ob-cancel" class="adc-onboard-btn adc-onboard-btn-text" type="button">取消</button>
+          <button id="adc-ob-cancel" class="adc-onboard-btn adc-onboard-btn-text" type="button" title="本次不启用，刷新后脚本会再次询问">暂不使用</button>
           <button id="adc-ob-min" class="adc-onboard-btn adc-onboard-btn-secondary" type="button" data-label="同意并仅保持极简" disabled>同意并仅保持极简（5s）</button>
           <button id="adc-ob-rec" class="adc-onboard-btn adc-onboard-btn-primary" type="button" data-label="同意并开始常用过滤" disabled>同意并开始常用过滤（5s）</button>
         </div>
@@ -9606,20 +10281,32 @@
     // 同意并启动核心功能（门控放行的唯一入口）
     const acceptAndBoot = () => {
       GM_setValue('adc_legal_accepted', '1');
+      // 记录已同意的「版本 + 免责声明指纹」：以后仅当免责声明正文实质变化（指纹不同）时才重新征询。
+      try { GM_setValue('legalAcceptedVersion', VERSION); GM_setValue('legalAcceptedHash', LEGAL_HASH); } catch (e) {}
       card.remove();
       bootCore();
     };
-    const cancelBtn = card.querySelector('#adc-ob-cancel');
+    const skipBtn = card.querySelector('#adc-ob-cancel');
     const minBtn = card.querySelector('#adc-ob-min');
     const recBtn = card.querySelector('#adc-ob-rec');
-    cancelBtn.onclick = () => {
+    // 「暂不使用」：
+    //   * 首次安装（从未同意过）→ 只写 sessionStorage（本次会话不重弹），刷新后仍会再问 —— 这是门控，理应如此。
+    //   * 条款更新后的重新征询（用户此前已同意）→ 视为"已阅新条款、沿用旧同意"，同时写入新指纹，
+    //     避免每次开新会话都被反复打扰（否则用户会陷入"每次都弹"的无限提示）。
+    const dismissForSession = (notifyUser) => {
       clearInterval(legalTimer);
       card.remove();
-      zkToast(t('toast.notAccepted'), { type: 'warn', dur: 4200 });
+      try { sessionStorage.setItem('adc_legal_skipped', VERSION); } catch (e) {}
+      if (LEGAL_ACCEPTED) {
+        try { GM_setValue('legalAcceptedVersion', VERSION); GM_setValue('legalAcceptedHash', LEGAL_HASH); } catch (e) {}
+      }
+      if (notifyUser) zkToast(t('toast.notAccepted'), { type: 'warn', dur: 4200 });
     };
+    skipBtn.onclick = () => dismissForSession(true);
     minBtn.onclick = () => { clearInterval(legalTimer); acceptAndBoot(); };
     recBtn.onclick = () => { clearInterval(legalTimer); enableRecommended(); acceptAndBoot(); };
-    card.addEventListener('click', e => { if (e.target === card) { clearInterval(legalTimer); card.remove(); } });
+    // 点击遮罩等同「暂不使用」（此前静默关闭、不提示，容易被误认为已同意）
+    card.addEventListener('click', e => { if (e.target === card) dismissForSession(true); });
     // 强制阅读 5 秒后才能点「同意」
     let legalRemain = 5;
     const legalTimer = setInterval(() => {
@@ -9635,6 +10322,12 @@
 
   // ===== 核心启动逻辑（仅在用户接受使用条款后执行）=====
   function bootCore() {
+    // 幂等守卫：bootCore 有两个入口 —— 引导页「同意」按钮（acceptAndBoot）与
+    // 老用户直通分支（LEGAL_ACCEPTED）。若两条路径在同一页面生命周期内都走到，
+    // 会让 injectCSS/startObserver/initRequestInterceptor 二次执行、GM_registerMenuCommand
+    // 重复注册、监听器泄漏。此处兜底，确保整页只启动一次。
+    if (window.__NC_BOOTED) { if (window.__NC_DEBUG) try { console.log('[NetClean] bootCore 已启动过，跳过重复调用'); } catch (e) {} return; }
+    window.__NC_BOOTED = true;
     if (window.__NC_DEBUG) try { console.log('[NetClean] bootCore 启动，版本 v' + VERSION + '，host=' + HOST); } catch (e) {}
     // 阶段 1：CSS 注入（document-start，最高优先级）
     try {
@@ -9648,7 +10341,7 @@
     // 阶段 3：通用功能初始化（逐个模块 try/catch 隔离，任一模块异常只跳过该模块，不影响其余功能）
     // 【B-划词-03 调试增强】开启 __NC_DEBUG 时输出每个模块的初始化结果，便于诊断"SPA 后划词失效"
     onDomReady(() => {
-      [['深色模式', applyDarkMode], ['护眼模式', applyEyeCare], ['纯净复制', initCleanCopy], ['倍速控制', initVideoSpeedControl], ['验证码识别', initCaptcha], ['划词搜索', initSelectionSearch]].forEach(function(pair) {
+      [['暗黑模式', applyDarkMode], ['护眼模式', applyEyeCare], ['干净复制', initCleanCopy], ['倍速控制', initVideoSpeedControl], ['验证码识别', initCaptcha], ['划词搜索', initSelectionSearch], ['拦截角标', ncUpdateAdBadge]].forEach(function(pair) {
         try {
           const r = pair[1]();
           dbg('[NetClean] 模块初始化成功：' + pair[0]);
@@ -9747,9 +10440,9 @@
     // 阶段 5：启动 DOM 监听引擎
     try { startObserver(); } catch (e) { console.error('[NetClean] 阶段 5 DOM 监听引擎启动失败', e); }
 
-    // 阶段 6：菜单注册
-    try { GM_registerMenuCommand(t('menu.panel'), () => openSettings()); } catch (e) { console.error('[NetClean] 阶段 6 菜单注册失败', e); }
-    try { GM_registerMenuCommand(t('menu.darkOwner'), ncToggleDarkHostOwnership); } catch (e) {}
+    // 阶段 6：菜单注册（仅补「暗黑归属」——其余三条已在「阶段 0」提前注册，
+    //   详见阶段 0 处的注册顺序说明。此处绝不能重复注册 panel/pauseToggle，否则 TM 菜单出现重复项。）
+    try { GM_registerMenuCommand(t('menu.darkOwner'), ncToggleDarkHostOwnership); } catch (e) { console.error('[NetClean] 阶段 6 暗黑归属菜单注册失败', e); }
 
     // 阶段 6b：全局 Esc 关闭已打开的设置面板 / 欢迎页（单次注册，无 keydown 泄漏）
     try {
@@ -9807,11 +10500,31 @@
     } catch (e) { console.error('[NetClean] 更新提示失败', e); }
   } // bootCore 结束
 
+  // ===== 早退闸的最终执行点 =====
+  // 三道闸（白名单 / 脚本黑名单 / 仅白名单域名）在 L2484 附近只置 NC_EARLY_EXIT_HIT 标记，
+  // 真正跳过 bootCore 在这里 —— 此时所有顶层 const/let 均已初始化，
+  // 早退站点上的面板/急救/菜单也能正常工作（不再有 TDZ 崩溃）。
+  if (NC_EARLY_EXIT_HIT) {
+    if (window.__NC_DEBUG) try { console.log('[NetClean] 命中早退闸（' + (NC_EARLY_EXIT && NC_EARLY_EXIT.gate) + '），跳过 bootCore'); } catch (e) {}
+    return;
+  }
+
   // ===== 使用条款门控 =====
   // 老用户（已看过旧版引导页 adc_onboarded）视为已同意；新用户或未同意者，
   // 必须先在阅读免责声明后点击「同意」才会执行 bootCore()，否则本次脚本不激活。
+  // 点击「暂不使用」只写 sessionStorage（本次会话不重弹），刷新后仍会再次征询。
   const LEGAL_ACCEPTED = GM_getValue('adc_legal_accepted', false) || GM_getValue('adc_onboarded', false);
-  if (LEGAL_ACCEPTED) {
+  // 重新征询的条件：**仅当用户此前已同意、且存有指纹、且指纹与当前声明不一致**。
+  //   ⚠ 不可写成"没有指纹就算不一致" —— 本功能上线首日，所有存量用户的 legalAcceptedHash 都是空，
+  //     那样会把全体老用户误判为"条款有更新"而多弹一次，且跳过会无限复弹。
+  //   ⚠ 也不依赖版本号：版本号会因无关改动而变化，它不是"条款是否变更"的可靠信号；指纹才是。
+  const LEGAL_ACCEPTED_HASH = GM_getValue('legalAcceptedHash', '');
+  const LEGAL_NEEDS_RENOTIFY = LEGAL_ACCEPTED && !!LEGAL_ACCEPTED_HASH && LEGAL_ACCEPTED_HASH !== LEGAL_HASH;
+  const LEGAL_SKIPPED_THIS_SESSION = (() => { try { return sessionStorage.getItem('adc_legal_skipped') === VERSION; } catch (e) { return false; } })();
+  if (LEGAL_ACCEPTED && !LEGAL_NEEDS_RENOTIFY) {
+    try { bootCore(); } catch (e) { console.error('[NetClean] bootCore 启动失败，脚本可能部分失效', e); }
+  } else if (LEGAL_NEEDS_RENOTIFY && LEGAL_SKIPPED_THIS_SESSION) {
+    // 条款有更新但用户本次会话已选「暂不使用」：按旧版同意状态放行，避免反复打断正常使用。
     try { bootCore(); } catch (e) { console.error('[NetClean] bootCore 启动失败，脚本可能部分失效', e); }
   } else {
     onDomReady(maybeShowOnboarding);
