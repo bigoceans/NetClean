@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         全网净化大师 NetClean — 广告过滤 + 划词搜索 + 搜索美化
 // @namespace    https://github.com/bigoceans
-// @version      1.0.7
+// @version      1.0.9
 // @author       bigoceans
 // @description  全站广告/弹窗屏蔽（百度/Google/Bing/360/知乎/微博/B站/优酷/腾讯视频/微信公号/YouTube 等 20+ 站点）+ 搜索结果卡片式美化、关键词网址过滤、干净复制、暗黑护眼模式 + 视频倍速、B站画质解锁、YouTube 旋转/翻转/填充+ 划词搜索（多引擎 + 划词翻译，默认开启）。支持配置导入/导出/WebDAV 同步、零数据外传；详细隐私声明与功能说明见主页 README。
 // @icon64       data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAMAAADDpiTIAAADAFBMVEVHcExbov8VbfI9i/oVbvIUa/Epe/UMX+Vaov9Omv8cev4QZuwaef5sr/89jf5Ml/9Wnv9Vnv9xsv9sr/9hp/9tsP////8Tb/YSbvUTcPcSbfQSbPMPZesPZuwOZOoQZ+0Ra/IQaO4Vdv4Vdf0Qae8OYugRavEkgf8hf/8aev8cfP8eff8XeP8Wd/8RavAUcfgOY+kNYOYohP8Ucvkxiv8Ra/ERafArhv8phf9Omv8VdPwZef8Uc/olgv9nq/9KmP8igP9Lmv8RbPJqrf9co/8QaO9Zov8uiP9hp/9epf8sh/9hpv8gfv9Snv8Uc/tFlf8MX+VGl/8jgP89kf9Unf9VoP8VdPsvif9RnP9Jmf9prP8NYedFlv8ng/8be/9Bkf9ZoP8TcPgce/8Ucvo5j/8SbfNbpP8Ucfk7kP9cov9ur/9Nm/84i/86jf9Dkv9Vn/9mqf81iv8ffv8/kP9jqf9iqP8hd/YQZ+4NYeZepv83jv9lqP8+kv9DlP9lqv82jf9Zof9FlP80jP9Tn/9Kl/9Clf9Unv9Pm/9Jlv9MmP8adfpvsP8mg/9Mmf8kevkZdPhOnP8yiP9Hlv9hpf8mffk9jv9Dk/9Rnf9Xof9Zo/8mgv8TbvQecvEYef8+j/8xh/8gdfMcdfYTcfhxsf8/k/9Il/9fpP9Vof9Omf84jP8xhfxPnf8ZcvU8j/9TnP8hevtsrv8OY+hWnv87jv8jePc1iP0vg/xAkv8vhv9Rm/87jP4pf/pBk/8abe5dpP8Wb/Qvhf8pgv9AlP9jp/8jfv4dd/lYn/9Fk/9bof8kfPwshP8MXuQzif8def1urv8gefkXcfYcb+9zsv8bd/w2if8tgvwPZu0Tb/c5ivwqg/9Sm/9HlP8yhv0mfvsngP0qgfwlf/5Xn/9epP9oqv9Hlf8gfP1BkP8Xd/9nqv9pq/9Ilf8qgPsYa+wshf8ZbO0XautMl/9Klf4ugfoWaeouh/+uz/0VaOqbxP3R5P6/2f6Juf3f7P/3+v/r8/8Sa/Fal/SEBwF6AAAAFnRSTlMAcGQviKwc2JVN5EnIt8DqudPs0erdo6c8AwAALSRJREFUeAHs1c1rU9vXwPEe83tK8kD67h/TiSIWsRSRy1WoF8GM5NaX1su1A5FKiyVNKAUfJa1OOpH26VUsUgnSIE6EmpEDuYNgnbRKqR21/8Fvn5ecvdd+WWef9CQ5Sff3EMj8s/ZaHQ2pM2VZyXS6/3RfX9/Lr04vQfNIt0BfFJ0X+gP0C+kHbX9//x7oIdIn0AjoGdKqvKGhoXJ5YKC3t6cnaVmpzsbY1LkEgT89/1UoYv/z7eG/ujpWLo+NjZFfeWy13EsGIdFswePYp/u/KjL+Mn/SGIyMQ7m3FacgZaX79PAF/1tIQP0tJi73P+P0A3ZPnb445r+qbIiL13ebLmcGelpoCDoRfIn/vPHH/e22Mpnp7h6rs9m2wSWsfgTf+NfmXy5nyFfeKvfGexF0Bukb/9r9MxkyAGQT9MZ2D1hpHfN5JATc6bwqubir/kNo309fnHaRVJs4j46JM01PT2dgPVazrcUSyT6tN18P/z9OmH9ma6s7Ga9TkEpr7vz6+7P8vyT8beFv15NqtrofdvmNf538Sb3xuARWH2qu9g8SJ7110xZ3lj4Nqt/DxDF/TJxteBhTH0OC6ApvoY2t7uaPQAh+4x+t/9bOzs5Gk0cgDH+s/B+2if/GTjO3gHUa4qP8LeOP8cfO36m3OSOQSgc8/Xkkpb8gHuwviDvq95BCiCP8q4qGxPTFUf8N2BWv9W89qcb7J7/G2H+/ef6B/JH7OzOQbDA/d/yNf3P9Sd2NvAMJsP2NfxP8Of4rVzau9CQa9vznbXQZu8JfKe6iMwWLs+o0W73ao0eYONPk5KQHf9EtlPguTf/g+007YeIb6rJZiL/u9O1bY5aA+/wx/Tr7nzH+Mn+7RiwB9/ob/zj6r693130JpGVHHwO/JfrricN4cffWu9V08QVxlf8wCaqjN17pj4Mz7ezs8OZqcb5vybryJ/qP5//F+NfZf3Ott45nwHoZpf954x+5v1PdzkDya3z89xvtv9sy/ptrdToD6ZeyMP8vXm8lofy/fv0SXjyrvv+omqa4p05Tidut+u0KYf6seLmcQfKovTBvPpl4tc1qaz114E/0N8z/F/D/YfxD+m+une1NRO2f6ouhP8b/EOFvc397BLpT0fpbL1vM/9OJ9t/cHFyz6uKPicNCXHzQGRBUR198tUk7Th0TJw3T9MX9LthNg0Rxqr6hKpvNhhGH6oOgNbsIJyBp/FvPP3+YNP4S/pj6Z0X/9WP5k6KagLbyf4b477aX/1o+F8kEaPl/QcQxfyj+48cPiM7kut/3guqfqslevNTfFV8lqcARfj1xqk6D6ig42+joKKa+piwfwQTE3n+y4f66/E33X8sfHXsCjH/N/jvN98/nD485AZbxb77/t9r984cH1rH851/KxGFvEX9MHAbV7/kJF99Rp10EycVd9FU3ir770Q8RHyuXy9OqeH/KPTExgYmj/t+YZOgq/jzo0C13jAlIzQfz19f/vvE/pv9hLpeq1T/RZ/xr9t+IiT+pO1HjAPQfb/0b/1r4o/ef/dlbm39axo+KI/x/COL7UJ12HwTVP31Si3P+w2wQHRP3uuCGi2+x6PbW96vKZ52U4qOjo9/4KPrc3FxN4p477aCrFv9klP5njH/z/HO5o2R4fys+/pON9r/QZv5kAqyw/olbdfPfb0P/iXj7546OEiEHoP+WGOaPvngQBL8Heug3Kcbq8/7PSFR8ddfvI5/KP0jc76odVN9gQsRddCZBHRHX8GfF/Y68esP5J2Pnj/Fz/rvGX/DfHk+G8bduzbeQ/zPjH+R/dHCwben7J/oivPiIuB09+CHFoTpNT5y99UEX3xP31ZkDLyT6C+KIetiLL4rDDpgWuzu1ByBt/NvO/+Bgpkv/ADTK/37U/rut4L/ZFP/tbd0jkPjSJv76/CfDf/sooXsA3mL+mDjskczfE3/48KFSHPF/wInbKcRFfx3wTGZra2sHojMFiVN1ztpvjoSALyws5JFmQUHiXEddmgcgtv4PmuyP8cfff3t7RucIDLw1/i3ofxDsPzMz3h3sn3x7y/g3zz8fib+c3y4Z5J/ixZX+euKMOm0ShFz8kWfPhpV9BIniFH1a0XOSB3/VDaqj4kxLS0ujIKiuBq++ej8IfkjSW/ign1D9M9P4+0TAAKTPG//29ScT0IX7W8a/Bv/R1vEfX0yhA9Cvx6/vf//E+W8i/mtN9x8f79VfAKy4xFzJ/0hfXOb/wEtfnOnFixcXQFA94+eJ70B1Pf/1dUScNOcnff6IOFXPIUHybTaJOOxGwUIG4HQU/veMf3z9Sd2aC6A5/g8a7T9x0vzHl9UrYCBy/8k29B9tbX9kBVi8v5643X15GP+Inwg+LPe/6QTRx7TEq+q0MC9+HT56iT8i7qnn1Z09e3YWpC3uqNN8+kU74fpXe6daAafj6f8R879g/MP637jRHbgA4us/ZPyP7b9XkK+AfuN/IvxJXTL/FKKu8tcXhz0AKcQdde7g211Q5ME/d4PomDjbpUs+/ZIdJz7HNoi0AOLRD7XFaT9JUP0z2yLmzbf3d0oyAGnj3xj/w6b77+1JVkCitf2ngT9c+hPGn/Pf20sIA5A8If7Z1vaficZ/LykMwEBYcX3/kZERPXEbncmnf2EnF3fRM15XJWH+V9h4cKc5eVB8jaQSP3SblbSyslKVf+pUtXbb9hPEHXUa5r8nrdTN+1vGv6X8F4/lv1copLgBSBv/+vnPyv1zkfjXwG/XBf07W9//aqv64/zbka9/r86gC4D5B4iPQHXcXxB30C8g2eq0GsUddRr0x8Adcagu8z9L4sxzTK44Vd+GzbBB9TDif4OW2e5aYAD6jb+m/1p7+C8vgxuQCLX+jX8Qf17kj5v/8jJ7A6yaDz7nHyzOnXrf/wWT5OL74hlEXOV/iQTVMXHMXxQ/66f2Zk69108QRIe3HhOX+au8C0LsDUjX6n+xMf7PjX/k/iXmBnSeEP8l489Gb4AVif8D499S/nun5BdAX3zkgTrIz4PbYRcfqNOuIv5Z0BW/JSHMH4qvCeJQXeq/srLCqx9Q7suXL8+APoMWQZj/XjWJeEEvegMGmugv5zf+dfcvVbqr/gnjf/L8yQSUEt4AWMb/BPoXCn9Z3gCk78vD/DHxj6Sbil6AoD8Gzol7PXYj6JdotYrDWP1r15TipBzN9nYD6jTRP6S4r07T97/rvHtalzcAA5H734zaf6IV/J+2mH+p4vonWts/C/yXjL+2f6mUcAbAalt/jN/4l0rLp5wBSIYVx/z1xaenn8v6fzulvydO1a+QVOKI/201+MJCPo+I2634PQVx6jOiOFUfV/SeJPhri99VJ/gXKoWkMwD9xj/G/tyjj8y/UCmV/u1yBuCT8Y/QH1n4x/cPWPhh3n+lUKqUKrZ/ogX9L7WqP84/Xq/1z/uT7U8+MgEJMgBWKH9MXN8foivFSVnaJb4lECI+h4m7XfMC+tTfFc+RhI3vqc+om5paBEF0KM6ue16c9obkqr/z4sVLaMTe7RQZgKTx9/mvyfnbzr86AHv/IQPQg/EbfwX/AfCfaSl/ewK8EegiA9Cvf/6Nf2j/qVj6u/oldwBGEHEVvyg+NDSkJe6q00T/x35ZbXHaE5IHf9sN8J+D6oqN76jnvJ5Kcra+H4/+WVtc298Tr6qH8L4jPn62jo7ONvW/bfxxf/dvZ0fK+J9If68EOwC1+g8Bf5y/DfwvN8//XdT+pVMdlkJ/GHQT6QVI5q8Gn6DqWdIlRZj/nJ8gPrjAdg3G+a+wcS+epBL/7LYo6cOHD1X5907a4ssFNk4c97/DV8GzOpLx8M8a/3r4B/BX7vzHG4C2979m/GUV/6ejJ+DiC/7B4vKjD/0fg2oSZ289e/HPeUF1ycX3xXOCOFSX+k9NTfHozLkPEJf6v3Gr3vp3gRf/DlZFo2Klq6P3Ytz8l1rBf0r0H289/2KRDEC8/fX5jX8N/mQABtrEfxD4L7Sa/5um+FeK/2sPACZei78oPjGBXHyV/+vXr6vyT5yg+iDNFV+g6meRVkBA//p15cUnqcGr6jTMf9nPE2fQMXG3f7ww/r9I//IVZVUqHavDxr/K32z/u432LxZf8QNg/I/vfyMS/1r5Q/kXix2x93+C+5+Lub+Kf9nnb6p/seOmGl5P3ENngv6sPu+/BBqleeIAnekcCPNHLv7Tnz8vq7PVp/yo/QcSh856//67UpxUoL3jg/7/gGTItBDcfN+9DWD8T6Z/9QQYf03+RZ+/Lfy/exvA+Efj/3uL+bsb4KYGv+hfk7jo/9rPVqdB8cHBQVHcQ4fis7OzK5J+s3PYr1cTxan6Imicxr33qjpN9H/jh4mXSiVEXK1fi/93WEd7+a8Y/3D+8gHA+I1/W/lLByDo/OvxG//4+xdfverQEYePXub/WEgEX6LqoyREfBCq066BoD9Uf1oNEafqNFv9g997EK8uilP1AkklDvsHhInz3P8HKmrEP/9X7gA02n/U+EfuX6zJ/7szAG3n/5vx1zr/5P3bA2D8T7L/qw6lPyIuqivE6dX3ewK6jfkvLCzobXxHnXYdxPkL4lR9nCSIe+h/q/vzzz/fgN6BAsT/y179/tZN3XEc919h9uPJNKRlj4YUMiVITBXsQaVuDJUCGVKrsi5oQWOIaNJ9kLbqVhYk6HYRSeBBG4lb1Ia1NEOCS4NIImgKbalCIJdWa/cDkKIhIdoykrj+cW3u7Gtf28c+Pj62z9c+vtlb2wOexNV9fc451OJLSM8FetHXvyI7GU7gyP8OxP8viP8WEP9xTVG08c3sjw6A2v/JYv2Ps/FflQzRzJBWN6//ScH/4r8cXRL/pOK4R5/iwXfAO0/9zsgHP3jh27f+IVV0UxuBF38HUsC889QnFif4j+D8abyx5ifpEzan/x8bPn4rRcvZ/zE+/H0D2Ez+miKGamrHU/i/zsI/ET9bf28AL28a/3G5KWIz5Ney+aP8b+Vy/Wf0PynEiz9AFrd6BRvRP6m4gz4eLNJ/P5L56NvdH8VvpUsTu3cHwa1m8NEff9KNf8kNe+KT+ceTn0YSNpf/HbIhkpMe7W5/lB8/gK71H4/lb98Cfwvwd7P/ZWHz+O/XmvH8Vob8p03jjxkAFh7rn0Dc7K6ISP7bkVB1svgL7qM/P//447NmtPxWTXn38PAwK3EsvNMSEtn7TSTT+x1fVN5h//AAePffmc5fU8RENbXN4R8cwANd6G/yNxLyWymNzeAfGEBafr79D6liqtRD3e9/WXgg8tDfQ4ie/7f04seRxt12hkL4x1D/eaTZ2S9S8rcnsPp6uNHR0Y78gXaR/iHxS5cuUYq/GVdi/8uB1uwEYP+7CvZ/VBIzJZ1L7T8C6B/LT+vvDqCs/mNkf9nI5i+KhlxG/9O0/p0BdKd/QxEZpCx3sf+a8CQ2RuIE/rD/di/CjX8v+cX39ZTEgr/9DvzVhx754ofUL9kt4Uri/06g03FdxreGSyjIP3z8o/hT+i9qmW9/3zugdas/fgA8+ZP4Cf4/VdnxW6lPpPNf4twfO4Cy+BOOv8yW30ruSn97APdE90pa/zhxT33cLErcacwO4V+M9v9CYe8vispZjP9IRARwovg7MWX3/9LK+y+hC/0Bjr9zCbDwz8LP3t8aQEH+24H8V0GOv3MJTCTn59t/Tug2f1mH8xdFXe4y/zmBRE4vTum/PdhOJBQdEd8ffePPzu622mF1VoXkt1IvhMUvkV58f1uT+F8MRsX9qa8vA81hErrJf14DPf7OJaB1kz86gJL73yvB81tJz3ePPzKAkvs/oeTjL4rKNOWLz79/ewCv4KL3jxQ3O04l3lH3Ivgfc+n3We3olMf138n3DJD86cUvkroaCOsf5R7jbw2gK/znc7r+O0knusN/TkjMz6X/z3K7/jspD3eFf2cAbB78h7BPfZQ/nTj64ns3frvfWw0PD2tG3v6iaDTI4kgbOP/rTnHkV8/4+hQXvbfTpJvA0H9LUf45X/+d5Hz8Y/mz+NsDKIn/vgh/tRh/UVS58P8yi397AOX2vyP3599LeaGE/n7+9gDo/THiEeo7Q+JoWP9FM9v9mJOl7oX6D9udLeD59zIumPZbzVBynHgHnd47+s5n528OAN7/XoL//oz+jSL5rQ6V239S4Ml/HvGfjfcfkov2F0Wt1P6BAfDrjz3+w1LR+lZSmf0nhWhxkv92Qnj/kLjZvJctPuup48XR1KLt7VQsuKfuldH/E7cI7n8HmoyrWhVK7K8ULd9JifBPxF+Mv38AgP5jZP9jafz3cXL+rdTs/meK8fcNoGT+vNz/yAIA/YP8jPzdARDFt2xJeuN76l6W+qLbMaR9SCT/GSeu/J0FoOok8TPEEO9gBPJE/LZ/ZwD/98+aVE5/ZwCl85eK9sYsoJT+9gDy8V/san9rASX0rwp3hUrtHzrxnvr8/HwmcV9DQ6Nc+ouifBFTr1kC/8OfkErrXY1OKJ//kFy0dIIF8O4fGsBD/Ps3inaO7hCGn2//4ACC/NT+Y7n531+0Mqmny+ZfFYLikeiBA281FtEi0jGkFP6m+tDQ61ajo6MzetHIxE5cjBE/jOQH/sz6f7CQ9/tOk7RVEwygBP6jatHE5Jqw/u+z9kcGUAZ/uWjhuCSu/OP4kQGUwV8r2jc+uVT+dW8A2wmh/ij4fgL4rFkUeJR4B93XaKcvitalqRGp3oOEWCfyR0vgXQ8nFOUfzR/t/1SzaFyq9pbI3x0Av/4u/+gOpWhauox/lMe/LsSLR9DH+id68LHiVge8pKJlaVOuhtTvQwppf/auL5K3VzVpH35IOwBO/bWiXemTifw8+eMGwKn/tF40a4ImyuKPGQCn/qNK0ahJUl7M4v9+fv7hAZDY91u54vPpxWdQdQr/AxKMlGHA/F35vsiI/lax/K/akbgjwZ0qnYSS+K8CHVUJaFjiBZ79Xf7QAHj1P6ACOWka0B9Wy+EfGECc/2JB/gehmMRWC+ovL5fCHx1AtP7Y2CLSsZT+1Cf+wAmrg04zTSAlfW5SB/rTylWM97ukSN7BEO5Q0d6hhDL4H5ShjqlSrSpQf1srg79/APz6P21AIcnVKti4jOdL4O8NYCe//ifAjMSJan0C7I/LJfCvCFhyEnhqcXr/g0gjv4R6pkV9rVpdAxuA/vi7ifqPG9nf7cPY4viPHhX49x+RwIgU8xTVFbA/L2fyfzUPf2cAXPv/AQxI1Ez/ugb25/X/FupfofC3B5D2wc/FH/ACEFumf70F9/cl7v2PCmPB6P0T8CcS99fXt0UH8zEs/3rdgPvA735uReJ2yuz9nhmFdyghD38Sf5x/nwzGI0pt/zrgFaPx7h8aQN7+RH7Lv68Jx7PXHsBeuC80efcPDoA7/5EGnI4+Zw9gEu6REZc59z8qMBFn6d+HpsLhOC8A6BugYryjS+X/Xrij9Amc+x+HsxEnbP5KfQLuG/pjfPsjA+DQv08DtJns3ACgb0BWflh//wA48A/y923N4wWoVQDfACnv45/M3zeAtP7ZTjxOva9vaWnQbtSAoznn+FcqlXNwXzHOkNQ/cHO8O/9JEkZ6xiwZ+SkkgWv/wWU4mabnX6k04b4zwZc/yu8NgE//QcC7WfP5VzS478hc+58S4sWx+EO46P37CA36UsBc9DWff21NB/uQ0rbeg3hHZJF+bPYebdn9nQHw6r8FjEWUfP5mgFfNWzz72wPg1b+vAcdy3u9fq52H+9Iyz/7WAPbx6j84CHcuVeT812o1FexTEs/+5gCI/MMEdXrxkZFo8SUrV/y5rf42DDCVVsC/1gL7VHPPnj2x/B987ETiDoX4PhvoFFUCz/4zYChq0B/yCri6h5o/d//AAPjy33gNzKQV8p+CuwL+CeNP5Kf1RwcQyV+M/8YyFIka8oe8AiY49kcGEGAfio7En8B/EGlr0H9DgyI5j/Gf+hzqa40o76ieienZ2E6lGQAb/yB/Bv8NCUhExvibC5ChPsexv28AefuT+G3/DaBL2ZjD+ddqVQPmeyrH/t4AOPTfUGBAzuL9a7VpmO8pHPufEtrwfvowfyLxkSj12Avfadu2bf12A02YAxnlPzUFc+UofPm/jSTw69/fDzIA/Uqk/9RJkEegybG/MwA+/ftBOKYj/c3/XYD4okHNn7+/PQCe/D3+/n4dQEOOPv9WMsAndVbHH8D/bQHPnsK/jxDZf5svv38/AIZSJfpP1RSAAYAd94/IYbyDHRE49gcYgHGF7D819Qb7d0cvyj+e/4gzgCEu/a8zfwL0Vpz/1EqL/Vc59rcHwKn/deaHcTrW3+wc668aHPsfEXIX3/ChB8XtBtr19vY2GUss0/ivrKwy/myzCP+P6PzRAXDmz3oAGo2/tQANfADc+CMD4M2/V2Hq0KDzNwew0GD6YYVjf/8AuPNnOgB9ldrfbFpn+GmVY3/fAOD9tyGh/gNItn+vytC/lcR/ZaXFcAHq950ivB9sR+C+3YyRt9MjbgLH/gwH0Pw6mf/KyudNZh+XsvnH8mfx7wxglEf/XonZGVxL6r+wUGf2dalg/yME/0eETOCpxa/78om3u2q2qx0jAr1RqSX0b7fM6BmQg/63mqH+Xndaufp33hnyv+02lv72ACAOPAP/AZnJ7+9e/4n8F8yusHkGZI792wPI+8K/Tue/axeLAehaNY1/ewALUxqLS0Dm2N8aQJH+AyT/AS37j69eqaT3X7hxbY3BM6Rx7G8OIH//AX+o/y6k5aw/ffNCPYu/uYCFhZaS9V9x9la7B7Hevm4PdFuwbwe7BelILPcjdwf6RuDY//Br2X545Ww9o785gBs3Mk/ga479AwPgy//wTCb+aR9/Sn9zAWYLN7JN4DTH/ugA8vbvJfsfPpz6N9elVr2S+fzb/jduXLv2VUvSU/9bsP5x/Dn5fyMwEN/Y2CCIX/ehx4F79bRrpvvJm9pa3YqZ/7Vr6+u15ZTXQBPG/xYm/v4B8Oe/S03ze8vtw8/W37wDzD6X0yxS5cP/bqy/bwD8+ff0SEl/bEU7X+/E3P+r9ZvrJ7XE94DEs783gPT+28D8fygnOvrS8hVXH8L/q/X19Zs31+vTyS4CjWd/dwBp/f36Qf8BJLz/n9tZ6j9x6/j39CxT/sa6Iq++Ua2a7FVY//YEzGotWdEp/3F7f+HU8f61ncv9m3Yd65deeulXZoj33wPg30I78h0k0/u7vizu77n92O4HTj8SePbveTj+5zVUefn8pIlfde0T+f+PvXppbSS7Ajhen6IWpqfHltxuvRw3CCdgOSAMJhvhhQjOylrYi5Cts8giq+ySCTSEns5GbRh6YSZeNPQkHRIGr5oee6XOaNFoBoZZCDwEhnHaolRPUanSs26pVKrHuVXnVs35ALeEfv97TyD/4fTurhV5sPwXvsfsPw4Aqf/D33oKoGsGELm/EYDuKYALzP6jALD6P3zoZwVE6e9nBaD2HwaA178u8d5HFVqdKPz/cS6qPn6W5OBfRuNvBoDYvy7y/kZSbuj63ymSz58kLvXfmvnP81P2NwLA7F9v8b5HFXVa/h1F9f97nlD0bzbd+L34/4TzzB+Hf/2vfJBR23fw/s9aUqAf8you/z0n/w2bv1sA3vmp+dfrg0B/Oq8JOqy/LmjBfskAt/9PuUiff9/+dZkPOtI1mP+tLgX+GTJu/8UB4PCvKoH/eSOBcxD/MPw8r+D2XxgACv9qtfo6xH/P8+oX4f1D8fP8Z7j9FwWAxb/691D/Ps8LF+H8PxZC/oB/4vZfEAAa/2pVDQmgKSH8f2hrIT8vIfd3DoCG/1Ew/2rYG2jsgZug/p2w9Rkv0Iz/hOSf+j+P03+di9jfK//Ev6qENuC1diD/XksL/+12MH9Xfkh/pwBQ+Vf/EB7BuIeP/fs/C//2GNOh4b+yzH/Vs79DALj8czkJwmG2Bjz69wCef2PkmP23SX+S3/SfDwCbfw5gBxij6f7uvw7w/BujYPefCwCdf+5rEAleO/dz/69h/Pkr7P72APD5A+0AY9re738L6JMSen9bABj9cyKQBq949W9DfVFE708GgNI/dw7FwXe9+b8G++Cn6P2JAHD65+oqGIjuxV8H+5y6a+VH6b/PoffP5QQwEU1f7n+jgX1OnPffmvnP88fgbwkAlb+FP5frgonwg7sl/r27AdzXziH9m003/qD+0wB+hdc/9wtAE+mZ+/2/lABrexyZ/56T/4YH/0kA3vmj98/VRTgUXnT174F+CqX/OuE/DoDG9Qfzr9V+CajC6y7+tzrkl94z4L/GMeBfq8mALNrd4vt/B7hseJkF/2EAKPyrzv4mf63WhryY8sL7fwsZGv9fFvzNAPD71/4FeTP56wX+34MugMFjFvyNABjwr52KoDSfON//L0EzE5nwX+No+B9B+5/+G5KGFx39+6CV8VcW/qn/c2z+tgBg/b3yL/c/PQXdzlrHwb/XAfWXPfu78tP2JwPA63/6Z1AdwcG/J4B+ogvkv7LMfzWUPxEAYv/Tr1RQns68P+wDoL6J3H+b9Cf5F/lbA8DsX6wpoD7ynH8fdMnwClb/fdLfEgBq/2LxLwNQoBubP/QD8A0j/rMAkPsXi8BPgM2/B/8AMOH/O44V/+LPVFCiDukP/AA8ZsV/EgB+f+gnQCT8eyLo4W1m/McBsOBf/Ar0CdA+sfo/0yDPVt8y4z8KgAn/YgP2CWhZ/Hst0KPbZYJ/y4kfif+HXPz+OW/+xeJD0CdA/X7m3wM9WfoorH+z6cYP6W8GwIp/sdgGvaf61L+vgx7couu/5+S/EdD/Q86NH5l/oShBOglT/74Aea5URuO/TvqvzfvbAgjKH41/oQC6qrXLif8PGuS5XQb8J/y2ALD7FwoypJQ+9ofdAAJT/kQAkflXnf1rS/0LfwKlGvvDboArpvytAWDxX8xvjAhIpX058r+E3AAKW/6WAJjwL/xcBcTSh/49yA0gvWXLfxZAUP+jSP0LhRaglmD6w26A1zP/5yz4TwMI6++VP6x/oQjINRi+AP0BYFJL/F354/CfBMCMf+H4j4Abu2P6d+DO025C+a8s818F9x8HwJD/cVGBA1MM/5eQ50Xlv036k/x+/N9xrPkfH9clMDDZfAFksOOkN7j895f5v3v3Acec//Hxb8DEtMt+/xLsNP4Fe/5mAKz5HzdEMDK939fBDlMY9DcCYM+/0QB7tZV+X4E6S2bR/wOORf/G/zQotH4fKibthkV/WwCM+DcKbSi121uoltpM+pMBsOLfaOQFILZOB+ggYeo/z4/YnwggAv8ckH/+byqMW6sFc456EdS/2XTjp+1vDYAl/3y+C3RxgZ6SJ3T895z8NwD9LQHg929Y/PPHIszNhXlJxPj910n/NW/+0wC88+Pwz+drMszdhRj5I8T+dn7CfxIAO/756TyFubwAo75i1n8cAEX/qrN/LbR/Pv+FFrf8aDSdXf9RAPH5e+V38s/nW3HTj6bLsP8wAFb9KxUlbntzFJb973F+/I+Q+VcqQtz6PC+M+Bn1NwLw7++Vn75/pS7H7S+/XeTvyo/F/x7HtH+lcqXG6692AvqvLPNfjcTfFgBz/pXKdbwBvKDvv036k/xh/ckAGPSvnLXi9O+i8d9f5m/nH/kTATDpf3amxOevMO9vDYBBf4P/7KwkxuUvsu9vCYBZ/1JJiMdfSID/LACG/UslOQ5/OQn+0wCY9i+VpOj9pUT4TwJg3L9UUqP2V4f+8/yM+Y8DoOKfi9C/VNKi9dcC+Tebbvxx+I8CSIB/qRRtABT895z8Nyj7DwPA6N/w61/6LkX+66T/WnB/IwA3fpb8v9v80X+Of87fxm8EgNk/78t/M7ICEuR/n4P0rzr710D8K4S/nd/0j6qAJPmTAdD198ofxH9zPD/6+/QnAmDfP4oCkuVvDcCZny1/+gWY/AnytwQQ7vpj8d/c1Gjyawv8Xfkx+88CSIp/JqPS81eD+a8s81+NzX8aQHL8MxmJlr9E3X+b9Cf5afhPAkiSfyYj0/GXsfjvL/O38y/2HweQLP9MRqThLybHf8o/DoAJ/zPv/lQKSKb/MIDk+Wey4AUk1N8MIIH+RgEKrL+SUH8jgET6ZzIl0AIS63+fS6h/JpvtalD82u9N/3n+BPjbAgjsn8Pnn81+qsL4q++D+DebbvxY/B9xyfXPZl/JEP7yBbz/npP/Rgz+RABx+Tco+WezGTG8v1iO13+d9F+D9bcGkDx/Y5Sw/soWVn87/5z/PQ/+lgBi9s9T8c/uvB6E4R+cJ9x/FoBf/6qzfw3Ev0L42/l9+BvzXgruL10l3X8aALC/V/4g/u78dv9s9ls5qL/weeL9JwEk13/HGDGYv7iVfP9RAEfJ9t/ZaQfxbw/5E+4/DMAvP3P+OzvXA7/8g+tF/q78rPmbAaTAf2fnRvLnLz0N6L+yzH8Vlb8RQCr8Dw+/Efz4Cx/T998m/Un+qPwfcSnxN0b07q9sofHfX+Zv5/fn/5JLjf/hYcurfytJ/vdd/ScBIPM/o+F/cPC15Gn960n2f0T6jwNIh//BwbeCh/X/eZr8RwGw75/15H9wcKJ4Wv/p8X/ApcP/YDK7n6lu/OqLlPmbAaTKf3f3wmUNCBdj/3n+hPobAfj2zzHtb4zi/vwH8G823fgx+z/g0ue/u3vtuAbUazr+e07+G0j8xwFE599A4H9y0nFYA0Infv910n+Nvv8ogLT5n5wczq0BpYzZ384/538voP8wgMj983H7n5yUnxBrQD3fSo//S4u/GcBy/6qzfw3Ev0L42/lp+Zf/cyPP/OWnKfOf8JsBhPb3yh/E350/hL8xb8SJv/gmtf4PuCT52/kP7fxW/3J5qzsw+QfdrfT6DwNIjf8J4V8u//rKWAPy1ZQ/hf5GAO781P3/z14d4zaOZAEYfiiySLTEAywMw7BhSVhHMiEoMhpoGFDWEBg5EdCJA11BZ1gseg8gOPENHG80MTHAHGGSieYAnQ5NS5aqSFWRVBWrinzvCt//3jPpv17//PXrp8hfyN8F/zH02j+b6Rn+FzL/a+v9jwJAf43+c9af5TfpfwgA/c37L2T+PP/5/p8BoH8X/K9q+6/AuP8L+uvyv5f5r1a7ANC/r/4fAbjlf4v+6vzzADrmvyz3n6F/if97AL30nx78i/w98s8CEPr/G/15/+1WxO+a/wrQX6X/Y5n/xGJ/LgC1/j/QX+A/Yv1vzPhvAP1t8+f5C/6XCv2ZALT436G/Sf83if8GfuP8v5X7f1fi/8D48/zor8V/LPLfwN+1/KvyN/EX86O/Fv8NDBz15/mfeH70r+If7gPonP8z579m/F/RP/dfhRD995O/5/5C/m76v1+ACP0r+V/I/K9d9M8CoF/RX63/nPVn+e3yj2MKPvob8V/I/Hl+Lf6pD/5X9HfS/0qBfxz7QNr0f0F/Xf73Mv9VmX9K4Av698t/c+Qfx0PwrPa/RX+t/lkAgdP+y3L/GfpX848DgP933n968C/y99s/AYConB/93/m3In73/eMwC4CifzP/xzL/iVP+Kc0C8JX4/0B/gf+I9b+xxD+O/SwAgv7m/Hn+gv+lVv+UZAF46vzv0N+k/1td/zj2sgDgT97/uxL/B8af50d/Lf5jmT/DH8fv/hB9O2/9m/iL+dG/Jf8wD8C33p/nf+L50b+Rf+rnARDn/Z85/zXj/4r+5f5xTPIAvB76C/l7458EeQAwQH/W/0Lmf90J/zj88AeK/k3956w/y2+7f0p3ARD01+u/kPnz/K34JwnZBeChv+X+V1r8U28XAAx0+L+gvy7/e5n/qop/Eu79gaJ/N/03Iv+UfgZArPC/Rf82/ZOEfAYQOOG/LPefoX8z/zT4DACizvhPD/5FfvQ/8k8OHyD7Aej/r+1WxN89//TwAbIfgP5i/8cy/4nL/kly9AF2P6Cq/w/0F/iPWP8bW/3DY//8B6C/Xn+ev+B/2aZ/cvwB8h9Q0/8O/U36v53rnzIfAICe5f/A+PP86K/FfyzzjwX+CWX94Us1/ib+Yn70b8//wJ+kQy4AGFjiz/M/8fzor8A/CXl/8B3xf+b814z/K/pX8k/9QgBeZ/2F/P30T5KgEADQfvpfyPyvO+if0qI/DNFf7D9n/Vl+p/yTZFgSAETor8B/IfPn+U34h2X+QNDfBv8r/f4JKQ0ABo39X9Bfl/+9zH9V37/8AOxPAPq76b+p7J+eOAAfJ6Ad/1v0N+d/6gDkJ8AS/2W5/wz9z/c/fQCyE+CU//TgX+RH/1P+pw9AdgJ64r/divi77S86AAAR+uf8Bf9JZ/xFB4A5AQw/+pf6j1j/Gwf806EwAKDor8Kf5y/4X5ryp2J/8Mr879DfpP+bQn/ZAQDwZf4PjD/Pj/5a/Mcy/7iivy/zBxjs+Zv4i/nRvz3/Uv40lPsDac+f53/i+dFfrX9KKgQA1Br/Z85/zfi/on9df1rFH4K/3PUX8vfePw0qBQCkq/4XMv/rbvtXegAfT6Dv/nPWn+V31Z9W9YdggP5V/Bcyf57fqH/VB5A/AfRvxf+qTf/KD+B9/NP+L+ivy/9e5r86w9+v4w8Qob/F/pv6/mE9f/B+V+Z/i/7m/VOvZgBAWvNflvvP0F+hP6nrD+Bb5T89+Bf50V/m79f3B6Dd8N9uRfz98KdN/AGi7vs/lvlPuuYfNvMHb4D+B/8R63/jkH/QMAAYon8Ff56/4H9p1j8dNvUHIOjfsv+ben/S3D8r4Nif50d/Lf5jmX/cnj+Af9pfzI/+7fkL+FP/PP9dAQr8ef4nnh/9rfTPC2jD/5nzXzP+r+hvyj8rwFJ/IT/6K/PPC3DP/0Lmf43+1QvotP+c9Wf50T8fgv4LmT/Pb9yfqPNnCkD/Zv5XLvsDDAfor9T/Xua/Oss/HKr1B/Ai9Dfiv2nkH6j2z4ZW8L9Ffxv8qQb+bPzz/Zfl/jP0V+nv6/EHIO34Tw/+RX70l/oTXf4AXmS3/3Yr4u+Hf+jp88/Gd9f/scx/0jV/bed/P+Q/PfAfsf437vhrPP/7CWiP/Xn+gv+lUX8a6PffHQH0P9//TbV/C+u/PwLor8Z/LPOPq/u3tP67IzBAfzP+p/jD1tZ/N77An+d/4vnRX7W/3zJ/Nh5t7P/M+a8Z/1f0r+tPvfb9syFRa/5C/r77h0Mj/HkCAyv8L2T+1x32b/358wk45T9n/Vl+F/0N8xcT6IT/QubP85vyt4A/TyBCfzG/Hn9L+N9nSNG/4vqX+q8a+NOhaXVmAn+A/mf7b6r6h35gWrw4hKJ/O/6WLf9hAhId+S/L/Wfof5Z/SCxcfraBOv7Tg3+RH/15f2q3/r4BOmjBf7sV8XfQP3RCfzdeFoFJ/8cy/4m7/hm+Z9q0QQR+9D/7/Ues/411/qHvIP5xBTT6w0l/nr/gf6nZP9v7Fuz/Ka8OagAAYRiKHsggWeffB04miS+BUy/7Fl6TWtpLDCGqMrtH+t8vfzoUwEuew3/0PjTW9zhEZgAAAABJRU5ErkJggg==
@@ -33,6 +33,7 @@
 // @grant        GM_deleteValue
 // @grant        GM_xmlhttpRequest
 // @grant        GM_registerMenuCommand
+// @grant        GM_unregisterMenuCommand
 // @grant        GM_info
 // @grant        GM_setClipboard
 // @noframes
@@ -91,7 +92,7 @@
   // 导致「#kw 里输入关键词 → 回车 → 进入 /s?wd=... 搜索结果页后脚本整体失效」的恶性 bug（B-划词-02）。
   const HREF = () => location.href;
   const IS_MOBILE = /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i.test(navigator.userAgent);
-  const VERSION = '1.0.7';
+  const VERSION = '1.0.9';
   // 免责声明指纹：仅当「条款正文」发生实质变化时才会改变，用于判断是否需要重新征询用户同意。
   // 修改免责声明文案时请同步更新此值（改一个字符即可）。
   const LEGAL_HASH = '2026-09-terms-v1';
@@ -340,7 +341,11 @@
       // —— 划词搜索（默认开启，选中文字弹条多引擎搜索 + 划词翻译）——
       selectionSearch: true, selSearchShowTranslate: true, selSearchAlwaysShowOpenLink: false
     },
-    pingbiurl: [], whiteurl: [], pingbikw: [], scriptBlacklist: SCRIPT_BLACKLIST_PRESET.slice(),
+    // ⚠ 暂停名单（whiteurl）刻意**不再预填**敏感站点：
+    //   合并「白名单域名」+「黑名单站点」为一份后，名单改由 scriptBlacklistEnabled 统一总控。
+    //   若仍预填，用户只想「只暂停当前网站」也会把整份预设名单一并激活（预设里全是银行/政务站）。
+    //   预设站点改由面板「导入预设敏感站点」按钮按需补齐，不再默认躺在名单里。
+    pingbiurl: [], whiteurl: [], pingbikw: [],
     // 性能优化：启用域名白名单（内部激活白名单模式用）
     scopeWhitelist: [],
     // 验证码：自动启用站点白名单（captchaTrigger=whitelist 时生效）
@@ -572,12 +577,26 @@
    *  ================================================================ */
   const UI_LANGS = [['zh-CN', '简体中文'], ['zh-TW', '繁體中文'], ['en', 'English']];
   const I18N = {
-    'menu.panel':          { 'zh-CN': '⚙ 控制面板', 'en': '⚙ Control Panel' },
-    'menu.rescue':         { 'zh-CN': '🧹 状态 / 恢复', 'en': '🧹 Status / Restore' },
-    'menu.darkOwner':      { 'zh-CN': '🌙 暗黑模式：本站交给网站 / 脚本接管', 'en': '🌙 Dark mode: site-handled / script-handled' },
-    'menu.pauseToggle':    { 'zh-CN': '⏸ 暂停 / 恢复全网净化', 'en': '⏸ Pause / resume blocking' },
-    'menu.pauseSite':      { 'zh-CN': '🚫 暂停 / 恢复本站', 'en': '🚫 Pause / resume this site' },
-    'panel.title':         { 'zh-CN': '⚙ 控制面板', 'en': '⚙ Control Panel' },
+    // ── 油猴菜单文案 ──
+    //  ① 图标必须带变体选择符 U+FE0F：`⚙`(U+2699) / `⏸`(U+23F8) / `▶`(U+25B6) 默认是**文本呈现**，
+    //     不加 VS16 会被当西文符号渲染（⚙→○、⏸→II、▶→▷），在菜单里极难辨认。
+    //     `🚫🚿🌙🔍` 属 emoji 区块，本身即 emoji 呈现，无需 VS16。
+    //  ② 「暂停」类菜单名随状态变化（未暂停→显示暂停动作，已暂停→显示恢复动作），
+    //     由 ncUpdateMenuLabels() 在状态变更时刷新，避免"看不出当前状态、预判不了点下去的结果"。
+    'menu.panel':          { 'zh-CN': '⚙️ 打开控制面板', 'en': '⚙️ Open Control Panel' },
+    'menu.rescue':         { 'zh-CN': '🔍 本页为什么没净化？', 'en': '🔍 Why is this page not cleaned?' },
+    // 全局暂停（影响所有网站）
+    'menu.pauseOn':        { 'zh-CN': '⏸️ 暂停全部网站净化', 'en': '⏸️ Pause blocking on all sites' },
+    'menu.pauseOff':       { 'zh-CN': '▶️ 恢复全部网站净化', 'en': '▶️ Resume blocking on all sites' },
+    // 本站暂停（只影响当前网站；命名与上一项刻意拉开差异词位置，避免"双胞胎菜单"点错）
+    'menu.pauseSiteOn':    { 'zh-CN': '🚫 只暂停当前网站', 'en': '🚫 Pause on this site only' },
+    'menu.pauseSiteOff':   { 'zh-CN': '▶️ 恢复当前网站', 'en': '▶️ Resume on this site' },
+    // 暗黑归属是「自动 → 交给网站 → 强制脚本接管 → 自动」三态循环，
+    // 故菜单只显示"下一步动作"，三个状态各自可见（旧文案只写了两个状态，"恢复自动判断"无处可寻）。
+    'menu.darkAuto':       { 'zh-CN': '🌙 暗黑模式：交给网站自理', 'en': '🌙 Dark mode: let the site handle it' },
+    'menu.darkSkip':       { 'zh-CN': '🌙 暗黑模式：改由脚本接管', 'en': '🌙 Dark mode: force script takeover' },
+    'menu.darkForce':      { 'zh-CN': '🌙 暗黑模式：恢复自动判断', 'en': '🌙 Dark mode: back to auto' },
+    'panel.title':         { 'zh-CN': '⚙️ 控制面板', 'en': '⚙️ Control Panel' },
     'panel.search':        { 'zh-CN': '搜索设置', 'en': 'Search settings' },
     'panel.searchPh':      { 'zh-CN': '搜索设置项…', 'en': 'Search settings…' },
     'panel.clear':         { 'zh-CN': '清除', 'en': 'Clear' },
@@ -602,6 +621,7 @@
     'cat.selsearch': { 'zh-CN': '划词搜索', 'en': 'Selection search' },
     'cat.videodl': { 'zh-CN': '视频下载', 'en': 'Video download' },
     'cat.perf': { 'zh-CN': '性能与高级', 'en': 'Performance & advanced' },
+    'cat.lists': { 'zh-CN': '名单管理', 'en': 'Lists' },
     'cat.shortcuts': { 'zh-CN': '快捷键', 'en': 'Keyboard shortcuts' },
     'cat.cloud': { 'zh-CN': '配置同步', 'en': 'Cloud sync' },
     'cat.about': { 'zh-CN': '关于', 'en': 'About' },
@@ -653,16 +673,16 @@
     'item.t.csdnClean': { 'zh-CN': 'CSDN 纯净阅读', 'en': 'CSDN clean reading' },
     'item.t.kgweibomv': { 'zh-CN': '微博视频下载', 'en': 'Weibo video download' },
     'item.t.pojieSignIn': { 'zh-CN': '吾爱破解自动签到', 'en': '52pojie auto check-in' },
-    'item.t.kgbaiduad': { 'zh-CN': '百度关键词过滤', 'en': 'Baidu keyword filter' },
-    'item.t.kggooglead': { 'zh-CN': 'Google 关键词过滤', 'en': 'Google keyword filter' },
-    'item.t.kg360ad': { 'zh-CN': '360 关键词过滤', 'en': '360 keyword filter' },
-    'item.t.kgbingad': { 'zh-CN': 'Bing 关键词过滤', 'en': 'Bing keyword filter' },
-    'item.t.kgzhihuad': { 'zh-CN': '知乎关键词过滤', 'en': 'Zhihu keyword filter' },
-    'item.t.kgbiliad': { 'zh-CN': 'B站关键词过滤', 'en': 'Bilibili keyword filter' },
-    'item.t.kgweiboad': { 'zh-CN': '微博关键词过滤', 'en': 'Weibo keyword filter' },
-    'item.t.kgweixinad': { 'zh-CN': '微信公号关键词过滤', 'en': 'WeChat MP keyword filter' },
-    'item.t.kgdoubanad': { 'zh-CN': '豆瓣关键词过滤', 'en': 'Douban keyword filter' },
-    'item.t.kgyouad': { 'zh-CN': 'YouTube 关键词过滤', 'en': 'YouTube keyword filter' },
+    'item.t.kgbaiduad': { 'zh-CN': '百度内容屏蔽', 'en': 'Baidu keyword filter' },
+    'item.t.kggooglead': { 'zh-CN': 'Google 内容屏蔽', 'en': 'Google keyword filter' },
+    'item.t.kg360ad': { 'zh-CN': '360 内容屏蔽', 'en': '360 keyword filter' },
+    'item.t.kgbingad': { 'zh-CN': 'Bing 内容屏蔽', 'en': 'Bing keyword filter' },
+    'item.t.kgzhihuad': { 'zh-CN': '知乎内容屏蔽', 'en': 'Zhihu keyword filter' },
+    'item.t.kgbiliad': { 'zh-CN': 'B站内容屏蔽', 'en': 'Bilibili keyword filter' },
+    'item.t.kgweiboad': { 'zh-CN': '微博内容屏蔽', 'en': 'Weibo keyword filter' },
+    'item.t.kgweixinad': { 'zh-CN': '微信公号内容屏蔽', 'en': 'WeChat MP keyword filter' },
+    'item.t.kgdoubanad': { 'zh-CN': '豆瓣内容屏蔽', 'en': 'Douban keyword filter' },
+    'item.t.kgyouad': { 'zh-CN': 'YouTube 内容屏蔽', 'en': 'YouTube keyword filter' },
     'item.t.captchaEnabled': { 'zh-CN': '启用验证码识别', 'en': 'Enable captcha solver' },
     'item.t.captchaTrigger': { 'zh-CN': '触发方式', 'en': 'Trigger mode' },
     'item.t.captchaEngine': { 'zh-CN': '识别引擎', 'en': 'Engine' },
@@ -677,13 +697,14 @@
     'item.t.selSearchShowTranslate': { 'zh-CN': '显示翻译按钮', 'en': 'Show translate button' },
     'item.t.selSearchTransAuto': { 'zh-CN': '自动翻译', 'en': 'Auto translate' },
     'item.t.selSearchAlwaysShowOpenLink': { 'zh-CN': '打开链接按钮常驻', 'en': 'Always show open link' },
-    'item.t.perfWhitelist': { 'zh-CN': '仅白名单域名启用', 'en': 'Whitelist domains only' },
+    'item.t.perfWhitelist': { 'zh-CN': '仅在名单内网站运行', 'en': 'Run only on listed sites' },
     'item.t.passiveGlobal': { 'zh-CN': '被动扫描全局化', 'en': 'Passive scan globally' },
     'item.t.darkMode': { 'zh-CN': '暗黑模式', 'en': 'Dark mode' },
     'item.t.cleanCopy': { 'zh-CN': '干净复制', 'en': 'Clean copy' },
     'item.t.adStats': { 'zh-CN': '广告拦截统计', 'en': 'Ad-block stats' },
     'item.t.adBadge': { 'zh-CN': '右下角拦截计数角标', 'en': 'Corner block-count badge' },
-    'item.t.scriptBlacklistEnabled': { 'zh-CN': '启用脚本站点黑名单', 'en': 'Enable site blacklist' },
+    // 「暂停名单」总开关：合并 scriptBlacklist 后由它统一总控 whiteurl（面板「名单管理 → ① 站点级」）
+    'item.t.scriptBlacklistEnabled': { 'zh-CN': '启用暂停名单', 'en': 'Enable pause list' },
     'item.t.shortcutPanel': { 'zh-CN': '打开控制面板', 'en': 'Open control panel' },
     'item.t.shortcutPause': { 'zh-CN': '暂停/恢复净化', 'en': 'Pause/resume blocking' },
     'item.t.shortcutYtp': { 'zh-CN': '旋转快捷键', 'en': 'Rotate shortcut' },
@@ -730,17 +751,17 @@
     'item.d.csdnClean': { 'zh-CN': '隐藏侧边栏，文章居中显示', 'en': 'Hide sidebar, center article' },
     'item.d.kgweibomv': { 'zh-CN': '在微博视频旁添加下载按钮', 'en': 'Add download button next to Weibo videos' },
     'item.d.pojieSignIn': { 'zh-CN': '进入吾爱破解论坛后自动完成每日签到', 'en': 'Auto daily check-in on 52pojie forum' },
-    'item.d.kgbaiduad': { 'zh-CN': '按关键词 / 网址过滤搜索结果', 'en': 'Block results by keyword / URL' },
-    'item.d.kggooglead': { 'zh-CN': '按关键词 / 网址过滤搜索结果', 'en': 'Block results by keyword / URL' },
-    'item.d.kg360ad': { 'zh-CN': '按关键词 / 网址过滤搜索结果', 'en': 'Block results by keyword / URL' },
-    'item.d.kgbingad': { 'zh-CN': '按关键词 / 网址过滤搜索结果', 'en': 'Block results by keyword / URL' },
-    'item.d.kgzhihuad': { 'zh-CN': '按关键词过滤回答与搜索结果', 'en': 'Filter answers and search results by keyword' },
-    'item.d.kgbiliad': { 'zh-CN': '按关键词过滤搜索与评论', 'en': 'Filter search and comments by keyword' },
-    'item.d.kgweiboad': { 'zh-CN': '按关键词过滤微博内容', 'en': 'Filter Weibo content by keyword' },
-    'item.d.kgweixinad': { 'zh-CN': '按关键词过滤文章段落内容', 'en': 'Filter article paragraphs by keyword' },
-    'item.d.kgdoubanad': { 'zh-CN': '按关键词过滤搜索 / 小组 / 电影', 'en': 'Filter search / group / movie by keyword' },
-    'item.d.kgyouad': { 'zh-CN': '按关键词过滤推荐与评论', 'en': 'Filter recommendations and comments by keyword' },
-    'item.d.captchaEnabled': { 'zh-CN': '总开关。默认关闭，按需开启；关闭后本页所有设置均不生效。', 'en': 'Master switch. Off by default. When off, all settings on this page are inert.' },
+    'item.d.kgbaiduad': { 'zh-CN': '按关键词 / 网址屏蔽搜索结果', 'en': 'Block results by keyword / URL' },
+    'item.d.kggooglead': { 'zh-CN': '按关键词 / 网址屏蔽搜索结果', 'en': 'Block results by keyword / URL' },
+    'item.d.kg360ad': { 'zh-CN': '按关键词 / 网址屏蔽搜索结果', 'en': 'Block results by keyword / URL' },
+    'item.d.kgbingad': { 'zh-CN': '按关键词 / 网址屏蔽搜索结果', 'en': 'Block results by keyword / URL' },
+    'item.d.kgzhihuad': { 'zh-CN': '按关键词屏蔽回答与搜索结果', 'en': 'Filter answers and search results by keyword' },
+    'item.d.kgbiliad': { 'zh-CN': '按关键词屏蔽搜索与评论', 'en': 'Filter search and comments by keyword' },
+    'item.d.kgweiboad': { 'zh-CN': '按关键词屏蔽微博内容', 'en': 'Filter Weibo content by keyword' },
+    'item.d.kgweixinad': { 'zh-CN': '按关键词屏蔽文章段落内容', 'en': 'Filter article paragraphs by keyword' },
+    'item.d.kgdoubanad': { 'zh-CN': '按关键词屏蔽搜索 / 小组 / 电影', 'en': 'Filter search / group / movie by keyword' },
+    'item.d.kgyouad': { 'zh-CN': '按关键词屏蔽推荐与评论', 'en': 'Filter recommendations and comments by keyword' },
+    'item.d.captchaEnabled': { 'zh-CN': '总开关。默认关闭，按需开启；关闭后本页所有设置均不生效。⚠ 免责声明：本分组所接 OCR / 验证码识别服务（含极速 / 精准 / 云码）均为第三方提供，与本脚本无隶属或合作关系；填写接口后，验证码图片与识别码会发送至你所填写的服务器，请仅使用你信任的服务并自行保管账号凭证；脚本不内置任何接口、不收取任何费用，亦不对第三方服务做任何担保。', 'en': 'Master switch. Off by default. When off, all settings on this page are inert. ⚠ Disclaimer: the OCR / captcha services this section connects to (Fast / Precise / Yunma) are provided by third parties and are NOT affiliated with this script. Once you fill in an endpoint, captcha images and IDs are uploaded to that server. Use only services you trust and keep your credentials safe. This script ships no built-in API, charges no fee, and makes no warranty for third-party services.' },
     'item.d.captchaTrigger': { 'zh-CN': '手动：点悬浮「识」按钮才扫描（零常驻开销，推荐）；白名单：仅下方名单站点自动扫描；全局：全站常驻扫描（最耗性能，不推荐）。', 'en': 'Manual: click the floating "识" button to scan (zero idle cost, recommended). Whitelist: auto-scan only sites in the list below. Global: scan every page (heaviest, not recommended).' },
     'item.d.captchaEngine': { 'zh-CN': '自动：极速接口优先，失败后回退精准；极速：免识别码，但需填写下方接口地址（数英/算术）；精准：需下方识别码（支持滑块）。', 'en': 'Auto: try fast API first, fall back to precise. Fast: no ID required, but needs API URL below (text/math). Precise: needs ID below (supports slide).' },
     'item.d.captchaApiFast': { 'zh-CN': '「极速」引擎调用的服务地址。留空 = 极速引擎直接跳过，不向任何外部服务器发送数据。请自行搭建或选用可信 OCR 服务后填写；验证码图片将上传至该地址。点击右侧「接口说明」查看填写方式。', 'en': 'API URL for the Fast engine. Leave blank to skip the Fast engine entirely (no data sent). Self-host or use a trusted OCR service. Captcha images will be uploaded to this URL. Click "API guide" on the right for setup help.' },
@@ -755,13 +776,13 @@
     'item.d.selSearchShowTranslate': { 'zh-CN': '工具条末尾显示「译」按钮，点按划词翻译', 'en': 'Show "译" button at the end of the toolbar for translating selected text' },
     'item.d.selSearchTransAuto': { 'zh-CN': '划词后立即自动翻译（默认关闭，避免打扰）', 'en': 'Auto-translate immediately after selection (off by default to avoid noise)' },
     'item.d.selSearchAlwaysShowOpenLink': { 'zh-CN': '无论选中内容是否像地址，都显示「打开网站」按钮（默认关闭）', 'en': 'Always show "open as link" button even if the selection does not look like a URL (off by default)' },
-    'item.d.perfWhitelist': { 'zh-CN': '开启后仅在「启用域名」与已知站点运行，其余页面注入后秒退（近零开销）。油猴 @match 为静态元数据无法运行时切换，此项以注入后早退实现「域名内」', 'en': 'Only run on whitelisted / known sites — others exit immediately after injection (~zero cost). Tampermonkey @match is static metadata; this switch early-exits by skipping the per-page work.' },
+    'item.d.perfWhitelist': { 'zh-CN': '开启后仅在「名单管理 → ① 站点级 · 仅在名单内网站运行」所填域名与内置已知站点运行，其余页面注入后秒退（近零开销）。油猴 @match 为静态元数据无法运行时切换，此项以注入后早退实现「域名内」', 'en': 'Only run on sites listed under "Lists > Site level > Run only on listed sites" and built-in known sites — others exit immediately after injection (~zero cost). Tampermonkey @match is static metadata; this switch early-exits by skipping the per-page work.' },
     'item.d.passiveGlobal': { 'zh-CN': '关闭时通用被动广告扫描只在已知站点运行；开启后扫描所有页面（更重，慎开）', 'en': 'Off: generic passive ad scan only on known sites. On: scan every page (heavier, use with care)' },
     'item.d.darkMode': { 'zh-CN': '跟随系统自动切换暗黑模式', 'en': 'Auto-switch dark mode based on system preference' },
     'item.d.cleanCopy': { 'zh-CN': '复制链接时自动去除追踪参数', 'en': 'Strip tracking parameters when copying links' },
     'item.d.adStats': { 'zh-CN': '统计并显示本次/累计/当前站点拦截数量。关闭后不再扫描 DOM，可略微降低开销，设置面板仍显示「统计已关闭」', 'en': 'Show per-session / total / per-site block counts. When off, DOM scan stops for stats — minor perf gain. Panel still shows "stats off".' },
     'item.d.adBadge': { 'zh-CN': '在页面右下角常驻一个小盾牌，显示本次已拦截的广告数量，点击可查看明细（本次/累计/当前站点）。默认关闭，避免遮挡页面内容。', 'en': 'Show a small persistent shield at the bottom-right with the session block count; click for details (session / total / this site). Off by default to avoid covering page content.' },
-    'item.d.scriptBlacklistEnabled': { 'zh-CN': '开启后，本表内的站点脚本整体暂停（不注入任何净化/美化/划词/验证码）。改动需刷新页面生效。', 'en': 'When enabled, the script is fully paused on listed sites (no ad/beautify/selection-search/captcha). Reload after changes.' },
+    'item.d.scriptBlacklistEnabled': { 'zh-CN': '开启后，「暂停名单」内的站点脚本整体暂停（不注入任何净化/美化/划词/验证码）。改动需刷新页面生效。', 'en': 'When enabled, the script is fully paused on sites in the pause list (no ad/beautify/selection-search/captcha). Reload after changes.' },
     'item.d.shortcutPanel': { 'zh-CN': 'Ctrl+Shift+A 一键打开设置面板', 'en': 'Ctrl+Shift+A opens the control panel' },
     'item.d.shortcutPause': { 'zh-CN': 'Ctrl+Shift+P 全局暂停或恢复广告净化', 'en': 'Ctrl+Shift+P globally pauses or resumes ad blocking' },
     'item.d.shortcutYtp': { 'zh-CN': 'Alt+Shift+R/F/H/V 旋转/填充/翻转视频', 'en': 'Alt+Shift+R/F/H/V rotates / fits / flips videos' },
@@ -774,6 +795,26 @@
     'ph.输入域名': { 'zh-CN': '输入域名', 'en': 'Enter domain' },
     'ph.如_baidu_com': { 'zh-CN': '如 baidu.com', 'en': 'e.g. baidu.com' },
     'ph.如_icbc_com_cn': { 'zh-CN': '如 icbc.com.cn', 'en': 'e.g. icbc.com.cn' },
+    // ── 「名单管理」6 份名单的标题 / 说明 / 占位符（按 3 个作用层级分组，标题自带层级前缀）──
+    //   ① 站点级：决定「整站跑不跑脚本」  ② 验证码级：只在验证码模块内生效  ③ 内容级：只删搜索结果条目
+    'ls.title.whiteurl': { 'zh-CN': '① 站点级 · 暂停名单（整站暂停）', 'en': '1) Site level - Pause list (whole site paused)' },
+    'ls.desc.whiteurl': { 'zh-CN': '命中即整站暂停：脚本完全不介入，不注入任何净化/美化/划词/验证码。匹配规则为「当前域名包含该条目」（填 baidu.com 即覆盖其全部子域）。需上方总开关为开启才生效。也可直接点油猴菜单「🚫 只暂停当前网站」一键增减本站，无需手输域名。', 'en': 'A hit pauses the whole site: the script injects nothing (no ad blocking, beautify, selection search or captcha). Matching is "current host contains the entry" (baidu.com covers all its subdomains). Requires the master switch above. You can also toggle this site from the Tampermonkey menu; no typing needed.' },
+    'ls.ph.whiteurl': { 'zh-CN': '如 icbc.com.cn（填主域名即可）', 'en': 'e.g. icbc.com.cn (main domain is enough)' },
+    'ls.title.scopeWhitelist': { 'zh-CN': '① 站点级 · 仅在名单内网站运行', 'en': '1) Site level - Run only on listed sites' },
+    'ls.desc.scopeWhitelist': { 'zh-CN': '仅在「性能与高级 → 仅白名单域名启用」打开时起作用：只有这些域名会被脚本处理，其余页面注入后秒退（近零开销）。留空则只在内置已知站点生效。与「暂停名单」语义相反 —— 这份是「允许脚本运行」。', 'en': 'Only effective when "Whitelist domains only" (Performance & advanced) is on: the script runs on these domains and exits immediately elsewhere (~zero cost). Empty = built-in known sites only. Opposite of the pause list - this one ALLOWS the script to run.' },
+    'ls.ph.scopeWhitelist': { 'zh-CN': '如 baidu.com', 'en': 'e.g. baidu.com' },
+    'ls.title.captchaWhitelist': { 'zh-CN': '② 验证码级 · 自动扫描站点', 'en': '2) Captcha level - Auto-scan sites' },
+    'ls.desc.captchaWhitelist': { 'zh-CN': '只在「验证码识别」模块内生效：触发方式选「白名单站点」时，仅这些站点会自动扫描识别。填完整 URL 或 *.example.com 亦可（脚本会自动提取域名主体）。不影响广告净化等其他功能。', 'en': 'Captcha module only: when trigger mode is "whitelist sites", only these sites are auto-scanned. Full URLs or *.example.com also work (the host is normalized). Does not affect ad blocking or other features.' },
+    'ls.ph.captchaWhitelist': { 'zh-CN': '如 example.com', 'en': 'e.g. example.com' },
+    'ls.title.captchaBlacklist': { 'zh-CN': '② 验证码级 · 跳过识别站点', 'en': '2) Captcha level - Skip recognition here' },
+    'ls.desc.captchaBlacklist': { 'zh-CN': '只在「验证码识别」模块内生效：URL 含其中字符串的页面会跳过验证码识别，避免在与验证码无关的页面反复出错打扰。不影响广告净化等其他功能。', 'en': 'Captcha module only: pages whose URL contains one of these strings skip captcha recognition, so unrelated pages no longer trigger noisy failures. Does not affect ad blocking or other features.' },
+    'ls.ph.captchaBlacklist': { 'zh-CN': '输入网址片段', 'en': 'Enter URL fragment' },
+    'ls.title.pingbiurl': { 'zh-CN': '③ 内容级 · 屏蔽这些网址', 'en': '3) Content level - Block these URLs' },
+    'ls.desc.pingbiurl': { 'zh-CN': '只在搜索结果里生效：结果链接命中其中任一片段即被移除（百度 / Google / Bing / 360 / Yandex 等）。不影响整站运行。建议填有区分度的域名片段；过短的条目（如 com）会误伤大量结果。', 'en': 'Search results only: a result is removed when its link contains any of these fragments (Baidu / Google / Bing / 360 / Yandex). The rest of the site keeps working. Use distinctive fragments - very short ones match far too much.' },
+    'ls.ph.pingbiurl': { 'zh-CN': '输入网址关键词', 'en': 'Enter URL keyword' },
+    'ls.title.pingbikw': { 'zh-CN': '③ 内容级 · 屏蔽这些关键词', 'en': '3) Content level - Block these keywords' },
+    'ls.desc.pingbikw': { 'zh-CN': '只在搜索结果里生效：标题或摘要命中其中任一关键词即被移除。建议填 2 字以上、有区分度的词；过于通用的词会大面积误删正常内容。', 'en': 'Search results only: a result is removed when its title or snippet contains any of these keywords. Use distinctive words of 2+ characters; generic words remove far too much.' },
+    'ls.ph.pingbikw': { 'zh-CN': '输入关键词（至少2个字）', 'en': 'Enter keyword (2+ chars)' },
     'title.关闭': { 'zh-CN': '关闭', 'en': 'Close' },
     'title.NetClean：本站已暂停，点击管理': { 'zh-CN': 'NetClean：本站已暂停，点击管理', 'en': 'NetClean: paused on this site — click to manage' },
     'title.关闭提示': { 'zh-CN': '关闭提示', 'en': 'Dismiss prompt' },
@@ -877,7 +918,7 @@
     'sec.⑤ 视频平台 · 增强与下载': { 'zh-CN': '⑤ 视频平台 · 增强与下载', 'en': '⑤ Video platforms · enhance & download' },
     'sec.⑥ 社区内容 · 广告与登录墙': { 'zh-CN': '⑥ 社区内容 · 广告与登录墙', 'en': '⑥ Community · ads & login walls' },
     'sec.⑦ 社区内容 · 增强': { 'zh-CN': '⑦ 社区内容 · 增强', 'en': '⑦ Community · enhance' },
-    'sec.⑧ 关键词过滤（各站统一）': { 'zh-CN': '⑧ 关键词过滤（各站统一）', 'en': '⑧ Keyword filter (cross-site)' },
+    'sec.⑧ 内容屏蔽（关键词 / 网址 · 各站统一）': { 'zh-CN': '⑧ 内容屏蔽（关键词 / 网址 · 各站统一）', 'en': '⑧ Content blocking (keyword / URL, cross-site)' },
     'sec.① 基础开关': { 'zh-CN': '① 基础开关', 'en': '① Basic switches' },
     'sec.② 识别引擎与凭证': { 'zh-CN': '② 识别引擎与凭证', 'en': '② Engine & credentials' },
     'sec.③ 智能与防护': { 'zh-CN': '③ 智能与防护', 'en': '③ Smart & protection' },
@@ -2204,7 +2245,63 @@
   })();
 
   /* ================================================================
-   *  0.8 启动早退「状态 / 恢复」入口
+   *  0.6b 暂停名单合并迁移（一次性 · 幂等）
+   *  ── 背景 ──
+   *  原「白名单域名」(whiteurl) 与「黑名单站点」(scriptBlacklist) 是两份**做同一件事**的
+   *  名单（命中即整站暂停）。前者"填入即生效"、后者"要先开总开关"，用户经常不知道该往哪填；
+   *  更糟的是「白名单域名」与「启用域名（内部白名单）」语义完全相反却都叫白名单。
+   *  本次合并为**一份** whiteurl（面板显示名「暂停名单」），由 scriptBlacklistEnabled 统一总控。
+   *  ── 迁移目标 ──
+   *  任何老用户升级后行为与升级前**逐字节一致**，无需手动改任何配置：
+   *    ① 名单内容：仅当旧黑名单总开关**已启用**时才把旧黑名单并入 —— 开关关着时那份名单本来
+   *       也不生效，若一并灌进来，用户下次打开开关会突然多出一批没预期的站点。
+   *    ② 开关补偿：旧「白名单域名」是"填入即生效"（无开关）。合并后统一变成"开关为开 + 命中名单"
+   *       才生效，所以旧白名单**非空**时说明用户此前确实在靠它停用站点 → 必须把开关置开。
+   *    ③ 幂等 + 防重灌：标记落盘后永不重跑。否则用户清空名单后，下次启动又会被灌回旧数据。
+   *  ── 落盘顺序 ──
+   *  setConfig 是 400ms 防抖写盘；若先落标记再落配置，用户在这 400ms 内关掉页面就会出现
+   *  「标记已写、配置没写」→ 名单永久丢失。故必须 setConfig → flushConfig（立即落盘）→ 再写标记。
+   * ================================================================ */
+  const NC_PAUSE_MERGE_FLAG = 'ncPauseListMerged';
+  (function ncMigratePauseList() {
+    try {
+      if (GM_getValue(NC_PAUSE_MERGE_FLAG)) return;   // 已迁移过：绝不重跑
+      const cfg = getConfig();
+      if (!cfg.baidu) cfg.baidu = {};
+      const oldWl = Array.isArray(cfg.whiteurl) ? cfg.whiteurl.slice() : [];
+      const oldBl = Array.isArray(cfg.scriptBlacklist) ? cfg.scriptBlacklist.slice() : [];
+      const blOn = !!cfg.baidu.scriptBlacklistEnabled;
+      // 【无迁移对象则直接跳过】
+      // 全新用户（无旧 scriptBlacklist 键、暂停名单为空、总开关关闭）没有任何可迁移的内容。
+      // 此时**绝不能**走下面的 setConfig + flushConfig —— 那会在首次启动就写一条配置历史快照，
+      // 让「新鲜配置下配置历史应为空」的既有行为被破坏（老用户会看到一条莫名其妙的「配置已修改」记录）。
+      // 只落标记并返回即可，配置一个字节都不动。
+      if (!Object.prototype.hasOwnProperty.call(cfg, 'scriptBlacklist') && !oldWl.length && !blOn) {
+        GM_setValue(NC_PAUSE_MERGE_FLAG, 1);
+        return;
+      }
+      // 合并去重：大小写不敏感，保留先出现的原书写形态（旧白名单在前，旧黑名单在后）
+      const merged = [], seen = Object.create(null);
+      oldWl.concat(blOn ? oldBl : []).forEach(function (u) {
+        const raw = String(u == null ? '' : u).trim();
+        const k = raw.toLowerCase();
+        if (!k || seen[k]) return;
+        seen[k] = 1; merged.push(raw);
+      });
+      cfg.whiteurl = merged.slice(0, 999);
+      cfg.baidu.scriptBlacklistEnabled = (oldWl.length > 0) || blOn;
+      delete cfg.scriptBlacklist;
+      setConfig(cfg);
+      flushConfig();                                   // 立即落盘（不可依赖防抖窗口）
+      GM_setValue(NC_PAUSE_MERGE_FLAG, 1);             // 配置确认落盘后才写标记
+      dbg('[NetClean] 暂停名单合并迁移：白名单 ' + oldWl.length + ' 条 + 黑名单 ' + oldBl.length +
+        ' 条（旧开关' + (blOn ? '开' : '关') + '）→ 合并 ' + cfg.whiteurl.length +
+        ' 条，总开关=' + cfg.baidu.scriptBlacklistEnabled);
+    } catch (e) { console.error('[NetClean] 暂停名单合并迁移失败', e); }
+  })();
+
+  /* ================================================================
+   *  0.8 启动早退「🔍 本页为什么没净化？」急救入口
    *  —— 必须注册在下面三道启动闸之前 ——
    *  背景：whiteurl / scriptBlacklist / perfWhitelist 三道闸都在设置面板
    *        定义之前直接 return，而「控制面板」菜单注册在阶段 6（最末）。
@@ -2248,11 +2345,12 @@
     return b;
   }
 
-  // 三道闸的解封配方
+  // 两道闸的解封配方
+  // 合并说明：原「白名单域名」(whiteurl) 与「黑名单站点」(scriptBlacklist) 是两份做同一件事的名单，
+  //   已合并为一份 whiteurl（面板显示名「暂停名单」），由 scriptBlacklistEnabled 统一总控。
   const NC_GATE_FIX = {
-    whiteurl:        { list: 'whiteurl',        sw: null,                     fix: 'remove', hint: '当前站点在「白名单域名」中，脚本常驻暂停。', fixLabel: '把本站从「白名单域名」移除' },
-    scriptBlacklist: { list: 'scriptBlacklist', sw: 'scriptBlacklistEnabled', fix: 'remove', hint: '当前站点在「黑名单站点」中，且黑名单开关已启用。', fixLabel: '把本站从「黑名单站点」移除' },
-    perfWhitelist:   { list: 'scopeWhitelist',  sw: 'perfWhitelist',          fix: 'add',    hint: '「仅白名单域名启用」已开启，当前站点既不在「启用域名」内，也不是内置已知站点。', fixLabel: '把本站加入「启用域名」' }
+    whiteurl:        { list: 'whiteurl',       sw: 'scriptBlacklistEnabled', fix: 'remove', hint: '当前站点在「暂停名单」中，且名单开关已启用。', fixLabel: '把本站从「暂停名单」移除' },
+    perfWhitelist:   { list: 'scopeWhitelist', sw: 'perfWhitelist',          fix: 'add',    hint: '「仅在名单内网站运行」已开启，当前站点不在其名单内，也不是内置已知站点。', fixLabel: '把本站加入「仅在名单内网站运行」' }
   };
 
   // 急救面板：只做「解封」这一件事，纯 DOM 自绘、零依赖
@@ -2356,9 +2454,12 @@
 
     const body = ncEl('div', 'padding:20px');
     [['当前站点', HOST],
-     ['白名单域名', (cfg.whiteurl || []).length ? '已配置 ' + cfg.whiteurl.length + ' 条 · 本站未命中' : '未配置'],
-     ['黑名单站点', scriptCfg.scriptBlacklistEnabled ? ('已启用 · 共 ' + ((cfg.scriptBlacklist || []).length) + ' 条 · 本站未命中') : '未启用'],
-     ['仅白名单域名启用', scriptCfg.perfWhitelist ? ('已开启 · ' + ((cfg.scopeWhitelist || []).length) + ' 条启用域名 · 本站已放行') : '未开启']
+     ['暂停名单', (function () {
+        const n = (cfg.whiteurl || []).length;
+        if (!scriptCfg.scriptBlacklistEnabled) return n ? ('未启用 · 名单内 ' + n + ' 条（开关关闭，全部不生效）') : '未启用';
+        return n ? ('已启用 · 共 ' + n + ' 条 · 本站未命中') : '已启用（名单为空）';
+      })()],
+     ['仅在名单内网站运行', scriptCfg.perfWhitelist ? ('已开启 · ' + ((cfg.scopeWhitelist || []).length) + ' 条启用域名 · 本站已放行') : '未开启']
     ].forEach(function (r) {
       const line = ncEl('div', 'display:flex;gap:10px;font-size:13px;padding:7px 0;border-bottom:1px dashed #eef2f7');
       line.appendChild(ncEl('span', 'width:120px;flex:0 0 auto;color:#64748b', r[0]));
@@ -2476,18 +2577,99 @@
   //   面板内 `_syncPauseUI = ...` 赋值会抛 ReferenceError，导致面板「关闭」按钮绑定被中断、关不掉面板。
   let _syncPauseUI = null;
 
+  /* ================================================================
+   * 状态化油猴菜单（菜单名随状态刷新）
+   * ----------------------------------------------------------------
+   * 背景：「暂停 / 恢复全网净化」这类**动作对**命名有两个毛病——
+   *   ① 用户看不出当前处于什么状态（截图上那条到底是"已暂停"还是"未暂停"？）；
+   *   ② 两条「暂停 / 恢复 …」前 8 字完全相同、差异词在末尾，是典型的最小差异对，
+   *      偏偏两者风险不同（一个影响全部网站），容易点错。
+   * 做法：菜单名只显示**下一步动作**（未暂停→「暂停全部网站净化」，已暂停→「恢复全部网站净化」），
+   *   状态一变就刷新文案，于是菜单同时充当状态指示器。
+   *
+   * ⚠ 必须声明在三道早退闸之前：阶段 0 注册菜单时要读这些绑定，
+   *   若声明在闸门之后，早退页面会因 TDZ 直接抛 ReferenceError。
+   * ================================================================ */
+  const _ncMenuIds = {};    // slot → Tampermonkey 返回的菜单项 id
+  const _ncMenuReg = {};    // slot → 是否已注册过（防止拿不到 id 的 manager 上重复注册出双份菜单）
+  // 是否支持 GM_registerMenuCommand 的 options.id（原地更新文案、不改变菜单顺序）——Tampermonkey 5.0+
+  const _NC_MENU_INPLACE = (() => {
+    try {
+      const h = String((typeof GM_info !== 'undefined' && GM_info.scriptHandler) || '');
+      const v = String((typeof GM_info !== 'undefined' && GM_info.version) || '');
+      return h === 'Tampermonkey' && parseInt(v.split('.')[0], 10) >= 5;
+    } catch (e) { return false; }
+  })();
+
+  // 注册 / 更新一个菜单项。
+  //   优先 options.id 原地改名（不改变菜单顺序 —— 阶段 0 的排序设计依赖顺序稳定）；
+  //   退而求其次「注销 + 重新注册」（会排到末尾，但文案至少是新的）；
+  //   两者都不支持时保持首次注册的文案，**绝不重复注册**。
+  function ncMenuUpsert(slot, label, fn) {
+    try {
+      if (typeof GM_registerMenuCommand !== 'function') return;
+      const prev = _ncMenuIds[slot];
+      if (_ncMenuReg[slot]) {
+        if (prev != null && _NC_MENU_INPLACE) { GM_registerMenuCommand(label, fn, { id: prev }); return; }
+        if (prev != null && typeof GM_unregisterMenuCommand === 'function') {
+          try { GM_unregisterMenuCommand(prev); } catch (e) {}
+          _ncMenuIds[slot] = null;
+        } else {
+          return;
+        }
+      }
+      const id = GM_registerMenuCommand(label, fn);
+      if (id != null) _ncMenuIds[slot] = id;
+      _ncMenuReg[slot] = true;
+    } catch (e) { console.error('[NetClean] 菜单项注册/更新失败', e); }
+  }
+
+  // 当前站点是否**真的被暂停**（口径与 isPauseListed / ncTogglePauseSite 一致：单向 HOST.includes(条目)）
+  // ⚠ 必须连带判断总开关：合并后「名单里有条目」不等于「已生效」。
+  //   否则开关关着时菜单会显示「▶️ 恢复当前网站」，而网站其实正在正常运行 —— 又是一次"状态看不出来"。
+  function ncIsSitePaused() {
+    try {
+      if (!getScriptCfg().scriptBlacklistEnabled) return false;
+      const wl = cfgWhiteurl();
+      return !!wl.length && wl.some(u => u && HOST.includes(u));
+    } catch (e) { return false; }
+  }
+  function ncMenuLabelPauseGlobal() { return BLOCKING_PAUSED ? t('menu.pauseOff') : t('menu.pauseOn'); }
+  function ncMenuLabelPauseSite() { return ncIsSitePaused() ? t('menu.pauseSiteOff') : t('menu.pauseSiteOn'); }
+  function ncMenuLabelDarkOwner() {
+    try {
+      const cfg = getScriptCfg();
+      const host = String(HOST || (location && location.hostname) || '').toLowerCase();
+      if (!host) return t('menu.darkAuto');
+      if (Array.isArray(cfg.darkForceHosts) && cfg.darkForceHosts.indexOf(host) >= 0) return t('menu.darkForce');
+      if (Array.isArray(cfg.darkSkipHosts) && cfg.darkSkipHosts.indexOf(host) >= 0) return t('menu.darkSkip');
+      return t('menu.darkAuto');
+    } catch (e) { return t('menu.darkAuto'); }
+  }
+  // 只刷新「已经注册过」的项：早退页面（暂停名单 / 仅在名单内网站运行）走不到阶段 6，
+  // 若在这里无脑创建，会让这些页面凭空多出一项本来不该有的菜单。
+  function ncRefreshMenuSlot(slot, label, fn) {
+    if (!_ncMenuReg[slot]) return;
+    ncMenuUpsert(slot, label, fn);
+  }
+  // 状态变更后调用：刷新三条状态化菜单的文案
+  function ncUpdateMenuLabels() {
+    try { ncRefreshMenuSlot('pauseToggle', ncMenuLabelPauseGlobal(), ncTogglePauseGlobal); } catch (e) {}
+    try { ncRefreshMenuSlot('pauseSite', ncMenuLabelPauseSite(), ncTogglePauseSite); } catch (e) {}
+    try { ncRefreshMenuSlot('darkOwner', ncMenuLabelDarkOwner(), ncToggleDarkHostOwnership); } catch (e) {}
+  }
+
   // 阶段 0：菜单先落地
   // ── 注册顺序说明（Tampermonkey 菜单按注册时间自上而下排列，无法运行时重排）──
-  //   高频优先：① 控制面板（配置入口）② 暂停/恢复（最高频临时操作）③ 状态/恢复（急救，
-  //   早退时唯一出路）④ 暗黑归属（低频）。
+  //   高频优先：① 控制面板（配置入口）② 暂停/恢复（最高频临时操作）③ 急救诊断（早退时唯一出路）④ 暗黑归属（低频）。
   //   之所以把「控制面板/暂停」也放在早退检查之前注册：菜单排序由注册时机决定，
-  //   若只在 bootCore 里注册就会排在「状态/恢复」之后（实测用户找不到常用的面板入口）。
+  //   若只在 bootCore 里注册就会排在「急救」之后（实测用户找不到常用的面板入口）。
   //   早退场景下这两项依然可用：面板会显示「本站已暂停」状态并给出恢复引导，
   //   暂停项在未运行时切换无副作用——不会造成误操作。
-  try { GM_registerMenuCommand(t('menu.panel'), () => openSettings()); } catch (e) { console.error('[NetClean] 阶段 0 面板菜单注册失败', e); }
-  try { GM_registerMenuCommand(t('menu.pauseToggle'), ncTogglePauseGlobal); } catch (e) { console.error('[NetClean] 阶段 0 暂停菜单注册失败', e); }
-  try { GM_registerMenuCommand(t('menu.pauseSite'), ncTogglePauseSite); } catch (e) { console.error('[NetClean] 阶段 0 本站暂停菜单注册失败', e); }
-  try { GM_registerMenuCommand(t('menu.rescue'), ncOpenRescue); } catch (e) { console.error('[NetClean] 阶段 0 急救菜单注册失败', e); }
+  try { ncMenuUpsert('panel', t('menu.panel'), () => openSettings()); } catch (e) { console.error('[NetClean] 阶段 0 面板菜单注册失败', e); }
+  try { ncMenuUpsert('pauseToggle', ncMenuLabelPauseGlobal(), ncTogglePauseGlobal); } catch (e) { console.error('[NetClean] 阶段 0 暂停菜单注册失败', e); }
+  try { ncMenuUpsert('pauseSite', ncMenuLabelPauseSite(), ncTogglePauseSite); } catch (e) { console.error('[NetClean] 阶段 0 本站暂停菜单注册失败', e); }
+  try { ncMenuUpsert('rescue', t('menu.rescue'), ncOpenRescue); } catch (e) { console.error('[NetClean] 阶段 0 急救菜单注册失败', e); }
 
   // ⚠ 三道闸门统一走 `NC_EARLY_EXIT_HIT` 标记，**不能直接 return**：
   //   本 IIFE 在闸门之后还有大量顶层 const/let（onDomReady / setInterval / HELP / groups 等，L2618~L6094）。
@@ -2498,44 +2680,42 @@
   //   故这里只置标记 + 提示，把真正的早退检查推迟到所有顶层声明执行完毕之后（见文件末尾 NC_EARLY_EXIT_HIT 分支）。
   let NC_EARLY_EXIT_HIT = false;
 
-  // 白名单检查（豁免名单：命中的站点脚本常驻暂停）
-  function isWhitelisted() {
-    const wl = cfgWhiteurl();
-    return wl.length && wl.some(u => HOST.includes(u));
-  }
-  if (isWhitelisted()) {
-    ncMarkEarlyExit('whiteurl', 'whiteurl', '白名单域名');
-    ncShowPausedBadge();
-    NC_EARLY_EXIT_HIT = true;
-  }
-
-  // 脚本启用站点黑名单（敏感站点排除）：开启后，命中名单的站点脚本整体暂停。
-  // 默认关闭；名单预置敏感站点，由用户手动启用。与 isWhitelisted 同路径（启动早期直接早退）。
-  // 设计说明：命中即「完全不介入」而非「部分停用」。对银行 / 支付 / 政务这类站点，
-  // 半启用（继续改 DOM、继续跑自动化）反而会带来不可预期的风险，故不做「仅停用自动化」的折中档。
-  function isScriptBlacklisted() {
+  // 暂停名单检查（合并自原「白名单域名」与「黑名单站点」两份名单）
+  // ── 为什么合并 ──
+  //   原两份名单做的事完全相同（命中即整站暂停），差别只有"有无总开关"，用户不知道该往哪填；
+  //   且「白名单域名」这个名字与「启用域名（内部白名单）」语义相反却都叫白名单，是最容易踩的坑。
+  //   现合并为一份 whiteurl（面板显示名「暂停名单」），由 scriptBlacklistEnabled（「启用暂停名单」）总控。
+  // ── 语义变化 ──
+  //   旧「白名单域名」是"填入即生效"；合并后统一为"开关为开 + 命中名单"才生效。
+  //   为此 ncMigratePauseList() 为老用户按原行为补偿开关值（旧名单非空 → 开关置开），
+  //   且 ncTogglePauseSite()（菜单「只暂停当前网站」）在加入条目时会自动打开开关。
+  // ── 设计说明 ──
+  //   命中即「完全不介入」而非「部分停用」。对银行 / 支付 / 政务这类站点，半启用
+  //   （继续改 DOM、继续跑自动化）反而会带来不可预期的风险，故不做「仅停用自动化」的折中档。
+  function isPauseListed() {
     if (!getScriptCfg().scriptBlacklistEnabled) return false;
-    const bl = getConfig().scriptBlacklist || [];
-    if (!bl.length) return false;
-    const m = bl.find(u => u && HOST.includes(u));
+    const wl = cfgWhiteurl();
+    if (!wl.length) return false;
+    const m = wl.find(u => u && HOST.includes(u));
     if (!m) return false;
-    dbg('[NetClean] 命中脚本启用站点黑名单：' + m + '（host=' + HOST + '），脚本在本页整体暂停');
+    dbg('[NetClean] 命中暂停名单：' + m + '（host=' + HOST + '），脚本在本页整体暂停');
     return true;
   }
-  if (!NC_EARLY_EXIT_HIT && isScriptBlacklisted()) {
-    ncMarkEarlyExit('scriptBlacklist', 'scriptBlacklist', '脚本启用站点黑名单');
+  if (isPauseListed()) {
+    ncMarkEarlyExit('whiteurl', 'whiteurl', '暂停名单');
     ncShowPausedBadge();
     NC_EARLY_EXIT_HIT = true;
   }
 
   // 「本站暂停 / 恢复」：针对"当前这一个站点"快速开关（区别于全局暂停）。
   // 场景：用户在某个银行/内网站点发现脚本干扰了页面，想临时放过这一站、但不想影响其他站点，
-  //   此前只能手动去设置面板的白名单列表里输入域名（要跳页面、要懂"白名单域名"这个概念）。
-  // 实现：直接在当前 HOST 与 whiteurl 名单间切换（该名单本就是"命中即整站暂停"的语义）。
-  // 注意：白名单是启动早期判定的（刷新后才生效），故切换后必须提示用户刷新页面。
-  // 匹配口径必须与 isWhitelisted() 保持一致（单向 HOST.includes(条目)）：
+  //   此前只能手动去设置面板里输入域名（要跳页面、要懂"白名单域名"这个概念）。
+  // 实现：直接在当前 HOST 与 whiteurl（暂停名单）间切换；加入时**连带打开总开关**，
+  //   保证"点了就一定生效"，不会被一个关着的开关悄悄吞掉。
+  // 注意：暂停名单是启动早期判定的（刷新后才生效），故切换后必须提示用户刷新页面。
+  // 匹配口径必须与 isPauseListed() 保持一致（单向 HOST.includes(条目)）：
   //   ⚠ 不可用双向 includes —— 否则在 baidu.com 页面遇到名单里的 www.baidu.com 时，
-  //   isWhitelisted 判定「本站未暂停」，而本函数却会误判「已暂停」并静默删掉那条条目。
+  //   isPauseListed 判定「本站未暂停」，而本函数却会误判「已暂停」并静默删掉那条条目。
   function ncTogglePauseSite() {
     try {
       const wl = cfgWhiteurl();
@@ -2551,18 +2731,30 @@
       });
       const c = getConfig();
       if (!c.whiteurl) c.whiteurl = [];
-      if (hitIdx >= 0) {
-        // 已在名单 → 移出，恢复本站脚本
+      if (!c.baidu) c.baidu = {};
+      const swOn = !!getScriptCfg().scriptBlacklistEnabled;
+      if (hitIdx >= 0 && swOn) {
+        // 已在名单且开关为开 → 确实在暂停，移出名单即恢复本站脚本
         const removed = c.whiteurl.splice(hitIdx, 1)[0];
         setConfig(c);
-        notify('▶ 已恢复本站运行（' + removed + '）· 刷新页面后生效', 'ok');
-      } else {
-        // 未在名单 → 加入，本站暂停。写入归一化后的域名，避免 http:// 前缀导致判空不一致
-        c.whiteurl.push(hostNorm);
+        notify('▶️ 已恢复本站运行（' + removed + '）· 刷新页面后生效', 'ok');
+      } else if (hitIdx >= 0) {
+        // 名单里有条目、但总开关是关的 → 本站其实在正常运行。此时点这一项应是"让它暂停"，
+        // 最小动作是打开总开关，而不是把条目删掉（那会与本项文案完全相反）。
+        c.baidu.scriptBlacklistEnabled = true;
         setConfig(c);
-        notify('⏸ 已将本站加入暂停名单（' + hostNorm + '）· 刷新页面后生效', 'warn');
+        notify('⏸️ 暂停名单已启用，本站（' + hostNorm + '）恢复暂停 · 刷新页面后生效', 'warn');
+      } else {
+        // 未在名单 → 加入，本站暂停。写入归一化后的域名，避免 http:// 前缀导致判空不一致。
+        // ⚠ 必须**连带打开总开关**：否则条目只是躺在一份不生效的名单里，用户点了等于没点。
+        c.whiteurl.push(hostNorm);
+        c.baidu.scriptBlacklistEnabled = true;
+        setConfig(c);
+        notify('⏸️ 已将本站加入暂停名单（' + hostNorm + '）· 刷新页面后生效', 'warn');
       }
       flushConfig();
+      // 菜单改名：本站未暂停→「🚫 只暂停当前网站」，已暂停→「▶️ 恢复当前网站」
+      try { ncUpdateMenuLabels(); } catch (e) {}
     } catch (e) {
       console.error('[NetClean] 本站暂停切换失败', e);
       try { notify('操作失败：' + ((e && e.message) || e), 'err'); } catch (x) {}
@@ -2602,8 +2794,8 @@
       div.id = 'zk-pause-indicator';
       div.style.cssText = 'position:fixed;top:10px;left:50%;transform:translateX(-50%);background:' + (BLOCKING_PAUSED ? '#ff5252' : '#009688') + ';color:#fff;padding:6px 20px;border-radius:20px;font-size:12px;z-index:' + NC_Z_TOP + ';font-family:sans-serif;box-shadow:0 2px 10px rgba(0,0,0,.18);' + (BLOCKING_PAUSED ? '' : 'pointer-events:none;');
       div.textContent = BLOCKING_PAUSED
-        ? '⏸ 全网净化已暂停（点此恢复）'
-        : ('▶ 全网净化已恢复 · 已拦截 ' + STATS.skippedAds + ' 个广告');
+        ? '⏸️ 全网净化已暂停（点此恢复）'
+        : ('▶️ 全网净化已恢复 · 已拦截 ' + STATS.skippedAds + ' 个广告');
       // 暂停态可点击恢复（持久，不自动消失）；恢复态 3s 后淡出
       if (BLOCKING_PAUSED) {
         div.style.cursor = 'pointer';
@@ -2616,9 +2808,12 @@
     } catch (e) {}
     // 面板若开着，同步按钮态（此前面板内点暂停会与胶囊不同步）
     try { if (typeof _syncPauseUI === 'function') _syncPauseUI(); } catch (e) {}
+    // 油猴菜单同步改名：未暂停→「⏸️ 暂停全部网站净化」，已暂停→「▶️ 恢复全部网站净化」。
+    // 菜单在开始菜单里是关着的，改名后用户下次打开看到的就是当前可执行的动作，兼作状态指示器。
+    try { ncUpdateMenuLabels(); } catch (e) {}
     // 面板内触发时补一条轻提示，避免"点了没反应"的错觉
     if (onlyToast) {
-      try { notify(BLOCKING_PAUSED ? '⏸ 全网净化已暂停（刷新页面自动恢复）' : '▶ 全网净化已恢复', BLOCKING_PAUSED ? 'warn' : 'ok'); } catch (e) {}
+      try { notify(BLOCKING_PAUSED ? '⏸️ 全网净化已暂停（刷新页面自动恢复）' : '▶️ 全网净化已恢复', BLOCKING_PAUSED ? 'warn' : 'ok'); } catch (e) {}
     }
     return BLOCKING_PAUSED;
   }
@@ -3923,7 +4118,7 @@
       if (cfg.baidumenu && !$('.zxbcopenxcd')) {
         const btn = document.createElement('div');
         btn.className = 'zxbcopenxcd';
-        btn.textContent = '⚙';
+        btn.textContent = '⚙️';
         btn.style.cssText = 'position:fixed;top:auto;bottom:calc(92px + env(safe-area-inset-bottom));right:calc(14px + env(safe-area-inset-right));width:46px;height:46px;background:#1677ff;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;z-index:999999;cursor:pointer;box-shadow:0 2px 12px rgba(22,119,255,.3)';
         onDomReady(() => { if (document.body) document.body.appendChild(btn); });
         btn.addEventListener('click', () => openSettings());
@@ -4069,7 +4264,7 @@
         btn.id = 'bingconfig_btn';
         btn.className = 'gb_Sc';
         btn.style.cssText = 'border:1px solid transparent;text-align:center;border-radius:2px;line-height:19px;cursor:pointer;margin-left:-1px;padding:4px 11px;margin-right:-11px';
-        btn.textContent = '⚙';
+        btn.textContent = '⚙️';
         btn.href = 'javascript:void(0)';
         btn.addEventListener('click', (e) => { e.preventDefault(); openSettings(); });
         hdtb.insertBefore(btn, hdtb.firstChild);
@@ -4127,7 +4322,7 @@
         span.id = 'bingconfig_btn';
         span.className = 'cbtn';
         span.style.cssText = 'line-height:45px;margin-left:20px;margin-right:20px';
-        span.innerHTML = `<input type="button" value="⚙ 控制面板" class="zk-open-settings" style="cursor:pointer">`;
+        span.innerHTML = `<input type="button" value="⚙️ 控制面板" class="zk-open-settings" style="cursor:pointer">`;
         span.querySelector('.zk-open-settings').addEventListener('click', () => openSettings());
         sc.parentElement.insertBefore(span, sc);
       }
@@ -5910,6 +6105,9 @@
       else { cfg.darkSkipHosts.push(host); notify('本站：交给网站自己的暗黑模式'); }
       try { setConfig(getConfig()); } catch (e) {}
       applyDarkMode();
+      // 菜单改名：三态循环（自动 → 交给网站 → 脚本接管 → 自动），菜单名显示"下一步动作"，
+      // 否则「恢复自动判断」这一态在菜单里完全不可见，用户会以为卡住了。
+      try { ncUpdateMenuLabels(); } catch (e) {}
     } catch (e) {}
   }
 
@@ -6128,7 +6326,7 @@
     baiducss: { title: '卡片式美化', effect: '把百度搜索结果改为白底圆角卡片，hover 上浮高亮，阅读更清爽。', impl: 'injectSearchBeautifyCSS() 仅向结果容器注入背景/边框/圆角/阴影，零 padding 侵入，绝不改动内部标题摘要布局。', maintain: '若新版百度改了结果容器 class，在 injectSearchBeautifyCSS() 百度分支的选择器处追加新容器名。', risk: '纯视觉层，关闭即恢复原生样式；不影响任何屏蔽功能。' },
     baiduhot: { title: '隐藏热搜/AI栏', effect: '隐藏百度首页与结果页右侧热搜榜、AI 辅助侧边栏等干扰内容。', impl: 'updateBaiduHotClass() 在 html 上切换 adc-hide-baiduhot 类，CSS 隐藏 .hot-news-wrapper 等右侧栏元素；可实时开关无需刷新。', maintain: '失效时检查 injectCSS() 中 adc-hide-baiduhot 规则对应的选择器是否随百度改版变动。', risk: '关闭后右侧热搜榜恢复显示；若你更想看热搜，关闭此项即可。' },
     baidueye: { title: '护眼模式', effect: '全站护眼蒙版 + 20-20-20 休息提醒：multiply 暖色层覆盖整页让画面柔和（缓解纯白刺眼与高对比度疲劳），并每 20 分钟提醒你远眺一次。诚实说明：multiply 是「颜色相乘」视觉变换，不改变屏幕蓝光发射量——真正减少蓝光需 OS 级护眼模式（Windows Night Light / macOS Night Shift / 屏幕硬件护眼）；本脚本的真实作用是「视觉柔和 + 定时休息」——后者是科学共识最有效的护眼手段。', impl: 'bootCore 阶段3 调 applyEyeCare() 注入 <div id=nc-eye-overlay>（position:fixed;inset:0;z-index:2147483640;mix-blend-mode:multiply;），颜色=baidueyecolor、深浅=baidueyestrength；并启动 setInterval 每 20 分钟 zkToast 提示远眺（20-20-20 法则）。', maintain: '颜色「护眼色」、深浅「护眼强度」均在①组调整，即时生效、刷新无需重开；推荐同时开启 OS 级护眼模式（互补）。', risk: 'multiply 不反色（白×暖=暖、黑×任意=黑），视频仅变暖；休息提醒为非阻塞 toast，不打扰操作；本功能绝不声称「降蓝光」。' },
-    baidumenu: { title: '快捷入口', effect: '在百度页面右上角显示「⚙ 控制面板」入口，一键打开设置。', impl: '启动时在 span[name="tj_settingicon"] 旁插入入口链接，点击调用 openSettings()。', maintain: '失效多为百度顶栏 DOM 结构改动，调整 processStartup 中的插入锚点选择器。', risk: '仅入口按钮，关闭不影响任何功能，只是少一个快捷打开面板的方式。' },
+    baidumenu: { title: '快捷入口', effect: '在百度页面右上角显示「⚙️ 控制面板」入口，一键打开设置。', impl: '启动时在 span[name="tj_settingicon"] 旁插入入口链接，点击调用 openSettings()。', maintain: '失效多为百度顶栏 DOM 结构改动，调整 processStartup 中的插入锚点选择器。', risk: '仅入口按钮，关闭不影响任何功能，只是少一个快捷打开面板的方式。' },
     kggoogleed: { title: 'Google 广告过滤', effect: '屏蔽 Google 搜索中的广告结果（含顶部/侧边购物广告）。', impl: 'injectCSS() Google 分支隐藏广告容器样式，MutationObserver 二次清理。', maintain: 'Google 广告容器 class 多变，失效时在 injectCSS() Google 分支补充新选择器。', risk: '关闭后恢复 Google 广告；命中保守，基本无误伤。' },
     kggooglead: { title: 'Google 关键词过滤', effect: '按关键词/网址过滤 Google 搜索结果与推荐。', impl: 'processGoogle 读取关键词库，命中即移除整条结果卡片。', maintain: '维护同百度关键词过滤，在「过滤列表」页编辑 pingbikw/pingbiurl。', risk: '关键词过宽会误删正常结果，注意关键词精度。' },
     googleAI: { title: '隐藏 AI 概述', effect: '隐藏 Google 搜索结果顶部的 AI Overview（AI 生成摘要）区块。', impl: 'injectCSS() 中 Google 分支隐藏 AI 概述容器（如 .YzCcne 等容器）。', maintain: 'Google 频繁改版 AI 概述样式，失效时更新 injectCSS() 中 googleAI 相关选择器。', risk: '关闭后恢复 AI 概述；不影响屏蔽，只是信息呈现差异。' },
@@ -6153,7 +6351,7 @@
     kgdoubaned: { title: '豆瓣广告 + 登录墙', effect: '过滤豆瓣广告并关闭强制登录弹窗，正常浏览小组/电影。', impl: 'processDouban 隐藏广告与登录遮罩 DOM。', maintain: '失效时在 processDouban 更新广告/弹窗选择器。', risk: '关闭后广告与登录墙恢复；部分深度内容仍需登录属平台限制。' },
     kgdoubanad: { title: '豆瓣关键词过滤', effect: '按关键词过滤豆瓣搜索/小组/电影内容。', impl: 'processDouban 读取关键词库移除命中条目。', maintain: '维护同百度关键词过滤，在「过滤列表」编辑。', risk: '关键词过宽会误删正常条目。' },
     kgweiboed: { title: '微博广告过滤', effect: '过滤微博信息流中的推广/广告微博。', impl: 'processWeibo 识别并隐藏含「推荐/广告」标记的微博卡片。', maintain: '失效时在 processWeibo 更新广告识别规则或容器选择器。', risk: '关闭恢复微博广告；算法推荐广告偶有漏网。' },
-    kgweiboad: { title: '微博关键词过滤', effect: '按关键词过滤微博内容。', impl: 'processWeibo 读取关键词库移除命中微博。', maintain: '维护同百度关键词过滤，在「过滤列表」编辑。', risk: '关键词过宽会误删正常微博。' },
+    kgweiboad: { title: '微博关键词过滤', effect: '按关键词屏蔽微博内容。', impl: 'processWeibo 读取关键词库移除命中微博。', maintain: '维护同百度关键词过滤，在「过滤列表」编辑。', risk: '关键词过宽会误删正常微博。' },
     kgweibomv: { title: '微博视频下载', effect: '在微博视频旁添加下载按钮，跳转到解析站下载。', impl: 'processWeibo 注入下载入口，点击后打开第三方解析站并回填视频地址。', maintain: '解析站地址变化时，在 processWeibo 视频下载段更新站点列表。', risk: '依赖第三方解析站可用性；下载需自备网络环境，属辅助功能。' },
     ytpRotate: { title: 'YouTube 视频旋转/翻转', effect: '在 YouTube 播放器控制栏（含 Shorts）嵌入旋转、翻转、填充工具栏，可把竖屏/横屏视频任意旋转 90°、水平/垂直翻转、填充全屏；并支持右键菜单与快捷键（Alt+Shift+R/F/H/V）。', impl: 'initYoutubeRotate() 把视频元素的 transform 写入 CSS 变量（--ytp-r-tf）并加过渡动画；普通视频克隆设置按钮嵌入 ytp-right-controls，Shorts 嵌入原生 #right-controls；全局 MutationObserver + yt-navigate-finish + 5s 兜底轮询 + 2s 自愈轮询保证按钮在 SPA 导航/滚动切视频时不丢失；旋转偏好存 localStorage（ytp-rotate-state）。', maintain: '失效时优先检查 SELECTORS 常量里的 YT DOM 选择器（如 .html5-video-player、#right-controls、ytd-reel-video-renderer 是否改名）；按钮不显示通常是对应的容器没找到，在 _findShortsRightControls / _addNormalButton 处断点排查。', risk: '属于视觉增强，关闭后仅移除工具栏、不影响广告屏蔽等其他功能；transform 覆盖视频原生变换，极少数页面特效视频可能显示异常，关闭即可恢复；依赖 YouTube 前端结构，改版时需同步更新选择器。' },
     kgyoued: { title: '视频平台广告过滤（YouTube / 优酷 / 腾讯）', effect: '自动跳过 / 加速 YouTube、优酷、腾讯视频三家平台的贴片广告，并移除广告元素（同一开关同时覆盖三家）。', impl: 'processYoutube / processYouku / processTencentVideo 各自智能轮询检测广告按钮并点击跳过；检测到广告时加速 playbackRate；同时移除广告 DOM。', maintain: '三家平台频繁改广告结构，失效时需分别在 processYoutube / processYouku / processTencentVideo 更新按钮与 skip 选择器及轮询逻辑。', risk: '关闭后三家广告一起恢复；加速播放可能短暂影响观看体验；依赖页面脚本，偶有漏跳。' },
@@ -6178,15 +6376,15 @@
     kgpingbiiframe: { title: '禁用第三方 iframe', effect: '屏蔽来自其他域名的嵌入式框架，阻断大量联盟广告与跟踪。', impl: 'passiveAdBlock() 移除 src 指向非本站且不在白名单的 iframe。', maintain: '误屏蔽正常功能时在 passiveAdBlock() 的 safeIframes 白名单追加域名。', risk: '可能误伤正常嵌入内容（如支付、验证码、地图）；如某功能异常，优先关闭此项并加白名单。' },
     baidueyecolor: { title: '护眼色', effect: '护眼蒙版暖色底（multiply 叠加让画面更柔和）。诚实说明：multiply 是「颜色相乘」视觉变换，不改变屏幕蓝光发射量；预设的昏黄/暖色调参考 Kindle/Night Shift/f.lux 经典「夜览/纸张色」配色，营造舒适阅读氛围，绝非「滤蓝光」。', impl: 'applyEyeCare() 用 ncColorToRgba() 取该色 rgb + 护眼强度 alpha；mix-blend-mode:multiply 混合到全屏。', maintain: '①组提供 5 个预设暖色调色板（羊皮纸黄/暖黄/米黄/淡橄榄绿/暖橙，参考 Kindle/Night Shift/f.lux 经典夜览配色）点一下即用，也可用取色器自定义。', risk: '仅颜色/强度偏好，无功能风险。' },
     baidueyestrength: { title: '护眼强度', effect: '护眼蒙版深浅：柔和(.16)/标准(.26)/增强(.38)。alpha 越大蒙版越不透明、画面越柔和（视觉柔和更强），但不改变屏幕蓝光发射量。', impl: 'applyEyeCare() 读 baidueyestrength 查 alphaMap 得 alpha；alpha 越大蒙版越不透明。', maintain: '①组下拉即时切换，无需刷新。', risk: '增强档在纯白页更明显，过暗可退回柔和。' },
-    pingbiurl: { title: '网址过滤列表', effect: '维护一份网址关键词黑名单，命中即屏蔽对应搜索结果。', impl: 'cfgPingbiurl() 供各站点处理器读取，命中即移除结果。', maintain: '在「过滤列表」页直接添加/删除条目；逻辑入口为 cfgPingbiurl()，被 processBaidu/Google/Bing 等调用。', risk: '条目过短（<4 字）易误伤；建议填具区分度的域名片段。' },
-    pingbikw: { title: '关键词过滤列表', effect: '维护一份关键词黑名单，命中即屏蔽对应搜索结果与评论。', impl: 'cfgPingbikw() 供各站点处理器读取，命中即移除内容。', maintain: '在「过滤列表」页直接添加/删除条目；逻辑入口为 cfgPingbikw()。', risk: '关键词过短（<2 字）或过于通用会大面积误删正常内容，请谨慎添加。' },
-    shortcutPanel: { title: '打开控制面板快捷键', effect: 'Ctrl+Shift+A 一键打开脚本设置面板（控制面板）。', impl: '主脚本启动时在 document 上注册全局 keydown 监听，命中 Ctrl+Shift+A 即调用 openSettings() 打开面板。', maintain: '若快捷键被站点自身占用或失效，可直接点击页面右上角「⚙ 控制面板」入口，或在油猴菜单点「⚙ 控制面板」。', risk: '关闭后仅失去键盘打开方式，不影响任何屏蔽功能；极少数站点会抢占该组合键。' },
-    shortcutPause: { title: '暂停/恢复快捷键', effect: 'Ctrl+Shift+P 全局暂停或恢复广告净化（页面顶栏会提示状态）。', impl: '同一全局 keydown 监听中命中 Ctrl+Shift+P，切换 BLOCKING_PAUSED 标志并弹出状态提示。', maintain: '暂停等效于白名单当前页；若快捷键无效，可用设置面板底部的「⏸ 暂停全部」按钮。', risk: '暂停期间所有站点广告与美化全部停用，恢复后即生效；属临时开关，无持久副作用。' },
+    pingbiurl: { title: '屏蔽这些网址（搜索结果）', effect: '③ 内容级：只在搜索结果里生效。维护一份网址片段名单，结果链接命中即被移除；不影响整站运行。', impl: 'cfgPingbiurl() 供各站点处理器读取；_urlHit() 统一做 String(url).includes(条目) 判断。', maintain: '在「名单管理 → ③ 内容级」页直接添加/删除条目；逻辑入口为 cfgPingbiurl()，被 processBaidu / Google / Bing 等调用。', risk: '条目过短（<4 字）易误伤；建议填有区分度的域名片段。' },
+    pingbikw: { title: '屏蔽这些关键词（搜索结果）', effect: '③ 内容级：只在搜索结果里生效。维护一份关键词名单，标题/摘要命中即被移除；不影响整站运行。', impl: 'cfgPingbikw() 供各站点处理器读取；_kwHit() 统一做 String(text).includes(条目) 判断。', maintain: '在「名单管理 → ③ 内容级」页直接添加/删除条目；逻辑入口为 cfgPingbikw()。', risk: '关键词过短（<2 字）或过于通用会大面积误删正常内容，请谨慎添加。' },
+    shortcutPanel: { title: '打开控制面板快捷键', effect: 'Ctrl+Shift+A 一键打开脚本设置面板（控制面板）。', impl: '主脚本启动时在 document 上注册全局 keydown 监听，命中 Ctrl+Shift+A 即调用 openSettings() 打开面板。', maintain: '若快捷键被站点自身占用或失效，可直接点击页面右上角「⚙️ 控制面板」入口，或在油猴菜单点「⚙️ 控制面板」。', risk: '关闭后仅失去键盘打开方式，不影响任何屏蔽功能；极少数站点会抢占该组合键。' },
+    shortcutPause: { title: '暂停/恢复快捷键', effect: 'Ctrl+Shift+P 全局暂停或恢复广告净化（页面顶栏会提示状态）。', impl: '同一全局 keydown 监听中命中 Ctrl+Shift+P，切换 BLOCKING_PAUSED 标志并弹出状态提示。', maintain: '暂停等效于白名单当前页；若快捷键无效，可用设置面板底部的「⏸️ 暂停全部」按钮。', risk: '暂停期间所有站点广告与美化全部停用，恢复后即生效；属临时开关，无持久副作用。' },
     shortcutYtp: { title: 'YouTube 旋转快捷键', effect: 'Alt+Shift+R/F/H/V 分别对视频执行旋转90°、填充全屏、水平翻转、垂直翻转（仅 YouTube）。', impl: 'initYoutubeRotate() 内注册 keydown 监听，命中组合键后对当前可见播放器调用对应变换函数。', maintain: '快捷键仅在 YouTube 且「视频旋转/翻转」总开关开启时生效；失效请检查 initYoutubeRotate 的 keydown 分支与 findActiveVideoCtx()。', risk: '仅作用于 YouTube 视频变换，关闭后工具栏按钮仍可用（鼠标点击），不影响广告屏蔽等其他功能。' },
     haokanPauseAd: { title: '好看视频暂停广告屏蔽', effect: '自动关闭好看视频（haokan.baidu.com）播放时点击暂停弹出的联盟暂停广告（.lianmeng-pause），每次暂停都会即时关掉，避免反复弹出影响观看。', impl: 'initHaokanPauseAd() 在 haokan 域初始化：①注入 CSS 把 .lianmeng-pause 永久 display:none 兜底防闪烁；②MutationObserver 监听该广告容器出现或加上 -show 显示态时，即时点击官方关闭按钮 .mediago-pause-close，并强制移除显示态/隐藏兜底；③监听 <video> 的 pause 事件与 1.2s 自愈轮询双保险，确保每次暂停都关得掉。', maintain: '失效时检查三处选择器：广告容器 .lianmeng-pause、显示态类 -show、关闭按钮 .mediago-pause-close 是否被好看前端改名；逻辑集中在 initHaokanPauseAd()。', risk: '属于针对性屏蔽，关闭后好看视频暂停广告恢复弹出；仅作用于好看视频域名，不影响其他站点与脚本其余功能；CSS 隐藏层仅针对 .lianmeng-pause 广告容器，不会误伤正常播放控件。' },
     perfWhitelist: { title: '仅白名单域名启用', effect: '性能总闸：开启后脚本只在「启用域名」与已知站点运行，其余页面注入后立即退出，几乎零开销。', impl: '启动早期读取此开关与 scopeWhitelist，若当前域名不在名单且非已知站点则直接 return，不做任何 DOM/CSS/Observer 工作。', maintain: '油猴 @match 为静态元数据、运行时不可改，所以本项靠「注入后早退」实现域名内效果，而非真删 @match；想进一步彻底不注入未知页，需手动精简 @match 行。', risk: '开启后未在名单的站点所有功能停用；若某站突然不生效，先把它加入「启用域名」或关闭本项。' },
     passiveGlobal: { title: '被动扫描全局化', effect: '决定通用被动广告扫描（kgpingbis/kgpingbiiframe）的作用范围：关闭时只在已知站点运行，开启后扫描所有页面。', impl: 'passiveAdBlock() 入口处判断此开关，关闭且非已知域名则直接 return。', maintain: '若需在全站（含未知站点）清理悬浮广告/iframe，开启此项；发现误杀再关回即可。', risk: '开启会显著增加全站 CPU/扫描开销，属最重的全局项，默认关闭。' },
-    scopeWhitelist: { title: '启用域名（内部白名单）', effect: '与「仅白名单域名启用」配合：填写的域名会被脚本正常处理，其余未知站点秒退。', impl: '在「性能与高级」页以列表维护，保存即存入配置；启动闸门的 inScopeWhitelist() 按 HOST.includes(条目) 匹配（填主域名即可覆盖子域）。', maintain: '例：baidu.com、youtube.com、taobao.com。留空则仅 KNOWN_DOMAINS 已知站点生效。', risk: '仅影响性能模式的生效范围，无功能副作用；填错域名只会让对应站不被处理。' },
+    scopeWhitelist: { title: '仅在名单内网站运行', effect: '① 站点级：与「性能与高级 → 仅白名单域名启用」配合，填写的域名会被脚本正常处理，其余未知站点秒退（近零开销）。与「暂停名单」方向相反 —— 这份是「允许脚本运行」。', impl: '启动闸门按 HOST.indexOf(条目) 匹配（填主域名即可覆盖子域）；不在名单且非内置已知站点则置早退标记。', maintain: '在「名单管理 → ① 站点级」页以列表维护，保存即存入配置。例：baidu.com、youtube.com、taobao.com。留空则仅 KNOWN_DOMAINS 已知站点生效。', risk: '仅影响性能模式的生效范围，无功能副作用；填错域名只会让对应站不被处理。' },
     captchaEnabled: { title: '启用验证码识别', effect: '开启后按「触发方式」自动识别并填充网页验证码（数英/算术/滑动）。默认关闭，按需开启。', impl: 'initCaptcha() 据此闸门初始化；关闭时整模块不加载、零开销。', maintain: '接口失效见各引擎说明；整页不识别先查本开关与油猴是否已启用脚本。', risk: '仅影响验证码自动填写；关闭后需手动输入。属绕过安全校验功能，请仅在合规场景使用。' },
     captchaTrigger: { title: '验证码触发方式', effect: '控制识别模块的常驻程度：手动（点按钮才扫，最省）/ 白名单站点（仅白名单自动）/ 全局常驻（全站扫描，最耗）。', impl: 'initCaptcha() 按此值决定：manual 仅挂浮动按钮、不观察者；whitelist 仅当 HOST 在 captchaWhitelist 时挂观察者+轮询；global 全站常驻观察者+1.5s 轮询。', maintain: '性能敏感者选 manual/whitelist；global 会全页 MutationObserver + 周期轮询，开销最大。', risk: 'global 模式对浏览器性能压力明显，默认 manual；白名单模式需先填「验证码自动启用站点」。' },
     captchaEngine: { title: '识别引擎', effect: '数英/算术验证码的识别后端：自动（极速优先回退精准）/ 极速（免Token）/ 精准（需识别码）。', impl: 'recognizeText() 按引擎策略调用 recFast / recPrecise / recMath；自动模式极速失败再试精准。', maintain: '两个引擎都需在下方「极速/精准接口地址」自行填写服务地址；本脚本不内置任何第三方打码平台。任一方长期 5xx/超时即视为失效，换地址即可。', risk: '自动模式多一次网络往返；极速误识率高可切精准；未填接口地址时对应引擎直接跳过，不发起任何外部请求。' },
@@ -6198,11 +6396,10 @@
     captchaPreciseId: { title: '精准引擎识别码', effect: '精准引擎（支持滑块）所需的识别码（原 like996 为 32 位）。', impl: '请求时作为 idCard 字段随「精准接口地址」一同发送。', maintain: '由你填写的精准接口服务方提供；未填则自动/精准模式跳过精准回退。本脚本不内置任何平台地址。', risk: '可向服务器标识你的配额；勿外泄。调试日志中已做掩码处理。' },
     captchaYunmaToken: { title: '云码 Token', effect: '算术验证码（如「3+5=?」图片）识别所需的云码 Token（jfbym.com 商业服务，按识别次数计费）。', impl: '识别算术图时调用 jfbym.com 接口并携带本 Token。', maintain: 'Token 失效或余额不足时顶部提示；在设置面板重填即可。', risk: '仅算术验证码需要；不填则算术图跳过识别。Token 属个人凭证，勿泄露。' },
     captchaYunmaDev: { title: '云码开发者标识（可选）', effect: '在 jfbym.com 后台获取的开发者标识（developer_tag），用于把识别调用归属到你的账号，便于在云码后台查看调用与消耗统计。属可选项，不是识别成功的必要条件。', impl: 'recMath() 在构造请求体时读取本项；用户填写后才附加 developer_tag 字段，留空则请求体中不含该字段（而非传空字符串）。', maintain: '留空不影响功能，仅影响云码后台的调用归属统计（缺失时云码按「无归属」记账）。在设置面板「② 识别引擎与凭证」中填写或清空即可，改动刷新页面后生效。', risk: '需与「云码 Token」配合使用；开启算术验证码识别时，验证码图片会上传至 jfbym.com（第三方商业服务）完成识别。开发者标识属个人账号信息，勿外泄；如担心归属信息被关联，可留空。' },
-    captchaWhitelist: { title: '验证码自动启用站点', effect: 'captchaTrigger=白名单 时，只有这些站点会自动扫描识别。', impl: 'initCaptcha() 的 whitelist 分支对条目做域名归一化（去掉 scheme/通配符/路径）后按 HOST.includes(主体) 决定是否挂载观察者，所以填完整 URL 或带 /* 也有效。', maintain: '例：example.com，或 https://www.example.com/、*.example.com 均可。留空则白名单模式无站点自动识别（仍可手动触发）。', risk: '仅控制验证码自动化的范围；填错只会让对应站不自动识别。' },
-    captchaBlacklist: { title: '验证码识别黑名单', effect: 'URL 含其中字符串的网页将被跳过验证码识别。', impl: 'inBlacklist() 在识别前比对当前 URL，命中则直接跳过。', maintain: '在「验证码识别黑名单」列表添加/删除条目即可。', risk: '仅影响验证码识别；误加会导致该站不识别，删除即恢复。' },
-    scriptBlacklistEnabled: { title: '脚本启用站点黑名单', effect: '敏感站点排除总开关：开启后，「黑名单站点」中的网站脚本整体暂停（不注入任何净化/美化/划词/验证码），等效于整站关闭。', impl: '启动早期读取本开关与 scriptBlacklist，命中即直接 return，不做任何 DOM/CSS/Observer 工作（与白名单域名、仅白名单域名启用同路径）。', maintain: '默认关闭；开启后仅对名单内站点生效，其余站点全部正常。想恢复某站：移除该站条目、或关闭本开关，改动刷新页面后生效。', risk: '开启后名单内站点所有功能停用（含广告恢复）；属整站开关，无持久副作用。即使被暂停，油猴菜单仍保留「🧹 状态 / 恢复」入口，页面右下角也会出现「本站已暂停」胶囊，可就地一键解封，不再需要切到别的站点改配置。' },
-    scriptBlacklist: { title: '黑名单站点', effect: '脚本启用站点黑名单的域名列表；命中即整站暂停。已预置银行/支付/政府/邮箱/本地内网等敏感站点，默认随总开关关闭不生效。', impl: '与 scriptBlacklistEnabled 配合：启动闸门 isScriptBlacklisted() 按 HOST.includes(条目) 匹配（填主域名即可覆盖子域）。', maintain: '支持就地编辑（点「编辑」改完回车保存）、上移/下移、删除；「导入预设敏感站点」一键补齐作者维护的敏感站点清单，「清空黑名单」移除全部条目（均有二次确认）。名单仅本地保存，不上传。', risk: '误加常用站点会让该站广告恢复、美化失效；删除或关闭总开关即恢复。匹配为子串包含，短域名（如 gov.cn）会覆盖其所有子域；添加会命中当前站点的条目时会弹确认提醒。' },
-    whiteurl: { title: '白名单域名', effect: '在这些网站中脚本整体暂停运行，相当于关闭所有功能（与「黑名单站点」效果相同，区别是本表无开关、填入即生效）。', impl: 'isWhitelisted() 在启动时检测当前域名是否命中白名单，命中则直接 return 不初始化任何功能。', maintain: '两种添加方式：① 本列表手动添加/删除/编辑域名；② 直接点油猴菜单「🚫 暂停 / 恢复本站」一键切换当前站点（无需手输域名）。两者都需刷新页面后生效。被暂停的站点可用「🧹 状态 / 恢复」菜单与「本站已暂停」胶囊就地解封。', risk: '加入白名单后该站所有屏蔽与美化全部失效；误加可用域名会导致广告恢复，注意核对。' },
+    captchaWhitelist: { title: '验证码 · 自动扫描站点', effect: '② 验证码级：触发方式选「白名单站点」时，只有这些站点会自动扫描识别。仅作用于验证码模块，不影响广告净化等其他功能。', impl: 'initCaptcha() 的 whitelist 分支对条目做域名归一化（去掉 scheme/通配符/路径）后按 HOST.includes(主体) 决定是否挂载观察者，所以填完整 URL 或带 /* 也有效。', maintain: '例：example.com，或 https://www.example.com/、*.example.com 均可。留空则白名单模式无站点自动识别（仍可手动触发）。', risk: '仅控制验证码自动化的范围；填错只会让对应站不自动识别。' },
+    captchaBlacklist: { title: '验证码 · 跳过识别站点', effect: '② 验证码级：URL 含其中字符串的网页将被跳过验证码识别，避免在无关页面反复出错打扰。仅作用于验证码模块。', impl: 'inBlacklist() 在识别前比对当前 URL，命中则直接跳过。', maintain: '在「名单管理 → ② 验证码级」页添加/删除条目即可。', risk: '仅影响验证码识别；误加会导致该站不识别，删除即恢复。' },
+    scriptBlacklistEnabled: { title: '启用暂停名单', effect: '「暂停名单」的总开关：开启后，名单内的站点脚本整体暂停（不注入任何净化/美化/划词/验证码），等效于整站关闭。默认关闭，由你手动启用。', impl: '启动早期 isPauseListed() 读本开关 + whiteurl（暂停名单），命中即置早退标记 NC_EARLY_EXIT_HIT，不做任何 DOM/CSS/Observer 工作（与「仅在名单内网站运行」同路径、方向相反）。菜单名 ncMenuLabelPauseSite() 也读本开关，保证「🚫 只暂停当前网站 / ▶️ 恢复当前网站」与实际状态一致。', maintain: '默认关闭；开启后仅对名单内站点生效，其余站点全部正常。想恢复某站：移除该站条目、或关闭本开关；也可点油猴菜单「🚫 只暂停当前网站」就地增减本站（加入时会自动打开本开关）。改动刷新页面后生效。', risk: '开启后名单内站点所有功能停用（含广告恢复）；属整站开关，无持久副作用。即使被暂停，油猴菜单仍保留「🔍 本页为什么没净化？」入口，页面右下角也会出现「本站已暂停」胶囊，可就地一键解封，不必切到别的站点改配置。' },
+    whiteurl: { title: '暂停名单', effect: '命中即整站暂停（脚本完全不介入）。由「启用暂停名单」总开关统一控制 —— 合并自旧版「白名单域名」与「黑名单站点」两份做同一件事的名单，消除「该往哪填」的困惑，也消除了「白名单」一词被用于语义相反两处的歧义。', impl: '启动闸门 isPauseListed()：总开关开启且 HOST.includes(条目) 命中时置早退标记，不初始化任何功能。填主域名即可覆盖子域。', maintain: '三种添加方式：① 本列表手动添加/删除/编辑；② 点油猴菜单「🚫 只暂停当前网站」一键切换当前站点（已暂停时该项自动变为「▶️ 恢复当前网站」），加入时自动打开总开关；③「导入预设敏感站点」一键补齐银行/支付/政务等清单。均需刷新页面后生效。被暂停的站点可用「🔍 本页为什么没净化？」菜单与「本站已暂停」胶囊就地解封。', risk: '命中站点所有屏蔽与美化全部失效；误加常用站点会导致广告恢复，注意核对。匹配为子串包含，短域名（如 gov.cn）会覆盖其所有子域；添加会命中当前站点的条目时会弹二次确认。' },
     adStats: { title: '广告拦截统计', effect: '统计并显示本次访问、累计、以及当前站点已拦截的广告数量，便于直观了解脚本工作量。', impl: '各处理器在移除广告时累加 STATS.skippedAds 与按域名的 siteBlocked[HOST]；设置面板底部实时读取并展示三项数据。', maintain: '关闭后不再扫描 DOM 统计，可略微降低开销；如需重新显示，重新开启本项即可，历史累计数据仍保留。', risk: '仅展示数据，不影响任何屏蔽功能；关闭后设置面板底部显示「统计已关闭」。' },
     adBadge: { title: '右下角拦截计数角标', effect: '在页面右下角常驻一枚蓝色小盾牌，实时显示本次访问已拦截的广告数量；点击展开明细（本次 / 累计 / 当前站点），并可一键打开设置面板。', impl: 'ncUpdateAdBadge() 读写 STATS.skippedAds / totalBlocked / siteBlocked[HOST]；各累加点通过 ncScheduleAdBadge() 以 requestAnimationFrame 合并刷新，避免连续拦截时频繁写 DOM。', maintain: '默认关闭（避免遮挡页面内容），在「性能与高级 → 统计与显示」开启或关闭，改动即时生效无需刷新。数据源为「广告拦截统计」同源数据；当该项关闭时数字不再增长。', risk: '仅在右下角叠加一个小胶囊，可随时关闭；与「本站已暂停」胶囊（#nc-paused-badge）互斥显示，不会重叠。暂停净化时不显示。' },
     selectionSearch: { title: '划词搜索总开关', effect: '选中网页任意文字即弹出工具条，可一键搜索 / 复制 / 翻译。默认开启。', impl: 'initSelectionSearch() 据此闸门初始化；关闭时整模块不加载、零开销。', maintain: '整页不出现工具条先查本开关与油猴是否已启用脚本；修改后需刷新页面生效。', risk: '仅影响划词工具条；关闭后需手动复制搜索，不影响任何广告屏蔽。' },
@@ -6349,30 +6546,25 @@
             { k: 'kgweibomv', t: '微博视频下载', d: '在微博视频旁添加下载按钮' },
             { k: 'pojieSignIn', t: '吾爱破解自动签到', d: '进入吾爱破解论坛后自动完成每日签到' }
           ]},
-          { title: '⑧ 关键词过滤（各站统一）', items: [
-            { k: 'kgbaiduad', t: '百度关键词过滤', d: '按关键词 / 网址过滤搜索结果' },
-            { k: 'kggooglead', t: 'Google 关键词过滤', d: '按关键词 / 网址过滤搜索结果' },
-            { k: 'kg360ad', t: '360 关键词过滤', d: '按关键词 / 网址过滤搜索结果' },
-            { k: 'kgbingad', t: 'Bing 关键词过滤', d: '按关键词 / 网址过滤搜索结果' },
-            { k: 'kgzhihuad', t: '知乎关键词过滤', d: '按关键词过滤回答与搜索结果' },
-            { k: 'kgbiliad', t: 'B站关键词过滤', d: '按关键词过滤搜索与评论' },
-            { k: 'kgweiboad', t: '微博关键词过滤', d: '按关键词过滤微博内容' },
-            { k: 'kgweixinad', t: '微信公号关键词过滤', d: '按关键词过滤文章段落内容' },
-            { k: 'kgdoubanad', t: '豆瓣关键词过滤', d: '按关键词过滤搜索 / 小组 / 电影' },
-            { k: 'kgyouad', t: 'YouTube 关键词过滤', d: '按关键词过滤推荐与评论' }
+          { title: '⑧ 内容屏蔽（关键词 / 网址 · 各站统一）', items: [
+            { k: 'kgbaiduad', t: '百度关键词过滤', d: '按关键词 / 网址屏蔽搜索结果' },
+            { k: 'kggooglead', t: 'Google 关键词过滤', d: '按关键词 / 网址屏蔽搜索结果' },
+            { k: 'kg360ad', t: '360 关键词过滤', d: '按关键词 / 网址屏蔽搜索结果' },
+            { k: 'kgbingad', t: 'Bing 关键词过滤', d: '按关键词 / 网址屏蔽搜索结果' },
+            { k: 'kgzhihuad', t: '知乎关键词过滤', d: '按关键词屏蔽回答与搜索结果' },
+            { k: 'kgbiliad', t: 'B站关键词过滤', d: '按关键词屏蔽搜索与评论' },
+            { k: 'kgweiboad', t: '微博关键词过滤', d: '按关键词屏蔽微博内容' },
+            { k: 'kgweixinad', t: '微信公号关键词过滤', d: '按关键词屏蔽文章段落内容' },
+            { k: 'kgdoubanad', t: '豆瓣关键词过滤', d: '按关键词屏蔽搜索 / 小组 / 电影' },
+            { k: 'kgyouad', t: 'YouTube 关键词过滤', d: '按关键词屏蔽推荐与评论' }
           ]}
-        ],
-        listSections: [
-          { key: 'pingbiurl', title: '网址过滤', desc: '阻止来自这些网址的搜索结果', placeholder: '输入网址关键词' },
-          { key: 'pingbikw', title: '关键词过滤', desc: '屏蔽包含这些关键词的搜索结果和评论', placeholder: '输入关键词（至少2个字）' }
         ]
       },
       {
         key: 'captcha', label: '验证码识别', icon: '🔑',
-        note: '⚠ 免责声明：本分组所接 OCR/验证码识别服务（含极速/精准/云码）均为第三方提供，与本脚本无隶属或合作关系。填写接口后，验证码图片与识别码会发送至你所填写的服务器；请仅使用你信任的服务并自行保管账号凭证。脚本不内置任何接口、不收取任何费用，亦不对第三方服务做任何担保。',
         sections: [
           { title: '① 基础开关', items: [
-            { k: 'captchaEnabled', t: '启用验证码识别', d: '总开关。默认关闭，按需开启；关闭后本页所有设置均不生效。' },
+            { k: 'captchaEnabled', t: '启用验证码识别', d: '总开关。默认关闭，按需开启；关闭后本页所有设置均不生效。⚠ 免责声明：本分组所接 OCR / 验证码识别服务（含极速 / 精准 / 云码）均为第三方提供，与本脚本无隶属或合作关系；填写接口后，验证码图片与识别码会发送至你所填写的服务器，请仅使用你信任的服务并自行保管账号凭证；脚本不内置任何接口、不收取任何费用，亦不对第三方服务做任何担保。' },
             { k: 'captchaTrigger', t: '触发方式', d: '手动：点悬浮「识」按钮才扫描（零常驻开销，推荐）；白名单：仅下方名单站点自动扫描；全局：全站常驻扫描（最耗性能，不推荐）。', type: 'select', opts: [['manual','手动（推荐·最省）'],['whitelist','白名单站点'],['global','全局常驻（最耗）']] }
           ]},
           { title: '② 识别引擎与凭证', items: [
@@ -6388,10 +6580,6 @@
             { k: 'captchaShowHint', t: '显示提示条', d: '顶部灰条显示识别状态（识别中 / 完成 / 错误）。' },
             { k: 'captchaSlide', t: '滑动验证码', d: '启用滑动拼图 / 滑块行为验证码的自动识别与拖拽。需「精准引擎 + 识别码」。' }
           ]}
-        ],
-        listSections: [
-          { key: 'captchaWhitelist', title: '白名单（自动扫描站点）', desc: '触发方式=白名单时，仅这些站点会自动扫描。填域名即可，系统会自动提取域名主体（如填 https://www.baidu.com/ 、www.baidu.com/* 均按 baidu.com 匹配，本站所有路径都生效）；留空则白名单模式不自动识别（仍可手动触发）。', placeholder: '如 example.com' },
-          { key: 'captchaBlacklist', title: '黑名单（跳过识别站点）', desc: 'URL 含其中字符串的网页将跳过验证码识别（避免反复出错打扰）。', placeholder: '输入网址片段' }
         ]
       },
       {
@@ -6414,7 +6602,7 @@
         key: 'perf', label: '性能与高级', icon: '⚡',
         sections: [
           { title: '性能模式', items: [
-            { k: 'perfWhitelist', t: '仅白名单域名启用', d: '开启后仅在「启用域名」与已知站点运行，其余页面注入后秒退（近零开销）。油猴 @match 为静态元数据无法运行时切换，此项以注入后早退实现「域名内」' },
+            { k: 'perfWhitelist', t: '仅在名单内网站运行', d: '开启后仅在「名单管理 → ① 站点级 · 仅在名单内网站运行」所填域名与内置已知站点运行，其余页面注入后秒退（近零开销）。油猴 @match 为静态元数据无法运行时切换，此项以注入后早退实现「域名内」' },
             { k: 'passiveGlobal', t: '被动扫描全局化', d: '关闭时通用被动广告扫描只在已知站点运行；开启后扫描所有页面（更重，慎开）' }
           ]},
           // 「全局增强」section 已撤销：darkMode（暗黑模式）与 cleanCopy（干净复制）归位到
@@ -6423,15 +6611,28 @@
             { k: 'adStats', t: '广告拦截统计', d: '统计并显示本次/累计/当前站点拦截数量。关闭后不再扫描 DOM，可略微降低开销，设置面板仍显示「统计已关闭」' },
             { k: 'adBadge', t: '右下角拦截计数角标', d: '在页面右下角常驻一个小盾牌，显示本次已拦截的广告数量，点击可查看明细（本次/累计/当前站点）。默认关闭，避免遮挡页面内容。' }
           ]}
-        ],
+        ]
+      },
+      {
+        // ── 名单管理：把原先散落在 3 个分组的 6 份表单集中到一页，按「作用层级」分 3 段 ──
+        //   ① 站点级：决定整站跑不跑脚本（暂停名单 / 仅在名单内网站运行）
+        //   ② 验证码级：只在验证码模块内生效（自动扫描 / 跳过识别）
+        //   ③ 内容级：只删搜索结果条目，不影响整站（屏蔽网址 / 屏蔽关键词）
+        //   集中理由：同一件事的表单散在不同分组时，用户既找不到、也不知道彼此关系；
+        //   集中后 3 段并列，一眼看清「这一条到底管多大范围」。
+        key: 'lists', label: '名单管理', icon: '📋',
         listSections: [
-          { key: 'whiteurl', title: '白名单域名（脚本暂停 · 常驻生效）', desc: '在这些网站中脚本将整体暂停（不注入任何净化/美化/划词/验证码）。此项无需开关、填入即生效。', placeholder: '输入域名' },
-          { key: 'scopeWhitelist', title: '启用域名（内部白名单）', desc: '开启上方「仅白名单域名启用」后，只有这些域名会被处理。例：baidu.com、youtube.com、taobao.com（填主域名即可覆盖其子域）。留空则仅已知站点生效。', placeholder: '如 baidu.com' },
-          { key: 'scriptBlacklist', title: '黑名单站点（脚本暂停 · 可一键开关）',
-            desc: '与上表「白名单域名」效果相同（命中的站点脚本整体暂停），区别是这一份带总开关、可一键导入预设敏感站点，适合银行/支付/政务这类需要临时整体退避的站点。默认关闭，由你手动启用。',
-            placeholder: '如 icbc.com.cn',
-            switch: { k: 'scriptBlacklistEnabled', t: '启用脚本站点黑名单', d: '开启后，本表内的站点脚本整体暂停（不注入任何净化/美化/划词/验证码）。改动需刷新页面生效。' },
-            actions: [ { id: 'import-preset', label: '导入预设敏感站点' }, { id: 'clear', label: '清空黑名单' } ] }
+          // ① 站点级 —— 整站暂停 / 整站放行（互为反向）
+          { key: 'whiteurl', title: '① 站点级 · 暂停名单（整站暂停）', desc: '命中即整站暂停：脚本完全不介入，不注入任何净化/美化/划词/验证码。匹配规则为「当前域名包含该条目」（填 baidu.com 即覆盖其全部子域）。需上方总开关为开启才生效。也可直接点油猴菜单「🚫 只暂停当前网站」一键增减本站，无需手输域名。', placeholder: '如 icbc.com.cn（填主域名即可）',
+            switch: { k: 'scriptBlacklistEnabled', t: '启用暂停名单', d: '开启后，「暂停名单」内的站点脚本整体暂停（不注入任何净化/美化/划词/验证码）。改动需刷新页面生效。' },
+            actions: [ { id: 'import-preset', label: '导入预设敏感站点' }, { id: 'clear', label: '清空暂停名单' } ] },
+          { key: 'scopeWhitelist', title: '① 站点级 · 仅在名单内网站运行', desc: '仅在「性能与高级 → 仅在名单内网站运行」打开时起作用：只有这些域名会被脚本处理，其余页面注入后秒退（近零开销）。留空则只在内置已知站点生效。与「暂停名单」语义相反 —— 这份是「允许脚本运行」。', placeholder: '如 baidu.com' },
+          // ② 验证码级
+          { key: 'captchaWhitelist', title: '② 验证码级 · 自动扫描站点', desc: '只在「验证码识别」模块内生效：触发方式选「白名单站点」时，仅这些站点会自动扫描识别。填完整 URL 或 *.example.com 亦可（脚本会自动提取域名主体）。不影响广告净化等其他功能。', placeholder: '如 example.com' },
+          { key: 'captchaBlacklist', title: '② 验证码级 · 跳过识别站点', desc: '只在「验证码识别」模块内生效：URL 含其中字符串的页面会跳过验证码识别，避免在与验证码无关的页面反复出错打扰。不影响广告净化等其他功能。', placeholder: '输入网址片段' },
+          // ③ 内容级
+          { key: 'pingbiurl', title: '③ 内容级 · 屏蔽这些网址', desc: '只在搜索结果里生效：结果链接命中其中任一片段即被移除（百度 / Google / Bing / 360 / Yandex 等）。不影响整站运行。建议填有区分度的域名片段；过短的条目（如 com）会误伤大量结果。', placeholder: '输入网址关键词' },
+          { key: 'pingbikw', title: '③ 内容级 · 屏蔽这些关键词', desc: '只在搜索结果里生效：标题或摘要命中其中任一关键词即被移除。建议填 2 字以上、有区分度的词；过于通用的词会大面积误删正常内容。', placeholder: '输入关键词（至少2个字）' }
         ]
       },
       {
@@ -6456,14 +6657,39 @@
       }
     ];
 
+    // 「关于」是收尾用的信息类分组（版本号 / 隐私声明 / 免责声明 / 问题反馈），
+    // 信息架构上不属于「功能分类」序列，因此**固定排在左栏最末**，且不参与拖拽重排。
+    const NC_PINNED_LAST_CAT = 'about';
+
     // 应用已保存的自定义分类顺序（用户拖拽重排后持久化在 cfg.ui.catOrder）
     (function applyCatOrder() {
+      // 先钉住收尾项：无论有没有自定义顺序，「关于」都必须落在最后。
+      groups.sort((a, b) =>
+        (a.key === NC_PINNED_LAST_CAT ? 1 : 0) - (b.key === NC_PINNED_LAST_CAT ? 1 : 0));
       const saved = (getConfig().ui && Array.isArray(getConfig().ui.catOrder) && getConfig().ui.catOrder.length) ? getConfig().ui.catOrder : [];
       if (!saved.length) return;
-      const keys = groups.map(g => g.key);
+      const sortable = groups.filter(g => g.key !== NC_PINNED_LAST_CAT);
+      const keys = sortable.map(g => g.key);
       const order = saved.filter(k => keys.indexOf(k) >= 0);
-      keys.forEach(k => { if (order.indexOf(k) < 0) order.push(k); });
-      groups.sort((a, b) => order.indexOf(a.key) - order.indexOf(b.key));
+      // 【本次新增、用户还没拖过顺序的分类，必须插回它在自然顺序里的位置，不能一律追加到末尾】
+      // 历史 bug：`keys.forEach(k => order.push(k))` 把新增分类 append 到尾部，于是新增的
+      // 「📋 名单管理」排到了「ℹ️ 关于」后面，老用户左栏变成 …cloud > about > lists，
+      // 「关于」被挤到倒数第二。改为「插到它在自然顺序中前一个已存在分类的后面」，
+      // 这样新分类落在它该在的位置（名单管理紧跟性能与高级），「关于」始终收尾。
+      keys.forEach((k, i) => {
+        if (order.indexOf(k) >= 0) return;
+        let at = 0;
+        for (let j = i - 1; j >= 0; j--) {
+          const p = order.indexOf(keys[j]);
+          if (p >= 0) { at = p + 1; break; }
+        }
+        order.splice(at, 0, k);
+      });
+      sortable.sort((a, b) => order.indexOf(a.key) - order.indexOf(b.key));
+      const pinned = groups.filter(g => g.key === NC_PINNED_LAST_CAT);
+      groups.length = 0;
+      sortable.forEach(g => groups.push(g));
+      pinned.forEach(g => groups.push(g));
     })();
 
     // 生成切换开关 / 下拉 / 文本 HTML
@@ -6569,7 +6795,8 @@
         h += `<div class="zk-set-group"><div class="zk-set-group-title">${lsTitle}${help}</div><div class="zk-set-row-desc" style="margin-bottom:10px">${lsDesc}</div>
           ${swRow}
           <div class="zk-set-list" data-list="${ls.key}"><div class="zk-set-items"></div>
-          <div class="zk-set-add"><input type="text" placeholder="${lsPh}"><button>${t('panel.add') || '添加'}</button></div>${actions}</div></div>`;
+          <div class="zk-set-add"><input type="text" placeholder="${lsPh}"><button>${t('panel.add') || '添加'}</button><button type="button" class="zk-set-add-batch" title="批量导入：选择 txt / csv 文件，或直接粘贴多行内容">批量导入</button></div>
+          <div class="zk-set-import" hidden><textarea class="zk-set-import-ta" rows="5" placeholder="每行一个；也支持用逗号 / 分号 / Tab 分隔。可直接 Ctrl+V 粘贴多行，或选择 txt / csv 文件；以 # 开头的行会被忽略。"></textarea><div class="zk-set-import-bar"><button type="button" class="zk-set-import-mini" data-imp="clip" title="读取系统剪贴板并填入上方文本框（需要浏览器授权）">从剪贴板粘贴</button><label class="zk-set-import-file" title="选择本地 txt / csv 文件，内容会填入上方文本框供你确认">选择 txt / csv 文件<input type="file" accept=".txt,.csv,.tsv,text/plain,text/csv"></label><span class="zk-set-import-count"></span><span class="zk-set-import-spacer"></span><button type="button" class="zk-set-import-mini zk-set-import-cancel">取消</button><button type="button" class="zk-set-import-go">导入</button></div></div>${actions}</div></div>`;
       }
       return h;
     }
@@ -6578,8 +6805,6 @@
     let sectionsHtml = '';
     for (const g of groups) {
       sectionsHtml += `<div class="zk-set-section" data-section="${g.key}">`;
-      // 分组级常驻说明（如免责声明）
-      if (g.note) sectionsHtml += `<div class="zk-set-section-note">${g.note}</div>`;
       // 标准 sections 与 custom 自定义面板必须能并存：划词组既有「总开关」又有专属面板。
       // 旧写法是 if(custom){...}else{...}，导致 custom 组的 sections 被整体跳过 ——
       // 划词的 4 个总开关（含「启用划词搜索」）在面板里根本不渲染，用户想关都关不掉。
@@ -6635,7 +6860,6 @@
       #zk-set-settings-footer .zk-set-status .zk-set-auto{margin-left:4px;padding:3px 10px;border-radius:12px;background:#dcfce7;color:#16a34a;font-weight:500;border:1px solid rgba(22,163,74,.12)}
       .zk-set-group{margin-bottom:26px;background:rgba(255,255,255,.95);border:1px solid rgba(226,232,240,.8);border-radius:16px;padding:22px 26px;box-shadow:0 4px 20px rgba(15,23,42,.04),0 1px 3px rgba(15,23,42,.03);transition:box-shadow .25s ease,transform .25s ease}
       .zk-set-group:hover{box-shadow:0 8px 30px rgba(15,23,42,.07);transform:translateY(-1px)}
-      .zk-set-section-note{margin-bottom:18px;padding:12px 16px;background:linear-gradient(90deg,rgba(255,247,230,.92),rgba(254,243,199,.7));border:1px solid rgba(245,158,11,.28);border-left:3px solid #f59e0b;border-radius:10px;color:#92400e;font-size:12px;line-height:1.75}
       .zk-set-group-title{font-size:14px;font-weight:700;color:#0f172a;margin-bottom:16px;display:flex;align-items:center;gap:10px}
       .zk-set-group-title-text{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
       .zk-set-group-title:before{content:'';display:inline-block;width:5px;height:18px;background:linear-gradient(180deg,#1677ff,#38bdf8);border-radius:3px}
@@ -6685,6 +6909,27 @@
       .zk-set-add input:focus{border-color:#1677ff;box-shadow:0 0 0 3px rgba(22,119,255,.1)}
       .zk-set-add button{background:linear-gradient(90deg,#1677ff,#38bdf8);color:#fff;border:none;padding:9px 18px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:500;transition:all .2s;box-shadow:0 2px 8px rgba(22,119,255,.2)}
       .zk-set-add button:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(22,119,255,.3)}
+      /* 批量导入：入口按钮走「次级」视觉（不与主「添加」抢焦点），面板默认折叠 */
+      .zk-set-add .zk-set-add-batch{background:#fff;color:#475569;border:1px solid #cbd5e1;box-shadow:none;font-weight:500;white-space:nowrap}
+      .zk-set-add .zk-set-add-batch:hover{background:#f8fafc;border-color:#1677ff;color:#1677ff;transform:none;box-shadow:none}
+      .zk-set-add .zk-set-add-batch.active{background:#eff6ff;border-color:#1677ff;color:#1677ff}
+      .zk-set-import{margin-top:10px;padding:12px;border:1px solid #cbd5e1;border-radius:10px;background:#fff}
+      .zk-set-import[hidden]{display:none}
+      .zk-set-import-ta{width:100%;min-height:104px;resize:vertical;padding:9px 12px;border:1px solid #cbd5e1;border-radius:8px;font-size:12px;line-height:1.7;font-family:ui-monospace,Menlo,Consolas,monospace;outline:none;color:#0f172a;background:#fff;transition:border-color .2s,box-shadow .2s}
+      .zk-set-import-ta:focus{border-color:#1677ff;box-shadow:0 0 0 3px rgba(22,119,255,.1)}
+      .zk-set-import-bar{display:flex;align-items:center;gap:8px;margin-top:9px;flex-wrap:wrap}
+      .zk-set-import-mini{border:1px solid #cbd5e1;background:#f8fafc;color:#475569;padding:6px 12px;border-radius:7px;cursor:pointer;font-size:12px;font-weight:500;transition:all .18s;line-height:1.5;font-family:inherit}
+      .zk-set-import-mini:hover{border-color:#1677ff;color:#1677ff;background:#fff}
+      .zk-set-import-mini:focus-visible{outline:2px solid #1677ff;outline-offset:2px}
+      .zk-set-import-file{display:inline-block;border:1px solid #cbd5e1;background:#f8fafc;color:#475569;padding:6px 12px;border-radius:7px;cursor:pointer;font-size:12px;font-weight:500;transition:all .18s;line-height:1.5}
+      .zk-set-import-file:hover{border-color:#1677ff;color:#1677ff;background:#fff}
+      .zk-set-import-file input{display:none}
+      .zk-set-import-count{font-size:12px;color:#64748b}
+      .zk-set-import-count b{color:#1677ff;font-weight:600}
+      .zk-set-import-spacer{flex:1;min-width:0}
+      .zk-set-import-go{border:none;background:linear-gradient(90deg,#1677ff,#38bdf8);color:#fff;padding:6px 16px;border-radius:7px;cursor:pointer;font-size:12px;font-weight:600;box-shadow:0 2px 8px rgba(22,119,255,.2);transition:all .18s;font-family:inherit}
+      .zk-set-import-go:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(22,119,255,.3)}
+      .zk-set-import-go:focus-visible{outline:2px solid #1677ff;outline-offset:2px}
       .zk-set-list-actions{display:flex;gap:10px;margin-top:10px}
       .zk-set-list-action-btn{border:1px solid #cbd5e1;background:#fff;color:#475569;padding:8px 14px;border-radius:8px;cursor:pointer;font-size:12px;font-weight:500;transition:all .2s}
       .zk-set-list-action-btn:hover{border-color:#1677ff;color:#1677ff}
@@ -6984,17 +7229,17 @@
           }
           // 启动闸类开关：改动只在下次加载生效，且可能把「当前站点」直接关进小黑屋 —— 必须提前说清楚
           if (key === 'scriptBlacklistEnabled') {
-            if (!this.checked) { toast('已关闭：黑名单不再生效（刷新页面后确认）'); }
+            if (!this.checked) { toast('已关闭：暂停名单不再生效（刷新页面后确认）'); }
             else {
-              const hit = (getConfig().scriptBlacklist || []).find(u => u && HOST.includes(u));
-              if (hit) toast('注意：当前站点命中黑名单条目「' + hit + '」，刷新后脚本将在本站暂停（油猴菜单「状态 / 恢复」可一键解封）', 'err');
-              else toast('已开启：黑名单将在刷新页面后生效');
+              const hit = (getConfig().whiteurl || []).find(u => u && HOST.includes(u));
+              if (hit) toast('注意：当前站点命中暂停名单条目「' + hit + '」，刷新后脚本将在本站暂停（油猴菜单「🔍 本页为什么没净化？」可一键解封）', 'err');
+              else toast('已开启：暂停名单将在刷新页面后生效');
             }
           } else if (key === 'perfWhitelist' && this.checked) {
             const wl = getConfig().scopeWhitelist || [];
             const inWl = wl.some(u => u && HOST.indexOf(u) !== -1);
-            if (!inWl && !inKnownDomain()) toast('注意：当前站点不在「启用域名」内，刷新后脚本将在本站暂停（油猴菜单「状态 / 恢复」可一键解封）', 'err');
-            else toast('已开启：仅白名单域名启用将在刷新页面后生效');
+            if (!inWl && !inKnownDomain()) toast('注意：当前站点不在「仅在名单内网站运行」名单内，刷新后脚本将在本站暂停（油猴菜单「🔍 本页为什么没净化？」可一键解封）', 'err');
+            else toast('已开启：仅在名单内网站运行将在刷新页面后生效');
           }
         }
       });
@@ -7167,7 +7412,7 @@
         +   '<div class="zk-set-group-title"><svg class="zk-set-gicon" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg> 本地配置管理</div>'
         +   '<div class="zk-set-row-desc">导入 / 导出配置文件、暂停全部净化，或恢复默认设置与菜单顺序。导入与重置会覆盖当前配置，已加二次确认。</div>'
         +   '<div class="zkcs-actions">'
-        +     '<button class="zkss-btn zkcs-pause" title="临时暂停 / 恢复全部净化（刷新页面后生效）">⏸ 暂停全部</button>'
+        +     '<button class="zkss-btn zkcs-pause" title="临时暂停 / 恢复全部净化（刷新页面后生效）">⏸️ 暂停全部</button>'
         +     '<button class="zkss-btn zkcs-import" title="从本地 JSON 文件导入配置（将覆盖当前配置，需确认）">📥 导入</button>'
         +     '<button class="zkss-btn zkcs-export" title="把当前配置导出为 JSON 文件以便备份">📤 导出</button>'
         +     '<button class="zkss-btn zkcs-history" title="查看最近 ' + CONFIG_HISTORY_MAX + ' 次配置改动并回滚到其中任意一版">🕘 配置历史</button>'
@@ -7425,7 +7670,7 @@
             <div class="zk-about-intro-body">
               <p><b>能做什么</b>：① 过滤全站广告（含百度 / Google / B站 / 知乎 / 微博等 20+ 站点，并自动跳过 YouTube、优酷、腾讯视频的贴片广告）；② 划词搜索与翻译（选中文字即弹出工具条）；③ 验证码自动识别填充；④ 视频下载与画质增强；⑤ 暗黑模式、护眼模式、搜索结果卡片美化等外观增强。所有功能都可在左侧分类逐项开关，改完自动保存。</p>
               <p><b>不会做什么</b>：不收集、不上传你的任何浏览记录。所有过滤规则都在本地运行。仅当你<b>主动开启</b>验证码识别并填写了接口地址，或<b>使用划词翻译</b>时，相关图片 / 文字才会发送到<b>你自己选择</b>的第三方服务；云同步也只上传到<b>你自己填写的</b>服务器。</p>
-              <p><b>遇到问题</b>：想临时关掉某个站点的脚本，可用油猴菜单「🚫 暂停 / 恢复本站」；想全局临时关掉，用「⏸ 暂停 / 恢复全网净化」；脚本在本站没生效时，用「🧹 状态 / 恢复」查看原因。</p>
+              <p><b>遇到问题</b>：想临时关掉某个站点的脚本，用油猴菜单「🚫 只暂停当前网站」（本站已暂停时，该项会自动变成「▶️ 恢复当前网站」）；想全局临时关掉，用「⏸️ 暂停全部网站净化」（已暂停时变为「▶️ 恢复全部网站净化」）；脚本在本站没生效时，用「🔍 本页为什么没净化？」查看原因。</p>
               <p class="zk-about-links">项目主页 · 更新日志 · 问题反馈：<a href="https://greasyfork.org/scripts/594888/feedback" target="_blank" rel="noopener">GreasyFork</a><span class="zk-about-sep">｜</span><a href="https://github.com/bigoceans/NetClean/issues" target="_blank" rel="noopener">GitHub Issues</a></p>
             </div>
           </details>
@@ -7619,6 +7864,9 @@
 
     // 列表渲染（支持就地编辑 / 上移 / 下移 / 删除，且全部转义）
     function renderList(listKey) {
+      // 白名单列表在面板内被增删改后，本站可能从「运行中」翻转为「已暂停」（或反向），
+      // 而这条路径不经过 ncTogglePauseSite —— 必须在这里补一次菜单改名，否则菜单名会与真实状态脱节。
+      if (listKey === 'whiteurl') { try { ncUpdateMenuLabels(); } catch (e) {} }
       const container = sr.querySelector(`.zk-set-list[data-list="${listKey}"] .zk-set-items`);
       if (!container) return;
       const arr = cfg[listKey] || [];
@@ -7721,36 +7969,37 @@
         blurTimer = setTimeout(() => { blurTimer = null; commit(); }, 150);
       });
     }
-    ['pingbiurl', 'pingbikw', 'whiteurl', 'scopeWhitelist', 'captchaWhitelist', 'captchaBlacklist', 'scriptBlacklist'].forEach(renderList);
+    // 6 份名单（全部集中在「📋 名单管理」分类下渲染）
+    ['pingbiurl', 'pingbikw', 'whiteurl', 'scopeWhitelist', 'captchaWhitelist', 'captchaBlacklist'].forEach(renderList);
 
-    // 脚本启用站点黑名单：批量「导入预设敏感站点」/「清空黑名单」
+    // 「暂停名单」的批量操作：「导入预设敏感站点」/「清空暂停名单」
     // 两个批量操作都是破坏性的（清空=整份名单失效），补二次确认与空操作识别。
     function blacklistHint(extra) {
-      if (!cfg.baidu.scriptBlacklistEnabled) return extra + '（上方开关当前关闭，名单不会生效）';
+      if (!cfg.baidu.scriptBlacklistEnabled) return extra + '（上方「启用暂停名单」开关当前关闭，名单不会生效）';
       return extra + '（刷新页面后生效）';
     }
-    const blBox = sr.querySelector('.zk-set-list[data-list="scriptBlacklist"]');
+    const blBox = sr.querySelector('.zk-set-list[data-list="whiteurl"]');
     if (blBox) {
       blBox.querySelectorAll('.zk-set-list-action-btn').forEach(btn => {
         btn.addEventListener('click', async () => {
           const act = btn.getAttribute('data-action');
           if (act === 'import-preset') {
-            const cur = cfg.scriptBlacklist || [];
+            const cur = cfg.whiteurl || [];
             const add = SCRIPT_BLACKLIST_PRESET.filter(d => cur.indexOf(d) === -1);
             if (!add.length) { toast('预设敏感站点已全部在名单中', 'warn'); return; }
-            if (!(await zkConfirm('将导入 ' + add.length + ' 个预设敏感站点（银行/支付/政务/邮箱等）。\n导入后需开启上方开关才会生效。继续？', { title: '导入预设站点', okText: '确定导入' }))) return;
+            if (!(await zkConfirm('将导入 ' + add.length + ' 个预设敏感站点（银行/支付/政务/邮箱等）。\n导入后需开启上方「启用暂停名单」开关才会生效。继续？', { title: '导入预设站点', okText: '确定导入' }))) return;
             const merged = Array.from(new Set([...SCRIPT_BLACKLIST_PRESET, ...cur])).slice(0, 999);
-            cfg.scriptBlacklist = merged; setConfig(cfg); renderList('scriptBlacklist');
+            cfg.whiteurl = merged; setConfig(cfg); renderList('whiteurl');
             toast(blacklistHint('已导入 ' + add.length + ' 个，共 ' + merged.length + ' 个'));
           } else if (act === 'clear') {
-            const n = (cfg.scriptBlacklist || []).length;
-            if (!n) { toast('黑名单已经是空的', 'warn'); return; }
-            if (!(await zkConfirm('确定清空黑名单（' + n + ' 个站点）？\n清空后脚本将在这些站点恢复运行（5 秒内可撤销）。继续？', { title: '清空黑名单', okText: '确定清空', danger: true }))) return;
-            const backup = (cfg.scriptBlacklist || []).slice();
-            cfg.scriptBlacklist = []; setConfig(cfg); renderList('scriptBlacklist');
-            zkToast('已清空黑名单（' + backup.length + ' 个站点）', { type: 'ok', action: { label: '撤销', fn: () => {
-              cfg.scriptBlacklist = backup; setConfig(cfg); renderList('scriptBlacklist');
-              toast('已恢复 ' + backup.length + ' 个黑名单站点', 'ok');
+            const n = (cfg.whiteurl || []).length;
+            if (!n) { toast('暂停名单已经是空的', 'warn'); return; }
+            if (!(await zkConfirm('确定清空暂停名单（' + n + ' 个站点）？\n清空后脚本将在这些站点恢复运行（5 秒内可撤销）。继续？', { title: '清空暂停名单', okText: '确定清空', danger: true }))) return;
+            const backup = (cfg.whiteurl || []).slice();
+            cfg.whiteurl = []; setConfig(cfg); renderList('whiteurl');
+            zkToast('已清空暂停名单（' + backup.length + ' 个站点）', { type: 'ok', action: { label: '撤销', fn: () => {
+              cfg.whiteurl = backup; setConfig(cfg); renderList('whiteurl');
+              toast('已恢复 ' + backup.length + ' 个站点到暂停名单', 'ok');
             } } });
           }
         });
@@ -7766,16 +8015,20 @@
         const v = input.value.trim();
         if (!v) return;
         if (listKey === 'pingbikw' && v.length < 2) { toast('关键词至少2个字', 'err'); return; }
-        // 域名类名单允许短条目（与 scopeWhitelist 等保持一致），但 <4 字符几乎会命中大量站点，需二次确认
-        const shortOk = (listKey === 'scopeWhitelist' || listKey === 'captchaWhitelist' || listKey === 'captchaBlacklist' || listKey === 'scriptBlacklist');
+        // 域名类名单允许短条目，但 <4 字符几乎会命中大量站点，需二次确认。
+        // whiteurl 沿用旧 scriptBlacklist 的宽松策略（短条目 + 确认），避免合并后老用户被"网址太短"硬拦。
+        const shortOk = (listKey === 'scopeWhitelist' || listKey === 'captchaWhitelist' || listKey === 'captchaBlacklist' || listKey === 'whiteurl');
         if (listKey !== 'pingbikw' && !shortOk && v.length < 4) { toast('网址太短', 'err'); return; }
         if (shortOk && v.length < 4) {
           if (!(await zkConfirm('「' + v + '」太短：名单按「当前域名包含该字符串」匹配，过短的条目可能命中大量站点。确定添加？', { title: '过短条目确认', okText: '仍然添加', danger: true }))) return;
         }
-        // 自杀式条目拦截：这条会命中当前正在配置的站点，且该名单一旦生效脚本即暂停
-        if ((listKey === 'scriptBlacklist' || listKey === 'whiteurl') && HOST && HOST.includes(v) &&
-            (listKey !== 'scriptBlacklist' || cfg.baidu.scriptBlacklistEnabled)) {
-          if (!(await zkConfirm('「' + v + '」会命中当前站点 ' + HOST + '，保存并刷新后脚本将在本站暂停。\n（仍可通过油猴菜单「状态 / 恢复」一键解封）确定添加？', { title: '致命条目确认', okText: '确定添加', danger: true }))) return;
+        // 自杀式条目拦截：这条会命中当前正在配置的站点，且「暂停名单」一旦生效脚本即暂停
+        if (listKey === 'whiteurl' && HOST && HOST.includes(v)) {
+          const swOn = !!cfg.baidu.scriptBlacklistEnabled;
+          const tip = swOn
+            ? '「' + v + '」会命中当前站点 ' + HOST + '，保存并刷新后脚本将在本站暂停。\n（仍可通过油猴菜单「🔍 本页为什么没净化？」一键解封）确定添加？'
+            : '「' + v + '」会命中当前站点 ' + HOST + '。当前「启用暂停名单」开关为关闭状态，添加后暂不生效；\n但一旦你开启该开关，脚本将在本站暂停。（仍可通过油猴菜单「🔍 本页为什么没净化？」一键解封）确定添加？';
+          if (!(await zkConfirm(tip, { title: '致命条目确认', okText: '确定添加', danger: true }))) return;
         }
         if (!cfg[listKey]) cfg[listKey] = [];
         cfg[listKey].unshift(v);
@@ -7789,6 +8042,238 @@
       input.addEventListener('keydown', e => { if (e.key === 'Enter') doAdd(); });
     });
 
+    /* ================================================================
+     *  名单批量导入（txt / csv 文件 + 多行粘贴）
+     *  ----------------------------------------------------------------
+     *  背景：6 份名单原先只能一条一条加。真实场景里用户经常要「一次加 N 个」——
+     *  整份银行 / 政务站点清单、从别处复制来的一批待屏蔽域名、一列搜索引擎垃圾站。
+     *  逐条粘贴回车 N 次既慢又容易漏。
+     *
+     *  设计取舍（四条，均为「宁可少做不可做错」）：
+     *   ① 先入框、再导入：文件 / 剪贴板内容一律先填进文本框，用户可见、可改、可核对，
+     *      按「导入」才写配置。不做「选完文件立刻注入」——批量改名单是不可逆的高风险动作，
+     *      必须留一个复核口。
+     *   ② 归一化按名单类型分派，不做一刀切：
+     *      · 域名类（暂停名单 whiteurl / 仅在名单内网站运行 scopeWhitelist /
+     *        验证码自动扫描站点 captchaWhitelist）——匹配口径是 HOST.includes(条目)，
+     *        留着 `https://`、`www.`、`/path` 只会让条目永不命中，故归一化为「域名主体 + 小写」。
+     *      · 链接 / 关键词类（屏蔽网址 pingbiurl / 验证码跳过 captchaBlacklist / 屏蔽关键词 pingbikw）——
+     *        匹配口径是整串 includes，子串本身有意义（URL 路径、大小写敏感的关键词），**原样保留**。
+     *   ③ 校验收口（对齐单条添加的规则），但把确认聚合：
+     *      单条添加时「过短条目」「会命中当前站点的致命条目」各弹一次是合理的；
+     *      批量场景下弹 N 次不可接受 → 每类聚合成**一次**确认框，并给出示例与「跳过它们」出口。
+     *   ④ 可撤销：导入完成后 toast 带「撤销」，一键回到导入前的名单快照。
+     * ================================================================ */
+    const IMP_DOMAIN_LISTS = ['whiteurl', 'scopeWhitelist', 'captchaWhitelist'];
+    // CSV 表头识别词：命中则整行跳过（表格模式下只作用于前 3 行内）
+    const IMP_HEADER_WORDS = ['url', 'urls', 'link', 'links', '网址', '链接', '域名', '站点', '网站',
+      '关键词', '关键字', 'keyword', 'keywords', 'domain', 'domains', 'site', 'sites', 'host', 'hosts',
+      'value', 'item', '条目', '备注', '说明'];
+    const IMP_MAX = 999;
+
+    // 域名归一化：https://www.icbc.com.cn/icbc/index.html → icbc.com.cn
+    //   也有意处理用户从浏览器地址栏复制的各种形态：*.baidu.com、www.a.com/、a.com:8080、user@a.com
+    function impNormDomain(v) {
+      let s = String(v == null ? '' : v).trim().toLowerCase();
+      if (!s) return '';
+      s = s.replace(/^[a-z][a-z0-9+.-]*:\/\//, '').replace(/^\/\//, '');  // 协议
+      s = s.split(/[\/?#]/)[0];                                          // 路径 / 查询 / 锚点
+      s = s.replace(/:\d+$/, '');                                        // 端口
+      s = s.split('@').pop();                                            // userinfo
+      s = s.replace(/\*/g, '');                                          // 通配符
+      s = s.replace(/^\.+|\.+$/g, '');                                   // 首尾点
+      s = s.replace(/^www\./, '');                                       // www.（匹配是子串包含，留 www. 反而漏 m.xxx）
+      return /[a-z0-9]/.test(s) ? s : '';
+    }
+
+    // 解析文本 → { entries, normCount, headerSkipped, tableMode }
+    //   分隔符：换行 / 逗号（中英）/ 分号（中英）/ Tab
+    //   CSV 判定：多列行占比 ≥60% 视作表格（只取第一列 + 跳过表头）；否则视作平铺清单（多列内容全部收下）
+    //   例外：带 `://` 的行不按逗号拆 —— 否则会把 URL 的 query 参数切碎成多条垃圾条目
+    function impParse(text, listKey) {
+      const isDomain = IMP_DOMAIN_LISTS.indexOf(listKey) >= 0;
+      const raw = String(text == null ? '' : text).replace(/^\uFEFF/, '').replace(/\r\n?/g, '\n');
+      const cellOf = l => l.split(/[,\t;，；]/).map(x => x.trim());
+      const usable = [];
+      raw.split('\n').forEach(l => {
+        const t = l.trim();
+        if (!t || t.charAt(0) === '#') return;   // 空行 / # 注释行
+        usable.push({ line: t, cells: cellOf(t) });
+      });
+      const multi = usable.filter(u => u.cells.length >= 2).length;
+      const tableMode = usable.length > 0 && (multi / usable.length) >= 0.6;
+      const out = [];
+      let normCount = 0, headerSkipped = 0;
+      usable.forEach((u, i) => {
+        let cells = u.cells;
+        if (tableMode) {
+          if (!headerSkipped && i < 3 && IMP_HEADER_WORDS.indexOf(String(cells[0] || '').toLowerCase()) >= 0) { headerSkipped++; return; }
+          cells = [cells[0]];                    // 表格模式：只取第一列，忽略备注列
+        } else if (cells.length < 2 || /:\/\//.test(u.line)) {
+          cells = [u.line];                      // 平铺模式：整行即一条（关键词可含空格）
+        }
+        cells.forEach(c => {
+          let v = String(c == null ? '' : c).trim().replace(/^"(.*)"$/, '$1').replace(/^'(.*)'$/, '$1').trim();
+          if (!v) return;
+          if (isDomain) { const d = impNormDomain(v); if (!d) return; if (d !== v) normCount++; v = d; }
+          if (out.indexOf(v) < 0) out.push(v);
+        });
+      });
+      return { entries: out, normCount: normCount, headerSkipped: headerSkipped, tableMode: tableMode };
+    }
+
+    sr.querySelectorAll('.zk-set-list').forEach(listBox => {
+      const listKey = listBox.getAttribute('data-list');
+      const batchBtn = listBox.querySelector('.zk-set-add-batch');
+      const panel = listBox.querySelector('.zk-set-import');
+      if (!batchBtn || !panel) return;
+      const ta = panel.querySelector('.zk-set-import-ta');
+      const countEl = panel.querySelector('.zk-set-import-count');
+      const typeHint = IMP_DOMAIN_LISTS.indexOf(listKey) >= 0
+        ? '域名将自动归一化（https://www.a.com/x → a.com）'
+        : (listKey === 'pingbikw' ? '关键词至少 2 个字；含空格的关键词请单独占一行' : '按原文保存，不改大小写');
+
+      function refreshCount() {
+        const res = impParse(ta.value, listKey);
+        const cur = (cfg[listKey] || []).map(x => String(x).toLowerCase());
+        if (!res.entries.length) { countEl.textContent = '粘贴内容或选择文件后，这里会显示可导入条数'; return; }
+        const freshN = res.entries.filter(v => cur.indexOf(String(v).toLowerCase()) < 0).length;
+        const extra = [];
+        if (res.entries.length - freshN) extra.push((res.entries.length - freshN) + ' 条已在名单中');
+        if (res.normCount) extra.push(res.normCount + ' 条已归一化');
+        if (res.headerSkipped) extra.push('已跳过表头行');
+        countEl.innerHTML = '已识别 <b>' + freshN + '</b> 条' + (extra.length ? '（' + extra.join('，') + '）' : '') + ' · ' + typeHint;
+      }
+      function closePanel() { panel.hidden = true; batchBtn.classList.remove('active'); }
+      // 追加式喂入：保留用户已手动编辑过的内容，多来源（文件 + 粘贴）可叠加
+      function feed(text) {
+        const txt = String(text == null ? '' : text).replace(/\r\n?/g, '\n');
+        if (!txt.trim()) return false;
+        ta.value = (ta.value && !/\n$/.test(ta.value)) ? (ta.value + '\n' + txt) : ((ta.value || '') + txt);
+        refreshCount();
+        return true;
+      }
+
+      batchBtn.addEventListener('click', () => {
+        if (panel.hidden) {
+          panel.hidden = false; batchBtn.classList.add('active'); refreshCount();
+          try { ta.focus(); } catch (e) {}
+        } else closePanel();
+      });
+      ta.addEventListener('input', refreshCount);
+      panel.querySelector('.zk-set-import-cancel').addEventListener('click', () => { ta.value = ''; refreshCount(); closePanel(); });
+
+      // ① 文件导入（txt / csv）——拖拽到文本框等效
+      const fileInput = panel.querySelector('.zk-set-import-file input');
+      function readFile(f) {
+        if (!f) return;
+        if (f.size > 2 * 1024 * 1024) { toast('文件过大（>2MB），请拆分后再导入', 'err'); return; }
+        const fr = new FileReader();
+        fr.onload = () => {
+          if (feed(fr.result)) toast('已载入文件：' + f.name + '，请核对后点「导入」', 'ok');
+          else toast('文件内容为空', 'warn');
+        };
+        fr.onerror = () => toast('文件读取失败，请另存为 UTF-8 编码的 txt/csv 后重试', 'err');
+        try { fr.readAsText(f, 'utf-8'); }
+        catch (e) { toast('浏览器无法读取该文件', 'err'); }
+      }
+      if (fileInput) {
+        fileInput.addEventListener('change', () => { const f = fileInput.files && fileInput.files[0]; if (f) readFile(f); fileInput.value = ''; });
+      }
+      ta.addEventListener('dragover', e => { if (e.dataTransfer && e.dataTransfer.types && e.dataTransfer.types.indexOf('Files') >= 0) { e.preventDefault(); ta.style.borderColor = '#1677ff'; } });
+      ta.addEventListener('dragleave', () => { ta.style.borderColor = ''; });
+      ta.addEventListener('drop', e => {
+        const f = e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0];
+        ta.style.borderColor = '';
+        if (!f) return;                        // 非文件拖放（拖文本）：交回浏览器默认行为
+        e.preventDefault(); readFile(f);
+      });
+
+      // ② 剪贴板一键粘贴（需浏览器授权；失败不静默，明确引导手动 Ctrl+V）
+      const clipBtn = panel.querySelector('[data-imp="clip"]');
+      if (clipBtn) clipBtn.addEventListener('click', async () => {
+        try {
+          if (!navigator.clipboard || !navigator.clipboard.readText) throw new Error('unsupported');
+          const txt = await navigator.clipboard.readText();
+          if (!feed(txt)) { toast('剪贴板里没有文本内容', 'warn'); return; }
+          toast('已从剪贴板粘贴，请核对后点「导入」', 'ok');
+        } catch (e) {
+          toast('浏览器未允许读取剪贴板，请在框内直接 Ctrl+V 粘贴', 'warn');
+          try { ta.focus(); } catch (e2) {}
+        }
+      });
+
+      // ③ 执行导入
+      panel.querySelector('.zk-set-import-go').addEventListener('click', async () => {
+        const res = impParse(ta.value, listKey);
+        if (!res.entries.length) { toast('没有识别到可导入的条目', 'warn'); return; }
+        const old = (cfg[listKey] || []).slice();
+        const oldLower = old.map(x => String(x).toLowerCase());
+        const fresh = []; let dupN = 0;
+        res.entries.forEach(v => {
+          if (oldLower.indexOf(String(v).toLowerCase()) >= 0) { dupN++; return; }
+          if (fresh.indexOf(v) < 0) fresh.push(v);
+        });
+        // 重复条目不报错、不弹窗 —— 重复导入是批量的常态（改完清单再导一次），静默计数即可
+        if (!fresh.length) { toast('这 ' + dupN + ' 条都已在名单中，无需重复导入', 'warn'); return; }
+
+        // 硬拦：关键词 <2 字（与单条添加同口径，剔除后在结果里说明）
+        let ignoredKw = 0, pool = fresh;
+        if (listKey === 'pingbikw') {
+          pool = fresh.filter(v => v.length >= 2);
+          ignoredKw = fresh.length - pool.length;
+        }
+        // 过短条目（域名 / 链接类）：单条时逐条确认，批量时聚合成一次
+        if (listKey !== 'pingbikw') {
+          const shortOnes = pool.filter(v => v.length < 4);
+          if (shortOnes.length) {
+            const rest = pool.length - shortOnes.length;
+            const yes = await zkConfirm('其中 ' + shortOnes.length + ' 条过短，例如：\n'
+              + shortOnes.slice(0, 6).map(v => '· ' + v).join('\n')
+              + (shortOnes.length > 6 ? '\n· …（其余 ' + (shortOnes.length - 6) + ' 条）' : '')
+              + '\n\n名单按「包含该字符串」匹配，条目过短可能命中大量站点。\n'
+              + '「一并导入」= 全部导入；「跳过它们」= 只导入其余 ' + rest + ' 条。',
+              { title: '过短条目确认', okText: '一并导入', cancelText: '跳过它们', danger: true });
+            if (!yes) pool = pool.filter(v => v.length >= 4);
+          }
+        }
+        if (!pool.length) { toast('已跳过全部条目，名单未改动', 'warn'); return; }
+
+        // 致命条目（仅暂停名单）：命中的条目会让脚本在**当前站点**暂停
+        if (listKey === 'whiteurl') {
+          const selfHits = pool.filter(v => HOST && HOST.indexOf(v.toLowerCase()) !== -1);
+          if (selfHits.length) {
+            const swOn = !!cfg.baidu.scriptBlacklistEnabled;
+            const head = selfHits.length === 1
+              ? ('「' + selfHits[0] + '」')
+              : (selfHits.length + ' 条（如「' + selfHits.slice(0, 3).join('」「') + '」）');
+            const tip = head + '会命中当前站点 ' + HOST + '，'
+              + (swOn ? '保存并刷新后脚本将在本站暂停。'
+                      : '当前「启用暂停名单」开关为关闭状态，暂不生效；但一旦开启该开关，脚本将在本站暂停。')
+              + '\n（仍可通过油猴菜单「🔍 本页为什么没净化？」一键解封）\n\n确定继续导入？';
+            if (!(await zkConfirm(tip, { title: '致命条目确认', okText: '确定导入', danger: true }))) return;
+          }
+        }
+
+        const merged = pool.concat(old);
+        const overflow = merged.length > IMP_MAX ? (merged.length - IMP_MAX) : 0;
+        cfg[listKey] = merged.slice(0, IMP_MAX);
+        setConfig(cfg);
+        renderList(listKey);                    // whiteurl 会在 renderList 内顺带刷新菜单名
+        ta.value = ''; refreshCount(); closePanel();
+        const parts = ['已导入 ' + pool.length + ' 条（名单共 ' + cfg[listKey].length + ' 条）'];
+        if (dupN) parts.push('跳过重复 ' + dupN + ' 条');
+        if (ignoredKw) parts.push('忽略过短关键词 ' + ignoredKw + ' 条');
+        if (overflow) parts.push('超出上限 ' + IMP_MAX + ' 条，已截断 ' + overflow + ' 条');
+        if (listKey === 'whiteurl' && !cfg.baidu.scriptBlacklistEnabled) parts.push('尚未生效：需开启上方「启用暂停名单」开关');
+        zkToast(parts.join('；'), { type: 'ok', dur: 4600, action: { label: '撤销', fn: () => {
+          cfg[listKey] = old; setConfig(cfg); renderList(listKey);
+          toast('已撤销本次导入（' + pool.length + ' 条）', 'ok');
+        } } });
+      });
+    });
+
+    
     // 分类切换
     const cats = sr.querySelectorAll('.zk-set-cat');
     const sections = sr.querySelectorAll('.zk-set-section');
@@ -7851,11 +8336,18 @@
     cats[0].click();
 
     // ===== 分类拖拽重排（用户自定义菜单顺序，自动保存）=====
+    // 注意：「关于」是钉在末尾的收尾项（NC_PINNED_LAST_CAT），不参与拖拽、也不写进 catOrder。
+    // 否则用户可以把它拖到中间，下次打开面板被 applyCatOrder 拉回末尾 —— 看起来像「拖了没生效」。
     (function enableCatDrag() {
       const sidebar = sr.querySelector('#zk-set-settings-sidebar');
       const bodyEl = sr.querySelector('#zk-set-settings-body');
       let dragEl = null;
       sr.querySelectorAll('.zk-set-cat').forEach(cat => {
+        if (cat.dataset.cat === NC_PINNED_LAST_CAT) {
+          cat.setAttribute('draggable', 'false');
+          cat.setAttribute('title', '「关于」固定在最下方');
+          return;
+        }
         cat.setAttribute('draggable', 'true');
         cat.addEventListener('dragstart', () => {
           dragEl = cat;
@@ -7879,12 +8371,18 @@
           const r = c.getBoundingClientRect();
           if (e.clientY < r.top + r.height / 2) { after = c; break; }
         }
+        // 插入点不得越过固定的收尾项：命中「关于」时 insertBefore 天然就是插到它前面，
+        // 所以只需处理「拖到底部」（after==null）这一种越界情形。
         if (after === dragEl) return;
-        if (after == null) sidebar.appendChild(dragEl);
-        else sidebar.insertBefore(dragEl, after);
+        if (after == null) {
+          const tail = sr.querySelector('.zk-set-cat[data-cat="' + NC_PINNED_LAST_CAT + '"]');
+          if (tail) sidebar.insertBefore(dragEl, tail); else sidebar.appendChild(dragEl);
+        } else sidebar.insertBefore(dragEl, after);
       });
       function saveCatOrder() {
-        const order = Array.from(sr.querySelectorAll('.zk-set-cat')).map(c => c.dataset.cat);
+        // 固定收尾项不写入 catOrder（写进去也只会在下次 applyCatOrder 时被拉到末尾）
+        const order = Array.from(sr.querySelectorAll('.zk-set-cat'))
+          .map(c => c.dataset.cat).filter(k => k !== NC_PINNED_LAST_CAT);
         order.forEach(k => { const s = bodyEl.querySelector('[data-section="' + k + '"]'); if (s) bodyEl.appendChild(s); });
         const c = getConfig(); if (!c.ui) c.ui = {}; c.ui.catOrder = order; setConfig(c);
         toast('已保存菜单顺序');
@@ -7933,7 +8431,7 @@
     function updatePauseUI() {
       const pauseBtn = sr.querySelector('.zkcs-pause');
       if (pauseBtn) {
-        pauseBtn.textContent = BLOCKING_PAUSED ? '▶ 恢复全部' : '⏸ 暂停全部';
+        pauseBtn.textContent = BLOCKING_PAUSED ? '▶ 恢复全部' : '⏸️ 暂停全部';
         pauseBtn.style.color = BLOCKING_PAUSED ? '#ff5252' : '';
       }
     }
@@ -8022,7 +8520,7 @@
             try {
               const p = JSON.parse(h.data);
               const b = p.baidu || {};
-              const lists = ['whiteurl', 'pingbiurl', 'pingbikw', 'scriptBlacklist'].map(k => (b[k] && b[k].length) ? k + ':' + b[k].length : null).filter(Boolean);
+              const lists = ['whiteurl', 'pingbiurl', 'pingbikw', 'scopeWhitelist', 'captchaWhitelist', 'captchaBlacklist'].map(k => (b[k] && b[k].length) ? k + ':' + b[k].length : null).filter(Boolean);
               summary = lists.length ? lists.join(' · ') : '常规开关变更';
             } catch (e) { summary = '快照'; }
             return '<div class="zk-hist-row" data-at="' + h.at + '" style="display:flex;align-items:center;gap:12px;padding:11px 14px;border:1px solid #eef2f7;border-radius:10px;margin-bottom:8px;cursor:pointer;transition:background .15s,border-color .15s">'
@@ -10442,7 +10940,7 @@
 
     // 阶段 6：菜单注册（仅补「暗黑归属」——其余三条已在「阶段 0」提前注册，
     //   详见阶段 0 处的注册顺序说明。此处绝不能重复注册 panel/pauseToggle，否则 TM 菜单出现重复项。）
-    try { GM_registerMenuCommand(t('menu.darkOwner'), ncToggleDarkHostOwnership); } catch (e) { console.error('[NetClean] 阶段 6 暗黑归属菜单注册失败', e); }
+    try { ncMenuUpsert('darkOwner', ncMenuLabelDarkOwner(), ncToggleDarkHostOwnership); } catch (e) { console.error('[NetClean] 阶段 6 暗黑归属菜单注册失败', e); }
 
     // 阶段 6b：全局 Esc 关闭已打开的设置面板 / 欢迎页（单次注册，无 keydown 泄漏）
     try {
@@ -10481,7 +10979,7 @@
             a.className = 's-top-right-text c-font-normal c-color-t s-top-right-new';
             a.id = 'zk-top-gobtn';
             a.style.cssText = 'position:relative;overflow:visible;cursor:pointer';
-            a.textContent = '⚙ 控制面板';
+            a.textContent = '⚙️ 控制面板';
             a.addEventListener('click', () => openSettings());
             settingIcon.insertAdjacentElement('afterend', a);
           }
