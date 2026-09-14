@@ -4,10 +4,10 @@
 > 全部配置仅保存在你本地浏览器，**零数据外传**。
 
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
-![version](https://img.shields.io/badge/version-1.0.9-brightgreen.svg)
+![version](https://img.shields.io/badge/version-1.0.10-brightgreen.svg)
 ![tampermonkey](https://img.shields.io/badge/Tampermonkey-4.19%2B-orange.svg)
-![size](https://img.shields.io/badge/size-~751KB-lightgrey.svg)
-![verified](https://img.shields.io/badge/verify-623%2F623-brightgreen.svg)
+![size](https://img.shields.io/badge/size-~757KB-lightgrey.svg)
+![verified](https://img.shields.io/badge/verify-673%2F673-brightgreen.svg)
 ![audit](https://img.shields.io/badge/audit-P0%3A0%20P1%3A0-blue.svg)
 
 ---
@@ -119,7 +119,7 @@
 - `*.google.com` / `*.google.com.hk`
 - `*.bing.com`
 - `*.so.com`（360 搜索）
-- `yandex.com`（内置但未在 @match 列出）
+- `*.yandex.com`
 
 ### 内容社区
 - `*.zhihu.com`（知乎）
@@ -142,7 +142,10 @@
 
 ### 兜底
 - `*://*/*`（所有网站，配合启动早退机制零开销）
-- `file:///*`（本地 HTML 调试用）
+
+> ℹ️ **为什么保留 `*://*/*`？** 它不是冗余匹配：`yandex.com` 支持与「仅在名单内网站运行」的早退兜底都依赖它（油猴 `@match` 是静态元数据，无法运行时切换）。脚本未命中 `inHost()` 守卫时会在启动后立即早退，近零开销。
+>
+> v1.0.10 起已移除 `file:///*`（本地 HTML 调试用，脚本无任何本地文件功能，且属 GF 代码规则里最易被要求删除的匹配）。
 
 > 💡 **新增站点支持**：在脚本里加一个 `@match` + `function processXxx()` 处理器即可。
 
@@ -557,7 +560,55 @@ A: 欢迎 PR / Issue！
 
 ## 📝 更新日志
 
-### v1.0.9（当前版本 · 2026-09-12）
+### v1.0.10（当前版本 · 2026-09-14）
+
+全项目体检后的清整版 —— 死代码、重复实现、死声明、收口缺口一次清干净，并把一个「写了却从未被调用」的校验函数接回正轨。**无功能增删**，行为保持。
+
+**🧹 死代码与重复实现清理**
+
+- 删除 4 个从未被引用的函数：`currentCloudProviderName`（云服务商名助手）、`ssSaveEngines` / `ssSaveTheme` / `ssSaveTrans`（划词面板旧封装残留 —— 面板实际走 `cfg.selSearchXxx = …; persist()` 就地写）
+- **HTML 转义助手唯一化**：原先全脚本有 **2 份 `escHtml` + 3 份 `escAttr` + 1 份 `escapeHtml`**，且覆盖率不一致 —— 云同步那份 `escHtml` **不转引号**，一旦被用在 HTML 属性上下文就会造成属性注入。现收敛为顶层唯一实现（覆盖 `& < > " '` 五个字符），并保留 `escAttr` / `escapeHtml` 两个语义别名，调用点写法完全不变、行为更安全
+- 微博视频下载按钮的链接由 `innerHTML` 字符串拼接改为 `a.href` DOM 赋值 —— `tech.src` 是**页面数据**，不转义就拼进 HTML 等于把页面数据当代码执行
+
+**🔗 变废为宝：引擎条目校验接回导入路径**
+
+- `sanitizeEngine()` 此前写在 `initSelectionSearch()` **内部**（局部作用域），而配置导入路径在模块外 —— 够不到，于是它**从未被调用过**
+- 现提到顶层并新增 `ncNormalizeImportedConfig()`，在**文件导入 / 云端自动下载 / 云端恢复**三处接线，补齐这道一直缺失的防线（`deepMerge` 对数组是「整体覆盖」语义，`selSearchEngines` 的内容此前完全不校验）
+- 校验口径刻意**只要求 `id`、不强制 `name`** —— 面板「➕ 添加」是先生成 id 再让用户慢慢填名字；若强制 name 非空，用户刚加的空名引擎会在导入 / 恢复后被静默删掉
+
+**⏱ 定时器收口：`setTimeout` 纳入统一管理**
+
+- 此前只有 `setInterval` 被收口（pagehide 统一清理），`setTimeout` 不在管理内 —— 行为不对称：页面被 bfcache 缓存再恢复时，陈旧的一次性定时器仍可能触发
+- 现新增 `ncTimeout` / `_ncTimeouts`，与 `ncInterval` 同款：同 id 去重、pagehide 统一清理、集中可观测；一次性定时器**自然触发后自我注销**，避免句柄表随 toast 这类高频调用无界增长
+- ⚠ 实现要点：管理器**整体前移到脚本顶部**。shadow 手法（`const setTimeout = ncTimeout`）要求「先执行 shadow 再调用」，而文件里存在**顶层立即执行**的 `setTimeout`，原地加会踩 TDZ 直接崩。配置落盘的 400ms 防抖虽也走 `ncTimeout`，但页面隐藏时「阶段 6c」的 `_flushBeforeHide` 会直接 `flushConfig()` 强制落盘，**不丢配置**
+
+**🔑 GreasyFork 元数据合规**
+
+- 删除 `@match file:///*`（脚本无任何本地文件功能，自述是「本地调试用」，属 GF 代码规则里最易被要求删除的一类）
+- **保留 `@match *://*/*`**：它不是冗余 —— `yandex.com` 支持与「仅在名单内网站运行」的早退兜底都依赖它
+- 删除 2 条死 `@connect`：`baiducontent.com` / `zhihu.com`（全脚本无请求目标；`zhihu.com` 只用于 `inHost` 页面匹配）
+- 补 `@match *://*.yandex.com/*`，让 README「内置站点」与实现对齐
+
+**🌐 i18n 补齐**
+
+- 补 `item.t.captchaYunmaDev`：该字段原先只有 `item.d` 没有 `item.t`，导致「云码开发者标识」的**标题**在 en / 繁中下回落简中（同分组其他 10 项都有翻译）
+
+**🐛 其它修复**
+
+- 2 处调试日志加守卫（`[openCloudBackupManager] mounted …`、自动同步跳过日志），改为仅在 `?ncdebug` 下输出
+- 5 处关键路径的空 `catch` 补 `dbg()`：配置历史写入、云同步时间戳回写、使用条款同意状态落盘、暗黑归属保存、通用存储写入 —— 这些静默失败会直接表现为功能失效（回滚不可用 / 每次进页面重复征询条款）
+- 「20+ 站点」文案改为确定数并与 `@match` 条数对齐；新增「声称数 == 实际 `@match` 条数」的性质断言，以后忘改文案回归会变红
+
+**✅ 验证**
+
+- 全量回归 **27 个 verify 脚本 / 673 项断言 / 失败 0 / EXIT=0**
+- 新增 `verify_v1010_hygiene.js`（**33 项**）：A 元数据合规 / B i18n 补齐 / C 死代码清除 / D 校验接线 / E 转义唯一化 / F 定时器收口（含「shadow 必须先于首次调用」的位置断言）/ G 版本双同步
+- 新增 `verify_doc_consistency.js`（**17 项**）：把「脚本 / README / UPDATE_NOTES / GREASYFORK_INFO」四处的**版本、发布日期、体积、计数**口径固化成断言。背景就是本版收尾时发现 README 页脚还写着「当前版本：v1.0.8」「最后更新：2026-09-11」，而同一份文档的徽章与更新日志已是 v1.0.10 —— 口径漂移此前没有任何断言兜着，能一直烂下去
+- **变异测试 6 处**（还原 `file:///*`、改错站点数、加回死函数、恢复强制 name、注释掉 shadow、加回局部 `escAttr`）→ 断言全部变红
+
+---
+
+### v1.0.9（2026-09-12）
 
 迁移提示代码层整体移除 + 全量排查收尾 —— 把 v1.0.8 的「名单整合迁移说明」过渡逻辑从源码里彻底清掉，并按模块 / UI / 源码 / 文本 / 性能 / BUG 六维度再过一轮。
 
@@ -924,6 +975,6 @@ SOFTWARE.
 
 ---
 
-**最后更新**：2026-09-11
-**当前版本**：v1.0.8
+**最后更新**：2026-09-14
+**当前版本**：v1.0.10
 **作者**：bigoceans
