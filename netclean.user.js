@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         全网净化大师 NetClean — 广告过滤 + 划词搜索 + 搜索美化
 // @namespace    https://github.com/bigoceans
-// @version      1.2.1
+// @version      1.3.1
 // @author       bigoceans
 // @description  全站广告/弹窗屏蔽（百度/Google/Bing/360/知乎/微博/B站/优酷/腾讯视频/微信公号/YouTube 等 19 个站点）+ 搜索结果卡片式美化、关键词网址过滤、干净复制、暗黑护眼模式 + 视频倍速、B站画质解锁、YouTube 旋转/翻转/填充+ 划词搜索（多引擎 + 划词翻译，默认开启）。支持配置导入/导出/WebDAV 同步、零数据外传；详细隐私声明与功能说明见主页 README。
 // @icon64       data:image/png;base64,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
@@ -90,7 +90,7 @@
   // 导致「#kw 里输入关键词 → 回车 → 进入 /s?wd=... 搜索结果页后脚本整体失效」的恶性 bug（B-划词-02）。
   const HREF = () => location.href;
   const IS_MOBILE = /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i.test(navigator.userAgent);
-  const VERSION = '1.2.1';
+  const VERSION = '1.3.1';
   // 免责声明指纹：仅当「条款正文」发生实质变化时才会改变，用于判断是否需要重新征询用户同意。
   // 修改免责声明文案时请同步更新此值（改一个字符即可）。
   const LEGAL_HASH = '2026-09-terms-v1';
@@ -903,6 +903,7 @@
     //     由 ncUpdateMenuLabels() 在状态变更时刷新，避免"看不出当前状态、预判不了点下去的结果"。
     'menu.panel':          { 'zh-CN': '⚙️ 打开控制面板', 'en': '⚙️ Open Control Panel' },
     'menu.rescue':         { 'zh-CN': '🔍 本页为什么没净化？', 'en': '🔍 Why is this page not cleaned?' },
+    'menu.feedbackCopy':   { 'zh-CN': '🐞 复制诊断报告', 'en': '🐞 Copy diagnostic report' },
     // 全局暂停（影响所有网站）
     'menu.pauseOn':        { 'zh-CN': '⏸️ 暂停全部网站净化', 'en': '⏸️ Pause blocking on all sites' },
     'menu.pauseOff':       { 'zh-CN': '▶️ 恢复全部网站净化', 'en': '▶️ Resume blocking on all sites' },
@@ -2570,6 +2571,338 @@
     }
   }
 
+  // 非破坏性隐藏：直接 remove() 会删掉站点框架（如 CSDN 的 Vue）仍在虚拟 DOM 中引用的节点，
+  //   后续 patch 可能把子节点 append 到已失效/文本节点上，抛 HierarchyRequestError 并中断渲染（白屏）。
+  //   广告/浮层一律用 display:none!important 隐藏，保留节点本身与框架的引用关系。
+  function ncHideEl(el) {
+    if (!el || !el.style || typeof el.style.setProperty !== 'function') return;
+    try { el.style.setProperty('display', 'none', 'important'); } catch (e) {}
+  }
+
+  /* ================================================================
+   *  问题反馈：错误环 + 本地诊断报告（零上传，绝不自动发送）
+   *  - 报告只在本机生成文本，用户检查后自行复制/下载，再贴到反馈渠道；
+   *  - 配置快照只取布尔/枚举，密码 / Token / 密钥 / 名单内容一律脱敏；
+   *  - URL 默认去掉 query/hash，避免把登录参数等带出去。
+   * ================================================================ */
+  const NC_ERR_LOG = [];
+  const NC_CSDN_DIAG = { runs: 0, ads: 0, iframes: 0, overlays: 0, clean: 0, lastAt: 0 };
+  // 反馈渠道（国内可直连、均不公开邮箱）。留空则按钮提示「未配置」，此时用「复制」把报告发到任意渠道。
+  //   · Gitee Issues：作者创建镜像后填入，如 https://gitee.com/<user>/netclean/issues/new
+  //   · 匿名表单：腾讯问卷 / 问卷星（支持图片上传，普通用户无需账号、无需邮箱）
+  //   · GitHub / GreasyFork 仅作海外用户备选
+  const NC_FEEDBACK = {
+    gitee: 'https://gitee.com/bigoceana/NetClean/issues/new',
+    form: 'https://wj.qq.com/s2/28353691/cmee/',
+    github: 'https://github.com/bigoceans/NetClean/issues/new',
+    greasyfork: 'https://greasyfork.org/scripts/594888/feedback'
+  };
+
+  function ncErrPush(kind, msg, src, line, stack) {
+    try {
+      NC_ERR_LOG.push({
+        t: Date.now(),
+        kind: String(kind || ''),
+        msg: String(msg == null ? '' : msg).slice(0, 600),
+        src: String(src || '').slice(0, 300),
+        line: line || 0,
+        stack: String(stack || '').slice(0, 1500)
+      });
+      if (NC_ERR_LOG.length > 50) NC_ERR_LOG.shift();
+    } catch (e) {}
+  }
+
+  // 启动即挂钩：捕获站点/本脚本的错误与警告（跨域脚本浏览器可能只给 "Script error."）
+  try {
+    window.addEventListener('error', function (e) {
+      if (e && e.target && e.target !== window) return; // 资源加载错误不记
+      ncErrPush('error', e && e.message, e && e.filename, e && e.lineno, e && e.error && e.error.stack);
+    }, true);
+    window.addEventListener('unhandledrejection', function (e) {
+      const r = e && e.reason;
+      ncErrPush('rejection', r && (r.message || r), '', 0, r && r.stack);
+    });
+    const _ncCE = console.error, _ncCW = console.warn;
+    console.error = function () { try { ncErrPush('console.error', Array.prototype.join.call(arguments, ' ')); } catch (e) {} return _ncCE.apply(console, arguments); };
+    console.warn = function () { try { ncErrPush('console.warn', Array.prototype.join.call(arguments, ' ')); } catch (e) {} return _ncCW.apply(console, arguments); };
+  } catch (e) {}
+
+  // 配置快照：只收原始值；敏感键脱敏；名单只报条数（不泄露用户内容）
+  function ncSafeCfgSnapshot(cfg) {
+    const out = {};
+    const b = (cfg && cfg.baidu) || {};
+    Object.keys(b).forEach(function (k) {
+      const v = b[k];
+      if (v && typeof v === 'object') return; // siteOverrides / catOrder 等结构不展开
+      if (/pass|token|key|secret|pwd|credential/i.test(k)) { out[k] = v ? '***' : ''; return; }
+      if (typeof v === 'string' && v.length > 120) { out[k] = v.slice(0, 120) + '…'; return; }
+      out[k] = v;
+    });
+    const tr = (cfg && cfg.selSearchTrans) || {};
+    out.selSearchTrans = {
+      engine: tr.engine, auto: tr.auto, target: tr.target,
+      deeplKey: tr.deeplKey ? '***' : '', baiduId: tr.baiduId ? '***' : '', baiduKey: tr.baiduKey ? '***' : '',
+      customKey: tr.customKey ? '***' : '',
+      customUrl: tr.customUrl ? String(tr.customUrl).replace(/(key|token)=[^&]+/gi, '$1=***') : '',
+      proxyUrl: tr.proxyUrl ? String(tr.proxyUrl).replace(/(key|token)=[^&]+/gi, '$1=***') : ''
+    };
+    const cs = (cfg && cfg.cloudSync) || {};
+    out.cloudSync = {
+      enabled: cs.enabled, type: cs.type, server: cs.server, path: cs.path,
+      username: cs.username ? '***' : '', password: cs.password ? '***' : '',
+      gistToken: cs.gistToken ? '***' : '', oauthToken: cs.oauthToken ? '***' : ''
+    };
+    ['pingbiurl', 'pingbikw', 'scriptBlacklist', 'siteScopeList', 'captchaWhitelist', 'captchaBlacklist'].forEach(function (k) {
+      if (Array.isArray(cfg && cfg[k])) out[k + 'Count'] = cfg[k].length;
+    });
+    return out;
+  }
+
+  function ncBuildDiagnostics(opts) {
+    opts = opts || {};
+    let cfg = {};
+    try { cfg = getConfig() || {}; } catch (e) {}
+    // 精简版：给腾讯问卷「诊断报告」题用（≤1200 字，避免 URL 预填超长）
+    if (opts.compact) {
+      const ua = navigator.userAgent;
+      const browser = /Edg\//.test(ua) ? 'Edge' : (/Firefox\//.test(ua) ? 'Firefox' : (/Chrome\//.test(ua) ? 'Chrome' : (/Safari\//.test(ua) ? 'Safari' : 'Other')));
+      const os = /Windows/.test(ua) ? 'Windows' : (/Mac OS X/.test(ua) ? 'macOS' : (/Android/.test(ua) ? 'Android' : (/iPhone|iPad/.test(ua) ? 'iOS' : 'Other')));
+      const b = (cfg && cfg.baidu) || {};
+      const sw = ['csdnAd', 'csdnExpand', 'csdnClean', 'selectionSearch', 'darkMode', 'baidueye', 'videoSpeed']
+        .map(function (k) { return k + '=' + (b[k] ? 1 : 0); }).join(' ');
+      const app = document.querySelector('#app');
+      const errs = NC_ERR_LOG.slice(-5).map(function (r) {
+        return '[' + r.kind + '] ' + String(r.msg || '').slice(0, 120)
+          + (r.src ? ' (' + String(r.src).split('/').pop() + ':' + r.line + ')' : '');
+      });
+      const C = [];
+      C.push('NetClean 诊断（精简）');
+      C.push('版本: v' + VERSION);
+      C.push('页面: ' + location.hostname + location.pathname);
+      C.push('UA: ' + browser + ' / ' + os);
+      C.push('开关: ' + sw);
+      C.push('CSDN: ' + JSON.stringify(NC_CSDN_DIAG));
+      C.push('页面: bodyText=' + (document.body ? (document.body.innerText || '').length : -1)
+        + ' scrollH=' + ((document.documentElement && document.documentElement.scrollHeight) || -1)
+        + ' app=' + (app ? app.children.length + '/' + ((app.innerText || '').length) : '无'));
+      C.push('错误: ' + (errs.length ? errs.join(' | ') : '无'));
+      return C.join('\n').slice(0, 1200);
+    }
+    const pageUrl = opts.fullUrl ? location.href : (location.origin + location.pathname);
+    const L = [];
+    L.push('# NetClean 问题反馈');
+    L.push('');
+    L.push('## 1. 现象描述');
+    L.push(opts.desc ? String(opts.desc).trim() : '（请补充：哪个页面、点了什么、期望 vs 实际）');
+    L.push('');
+    L.push('## 2. 环境');
+    L.push('- 版本: v' + VERSION);
+    L.push('- 页面: ' + pageUrl);
+    L.push('- UA: ' + navigator.userAgent);
+    L.push('- 平台/语言: ' + (navigator.platform || '-') + ' / ' + (navigator.language || '-'));
+    L.push('- 屏幕: ' + (screen.width || 0) + 'x' + (screen.height || 0) + ' @' + (window.devicePixelRatio || 1) + 'x');
+    L.push('- 视口: ' + (window.innerWidth || 0) + 'x' + (window.innerHeight || 0));
+    L.push('- iframe: ' + (window.top !== window.self));
+    L.push('- 站点: ' + location.hostname);
+    L.push('');
+    if (opts.includeCfg !== false) {
+      L.push('## 3. 开关快照（敏感项已脱敏）');
+      L.push('```json');
+      try { L.push(JSON.stringify(ncSafeCfgSnapshot(cfg), null, 2)); } catch (e) { L.push('{}'); }
+      L.push('```');
+      L.push('');
+    }
+    L.push('## 4. 页面体检');
+    L.push('- title: ' + (document.title || '-'));
+    L.push('- bodyText: ' + (document.body ? (document.body.innerText || '').length : -1));
+    L.push('- scrollHeight: ' + ((document.documentElement && document.documentElement.scrollHeight) || -1));
+    const app = document.querySelector('#app');
+    L.push('- #app: ' + (app ? ('children=' + app.children.length + ', text=' + ((app.innerText || '').length)) : '不存在'));
+    L.push('- CSDN 诊断: ' + JSON.stringify(NC_CSDN_DIAG));
+    L.push('- 关键选择器: ' + JSON.stringify({
+      templateBox: document.querySelectorAll('.template-box').length,
+      adFullWidth: document.querySelectorAll('.ad_fullWidth').length,
+      swiper: document.querySelectorAll('#kp_box_www_swiper').length,
+      kunpeng: document.querySelectorAll('iframe[src*="kunpeng-sc.csdn"]').length
+    }));
+    L.push('');
+    if (opts.includeErr !== false) {
+      L.push('## 5. 最近错误（最多 50 条）');
+      if (!NC_ERR_LOG.length) L.push('（无）');
+      NC_ERR_LOG.slice(-50).forEach(function (r, i) {
+        L.push('### ' + (i + 1) + '. ' + r.kind + ' @ ' + new Date(r.t).toISOString());
+        L.push('- msg: ' + r.msg);
+        if (r.src) L.push('- src: ' + r.src + ':' + r.line);
+        if (r.stack) L.push('```\n' + r.stack + '\n```');
+      });
+      L.push('');
+    }
+    L.push('## 6. 截图');
+    L.push('（脚本无法读取你的屏幕；请按 Win+Shift+S / Cmd+Shift+4 截图后作为附件上传）');
+    L.push('');
+    L.push('## 7. 隐私说明');
+    L.push('本报告由脚本在本机生成，未自动上传；密码 / Token / 密钥 / 名单内容已脱敏。');
+    return L.join('\n');
+  }
+
+  // 腾讯问卷短字段预填：只填能短表达的题（Q4~Q9）；Q1 类型 / Q2 描述 / Q3 必现 / Q11 登录 / Q13 隐私确认 由用户选。
+  function ncBuildFormUrl() {
+    const base = NC_FEEDBACK.form;
+    if (!base) return '';
+    const ua = navigator.userAgent;
+    const browser = /Edg\//.test(ua) ? 'A1' : (/Firefox\//.test(ua) ? 'A2' : (/Safari\//.test(ua) && !/Chrome\//.test(ua) ? 'A3' : 'A4'));
+    let mgr = 'A4';
+    try {
+      const h = String((typeof GM_info !== 'undefined' && GM_info.scriptHandler) || '');
+      if (/Tampermonkey/i.test(h)) mgr = 'A1';
+      else if (/Violentmonkey/i.test(h)) mgr = 'A2';
+      else if (/Greasemonkey/i.test(h)) mgr = 'A3';
+    } catch (e) {}
+    let cfg = {};
+    try { cfg = getConfig() || {}; } catch (e) {}
+    const b = (cfg && cfg.baidu) || {};
+    const sw = [];
+    if (b.csdnAd) sw.push('A1');
+    if (b.csdnExpand) sw.push('A2');
+    if (b.csdnClean) sw.push('A3');
+    if (b.selectionSearch) sw.push('A4');
+    if (b.darkMode) sw.push('A5');
+    if (b.baidueye) sw.push('A6');
+    if (b.videoSpeed && Number(b.videoSpeed) !== 1) sw.push('A7');
+    const params = [];
+    if (sw.length) params.push('Q8=' + sw.join(','));
+    params.push('Q4=' + encodeURIComponent(location.hostname + location.pathname));
+    params.push('Q5=' + browser);
+    params.push('Q6=' + mgr);
+    params.push('Q7=' + encodeURIComponent('v' + VERSION));
+    const compact = ncBuildDiagnostics({ compact: true });
+    if (compact.length <= 1200) {
+      const enc = encodeURIComponent(compact);
+      if (enc.length <= 1600) params.push('Q9=' + enc);
+    }
+    return base + (base.indexOf('?') >= 0 ? '&' : '?') + params.join('&');
+  }
+
+  function ncCopyText(text) {
+    try {
+      if (typeof GM_setClipboard === 'function') { GM_setClipboard(String(text), 'text'); return true; }
+      if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(String(text)); return true; }
+      const ta = document.createElement('textarea');
+      ta.value = String(text); ta.style.cssText = 'position:fixed;left:-9999px;top:0';
+      document.body.appendChild(ta); ta.focus(); ta.select();
+      if (document.execCommand) document.execCommand('copy');
+      ta.remove();
+      return true;
+    } catch (e) { return false; }
+  }
+
+  // 一键反馈：gitee = 完整报告 + 打开 Gitee；form = 精简报告 + 打开问卷（短字段预填）
+  function ncOpenFeedback(channel, desc) {
+    if (channel === 'gitee') {
+      const r = ncBuildDiagnostics({ desc: desc || '（未填写描述）', fullUrl: false, includeCfg: true, includeErr: true });
+      ncCopyText(r);
+      if (NC_FEEDBACK.gitee) { try { window.open(NC_FEEDBACK.gitee, '_blank', 'noopener'); } catch (e) {} }
+      return r;
+    }
+    const r = ncBuildDiagnostics({ compact: true });
+    ncCopyText(r);
+    const u = ncBuildFormUrl();
+    if (u) { try { window.open(u, '_blank', 'noopener'); } catch (e) {} }
+    return r;
+  }
+
+  function ncCopyDiagnostics() {
+    const r = ncBuildDiagnostics({ desc: '（通过油猴菜单复制，未填写描述）', fullUrl: false, includeCfg: true, includeErr: true });
+    try {
+      if (typeof GM_setClipboard === 'function') GM_setClipboard(r, 'text');
+      else if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(r);
+    } catch (e) {}
+    try {
+      if (typeof zkToast === 'function') zkToast('诊断报告已复制，请粘贴到反馈渠道', { type: 'ok', dur: 2600 });
+      else alert('诊断报告已复制到剪贴板，请粘贴到反馈渠道。');
+    } catch (e) {}
+  }
+
+  // 把「问题反馈」面板接到 About 页：生成/复制/下载报告 + 截图粘贴预览 + 渠道跳转
+  function ncWireFeedback(root) {
+    if (!root) return;
+    const q = (s) => root.querySelector(s);
+    const input = q('#zk-fb-input'), out = q('#zk-fb-out');
+    if (!input || !out) return;
+    const optUrl = q('#zk-fb-opt-url'), optCfg = q('#zk-fb-opt-cfg'), optErr = q('#zk-fb-opt-err');
+    function gen() {
+      out.value = ncBuildDiagnostics({
+        desc: input.value,
+        fullUrl: !!(optUrl && optUrl.checked),
+        includeCfg: !(optCfg && !optCfg.checked),
+        includeErr: !(optErr && !optErr.checked)
+      });
+      try { out.focus(); out.select(); } catch (e) {}
+    }
+    const bGen = q('#zk-fb-gen'); if (bGen) bGen.onclick = gen;
+    const bCopy = q('#zk-fb-copy');
+    if (bCopy) bCopy.onclick = function () {
+      if (!out.value) gen();
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(out.value);
+        else if (typeof GM_setClipboard === 'function') GM_setClipboard(out.value, 'text');
+        else { out.focus(); out.select(); if (document.execCommand) document.execCommand('copy'); }
+      } catch (e) {}
+      try { if (typeof zkToast === 'function') zkToast('报告已复制', { type: 'ok', dur: 1600 }); } catch (e) {}
+    };
+    const bDl = q('#zk-fb-dl');
+    if (bDl) bDl.onclick = function () {
+      if (!out.value) gen();
+      try {
+        const blob = new Blob([out.value], { type: 'text/plain;charset=utf-8' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'netclean-feedback-' + Date.now() + '.txt';
+        document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(function () { try { URL.revokeObjectURL(a.href); } catch (e) {} }, 1000);
+      } catch (e) {}
+    };
+    function openExt(u, name) {
+      if (!u) { try { if (typeof zkToast === 'function') zkToast(name + ' 尚未配置，请先用「复制」把报告发到任意渠道', { type: 'warn', dur: 2800 }); } catch (e) {} return; }
+      try { window.open(u, '_blank', 'noopener'); } catch (e) {}
+    }
+    const bG = q('#zk-fb-gitee');
+    if (bG) bG.onclick = function () {
+      ncOpenFeedback('gitee', input.value);
+      try { if (typeof zkToast === 'function') zkToast('完整报告已复制；到 Gitee 新建 Issue 里 Ctrl+V 粘贴（截图也可直接粘贴）', { type: 'ok', dur: 3200 }); } catch (e) {}
+    };
+    const bF = q('#zk-fb-form');
+    if (bF) bF.onclick = function () {
+      ncOpenFeedback('form', input.value);
+      try { if (typeof zkToast === 'function') zkToast('精简报告已复制；问卷里粘贴到「诊断报告」，截图上传到「截图」题', { type: 'ok', dur: 3200 }); } catch (e) {}
+    };
+    const bGh = q('#zk-fb-github'); if (bGh) bGh.onclick = function () { openExt(NC_FEEDBACK.github, 'GitHub Issues'); };
+    // 截图：粘贴 / 文件选择 → 预览 + 下载（脚本无法读取屏幕，必须用户手动截图）
+    const shot = q('#zk-fb-shot'), img = q('#zk-fb-shot-img');
+    let shotUrl = '';
+    function showShot(file) {
+      if (!file || !/^image\//.test(file.type || '')) return;
+      try { if (shotUrl) URL.revokeObjectURL(shotUrl); shotUrl = URL.createObjectURL(file); } catch (e) { return; }
+      if (img) { img.src = shotUrl; img.style.display = 'block'; }
+      const s1 = q('#zk-fb-shot-save'), s2 = q('#zk-fb-shot-clear');
+      if (s1) { s1.style.display = ''; s1.onclick = function () { const a = document.createElement('a'); a.href = shotUrl; a.download = 'netclean-screenshot-' + Date.now() + '.png'; document.body.appendChild(a); a.click(); a.remove(); }; }
+      if (s2) { s2.style.display = ''; s2.onclick = function () { if (img) { img.src = ''; img.style.display = 'none'; } if (s1) s1.style.display = 'none'; s2.style.display = 'none'; try { if (shotUrl) URL.revokeObjectURL(shotUrl); } catch (e) {} shotUrl = ''; }; }
+    }
+    if (shot) {
+      shot.addEventListener('paste', function (e) {
+        const items = (e.clipboardData && e.clipboardData.items) || [];
+        for (let i = 0; i < items.length; i++) {
+          if (items[i].kind === 'file') { const f = items[i].getAsFile(); if (f) { showShot(f); e.preventDefault(); return; } }
+        }
+      });
+      shot.addEventListener('click', function () { try { shot.focus(); } catch (e) {} });
+      const fi = document.createElement('input'); fi.type = 'file'; fi.accept = 'image/*'; fi.style.display = 'none';
+      fi.addEventListener('change', function () { if (fi.files && fi.files[0]) showShot(fi.files[0]); });
+      shot.appendChild(fi);
+      shot.addEventListener('dblclick', function () { try { fi.click(); } catch (e) {} });
+    }
+  }
+
   // 划词工具条 / 翻译卡水平夹取：两者都以 transform: translateX(-50%) 居中，
   //   当选中文字或网址贴近视口左右边缘时，中心点不被约束会让半个浮层溢出屏幕
   //   （左侧最开头的按钮直接看不见）。这里按浮层实际宽度把中心点夹到
@@ -3012,6 +3345,8 @@
   try { ncMenuUpsert('pauseToggle', ncMenuLabelPauseGlobal(), ncTogglePauseGlobal); } catch (e) { console.error('[NetClean] 阶段 0 暂停菜单注册失败', e); }
   try { ncMenuUpsert('pauseSite', ncMenuLabelPauseSite(), ncTogglePauseSite); } catch (e) { console.error('[NetClean] 阶段 0 本站暂停菜单注册失败', e); }
   try { ncMenuUpsert('rescue', t('menu.rescue'), ncOpenRescue); } catch (e) { console.error('[NetClean] 阶段 0 急救菜单注册失败', e); }
+  // 面板打不开时的兜底：直接从油猴菜单复制诊断报告（不依赖任何 UI）
+  try { ncMenuUpsert('feedbackCopy', t('menu.feedbackCopy'), ncCopyDiagnostics); } catch (e) { console.error('[NetClean] 阶段 0 诊断菜单注册失败', e); }
 
   // ⚠ 启动早退闸统一走 `NC_EARLY_EXIT_HIT` 标记，**不能直接 return**：
   //   本 IIFE 在闸门之后还有大量顶层 const/let（onDomReady / setInterval / HELP / groups 等，L2618~L6094）。
@@ -3567,7 +3902,7 @@
         '.wwads-cn.wwads-vertical,.ad_fullWidth,#kp_box_blog_up,#kp_box_www_swiper{display:none!important}',
         '#blogExtensionBox,#kunpeng-sc-csdn-ad,.recommend-right,.recommend-ad-box{display:none!important}',
         '.passport-login-container,.weixin-shadowbox.wap-shadowbox,.hide-article-box.hide-article-pos.text-center,.readall_box{display:none!important}',
-        '.csdn-side-toolbar .toolbar-ad,.csdn-toolbar-ad,.template-box,.recommend-box{display:none!important}',
+        '.csdn-side-toolbar .toolbar-ad,.csdn-toolbar-ad,.recommend-box{display:none!important}',
         '.blog_container_aside .aside-box.kind_person,.csdn-ads,.article-info-box{display:none!important}'
       );
     }
@@ -5207,9 +5542,18 @@
     const cfg = getScriptCfg();
 
     if (cfg.csdnAd === true) {
-      $$('.wwads-cn.wwads-vertical,.ad_fullWidth,#kp_box_blog_up,#kp_box_www_swiper,#blogExtensionBox,.recommend-right,.recommend-ad-box,.csdn-toolbar-ad,.template-box').forEach(el => el.remove());
-      $$('iframe[src*="kunpeng-sc.csdn"]').forEach(el => el.remove());
-      $$('.passport-login-container,.weixin-shadowbox.wap-shadowbox,.hide-article-box.hide-article-pos.text-center,.readall_box').forEach(el => el.remove());
+      // 【CSDN 白屏修复】原先 el.remove() 会破坏 CSDN Vue 的虚拟 DOM 引用 → patch 抛
+      //   HierarchyRequestError（appendChild on text node）→ 首页信息流渲染中断、整页空白。
+      //   改为非破坏性隐藏；并移除语义模糊的 .template-box（它可能是首页/文章的信息流模板，
+      //   删掉就是整块空白），只保留明确的广告位。
+      const _adEls = $$('.wwads-cn.wwads-vertical,.ad_fullWidth,#kp_box_blog_up,#kp_box_www_swiper,#blogExtensionBox,.recommend-right,.recommend-ad-box,.csdn-toolbar-ad,.csdn-ads');
+      const _ifrEls = $$('iframe[src*="kunpeng-sc.csdn"]');
+      const _ovlEls = $$('.passport-login-container,.weixin-shadowbox.wap-shadowbox,.hide-article-box.hide-article-pos.text-center,.readall_box');
+      NC_CSDN_DIAG.ads = _adEls.length; NC_CSDN_DIAG.iframes = _ifrEls.length; NC_CSDN_DIAG.overlays = _ovlEls.length;
+      NC_CSDN_DIAG.runs++; NC_CSDN_DIAG.lastAt = Date.now();
+      _adEls.forEach(ncHideEl);
+      _ifrEls.forEach(ncHideEl);
+      _ovlEls.forEach(ncHideEl);
     }
 
     // 展开全文 + 代码块
@@ -5232,9 +5576,9 @@
 
     // 纯净阅读模式
     if (cfg.csdnClean === true && inHref('blog.csdn.net')) {
-      $$('.blog_container_aside,.aside-box,.recommend-box,.first-recommend-box,.template-box,.csdn-side-toolbar').forEach(el => {
-        el.style.display = 'none';
-      });
+      const _cleanEls = $$('.blog_container_aside,.aside-box,.recommend-box,.first-recommend-box,.template-box,.csdn-side-toolbar');
+      NC_CSDN_DIAG.clean = _cleanEls.length;
+      _cleanEls.forEach(ncHideEl);
       const main = $('#mainBox, main, .blog-content-box');
       if (main) {
         main.style.margin = '0 auto';
@@ -7815,6 +8159,23 @@
       .zk-about-a .zk-help-sec:last-child{margin-bottom:0}
       .zk-about-a h4{margin:0 0 4px;font-size:12px;color:#1677ff}
       .zk-about-a p{margin:0;font-size:12px;color:#475569;line-height:1.65}
+      /* —— 问题反馈（About 页）—— */
+      .zk-fb{margin:0 0 14px;border:1px solid #dbeafe;border-radius:12px;background:linear-gradient(180deg,#f8fbff,#f3f8ff);padding:14px 16px}
+      .zk-fb-title{font-size:14px;font-weight:700;color:#0f172a;margin-bottom:6px}
+      .zk-fb-desc{font-size:12px;color:#475569;line-height:1.7;margin:0 0 10px}
+      .zk-fb-input{width:100%;min-height:64px;resize:vertical;border:1px solid #cbd5e1;border-radius:8px;padding:8px 10px;font-size:12.5px;line-height:1.6;outline:none;box-sizing:border-box;background:#fff;color:#1e293b;font-family:inherit}
+      .zk-fb-input:focus{border-color:#1677ff;box-shadow:0 0 0 3px rgba(22,119,255,.1)}
+      .zk-fb-opts{display:flex;flex-wrap:wrap;gap:6px 16px;margin:8px 0;font-size:12px;color:#475569}
+      .zk-fb-opts label{display:inline-flex;align-items:center;gap:5px;cursor:pointer}
+      .zk-fb-actions{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+      .zk-fb-tip{margin:0 0 8px;font-size:11px;color:#64748b;line-height:1.7}
+      .zk-fb-out{width:100%;min-height:180px;resize:vertical;border:1px solid #cbd5e1;border-radius:8px;padding:8px 10px;font-size:12px;font-family:Consolas,Menlo,monospace;line-height:1.55;background:#fff;color:#1e293b;box-sizing:border-box;white-space:pre;overflow:auto}
+      .zk-fb-shot{margin-top:10px;border:1px dashed #93c5fd;border-radius:10px;padding:10px 12px;background:#fff;outline:none;cursor:pointer}
+      .zk-fb-shot:focus{border-color:#1677ff;box-shadow:0 0 0 3px rgba(22,119,255,.1)}
+      .zk-fb-shot-hint{font-size:12px;color:#475569;line-height:1.7}
+      .zk-fb-shot-img{display:block;max-width:100%;max-height:240px;margin-top:8px;border-radius:8px;border:1px solid #e2e8f0}
+      .zk-fb-shot-acts{display:flex;gap:8px;margin-top:8px}
+      .zk-fb-privacy{margin:10px 0 0;font-size:11px;color:#94a3b8;line-height:1.7}
       /* —— 侧栏分类拖拽态 —— */
       #zk-set-settings-sidebar .zk-set-cat{cursor:grab}
       #zk-set-settings-sidebar .zk-set-cat:active{cursor:grabbing}
@@ -8637,11 +8998,41 @@
               <p class="zk-about-links">项目主页 · 更新日志 · 问题反馈：<a href="https://greasyfork.org/scripts/594888/feedback" target="_blank" rel="noopener">GreasyFork</a><span class="zk-about-sep">｜</span><a href="https://github.com/bigoceans/NetClean/issues" target="_blank" rel="noopener">GitHub Issues</a></p>
             </div>
           </details>
+          <div class="zk-fb" id="zk-fb">
+            <div class="zk-fb-title">🐞 问题反馈</div>
+            <p class="zk-fb-desc">遇到问题？填一句现象，点「生成报告」。报告只在本机生成、不会自动上传；密码 / Token / 名单内容会自动脱敏，确认后再发到反馈渠道。</p>
+            <textarea class="zk-fb-input" id="zk-fb-input" placeholder="简单描述发生了什么：哪个页面、点了什么、期望 vs 实际"></textarea>
+            <div class="zk-fb-opts">
+              <label><input type="checkbox" id="zk-fb-opt-url"> 包含完整 URL（默认去掉 ? 参数与 # 片段）</label>
+              <label><input type="checkbox" id="zk-fb-opt-cfg" checked> 包含开关快照（敏感项脱敏）</label>
+              <label><input type="checkbox" id="zk-fb-opt-err" checked> 包含最近错误日志</label>
+            </div>
+            <div class="zk-fb-actions">
+              <button class="zkss-btn" id="zk-fb-gen">生成报告</button>
+              <button class="zkss-btn" id="zk-fb-copy">复制</button>
+              <button class="zkss-btn" id="zk-fb-dl">下载 .txt</button>
+              <button class="zkss-btn" id="zk-fb-gitee">🔗 完整报告 → Gitee</button>
+              <button class="zkss-btn" id="zk-fb-form">📝 精简报告 → 问卷</button>
+              <button class="zkss-btn" id="zk-fb-github">GitHub（海外）</button>
+            </div>
+            <p class="zk-fb-tip">Gitee：完整报告 + 截图都能直接 Ctrl+V；问卷：短字段自动带上，精简报告粘贴到「诊断报告」，截图上传到「截图」题。</p>
+            <textarea class="zk-fb-out" id="zk-fb-out" readonly placeholder="生成的报告会出现在这里"></textarea>
+            <div class="zk-fb-shot" id="zk-fb-shot" tabindex="0">
+              <div class="zk-fb-shot-hint">📷 <b>截图</b>：按 <b>Win+Shift+S</b>（Windows）或 <b>Cmd+Shift+4</b>（Mac）截图，然后点这里按 <b>Ctrl+V</b> 粘贴预览。脚本无法读取你的屏幕，截图需你手动附到反馈里。</div>
+              <img class="zk-fb-shot-img" id="zk-fb-shot-img" alt="截图预览" style="display:none">
+              <div class="zk-fb-shot-acts">
+                <button class="zkss-btn" id="zk-fb-shot-save" style="display:none">下载截图</button>
+                <button class="zkss-btn" id="zk-fb-shot-clear" style="display:none">移除</button>
+              </div>
+            </div>
+            <p class="zk-fb-privacy">隐私：报告只在本机生成，不含密码 / Token / 云同步凭证 / 名单内容；是否发送、发到哪里由你决定。</p>
+          </div>
           <input class="zk-about-search" type="text" placeholder="搜索功能说明（如 广告 / 验证码 / 翻译 / 画质）">
           <div class="zk-about-list">${items}</div>
         </div>`;
       // 顶部数据看板（B6）：单独渲染，切换趋势天数时只重绘这一块
       buildAboutDash(root);
+      ncWireFeedback(root);
       const list = root.querySelector('.zk-about-list');
       list.querySelectorAll('.zk-about-q').forEach(q => {
         q.addEventListener('click', () => {

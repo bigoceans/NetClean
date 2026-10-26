@@ -4,10 +4,10 @@
 > 全部配置仅保存在你本地浏览器，**零数据外传**。
 
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
-![version](https://img.shields.io/badge/version-1.2.1-brightgreen.svg)
+![version](https://img.shields.io/badge/version-1.3.1-brightgreen.svg)
 ![tampermonkey](https://img.shields.io/badge/Tampermonkey-4.19%2B-orange.svg)
-![size](https://img.shields.io/badge/size-~818KB-lightgrey.svg)
-![verified](https://img.shields.io/badge/verify-1013%2F1013-brightgreen.svg)
+![size](https://img.shields.io/badge/size-~841KB-lightgrey.svg)
+![verified](https://img.shields.io/badge/verify-1036%2F1036-brightgreen.svg)
 ![audit](https://img.shields.io/badge/audit-P0%3A0%20P1%3A0-blue.svg)
 
 ---
@@ -567,29 +567,30 @@ A: 欢迎 PR / Issue！
 > 📖 **完整版本史见 [CHANGELOG.md](CHANGELOG.md)** —— 那里记录每个版本的根因分析、实现要点与踩坑（含 CSS 破损定位、flex `basis:0` 陷阱、IIFE 顶层 TDZ、变异测试等），面向维护者与源码读者。
 > 本节只保留**最近两版的用户向摘要**，每条一行。
 
-### v1.2.1（当前版本 · 2026-10-26）
+### v1.3.1（当前版本 · 2026-10-26）
 
-用户反馈修复版 —— 两项「用户直接感知」的 bug 修复，无新功能开关。
+反馈渠道接线版 —— 把 v1.3.0 的反馈面板真正接到 Gitee 与腾讯问卷，并加上「完整报告 / 精简报告」两条一键路径。
 
-**🐞 修复**
-- **CSDN 设置面板闪退**：在 CSDN 开启自动展开后点「打开控制面板」，面板会闪一下即退出 —— 原因是脚本自己的程序化点击被误判为「点了面板外部」；现只对**真实用户点击**生效。
-- **划词工具条贴边溢出**：在最左侧 / 最右侧选中词或网址时，工具条最开头的按钮跑到屏幕外；现按工具条实际宽度把位置夹取在视口内（翻译卡同步修复）。
+**🔗 反馈**
+- **Gitee**：点「🔗 完整报告 → Gitee」→ 完整报告进剪贴板 + 打开 Gitee 新建 Issue；截图可直接在 Issue 正文 `Ctrl+V`。
+- **腾讯问卷**：点「📝 精简报告 → 问卷」→ 精简报告进剪贴板 + 打开匿名问卷；Q4 网址 / Q5 浏览器 / Q6 管理器 / Q7 版本 / Q8 开关 / Q9 精简报告自动预填；截图上传到问卷「截图」题。
+- 新增 `ncBuildDiagnostics({ compact: true })`：≤1200 字精简诊断，适合问卷粘贴 / URL 预填；完整版仍走 Gitee。
+- 渠道地址已写入 `NC_FEEDBACK`，并加回归断言：必须 `https://`，且不含邮箱 / `mailto:` / `token` / `key=` / `password` / `secret`。
 
-**验证**：全量回归 **37 个 verify 脚本 / 1013 项断言 / 失败 0 / EXIT=0**（含口径守卫 `verify_doc_consistency.js` 25 项）。
+**验证**：全量回归 **39 个 verify 脚本 / 1036 项断言 / 失败 0 / EXIT=0**（含口径守卫 `verify_doc_consistency.js` 25 项）。
 
-### v1.2.0（2026-09-16）
+### v1.3.0（2026-10-26）
 
-工程护栏 + 可观测性版 —— 先把「已经做对的事」变成「不会退步的事」，再补上让用户直接感知的新能力。
+问题反馈 / 诊断报告版 —— 让「遇到问题」变成「一键生成可诊断的报告」，且报告只在本机生成、零自动上传。
 
-**🧹 代码洁癖 / 工程护栏**
-- 清除两个**只写不读的死 GM 键**（`legalAcceptedVersion`、`allconfigtime`）与 `CONFIG_TIME` 魔法数。
-- **配置迁移链到期排空**：唯一的历史迁移（v1.0.8 名单合并）`deprecateAt` 已到 v1.2.0；其中唯一有价值的动作（删老配置里的废弃字段）降级为启动时幂等清理，并补上「无版本号老配置盖章到当前 schema 版本」的兜底。
-- **收敛重复实现**：响应体提取表达式原先 **6 处逐字节重复** → 统一 `ncReadResp()`。
-- **云端接口 JSON 解析加固**：Gist / Dropbox / OneDrive / Google Drive / Yandex 共 **10 处**裸 `JSON.parse(responseText)` → `ncSafeJsonParse()`，返回非 JSON 时给出可读错误而非含混的 SyntaxError。
-- **关键静默失败补日志**：广告选择器计数、云同步失败落盘、云同步失败提示、云同步成功落盘、B站 player/v2 响应改写，共 **5 处** catch 不再吞错。
-- **回归基建修补**：**21 个守卫脚本此前硬编码脚本路径、不读 `NC_SCRIPT`，导致变异测试喂不进变异体（断言恒对干净源码恒绿）** —— 现已全部接入，整套 37 个守卫真正可变异测试。
+**🆕 新增**
+- **问题反馈面板**：「关于」页新增反馈区：填一句现象 → 自动带出版本 / 环境 / 开关快照 / 最近错误 / 页面体检 → 一键复制或下载 .txt。
+- **截图粘贴预览**：按 Win+Shift+S / Cmd+Shift+4 截图后，在反馈区 Ctrl+V 即可预览、下载；脚本无法读取你的屏幕。
+- **国内可直连的反馈渠道**：Gitee Issues / 匿名反馈表单（普通用户无需账号、不公开邮箱）；GitHub / GreasyFork 仅作海外备选。「复制报告」始终可用，可发到任意渠道。
+- **隐私优先**：报告只在本机生成、**不做任何自动上传**；密码 / Token / 密钥 / 名单内容自动脱敏；URL 默认去掉 ? 参数与 # 片段。
+- **面板打不开也能反馈**：油猴菜单新增「🐞 复制诊断报告」，不依赖面板 UI 即可复制报告。
 
-**验证**：全量回归 **37 个 verify 脚本 / 997 项断言 / 失败 0 / EXIT=0**（含口径守卫 `verify_doc_consistency.js` 25 项），14 组变异测试全部被捕获。
+**验证**：全量回归 **39 个 verify 脚本 / 1031 项断言 / 失败 0 / EXIT=0**（含口径守卫 `verify_doc_consistency.js` 25 项）。
 
 ### 更早版本
 
@@ -687,5 +688,5 @@ SOFTWARE.
 ---
 
 **最后更新**：2026-10-26
-**当前版本**：v1.2.1
+**当前版本**：v1.3.1
 **作者**：bigoceans
