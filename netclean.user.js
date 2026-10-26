@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         全网净化大师 NetClean — 广告过滤 + 划词搜索 + 搜索美化
 // @namespace    https://github.com/bigoceans
-// @version      1.1.0
+// @version      1.2.1
 // @author       bigoceans
 // @description  全站广告/弹窗屏蔽（百度/Google/Bing/360/知乎/微博/B站/优酷/腾讯视频/微信公号/YouTube 等 19 个站点）+ 搜索结果卡片式美化、关键词网址过滤、干净复制、暗黑护眼模式 + 视频倍速、B站画质解锁、YouTube 旋转/翻转/填充+ 划词搜索（多引擎 + 划词翻译，默认开启）。支持配置导入/导出/WebDAV 同步、零数据外传；详细隐私声明与功能说明见主页 README。
 // @icon64       data:image/png;base64,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
@@ -90,7 +90,7 @@
   // 导致「#kw 里输入关键词 → 回车 → 进入 /s?wd=... 搜索结果页后脚本整体失效」的恶性 bug（B-划词-02）。
   const HREF = () => location.href;
   const IS_MOBILE = /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i.test(navigator.userAgent);
-  const VERSION = '1.1.0';
+  const VERSION = '1.2.1';
   // 免责声明指纹：仅当「条款正文」发生实质变化时才会改变，用于判断是否需要重新征询用户同意。
   // 修改免责声明文案时请同步更新此值（改一个字符即可）。
   const LEGAL_HASH = '2026-09-terms-v1';
@@ -429,7 +429,7 @@
                 added++;
               }
             });
-          } catch(e) {}
+          } catch (e) { dbg('[NetClean] 广告选择器计数失败（选择器：' + sel + '）', e); }
         });
       }
     }
@@ -652,7 +652,8 @@
     configVersion: 1
   };
 
-  const CONFIG_TIME = 1770000000;
+  // v1.2.0 起移除 `CONFIG_TIME = 1770000000`：B4 引入 configVersion + MIGRATIONS 链后，
+  //   它唯一的使用点（启动时写入旧 allconfigtime 键）已随迁移链排空一并删除。
   const FAVICON_API = 'https://favicon.yandex.net/favicon/v2/';
 
   // 安全的 favicon 插入：inline-flex 容器，按当前字体大小缩放，与标题中线对齐
@@ -1456,7 +1457,7 @@
           cfg.cloudSync.lastSyncError = text;
           cfg.cloudSync.lastSyncOk = false;
           writeConfig(cfg, true); // skipSync：避免写盘又触发 scheduleCloudSyncUp 递归
-        } catch (e) {}
+        } catch (e) { dbg('[NetClean] 云同步失败状态落盘失败（下一轮仍会重试）', e); }
       }
     }
     try {
@@ -1469,7 +1470,7 @@
         _cloudLastFailNotifyAt = now2;
         if (typeof zkToast === 'function') zkToast('云同步失败：' + text + tries, { type: 'warn', dur: 5000 });
       }
-    } catch (e) {}
+    } catch (e) { dbg('[NetClean] 云同步失败提示发送失败', e); }
   }
   // 自动同步成功：清零失败计数并清除持久化的错误状态
   function _clearCloudSyncFailure() {
@@ -1481,7 +1482,7 @@
         cfg.cloudSync.lastSyncOk = true;
         writeConfig(cfg, true); // skipSync：避免上传成功后回写又触发一次上传
       }
-    } catch (e) {}
+    } catch (e) { dbg('[NetClean] 云同步成功状态落盘失败', e); }
   }
   // 下载失败统一出口：记账 + 节流提示，再原样返回 { ok:false, msg } 供调用方使用
   function _cloudSyncDownFail(force, msg) {
@@ -1545,7 +1546,7 @@
         if (r.status === 404) return _cloudSyncDownFail(force, '云端暂无配置文件（先用「上传到云端」创建）');
         if (r.status === 401) return _cloudSyncDownFail(force, 'HTTP 401：账号或密码错误（坚果云需用「应用密码」而非登录密码）');
         if (r.status < 200 || r.status >= 300) return _cloudSyncDownFail(force, '下载失败 HTTP ' + r.status);
-        content = String(r.responseText == null ? (r.response == null ? '' : r.response) : r.responseText);
+        content = ncReadResp(r);
       } else {
         const listRes = await p.list(cfg);
         if (!listRes.ok) return _cloudSyncDownFail(force, listRes.msg);
@@ -1914,7 +1915,7 @@
         try {
           const r = await webdavRequestUrl(item.raw.href, { method: 'GET' });
           if (r.status < 200 || r.status >= 300) return { ok: false, msg: '下载失败 HTTP ' + r.status };
-          return { ok: true, content: String(r.responseText == null ? (r.response == null ? '' : r.response) : r.responseText) };
+          return { ok: true, content: ncReadResp(r) };
         } catch(e) { return { ok: false, msg: e.message }; }
       },
       async deleteItem(cfg, item) {
@@ -1969,7 +1970,7 @@
           const r = await this._request(cs.gistToken, { url: 'https://api.github.com/user', method: 'GET' });
           if (r.status === 401) return { ok: false, msg: '令牌无效或已过期' };
           if (r.status < 200 || r.status >= 300) return { ok: false, msg: '连接失败 HTTP ' + r.status };
-          const u = JSON.parse(r.responseText || '{}');
+          const u = ncSafeJsonParse(r.responseText || '{}');
           return { ok: true, msg: 'GitHub 连接正常（' + (u.login || 'unknown') + '）' };
         } catch(e) { return { ok: false, msg: e.message }; }
       },
@@ -1979,7 +1980,7 @@
         try {
           const r = await this._request(cs.gistToken, { url: 'https://api.github.com/gists?per_page=100', method: 'GET' });
           if (r.status < 200 || r.status >= 300) return { ok: false, msg: '列出 Gist 失败 HTTP ' + r.status };
-          const gists = JSON.parse(r.responseText || '[]');
+          const gists = ncSafeJsonParse(r.responseText || '[]');
           const files = [];
           gists.forEach(g => {
             const fname = Object.keys(g.files || {})[0];
@@ -1998,7 +1999,7 @@
           const payload = JSON.stringify({ description: cs.gistDescription || 'NetClean config backup', public: false, files: { [filename]: { content: body } } });
           const r = await this._request(cs.gistToken, { url: 'https://api.github.com/gists', method: 'POST', data: payload });
           if (r.status < 200 || r.status >= 300) return { ok: false, msg: '创建 Gist 失败 HTTP ' + r.status };
-          const g = JSON.parse(r.responseText || '{}');
+          const g = ncSafeJsonParse(r.responseText || '{}');
           return { ok: true, msg: '已备份到 Gist：' + (g.id || filename), id: g.id };
         } catch(e) { return { ok: false, msg: e.message }; }
       },
@@ -2007,7 +2008,7 @@
         try {
           const r = await this._request(cs.gistToken, { url: 'https://api.github.com/gists/' + item.id, method: 'GET' });
           if (r.status < 200 || r.status >= 300) return { ok: false, msg: '读取 Gist 失败 HTTP ' + r.status };
-          const g = JSON.parse(r.responseText || '{}');
+          const g = ncSafeJsonParse(r.responseText || '{}');
           const fname = item.name;
           const f = (g.files && g.files[fname]) || Object.values(g.files || {})[0];
           if (!f) return { ok: false, msg: 'Gist 中未找到备份文件' };
@@ -2079,7 +2080,7 @@
         try {
           const r = await this._request(cs.oauthToken, { url: 'https://api.dropboxapi.com/2/files/list_folder', method: 'POST', json: true, data: JSON.stringify({ path: folder === '/' ? '' : folder }) });
           if (r.status < 200 || r.status >= 300) return { ok: false, msg: '列出文件失败 HTTP ' + r.status + ' ' + (r.responseText || '') };
-          const data = JSON.parse(r.responseText || '{}');
+          const data = ncSafeJsonParse(r.responseText || '{}');
           const files = (data.entries || []).filter(e => e['.tag'] === 'file' && /^netclean-(backup|config)/i.test(e.name)).map(e => ({ id: e.id, name: e.name, size: e.size || 0, mtime: new Date(e.client_modified || e.server_modified).getTime(), raw: e }));
           return { ok: true, files, mainName: null };
         } catch(e) { return { ok: false, msg: e.message }; }
@@ -2120,7 +2121,7 @@
             headers: { 'Dropbox-API-Arg': JSON.stringify({ path: item.raw.path_lower || item.raw.path_display }) }
           });
           if (r.status < 200 || r.status >= 300) return { ok: false, msg: '下载失败 HTTP ' + r.status };
-          return { ok: true, content: String(r.responseText == null ? (r.response == null ? '' : r.response) : r.responseText) };
+          return { ok: true, content: ncReadResp(r) };
         } catch(e) { return { ok: false, msg: e.message }; }
       },
       async deleteItem(cfg, item) {
@@ -2199,7 +2200,7 @@
           const url = this._base + encodeURIComponent(folder).replace(/%2F/g, '/') + ':/children';
           const r = await this._request(cs.oauthToken, { url, method: 'GET' });
           if (r.status < 200 || r.status >= 300) return { ok: false, msg: '列出文件失败 HTTP ' + r.status };
-          const data = JSON.parse(r.responseText || '{}');
+          const data = ncSafeJsonParse(r.responseText || '{}');
           const files = (data.value || []).filter(e => e.file && /^netclean-(backup|config)/i.test(e.name)).map(e => ({ id: e.id, name: e.name, size: e.size || 0, mtime: new Date(e.lastModifiedDateTime || 0).getTime(), raw: e }));
           return { ok: true, files, mainName: null };
         } catch(e) { return { ok: false, msg: e.message }; }
@@ -2219,7 +2220,7 @@
         try {
           const r = await this._request(cs.oauthToken, { url: 'https://graph.microsoft.com/v1.0/me/drive/items/' + item.id + '/content', method: 'GET' });
           if (r.status < 200 || r.status >= 300) return { ok: false, msg: '下载失败 HTTP ' + r.status };
-          return { ok: true, content: String(r.responseText == null ? (r.response == null ? '' : r.response) : r.responseText) };
+          return { ok: true, content: ncReadResp(r) };
         } catch(e) { return { ok: false, msg: e.message }; }
       },
       async deleteItem(cfg, item) {
@@ -2275,11 +2276,11 @@
         // 查询同名文件夹
         const q = "mimeType='application/vnd.google-apps.folder' and name='" + name + "' and trashed=false";
         const r = await this._request(cs.oauthToken, { url: 'https://www.googleapis.com/drive/v3/files?q=' + encodeURIComponent(q) + '&spaces=drive', method: 'GET' });
-        const data = JSON.parse(r.responseText || '{}');
+        const data = ncSafeJsonParse(r.responseText || '{}');
         if (data.files && data.files.length) return data.files[0].id;
         // 创建文件夹
         const cr = await this._request(cs.oauthToken, { url: 'https://www.googleapis.com/drive/v3/files', method: 'POST', headers: { 'Content-Type': 'application/json' }, data: JSON.stringify({ name, mimeType: 'application/vnd.google-apps.folder' }) });
-        const c = JSON.parse(cr.responseText || '{}');
+        const c = ncSafeJsonParse(cr.responseText || '{}');
         return c.id;
       },
       async test(cfg) {
@@ -2300,7 +2301,7 @@
           const q = "'" + folderId + "' in parents and trashed=false";
           const r = await this._request(cs.oauthToken, { url: 'https://www.googleapis.com/drive/v3/files?q=' + encodeURIComponent(q) + '&orderBy=modifiedTime desc', method: 'GET' });
           if (r.status < 200 || r.status >= 300) return { ok: false, msg: '列出文件失败 HTTP ' + r.status };
-          const data = JSON.parse(r.responseText || '{}');
+          const data = ncSafeJsonParse(r.responseText || '{}');
           const files = (data.files || []).filter(e => !e.mimeType.includes('folder') && /^netclean-(backup|config)/i.test(e.name)).map(e => ({ id: e.id, name: e.name, size: parseInt(e.size || '0', 10), mtime: new Date(e.modifiedTime || 0).getTime(), raw: e }));
           return { ok: true, files, mainName: null };
         } catch(e) { return { ok: false, msg: e.message }; }
@@ -2328,7 +2329,7 @@
         try {
           const r = await this._request(cs.oauthToken, { url: 'https://www.googleapis.com/drive/v3/files/' + item.id + '?alt=media', method: 'GET' });
           if (r.status < 200 || r.status >= 300) return { ok: false, msg: '下载失败 HTTP ' + r.status };
-          return { ok: true, content: String(r.responseText == null ? (r.response == null ? '' : r.response) : r.responseText) };
+          return { ok: true, content: ncReadResp(r) };
         } catch(e) { return { ok: false, msg: e.message }; }
       },
       async deleteItem(cfg, item) {
@@ -2400,7 +2401,7 @@
         try {
           const r = await this._request(cs.oauthToken, { url: this._base + '?path=' + encodeURIComponent(path) + '&limit=100', method: 'GET' });
           if (r.status < 200 || r.status >= 300) return { ok: false, msg: '列出文件失败 HTTP ' + r.status };
-          const data = JSON.parse(r.responseText || '{}');
+          const data = ncSafeJsonParse(r.responseText || '{}');
           const items = (data._embedded && data._embedded.items) || [];
           const files = items.filter(e => e.type === 'file' && /^netclean-(backup|config)/i.test(e.name)).map(e => ({ id: e.path, name: e.name, size: e.size || 0, mtime: new Date(e.modified || 0).getTime(), raw: e }));
           return { ok: true, files, mainName: null };
@@ -2426,7 +2427,7 @@
           if (!d.href) return { ok: false, msg: '未获取到下载地址：' + (d.error || downloadReq.status) };
           const r = await this._request(cs.oauthToken, { url: d.href, method: 'GET' });
           if (r.status < 200 || r.status >= 300) return { ok: false, msg: '下载失败 HTTP ' + r.status };
-          return { ok: true, content: String(r.responseText == null ? (r.response == null ? '' : r.response) : r.responseText) };
+          return { ok: true, content: ncReadResp(r) };
         } catch(e) { return { ok: false, msg: e.message }; }
       },
       async deleteItem(cfg, item) {
@@ -2551,6 +2552,40 @@
   function _kwHit(text) { const kws = cfgPingbikw(); for (let i = 0; i < kws.length; i++) if (text && String(text).includes(kws[i])) return true; return false; }
   function _urlHit(url) { if (!url) return false; const bls = cfgPingbiurl(); for (let i = 0; i < bls.length; i++) if (String(url).includes(bls[i])) return true; return false; }
 
+  // v1.2.0 收敛：下面两段逻辑原先在云同步各 provider 里逐字节重复，现统一为一个 helper。
+  // ① 响应体提取：XHR 结果可能挂在 responseText，也可能只有 response（非文本响应）。
+  //    表达式与原先 6 处副本逐字节一致 —— 这是一次纯提取，不改任何行为。
+  function ncReadResp(r) {
+    return String(r.responseText == null ? (r.response == null ? '' : r.response) : r.responseText);
+  }
+  // ② 安全 JSON 解析：接口返回非 JSON 时（HTML 错误页 / 网关拦截 / 授权失效页），
+  //    原写法直接抛 SyntaxError，上层只能报一句含混的「失败」；这里改为抛出可读错误。
+  //    传入第 2 参时改为回退该默认值（用于「拿不到也不要紧」的场合）。
+  function ncSafeJsonParse(text, fallback) {
+    try {
+      return JSON.parse(text);
+    } catch (e) {
+      if (arguments.length >= 2) { try { dbg('[NetClean] JSON 解析失败，已回退默认值', e && e.message || e); } catch (_) {} return fallback; }
+      throw new Error('服务器返回内容不是合法 JSON（可能被网关拦截或授权已失效）');
+    }
+  }
+
+  // 划词工具条 / 翻译卡水平夹取：两者都以 transform: translateX(-50%) 居中，
+  //   当选中文字或网址贴近视口左右边缘时，中心点不被约束会让半个浮层溢出屏幕
+  //   （左侧最开头的按钮直接看不见）。这里按浮层实际宽度把中心点夹到
+  //   [half+margin, viewportWidth-half-margin]，保证整条浮层完整可见。
+  //   barW<=0（未布局 / 无宽度）时原样返回，保持旧行为；浮层比视口还宽时居中。
+  function ncClampBarX(centerX, barW, viewportW, margin) {
+    const m = (margin == null ? 8 : margin);
+    const vw = viewportW > 0 ? viewportW : 0;
+    if (!(barW > 0) || !vw) return centerX;
+    const half = barW / 2;
+    const minCx = half + m;
+    const maxCx = vw - half - m;
+    if (maxCx < minCx) return vw / 2;
+    return Math.max(minCx, Math.min(maxCx, centerX));
+  }
+
   // B4（v1.1.0）：配置 schema 语义化版本 + 迁移链。
   //   旧机制是「一个硬编码时间戳 CONFIG_TIME 与 allconfigtime 比大小」，每次结构调整都要手写
   //   一次性迁移，且迁移代码没人清理会一直滞留（v1.0.8 的迁移提示活到 v1.0.9 才被删掉）。
@@ -2558,26 +2593,29 @@
   //   每条带 deprecateAt，声明「这条迁移从哪个版本起可以删」，到期由 verify_b4_config_migrations.js
   //   的回归断言强制清理。注意：modifiedAt 仍专用于云同步冲突解决，不与本机制混用。
   const CONFIG_SCHEMA_VERSION = 1;
-  const MIGRATIONS = [
-    { from: 0, to: 1, deprecateAt: '1.2.0',
-      note: 'v1.0.8 名单合并：以默认配置为基底深合并，并移除废弃字段 baiduAutoNext（原 CONFIG_TIME 一次性迁移）',
-      fn: function (cfg) { const merged = deepMerge(DEFAULT_CONFIG, cfg); delete merged.baidu.baiduAutoNext; return merged; } }
-  ];
+  // v1.2.0：唯一的历史迁移（from 0 → to 1）已在本版到期并排空 —— 它真正有价值的动作
+  //   （删掉老配置里的废弃字段 baiduAutoNext）已降级为启动时的无条件幂等清理，见下方 IIFE。
+  //   迁移链现在是空的，但机制完整保留：以后任何结构变更只需往这里追加一条
+  //   { from, to, deprecateAt, fn }，到期由 verify_b4_config_migrations.js 的 S6 强制清理。
+  const MIGRATIONS = [];
   function ncRunMigrations(cfg) {
-    let v = (cfg && typeof cfg.configVersion === 'number') ? cfg.configVersion : 0;
+    if (!cfg || typeof cfg !== 'object') return cfg;
+    let v = (typeof cfg.configVersion === 'number') ? cfg.configVersion : 0;
     let ran = 0;
     for (let i = 0; i < MIGRATIONS.length; i++) {
       const m = MIGRATIONS[i];
       if (m.from !== v) continue;
       try { cfg = m.fn(cfg) || cfg; v = m.to; cfg.configVersion = v; ran++; } catch (e) { break; }
     }
-    if (cfg) cfg.configVersion = v;
+    // 迁移链排空（或老配置根本没有版本号）时，直接把版本号盖到当前 schema 版本。
+    //   否则 configVersion 会永远停在 0：每次启动都白跑一遍「从 0 找迁移」，且再也升不上来。
+    if (v < CONFIG_SCHEMA_VERSION) { v = CONFIG_SCHEMA_VERSION; ran++; }
+    cfg.configVersion = v;
     if (ran) { try { setConfig(cfg); } catch (e) {} }
     return cfg;
   }
-  // 配置版本迁移（启动执行；旧 allconfigtime 时间戳仍写入，兼容历史上会读它的逻辑）
+  // 配置版本迁移（启动执行）
   (function() {
-    try { GM_setValue('allconfigtime', CONFIG_TIME); } catch (e) {}
     try {
       var raw = null;
       try { raw = GM_getValue('allconfig', null); } catch (e) {}
@@ -2589,6 +2627,10 @@
       var c0 = getConfig();
       c0.configVersion = rawV;
       ncRunMigrations(c0);
+      // 历史死字段清理（幂等）：原 v1.0.8 迁移的 deprecateAt 已在 v1.2.0 到期、迁移链随之排空，
+      //   而它真正有价值的动作只有一个 —— 删掉老用户配置里再无代码读取的 baiduAutoNext。
+      //   降级为无条件幂等清理，避免该字段在升级用户的配置里永久驻留。
+      if (c0 && c0.baidu && ('baiduAutoNext' in c0.baidu)) { delete c0.baidu.baiduAutoNext; try { setConfig(c0); } catch (e) {} }
     } catch (e) {}
   })();
 
@@ -4941,7 +4983,7 @@
                 Object.defineProperty(this, 'responseText', { value: JSON.stringify(data) });
                 Object.defineProperty(this, 'response', { value: JSON.stringify(data) });
               }
-            } catch(e) {}
+            } catch (e) { dbg('[NetClean] B站 player/v2 响应改写失败（画质解锁未生效）', e); }
           }
           if (origOnReady) origOnReady.apply(this, arguments);
         };
@@ -6647,6 +6689,10 @@
   //   为什么必须穿透：B站( bwp-video )等自研播放器把 <video> 放进影子根，document.querySelector('video')
   //   返回 null —— 这正是「明明在放视频却看不到悬浮球 / 倍速不生效」的根因。
   //   带 600ms 缓存：滑块拖动时 input 事件可达每秒数十次，不能每次都全量扫 DOM。
+  //   ⚠ 守卫里的 `list.length` **不是疏忽，是刻意为之**：只缓存「确认有视频」的正面结果。
+  //     若连空结果一起缓存，页面初始无视频、稍后由 SPA/懒加载插入 <video> 的场景下，
+  //     悬浮球会延迟最长 600ms 才脱离待机 —— 由 verify_v110_video_speed_ui.js 的 R5b 守住。
+  //     （v1.2.0 曾把此处简化为「只看时间戳」，R5b 立即报红，故回滚。）
   var NC_VIDEO_CACHE = { t: 0, list: [] };
   function ncAllVideos() {
     var now = Date.now();
@@ -9519,6 +9565,11 @@
     // 若点这些浮层内部也被判定为"点击外部"→ 会误关刚打开的设置面板。因此命中我们自己的顶层浮层时忽略，不关闭。
     const ZK_KEEP_OPEN_IDS = ['zk-bk-mgr', 'zk-dlg', 'nc-modal'];
     function onDocClick(e) {
+      // 修复：本脚本会对页面元素做程序化 .click()（CSDN 自动展开全文/代码块、贴片广告跳过按钮、
+      // 验证码识别点击等）。这类合成点击会冒泡到 document 捕获阶段，被误判为「用户点面板外部」，
+      // 导致刚打开的设置面板被立刻关闭（CSDN 文章页表现为「面板闪烁一下就退出」）。
+      // 只有真实用户点击（e.isTrusted === true）才应触发外部点击关闭；合成点击一律忽略。
+      if (e.isTrusted === false) return;
       if (!document.body.contains(box)) { document.removeEventListener('click', onDocClick, true); return; }
       const path = (e.composedPath && e.composedPath()) || [];
       for (let i = 0; i < path.length; i++) {
@@ -10676,7 +10727,12 @@
       T = Math.max(10, T);
       // 来自事件坐标时 width=0，以该点为中心水平对齐
       const centerX = rect.width > 0 ? rect.left + rect.width / 2 : rect.left;
-      bar.style.left = centerX + 'px';
+      // 【边界划词修复】原先直接 centerX + translateX(-50%)：选中文字/网址贴近视口左右边缘时，
+      //   半个工具条会被推到屏幕外（左侧最开头的按钮直接看不见）。按工具条实际宽度夹取中心点，
+      //   clientWidth 排除滚动条；offsetWidth 在本函数执行前已 appendChild，可同步量到。
+      const _vwBar = (document.documentElement && document.documentElement.clientWidth) || window.innerWidth || 0;
+      const _cxBar = ncClampBarX(centerX, bar.offsetWidth || 0, _vwBar, 8);
+      bar.style.left = _cxBar + 'px';
       bar.style.top  = T + 'px';
       bar.style.transform = 'translateX(-50%)';
     }
@@ -10823,7 +10879,9 @@
       let T = rect.bottom + 4;
       if (T + h > window.innerHeight - 10) T = rect.top - h - 4;
       T = Math.max(10, T);
-      transPanel.style.left = (rect.left + rect.width / 2) + 'px';
+      // 【边界划词修复】与工具条同因：贴边划词时翻译卡会溢出屏幕左/右缘。
+      const _vwTrans = (document.documentElement && document.documentElement.clientWidth) || window.innerWidth || 0;
+      transPanel.style.left = ncClampBarX(rect.left + rect.width / 2, transPanel.offsetWidth || 0, _vwTrans, 8) + 'px';
       transPanel.style.top = T + 'px';
       // 【B-划词-08】inline 驱动 show 动画（与 removeTransPanel 配对；类规则依赖 head CSS）
       requestAnimationFrame(() => {
@@ -11699,8 +11757,9 @@
     // 同意并启动核心功能（门控放行的唯一入口）
     const acceptAndBoot = () => {
       GM_setValue('adc_legal_accepted', '1');
-      // 记录已同意的「版本 + 免责声明指纹」：以后仅当免责声明正文实质变化（指纹不同）时才重新征询。
-      try { GM_setValue('legalAcceptedVersion', VERSION); GM_setValue('legalAcceptedHash', LEGAL_HASH); } catch (e) { dbg('[NetClean] 记录使用条款同意状态失败（下次进入会重复征询）', e); }
+      // 记录已同意的「免责声明指纹」：以后仅当免责声明正文实质变化（指纹不同）时才重新征询。
+      // v1.2.0 起不再写 legalAcceptedVersion —— 门控判定只依赖指纹，该键从未被任何代码读取（死键）。
+      try { GM_setValue('legalAcceptedHash', LEGAL_HASH); } catch (e) { dbg('[NetClean] 记录使用条款同意状态失败（下次进入会重复征询）', e); }
       card.remove();
       bootCore();
     };
@@ -11716,7 +11775,7 @@
       card.remove();
       try { sessionStorage.setItem('adc_legal_skipped', VERSION); } catch (e) {}
       if (LEGAL_ACCEPTED) {
-        try { GM_setValue('legalAcceptedVersion', VERSION); GM_setValue('legalAcceptedHash', LEGAL_HASH); } catch (e) { dbg('[NetClean] 记录使用条款同意状态失败（下次进入会重复征询）', e); }
+        try { GM_setValue('legalAcceptedHash', LEGAL_HASH); } catch (e) { dbg('[NetClean] 记录使用条款同意状态失败（下次进入会重复征询）', e); }
       }
       if (notifyUser) zkToast(t('toast.notAccepted'), { type: 'warn', dur: 4200 });
     };
