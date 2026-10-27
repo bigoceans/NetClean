@@ -4,10 +4,10 @@
 > 全部配置仅保存在你本地浏览器，**零数据外传**。
 
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
-![version](https://img.shields.io/badge/version-1.3.1-brightgreen.svg)
+![version](https://img.shields.io/badge/version-1.3.2-brightgreen.svg)
 ![tampermonkey](https://img.shields.io/badge/Tampermonkey-4.19%2B-orange.svg)
-![size](https://img.shields.io/badge/size-~841KB-lightgrey.svg)
-![verified](https://img.shields.io/badge/verify-1036%2F1036-brightgreen.svg)
+![size](https://img.shields.io/badge/size-~845KB-lightgrey.svg)
+![verified](https://img.shields.io/badge/verify-1048%2F1048-brightgreen.svg)
 ![audit](https://img.shields.io/badge/audit-P0%3A0%20P1%3A0-blue.svg)
 
 ---
@@ -567,7 +567,18 @@ A: 欢迎 PR / Issue！
 > 📖 **完整版本史见 [CHANGELOG.md](CHANGELOG.md)** —— 那里记录每个版本的根因分析、实现要点与踩坑（含 CSS 破损定位、flex `basis:0` 陷阱、IIFE 顶层 TDZ、变异测试等），面向维护者与源码读者。
 > 本节只保留**最近两版的用户向摘要**，每条一行。
 
-### v1.3.1（当前版本 · 2026-10-26）
+### v1.3.2（当前版本 · 2026-10-27）
+
+CSDN 白屏根因修复版 —— 修掉「部分 CSDN 文章整页空白」的真正原因，并补上反馈报告脱敏。
+
+**🐞 根因与修复**
+- **根因**：通用 CSS 规则 `div[class*="-ad-"]` 命中了 CSDN 正文外层 `div.main_father.has-ad-slots`（class 含 `-ad-`），整篇文章被 `display:none` 隐藏。该规则**不受任何开关控制**，所以关掉全部 CSDN 设置仍白。
+- **改法**：删除 `div[class*="-ad-"]` / `_ad_` 宽泛规则，只保留 `div.ad-container`；`csdnAd` 不再碰 `.readall_box` / `.hide-article-box` / `.recommend-box` / `.article-info-box` / `.recommend-right`；`passiveAdBlock` 改非破坏性隐藏 + 内容守卫；`initRequestInterceptor` 在 `csdn.net` 让行。
+- **反馈脱敏**：`captchaPreciseId` / `captchaYunmaDev` / `captchaApiFast` / `captchaApiPrecise` / 自建翻译 URL / 云同步服务器地址全部 `***`。
+
+**验证**：全量回归 **39 个 verify 脚本 / 1048 项断言 / 失败 0 / EXIT=0**（含口径守卫 `verify_doc_consistency.js` 25 项）。
+
+### v1.3.1（2026-10-26）
 
 反馈渠道接线版 —— 把 v1.3.0 的反馈面板真正接到 Gitee 与腾讯问卷，并加上「完整报告 / 精简报告」两条一键路径。
 
@@ -578,19 +589,6 @@ A: 欢迎 PR / Issue！
 - 渠道地址已写入 `NC_FEEDBACK`，并加回归断言：必须 `https://`，且不含邮箱 / `mailto:` / `token` / `key=` / `password` / `secret`。
 
 **验证**：全量回归 **39 个 verify 脚本 / 1036 项断言 / 失败 0 / EXIT=0**（含口径守卫 `verify_doc_consistency.js` 25 项）。
-
-### v1.3.0（2026-10-26）
-
-问题反馈 / 诊断报告版 —— 让「遇到问题」变成「一键生成可诊断的报告」，且报告只在本机生成、零自动上传。
-
-**🆕 新增**
-- **问题反馈面板**：「关于」页新增反馈区：填一句现象 → 自动带出版本 / 环境 / 开关快照 / 最近错误 / 页面体检 → 一键复制或下载 .txt。
-- **截图粘贴预览**：按 Win+Shift+S / Cmd+Shift+4 截图后，在反馈区 Ctrl+V 即可预览、下载；脚本无法读取你的屏幕。
-- **国内可直连的反馈渠道**：Gitee Issues / 匿名反馈表单（普通用户无需账号、不公开邮箱）；GitHub / GreasyFork 仅作海外备选。「复制报告」始终可用，可发到任意渠道。
-- **隐私优先**：报告只在本机生成、**不做任何自动上传**；密码 / Token / 密钥 / 名单内容自动脱敏；URL 默认去掉 ? 参数与 # 片段。
-- **面板打不开也能反馈**：油猴菜单新增「🐞 复制诊断报告」，不依赖面板 UI 即可复制报告。
-
-**验证**：全量回归 **39 个 verify 脚本 / 1031 项断言 / 失败 0 / EXIT=0**（含口径守卫 `verify_doc_consistency.js` 25 项）。
 
 ### 更早版本
 
@@ -687,6 +685,6 @@ SOFTWARE.
 
 ---
 
-**最后更新**：2026-10-26
-**当前版本**：v1.3.1
+**最后更新**：2026-10-27
+**当前版本**：v1.3.2
 **作者**：bigoceans
