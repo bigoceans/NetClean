@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         全网净化大师 NetClean — 广告过滤 + 划词搜索 + 搜索美化
 // @namespace    https://github.com/bigoceans
-// @version      1.4.0
+// @version      1.5.0
 // @author       bigoceans
 // @description  全站广告/弹窗屏蔽（百度/Google/Bing/360/知乎/微博/B站/优酷/腾讯视频/微信公号/YouTube 等 19 个站点）+ 搜索结果卡片式美化、关键词网址过滤、干净复制、暗黑护眼模式 + 视频倍速、B站画质解锁、YouTube 旋转/翻转/填充、linux.do 社区增强（楼层号 / 新标签 / 分享）+ 划词搜索（多引擎 + 划词翻译，默认开启）。支持配置导入/导出/WebDAV 同步、零数据外传；详细隐私声明与功能说明见主页 README。
 // @icon64       data:image/png;base64,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
@@ -91,7 +91,7 @@
   // 导致「#kw 里输入关键词 → 回车 → 进入 /s?wd=... 搜索结果页后脚本整体失效」的恶性 bug（B-划词-02）。
   const HREF = () => location.href;
   const IS_MOBILE = /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i.test(navigator.userAgent);
-  const VERSION = '1.4.0';
+  const VERSION = '1.5.0';
   // 免责声明指纹：仅当「条款正文」发生实质变化时才会改变，用于判断是否需要重新征询用户同意。
   // 修改免责声明文案时请同步更新此值（改一个字符即可）。
   const LEGAL_HASH = '2026-09-terms-v1';
@@ -582,8 +582,13 @@
       siteOverrides: {},
       // B3（v1.1.0）：用户自定义选择器规则 —— 内置选择器因站点改版失效时的自救通道
       customSelectors: '',
-      // 界面语言：zh-CN（默认简体）/ zh-TW（繁體，由简中转）/ en（English）
+      // 界面语言：zh-CN（默认简体）/ zh-TW（繁體，由简中转）
       uiLang: 'zh-CN',
+      // 控制面板明暗主题：light（默认，浅色商务玻璃）/ dark（夜间深色玻璃）
+      //   纯 UI 偏好，但与 uiLang 同级放在配置里，便于云同步在多设备间保持一致。
+      uiTheme: 'light',
+      // 切换主题时「划词搜索条要不要跟着变」的提示：用户勾过「不再提示」后置 true
+      uiThemeAskOff: false,
       shortcutPanel: false, shortcutPause: false, shortcutYtp: false,
       baidueyecolor: 'rgba(204,232,207,1)',
       // 护眼强度（soft 柔和 / standard 标准 / strong 增强）→ 控制全局护眼蒙版 applyEyeCare() 的 alpha 深度
@@ -936,9 +941,9 @@
    *      可以渐进式补齐 —— 绝不出现空白或鬼画符。
    *
    *  用法：t('panel.title')；插值 t('toast.updated', { ver: '1.0.0' })
-   *  注：英文版暂不出（用户决定），如未来要加，加一个 'en' 字段 + UI_LANGS 即可
+   *  注：界面语言只保留简 / 繁；新增文案只写 zh-CN，繁中运行时自动转。
    *  ================================================================ */
-  const UI_LANGS = [['zh-CN', '简体中文'], ['zh-TW', '繁體中文'], ['en', 'English']];
+  const UI_LANGS = [['zh-CN', '简体中文'], ['zh-TW', '繁體中文']];
   const I18N = {
     // ── 油猴菜单文案 ──
     //  ① 图标必须带变体选择符 U+FE0F：`⚙`(U+2699) / `⏸`(U+23F8) / `▶`(U+25B6) 默认是**文本呈现**，
@@ -946,364 +951,382 @@
     //     `🚫🚿🌙🔍` 属 emoji 区块，本身即 emoji 呈现，无需 VS16。
     //  ② 「暂停」类菜单名随状态变化（未暂停→显示暂停动作，已暂停→显示恢复动作），
     //     由 ncUpdateMenuLabels() 在状态变更时刷新，避免"看不出当前状态、预判不了点下去的结果"。
-    'menu.panel':          { 'zh-CN': '⚙️ 打开控制面板', 'en': '⚙️ Open Control Panel' },
-    'menu.rescue':         { 'zh-CN': '🔍 本页为什么没净化？', 'en': '🔍 Why is this page not cleaned?' },
-    'menu.feedbackCopy':   { 'zh-CN': '🐞 复制诊断报告', 'en': '🐞 Copy diagnostic report' },
+    'menu.panel':          { 'zh-CN': '⚙️ 打开控制面板' },
+    'menu.rescue':         { 'zh-CN': '🔍 本页为什么没净化？' },
+    'menu.feedbackCopy':   { 'zh-CN': '🐞 复制诊断报告' },
     // 全局暂停（影响所有网站）
-    'menu.pauseOn':        { 'zh-CN': '⏸️ 暂停全部网站净化', 'en': '⏸️ Pause blocking on all sites' },
-    'menu.pauseOff':       { 'zh-CN': '▶️ 恢复全部网站净化', 'en': '▶️ Resume blocking on all sites' },
+    'menu.pauseOn':        { 'zh-CN': '⏸️ 暂停全部网站净化' },
+    'menu.pauseOff':       { 'zh-CN': '▶️ 恢复全部网站净化' },
     // 本站暂停（只影响当前网站；命名与上一项刻意拉开差异词位置，避免"双胞胎菜单"点错）
-    'menu.pauseSiteOn':    { 'zh-CN': '🚫 只暂停当前网站', 'en': '🚫 Pause on this site only' },
-    'menu.pauseSiteOff':   { 'zh-CN': '▶️ 恢复当前网站', 'en': '▶️ Resume on this site' },
+    'menu.pauseSiteOn':    { 'zh-CN': '🚫 只暂停当前网站' },
+    'menu.pauseSiteOff':   { 'zh-CN': '▶️ 恢复当前网站' },
     // 暗黑归属是「自动 → 交给网站 → 强制脚本接管 → 自动」三态循环，
     // 故菜单只显示"下一步动作"，三个状态各自可见（旧文案只写了两个状态，"恢复自动判断"无处可寻）。
-    'menu.darkAuto':       { 'zh-CN': '🌙 暗黑模式：交给网站自理', 'en': '🌙 Dark mode: let the site handle it' },
-    'menu.darkSkip':       { 'zh-CN': '🌙 暗黑模式：改由脚本接管', 'en': '🌙 Dark mode: force script takeover' },
-    'menu.darkForce':      { 'zh-CN': '🌙 暗黑模式：恢复自动判断', 'en': '🌙 Dark mode: back to auto' },
-    'panel.title':         { 'zh-CN': '⚙️ 控制面板', 'en': '⚙️ Control Panel' },
-    'panel.search':        { 'zh-CN': '搜索设置', 'en': 'Search settings' },
-    'panel.searchPh':      { 'zh-CN': '搜索设置项…', 'en': 'Search settings…' },
-    'panel.clear':         { 'zh-CN': '清除', 'en': 'Clear' },
-    'panel.clearAria':     { 'zh-CN': '清除搜索', 'en': 'Clear search' },
-    'panel.autoSave':      { 'zh-CN': '⚡ 自动保存', 'en': '⚡ Auto save' },
-    'panel.autoSaveTip':   { 'zh-CN': '所有开关和输入修改后自动保存，无需手动点击', 'en': 'All switches and inputs auto-save on change — no manual save needed' },
-    'panel.allOn':         { 'zh-CN': '全部开启', 'en': 'Enable all' },
-    'panel.helpTip':       { 'zh-CN': '功能说明', 'en': 'What this does' },
-    'panel.lang':          { 'zh-CN': '界面语言', 'en': 'UI language' },
-    'panel.langTip':       { 'zh-CN': '切换面板与提示文字的语言（油猴菜单项需刷新页面后生效）', 'en': 'Switch panel and toast language. Tampermonkey menu items need a page reload.' },
-    'toast.needReload':    { 'zh-CN': '，刷新后生效', 'en': '. Reload to apply.' },
-    'toast.opening':       { 'zh-CN': '正在打开云备份管理…', 'en': 'Opening cloud backup manager…' },
-    'toast.openFailed':    { 'zh-CN': '打开失败：', 'en': 'Failed to open: ' },
-    'toast.notAccepted':   { 'zh-CN': '脚本本次未启用；刷新页面可重新查看并同意使用条款', 'en': 'Script disabled this session — reload to review and accept the terms.' },
-    'toast.updated':       { 'zh-CN': '✨ 全网净化大师已更新至 v{ver}（控制面板 → 关于 查看新功能）', 'en': '✨ NetClean updated to v{ver} (Control Panel → About for what\'s new)' },
-    'toast.langSwitched':  { 'zh-CN': '界面语言已切换，油猴菜单项需刷新页面后生效', 'en': 'UI language switched. Tampermonkey menu items need a page reload.' }
+    'menu.darkAuto':       { 'zh-CN': '🌙 暗黑模式：交给网站自理' },
+    'menu.darkSkip':       { 'zh-CN': '🌙 暗黑模式：改由脚本接管' },
+    'menu.darkForce':      { 'zh-CN': '🌙 暗黑模式：恢复自动判断' },
+    'panel.title':         { 'zh-CN': '⚙️ 控制面板' },
+    'panel.search':        { 'zh-CN': '搜索设置' },
+    'panel.searchPh':      { 'zh-CN': '搜索设置项…' },
+    'panel.clear':         { 'zh-CN': '清除' },
+    'panel.clearAria':     { 'zh-CN': '清除搜索' },
+    'panel.autoSave':      { 'zh-CN': '⚡ 自动保存' },
+    'panel.autoSaveTip':   { 'zh-CN': '所有开关和输入修改后自动保存，无需手动点击' },
+    'panel.allOn':         { 'zh-CN': '全部开启' },
+    'panel.helpTip':       { 'zh-CN': '功能说明' },
+    'panel.lang':          { 'zh-CN': '界面语言' },
+    'panel.langTip':       { 'zh-CN': '切换面板与提示文字的语言（油猴菜单项需刷新页面后生效）' },
+    /* 左栏底部「语言 / 明暗」双联开关 + 划词条跟随询问（只写 zh-CN，繁体自动 s2t） */
+    'ui.lang':             { 'zh-CN': '语言' },
+    'ui.theme':            { 'zh-CN': '主题' },
+    'ui.themeTip':         { 'zh-CN': '切换控制面板的白天 / 夜间配色' },
+    'ui.followTitle':      { 'zh-CN': '划词搜索条要跟着变吗？' },
+    'ui.followDesc':       { 'zh-CN': '控制面板已切换配色。划词工具条和翻译面板目前保持原样，可以让它跟着一起变。' },
+    'ui.followDescDark':   { 'zh-CN': '控制面板已切换到「夜间」。划词工具条和翻译面板目前仍是浅色，要不要一起变深？' },
+    'ui.followDescLight':  { 'zh-CN': '控制面板已切换到「白天」。划词工具条和翻译面板目前仍是深色，要不要一起变浅？' },
+    'ui.followNever':      { 'zh-CN': '不再提示（以后自动跟随控制面板）' },
+    'ui.followNo':         { 'zh-CN': '保持原样' },
+    'ui.followYes':        { 'zh-CN': '一起跟随' },
+    'toast.needReload':    { 'zh-CN': '，刷新后生效' },
+    'toast.opening':       { 'zh-CN': '正在打开云备份管理…' },
+    'toast.openFailed':    { 'zh-CN': '打开失败：' },
+    'toast.notAccepted':   { 'zh-CN': '脚本本次未启用；刷新页面可重新查看并同意使用条款' },
+    'toast.updated':       { 'zh-CN': '✨ 全网净化大师已更新至 v{ver}（控制面板 → 关于 查看新功能）' },
+    'toast.langSwitched':  { 'zh-CN': '界面语言已切换，油猴菜单项需刷新页面后生效' }
 ,
-    'panel.add': { 'zh-CN': '添加', 'en': 'Add' },
-    'panel.apiGuide': { 'zh-CN': '接口说明', 'en': 'API guide' },
-    'panel.reset1x': { 'zh-CN': '恢复 1x 正常倍速', 'en': 'Reset to 1x' },
-    'cat.adblock': { 'zh-CN': '净化增强', 'en': 'Ad blocking' },
-    'cat.captcha': { 'zh-CN': '验证码识别', 'en': 'Captcha solver' },
-    'cat.selsearch': { 'zh-CN': '划词搜索', 'en': 'Selection search' },
-    'cat.videodl': { 'zh-CN': '视频下载', 'en': 'Video download' },
-    'cat.perf': { 'zh-CN': '性能与高级', 'en': 'Performance & advanced' },
-    'cat.lists': { 'zh-CN': '名单管理', 'en': 'Lists' },
-    'cat.shortcuts': { 'zh-CN': '快捷键', 'en': 'Keyboard shortcuts' },
-    'cat.cloud': { 'zh-CN': '配置同步', 'en': 'Cloud sync' },
-    'cat.about': { 'zh-CN': '关于', 'en': 'About' },
-    'cat.server': { 'zh-CN': '服务器地址', 'en': 'Server URL' },
-    'cat.username': { 'zh-CN': '用户名', 'en': 'Username' },
-    'cat.password': { 'zh-CN': '密码 / 应用密码', 'en': 'Password / app password' },
-    'cat.path': { 'zh-CN': '远程路径', 'en': 'Remote path' },
-    'cat.protect': { 'zh-CN': '密码保护（XOR 加密）', 'en': 'Password protect (XOR)' },
-    'item.t.kgpingbis': { 'zh-CN': '被动去广告', 'en': 'Passive ad blocking' },
-    'item.t.contentBlock': { 'zh-CN': '关键词/网址内容屏蔽', 'en': 'Keyword/URL content blocking' },
-    'item.t.customSelectors': { 'zh-CN': '自定义选择器规则', 'en': 'Custom selector rules' },
-    'item.d.customSelectors': { 'zh-CN': '补充要隐藏的元素选择器（分号或换行分隔，也可写完整 CSS 规则）', 'en': 'Extra selectors to hide (separate by semicolon or newline; full CSS rules allowed)' },
-    'item.t.kgpingbiiframe': { 'zh-CN': '禁用第三方 iframe', 'en': 'Block 3rd-party iframes' },
-    'item.t.kgbaidued': { 'zh-CN': '百度广告过滤', 'en': 'Baidu ad blocking' },
-    'item.t.kggoogleed': { 'zh-CN': 'Google 广告过滤', 'en': 'Google ad blocking' },
-    'item.t.kg360ed': { 'zh-CN': '360 广告过滤', 'en': '360 ad blocking' },
-    'item.t.kgbinged': { 'zh-CN': 'Bing 广告过滤', 'en': 'Bing ad blocking' },
-    'item.t.kgyandexed': { 'zh-CN': 'Yandex 广告过滤', 'en': 'Yandex ad blocking' },
-    'item.t.baiducss': { 'zh-CN': '百度卡片式美化', 'en': 'Baidu card-style beautify' },
-    'item.t.googlecss': { 'zh-CN': 'Google 卡片美化', 'en': 'Google card-style beautify' },
-    'item.t.bingcss': { 'zh-CN': 'Bing 卡片美化', 'en': 'Bing card-style beautify' },
-    'item.t.yandexcss': { 'zh-CN': 'Yandex 卡片美化', 'en': 'Yandex card-style beautify' },
-    'item.t.so360css': { 'zh-CN': '360 卡片美化', 'en': '360 card-style beautify' },
-    'item.t.baidulogo': { 'zh-CN': '搜索结果网站图标', 'en': 'Result site favicons' },
-    'item.t.baidulianjie': { 'zh-CN': '链接直达优化', 'en': 'Skip Baidu redirect links' },
-    'item.t.baiduhot': { 'zh-CN': '隐藏热搜 / AI 栏', 'en': 'Hide hot list / AI bar' },
-    'item.t.googleAI': { 'zh-CN': '隐藏 AI 概述', 'en': 'Hide Google AI Overview' },
-    'item.t.bingAI': { 'zh-CN': '隐藏 Bing Copilot', 'en': 'Hide Bing Copilot' },
-    'item.t.baidueye': { 'zh-CN': '护眼模式', 'en': 'Eye-care mode' },
-    'item.t.baidueyecolor': { 'zh-CN': '护眼色', 'en': 'Eye-care color' },
-    'item.t.baidueyestrength': { 'zh-CN': '护眼强度', 'en': 'Eye-care intensity' },
-    'item.t.baidueyeScheduleEnabled': { 'zh-CN': '护眼时间表', 'en': 'Eye-care schedule' },
-    'item.t.baidueyeScheduleOn': { 'zh-CN': '开始时间', 'en': 'Start time' },
-    'item.t.baidueyeScheduleOff': { 'zh-CN': '结束时间', 'en': 'End time' },
-    'item.t.baidumenu': { 'zh-CN': '页面快捷入口', 'en': 'In-page quick link' },
-    'item.t.kgyoued': { 'zh-CN': 'YouTube / 优酷 / 腾讯 广告过滤', 'en': 'YouTube / Youku / Tencent ad blocking' },
-    'item.t.kgbilied': { 'zh-CN': 'B站广告过滤', 'en': 'Bilibili ad blocking' },
-    'item.t.haokanPauseAd': { 'zh-CN': '好看视频暂停广告', 'en': 'Haokan pause ads' },
-    'item.t.kgtwied': { 'zh-CN': 'Twitter / X 推广过滤', 'en': 'Twitter / X promo filter' },
-    'item.t.ytpRotate': { 'zh-CN': 'YouTube 旋转 / 翻转', 'en': 'YouTube rotate / flip' },
-    'item.t.kgbiliQuality': { 'zh-CN': 'B站画质解锁', 'en': 'Bilibili 1080P unlock' },
-    'item.t.kgbiliLogin': { 'zh-CN': 'B站绕过登录', 'en': 'Bilibili bypass login' },
-    'item.t.kgyoumv': { 'zh-CN': 'YouTube 视频下载', 'en': 'YouTube video download' },
-    'item.t.kgtwimv': { 'zh-CN': 'Twitter / X 视频下载', 'en': 'Twitter / X video download' },
-    'item.t.kgzhihued': { 'zh-CN': '知乎广告 + 登录弹窗', 'en': 'Zhihu ads + login popup' },
-    'item.t.kgdoubaned': { 'zh-CN': '豆瓣广告 + 登录墙', 'en': 'Douban ads + login wall' },
-    'item.t.kgweiboed': { 'zh-CN': '微博广告过滤', 'en': 'Weibo ad blocking' },
-    'item.t.kgweixined': { 'zh-CN': '微信公号广告过滤', 'en': 'WeChat MP ad blocking' },
-    'item.t.csdnAd': { 'zh-CN': 'CSDN 广告过滤', 'en': 'CSDN ad blocking' },
-    'item.t.xhsclean': { 'zh-CN': '小红书广告清理', 'en': 'Xiaohongshu cleanup' },
-    'item.t.juejinclean': { 'zh-CN': '掘金广告清理', 'en': 'Juejin cleanup' },
-    'item.t.sfclean': { 'zh-CN': '思否广告清理', 'en': 'SegmentFault cleanup' },
-    'item.t.csdnLink': { 'zh-CN': 'CSDN 外链直达', 'en': 'CSDN direct link' },
-    'item.t.csdnExpand': { 'zh-CN': 'CSDN 自动展开', 'en': 'CSDN auto-expand' },
-    'item.t.csdnClean': { 'zh-CN': 'CSDN 纯净阅读', 'en': 'CSDN clean reading' },
-    'item.t.kgweibomv': { 'zh-CN': '微博视频下载', 'en': 'Weibo video download' },
-    'item.t.pojieSignIn': { 'zh-CN': '吾爱破解自动签到', 'en': '52pojie auto check-in' },
-    'item.t.captchaEnabled': { 'zh-CN': '启用验证码识别', 'en': 'Enable captcha solver' },
-    'item.t.captchaTrigger': { 'zh-CN': '触发方式', 'en': 'Trigger mode' },
-    'item.t.captchaEngine': { 'zh-CN': '识别引擎', 'en': 'Engine' },
-    'item.t.captchaApiFast': { 'zh-CN': '极速接口地址', 'en': 'Fast API URL' },
-    'item.t.captchaApiPrecise': { 'zh-CN': '精准接口地址', 'en': 'Precise API URL' },
-    'item.t.captchaPreciseId': { 'zh-CN': '精准引擎识别码', 'en': 'Precise engine ID' },
-    'item.t.captchaYunmaToken': { 'zh-CN': '云码 Token', 'en': 'Yunma token' },
-    'item.t.captchaYunmaDev': { 'zh-CN': '云码开发者标识（可选）', 'en': 'Yunma developer tag (optional)' },
-    'item.t.captchaAutoFind': { 'zh-CN': '自动查找验证码', 'en': 'Auto-find captcha' },
-    'item.t.captchaShowHint': { 'zh-CN': '显示提示条', 'en': 'Show hint banner' },
-    'item.t.captchaSlide': { 'zh-CN': '滑动验证码', 'en': 'Slide captcha' },
-    'item.t.selectionSearch': { 'zh-CN': '启用划词搜索', 'en': 'Enable selection search' },
-    'item.t.selSearchShowTranslate': { 'zh-CN': '显示翻译按钮', 'en': 'Show translate button' },
-    'item.t.selSearchTransAuto': { 'zh-CN': '自动翻译', 'en': 'Auto translate' },
-    'item.t.selSearchAlwaysShowOpenLink': { 'zh-CN': '打开链接按钮常驻', 'en': 'Always show open link' },
+    'panel.add': { 'zh-CN': '添加' },
+    'panel.apiGuide': { 'zh-CN': '接口说明' },
+    'panel.reset1x': { 'zh-CN': '恢复 1x 正常倍速' },
+    'cat.adblock': { 'zh-CN': '净化增强' },
+    'cat.captcha': { 'zh-CN': '验证码识别' },
+    'cat.selsearch': { 'zh-CN': '划词搜索' },
+    'cat.videodl': { 'zh-CN': '视频下载' },
+    'cat.perf': { 'zh-CN': '性能与高级' },
+    'cat.lists': { 'zh-CN': '名单管理' },
+    'cat.shortcuts': { 'zh-CN': '快捷键' },
+    'cat.cloud': { 'zh-CN': '配置同步' },
+    'cat.about': { 'zh-CN': '关于' },
+    'cat.server': { 'zh-CN': '服务器地址' },
+    'cat.username': { 'zh-CN': '用户名' },
+    'cat.password': { 'zh-CN': '密码 / 应用密码' },
+    'cat.path': { 'zh-CN': '远程路径' },
+    'cat.protect': { 'zh-CN': '密码保护（XOR 加密）' },
+    'item.t.kgpingbis': { 'zh-CN': '被动去广告' },
+    'item.t.contentBlock': { 'zh-CN': '关键词/网址内容屏蔽' },
+    'item.t.customSelectors': { 'zh-CN': '自定义选择器规则' },
+    'item.d.customSelectors': { 'zh-CN': '补充要隐藏的元素选择器（分号或换行分隔，也可写完整 CSS 规则）' },
+    'item.t.kgpingbiiframe': { 'zh-CN': '禁用第三方 iframe' },
+    'item.t.kgbaidued': { 'zh-CN': '百度广告过滤' },
+    'item.t.kggoogleed': { 'zh-CN': 'Google 广告过滤' },
+    'item.t.kg360ed': { 'zh-CN': '360 广告过滤' },
+    'item.t.kgbinged': { 'zh-CN': 'Bing 广告过滤' },
+    'item.t.kgyandexed': { 'zh-CN': 'Yandex 广告过滤' },
+    'item.t.baiducss': { 'zh-CN': '百度卡片式美化' },
+    'item.t.googlecss': { 'zh-CN': 'Google 卡片美化' },
+    'item.t.bingcss': { 'zh-CN': 'Bing 卡片美化' },
+    'item.t.yandexcss': { 'zh-CN': 'Yandex 卡片美化' },
+    'item.t.so360css': { 'zh-CN': '360 卡片美化' },
+    'item.t.baidulogo': { 'zh-CN': '搜索结果网站图标' },
+    'item.t.baidulianjie': { 'zh-CN': '链接直达优化' },
+    'item.t.baiduhot': { 'zh-CN': '隐藏热搜 / AI 栏' },
+    'item.t.googleAI': { 'zh-CN': '隐藏 AI 概述' },
+    'item.t.bingAI': { 'zh-CN': '隐藏 Bing Copilot' },
+    'item.t.baidueye': { 'zh-CN': '护眼模式' },
+    'item.t.baidueyecolor': { 'zh-CN': '护眼色' },
+    'item.t.baidueyestrength': { 'zh-CN': '护眼强度' },
+    'item.t.baidueyeScheduleEnabled': { 'zh-CN': '护眼时间表' },
+    'item.t.baidueyeScheduleOn': { 'zh-CN': '开始时间' },
+    'item.t.baidueyeScheduleOff': { 'zh-CN': '结束时间' },
+    'item.t.baidumenu': { 'zh-CN': '页面快捷入口' },
+    'item.t.kgyoued': { 'zh-CN': 'YouTube / 优酷 / 腾讯 广告过滤' },
+    'item.t.kgbilied': { 'zh-CN': 'B站广告过滤' },
+    'item.t.haokanPauseAd': { 'zh-CN': '好看视频暂停广告' },
+    'item.t.kgtwied': { 'zh-CN': 'Twitter / X 推广过滤' },
+    'item.t.ytpRotate': { 'zh-CN': 'YouTube 旋转 / 翻转' },
+    'item.t.kgbiliQuality': { 'zh-CN': 'B站画质解锁' },
+    'item.t.kgbiliLogin': { 'zh-CN': 'B站绕过登录' },
+    'item.t.kgyoumv': { 'zh-CN': 'YouTube 视频下载' },
+    'item.t.kgtwimv': { 'zh-CN': 'Twitter / X 视频下载' },
+    'item.t.kgzhihued': { 'zh-CN': '知乎广告 + 登录弹窗' },
+    'item.t.kgdoubaned': { 'zh-CN': '豆瓣广告 + 登录墙' },
+    'item.t.kgweiboed': { 'zh-CN': '微博广告过滤' },
+    'item.t.kgweixined': { 'zh-CN': '微信公号广告过滤' },
+    'item.t.csdnAd': { 'zh-CN': 'CSDN 广告过滤' },
+    'item.t.xhsclean': { 'zh-CN': '小红书广告清理' },
+    'item.t.juejinclean': { 'zh-CN': '掘金广告清理' },
+    'item.t.sfclean': { 'zh-CN': '思否广告清理' },
+    'item.t.csdnLink': { 'zh-CN': 'CSDN 外链直达' },
+    'item.t.csdnExpand': { 'zh-CN': 'CSDN 自动展开' },
+    'item.t.csdnClean': { 'zh-CN': 'CSDN 纯净阅读' },
+    'item.t.kgweibomv': { 'zh-CN': '微博视频下载' },
+    'item.t.pojieSignIn': { 'zh-CN': '吾爱破解自动签到' },
+    'item.t.captchaEnabled': { 'zh-CN': '启用验证码识别' },
+    'item.t.captchaTrigger': { 'zh-CN': '触发方式' },
+    'item.t.captchaEngine': { 'zh-CN': '识别引擎' },
+    'item.t.captchaApiFast': { 'zh-CN': '极速接口地址' },
+    'item.t.captchaApiPrecise': { 'zh-CN': '精准接口地址' },
+    'item.t.captchaPreciseId': { 'zh-CN': '精准引擎识别码' },
+    'item.t.captchaYunmaToken': { 'zh-CN': '云码 Token' },
+    'item.t.captchaYunmaDev': { 'zh-CN': '云码开发者标识（可选）' },
+    'item.t.captchaAutoFind': { 'zh-CN': '自动查找验证码' },
+    'item.t.captchaShowHint': { 'zh-CN': '显示提示条' },
+    'item.t.captchaSlide': { 'zh-CN': '滑动验证码' },
+    'item.t.selectionSearch': { 'zh-CN': '启用划词搜索' },
+    'item.t.selSearchShowTranslate': { 'zh-CN': '显示翻译按钮' },
+    'item.t.selSearchTransAuto': { 'zh-CN': '自动翻译' },
+    'item.t.selSearchAlwaysShowOpenLink': { 'zh-CN': '打开链接按钮常驻' },
     // ① 站点级生效范围（v1.1.0 合并）：一个三态模式取代原先两个方向相反的站点级开关
-    'item.t.siteScopeMode': { 'zh-CN': '生效范围', 'en': 'Scope' },
-    'item.t.darkMode': { 'zh-CN': '暗黑模式', 'en': 'Dark mode' },
-    'item.t.cleanCopy': { 'zh-CN': '干净复制', 'en': 'Clean copy' },
-    'item.t.adStats': { 'zh-CN': '广告拦截统计', 'en': 'Ad-block stats' },
-    'item.t.adBadge': { 'zh-CN': '右下角拦截计数角标', 'en': 'Corner block-count badge' },
-    'item.t.shortcutPanel': { 'zh-CN': '打开控制面板', 'en': 'Open control panel' },
-    'item.t.shortcutPause': { 'zh-CN': '暂停/恢复净化', 'en': 'Pause/resume blocking' },
-    'item.t.shortcutYtp': { 'zh-CN': '旋转快捷键', 'en': 'Rotate shortcut' },
-    'item.d.kgpingbis': { 'zh-CN': '通用算法扫描悬浮/弹窗牛皮癣广告；作用范围可选：仅已知站点（默认，轻）/ 全站（更重，慎开）/ 关闭', 'en': 'Heuristic floating-ad removal. Scope: known sites only (default, light) / all pages (heavier) / off' },
-    'item.d.contentBlock': { 'zh-CN': '按你设定的关键词/网址统一屏蔽搜索结果与社区内容（百度/Google/360/Bing/知乎/B站/微博/微信公号/豆瓣/YouTube）。', 'en': 'Unified keyword/URL blocking across search results and community content.' },
-    'item.d.kgpingbiiframe': { 'zh-CN': '屏蔽来自其他域名的内嵌框架，阻断联盟广告与跟踪', 'en': 'Block cross-origin iframes to cut affiliate and tracking ads' },
-    'item.d.kgbaidued': { 'zh-CN': '过滤百度搜索系全站广告（含知道 / 百科 / 文库 / 贴吧）', 'en': 'Block ads across Baidu search family (Zhidao / Baike / Wenku / Tieba)' },
-    'item.d.kggoogleed': { 'zh-CN': '过滤 Google 搜索广告', 'en': 'Filter Google search ads' },
-    'item.d.kg360ed': { 'zh-CN': '过滤 360 搜索及子站广告', 'en': 'Filter 360 search and subdomain ads' },
-    'item.d.kgbinged': { 'zh-CN': '过滤 Bing 搜索广告', 'en': 'Filter Bing search ads' },
-    'item.d.kgyandexed': { 'zh-CN': '过滤 Yandex 搜索广告', 'en': 'Filter Yandex search ads' },
-    'item.d.baiducss': { 'zh-CN': '百度搜索结果现代卡片式布局', 'en': 'Modern card layout for Baidu search results' },
-    'item.d.googlecss': { 'zh-CN': 'Google 搜索结果现代卡片式布局', 'en': 'Modern card layout for Google search results' },
-    'item.d.bingcss': { 'zh-CN': 'Bing 搜索结果现代卡片式布局', 'en': 'Modern card layout for Bing search results' },
-    'item.d.yandexcss': { 'zh-CN': 'Yandex 搜索结果现代卡片式布局', 'en': 'Modern card layout for Yandex search results' },
-    'item.d.so360css': { 'zh-CN': '360 搜索结果现代卡片式布局', 'en': 'Modern card layout for 360 search results' },
-    'item.d.baidulogo': { 'zh-CN': '在搜索结果中显示网站 favicon', 'en': 'Show site favicon next to each result' },
-    'item.d.baidulianjie': { 'zh-CN': '跳过百度跳转链接，直达原始网页', 'en': 'Skip Baidu redirect links and jump to original page' },
-    'item.d.baiduhot': { 'zh-CN': '隐藏百度热搜推荐和 AI 辅助侧边栏', 'en': 'Hide Baidu hot list and AI sidebar' },
-    'item.d.googleAI': { 'zh-CN': '隐藏 Google AI Overview', 'en': 'Hide Google AI Overview' },
-    'item.d.bingAI': { 'zh-CN': '隐藏 Bing 搜索页的 AI / Copilot 侧边栏与深度搜索区', 'en': 'Hide Bing AI / Copilot sidebar and deep-search panel' },
-    'item.d.baidueye': { 'zh-CN': '全站护眼蒙版（视觉柔和）+ 20-20-20 休息提醒', 'en': 'Full-site soft overlay (visual softening) + 20-20-20 rest reminders' },
-    'item.d.baidueyecolor': { 'zh-CN': '选预设暖色调（Kindle/Night Shift 风格）或用取色器自定义', 'en': 'Pick a preset warm tone (Kindle / Night Shift style) or use the color picker' },
-    'item.d.baidueyestrength': { 'zh-CN': '护眼蒙版深浅：柔和不刺眼，增强更暖画面（视觉柔和更强）', 'en': 'Overlay depth: soft to strong, stronger warm tint (more visual softening)' },
-    'item.d.baidueyeScheduleEnabled': { 'zh-CN': '按起止时间自动开关护眼模式（如 07:00–22:00 日间开、夜间关），开启后时间表接管手动开关', 'en': 'Auto on/off eye-care by schedule; overrides manual switch when enabled' },
-    'item.d.baidueyeScheduleOn': { 'zh-CN': '护眼模式自动开启时间（HH:MM，24 小时制）', 'en': 'Auto-enable time (HH:MM, 24h)' },
-    'item.d.baidueyeScheduleOff': { 'zh-CN': '护眼模式自动关闭时间（HH:MM，24 小时制）', 'en': 'Auto-disable time (HH:MM, 24h)' },
-    'item.d.baidumenu': { 'zh-CN': '在百度页面显示控制面板入口', 'en': 'Show control-panel entry on Baidu pages' },
-    'item.d.kgyoued': { 'zh-CN': '自动跳过三家平台的贴片广告（同一开关，同时覆盖三家）', 'en': 'Skip pre-roll ads on all three (one switch covers them)' },
-    'item.d.kgbilied': { 'zh-CN': '过滤 B站推广卡片、直播广告、小火箭广告', 'en': 'Filter Bilibili promo cards, live ads, rocket-launcher ads' },
-    'item.d.haokanPauseAd': { 'zh-CN': '自动关闭好看视频暂停时弹出的联盟暂停广告', 'en': 'Auto-dismiss Haokan pause-time affiliate popups' },
-    'item.d.kgtwied': { 'zh-CN': '隐藏推广推文', 'en': 'Hide promoted tweets' },
-    'item.d.ytpRotate': { 'zh-CN': '嵌入旋转 / 翻转 / 填充工具栏（普通视频 + Shorts）', 'en': 'Inject rotate / flip / fill toolbar (regular videos + Shorts)' },
-    'item.d.kgbiliQuality': { 'zh-CN': '未登录状态解锁 1080P 画质选项', 'en': 'Unlock 1080P quality without login' },
-    'item.d.kgbiliLogin': { 'zh-CN': '关闭登录弹窗和"请登录后观看"提示', 'en': 'Close login popups and "please log in to watch" prompts' },
-    'item.d.kgyoumv': { 'zh-CN': '播放器工具栏添加下载按钮，跳转设置页所选站点并预填链接', 'en': 'Add download button to player toolbar — opens your chosen site with link prefilled' },
-    'item.d.kgtwimv': { 'zh-CN': '在推文视频旁添加下载按钮', 'en': 'Add download button next to tweet videos' },
-    'item.d.kgzhihued': { 'zh-CN': '过滤知乎广告、关闭登录弹窗并重定向登录页', 'en': 'Filter Zhihu ads, close login popups, redirect login pages' },
-    'item.d.kgdoubaned': { 'zh-CN': '过滤广告并关闭登录弹窗', 'en': 'Filter ads and close login popups' },
-    'item.d.kgweiboed': { 'zh-CN': '过滤微博信息流广告', 'en': 'Filter Weibo feed ads' },
-    'item.d.kgweixined': { 'zh-CN': '过滤微信公众文章里插入的广告和推广', 'en': 'Filter ads embedded in WeChat public-account articles' },
-    'item.d.csdnAd': { 'zh-CN': '去除 CSDN 广告和登录弹窗', 'en': 'Remove CSDN ads and login popups' },
-    'item.d.xhsclean': { 'zh-CN': '清理信息流推广、侧栏广告与登录墙', 'en': 'Clean feed promos, sidebar ads and login walls' },
-    'item.d.juejinclean': { 'zh-CN': '清理掘金信息流与侧栏广告', 'en': 'Clean Juejin feed and sidebar ads' },
-    'item.d.sfclean': { 'zh-CN': '清理思否广告位与登录墙', 'en': 'Clean SegmentFault ad slots and login walls' },
-    'item.d.csdnLink': { 'zh-CN': '跳过 CSDN 外链重定向', 'en': 'Skip CSDN outbound redirect' },
-    'item.d.csdnExpand': { 'zh-CN': '自动展开全文和代码块', 'en': 'Auto-expand full text and code blocks' },
-    'item.d.csdnClean': { 'zh-CN': '隐藏侧边栏，文章居中显示', 'en': 'Hide sidebar, center article' },
-    'item.d.kgweibomv': { 'zh-CN': '在微博视频旁添加下载按钮', 'en': 'Add download button next to Weibo videos' },
-    'item.d.pojieSignIn': { 'zh-CN': '进入吾爱破解论坛后自动完成每日签到', 'en': 'Auto daily check-in on 52pojie forum' },
-    'item.d.captchaEnabled': { 'zh-CN': '总开关。默认关闭，按需开启；关闭后本页所有设置均不生效。⚠ 免责声明：本分组所接 OCR / 验证码识别服务（含极速 / 精准 / 云码）均为第三方提供，与本脚本无隶属或合作关系；填写接口后，验证码图片与识别码会发送至你所填写的服务器，请仅使用你信任的服务并自行保管账号凭证；脚本不内置任何接口、不收取任何费用，亦不对第三方服务做任何担保。', 'en': 'Master switch. Off by default. When off, all settings on this page are inert. ⚠ Disclaimer: the OCR / captcha services this section connects to (Fast / Precise / Yunma) are provided by third parties and are NOT affiliated with this script. Once you fill in an endpoint, captcha images and IDs are uploaded to that server. Use only services you trust and keep your credentials safe. This script ships no built-in API, charges no fee, and makes no warranty for third-party services.' },
-    'item.d.captchaTrigger': { 'zh-CN': '手动：点悬浮「识」按钮才扫描（零常驻开销，推荐）；白名单：仅下方名单站点自动扫描；全局：全站常驻扫描（最耗性能，不推荐）。', 'en': 'Manual: click the floating "识" button to scan (zero idle cost, recommended). Whitelist: auto-scan only sites in the list below. Global: scan every page (heaviest, not recommended).' },
-    'item.d.captchaEngine': { 'zh-CN': '自动：极速接口优先，失败后回退精准；极速：免识别码，但需填写下方接口地址（数英/算术）；精准：需下方识别码（支持滑块）。', 'en': 'Auto: try fast API first, fall back to precise. Fast: no ID required, but needs API URL below (text/math). Precise: needs ID below (supports slide).' },
-    'item.d.captchaApiFast': { 'zh-CN': '「极速」引擎调用的服务地址。留空 = 极速引擎直接跳过，不向任何外部服务器发送数据。请自行搭建或选用可信 OCR 服务后填写；验证码图片将上传至该地址。点击右侧「接口说明」查看填写方式。', 'en': 'API URL for the Fast engine. Leave blank to skip the Fast engine entirely (no data sent). Self-host or use a trusted OCR service. Captcha images will be uploaded to this URL. Click "API guide" on the right for setup help.' },
-    'item.d.captchaApiPrecise': { 'zh-CN': '「精准」引擎（含滑块）调用的服务地址。留空 = 精准引擎直接跳过。填写后验证码图片、识别码与当前网页网址会发送给该服务器；常用 like996 公益接口（官网 https://www.like996.icu:1205/，第三方服务，与本脚本无关），点击右侧「接口说明」可直达注册页。', 'en': 'API URL for the Precise engine (slide captcha). Leave blank to skip. Captcha images, your ID and current page URL are sent to this server. Common choice: like996 free public API (https://www.like996.icu:1205/, third-party service — not affiliated with this script). Click "API guide" for the signup page.' },
-    'item.d.captchaPreciseId': { 'zh-CN': '仅「精准 / 自动」模式需要，由你所填写的精准接口服务方提供（原 like996 为 32 位）。留空则精准模式跳过识别。', 'en': 'Only needed for Precise / Auto mode. Provided by the API service you filled above (e.g. 32-char ID from like996). Leave blank to skip precise mode.' },
-    'item.d.captchaYunmaToken': { 'zh-CN': '仅「算术验证码」需要（如「3+5=?」图片）。在 jfbym.com 获取 Token（商业服务，按识别次数计费，需充值积分，官网 https://www.jfbym.com，第三方服务，与本脚本无关）；留空则算术图跳过识别。点击右侧「接口说明」可直达注册页。', 'en': 'Only needed for arithmetic captchas (e.g. "3+5=?"). Get a token at jfbym.com (paid service, billed per solve — https://www.jfbym.com, third-party, not affiliated with this script). Leave blank to skip arithmetic. Click "API guide" for signup.' },
-    'item.d.captchaYunmaDev': { 'zh-CN': '在 jfbym.com 后台获取的开发者标识（developer_tag），用于把识别调用归属到你的账号。可选，留空则请求不带该标识（由云码平台自行归属），不影响识别功能。', 'en': 'Developer tag (developer_tag) from your jfbym.com console, used to attribute recognition calls to your account. Optional — leave blank and requests omit it (jfbym will attribute it itself); recognition still works.' },
-    'item.d.captchaAutoFind': { 'zh-CN': '无手动规则时，按属性关键词（code/captcha/yzm…）自动定位验证码与输入框并填充。', 'en': 'When no manual rules, auto-locate captcha and input by attribute keywords (code/captcha/yzm…).' },
-    'item.d.captchaShowHint': { 'zh-CN': '顶部灰条显示识别状态（识别中 / 完成 / 错误）。', 'en': 'Top banner shows solving state (solving / done / error).' },
-    'item.d.captchaSlide': { 'zh-CN': '启用滑动拼图 / 滑块行为验证码的自动识别与拖拽。需「精准引擎 + 识别码」。', 'en': 'Auto-solve and drag slide / puzzle captchas. Requires Precise engine + ID.' },
-    'item.d.selectionSearch': { 'zh-CN': '选中网页文字弹出搜索工具条（默认开启，修改后刷新页面生效）', 'en': 'Selection search toolbar pops up on text selection (on by default; reload to apply changes)' },
-    'item.d.selSearchShowTranslate': { 'zh-CN': '工具条末尾显示「译」按钮，点按划词翻译', 'en': 'Show "译" button at the end of the toolbar for translating selected text' },
-    'item.d.selSearchTransAuto': { 'zh-CN': '划词后立即自动翻译（默认关闭，避免打扰）', 'en': 'Auto-translate immediately after selection (off by default to avoid noise)' },
-    'item.d.selSearchAlwaysShowOpenLink': { 'zh-CN': '无论选中内容是否像地址，都显示「打开网站」按钮（默认关闭）', 'en': 'Always show "open as link" button even if the selection does not look like a URL (off by default)' },
-    'item.d.siteScopeMode': { 'zh-CN': '决定脚本在哪些站点运行。全部站点 = 不限；仅名单内生效 = 只在下方名单内的站点运行，其余站点注入后秒退（近零开销）；名单内不生效 = 名单内站点整站暂停（不注入任何净化/美化/划词/验证码）。改动需刷新页面生效。', 'en': 'Where the script runs. All sites = no restriction; only listed = run solely on the list below, others exit right after injection (~zero cost); skip listed = fully pause those sites (nothing injected). Reload after changes.' },
-    'item.d.darkMode': { 'zh-CN': '跟随系统自动切换暗黑模式', 'en': 'Auto-switch dark mode based on system preference' },
-    'item.d.cleanCopy': { 'zh-CN': '复制链接时自动去除追踪参数', 'en': 'Strip tracking parameters when copying links' },
-    'item.d.adStats': { 'zh-CN': '统计并显示本次/累计/当前站点拦截数量，并在「关于」页顶部生成数据看板（来源占比扇形图 + 近 7/30/90 天趋势折线图，按天数据保留 90 天）。关闭后不再扫描 DOM 统计，面板显示「统计已关闭」，历史数据仍保留', 'en': 'Counts per-session / total / per-site blocks and renders a dashboard on the About page (source breakdown donut + 7/30/90-day trend line; daily data kept 90 days). When off, DOM scanning for stats stops and the panel shows "stats off"; historical data is kept.' },
-    'item.d.adBadge': { 'zh-CN': '在页面右下角常驻一个小盾牌，显示本次已拦截的广告数量，点击可查看明细（本次/累计/当前站点）。默认关闭，避免遮挡页面内容。', 'en': 'Show a small persistent shield at the bottom-right with the session block count; click for details (session / total / this site). Off by default to avoid covering page content.' },
-    'item.d.shortcutPanel': { 'zh-CN': 'Ctrl+Shift+A 一键打开设置面板', 'en': 'Ctrl+Shift+A opens the control panel' },
-    'item.d.shortcutPause': { 'zh-CN': 'Ctrl+Shift+P 全局暂停或恢复广告净化', 'en': 'Ctrl+Shift+P globally pauses or resumes ad blocking' },
-    'item.d.shortcutYtp': { 'zh-CN': 'Alt+Shift+R/F/H/V 旋转/填充/翻转视频', 'en': 'Alt+Shift+R/F/H/V rotates / fits / flips videos' },
-    'ph.坚果云邮箱_用户名': { 'zh-CN': '坚果云邮箱 / 用户名', 'en': 'Nutstore email / username' },
-    'ph.坚果云_应用密码_': { 'zh-CN': '坚果云「应用密码」', 'en': 'Nutstore "app password"' },
-    'ph.输入网址关键词': { 'zh-CN': '输入网址关键词', 'en': 'Enter URL keyword' },
-    'ph.输入关键词_至少2个字_': { 'zh-CN': '输入关键词（至少2个字）', 'en': 'Enter keyword (≥2 chars)' },
-    'ph.如_example_com': { 'zh-CN': '如 example.com', 'en': 'e.g. example.com' },
-    'ph.输入网址片段': { 'zh-CN': '输入网址片段', 'en': 'Enter URL fragment' },
-    'ph.输入域名': { 'zh-CN': '输入域名', 'en': 'Enter domain' },
-    'ph.如_baidu_com': { 'zh-CN': '如 baidu.com', 'en': 'e.g. baidu.com' },
-    'ph.如_icbc_com_cn': { 'zh-CN': '如 icbc.com.cn', 'en': 'e.g. icbc.com.cn' },
+    'item.t.siteScopeMode': { 'zh-CN': '生效范围' },
+    'item.t.darkMode': { 'zh-CN': '暗黑模式' },
+    'item.t.cleanCopy': { 'zh-CN': '干净复制' },
+    'item.t.adStats': { 'zh-CN': '广告拦截统计' },
+    'item.t.adBadge': { 'zh-CN': '右下角拦截计数角标' },
+    'item.t.shortcutPanel': { 'zh-CN': '打开控制面板' },
+    'item.t.shortcutPause': { 'zh-CN': '暂停/恢复净化' },
+    'item.t.shortcutYtp': { 'zh-CN': '旋转快捷键' },
+    'item.d.kgpingbis': { 'zh-CN': '通用算法扫描悬浮/弹窗牛皮癣广告；作用范围可选：仅已知站点（默认，轻）/ 全站（更重，慎开）/ 关闭' },
+    'item.d.contentBlock': { 'zh-CN': '按你设定的关键词/网址统一屏蔽搜索结果与社区内容（覆盖范围随版本补充，清单见更新日志）。' },
+    'item.d.kgpingbiiframe': { 'zh-CN': '屏蔽来自其他域名的内嵌框架，阻断联盟广告与跟踪' },
+    'item.d.kgbaidued': { 'zh-CN': '过滤百度搜索系全站广告（含知道 / 百科 / 文库 / 贴吧）' },
+    'item.d.kggoogleed': { 'zh-CN': '过滤 Google 搜索广告' },
+    'item.d.kg360ed': { 'zh-CN': '过滤 360 搜索及子站广告' },
+    'item.d.kgbinged': { 'zh-CN': '过滤 Bing 搜索广告' },
+    'item.d.kgyandexed': { 'zh-CN': '过滤 Yandex 搜索广告' },
+    'item.d.baiducss': { 'zh-CN': '百度搜索结果现代卡片式布局' },
+    'item.d.googlecss': { 'zh-CN': 'Google 搜索结果现代卡片式布局' },
+    'item.d.bingcss': { 'zh-CN': 'Bing 搜索结果现代卡片式布局' },
+    'item.d.yandexcss': { 'zh-CN': 'Yandex 搜索结果现代卡片式布局' },
+    'item.d.so360css': { 'zh-CN': '360 搜索结果现代卡片式布局' },
+    'item.d.baidulogo': { 'zh-CN': '在搜索结果中显示网站 favicon' },
+    'item.d.baidulianjie': { 'zh-CN': '跳过百度跳转链接，直达原始网页' },
+    'item.d.baiduhot': { 'zh-CN': '隐藏百度热搜推荐和 AI 辅助侧边栏' },
+    'item.d.googleAI': { 'zh-CN': '隐藏 Google AI Overview' },
+    'item.d.bingAI': { 'zh-CN': '隐藏 Bing 搜索页的 AI / Copilot 侧边栏与深度搜索区' },
+    'item.d.baidueye': { 'zh-CN': '全站护眼蒙版（视觉柔和）+ 20-20-20 休息提醒' },
+    'item.d.baidueyecolor': { 'zh-CN': '选预设暖色调（Kindle/Night Shift 风格）或用取色器自定义' },
+    'item.d.baidueyestrength': { 'zh-CN': '护眼蒙版深浅：柔和不刺眼，增强更暖画面（视觉柔和更强）' },
+    'item.d.baidueyeScheduleEnabled': { 'zh-CN': '按起止时间自动开关护眼模式（如 07:00–22:00 日间开、夜间关），开启后时间表接管手动开关' },
+    'item.d.baidueyeScheduleOn': { 'zh-CN': '护眼模式自动开启时间（HH:MM，24 小时制）' },
+    'item.d.baidueyeScheduleOff': { 'zh-CN': '护眼模式自动关闭时间（HH:MM，24 小时制）' },
+    'item.d.baidumenu': { 'zh-CN': '在百度页面显示控制面板入口' },
+    'item.d.kgyoued': { 'zh-CN': '自动跳过三家平台的贴片广告（同一开关，同时覆盖三家）' },
+    'item.d.kgbilied': { 'zh-CN': '过滤 B站推广卡片、直播广告、小火箭广告' },
+    'item.d.haokanPauseAd': { 'zh-CN': '自动关闭好看视频暂停时弹出的联盟暂停广告' },
+    'item.d.kgtwied': { 'zh-CN': '隐藏推广推文' },
+    'item.d.ytpRotate': { 'zh-CN': '嵌入旋转 / 翻转 / 填充工具栏（普通视频 + Shorts）' },
+    'item.d.kgbiliQuality': { 'zh-CN': '未登录状态解锁 1080P 画质选项' },
+    'item.d.kgbiliLogin': { 'zh-CN': '关闭登录弹窗和"请登录后观看"提示' },
+    'item.d.kgyoumv': { 'zh-CN': '播放器工具栏添加下载按钮，跳转设置页所选站点并预填链接' },
+    'item.d.kgtwimv': { 'zh-CN': '在推文视频旁添加下载按钮' },
+    'item.d.kgzhihued': { 'zh-CN': '过滤知乎广告、关闭登录弹窗并重定向登录页' },
+    'item.d.kgdoubaned': { 'zh-CN': '过滤广告并关闭登录弹窗' },
+    'item.d.kgweiboed': { 'zh-CN': '过滤微博信息流广告' },
+    'item.d.kgweixined': { 'zh-CN': '过滤微信公众文章里插入的广告和推广' },
+    'item.d.csdnAd': { 'zh-CN': '去除 CSDN 广告和登录弹窗' },
+    'item.d.xhsclean': { 'zh-CN': '清理信息流推广、侧栏广告与登录墙' },
+    'item.d.juejinclean': { 'zh-CN': '清理掘金信息流与侧栏广告' },
+    'item.d.sfclean': { 'zh-CN': '清理思否广告位与登录墙' },
+    'item.d.csdnLink': { 'zh-CN': '跳过 CSDN 外链重定向' },
+    'item.d.csdnExpand': { 'zh-CN': '自动展开全文和代码块' },
+    'item.d.csdnClean': { 'zh-CN': '隐藏侧边栏，文章居中显示' },
+    'item.d.kgweibomv': { 'zh-CN': '在微博视频旁添加下载按钮' },
+    'item.d.pojieSignIn': { 'zh-CN': '进入吾爱破解论坛后自动完成每日签到' },
+    'item.d.captchaEnabled': { 'zh-CN': '总开关。默认关闭，按需开启；关闭后本页所有设置均不生效。⚠ 免责声明：本分组所接 OCR / 验证码识别服务（含极速 / 精准 / 云码）均为第三方提供，与本脚本无隶属或合作关系；填写接口后，验证码图片与识别码会发送至你所填写的服务器，请仅使用你信任的服务并自行保管账号凭证；脚本不内置任何接口、不收取任何费用，亦不对第三方服务做任何担保。' },
+    'item.d.captchaTrigger': { 'zh-CN': '手动：点悬浮「识」按钮才扫描（零常驻开销，推荐）；白名单：仅下方名单站点自动扫描；全局：全站常驻扫描（最耗性能，不推荐）。' },
+    'item.d.captchaEngine': { 'zh-CN': '自动：极速接口优先，失败后回退精准；极速：免识别码，但需填写下方接口地址（数英/算术）；精准：需下方识别码（支持滑块）。' },
+    'item.d.captchaApiFast': { 'zh-CN': '「极速」引擎调用的服务地址。留空 = 极速引擎直接跳过，不向任何外部服务器发送数据。请自行搭建或选用可信 OCR 服务后填写；验证码图片将上传至该地址。点击右侧「接口说明」查看填写方式。' },
+    'item.d.captchaApiPrecise': { 'zh-CN': '「精准」引擎（含滑块）调用的服务地址。留空 = 精准引擎直接跳过。填写后验证码图片、识别码与当前网页网址会发送给该服务器；常用 like996 公益接口（官网 https://www.like996.icu:1205/，第三方服务，与本脚本无关），点击右侧「接口说明」可直达注册页。' },
+    'item.d.captchaPreciseId': { 'zh-CN': '仅「精准 / 自动」模式需要，由你所填写的精准接口服务方提供（原 like996 为 32 位）。留空则精准模式跳过识别。' },
+    'item.d.captchaYunmaToken': { 'zh-CN': '仅「算术验证码」需要（如「3+5=?」图片）。在 jfbym.com 获取 Token（商业服务，按识别次数计费，需充值积分，官网 https://www.jfbym.com，第三方服务，与本脚本无关）；留空则算术图跳过识别。点击右侧「接口说明」可直达注册页。' },
+    'item.d.captchaYunmaDev': { 'zh-CN': '在 jfbym.com 后台获取的开发者标识（developer_tag），用于把识别调用归属到你的账号。可选，留空则请求不带该标识（由云码平台自行归属），不影响识别功能。' },
+    'item.d.captchaAutoFind': { 'zh-CN': '无手动规则时，按属性关键词（code/captcha/yzm…）自动定位验证码与输入框并填充。' },
+    'item.d.captchaShowHint': { 'zh-CN': '顶部灰条显示识别状态（识别中 / 完成 / 错误）。' },
+    'item.d.captchaSlide': { 'zh-CN': '启用滑动拼图 / 滑块行为验证码的自动识别与拖拽。需「精准引擎 + 识别码」。' },
+    'item.d.selectionSearch': { 'zh-CN': '选中网页文字弹出搜索工具条（默认开启，修改后刷新页面生效）' },
+    'item.d.selSearchShowTranslate': { 'zh-CN': '工具条末尾显示「译」按钮，点按划词翻译' },
+    'item.d.selSearchTransAuto': { 'zh-CN': '划词后立即自动翻译（默认关闭，避免打扰）' },
+    'item.d.selSearchAlwaysShowOpenLink': { 'zh-CN': '无论选中内容是否像地址，都显示「打开网站」按钮（默认关闭）' },
+    'item.d.siteScopeMode': { 'zh-CN': '决定脚本在哪些站点运行。全部站点 = 不限；仅名单内生效 = 只在下方名单内的站点运行，其余站点注入后秒退（近零开销）；名单内不生效 = 名单内站点整站暂停（不注入任何净化/美化/划词/验证码）。改动需刷新页面生效。' },
+    'item.d.darkMode': { 'zh-CN': '跟随系统自动切换暗黑模式' },
+    'item.d.cleanCopy': { 'zh-CN': '复制链接时自动去除追踪参数' },
+    'item.d.adStats': { 'zh-CN': '统计并显示本次/累计/当前站点拦截数量，并在「关于」页顶部生成数据看板（来源占比扇形图 + 近 7/30/90 天趋势折线图，按天数据保留 90 天）。关闭后不再扫描 DOM 统计，面板显示「统计已关闭」，历史数据仍保留' },
+    'item.d.adBadge': { 'zh-CN': '在页面右下角常驻一个小盾牌，显示本次已拦截的广告数量，点击可查看明细（本次/累计/当前站点）。默认关闭，避免遮挡页面内容。' },
+    'item.d.shortcutPanel': { 'zh-CN': 'Ctrl+Shift+A 一键打开设置面板' },
+    'item.d.shortcutPause': { 'zh-CN': 'Ctrl+Shift+P 全局暂停或恢复广告净化' },
+    'item.d.shortcutYtp': { 'zh-CN': 'Alt+Shift+R/F/H/V 旋转/填充/翻转视频' },
+    'ph.坚果云邮箱_用户名': { 'zh-CN': '坚果云邮箱 / 用户名' },
+    'ph.坚果云_应用密码_': { 'zh-CN': '坚果云「应用密码」' },
+    'ph.输入网址关键词': { 'zh-CN': '输入网址关键词' },
+    'ph.输入关键词_至少2个字_': { 'zh-CN': '输入关键词（至少2个字）' },
+    'ph.如_example_com': { 'zh-CN': '如 example.com' },
+    'ph.输入网址片段': { 'zh-CN': '输入网址片段' },
+    'ph.输入域名': { 'zh-CN': '输入域名' },
+    'ph.如_baidu_com': { 'zh-CN': '如 baidu.com' },
+    'ph.如_icbc_com_cn': { 'zh-CN': '如 icbc.com.cn' },
     // ── 「名单管理」名单的标题 / 说明 / 占位符（按 3 个作用层级分组，标题自带层级前缀）──
     //   ① 站点级：决定「整站跑不跑脚本」  ② 验证码级：只在验证码模块内生效  ③ 内容级：只删搜索结果条目
     //   v1.1.0 合并：① 由「暂停名单」+「仅在名单内网站运行」两份（语义相反）收敛为「一个模式 + 一份名单」；
     //   ③ 由两张卡片合并为一张（总开关 + 网址名单 + 关键词名单），标题/说明随之改写。
-    'ls.title.siteScope': { 'zh-CN': '① 站点级 · 生效范围', 'en': '1) Site level - Scope' },
-    'ls.desc.siteScope': { 'zh-CN': '决定脚本在哪些站点运行：上方选模式，下方填名单。名单匹配规则为「当前域名包含该条目」（填 baidu.com 即覆盖其全部子域），填主域名即可。也可点油猴菜单「🚫 只暂停当前网站」一键增减本站，无需手输域名。', 'en': 'Where the script runs: pick a mode above, fill the list below. Matching is "current host contains the entry" (baidu.com covers all subdomains). You can also toggle this site from the Tampermonkey menu instead of typing a domain.' },
-    'ls.ph.siteScope': { 'zh-CN': '如 icbc.com.cn（填主域名即可）', 'en': 'e.g. icbc.com.cn (main domain is enough)' },
-    'ls.title.captchaWhitelist': { 'zh-CN': '② 验证码级 · 自动扫描站点', 'en': '2) Captcha level - Auto-scan sites' },
-    'ls.desc.captchaWhitelist': { 'zh-CN': '只在「验证码识别」模块内生效：触发方式选「白名单站点」时，仅这些站点会自动扫描识别。填完整 URL 或 *.example.com 亦可（脚本会自动提取域名主体）。不影响广告净化等其他功能。', 'en': 'Captcha module only: when trigger mode is "whitelist sites", only these sites are auto-scanned. Full URLs or *.example.com also work (the host is normalized). Does not affect ad blocking or other features.' },
-    'ls.ph.captchaWhitelist': { 'zh-CN': '如 example.com', 'en': 'e.g. example.com' },
-    'ls.title.captchaBlacklist': { 'zh-CN': '② 验证码级 · 跳过识别站点', 'en': '2) Captcha level - Skip recognition here' },
-    'ls.desc.captchaBlacklist': { 'zh-CN': '只在「验证码识别」模块内生效：URL 含其中字符串的页面会跳过验证码识别，避免在与验证码无关的页面反复出错打扰。不影响广告净化等其他功能。', 'en': 'Captcha module only: pages whose URL contains one of these strings skip captcha recognition, so unrelated pages no longer trigger noisy failures. Does not affect ad blocking or other features.' },
-    'ls.ph.captchaBlacklist': { 'zh-CN': '输入网址片段', 'en': 'Enter URL fragment' },
-    'ls.title.pingbiurl': { 'zh-CN': '③ 内容级 · 内容屏蔽（网址 / 关键词）', 'en': '3) Content level - Content blocking (URLs / keywords)' },
-    'ls.desc.pingbiurl': { 'zh-CN': '只在搜索结果里生效：命中即移除该结果条目（百度 / Google / Bing / 360 / Yandex 等），不影响整站运行。上方开关总控下方两份名单。建议填有区分度的条目；过短的条目（如 com、通用词）会误伤大量结果。', 'en': 'Search results only: a result is removed when it matches (Baidu / Google / Bing / 360 / Yandex); the rest of the site keeps working. The switch above controls both lists below. Use distinctive entries - very short or generic ones match far too much.' },
-    'ls.sub.pingbiurl': { 'zh-CN': '屏蔽这些网址', 'en': 'Block these URLs' },
-    'ls.ph.pingbiurl': { 'zh-CN': '输入网址关键词', 'en': 'Enter URL keyword' },
-    'ls.sub.pingbikw': { 'zh-CN': '屏蔽这些关键词', 'en': 'Block these keywords' },
-    'ls.ph.pingbikw': { 'zh-CN': '输入关键词（至少2个字）', 'en': 'Enter keyword (2+ chars)' },
-    'title.关闭': { 'zh-CN': '关闭', 'en': 'Close' },
-    'title.NetClean：本站已暂停，点击管理': { 'zh-CN': 'NetClean：本站已暂停，点击管理', 'en': 'NetClean: paused on this site — click to manage' },
-    'title.关闭提示': { 'zh-CN': '关闭提示', 'en': 'Dismiss prompt' },
-    'title.盐选内容（可在控制面板关闭此效果）': { 'zh-CN': '盐选内容（可在控制面板关闭此效果）', 'en': 'Yan-selected content (disable in control panel)' },
-    'title.拖动调整位置｜左键打开菜单｜右键隐藏（刷新恢复）': { 'zh-CN': '拖动调整位置｜左键打开菜单｜右键隐藏（刷新恢复）', 'en': 'Drag to move · left-click to open · right-click to hide (reload to restore)' },
-    'title.翻译': { 'zh-CN': '翻译', 'en': 'Translate' },
-    'sec.百度广告过滤': { 'zh-CN': '百度广告过滤', 'en': 'Baidu ad blocking' },
-    'sec.关键词过滤': { 'zh-CN': '关键词过滤', 'en': 'Keyword filter' },
-    'sec.链接优化': { 'zh-CN': '链接优化', 'en': 'Link optimisation' },
-    'sec.网站图标': { 'zh-CN': '网站图标', 'en': 'Site favicons' },
-    'sec.卡片式美化': { 'zh-CN': '卡片式美化', 'en': 'Card-style beautify' },
-    'sec.隐藏热搜/AI栏': { 'zh-CN': '隐藏热搜/AI栏', 'en': 'Hide hot list / AI bar' },
-    'sec.护眼模式': { 'zh-CN': '护眼模式', 'en': 'Eye-care mode' },
-    'sec.快捷入口': { 'zh-CN': '快捷入口', 'en': 'Quick entry' },
-    'sec.Google 广告过滤': { 'zh-CN': 'Google 广告过滤', 'en': 'Google ad blocking' },
-    'sec.Google 关键词过滤': { 'zh-CN': 'Google 关键词过滤', 'en': 'Google keyword filter' },
-    'sec.隐藏 AI 概述': { 'zh-CN': '隐藏 AI 概述', 'en': 'Hide AI Overview' },
-    'sec.Google 美化': { 'zh-CN': 'Google 美化', 'en': 'Google beautify' },
-    'sec.360 广告过滤': { 'zh-CN': '360 广告过滤', 'en': '360 ad blocking' },
-    'sec.360 关键词过滤': { 'zh-CN': '360 关键词过滤', 'en': '360 keyword filter' },
-    'sec.360 卡片美化': { 'zh-CN': '360 卡片美化', 'en': '360 card beautify' },
-    'sec.Yandex 广告过滤': { 'zh-CN': 'Yandex 广告过滤', 'en': 'Yandex ad blocking' },
-    'sec.Yandex 卡片美化': { 'zh-CN': 'Yandex 卡片美化', 'en': 'Yandex card beautify' },
-    'sec.Bing 广告过滤': { 'zh-CN': 'Bing 广告过滤', 'en': 'Bing ad blocking' },
-    'sec.隐藏 Bing Copilot': { 'zh-CN': '隐藏 Bing Copilot', 'en': 'Hide Bing Copilot' },
-    'sec.Bing 关键词过滤': { 'zh-CN': 'Bing 关键词过滤', 'en': 'Bing keyword filter' },
-    'sec.Bing 美化': { 'zh-CN': 'Bing 美化', 'en': 'Bing beautify' },
-    'sec.知乎广告 + 登录弹窗': { 'zh-CN': '知乎广告 + 登录弹窗', 'en': 'Zhihu ads + login popup' },
-    'sec.知乎关键词过滤': { 'zh-CN': '知乎关键词过滤', 'en': 'Zhihu keyword filter' },
-    'sec.B站广告过滤': { 'zh-CN': 'B站广告过滤', 'en': 'Bilibili ad blocking' },
-    'sec.B站关键词过滤': { 'zh-CN': 'B站关键词过滤', 'en': 'Bilibili keyword filter' },
-    'sec.绕过登录限制': { 'zh-CN': '绕过登录限制', 'en': 'Bypass login' },
-    'sec.画质解锁': { 'zh-CN': '画质解锁', 'en': 'Quality unlock' },
-    'sec.豆瓣广告 + 登录墙': { 'zh-CN': '豆瓣广告 + 登录墙', 'en': 'Douban ads + login wall' },
-    'sec.豆瓣关键词过滤': { 'zh-CN': '豆瓣关键词过滤', 'en': 'Douban keyword filter' },
-    'sec.微博广告过滤': { 'zh-CN': '微博广告过滤', 'en': 'Weibo ad blocking' },
-    'sec.微博关键词过滤': { 'zh-CN': '微博关键词过滤', 'en': 'Weibo keyword filter' },
-    'sec.微博视频下载': { 'zh-CN': '微博视频下载', 'en': 'Weibo video download' },
-    'sec.YouTube 视频旋转/翻转': { 'zh-CN': 'YouTube 视频旋转/翻转', 'en': 'YouTube rotate / flip' },
-    'sec.YouTube 广告过滤': { 'zh-CN': 'YouTube 广告过滤', 'en': 'YouTube ad blocking' },
-    'sec.YouTube 关键词过滤': { 'zh-CN': 'YouTube 关键词过滤', 'en': 'YouTube keyword filter' },
-    'sec.YouTube 视频下载': { 'zh-CN': 'YouTube 视频下载', 'en': 'YouTube video download' },
-    'sec.Twitter 广告过滤': { 'zh-CN': 'Twitter 广告过滤', 'en': 'Twitter ad blocking' },
-    'sec.Twitter 视频下载': { 'zh-CN': 'Twitter 视频下载', 'en': 'Twitter video download' },
-    'sec.CSDN 广告过滤': { 'zh-CN': 'CSDN 广告过滤', 'en': 'CSDN ad blocking' },
-    'sec.CSDN 外链直达': { 'zh-CN': 'CSDN 外链直达', 'en': 'CSDN direct link' },
-    'sec.CSDN 自动展开': { 'zh-CN': 'CSDN 自动展开', 'en': 'CSDN auto-expand' },
-    'sec.CSDN 纯净阅读': { 'zh-CN': 'CSDN 纯净阅读', 'en': 'CSDN clean reading' },
-    'sec.小红书广告清理': { 'zh-CN': '小红书广告清理', 'en': 'Xiaohongshu cleanup' },
-    'sec.掘金广告清理': { 'zh-CN': '掘金广告清理', 'en': 'Juejin cleanup' },
-    'sec.思否广告清理': { 'zh-CN': '思否广告清理', 'en': 'SegmentFault cleanup' },
-    'sec.微信公号广告过滤': { 'zh-CN': '微信公号广告过滤', 'en': 'WeChat MP ad blocking' },
-    'sec.微信公号关键词过滤': { 'zh-CN': '微信公号关键词过滤', 'en': 'WeChat MP keyword filter' },
-    'sec.吾爱破解自动签到': { 'zh-CN': '吾爱破解自动签到', 'en': '52pojie auto check-in' },
-    'sec.暗黑模式': { 'zh-CN': '暗黑模式', 'en': 'Dark mode' },
-    'sec.干净复制': { 'zh-CN': '干净复制', 'en': 'Clean copy' },
-    'sec.被动去广告': { 'zh-CN': '被动去广告', 'en': 'Passive ad blocking' },
-    'sec.禁用第三方 iframe': { 'zh-CN': '禁用第三方 iframe', 'en': 'Block 3rd-party iframes' },
-    'sec.护眼色': { 'zh-CN': '护眼色', 'en': 'Eye-care color' },
-    'sec.网址过滤列表': { 'zh-CN': '网址过滤列表', 'en': 'URL filter list' },
-    'sec.关键词过滤列表': { 'zh-CN': '关键词过滤列表', 'en': 'Keyword filter list' },
-    'sec.打开控制面板快捷键': { 'zh-CN': '打开控制面板快捷键', 'en': 'Open control panel' },
-    'sec.暂停/恢复快捷键': { 'zh-CN': '暂停/恢复快捷键', 'en': 'Pause / resume' },
-    'sec.YouTube 旋转快捷键': { 'zh-CN': 'YouTube 旋转快捷键', 'en': 'YouTube rotate shortcut' },
-    'sec.好看视频暂停广告屏蔽': { 'zh-CN': '好看视频暂停广告屏蔽', 'en': 'Haokan pause ads' },
-    'sec.仅白名单域名启用': { 'zh-CN': '仅白名单域名启用', 'en': 'Whitelist only' },
-    'sec.被动扫描全局化': { 'zh-CN': '被动扫描全局化', 'en': 'Passive scan global' },
-    'sec.启用域名（内部白名单）': { 'zh-CN': '启用域名（内部白名单）', 'en': 'Enabled domains (internal whitelist)' },
-    'sec.启用验证码识别': { 'zh-CN': '启用验证码识别', 'en': 'Enable captcha solver' },
-    'sec.验证码触发方式': { 'zh-CN': '验证码触发方式', 'en': 'Trigger mode' },
-    'sec.识别引擎': { 'zh-CN': '识别引擎', 'en': 'Engine' },
-    'sec.极速接口地址': { 'zh-CN': '极速接口地址', 'en': 'Fast API URL' },
-    'sec.精准接口地址': { 'zh-CN': '精准接口地址', 'en': 'Precise API URL' },
-    'sec.自动查找验证码': { 'zh-CN': '自动查找验证码', 'en': 'Auto-find captcha' },
-    'sec.显示提示条': { 'zh-CN': '显示提示条', 'en': 'Show hint banner' },
-    'sec.滑动验证码': { 'zh-CN': '滑动验证码', 'en': 'Slide captcha' },
-    'sec.精准引擎识别码': { 'zh-CN': '精准引擎识别码', 'en': 'Precise engine ID' },
-    'sec.云码 Token': { 'zh-CN': '云码 Token', 'en': 'Yunma token' },
-    'sec.验证码自动启用站点': { 'zh-CN': '验证码自动启用站点', 'en': 'Auto-solver sites' },
-    'sec.验证码识别黑名单': { 'zh-CN': '验证码识别黑名单', 'en': 'Captcha solver blacklist' },
-    'sec.脚本启用站点黑名单': { 'zh-CN': '脚本启用站点黑名单', 'en': 'Script site blacklist' },
-    'sec.黑名单站点': { 'zh-CN': '黑名单站点', 'en': 'Blacklist sites' },
-    'sec.白名单域名': { 'zh-CN': '白名单域名', 'en': 'Whitelist domains' },
-    'sec.广告拦截统计': { 'zh-CN': '广告拦截统计', 'en': 'Ad-block stats' },
-    'sec.划词搜索总开关': { 'zh-CN': '划词搜索总开关', 'en': 'Master switch' },
-    'sec.显示翻译按钮': { 'zh-CN': '显示翻译按钮', 'en': 'Show translate button' },
-    'sec.自动翻译': { 'zh-CN': '自动翻译', 'en': 'Auto translate' },
-    'sec.打开链接按钮常驻': { 'zh-CN': '打开链接按钮常驻', 'en': 'Always show open link' },
-    'sec.工具栏主题': { 'zh-CN': '工具栏主题', 'en': 'Toolbar theme' },
-    'sec.工具栏透明度': { 'zh-CN': '工具栏透明度', 'en': 'Toolbar opacity' },
-    'sec.毛玻璃效果': { 'zh-CN': '毛玻璃效果', 'en': 'Frosted glass' },
-    'sec.翻译引擎': { 'zh-CN': '翻译引擎', 'en': 'Translate engine' },
-    'sec.自动翻译（翻译设置）': { 'zh-CN': '自动翻译（翻译设置）', 'en': 'Auto translate (translate settings)' },
-    'sec.目标语言': { 'zh-CN': '目标语言', 'en': 'Target language' },
-    'sec.自动目标语言': { 'zh-CN': '自动目标语言', 'en': 'Auto target language' },
-    'sec.CORS 代理前缀（兜底）': { 'zh-CN': 'CORS 代理前缀（兜底）', 'en': 'CORS proxy prefix (fallback)' },
-    'sec.① 通用防护（全站生效）': { 'zh-CN': '① 通用防护（全站生效）', 'en': '① Universal protection (all sites)' },
-    'sec.② 搜索引擎 · 广告过滤': { 'zh-CN': '② 搜索引擎 · 广告过滤', 'en': '② Search engines · ad blocking' },
-    'sec.③ 搜索引擎 · 美化与增强': { 'zh-CN': '③ 搜索引擎 · 美化与增强', 'en': '③ Search engines · beautify & enhance' },
-    'sec.④ 视频平台 · 广告过滤': { 'zh-CN': '④ 视频平台 · 广告过滤', 'en': '④ Video platforms · ad blocking' },
-    'sec.⑤ 视频平台 · 增强与下载': { 'zh-CN': '⑤ 视频平台 · 增强与下载', 'en': '⑤ Video platforms · enhance & download' },
-    'sec.⑥ 社区内容 · 广告与登录墙': { 'zh-CN': '⑥ 社区内容 · 广告与登录墙', 'en': '⑥ Community · ads & login walls' },
-    'sec.⑦ 社区内容 · 增强': { 'zh-CN': '⑦ 社区内容 · 增强', 'en': '⑦ Community · enhance' },
-    'sec.⑧ 内容屏蔽（关键词 / 网址 · 各站统一）': { 'zh-CN': '⑧ 内容屏蔽（关键词 / 网址 · 各站统一）', 'en': '⑧ Content blocking (keyword / URL, cross-site)' },
-    'sec.① 基础开关': { 'zh-CN': '① 基础开关', 'en': '① Basic switches' },
-    'sec.② 识别引擎与凭证': { 'zh-CN': '② 识别引擎与凭证', 'en': '② Engine & credentials' },
-    'sec.③ 智能与防护': { 'zh-CN': '③ 智能与防护', 'en': '③ Smart & protection' },
-    'sec.总开关': { 'zh-CN': '总开关', 'en': 'Master switch' },
-    'sec.性能模式': { 'zh-CN': '性能模式', 'en': 'Performance' },
-    'sec.全局增强': { 'zh-CN': '全局增强', 'en': 'Global enhancements' },
-    'sec.统计与显示': { 'zh-CN': '统计与显示', 'en': 'Stats & display' },
-    'sec.全局快捷键': { 'zh-CN': '全局快捷键', 'en': 'Global shortcuts' },
-    'sec.YouTube 视频旋转': { 'zh-CN': 'YouTube 视频旋转', 'en': 'YouTube rotate' },
-    'sec.从云端下载': { 'zh-CN': '从云端下载', 'en': 'Download from cloud' },
-    'sec.无法添加': { 'zh-CN': '无法添加', 'en': 'Cannot add' },
-    'sec.删除搜索引擎': { 'zh-CN': '删除搜索引擎', 'en': 'Delete search engine' },
-    'sec.恢复默认引擎': { 'zh-CN': '恢复默认引擎', 'en': 'Restore default engines' },
-    'sec.删除条目': { 'zh-CN': '删除条目', 'en': 'Delete entry' },
-    'sec.导入预设站点': { 'zh-CN': '导入预设站点', 'en': 'Import preset sites' },
-    'sec.清空黑名单': { 'zh-CN': '清空黑名单', 'en': 'Clear blacklist' },
-    'sec.过短条目确认': { 'zh-CN': '过短条目确认', 'en': 'Too-short entry confirm' },
-    'sec.致命条目确认': { 'zh-CN': '致命条目确认', 'en': 'Critical entry confirm' },
-    'sec.导入配置': { 'zh-CN': '导入配置', 'en': 'Import config' },
-    'sec.恢复默认设置': { 'zh-CN': '恢复默认设置', 'en': 'Restore defaults' },
-    'sec.验证码类型': { 'zh-CN': '验证码类型', 'en': 'Captcha type' },
-    'sec.验证码子类': { 'zh-CN': '验证码子类', 'en': 'Captcha subtype' },
-    'sec.导入云备份': { 'zh-CN': '导入云备份', 'en': 'Import cloud backup' },
-    'sec.导入成功': { 'zh-CN': '导入成功', 'en': 'Import success' },
-    'sec.下载失败': { 'zh-CN': '下载失败', 'en': 'Download failed' },
-    'sec.删除云备份': { 'zh-CN': '删除云备份', 'en': 'Delete cloud backup' },
-    'sec.打开失败': { 'zh-CN': '打开失败', 'en': 'Open failed' },
+    'ls.title.siteScope': { 'zh-CN': '① 站点级 · 生效范围' },
+    'ls.desc.siteScope': { 'zh-CN': '决定脚本在哪些站点运行：上方选模式，下方填名单。名单匹配规则为「当前域名包含该条目」（填 baidu.com 即覆盖其全部子域），填主域名即可。也可点油猴菜单「🚫 只暂停当前网站」一键增减本站，无需手输域名。' },
+    'ls.ph.siteScope': { 'zh-CN': '如 icbc.com.cn（填主域名即可）' },
+    'ls.title.captchaWhitelist': { 'zh-CN': '② 验证码级 · 自动扫描站点' },
+    'ls.desc.captchaWhitelist': { 'zh-CN': '只在「验证码识别」模块内生效：触发方式选「白名单站点」时，仅这些站点会自动扫描识别。填完整 URL 或 *.example.com 亦可（脚本会自动提取域名主体）。不影响广告净化等其他功能。' },
+    'ls.ph.captchaWhitelist': { 'zh-CN': '如 example.com' },
+    'ls.title.captchaBlacklist': { 'zh-CN': '② 验证码级 · 跳过识别站点' },
+    'ls.desc.captchaBlacklist': { 'zh-CN': '只在「验证码识别」模块内生效：URL 含其中字符串的页面会跳过验证码识别，避免在与验证码无关的页面反复出错打扰。不影响广告净化等其他功能。' },
+    'ls.ph.captchaBlacklist': { 'zh-CN': '输入网址片段' },
+    'ls.title.pingbiurl': { 'zh-CN': '③ 内容级 · 内容屏蔽（网址 / 关键词）' },
+    'ls.desc.pingbiurl': { 'zh-CN': '只在搜索结果里生效：命中即移除该结果条目（百度 / Google / Bing / 360 / Yandex 等），不影响整站运行。上方开关总控下方两份名单。建议填有区分度的条目；过短的条目（如 com、通用词）会误伤大量结果。' },
+    'ls.sub.pingbiurl': { 'zh-CN': '屏蔽这些网址' },
+    'ls.ph.pingbiurl': { 'zh-CN': '输入网址关键词' },
+    'ls.sub.pingbikw': { 'zh-CN': '屏蔽这些关键词' },
+    'ls.ph.pingbikw': { 'zh-CN': '输入关键词（至少2个字）' },
+    'title.关闭': { 'zh-CN': '关闭' },
+    'title.NetClean：本站已暂停，点击管理': { 'zh-CN': 'NetClean：本站已暂停，点击管理' },
+    'title.关闭提示': { 'zh-CN': '关闭提示' },
+    'title.盐选内容（可在控制面板关闭此效果）': { 'zh-CN': '盐选内容（可在控制面板关闭此效果）' },
+    'title.拖动调整位置｜左键打开菜单｜右键隐藏（刷新恢复）': { 'zh-CN': '拖动调整位置｜左键打开菜单｜右键隐藏（刷新恢复）' },
+    'title.翻译': { 'zh-CN': '翻译' },
+    'sec.百度广告过滤': { 'zh-CN': '百度广告过滤' },
+    'sec.关键词过滤': { 'zh-CN': '关键词过滤' },
+    'sec.链接优化': { 'zh-CN': '链接优化' },
+    'sec.网站图标': { 'zh-CN': '网站图标' },
+    'sec.卡片式美化': { 'zh-CN': '卡片式美化' },
+    'sec.隐藏热搜/AI栏': { 'zh-CN': '隐藏热搜/AI栏' },
+    'sec.护眼模式': { 'zh-CN': '护眼模式' },
+    'sec.快捷入口': { 'zh-CN': '快捷入口' },
+    'sec.Google 广告过滤': { 'zh-CN': 'Google 广告过滤' },
+    'sec.Google 关键词过滤': { 'zh-CN': 'Google 关键词过滤' },
+    'sec.隐藏 AI 概述': { 'zh-CN': '隐藏 AI 概述' },
+    'sec.Google 美化': { 'zh-CN': 'Google 美化' },
+    'sec.360 广告过滤': { 'zh-CN': '360 广告过滤' },
+    'sec.360 关键词过滤': { 'zh-CN': '360 关键词过滤' },
+    'sec.360 卡片美化': { 'zh-CN': '360 卡片美化' },
+    'sec.Yandex 广告过滤': { 'zh-CN': 'Yandex 广告过滤' },
+    'sec.Yandex 卡片美化': { 'zh-CN': 'Yandex 卡片美化' },
+    'sec.Bing 广告过滤': { 'zh-CN': 'Bing 广告过滤' },
+    'sec.隐藏 Bing Copilot': { 'zh-CN': '隐藏 Bing Copilot' },
+    'sec.Bing 关键词过滤': { 'zh-CN': 'Bing 关键词过滤' },
+    'sec.Bing 美化': { 'zh-CN': 'Bing 美化' },
+    'sec.知乎广告 + 登录弹窗': { 'zh-CN': '知乎广告 + 登录弹窗' },
+    'sec.知乎关键词过滤': { 'zh-CN': '知乎关键词过滤' },
+    'sec.B站广告过滤': { 'zh-CN': 'B站广告过滤' },
+    'sec.B站关键词过滤': { 'zh-CN': 'B站关键词过滤' },
+    'sec.绕过登录限制': { 'zh-CN': '绕过登录限制' },
+    'sec.画质解锁': { 'zh-CN': '画质解锁' },
+    'sec.豆瓣广告 + 登录墙': { 'zh-CN': '豆瓣广告 + 登录墙' },
+    'sec.豆瓣关键词过滤': { 'zh-CN': '豆瓣关键词过滤' },
+    'sec.微博广告过滤': { 'zh-CN': '微博广告过滤' },
+    'sec.微博关键词过滤': { 'zh-CN': '微博关键词过滤' },
+    'sec.微博视频下载': { 'zh-CN': '微博视频下载' },
+    'sec.YouTube 视频旋转/翻转': { 'zh-CN': 'YouTube 视频旋转/翻转' },
+    'sec.YouTube 广告过滤': { 'zh-CN': 'YouTube 广告过滤' },
+    'sec.YouTube 关键词过滤': { 'zh-CN': 'YouTube 关键词过滤' },
+    'sec.YouTube 视频下载': { 'zh-CN': 'YouTube 视频下载' },
+    'sec.Twitter 广告过滤': { 'zh-CN': 'Twitter 广告过滤' },
+    'sec.Twitter 视频下载': { 'zh-CN': 'Twitter 视频下载' },
+    'sec.CSDN 广告过滤': { 'zh-CN': 'CSDN 广告过滤' },
+    'sec.CSDN 外链直达': { 'zh-CN': 'CSDN 外链直达' },
+    'sec.CSDN 自动展开': { 'zh-CN': 'CSDN 自动展开' },
+    'sec.CSDN 纯净阅读': { 'zh-CN': 'CSDN 纯净阅读' },
+    'sec.小红书广告清理': { 'zh-CN': '小红书广告清理' },
+    'sec.掘金广告清理': { 'zh-CN': '掘金广告清理' },
+    'sec.思否广告清理': { 'zh-CN': '思否广告清理' },
+    'sec.微信公号广告过滤': { 'zh-CN': '微信公号广告过滤' },
+    'sec.微信公号关键词过滤': { 'zh-CN': '微信公号关键词过滤' },
+    'sec.吾爱破解自动签到': { 'zh-CN': '吾爱破解自动签到' },
+    'sec.暗黑模式': { 'zh-CN': '暗黑模式' },
+    'sec.干净复制': { 'zh-CN': '干净复制' },
+    'sec.被动去广告': { 'zh-CN': '被动去广告' },
+    'sec.禁用第三方 iframe': { 'zh-CN': '禁用第三方 iframe' },
+    'sec.护眼色': { 'zh-CN': '护眼色' },
+    'sec.网址过滤列表': { 'zh-CN': '网址过滤列表' },
+    'sec.关键词过滤列表': { 'zh-CN': '关键词过滤列表' },
+    'sec.打开控制面板快捷键': { 'zh-CN': '打开控制面板快捷键' },
+    'sec.暂停/恢复快捷键': { 'zh-CN': '暂停/恢复快捷键' },
+    'sec.YouTube 旋转快捷键': { 'zh-CN': 'YouTube 旋转快捷键' },
+    'sec.好看视频暂停广告屏蔽': { 'zh-CN': '好看视频暂停广告屏蔽' },
+    'sec.仅白名单域名启用': { 'zh-CN': '仅白名单域名启用' },
+    'sec.被动扫描全局化': { 'zh-CN': '被动扫描全局化' },
+    'sec.启用域名（内部白名单）': { 'zh-CN': '启用域名（内部白名单）' },
+    'sec.启用验证码识别': { 'zh-CN': '启用验证码识别' },
+    'sec.验证码触发方式': { 'zh-CN': '验证码触发方式' },
+    'sec.识别引擎': { 'zh-CN': '识别引擎' },
+    'sec.极速接口地址': { 'zh-CN': '极速接口地址' },
+    'sec.精准接口地址': { 'zh-CN': '精准接口地址' },
+    'sec.自动查找验证码': { 'zh-CN': '自动查找验证码' },
+    'sec.显示提示条': { 'zh-CN': '显示提示条' },
+    'sec.滑动验证码': { 'zh-CN': '滑动验证码' },
+    'sec.精准引擎识别码': { 'zh-CN': '精准引擎识别码' },
+    'sec.云码 Token': { 'zh-CN': '云码 Token' },
+    'sec.验证码自动启用站点': { 'zh-CN': '验证码自动启用站点' },
+    'sec.验证码识别黑名单': { 'zh-CN': '验证码识别黑名单' },
+    'sec.脚本启用站点黑名单': { 'zh-CN': '脚本启用站点黑名单' },
+    'sec.黑名单站点': { 'zh-CN': '黑名单站点' },
+    'sec.白名单域名': { 'zh-CN': '白名单域名' },
+    'sec.广告拦截统计': { 'zh-CN': '广告拦截统计' },
+    'sec.划词搜索总开关': { 'zh-CN': '划词搜索总开关' },
+    'sec.显示翻译按钮': { 'zh-CN': '显示翻译按钮' },
+    'sec.自动翻译': { 'zh-CN': '自动翻译' },
+    'sec.打开链接按钮常驻': { 'zh-CN': '打开链接按钮常驻' },
+    'sec.工具栏主题': { 'zh-CN': '工具栏主题' },
+    'sec.工具栏透明度': { 'zh-CN': '工具栏透明度' },
+    'sec.毛玻璃效果': { 'zh-CN': '毛玻璃效果' },
+    'sec.翻译引擎': { 'zh-CN': '翻译引擎' },
+    'sec.自动翻译（翻译设置）': { 'zh-CN': '自动翻译（翻译设置）' },
+    'sec.目标语言': { 'zh-CN': '目标语言' },
+    'sec.自动目标语言': { 'zh-CN': '自动目标语言' },
+    'sec.CORS 代理前缀（兜底）': { 'zh-CN': 'CORS 代理前缀（兜底）' },
+    'sec.① 通用防护（全站生效）': { 'zh-CN': '① 通用防护（全站生效）' },
+    'sec.② 搜索引擎 · 广告过滤': { 'zh-CN': '② 搜索引擎 · 广告过滤' },
+    'sec.③ 搜索引擎 · 美化与增强': { 'zh-CN': '③ 搜索引擎 · 美化与增强' },
+    'sec.④ 视频平台 · 广告过滤': { 'zh-CN': '④ 视频平台 · 广告过滤' },
+    'sec.⑤ 视频平台 · 增强与下载': { 'zh-CN': '⑤ 视频平台 · 增强与下载' },
+    'sec.⑥ 社区内容 · 广告与登录墙': { 'zh-CN': '⑥ 社区内容 · 广告与登录墙' },
+    'sec.⑦ 社区内容 · 增强': { 'zh-CN': '⑦ 社区内容 · 增强' },
+    'sec.⑧ 内容屏蔽（关键词 / 网址 · 各站统一）': { 'zh-CN': '⑧ 内容屏蔽（关键词 / 网址 · 各站统一）' },
+    'sec.① 基础开关': { 'zh-CN': '① 基础开关' },
+    'sec.② 识别引擎与凭证': { 'zh-CN': '② 识别引擎与凭证' },
+    'sec.③ 智能与防护': { 'zh-CN': '③ 智能与防护' },
+    'sec.总开关': { 'zh-CN': '总开关' },
+    'sec.性能模式': { 'zh-CN': '性能模式' },
+    'sec.全局增强': { 'zh-CN': '全局增强' },
+    'sec.统计与显示': { 'zh-CN': '统计与显示' },
+    'sec.全局快捷键': { 'zh-CN': '全局快捷键' },
+    'sec.YouTube 视频旋转': { 'zh-CN': 'YouTube 视频旋转' },
+    'sec.从云端下载': { 'zh-CN': '从云端下载' },
+    'sec.无法添加': { 'zh-CN': '无法添加' },
+    'sec.删除搜索引擎': { 'zh-CN': '删除搜索引擎' },
+    'sec.恢复默认引擎': { 'zh-CN': '恢复默认引擎' },
+    'sec.删除条目': { 'zh-CN': '删除条目' },
+    'sec.导入预设站点': { 'zh-CN': '导入预设站点' },
+    'sec.清空黑名单': { 'zh-CN': '清空黑名单' },
+    'sec.过短条目确认': { 'zh-CN': '过短条目确认' },
+    'sec.致命条目确认': { 'zh-CN': '致命条目确认' },
+    'sec.导入配置': { 'zh-CN': '导入配置' },
+    'sec.恢复默认设置': { 'zh-CN': '恢复默认设置' },
+    'sec.验证码类型': { 'zh-CN': '验证码类型' },
+    'sec.验证码子类': { 'zh-CN': '验证码子类' },
+    'sec.导入云备份': { 'zh-CN': '导入云备份' },
+    'sec.导入成功': { 'zh-CN': '导入成功' },
+    'sec.下载失败': { 'zh-CN': '下载失败' },
+    'sec.删除云备份': { 'zh-CN': '删除云备份' },
+    'sec.打开失败': { 'zh-CN': '打开失败' },
 
   };
-  // 简→繁字形映射（两串等长，逐位对应）。只收无歧义常用字，未收字保持原样 —— 宁可不转也不错字。
-  const S2T_FROM = '爱奥摆败办帮报备贝笔边变标别宾拨补财参产长场车称处传创从达带单当导灯点电调东动独断对儿发范飞费风复盖个给构购关观广规国过还汉号红后护华话坏环换会获机极几记际继间检简见将讲结节紧进经净静举开课块宽况来蓝乐类离历丽联连练两临领龙楼论罗马买卖满么门们难内鸟宁农盘齐钱强桥亲轻请区却确让热认荣杀闪伤设摄谁审声师时识实适书输术树数双说诉随台谈汤题体条铁听统头图团万网为围卫闻问无务误习细显现线选学询压样药页业医仪义艺议异银应优邮语预园远愿阅云运杂赞则战张涨这针诊阵证织执职质钟种众专转装状准资总组态该击计读译试详评词访许讯讨训级终绝绩续绪维绿缓编缩隐启暂删辑览载验码测络链签户属扩扫';
-  const S2T_TO   = '愛奧擺敗辦幫報備貝筆邊變標別賓撥補財參產長場車稱處傳創從達帶單當導燈點電調東動獨斷對兒發範飛費風復蓋個給構購關觀廣規國過還漢號紅後護華話壞環換會獲機極幾記際繼間檢簡見將講結節緊進經淨靜舉開課塊寬況來藍樂類離歷麗聯連練兩臨領龍樓論羅馬買賣滿麼門們難內鳥寧農盤齊錢強橋親輕請區卻確讓熱認榮殺閃傷設攝誰審聲師時識實適書輸術樹數雙說訴隨臺談湯題體條鐵聽統頭圖團萬網為圍衛聞問無務誤習細顯現線選學詢壓樣藥頁業醫儀義藝議異銀應優郵語預園遠願閱雲運雜贊則戰張漲這針診陣證織執職質鐘種眾專轉裝狀準資總組態該擊計讀譯試詳評詞訪許訊討訓級終絕績續緒維綠緩編縮隱啟暫刪輯覽載驗碼測絡鏈簽戶屬擴掃';
+  // 简→繁字形映射（两串等长，逐位对应）。字表由 OpenCC（cn→tw）离线生成，覆盖 2741 个
+  //   有繁体形的字；未收字（繁简同形，如「明暗」「不再提示」）保持原样。
+  //   ⚠ 单字无法消歧的（干/乾/幹、复/復/複、签/簽/籤…）靠下面的 S2T_WORDS 词级先替换。
+  const S2T_FROM = '㐷㐹㐽㑇㑈㑔㑩㓥㓰㔉㖊㖞㘎㚯㛀㛣㛤㟆㟥㡎㤘㤽㥪㧏㧐㧑㧟㧰㨫㭎㭏㭤㭴㱩㱮㲿㳔㳕㳠㳡㳽㴋㶉㶶㶽㺍㻅䀥䁖䂵䃅䅉䅟䇲䉤䌶䌷䌸䌹䌺䌻䌼䌽䌾䌿䍀䍁䍠䎬䏝䓓䓕䓖䓨䗖䙌䙓䜣䜤䜧䜩䝙䞍䞐䟢䥺䥽䥾䦂䦃䦅䦆䦶䦷䩄䯄䯅䲝䲟䲠䲡䲢䲣䴓䴔䴕䴖䴗䴘䴙䶮万与丑专业丛东丝丢两严丧个丰临为丽举么义乌乐乔习乡书买乱争于亏云亘亚产亩亲亵亸亿仅仆从仑仓仪们价众优伙会伛伞伟传伡伣伤伥伦伧伪伫体余佣佥侠侣侥侦侧侨侩侪侬侭俣俦俨俩俪俫俭债倾偬偻偾偿傤傥傧储傩僞儿兑兖党兰关兴兹养兽冁内冈册写军农冯冲决况冻净凄准凉减凑凛几凤凫凭凯凶击凿刍划刘则刚创删别刬刭刹刽刾刿剀剂剐剑剥剧劝办务劢动励劲劳势勋勚匀匦匮区医华协单卖占卢卤卧卫却卺厂厅历厉压厌厍厐厕厘厢厣厦厨厩厮县叁参叆叇双发变叙叠台叶号叹叽吁后吓吕吗吨听启吴呐呒呓呕呖呗员呙呛呜咏咙咛咝咤咨咸响哑哒哓哔哕哗哙哜哝哟唛唝唠唡唢唤啓啧啬啭啮啯啰啴啸喫喷喽喾嗫嗳嘘嘤嘱噜嚣团园囱围囵国图圆圣圹场坏块坚坛坜坝坞坟坠垄垅垆垒垦垩垫垭垯垱垲垴埘埙埚堑堕塆墙壮声壳壶壸处备复够头夸夹夺奁奂奋奖奥妆妇妈妩妪妫姗姹娄娅娆娇娈娱娲娴婳婴婵婶媪媭嫒嫔嫱嫺嬀嬷孙学孪宁宝实宠审宪宫宽宾寝对寻导寿将尔尘尝尧尴尸尽层屃屉届属屡屦屿岁岂岖岗岘岚岛岩岭岳岽岿峃峄峡峣峤峥峦峯崂崃崄崭嵘嵚嵝巅巩巯币帅师帏帐帘帜带帧帮帱帻帼幂干并幺广庄庆庐庑库应庙庞废庼廪开异弃弑张弥弪弯弹强归当录彟彦彨彻征径徕忆忏忧忾怀态怂怃怄怅怆怜总怼怿恋恒恳恶恸恹恺恻恼恽悦悫悬悭悮悯惊惧惨惩惫惬惭惮惯愠愤愦愿慑慭懑懒懔戆戋戏戗战戬戯户扑执扩扪扫扬扰抚抛抟抠抡抢护报担拟拢拣拥拦拧拨择挂挚挛挜挝挞挟挠挡挢挣挤挥挦捝捞损捡换捣据掳掴掷掸掺掼揽揾揿搀搁搂搄搅携摄摅摆摇摈摊撄撑撵撷撸撺擜擞攒敌敚敛敩数斋斓斗斩断无旧时旷旸昙昵昼昽显晋晒晓晔晕晖暂暧术朴机杀杂权杠条来杨杩杰极构枞枢枣枥枧枨枪枫枭柜柠柽栀栅标栈栉栊栋栌栎栏树栖样栾桠桡桢档桤桥桦桧桨桩桪梦梼梾梿检棁棂棱椁椝椟椠椢椤椫椭椮楼榄榅榇榈榉榝槚槛槟槠樑横樯樱橥橱橹橼檐檩欢欤欧歼殁殇残殒殓殚殡殴毁毂毕毙毡毵氇气氢氩氲汇汉污汤汹沄沟没沣沤沥沦沧沨沩沪泄泞泪泶泷泸泺泻泼泽泾洁洒洼浃浅浆浇浈浉浊测浍济浏浐浑浒浓浔浕涂涌涚涛涝涞涟涠涡涢涣涤润涧涨涩淀渊渌渍渎渐渑渔渖渗温游湾湿溁溃溅溆溇滗滚滞滟滠满滢滤滥滦滨滩滪潆潇潋潍潙潜潨潴澛澜濑濒灏灭灯灵灾灿炀炉炖炜炝点炼炽烁烂烃烛烟烦烧烨烩烫烬热焕焖焘煴熏爱爲爷牀牍牦牵牺犊状犷犸犹狈狝狞独狭狮狯狰狱狲猃猎猕猡猪猫猬献獭玑玙玚玛玮环现玱玺珐珑珰珲琎琏琐琼瑶瑷瑸璎瓒瓮瓯电画畅畴疖疗疟疠疡疬疭疮疯疱疴痈痉痒痖痨痪痫痹瘅瘆瘗瘘瘪瘫瘾瘿癞癡癣癫皁皑皱皲盏盐监盖盗盘眍眦眬着睁睐睑睾瞆瞒瞩矫矶矾矿砀码砖砗砚砜砺砻砾础硁硕硖硗硙硚确硵碍碛碜碱礼祃祎祕祢祯祷祸禀禄禅离秃秆种积称秽秾稆税稣稳穑穞穷窃窍窎窑窜窝窥窦窭竈竖竞笃笋笔笕笺笼笾筑筚筛筜筝筹筼签筿简箓箦箧箨箩箪箫篑篓篮篯篱簖籁籴类籼粜粝粤粪粮糁糇糉糍紧絷緼縆繮纔纟纠纡红纣纤纥约级纨纩纪纫纬纭纮纯纰纱纲纳纴纵纶纷纸纹纺纻纼纽纾线绀绁绂练组绅细织终绉绊绋绌绍绎经绐绑绒结绔绕绖绗绘给绚绛络绝绞统绠绡绢绣绤绥绦继绨绩绪绫绬续绮绯绰绱绲绳维绵绶绷绸绹绺绻综绽绾绿缀缁缂缃缄缅缆缇缈缉缊缋缌缍缎缏缐缑缒缓缔缕编缗缘缙缚缛缜缝缞缟缠缡缢缣缤缥缦缧缨缩缪缫缬缭缮缯缰缱缲缳缴缵罂网罗罚罢罴羁羟羡羣翘翙翚耢耧耸耻聂聋职聍联聩聪肃肠肤肮肴肾肿胀胁胆胜胧胨胪胫胶脉脍脏脐脑脓脔脚脣脱脶脸腊腌腘腭腻腼腽腾膑膻臜舆舣舰舱舻艰艳艺节芈芗芜芦苁苇苈苋苌苍苎苏苧苹范茎茏茑茔茕茧荆荐荙荚荛荜荝荞荟荠荡荣荤荥荦荧荨荩荪荫荬荭荮药莅莱莲莳莴莶获莸莹莺莼萚萝萤营萦萧萨葱蒀蒇蒉蒋蒌蒏蓝蓟蓠蓣蓥蓦蔂蔘蔷蔹蔺蔼蔿蕰蕲蕴薮藓藴蘖虏虑虚虫虬虮虱虽虾虿蚀蚁蚂蚃蚕蚝蚬蛊蛎蛏蛮蛰蛱蛲蛳蛴蜕蜗蜡蝇蝈蝉蝎蝼蝾螀螨蟏衅衆衔补衬衮袄袅袆袜袭袯装裆裈裏裢裣裤裥褛褴襕覈见观觃规觅视觇览觉觊觋觌觍觎觏觐觑觞触觯訚詟誉誊讠计订讣认讥讦讧讨让讪讫讬训议讯记讱讲讳讴讵讶讷许讹论讻讼讽设访诀证诂诃评诅识诇诈诉诊诋诌词诎诏诐译诒诓诔试诖诗诘诙诚诛诜话诞诟诠诡询诣诤该详诧诨诩诪诫诬语诮误诰诱诲诳说诵诶请诸诹诺读诼诽课诿谀谁谂调谄谅谆谇谈谉谊谋谌谍谎谏谐谑谒谓谔谕谖谗谘谙谚谛谜谝谞谟谠谡谢谣谤谥谦谧谨谩谪谫谬谭谮谯谰谱谲谳谴谵谶豮贝贞负贠贡财责贤败账货质贩贪贫贬购贮贯贰贱贲贳贴贵贶贷贸费贺贻贼贽贾贿赀赁赂赃资赅赆赇赈赉赊赋赌赍赎赏赐赑赒赓赔赕赖赗赘赙赚赛赜赝赞赟赠赡赢赣赪赵赶趋趱趸跃跄跖跞践跶跷跸跹跻踊踌踪踬踯蹑蹒蹰蹿躏躜躯輼车轧轨轩轪轫转轭轮软轰轱轲轳轴轵轶轷轸轹轺轻轼载轾轿辀辁辂较辄辅辆辇辈辉辊辋辌辍辎辏辐辑辒输辔辕辖辗辘辙辚辞辟辩辫边辽达迁过迈运还这进远违连迟迩迳迹适选逊递逦逻遗遥邓邝邬邮邹邺邻郁郏郐郑郓郦郧郸酂酝酦酱酽酾酿醖采释里鉢鉴銮錾鍼钅钆钇针钉钊钋钌钍钎钏钐钑钒钓钔钕钖钗钘钙钚钛钜钝钞钟钠钡钢钣钤钥钦钧钨钩钪钫钬钭钮钯钰钱钲钳钴钵钶钷钸钹钺钻钼钽钾钿铀铁铂铃铄铅铆铇铈铉铊铋铌铍铎铏铐铑铒铓铔铕铖铗铘铙铚铛铜铝铞铟铠铡铢铣铤铥铦铧铨铩铪铫铬铭铮铯铰铱铲铳铴铵银铷铸铹铺铻铼铽链铿销锁锂锃锄锅锆锇锈锉锊锋锌锍锎锏锐锑锒锓锔锕锖锗锘错锚锛锜锝锞锟锠锡锢锣锤锥锦锧锨锩锪锫锬锭键锯锰锱锲锳锴锵锶锷锸锹锺锻锼锽锾锿镀镁镂镃镄镅镆镇镈镉镊镋镌镍镎镏镐镑镒镓镔镕镖镗镘镙镚镛镜镝镞镟镠镡镢镣镤镥镦镧镨镩镪镫镬镭镮镯镰镱镲镳镴镵镶长门闩闪闫闬闭问闯闰闱闲闳间闵闶闷闸闹闺闻闼闽闾闿阀阁阂阃阄阅阆阇阈阉阊阋阌阍阎阏阐阑阒阓阔阕阖阗阘阙阚阛队阳阴阵阶际陆陇陈陉陕陦陧陨险随隐隶隽难雇雏雠雳雾霁霉霡霭靓靔静靥鞑鞒鞯鞲韦韧韨韩韪韫韬韵页顶顷顸项顺须顼顽顾顿颀颁颂颃预颅领颇颈颉颊颋颌颍颎颏颐频颒颓颔颕颖颗题颙颚颛颜额颞颟颠颡颢颣颤颥颦颧风飏飐飑飒飓飔飕飖飗飘飙飚飞飨餍饣饤饥饦饧饨饩饪饫饬饭饮饯饰饱饲饳饴饵饶饷饸饹饺饻饼饽饾饿馀馁馂馃馄馅馆馇馈馉馊馋馌馍馎馏馐馑馒馓馔馕马驭驮驯驰驱驲驳驴驵驶驷驸驹驺驻驼驽驾驿骀骁骂骃骄骅骆骇骈骉骊骋验骍骎骏骐骑骒骓骔骕骖骗骘骙骚骛骜骝骞骟骠骡骢骣骤骥骦骧髅髋髌鬓鬶魇魉鮎鱼鱽鱾鱿鲀鲁鲂鲃鲄鲅鲆鲇鲈鲉鲊鲋鲌鲍鲎鲏鲐鲑鲒鲓鲔鲕鲖鲗鲘鲙鲚鲛鲜鲝鲞鲟鲠鲡鲢鲣鲤鲥鲦鲧鲨鲩鲪鲫鲬鲭鲮鲯鲰鲱鲲鲳鲴鲵鲶鲷鲸鲹鲺鲻鲼鲽鲾鲿鳀鳁鳂鳃鳄鳅鳆鳇鳈鳉鳊鳋鳌鳍鳎鳏鳐鳑鳒鳓鳔鳕鳖鳗鳘鳙鳚鳛鳜鳝鳞鳟鳠鳡鳢鳣鳤鸟鸠鸡鸢鸣鸤鸥鸦鸧鸨鸩鸪鸫鸬鸭鸮鸯鸰鸱鸲鸳鸴鸵鸶鸷鸸鸹鸺鸻鸼鸽鸾鸿鹀鹁鹂鹃鹄鹅鹆鹇鹈鹉鹊鹋鹌鹍鹎鹏鹐鹑鹒鹓鹔鹕鹖鹗鹘鹙鹚鹛鹜鹝鹞鹟鹠鹡鹢鹣鹤鹥鹦鹧鹨鹩鹪鹫鹬鹭鹮鹯鹰鹱鹲鹳鹴鹾麦麪麸麹麺麽黄黉黡黩黪黾鼋鼌鼍鼹齐齑齶齿龀龁龂龃龄龅龆龇龈龉龊龋龌龙龚龛龟鿎鿏鿒鿔';
+  const S2T_TO   = '傌㑶偑㑳倲㑯儸劏劃劚噚喎㘚㜄媰㜏孋㠏嵾幓㥮懤慺掆㩳撝擓擽㩜棡椲樢樫殰殨瀇濧灡澾濄瀰潚鸂燶煱獱璯䁻瞜碽磾稏穇筴籔䊷紬縳絅䋙䋚綐綵䋻䋹繿繸䍦䎱膞薵薳藭罃螮䙡襬訢鿁䜀讌貙䝼賰躎釾鏺䥱䥇鐯鐥钁䦛䦟靦騧䯀䱽鮣鰆鰌鰧䱷鳾鵁鴷鶄鶪鷉鸊龑萬與醜專業叢東絲丟兩嚴喪個豐臨為麗舉麼義烏樂喬習鄉書買亂爭於虧雲亙亞產畝親褻嚲億僅僕從侖倉儀們價眾優夥會傴傘偉傳俥俔傷倀倫傖偽佇體餘傭僉俠侶僥偵側僑儈儕儂儘俁儔儼倆儷倈儉債傾傯僂僨償儎儻儐儲儺偽兒兌兗黨蘭關興茲養獸囅內岡冊寫軍農馮衝決況凍淨悽準涼減湊凜幾鳳鳧憑凱兇擊鑿芻劃劉則剛創刪別剗剄剎劊㓨劌剴劑剮劍剝劇勸辦務勱動勵勁勞勢勳勩勻匭匱區醫華協單賣佔盧滷臥衛卻巹廠廳歷厲壓厭厙龎廁釐廂厴廈廚廄廝縣叄參靉靆雙發變敘疊臺葉號嘆嘰籲後嚇呂嗎噸聽啟吳吶嘸囈嘔嚦唄員咼嗆嗚詠嚨嚀噝吒諮鹹響啞噠嘵嗶噦譁噲嚌噥喲嘜嗊嘮啢嗩喚啟嘖嗇囀齧嘓囉嘽嘯吃噴嘍嚳囁噯噓嚶囑嚕囂團園囪圍圇國圖圓聖壙場壞塊堅壇壢壩塢墳墜壟壠壚壘墾堊墊埡墶壋塏堖塒壎堝塹墮壪牆壯聲殼壺壼處備復夠頭誇夾奪奩奐奮獎奧妝婦媽嫵嫗媯姍奼婁婭嬈嬌孌娛媧嫻嫿嬰嬋嬸媼嬃嬡嬪嬙嫻媯嬤孫學孿寧寶實寵審憲宮寬賓寢對尋導壽將爾塵嘗堯尷屍盡層屓屜屆屬屢屨嶼歲豈嶇崗峴嵐島巖嶺嶽崬巋嶨嶧峽嶢嶠崢巒峰嶗崍嶮嶄嶸嶔嶁巔鞏巰幣帥師幃帳簾幟帶幀幫幬幘幗冪幹並么廣莊慶廬廡庫應廟龐廢廎廩開異棄弒張彌弳彎彈強歸當錄彠彥彲徹徵徑徠憶懺憂愾懷態慫憮慪悵愴憐總懟懌戀恆懇惡慟懨愷惻惱惲悅愨懸慳悞憫驚懼慘懲憊愜慚憚慣慍憤憒願懾憖懣懶懍戇戔戲戧戰戩戱戶撲執擴捫掃揚擾撫拋摶摳掄搶護報擔擬攏揀擁攔擰撥擇掛摯攣掗撾撻挾撓擋撟掙擠揮撏挩撈損撿換搗據擄摑擲撣摻摜攬搵撳攙擱摟揯攪攜攝攄擺搖擯攤攖撐攆擷擼攛㩵擻攢敵敓斂斆數齋斕鬥斬斷無舊時曠暘曇暱晝曨顯晉曬曉曄暈暉暫曖術樸機殺雜權槓條來楊榪傑極構樅樞棗櫪梘棖槍楓梟櫃檸檉梔柵標棧櫛櫳棟櫨櫟欄樹棲樣欒椏橈楨檔榿橋樺檜槳樁樳夢檮棶槤檢梲欞稜槨槼櫝槧槶欏樿橢槮樓欖榲櫬櫚櫸樧檟檻檳櫧梁橫檣櫻櫫櫥櫓櫞簷檁歡歟歐殲歿殤殘殞殮殫殯毆毀轂畢斃氈毿氌氣氫氬氳匯漢汙湯洶澐溝沒灃漚瀝淪滄渢溈滬洩濘淚澩瀧瀘濼瀉潑澤涇潔灑窪浹淺漿澆湞溮濁測澮濟瀏滻渾滸濃潯濜塗湧涗濤澇淶漣潿渦溳渙滌潤澗漲澀澱淵淥漬瀆漸澠漁瀋滲溫遊灣溼濚潰濺漵漊潷滾滯灩灄滿瀅濾濫灤濱灘澦瀠瀟瀲濰溈潛潀瀦瀂瀾瀨瀕灝滅燈靈災燦煬爐燉煒熗點煉熾爍爛烴燭煙煩燒燁燴燙燼熱煥燜燾熅燻愛為爺床牘犛牽犧犢狀獷獁猶狽獮獰獨狹獅獪猙獄猻獫獵獼玀豬貓蝟獻獺璣璵瑒瑪瑋環現瑲璽琺瓏璫琿璡璉瑣瓊瑤璦璸瓔瓚甕甌電畫暢疇癤療瘧癘瘍癧瘲瘡瘋皰痾癰痙癢瘂癆瘓癇痺癉瘮瘞瘻癟癱癮癭癩痴癬癲皂皚皺皸盞鹽監蓋盜盤瞘眥矓著睜睞瞼睪瞶瞞矚矯磯礬礦碭碼磚硨硯碸礪礱礫礎硜碩硤磽磑礄確磠礙磧磣鹼禮禡禕秘禰禎禱禍稟祿禪離禿稈種積稱穢穠穭稅穌穩穡穭窮竊竅窵窯竄窩窺竇窶灶豎競篤筍筆筧箋籠籩築篳篩簹箏籌篔籤篠簡籙簀篋籜籮簞簫簣簍籃籛籬籪籟糴類秈糶糲粵糞糧糝餱粽餈緊縶縕緪韁才糹糾紆紅紂纖紇約級紈纊紀紉緯紜紘純紕紗綱納紝縱綸紛紙紋紡紵紖紐紓線紺紲紱練組紳細織終縐絆紼絀紹繹經紿綁絨結絝繞絰絎繪給絢絳絡絕絞統綆綃絹繡綌綏絛繼綈績緒綾緓續綺緋綽鞝緄繩維綿綬繃綢綯綹綣綜綻綰綠綴緇緙緗緘緬纜緹緲緝縕繢緦綞緞緶線緱縋緩締縷編緡緣縉縛縟縝縫縗縞纏縭縊縑繽縹縵縲纓縮繆繅纈繚繕繒韁繾繰繯繳纘罌網羅罰罷羆羈羥羨群翹翽翬耮耬聳恥聶聾職聹聯聵聰肅腸膚骯餚腎腫脹脅膽勝朧腖臚脛膠脈膾髒臍腦膿臠腳唇脫腡臉臘醃膕顎膩靦膃騰臏羶臢輿艤艦艙艫艱豔藝節羋薌蕪蘆蓯葦藶莧萇蒼苧蘇薴蘋範莖蘢蔦塋煢繭荊薦薘莢蕘蓽萴蕎薈薺蕩榮葷滎犖熒蕁藎蓀蔭蕒葒葤藥蒞萊蓮蒔萵薟獲蕕瑩鶯蓴蘀蘿螢營縈蕭薩蔥蒕蕆蕢蔣蔞醟藍薊蘺蕷鎣驀虆參薔蘞藺藹蒍薀蘄蘊藪蘚蘊櫱虜慮虛蟲虯蟣蝨雖蝦蠆蝕蟻螞蠁蠶蠔蜆蠱蠣蟶蠻蟄蛺蟯螄蠐蛻蝸蠟蠅蟈蟬蠍螻蠑螿蟎蠨釁眾銜補襯袞襖嫋褘襪襲襏裝襠褌裡褳襝褲襉褸襤襴核見觀覎規覓視覘覽覺覬覡覿覥覦覯覲覷觴觸觶誾讋譽謄訁計訂訃認譏訐訌討讓訕訖託訓議訊記訒講諱謳詎訝訥許訛論訩訟諷設訪訣證詁訶評詛識詗詐訴診詆謅詞詘詔詖譯詒誆誄試詿詩詰詼誠誅詵話誕詬詮詭詢詣諍該詳詫諢詡譸誡誣語誚誤誥誘誨誑說誦誒請諸諏諾讀諑誹課諉諛誰諗調諂諒諄誶談讅誼謀諶諜謊諫諧謔謁謂諤諭諼讒諮諳諺諦謎諞諝謨讜謖謝謠謗諡謙謐謹謾謫譾謬譚譖譙讕譜譎讞譴譫讖豶貝貞負貟貢財責賢敗賬貨質販貪貧貶購貯貫貳賤賁貰貼貴貺貸貿費賀貽賊贄賈賄貲賃賂贓資賅贐賕賑賚賒賦賭齎贖賞賜贔賙賡賠賧賴賵贅賻賺賽賾贗贊贇贈贍贏贛赬趙趕趨趲躉躍蹌蹠躒踐躂蹺蹕躚躋踴躊蹤躓躑躡蹣躕躥躪躦軀轀車軋軌軒軑軔轉軛輪軟轟軲軻轤軸軹軼軤軫轢軺輕軾載輊轎輈輇輅較輒輔輛輦輩輝輥輞輬輟輜輳輻輯轀輸轡轅轄輾轆轍轔辭闢辯辮邊遼達遷過邁運還這進遠違連遲邇逕跡適選遜遞邐邏遺遙鄧鄺鄔郵鄒鄴鄰鬱郟鄶鄭鄆酈鄖鄲酇醞醱醬釅釃釀醞採釋裡缽鑑鑾鏨針釒釓釔針釘釗釙釕釷釺釧釤鈒釩釣鍆釹鍚釵鈃鈣鈈鈦鉅鈍鈔鍾鈉鋇鋼鈑鈐鑰欽鈞鎢鉤鈧鈁鈥鈄鈕鈀鈺錢鉦鉗鈷缽鈳鉕鈽鈸鉞鑽鉬鉭鉀鈿鈾鐵鉑鈴鑠鉛鉚鉋鈰鉉鉈鉍鈮鈹鐸鉶銬銠鉺鋩錏銪鋮鋏鋣鐃銍鐺銅鋁銱銦鎧鍘銖銑鋌銩銛鏵銓鎩鉿銚鉻銘錚銫鉸銥鏟銃鐋銨銀銣鑄鐒鋪鋙錸鋱鏈鏗銷鎖鋰鋥鋤鍋鋯鋨鏽銼鋝鋒鋅鋶鐦鐧銳銻鋃鋟鋦錒錆鍺鍩錯錨錛錡鍀錁錕錩錫錮鑼錘錐錦鑕鍁錈鍃錇錟錠鍵鋸錳錙鍥鍈鍇鏘鍶鍔鍤鍬鍾鍛鎪鍠鍰鎄鍍鎂鏤鎡鐨鎇鏌鎮鎛鎘鑷钂鐫鎳鎿鎦鎬鎊鎰鎵鑌鎔鏢鏜鏝鏍鏰鏞鏡鏑鏃鏇鏐鐔钁鐐鏷鑥鐓鑭鐠鑹鏹鐙鑊鐳鐶鐲鐮鐿鑔鑣鑞鑱鑲長門閂閃閆閈閉問闖閏闈閒閎間閔閌悶閘鬧閨聞闥閩閭闓閥閣閡閫鬮閱閬闍閾閹閶鬩閿閽閻閼闡闌闃闠闊闋闔闐闒闕闞闤隊陽陰陣階際陸隴陳陘陝隯隉隕險隨隱隸雋難僱雛讎靂霧霽黴霢靄靚靝靜靨韃鞽韉韝韋韌韍韓韙韞韜韻頁頂頃頇項順須頊頑顧頓頎頒頌頏預顱領頗頸頡頰頲頜潁熲頦頤頻頮頹頷頴穎顆題顒顎顓顏額顳顢顛顙顥纇顫顬顰顴風颺颭颮颯颶颸颼颻飀飄飆飈飛饗饜飠飣飢飥餳飩餼飪飫飭飯飲餞飾飽飼飿飴餌饒餉餄餎餃餏餅餑餖餓餘餒餕餜餛餡館餷饋餶餿饞饁饃餺餾饈饉饅饊饌饢馬馭馱馴馳驅馹駁驢駔駛駟駙駒騶駐駝駑駕驛駘驍罵駰驕驊駱駭駢驫驪騁驗騂駸駿騏騎騍騅騌驌驂騙騭騤騷騖驁騮騫騸驃騾驄驏驟驥驦驤髏髖髕鬢鬹魘魎鯰魚魛魢魷魨魯魴䰾魺鮁鮃鯰鱸鮋鮓鮒鮊鮑鱟鮍鮐鮭鮚鮳鮪鮞鮦鰂鮜鱠鱭鮫鮮鮺鯗鱘鯁鱺鰱鰹鯉鰣鰷鯀鯊鯇鮶鯽鯒鯖鯪鯕鯫鯡鯤鯧鯝鯢鯰鯛鯨鰺鯴鯔鱝鰈鰏鱨鯷鰮鰃鰓鱷鰍鰒鰉鰁鱂鯿鰠鰲鰭鰨鰥鰩鰟鰜鰳鰾鱈鱉鰻鰵鱅䲁鰼鱖鱔鱗鱒鱯鱤鱧鱣䲘鳥鳩雞鳶鳴鳲鷗鴉鶬鴇鴆鴣鶇鸕鴨鴞鴦鴒鴟鴝鴛鷽鴕鷥鷙鴯鴰鵂鴴鵃鴿鸞鴻鵐鵓鸝鵑鵠鵝鵒鷳鵜鵡鵲鶓鵪鵾鵯鵬鵮鶉鶊鵷鷫鶘鶡鶚鶻鶖鷀鶥鶩鷊鷂鶲鶹鶺鷁鶼鶴鷖鸚鷓鷚鷯鷦鷲鷸鷺䴉鸇鷹鸌鸏鸛鸘鹺麥麵麩麴麵麼黃黌黶黷黲黽黿鼂鼉鼴齊齏顎齒齔齕齗齟齡齙齠齜齦齬齪齲齷龍龔龕龜䃮䥑鿓鎶';
   // 词级特例（简繁用词不同，非单纯字形）：先于字映射处理
-  const S2T_WORDS = [['软件', '軟體'], ['硬件', '硬體'], ['鼠标', '滑鼠'], ['内存', '記憶體'], ['视频', '視頻']];
+  // 词级例外（先于单字映射执行）：这些词里的字单看会转错，必须整词指定。
+  //   复：复制→複製 / 重复→重複 / 复选→複選，但 恢复→恢復（单字映射即正确，不列）
+  //   干：干净→乾淨，但 干扰→干擾（单字即正确）
+  //   签：标签→標籤 由单字给对，签名→簽名 必须整词
+  //   其余是台港用词差异（软/硬件、鼠标、内存）
+  const S2T_WORDS = [['复制', '複製'], ['重复', '重複'], ['复选', '複選'], ['回复', '回覆'], ['复杂', '複雜'], ['干净', '乾淨'], ['签名', '簽名'], ['软件', '軟體'], ['硬件', '硬體'], ['鼠标', '滑鼠'], ['内存', '記憶體'], ['视频', '視頻']];
   function s2t(s) {
     if (!s) return s;
     let out = String(s);
@@ -1315,18 +1338,27 @@
     }
     return r;
   }
+  // 动态写入中文时的转繁通道：tTree() 只在面板构架完成时扫一遍，
+  //   之后才渲染的片段（底部统计、看板切天数重绘等）必须自己过一遍，否则繁中下会残留简体。
+  function twText(s) {
+    const raw = String(s == null ? '' : s);
+    try { return uiLang() === 'zh-TW' ? s2t(raw) : raw; } catch (e) { return raw; }
+  }
   // 当前界面语言（非法值一律回退 zh-CN）
   function uiLang() {
     try {
       const v = getScriptCfg().uiLang;
-      return v === 'zh-TW' || v === 'en' ? v : 'zh-CN';
+      return v === 'zh-TW' ? v : 'zh-CN';
     } catch (e) { return 'zh-CN'; }
   }
-  // 取文案：优先当前语言 → 简中；zh-TW 缺失键时由简中自动 s2t 转繁；en 缺失键时回退简中（不可自动转换）；{var} 插值
+  // 控制面板明暗主题（非法值一律回退 light）
+  function uiTheme() {
+    try { return getScriptCfg().uiTheme === 'dark' ? 'dark' : 'light'; } catch (e) { return 'light'; }
+  }
+  // 取文案：优先当前语言 → 简中；zh-TW 缺失键时由简中自动 s2t 转繁；{var} 插值
   //   设计要点：字典条目通常只写 zh-CN（避免「改一句文案要改三处」的必然漏改）。
   //   - zh-TW：条目没显式 'zh-TW' 键 → 把 zh-CN 通过 s2t 转繁（运行时字形映射）
-  //   - en：条目没显式 'en' 键 → 回退 zh-CN（不转换 —— 英文不是字形问题，必须字典显式给值）
-  //   这样新增 UI 文案只写 zh-CN 一份，繁体自动跟随；en 需逐条补 en 值（不可自动化）
+  //   这样新增 UI 文案只写 zh-CN 一份，繁体自动跟随。
   function t(key, vars) {
     const e = I18N[key];
     if (!e) { dbg('[NetClean] i18n 未收录的 key：' + key); return key; }
@@ -1340,7 +1372,7 @@
   }
   // 【i18n 修复】带 fallback 的翻译取值：字典未收录该 key 时，返回 fallback（原值）而非 key 字符串。
   //   这是给「面板 data 里的裸简中字符串（item.t / item.d / ls.title / placeholder / cat.label / sec.title）」
-  //   做英文兜底用的 —— item.t 等是数据对象里的简中，不是 I18N 字典 key；
+  //   做兜底用的 —— item.t 等是数据对象里的简中，不是 I18N 字典 key；
   //   用 t(key) 直接查会因「未收录返回 key 自身」而把整个 label 显示成 'item.t.xxx' 之类的 key 字符串
   //   （致命 bug：fallback `||` 永远走不到，因为 key 字符串 truthy）。
   //   所以统一用 tp(key, fallback)：收录则取翻译值（为空也兜底），未收录直接返回 fallback。
@@ -1351,6 +1383,9 @@
     return (s == null || s === '') ? fb : s;
   }
   // 繁体模式：把一棵子树里的可见文本整体转繁（覆盖未进字典的文案，如菜单项标题/说明）
+  //   ⚠ 必须跳过「用户自己的数据」：屏蔽名单里的关键词、导入框里的原文 —— 那是用户的输入，
+  //     字形被改掉会让人以为名单被篡改（虽不写回配置，但显示成另一个词一样是错）。
+  const NC_S2T_SKIP_SEL = '.zk-set-list-val,.zk-set-import-ta,.zk-fb-out,.zk-set-list-edit';
   function tTree(root) {
     if (uiLang() !== 'zh-TW' || !root) return;
     const SKIP = { SCRIPT: 1, STYLE: 1, NOSCRIPT: 1, SVG: 1, INPUT: 1, TEXTAREA: 1 };
@@ -1360,6 +1395,7 @@
     for (const node of nodes) {
       const p = node.parentElement;
       if (!p || SKIP[p.tagName]) continue;
+      if (p.closest && p.closest(NC_S2T_SKIP_SEL)) continue;   // 用户数据不转
       const v = node.nodeValue;
       if (!v || !v.trim()) continue;
       const c = s2t(v);
@@ -3635,8 +3671,7 @@
     opts = opts || {};
     // 【i18n】仅繁体模式：所有 toast 文案（不管调用方有没有 t() 包装）统一转繁。
     //   这样未进字典的提示（如「已开启「xx」全部选项」「设置已保存，刷新后生效」）
-    //   在繁体模式下也自动跟着转。en 模式不触发 s2t（英文字符不受字形映射影响）；
-    //   en 模式调用方需自行包 t()（t() 内 en 缺失键自动回退简中，至少用户看到 key 字符串而非乱码）。
+    //   在繁体模式下也自动跟着转。简体模式不触发 s2t，直接返回原值。
     if (uiLang() === 'zh-TW' && typeof msg === 'string') msg = s2t(msg);
     const type = opts.type || 'ok';
     // actionBtn：可选撤销操作。设置后 toast 可点击、持续时间自动延长到 5s（给用户反应时间）。
@@ -7584,7 +7619,7 @@
   // 设置项帮助说明：作用 / 实现原理 / 失效维护 / 开关风险
   const HELP = {
     kgbaidued: { title: '百度广告过滤', effect: '屏蔽百度搜索、知道、百科、文库、贴吧、视频等全站的联盟广告与推广内容。', impl: '文档启动前 GM_addStyle 注入隐藏规则（如 .ec_wise_ad、.ec-ad-result），再由 MutationObserver 在 DOM 变化时二次清理残留广告。', maintain: '失效时检查 injectCSS() 中「百度搜索」分支的选择器；对照百度前端源码中广告容器的 class 命名（多为 ec_/new-pmd 前缀）逐一补齐。', risk: '关闭后百度全站广告恢复；该规则命中较保守，一般不会误伤正常搜索结果。' },
-    contentBlock: { title: '关键词/网址内容屏蔽', effect: '按你设定的关键词/网址统一屏蔽搜索结果与社区内容（百度/Google/360/Bing/知乎/B站/微博/微信公号/豆瓣/YouTube）。总开关定位：关闭后下方「屏蔽这些网址 / 屏蔽这些关键词」两份名单都不生效。', impl: '各 process* 经 ncContentBlock(cfg) 统一判定；名单在「名单管理 → ③ 内容级」维护 pingbikw / pingbiurl，与本开关同卡。站点级例外走 siteOverrides（本行右侧「仅本站」按钮）。', maintain: '失效多为关键词库过时，在「名单管理 → ③ 内容级」页维护即可。', risk: '关键词过短或过于通用会误删正常结果，建议至少 2 字且具区分度。若只想在部分站点屏蔽，可用本行右侧「仅本站」按钮逐站控制。' },
+    contentBlock: { title: '关键词/网址内容屏蔽', effect: '按你设定的关键词/网址统一屏蔽搜索结果与社区内容（具体覆盖清单见更新日志）。总开关定位：关闭后下方「屏蔽这些网址 / 屏蔽这些关键词」两份名单都不生效。', impl: '各 process* 经 ncContentBlock(cfg) 统一判定；名单在「名单管理 → ③ 内容级」维护 pingbikw / pingbiurl，与本开关同卡。站点级例外走 siteOverrides（本行右侧「仅本站」按钮）。', maintain: '失效多为关键词库过时，在「名单管理 → ③ 内容级」页维护即可。', risk: '关键词过短或过于通用会误删正常结果，建议至少 2 字且具区分度。若只想在部分站点屏蔽，可用本行右侧「仅本站」按钮逐站控制。' },
     baidulianjie: { title: '链接优化', effect: '跳过百度结果跳转链接（baidu.com/link?），直达真实网址，避免中间页跟踪。', impl: 'processBaiduResults 对 baidu.com/link? 链接发 GM_xmlhttpRequest 解析真实 URL，重写 a.href。', maintain: '若跳转解析失败，检查 GM_xmlhttpRequest 是否被 CSP 拦截，或真实地址提取正则 /URL=\'([^\']*)\'/。', risk: '个别站点真实 URL 含登录态参数，直链可能导致无法直接打开，关闭即可回退。' },
     baidulogo: { title: '网站图标', effect: '在每个搜索结果标题前显示来源站点的 favicon 小图标，便于识别站点。', impl: 'insertFavicon() 用 inline-flex 容器插入 yandex favicon 接口返回的 16px 图标，不破坏标题布局。', maintain: '图标来自 favicon.yandex.net，若该接口失效可替换为 Google favicon 服务；逻辑见 insertFavicon()。', risk: '仅视觉增强，关闭不影响屏蔽；依赖第三方 favicon 服务，偶发个别站点图标缺失属正常。' },
     baiducss: { title: '卡片式美化', effect: '把百度搜索结果改为白底圆角卡片，hover 上浮高亮，阅读更清爽。', impl: 'injectSearchBeautifyCSS() 仅向结果容器注入背景/边框/圆角/阴影，零 padding 侵入，绝不改动内部标题摘要布局。', maintain: '若新版百度改了结果容器 class，在 injectSearchBeautifyCSS() 百度分支的选择器处追加新容器名。', risk: '纯视觉层，关闭即恢复原生样式；不影响任何屏蔽功能。' },
@@ -7675,6 +7710,505 @@
     cloudSync: { title: '云端配置同步', effect: '把你的脚本配置（开关状态、过滤名单、白名单等）备份到你自己的云盘，换设备时一键恢复。支持 WebDAV（坚果云 / Nextcloud 等）与 GitHub Gist 两种方式，均为可选。', impl: 'cloudSyncUp / cloudSyncDown 通过 WebDAV 或 Gist 接口读写一份 JSON 配置；开启「自动同步」后，本机改配置会在 3 秒后自动上传；启动时仅在「云端 modifiedAt 明显更新」时自动下载，本地缺少时间戳或本地不早于云端一律跳过（保护本地改动）。', maintain: '数据只上传到你自己填写的服务器，脚本作者不接触任何数据。坚果云须用「应用密码」而非登录密码；可选「密码保护」用 XOR 加密。若自动同步失败，设置面板会显示「上次同步：失败（原因）」，本机改动不会丢失。', risk: '自动下载有覆盖保护：本地无时间戳 / 本地不早于云端时不覆盖；需要强制恢复时手动点「从云端下载」。Token / 密码请妥善保管。' }
   };
 
+  // ===== 控制面板图标（内联 SVG，零外链；Lucide / Tabler 风格路径） =====
+  const ZK_ICON_PATHS = {
+    adblock: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
+    captcha: '<circle cx="7.5" cy="15.5" r="4.5"/><path d="M10.7 12.3 21 2m-3 3 3 3m-6-1 2 2"/>',
+    selsearch: '<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/>',
+    videodl: '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/>',
+    perf: '<path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z"/>',
+    lists: '<path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/>',
+    shortcut: '<rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8"/>',
+    sync: '<path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/>',
+    gear: '<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/>',
+    about: '<circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/>'
+  };
+  function zkIconSvg(key) {
+    const p = ZK_ICON_PATHS[key] || ZK_ICON_PATHS.about;
+    return '<span class="zk-ic zk-set-cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' + p + '</svg><i class="zk-ic-ring"></i></span>';
+  }
+  // 明暗开关的图标：一个「太阳 ⇄ 月亮」的可变形 SVG。
+  //   做法是同一枚圆盘 + 一块 mask 挖圆：浅色时挖圆停在画布外（= 完整太阳 + 光芒），
+  //   夜间把挖圆平移进来（= 月牙），光芒同时缩放淡出。位移/缩放都走 CSS transition，
+  //   所以切换时是「太阳慢慢瘦成月牙」的连续动画，而不是两个图标硬切。
+  function zkThemeIconSvg() {
+    return '<svg class="zk-thm-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">'
+      + '<defs><mask id="zk-thm-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">'
+      + '<rect x="0" y="0" width="24" height="24" fill="#fff"/>'
+      + '<circle class="zk-thm-cut" cx="26" cy="12" r="6.6" fill="#000"/>'
+      + '</mask></defs>'
+      + '<g class="zk-thm-rays" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">'
+      + '<path d="M12 2.2v2.2M12 19.6v2.2M2.2 12h2.2M19.6 12h2.2M5.1 5.1l1.6 1.6M17.3 17.3l1.6 1.6M18.9 5.1l-1.6 1.6M6.7 17.3l-1.6 1.6"/>'
+      + '</g>'
+      + '<circle class="zk-thm-disc" cx="12" cy="12" r="6.2" fill="currentColor" mask="url(#zk-thm-mask)"/>'
+      + '</svg>';
+  }
+  const ZK_ICON_CSS = `
+    .zk-ic{position:relative;width:28px;height:28px;border-radius:9px;background:linear-gradient(145deg,rgba(56,189,248,.2),rgba(22,119,255,.05));border:1px solid rgba(125,211,252,.22);display:inline-flex;align-items:center;justify-content:center;flex:none;overflow:hidden;font-size:0}
+    .zk-ic svg{width:17px;height:17px;transform-origin:50% 50%;animation:zk-ic-spin 18s linear infinite;color:#7dd3fc}
+    .zk-ic-ring{position:absolute;inset:2px;border-radius:7px;border:1px dashed rgba(125,211,252,.22);animation:zk-ic-spin 26s linear infinite reverse;pointer-events:none}
+    #zk-set-settings-sidebar .zk-set-cat:hover .zk-ic svg,#zk-set-settings-sidebar .zk-set-cat.active .zk-ic svg{animation-duration:1.8s;color:#bae6fd}
+    #zk-set-settings-sidebar .zk-set-cat:hover .zk-ic-ring{animation-duration:3s}
+    @keyframes zk-ic-spin{to{transform:rotate(360deg)}}
+    @media (prefers-reduced-motion:reduce){.zk-ic svg,.zk-ic-ring{animation:none}}
+  `;
+  const PANEL_GLASS_CSS = `
+    /* ===== 配色令牌层 =====
+       浅色 = 冷白商务玻璃；夜间 = 深空蓝玻璃。所有规则只引用 var(--nc-*)，
+       切换主题时仅替换令牌，不动任何结构样式 —— 这样夜间模式不可能漏掉某个元素。 */
+    :host{
+      --nc-ink:#0f2740;--nc-ink2:#3b5170;--nc-ink3:#5c7089;--nc-ink4:#8798ab;
+      --nc-surface:linear-gradient(145deg,rgba(252,254,255,.95),rgba(223,239,255,.86));
+      --nc-side:linear-gradient(168deg,rgba(246,252,255,.97),rgba(214,236,255,.92));
+      --nc-side-ink:#2b4a6b;--nc-side-hl:rgba(22,119,255,.10);
+      --nc-main:linear-gradient(180deg,rgba(251,253,255,.94),rgba(226,241,255,.86));
+      --nc-bar:linear-gradient(180deg,rgba(255,255,255,.66),rgba(255,255,255,.34));
+      --nc-card:linear-gradient(150deg,rgba(255,255,255,.94),rgba(240,249,255,.78));
+      --nc-card-bd:rgba(24,86,158,.13);
+      --nc-row:rgba(255,255,255,.72);--nc-row-hv:#fff;
+      --nc-line:#dfecf8;
+      --nc-field:#fff;--nc-field-bd:rgba(24,86,158,.22);--nc-field-ink:#14304d;
+      --nc-btn:rgba(255,255,255,.94);--nc-btn-bd:rgba(24,86,158,.22);--nc-btn-ink:#14508f;
+      --nc-sw-off:#c3d3e3;--nc-sw-in:rgba(15,42,74,.18);
+      --nc-check-bd:#9db3ca;--nc-check-bg:#fff;
+      --nc-track:rgba(24,86,158,.12);--nc-thumb-ink:#1677ff;
+      --nc-accent:#1677ff;--nc-accent2:#4aa3ff;
+      --nc-glow:rgba(22,119,255,.16);--nc-shadow:rgba(15,42,74,.22);
+    --nc-tile:linear-gradient(160deg,rgba(255,255,255,.92),rgba(230,244,255,.72));
+    --nc-tile-bd:rgba(24,86,158,.16);
+}
+    :host(.zk-nc-dark){
+      --nc-ink:#e7eff9;--nc-ink2:#b0c3d8;--nc-ink3:#8b9fb6;--nc-ink4:#6d8299;
+      --nc-surface:linear-gradient(145deg,rgba(24,33,50,.96),rgba(13,20,33,.93));
+      --nc-side:linear-gradient(168deg,rgba(28,39,58,.97),rgba(15,23,37,.94));
+      --nc-side-ink:#c3d5e9;--nc-side-hl:rgba(96,165,250,.14);
+      --nc-main:linear-gradient(180deg,rgba(21,30,46,.95),rgba(12,19,32,.92));
+      --nc-bar:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.02));
+      --nc-card:linear-gradient(150deg,rgba(42,56,80,.74),rgba(24,34,51,.62));
+      --nc-card-bd:rgba(120,170,225,.17);
+      --nc-row:rgba(255,255,255,.04);--nc-row-hv:rgba(96,165,250,.10);
+      --nc-line:rgba(140,175,215,.16);
+      --nc-field:rgba(9,15,26,.68);--nc-field-bd:rgba(120,170,225,.26);--nc-field-ink:#e0eaf7;
+      --nc-btn:rgba(255,255,255,.07);--nc-btn-bd:rgba(120,170,225,.26);--nc-btn-ink:#8fc2ff;
+      --nc-sw-off:#3d4f68;--nc-sw-in:rgba(0,0,0,.40);
+      --nc-check-bd:rgba(140,175,215,.50);--nc-check-bg:rgba(9,15,26,.60);
+      --nc-track:rgba(255,255,255,.08);--nc-thumb-ink:#9ecbff;
+      --nc-accent:#3b82f6;--nc-accent2:#60a5fa;
+      --nc-glow:rgba(59,130,246,.28);--nc-shadow:rgba(0,0,0,.55);
+  --nc-tile:linear-gradient(160deg,rgba(46,61,87,.60),rgba(22,31,47,.50));
+  --nc-tile-bd:rgba(120,170,225,.20);
+}
+/* 常量令牌：太阳/月亮滑块的底色与图标色与主题无关（浅色下太阳才该是暖色），
+   单独声明在两套主题之外，避免把它们也塞进夜间块造成「同值重复」。 */
+:host{--nc-sun-bg:linear-gradient(135deg,#ffd88a,#ffb443);--nc-sun-ink:#7a4300;--nc-moon-bg:linear-gradient(135deg,#4f7cc4,#2b4a86);--nc-moon-ink:#e8f1ff}
+    /* ===== 面板骨架 =====
+       text-align / direction 必须重置：Shadow DOM 只隔离选择器，**可继承属性照样从宿主元素漏进来**。
+       有些站点 body{text-align:center}，漏进来后「关于」页整段文案会居中错位（踩过）。 */
+    #zk-set-settings-box{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.012em;text-align:left;direction:ltr;text-indent:0;text-transform:none;font-style:normal;background:var(--nc-surface)!important;color:var(--nc-ink)!important;backdrop-filter:blur(30px) saturate(1.6);-webkit-backdrop-filter:blur(30px) saturate(1.6);border:1px solid var(--nc-card-bd)!important;box-shadow:0 34px 110px var(--nc-shadow),inset 0 1px 0 rgba(255,255,255,.55),0 0 90px var(--nc-glow)!important}
+    #zk-set-settings-box.zk-nc-switching{animation:zk-nc-pulse .52s cubic-bezier(.4,0,.2,1)}
+    @keyframes zk-nc-pulse{0%{filter:brightness(1)}38%{filter:brightness(.86) saturate(1.15)}100%{filter:brightness(1)}}
+    #zk-set-settings-sidebar{background:var(--nc-side)!important;color:var(--nc-side-ink)!important;backdrop-filter:blur(26px) saturate(1.4);-webkit-backdrop-filter:blur(26px) saturate(1.4);border-radius:0 22px 22px 0;box-shadow:20px 0 44px -30px var(--nc-glow),inset -1px 0 0 rgba(255,255,255,.35)}
+    #zk-set-settings-sidebar:before{background:linear-gradient(180deg,transparent,var(--nc-side-hl),transparent)!important}
+    #zk-set-settings-sidebar .zk-set-logo{color:var(--nc-ink)!important;border-bottom:1px solid var(--nc-card-bd)!important;white-space:nowrap;gap:8px;padding:22px 14px 16px;font-size:15px}
+    #zk-set-settings-sidebar .zk-set-logo .zk-ic{width:24px;height:24px}
+    #zk-set-settings-sidebar .zk-set-logo .zk-set-ver{font-size:9px;padding:2px 6px;color:var(--nc-accent)!important;background:rgba(22,119,255,.10)!important;border-color:var(--nc-card-bd)!important}
+    #zk-set-settings-sidebar .zk-set-cat{color:var(--nc-side-ink)!important;border-radius:10px}
+    #zk-set-settings-sidebar .zk-set-cat:hover{background:var(--nc-side-hl)!important;color:var(--nc-accent)!important}
+    #zk-set-settings-sidebar .zk-set-cat.active{background:linear-gradient(90deg,rgba(22,119,255,.20),rgba(22,119,255,.04))!important;color:var(--nc-accent)!important;border-left-color:var(--nc-accent)!important;box-shadow:0 6px 18px var(--nc-glow)}
+    #zk-set-settings-sidebar .zk-ic{background:linear-gradient(145deg,rgba(22,119,255,.14),rgba(22,119,255,.04));border-color:rgba(22,119,255,.20)}
+    #zk-set-settings-sidebar .zk-ic svg{color:var(--nc-accent)}
+    #zk-set-settings-sidebar .zk-set-cat:hover .zk-ic svg,#zk-set-settings-sidebar .zk-set-cat.active .zk-ic svg{color:var(--nc-accent)}
+    #zk-set-settings-sidebar .zk-ic-ring{border-color:rgba(22,119,255,.20)}
+    #zk-set-settings-main{background:var(--nc-main)!important;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);position:relative}
+    #zk-set-settings-main:before{content:'';position:absolute;left:0;top:0;bottom:0;width:30px;background:linear-gradient(90deg,var(--nc-glow),transparent);filter:blur(10px);pointer-events:none;z-index:1}
+    #zk-set-settings-header{background:var(--nc-bar)!important;backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);border-bottom:none!important;box-shadow:0 14px 30px -28px var(--nc-shadow);position:relative;z-index:2}
+    #zk-set-settings-header h2{font-size:19px;font-weight:700;letter-spacing:.02em;color:var(--nc-ink)!important}
+    #zk-set-settings-body{background:transparent!important}
+    #zk-set-settings-footer{background:var(--nc-bar)!important;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:none!important;box-shadow:0 -14px 30px -28px var(--nc-shadow);position:relative;z-index:2}
+    #zk-set-settings-footer .zk-set-status,#zk-set-stats{color:var(--nc-ink3)!important}
+    /* ===== 搜索 / 卡片 / 行 ===== */
+    .zk-set-search{background:var(--nc-field)!important;border:1px solid var(--nc-field-bd)!important;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 4px 14px var(--nc-glow)}
+    .zk-set-search input{color:var(--nc-field-ink)!important;background:transparent!important}
+    .zk-set-search input::placeholder{color:var(--nc-ink4)!important}
+    #zk-set-search-clear{color:var(--nc-ink3)!important}
+    #zk-set-settings-close{color:var(--nc-ink2)!important;background:var(--nc-btn)!important;border:1px solid var(--nc-btn-bd)!important}
+    #zk-set-settings-close:hover{color:var(--nc-accent)!important;border-color:var(--nc-accent)!important}
+    .zk-set-group{background:var(--nc-card)!important;border:1px solid var(--nc-card-bd)!important;border-radius:18px!important;backdrop-filter:blur(14px) saturate(1.3);-webkit-backdrop-filter:blur(14px) saturate(1.3);box-shadow:0 12px 34px var(--nc-shadow),inset 0 1px 0 rgba(255,255,255,.28)!important;margin-bottom:24px}
+    .zk-set-group-title-text,.zk-set-group-title{color:var(--nc-ink)!important}
+    .zk-set-chevron{color:var(--nc-ink3)!important}
+    .zk-set-gicon{stroke:var(--nc-ink2)!important;opacity:.9}
+    .zk-set-row{background:var(--nc-row)!important;border-color:transparent!important;border-bottom:1px solid var(--nc-line)!important;border-radius:10px;padding-left:10px;padding-right:10px}
+    .zk-set-row:hover{background:var(--nc-row-hv)!important}
+    .zk-set-row-label{color:var(--nc-ink)!important}
+    .zk-set-row-desc{color:var(--nc-ink2)!important;line-height:1.65}
+    .zk-set-sub{color:var(--nc-ink2)!important}
+    /* ===== 表单控件（对比度重点：浅色下要有可见描边）===== */
+    .zk-set-select,.zk-set-text,.zk-fb-input,.zk-fb-out,.zk-set-import-ta{background:var(--nc-field)!important;border:1px solid var(--nc-field-bd)!important;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-radius:10px!important;color:var(--nc-field-ink)!important;box-shadow:inset 0 1px 2px rgba(15,42,74,.04)}
+    .zk-set-select:hover,.zk-set-text:hover,.zk-fb-input:hover{border-color:var(--nc-accent)!important}
+    .zk-set-select:focus,.zk-set-text:focus,.zk-fb-input:focus,.zk-set-import-ta:focus{border-color:var(--nc-accent)!important;box-shadow:0 0 0 3px var(--nc-glow)!important}
+    .zk-set-text::placeholder,.zk-fb-input::placeholder{color:var(--nc-ink4)!important}
+    .zk-set-select option{background:var(--nc-field);color:var(--nc-field-ink)}
+    input[type="checkbox"]{appearance:none;-webkit-appearance:none;width:16px;height:16px;flex:0 0 auto;border:1.5px solid var(--nc-check-bd);border-radius:5px;background:var(--nc-check-bg);cursor:pointer;position:relative;transition:background .16s,border-color .16s,box-shadow .16s;vertical-align:-3px}
+    input[type="checkbox"]:hover{border-color:var(--nc-accent)}
+    input[type="checkbox"]:checked{background:var(--nc-accent);border-color:var(--nc-accent)}
+    input[type="checkbox"]:checked:after{content:'';position:absolute;left:2px;top:-1px;width:9px;height:5px;border:2px solid #fff;border-top:0;border-right:0;transform:rotate(-45deg)}
+    input[type="checkbox"]:focus-visible{box-shadow:0 0 0 3px var(--nc-glow)}
+    .zk-set-switch .zk-set-slider{background:var(--nc-sw-off);box-shadow:inset 0 1px 3px var(--nc-sw-in),0 0 0 1px rgba(15,42,74,.06)}
+    .zk-set-switch input:checked+.zk-set-slider{background:linear-gradient(90deg,var(--nc-accent),var(--nc-accent2));box-shadow:inset 0 1px 3px rgba(0,0,0,.16),0 2px 8px var(--nc-glow)}
+    .zk-set-switch .zk-set-slider:before{background:#fff;box-shadow:0 1px 3px rgba(15,42,74,.28)}
+    .zk-set-group-toggle{background:rgba(22,119,255,.12)!important;border:1px solid rgba(22,119,255,.28)!important;color:var(--nc-accent)!important;font-weight:600;border-radius:9px}
+    .zk-set-site-ov{background:var(--nc-btn)!important;border:1px solid var(--nc-btn-bd)!important;color:var(--nc-btn-ink)!important}
+    .zk-set-site-ov:hover{background:rgba(22,119,255,.12)!important;border-color:var(--nc-accent)!important;color:var(--nc-accent)!important}
+    .zkss-btn{box-shadow:0 6px 16px var(--nc-glow)!important;font-weight:600;border-radius:10px}
+    #zk-fb-gen,#zk-fb-gitee,#zk-fb-form{background:linear-gradient(135deg,var(--nc-accent),var(--nc-accent2))!important;color:#fff!important;border:none!important}
+    #zk-fb-copy,#zk-fb-dl,#zk-fb-github{background:var(--nc-btn)!important;border:1px solid var(--nc-btn-bd)!important;color:var(--nc-btn-ink)!important}
+    .zk-set-help{background:rgba(22,119,255,.14)!important;color:var(--nc-accent)!important;border-color:rgba(22,119,255,.30)!important}
+    /* ===== 名单 / 导入 ===== */
+    .zk-set-list{background:var(--nc-field)!important;border:1px solid var(--nc-field-bd)!important}
+    .zk-set-list-item{background:var(--nc-btn)!important;border:1px solid var(--nc-card-bd)!important;color:var(--nc-ink)!important}
+    .zk-set-list-item span.zk-set-list-val{color:var(--nc-ink2)!important}
+    .zk-set-list-btn{background:var(--nc-field)!important;border:1px solid var(--nc-field-bd)!important;color:var(--nc-ink2)!important}
+    .zk-set-list-btn:hover{background:var(--nc-accent)!important;color:#fff!important;border-color:var(--nc-accent)!important}
+    .zk-set-list-edit{background:var(--nc-field)!important;color:var(--nc-field-ink)!important;border-color:var(--nc-accent)!important}
+    .zk-set-add input{background:var(--nc-field)!important;border:1px solid var(--nc-field-bd)!important;color:var(--nc-field-ink)!important}
+    .zk-set-add .zk-set-add-batch{background:var(--nc-btn)!important;color:var(--nc-btn-ink)!important;border:1px solid var(--nc-btn-bd)!important}
+    .zk-set-import{border:1px solid var(--nc-field-bd)!important;background:var(--nc-field)!important}
+    .zk-set-import-mini,.zk-set-import-file{background:var(--nc-btn)!important;color:var(--nc-btn-ink)!important;border:1px solid var(--nc-btn-bd)!important}
+    .zk-set-items:empty:after,.zk-set-list-empty{color:var(--nc-ink4)!important}
+    /* ===== 划词搜索 / 云同步 / 视频下载（自定义子面板）===== */
+    .zkss-field label,.zkss-title,.zkss-sub,.zkcs-field label{color:var(--nc-ink2)!important}
+    .zkss-tip,.zkcs-tip,.zkss-hint{color:var(--nc-ink3)!important}
+    .zkss-field input,.zkss-field select,.zkss-field textarea,.zkcs-field input{background:var(--nc-field)!important;border:1px solid var(--nc-field-bd)!important;color:var(--nc-field-ink)!important}
+    .zkss-sw{background:var(--nc-sw-off)!important}
+    .zkss-sw.on{background:var(--nc-accent)!important}
+    .zkss-sw i{background:#fff!important;box-shadow:0 1px 3px rgba(15,42,74,.28)}
+    .zkss-card,.zkss-engine,.zkss-item,.zkcs-card{background:var(--nc-btn)!important;border-color:var(--nc-card-bd)!important;color:var(--nc-ink)!important}
+    .zkss-val{color:var(--nc-ink3)!important}
+    /* 划词搜索的「搜索引擎管理」表格：浅色下是白底表格，夜间必须整块换成令牌色，否则一片刺眼白 */
+    .zkss-etable{background:var(--nc-field)!important;border-color:var(--nc-field-bd)!important}
+    .zkss-ehead{background:var(--nc-row)!important;color:var(--nc-ink2)!important;border-bottom:1px solid var(--nc-line)!important}
+    .zkss-erow{border-bottom:1px solid var(--nc-line)!important;color:var(--nc-ink2)!important}
+    .zkss-erow input{background:var(--nc-field)!important;border:1px solid var(--nc-field-bd)!important;color:var(--nc-field-ink)!important}
+    .zkss-erow input:focus{border-color:var(--nc-accent)!important}
+    .zkss-eops button,.zkss-eorder{background:var(--nc-btn)!important;border:1px solid var(--nc-btn-bd)!important;color:var(--nc-btn-ink)!important}
+    .zkss-ebtn,.zkss-eact{background:var(--nc-btn)!important;border:1px solid var(--nc-btn-bd)!important;color:var(--nc-btn-ink)!important}
+    .zkss-eenable .zkss-sw{background:var(--nc-sw-off)!important}
+    .zkss-eenable .zkss-sw.on{background:var(--nc-accent)!important}
+    /* ===== 关于页：圆形导航 / 详情 / 反馈 ===== */
+    .zk-aw-dhead{background:var(--nc-bar)!important;backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);border:1px solid var(--nc-card-bd)!important;border-radius:14px!important;padding:9px 12px!important;margin:0 0 14px!important;box-shadow:0 10px 28px var(--nc-shadow),inset 0 1px 0 rgba(255,255,255,.3)!important;position:sticky;top:0;z-index:6}
+    .zk-aw-dtitle{color:var(--nc-ink)!important}
+    .zk-aw-back{border-color:var(--nc-btn-bd)!important;color:var(--nc-btn-ink)!important;background:var(--nc-btn)!important}
+    .zk-aw-back:hover{background:rgba(22,119,255,.12)!important;border-color:var(--nc-accent)!important}
+    .zk-aw-pane p,.zk-aw-pane li,.zk-about-desc{color:var(--nc-ink2)!important}
+    .zk-aw-pane p b{color:var(--nc-ink)!important}
+    .zk-aw-upd,.zk-fb{background:var(--nc-card)!important;border-color:var(--nc-card-bd)!important}
+    .zk-aw-upd-head b{color:var(--nc-ink)!important}
+    .zk-aw-upd-head span{color:var(--nc-ink4)!important}
+    .zk-aw-upd ul{color:var(--nc-ink2)!important}
+    .zk-aw-tagline{color:var(--nc-ink3)!important}
+    .zk-aw-tip{color:var(--nc-ink4)!important}
+    .zk-aw-preview{background:var(--nc-card)!important;border:1px solid var(--nc-card-bd)!important;box-shadow:0 20px 55px var(--nc-shadow),inset 0 1px 0 rgba(255,255,255,.34)!important;backdrop-filter:blur(22px) saturate(1.7);-webkit-backdrop-filter:blur(22px) saturate(1.7)}
+    .zk-aw-preview b{color:var(--nc-ink)!important}
+    .zk-aw-preview p{color:var(--nc-ink2)!important}
+    .zk-aw-core{fill:var(--nc-field)!important;stroke:var(--nc-card-bd)!important}
+    .zk-aw-core-name{fill:var(--nc-ink)!important}
+    .zk-aw-core-ver{fill:var(--nc-ink3)!important}
+    .zk-aw-core-tag{fill:var(--nc-ink4)!important}
+    .zk-fb-desc,.zk-fb-tip,.zk-fb-privacy{color:var(--nc-ink2)!important}
+    .zk-fb-opts label{color:var(--nc-ink2)!important}
+    .zk-fb-shot{border-color:var(--nc-card-bd)!important;background:var(--nc-btn)!important}
+    .zk-fb-shot-hint{color:var(--nc-ink2)!important}
+    /* 关于页里的数据看板卡片 */
+    .zk-dash-panel,.zk-dash-card,.zk-about-dash{background:var(--nc-card)!important;border-color:var(--nc-card-bd)!important}
+    /* ===== 左栏底部：语言 / 明暗 双联开关（等宽等高的两块）===== */
+    .zk-ui-dock{margin:12px 12px 14px;margin-top:auto;display:flex;gap:8px;position:relative;z-index:1}
+    .zk-ui-tile{flex:1 1 0;min-width:0;height:66px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;padding:8px 6px;border-radius:13px;border:1px solid var(--nc-tile-bd);background:var(--nc-tile);box-shadow:0 6px 18px var(--nc-glow),inset 0 1px 0 rgba(255,255,255,.4);transition:border-color .22s,box-shadow .22s}
+    .zk-ui-tile:hover{border-color:var(--nc-accent);box-shadow:0 8px 22px var(--nc-glow),inset 0 1px 0 rgba(255,255,255,.5)}
+    .zk-ui-cap{font-size:9.5px;letter-spacing:.14em;font-weight:700;color:var(--nc-ink3);line-height:1;text-transform:none}
+    .zk-ui-pill{position:relative;display:flex;align-items:center;width:62px;height:26px;padding:3px;gap:0;border-radius:999px;background:var(--nc-track);border:1px solid var(--nc-tile-bd);cursor:pointer;transition:background .25s,border-color .25s;flex:none}
+    .zk-ui-pill:focus-visible{outline:2px solid var(--nc-accent);outline-offset:2px}
+    .zk-ui-thumb{position:absolute;left:3px;top:3px;width:28px;height:18px;border-radius:999px;background:linear-gradient(135deg,var(--nc-accent),var(--nc-accent2));box-shadow:0 2px 8px var(--nc-glow);transition:transform .34s cubic-bezier(.34,1.4,.5,1),background .34s;display:flex;align-items:center;justify-content:center;z-index:0}
+    .zk-ui-pill.alt .zk-ui-thumb{transform:translateX(28px)}
+    /* 未选中那一侧露出的淡图标：让「这是两态开关」一眼可见 */
+    .zk-ui-tico{position:absolute;top:0;bottom:0;width:28px;display:flex;align-items:center;justify-content:center;color:var(--nc-ink4);z-index:0;pointer-events:none;opacity:.75}
+    .zk-ui-tico.l{left:3px}
+    .zk-ui-tico.r{right:3px}
+    .zk-ui-tico svg{width:11px;height:11px;display:block}
+    .zk-ui-opt{position:relative;z-index:1;flex:1 1 0;min-width:0;height:18px;border:0;background:none;padding:0;font:inherit;font-size:12px;font-weight:700;line-height:18px;text-align:center;color:var(--nc-ink3);cursor:pointer;transition:color .22s;font-family:inherit}
+    .zk-ui-opt.on{color:#fff}
+    .zk-ui-opt:hover{color:var(--nc-accent)}
+    .zk-ui-opt.on:hover{color:#fff}
+    .zk-thm-svg{width:13px;height:13px;display:block;color:#fff;overflow:visible}
+    .zk-thm-cut{transition:transform .44s cubic-bezier(.4,0,.2,1)}
+    .zk-thm-rays{transition:opacity .3s,transform .44s cubic-bezier(.4,0,.2,1);transform-origin:12px 12px}
+    #zk-set-settings-box:not(.zk-nc-dark) .zk-ui-theme .zk-ui-thumb{background:var(--nc-sun-bg);box-shadow:0 2px 8px rgba(255,168,56,.45)}
+    #zk-set-settings-box:not(.zk-nc-dark) .zk-ui-theme .zk-thm-svg{color:var(--nc-sun-ink)}
+    #zk-set-settings-box.zk-nc-dark .zk-ui-theme .zk-ui-thumb{background:var(--nc-moon-bg);box-shadow:0 2px 10px rgba(120,170,255,.45)}
+    #zk-set-settings-box.zk-nc-dark .zk-ui-theme .zk-thm-svg{color:var(--nc-moon-ink)}
+    #zk-set-settings-box.zk-nc-dark .zk-thm-cut{transform:translateX(-9.4px)}
+    #zk-set-settings-box.zk-nc-dark .zk-thm-rays{opacity:0;transform:scale(.5) rotate(35deg)}
+    /* ===== 主题切换询问弹层 ===== */
+    .zk-ask{position:fixed;inset:0;z-index:2147483645;background:rgba(9,15,26,.42);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;animation:zk-ask-in .18s ease both;pointer-events:auto}
+    .zk-ask[hidden]{display:none!important}
+    @keyframes zk-ask-in{from{opacity:0}to{opacity:1}}
+    .zk-ask-card{width:392px;max-width:88vw;border-radius:16px;padding:18px 20px 16px;background:var(--nc-surface);border:1px solid var(--nc-card-bd);box-shadow:0 26px 70px var(--nc-shadow),inset 0 1px 0 rgba(255,255,255,.4);color:var(--nc-ink);animation:zk-ask-rise .22s cubic-bezier(.2,.8,.2,1) both}
+    @keyframes zk-ask-rise{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:none}}
+    .zk-ask-h{display:flex;align-items:center;gap:10px;font-size:14.5px;font-weight:700;color:var(--nc-ink);margin-bottom:8px}
+    .zk-ask-ico{width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:rgba(22,119,255,.14);color:var(--nc-accent);flex:none}
+    .zk-ask-p{margin:0 0 12px;font-size:12.5px;line-height:1.7;color:var(--nc-ink2)}
+    .zk-ask-chk{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--nc-ink2);cursor:pointer;margin-bottom:14px}
+    .zk-ask-acts{display:flex;justify-content:flex-end;gap:9px}
+    .zk-ask-btn{font-family:inherit;font-size:12.5px;font-weight:600;padding:7px 14px;border-radius:9px;cursor:pointer;border:1px solid var(--nc-btn-bd);background:var(--nc-btn);color:var(--nc-btn-ink);transition:.18s}
+    .zk-ask-btn:hover{border-color:var(--nc-accent);color:var(--nc-accent)}
+    .zk-ask-btn.pri{background:linear-gradient(135deg,var(--nc-accent),var(--nc-accent2));border-color:transparent;color:#fff;box-shadow:0 6px 16px var(--nc-glow)}
+    .zk-ask-btn.pri:hover{filter:brightness(1.06);color:#fff}
+    /* ===== 自绘下拉 =====
+       原生 <select> 的弹层由系统绘制（方角 + 系统蓝高亮），CSS 完全管不到，
+       所以把原生 select 保留为「数据源」（真实 value / change 事件不变），
+       上面盖一枚自绘的胶囊按钮 + 圆角浮层，视觉与夜间主题完全可控。 */
+    .zk-sel{position:relative;display:block;width:100%;min-width:0}
+    .zk-set-row > .zk-sel{flex:none;width:260px;max-width:260px}
+    .zk-sel > select{padding:0;border:0;background:none}
+    .zk-sel > select{position:absolute;inset:0;width:100%;height:100%;opacity:0;pointer-events:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0;background:none}
+    .zk-sel-face{display:flex;align-items:center;gap:8px;width:100%;height:34px;padding:0 10px 0 12px;font:inherit;font-size:12.5px;font-weight:600;color:var(--nc-field-ink);background:var(--nc-field);border:1px solid var(--nc-field-bd);border-radius:10px;cursor:pointer;text-align:left;box-shadow:inset 0 1px 2px rgba(15,42,74,.04);transition:border-color .18s,box-shadow .18s,background .18s}
+    .zk-sel-face:hover{border-color:var(--nc-accent)}
+    .zk-sel-face.open,.zk-sel-face:focus-visible{outline:none;border-color:var(--nc-accent);box-shadow:0 0 0 3px var(--nc-glow)}
+    .zk-sel-txt{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .zk-sel-arw{width:13px;height:13px;flex:none;color:var(--nc-ink3);transition:transform .22s,color .22s}
+    .zk-sel-face.open .zk-sel-arw{transform:rotate(180deg);color:var(--nc-accent)}
+    /* 夜间：浮层用令牌，这里只需保证阴影/描边不消失在深背景里 */
+    .zk-nc-dark .zk-sel-pop{box-shadow:0 22px 52px rgba(0,0,0,.62),inset 0 1px 0 rgba(255,255,255,.08)!important}
+    .zk-sel-pop{position:fixed;z-index:60;padding:6px;border-radius:13px;background:var(--nc-surface);border:1px solid var(--nc-card-bd);box-shadow:0 22px 52px var(--nc-shadow),inset 0 1px 0 rgba(255,255,255,.34);backdrop-filter:blur(22px) saturate(1.6);-webkit-backdrop-filter:blur(22px) saturate(1.6);max-height:264px;overflow:auto;animation:zk-sel-in .14s cubic-bezier(.2,.8,.2,1) both}
+    @keyframes zk-sel-in{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:none}}
+    .zk-sel-opt{display:block;width:100%;padding:8px 11px;border:0;border-radius:8px;background:none;font:inherit;font-size:12.5px;text-align:left;color:var(--nc-ink);cursor:pointer;white-space:nowrap;transition:background .14s,color .14s}
+    .zk-sel-opt:hover{background:rgba(22,119,255,.12);color:var(--nc-accent)}
+    .zk-sel-opt.on{background:linear-gradient(135deg,var(--nc-accent),var(--nc-accent2));color:#fff;font-weight:600}
+    .zk-sel-opt.on:hover{filter:brightness(1.06);color:#fff}
+
+    /* ===== 夜间：子面板 / 自定义控件 / 关于页内的卡片 =====
+       这些类原来写死了浅色（#fff / #f8fafc / #cbd5e1…），只靠主面板令牌覆盖不到。 */
+    .zk-nc-dark .zkss-etable,.zk-nc-dark .zkss-ico-prev,.zk-nc-dark .zkss-note{background:var(--nc-field)!important;border-color:var(--nc-field-bd)!important;color:var(--nc-ink2)!important}
+    .zk-nc-dark .zkss-ehead{background:var(--nc-row)!important;color:var(--nc-ink2)!important;border-color:var(--nc-line)!important}
+    .zk-nc-dark .zkss-erow{border-color:var(--nc-line)!important}
+    .zk-nc-dark .zkss-erow input{background:var(--nc-field)!important;border-color:var(--nc-field-bd)!important;color:var(--nc-field-ink)!important}
+    .zk-nc-dark .zkss-fav,.zk-nc-dark .zkss-localize,.zk-nc-dark .zkss-eorder,.zk-nc-dark .zkss-edel{background:var(--nc-btn)!important;border:1px solid var(--nc-btn-bd)!important;color:var(--nc-btn-ink)!important}
+    .zk-nc-dark .zkss-fav:hover,.zk-nc-dark .zkss-localize:hover{background:rgba(22,119,255,.16)!important;border-color:var(--nc-accent)!important;color:var(--nc-accent)!important}
+    .zk-nc-dark .zkss-note code,.zk-nc-dark .zkss-etable code{background:rgba(255,255,255,.08)!important;color:#a9c9ff!important}
+    .zk-nc-dark .zkvd-row{background:var(--nc-row)!important;border-color:var(--nc-line)!important}
+    .zk-nc-dark .zkvd-row input{background:var(--nc-field)!important;border-color:var(--nc-field-bd)!important;color:var(--nc-field-ink)!important}
+    .zk-nc-dark .zkvd-add input,.zk-nc-dark .zkvd-fields input{background:var(--nc-field)!important;border-color:var(--nc-field-bd)!important;color:var(--nc-field-ink)!important}
+    .zk-nc-dark .zkvd-row input::placeholder{color:var(--nc-ink4)!important}
+    .zk-nc-dark .zkvd-name{color:var(--nc-ink)!important}
+    .zk-nc-dark .zkvd-row.on{background:rgba(22,119,255,.14)!important;border-color:rgba(96,165,250,.5)!important}
+    .zk-nc-dark .zkvd-dot{background:var(--nc-field)!important;border-color:#5a6f88}
+    .zk-nc-dark .zkvd-del{background:rgba(239,68,68,.14)!important;border-color:rgba(248,113,113,.4)!important;color:#fca5a5!important}
+    .zk-nc-dark .zkvd-reset{background:var(--nc-btn)!important;border-color:var(--nc-btn-bd)!important;color:var(--nc-btn-ink)!important}
+    .zk-nc-dark .zkvd-note,.zk-nc-dark .zkss-hint{color:var(--nc-ink3)!important}
+    .zk-nc-dark .zkcs-type{background:var(--nc-field)!important;border-color:var(--nc-field-bd)!important;color:var(--nc-field-ink)!important}
+    .zk-nc-dark .zkcs-note{background:var(--nc-field)!important;color:var(--nc-ink2)!important}
+    .zk-nc-dark .zkcs-notice{background:rgba(245,158,11,.14)!important;border-color:rgba(245,158,11,.38)!important;color:#f6c177!important}
+    .zk-nc-dark .zk-dash{background:var(--nc-card)!important;border-color:var(--nc-card-bd)!important;color:var(--nc-ink)!important}
+    .zk-nc-dark .zk-dash-title{color:var(--nc-ink)!important}
+    .zk-nc-dark .zk-dash-title span{color:var(--nc-ink3)!important}
+    .zk-nc-dark .zk-dash-cards{color:var(--nc-ink)!important}
+    .zk-nc-dark .zk-dash-card,.zk-nc-dark .zk-dash-panel{background:var(--nc-card)!important;border-color:var(--nc-card-bd)!important;color:var(--nc-ink)!important}
+    .zk-nc-dark .zk-dash-card-k,.zk-nc-dark .zk-dash-panel-t,.zk-nc-dark .zk-dash-axis{color:var(--nc-ink2)!important;fill:var(--nc-ink2)!important}
+    .zk-nc-dark .zk-dash-card-v{color:var(--nc-ink)!important}
+    .zk-nc-dark .zk-dash-legend-name{color:var(--nc-ink2)!important}
+    .zk-nc-dark .zk-dash-legend-val{color:var(--nc-ink)!important}
+    .zk-nc-dark .zk-dash-legend-pct{color:var(--nc-ink3)!important}
+    .zk-nc-dark .zk-dash-range button{background:var(--nc-btn)!important;border-color:var(--nc-btn-bd)!important;color:var(--nc-ink2)!important}
+    .zk-nc-dark .zk-dash-range button.on{background:linear-gradient(135deg,var(--nc-accent),var(--nc-accent2))!important;border-color:transparent!important;color:#fff!important}
+    .zk-nc-dark .zk-dash-empty{color:var(--nc-ink3)!important}
+    .zk-nc-dark .zk-aw-info{background:var(--nc-card)!important;border-color:var(--nc-card-bd)!important}
+    .zk-nc-dark .zk-aw-info-t{color:var(--nc-ink)!important}
+    .zk-nc-dark .zk-aw-info li{color:var(--nc-ink2)!important}
+    .zk-nc-dark .zk-aw-lead{color:var(--nc-ink2)!important}
+    .zk-nc-dark .zk-aw-upd{background:var(--nc-card)!important;border-color:var(--nc-card-bd)!important}
+    .zk-nc-dark .zk-aw-more{background:var(--nc-btn)!important;border-color:var(--nc-btn-bd)!important;color:var(--nc-btn-ink)!important}
+    .zk-nc-dark .zk-set-list{background:var(--nc-field)!important;border-color:var(--nc-field-bd)!important}
+    .zk-nc-dark .zk-set-list-item{background:var(--nc-btn)!important;border-color:var(--nc-card-bd)!important;color:var(--nc-ink)!important}
+    .zk-nc-dark .zk-set-list-btn,.zk-nc-dark .zk-set-list-action-btn{background:var(--nc-btn)!important;border-color:var(--nc-btn-bd)!important;color:var(--nc-btn-ink)!important}
+    .zk-nc-dark .zk-set-list-btn:hover,.zk-nc-dark .zk-set-list-action-btn:hover{background:rgba(22,119,255,.16)!important;border-color:var(--nc-accent)!important;color:var(--nc-accent)!important}
+    .zk-nc-dark .zk-set-add .zk-set-add-batch{background:var(--nc-btn)!important;border-color:var(--nc-btn-bd)!important;color:var(--nc-btn-ink)!important}
+    .zk-nc-dark .zk-set-import,.zk-nc-dark .zk-set-import-ta{background:var(--nc-field)!important;border-color:var(--nc-field-bd)!important;color:var(--nc-field-ink)!important}
+    .zk-nc-dark .zk-set-import-mini,.zk-nc-dark .zk-set-import-file{background:var(--nc-btn)!important;border-color:var(--nc-btn-bd)!important;color:var(--nc-btn-ink)!important}
+    .zk-nc-dark .zk-fb-input,.zk-nc-dark .zk-fb-out,.zk-nc-dark .zk-fb-shot{background:var(--nc-field)!important;border-color:var(--nc-field-bd)!important;color:var(--nc-field-ink)!important}
+    .zk-nc-dark .zk-fb-opts label,.zk-nc-dark .zk-fb-tip,.zk-nc-dark .zk-fb-privacy,.zk-nc-dark .zk-fb-desc{color:var(--nc-ink2)!important}
+    .zk-nc-dark .zk-about-desc{background:var(--nc-field)!important;border-color:var(--nc-field-bd)!important;color:var(--nc-ink2)!important}
+
+    /* 帮助弹层（#zk-set-help-pop 在 shadow 内、是面板盒子的兄弟 → 只能用宿主类命中） */
+    :host(.zk-nc-dark) #zk-set-help-backdrop{background:rgba(6,10,18,.62)!important}
+    :host(.zk-nc-dark) #zk-set-help-pop{background:linear-gradient(160deg,rgba(26,36,54,.98),rgba(15,23,37,.98))!important;border:1px solid rgba(120,170,225,.22)!important;box-shadow:0 26px 80px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.06)!important;color:#dbe7f5!important}
+    :host(.zk-nc-dark) #zk-set-help-pop .zk-set-help-head{background:linear-gradient(90deg,#1e3a63,#2b5a99)!important;color:#eaf3ff!important;box-shadow:0 2px 12px rgba(0,0,0,.35)!important}
+    :host(.zk-nc-dark) #zk-set-help-pop .zk-set-help-sec{border-bottom-color:rgba(140,175,215,.16)!important}
+    :host(.zk-nc-dark) #zk-set-help-pop .zk-set-help-sec b,
+    :host(.zk-nc-dark) #zk-set-help-pop .zk-set-help-sec strong{color:#eaf3ff!important}
+    :host(.zk-nc-dark) #zk-set-help-pop p,
+    :host(.zk-nc-dark) #zk-set-help-pop div:not(.zk-set-help-head){color:#c2d4e8!important}
+    :host(.zk-nc-dark) #zk-set-help-pop code{background:rgba(255,255,255,.1)!important;color:#a9c9ff!important}
+    :host(.zk-nc-dark) #zk-set-help-pop .zk-set-help-body{color:#c2d4e8!important}
+    /* ===== 底栏改成浮动模块：圆角 + 留白，与内容区不再是一条直角横线 ===== */
+    #zk-set-settings-footer{margin:0 14px 12px!important;padding:9px 14px!important;border-radius:15px!important;background:var(--nc-card)!important;border:1px solid var(--nc-card-bd)!important;box-shadow:0 12px 26px -18px var(--nc-shadow),inset 0 1px 0 rgba(255,255,255,.32)!important;backdrop-filter:blur(18px) saturate(1.5);-webkit-backdrop-filter:blur(18px) saturate(1.5)}
+    @media (max-width:720px){.zk-ui-dock{margin:8px 10px 12px}.zk-ui-tile{height:60px}#zk-set-settings-footer{margin:0 10px 8px!important;padding:8px 10px!important}}
+    @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))){
+      #zk-set-settings-box{background:#f7fbff!important}
+      #zk-set-settings-sidebar{background:#eef7ff!important}
+      #zk-set-settings-main{background:#f4f9ff!important}
+      .zk-set-group,.zk-fb,.zk-aw-upd,.zk-dash-panel{background:#fff!important}
+      #zk-set-settings-box.zk-nc-dark{background:#101827!important}
+      #zk-set-settings-box.zk-nc-dark #zk-set-settings-sidebar{background:#151f31!important}
+      #zk-set-settings-box.zk-nc-dark #zk-set-settings-main{background:#121a29!important}
+      #zk-set-settings-box.zk-nc-dark .zk-set-group,#zk-set-settings-box.zk-nc-dark .zk-fb,#zk-set-settings-box.zk-nc-dark .zk-aw-upd{background:#1a2436!important}
+    }
+  `;
+  /* 自绘下拉：把面板里的原生 <select> 包起来，盖一枚自绘胶囊 + 圆角浮层。
+     原生 select 仍是唯一数据源（value / change 事件、既有监听、守卫断言全部不变），
+     只是视觉上被透明化 —— 因为系统弹层的方角与系统蓝高亮无法用 CSS 覆盖。
+     ⚠ 必须在 tTree(sr) 之后调用：浮层/胶囊里显示的是 option 的文本，早于转繁会残留简体。 */
+  function ncEnhanceSelects(sr, box) {
+    if (!sr || !box) return;
+    const sels = sr.querySelectorAll('select:not([data-nc-sel]):not([data-nc-native])');
+    if (!sels.length) return;
+    let activeClose = null;   // 当前打开的下拉（同一时刻只允许一个）
+    const closeActive = function () { if (activeClose) { try { activeClose(); } catch (e) {} activeClose = null; } };
+    // 面板内任意位置按下（含滚动区）即收起；事件从 shadow 内部冒泡，天然不会误伤页面上的点击
+    try {
+      sr.addEventListener('pointerdown', function (e) {
+        if (!activeClose) return;
+        const path = e.composedPath ? e.composedPath() : [];
+        if (activeClose.keep && activeClose.keep(path)) return;
+        closeActive();
+      }, true);
+    } catch (e) {}
+    Array.prototype.forEach.call(sels, function (sel) {
+      // 先在离屏把胶囊建好，最后一步才插入 DOM —— 中途任何异常都不会留下
+      // 「select 已透明、却没有胶囊可点」的死控件。
+      const wrap = document.createElement('span');
+      wrap.className = 'zk-sel';
+      const face = document.createElement('button');
+      face.type = 'button';
+      face.className = 'zk-sel-face';
+      face.setAttribute('aria-haspopup', 'listbox');
+      face.innerHTML = '<span class="zk-sel-txt"></span>'
+        + '<svg class="zk-sel-arw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>';
+      wrap.appendChild(face);
+      try {
+        sel.setAttribute('data-nc-sel', '1');
+        sel.parentNode.insertBefore(wrap, sel);
+        wrap.appendChild(sel);
+      } catch (e) {
+        // 兜底回滚：把 select 放回原位、删掉容器，保持原生可用
+        try { sel.removeAttribute('data-nc-sel'); if (wrap.parentNode) { wrap.parentNode.insertBefore(sel, wrap); wrap.remove(); } } catch (e2) {}
+        return;
+      }
+      const txt = face.querySelector('.zk-sel-txt');
+      let pop = null;
+      function sync() {
+        const o = sel.options[sel.selectedIndex];
+        txt.textContent = o ? o.textContent : '';
+        face.title = o ? o.textContent : '';
+        face.setAttribute('aria-label', o ? o.textContent : '');
+      }
+      function close() {
+        if (pop) { try { pop.remove(); } catch (e) {} pop = null; }
+        face.classList.remove('open');
+        if (activeClose === close) activeClose = null;
+        face.keep = null;
+      }
+      function open() {
+        closeActive();
+        pop = document.createElement('div');
+        pop.className = 'zk-sel-pop';
+        pop.setAttribute('role', 'listbox');
+        pop.innerHTML = Array.prototype.map.call(sel.options, function (o, i) {
+          return '<button type="button" class="zk-sel-opt' + (i === sel.selectedIndex ? ' on' : '') + '" data-i="' + i + '" role="option">' + zkEscH(o.textContent) + '</button>';
+        }).join('');
+        sr.appendChild(pop);
+        const r = face.getBoundingClientRect(), hr = box.getBoundingClientRect();
+        pop.style.minWidth = Math.max(120, r.width) + 'px';
+        const ph = pop.offsetHeight || 0;
+        let top = r.bottom - hr.top + 6;
+        // 下方放不下就翻到上方（面板高 720，下拉最多 264）
+        if (ph && (r.bottom + ph + 14) > hr.bottom) top = Math.max(6, r.top - hr.top - ph - 6);
+        pop.style.top = top + 'px';
+        pop.style.left = Math.max(6, r.left - hr.left) + 'px';
+        face.classList.add('open');
+        Array.prototype.forEach.call(pop.querySelectorAll('.zk-sel-opt'), function (b) {
+          b.addEventListener('click', function (ev) {
+            ev.preventDefault();
+            const i = parseInt(b.getAttribute('data-i'), 10);
+            if (i !== sel.selectedIndex) { sel.selectedIndex = i; try { sel.dispatchEvent(new Event('change', { bubbles: true })); } catch (e) {} }
+            sync(); close();
+          });
+        });
+        const cur = pop.querySelector('.zk-sel-opt.on');
+        if (cur && typeof cur.scrollIntoView === 'function') { try { cur.scrollIntoView({ block: 'nearest' }); } catch (e) {} }
+        // 供 sr 的 pointerdown 判断「点在浮层或胶囊上 = 不算外部」
+        activeClose = close;
+        close.keep = function (path) { return path.indexOf(pop) >= 0 || path.indexOf(face) >= 0; };
+      }
+      face.addEventListener('click', function (e) {
+        e.preventDefault(); e.stopPropagation();
+        if (pop) close(); else open();
+      });
+      face.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') { if (pop) { e.stopPropagation(); close(); } return; }
+        if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+          e.preventDefault();
+          const n = sel.options.length; if (!n) return;
+          let i = sel.selectedIndex + (e.key === 'ArrowDown' ? 1 : -1);
+          i = Math.max(0, Math.min(n - 1, i));
+          if (i !== sel.selectedIndex) { sel.selectedIndex = i; try { sel.dispatchEvent(new Event('change', { bubbles: true })); } catch (err) {} sync(); }
+          return;
+        }
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); if (pop) close(); else open(); }
+      });
+      sel.addEventListener('change', sync);   // 其它代码改 select.value 时（如语言重建/守卫脚本），胶囊文本跟着变
+      sync();
+    });
+  }
+  // body 级浮层（确认框 / 备份管理 / 配置历史）不在 shadow 内，拿不到 --nc-* 令牌，
+  // 靠 <html class="nc-ui-dark"> + 一次性注入的样式表统一压暗。
+  const NC_UI_DARK_CSS = `
+  /* body 级浮层（不在 shadow 里，拿不到面板令牌）→ 用 html.nc-ui-dark 统一压暗 */
+  html.nc-ui-dark #zk-dlg{background:rgba(4,8,15,.66)!important}
+  html.nc-ui-dark #zk-dlg > div{background:linear-gradient(160deg,#1a2436,#111a2b)!important;color:#dbe7f5!important;box-shadow:0 24px 70px rgba(0,0,0,.62)!important;border:1px solid rgba(120,170,225,.2)!important}
+  html.nc-ui-dark #zk-dlg > div div{color:#dbe7f5!important}
+  html.nc-ui-dark #zk-dlg [data-act="cancel"]{background:rgba(255,255,255,.07)!important;border-color:rgba(120,170,225,.28)!important;color:#bcd2ec!important}
+  html.nc-ui-dark #zk-cfg-hist{background:rgba(4,8,15,.66)!important}
+  html.nc-ui-dark #zk-cfg-hist > div{background:linear-gradient(160deg,#1a2436,#111a2b)!important;color:#dbe7f5!important;border:1px solid rgba(120,170,225,.2)!important;box-shadow:0 24px 70px rgba(0,0,0,.62)!important}
+  html.nc-ui-dark #zk-cfg-hist .zk-hist-row{background:rgba(255,255,255,.04)!important;border-color:rgba(140,175,215,.18)!important}
+  html.nc-ui-dark #zk-cfg-hist .zk-hist-row:hover{background:rgba(96,165,250,.12)!important;border-color:rgba(96,165,250,.45)!important}
+  html.nc-ui-dark #zk-cfg-hist .zk-hist-row div[style*="color:#0f172a"]{color:#e7eff9!important}
+  html.nc-ui-dark #zk-cfg-hist .zk-hist-row div[style*="color:#94a3b8"]{color:#8fa3b8!important}
+  html.nc-ui-dark #zk-cfg-hist .zk-hist-clear{background:rgba(239,68,68,.14)!important;border-color:rgba(248,113,113,.42)!important;color:#fca5a5!important}
+  html.nc-ui-dark #zk-cfg-hist .zk-hist-rollback{background:rgba(22,119,255,.18)!important;border-color:rgba(96,165,250,.45)!important;color:#9ecbff!important}
+  html.nc-ui-dark #zk-cfg-hist [style*="border-bottom:1px solid #eef2f7"]{border-bottom-color:rgba(140,175,215,.18)!important}
+  html.nc-ui-dark #zk-cfg-hist [style*="color:#0f172a"]{color:#e7eff9!important}
+  html.nc-ui-dark #zk-bk-mgr{background:rgba(4,8,15,.66)!important}
+  html.nc-ui-dark .zk-bk-mgr-box{background:linear-gradient(160deg,#1a2436,#111a2b)!important;color:#dbe7f5!important;border:1px solid rgba(120,170,225,.2)!important;box-shadow:0 24px 70px rgba(0,0,0,.62)!important}
+  html.nc-ui-dark .zk-bk-mgr-head{border-bottom-color:rgba(140,175,215,.18)!important;color:#e7eff9!important}
+  html.nc-ui-dark .zk-bk-mgr-close{background:rgba(255,255,255,.08)!important;color:#bcd2ec!important}
+  html.nc-ui-dark .zk-bk-mgr-close:hover{background:rgba(255,255,255,.16)!important}
+  html.nc-ui-dark .zk-bk-mgr-item{background:rgba(255,255,255,.04)!important;border-color:rgba(140,175,215,.18)!important;color:#dbe7f5!important}
+  html.nc-ui-dark .zk-bk-mgr-item:hover{background:rgba(96,165,250,.12)!important;border-color:rgba(96,165,250,.45)!important}
+  html.nc-ui-dark .zk-bk-mgr-name{color:#e7eff9!important}
+  html.nc-ui-dark .zk-bk-mgr-meta{color:#8fa3b8!important}
+  html.nc-ui-dark .zk-bk-mgr-btn{background:rgba(255,255,255,.07)!important;border:1px solid rgba(120,170,225,.26)!important;color:#bcd2ec!important}
+  html.nc-ui-dark .zk-bk-mgr-btn:hover{background:rgba(22,119,255,.18)!important;border-color:#3b82f6!important;color:#9ecbff!important}
+  html.nc-ui-dark .zk-bk-mgr-foot{border-top-color:rgba(140,175,215,.18)!important;color:#8fa3b8!important}
+`;
+  function ncSyncUiDarkClass() {
+    try { document.documentElement.classList.toggle('nc-ui-dark', uiTheme() === 'dark'); } catch (e) {}
+    try {
+      if (!document.getElementById('nc-ui-dark-css')) {
+        const st = document.createElement('style');
+        st.id = 'nc-ui-dark-css'; st.textContent = NC_UI_DARK_CSS;
+        (document.head || document.documentElement).appendChild(st);
+      }
+    } catch (e) {}
+  }
   function openSettings(forceRebuild) {
     const old = document.getElementById('zk-set-cleaner-settings');
     if (old) {
@@ -7822,9 +8356,9 @@
             { k: 'pojieSignIn', t: '吾爱破解自动签到', d: '进入吾爱破解论坛后自动完成每日签到' }
           ]},
           { title: '⑧ linux.do 增强', items: [
-            { k: 'ldNewTab', t: '标题新标签打开', d: '点击 linux.do 话题标题时在新标签页打开' },
-            { k: 'ldFloor', t: '帖子内楼层号', d: '在 linux.do 帖子页每个回复头部显示「N 楼」（楼主显示「楼主」）' },
-            { k: 'ldQuickShare', t: '快捷分享', d: 'linux.do 帖子页右下角显示「分享」按钮，一键复制标题 / 分类 / 标签 / 链接' }
+            { k: 'ldNewTab', t: '标题新标签打开', d: '点击话题标题时在新标签页打开' },
+            { k: 'ldFloor', t: '帖子内楼层号', d: '在帖子页每个回复头部显示「N 楼」（楼主显示「楼主」）' },
+            { k: 'ldQuickShare', t: '快捷分享', d: '帖子页右下角显示「分享」按钮，一键复制标题 / 分类 / 标签 / 链接' }
           ]}
           // ⑧ 内容屏蔽（关键词 / 网址）原在「净化增强」组，但它的**名单**（pingbikw / pingbiurl）
           //   一直挂在「名单管理」组 —— 开关与名单分居两处，用户按直觉去「名单管理」找开关会扑空。
@@ -7913,7 +8447,7 @@
           { key: 'pingbiurl', title: '③ 内容级 · 内容屏蔽（网址 / 关键词）',
             desc: '只在搜索结果里生效：命中即移除该结果条目（百度 / Google / Bing / 360 / Yandex 等），不影响整站运行。上方开关总控下方两份名单。建议填有区分度的条目；过短的条目（如 com、通用词）会误伤大量结果。',
             placeholder: '输入网址关键词',
-            switch: { k: 'contentBlock', t: '关键词/网址内容屏蔽', d: '按关键词 / 网址统一屏蔽搜索与社区内容（百度/Google/360/Bing/知乎/B站/微博/微信公号/豆瓣/YouTube）。关闭后下方两份名单都失效。单站点例外用本行右侧「仅本站」按钮。' },
+            switch: { k: 'contentBlock', t: '关键词/网址内容屏蔽', d: '按关键词 / 网址统一屏蔽搜索与社区内容（覆盖范围随版本补充，清单见更新日志）。关闭后下方两份名单都失效。单站点例外用本行右侧「仅本站」按钮。' },
             more: [ { key: 'pingbikw', placeholder: '输入关键词（至少2个字）' } ] }
         ]
       },
@@ -8029,7 +8563,7 @@
         ctrl = `<label class="zk-set-switch"><input type="checkbox" ${val ? 'checked' : ''}><span class="zk-set-slider"></span></label>`;
       }
       // 【i18n】item.t / item.d 走 t('item.t.<k>') || item.t 自动 fallback 简中。
-      //   字典命中 en 值则显示英文，否则 fallback 简中；繁中也走相同 fallback 路径（简体 tTree 不触发），
+      //   字典命中繁中值则显示繁中，否则 fallback 简中；简中不触发 tTree，
       //   若希望繁体也对 t/d 转繁，单独加 s2t 处理（当前 t() 已对字典缺失 zh-TW 键自动 s2t 回退），
       //   但 t() 只对 I18N 字典生效，这里 item.t 是 data 字符串，需手动调 tTree 才能覆盖。
       const tLabel = tp('item.t.' + item.k, item.t);
@@ -8154,22 +8688,7 @@
       #zk-set-settings-sidebar .zk-set-cat:hover{background:rgba(255,255,255,.06);color:#e2e8f0;transform:translateX(2px)}
       #zk-set-settings-sidebar .zk-set-cat.active{background:linear-gradient(90deg,rgba(22,119,255,.22),rgba(22,119,255,.08));color:#fff;border-left-color:#38bdf8;font-weight:600;box-shadow:0 4px 20px rgba(22,119,255,.15)}
       #zk-set-settings-sidebar .zk-set-cat .zk-set-cat-icon{font-size:16px;width:26px;text-align:center;filter:drop-shadow(0 0 6px rgba(56,189,248,.35))}
-      /* 【i18n】左栏底部语言选择器：与深色侧栏配色协调（青蓝高亮提示是功能入口） */
-      /* —— 界面语言选择器（左栏底部）——
-         深色侧栏上原本沿用通用的 .zk-set-select（系统原生箭头 + 浅色底），在深色背景里非常割裂：
-         原生箭头是 OS 绘制的浅灰三角，且无法改色。这里改为自绘箭头（appearance:none + SVG 背景），
-         底色/描边/文字全部对齐侧栏色系，尺寸也放宽到可点按的 34px 高。 */
-      #zk-set-settings-sidebar .zk-set-lang{margin:12px 14px 16px;margin-top:auto;padding:12px;border:1px solid rgba(125,211,252,.14);background:linear-gradient(180deg,rgba(22,119,255,.16),rgba(22,119,255,.05));border-radius:12px;position:relative;z-index:1;box-shadow:0 4px 16px rgba(0,0,0,.18)}
-      #zk-set-settings-sidebar .zk-set-lang-label{display:flex;align-items:center;gap:6px;font-size:11px;color:#7dd3fc;font-weight:600;margin-bottom:8px;letter-spacing:.4px}
-      #zk-set-settings-sidebar .zk-set-lang-label:before{content:'';width:6px;height:6px;border-radius:50%;background:#38bdf8;box-shadow:0 0 6px rgba(56,189,248,.75);flex:none}
-      #zk-set-settings-sidebar .zk-set-lang-sel{width:100%;height:34px;padding:0 30px 0 11px;border:1px solid rgba(125,211,252,.26);border-radius:9px;font-size:12.5px;font-weight:600;line-height:32px;outline:none;cursor:pointer;color:#e2e8f0;background-color:rgba(15,23,42,.72);background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%237dd3fc' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;-webkit-appearance:none;-moz-appearance:none;appearance:none;transition:border-color .2s,background-color .2s,box-shadow .2s}
-      #zk-set-settings-sidebar .zk-set-lang-sel:hover{border-color:rgba(125,211,252,.55);background-color:rgba(15,23,42,.9)}
-      #zk-set-settings-sidebar .zk-set-lang-sel:focus{border-color:#1677ff;box-shadow:0 0 0 3px rgba(22,119,255,.22)}
-      #zk-set-settings-sidebar .zk-set-lang-sel option{background:#0f172a;color:#e2e8f0}
-      #zk-set-settings-sidebar .zk-set-lang-sel::-ms-expand{display:none}
-      @media(max-width:720px){
-        #zk-set-settings-sidebar .zk-set-lang{margin:8px 12px}
-      }
+      /* 左栏底部「语言 / 明暗」双联开关的结构与配色统一写在 PANEL_GLASS_CSS（令牌驱动，明暗两套自动跟随） */
       #zk-set-settings-main{flex:1;display:flex;flex-direction:column;min-width:0;background:linear-gradient(180deg,#f8fafc 0%,#f1f5f9 100%)}
       #zk-set-settings-header{padding:18px 26px;border-bottom:1px solid #e2e8f0;display:flex;justify-content:space-between;align-items:center;background:#fff;position:relative;z-index:2}
       #zk-set-settings-header h2{margin:0;font-size:18px;color:#0f172a;font-weight:700;letter-spacing:-.3px}
@@ -8187,7 +8706,10 @@
       #zk-set-settings-body::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:3px}
       #zk-set-settings-footer{padding:16px 26px;border-top:1px solid #e2e8f0;display:flex;gap:10px;justify-content:space-between;align-items:center;background:#fff;white-space:nowrap}
       #zk-set-settings-footer .zk-set-status{font-size:12px;color:#64748b;display:flex;align-items:center;gap:6px}
-      #zk-set-settings-footer .zk-set-status .zk-set-auto{margin-left:4px;padding:3px 10px;border-radius:12px;background:#dcfce7;color:#16a34a;font-weight:500;border:1px solid rgba(22,163,74,.12)}
+      #zk-set-settings-footer .zk-set-status .zk-set-auto{margin-left:4px;padding:3px 10px;border-radius:12px;background:rgba(34,197,94,.14);color:#15803d;font-weight:600;border:1px solid rgba(34,197,94,.26)}
+    #zk-set-settings-box.zk-nc-dark #zk-set-settings-footer .zk-set-status .zk-set-auto{background:rgba(34,197,94,.16);color:#6ee7a0;border-color:rgba(34,197,94,.34)}
+    .zk-set-preset-chip{border-color:var(--nc-card-bd)!important;box-shadow:0 0 0 1px var(--nc-card-bd)!important}
+    .zk-set-preset-chip.active{box-shadow:0 0 0 2px var(--nc-accent)!important}
       .zk-set-group{margin-bottom:26px;background:rgba(255,255,255,.95);border:1px solid rgba(226,232,240,.8);border-radius:16px;padding:22px 26px;box-shadow:0 4px 20px rgba(15,23,42,.04),0 1px 3px rgba(15,23,42,.03);transition:box-shadow .25s ease,transform .25s ease}
       .zk-set-group:hover{box-shadow:0 8px 30px rgba(15,23,42,.07);transform:translateY(-1px)}
       .zk-set-group-title{font-size:14px;font-weight:700;color:#0f172a;margin-bottom:16px;display:flex;align-items:center;gap:10px}
@@ -8403,10 +8925,10 @@
       .zkss-eops .zkss-del{color:#ff5252;border-color:#ffd5d5}
       .zkss-eops .zkss-del:hover{background:#fff5f5;color:#ff5252;border-color:#ff5252}
       .zkss-empty{padding:24px;text-align:center;color:#999;font-size:12px}
-      .zkss-sw{width:42px;height:22px;background:#ccc;border-radius:20px;position:relative;cursor:pointer;transition:background .2s;flex-shrink:0}
-      .zkss-sw i{position:absolute;width:18px;height:18px;background:#fff;border-radius:50%;top:2px;left:2px;transition:left .2s}
-      .zkss-sw.on{background:#1677ff}
-      .zkss-sw.on i{left:22px}
+      .zkss-sw{width:44px;height:24px;background:var(--nc-sw-off);border-radius:24px;position:relative;cursor:pointer;transition:background .22s;flex-shrink:0;box-shadow:inset 0 1px 3px var(--nc-sw-in),0 0 0 1px rgba(15,42,74,.06)}
+      .zkss-sw i{position:absolute;width:18px;height:18px;background:#fff;border-radius:50%;top:3px;left:3px;transition:left .22s cubic-bezier(.34,1.56,.64,1),box-shadow .22s;box-shadow:0 1px 3px rgba(15,42,74,.28)}
+      .zkss-sw.on{background:linear-gradient(90deg,var(--nc-accent),var(--nc-accent2));box-shadow:inset 0 1px 3px rgba(0,0,0,.16),0 2px 8px var(--nc-glow)}
+      .zkss-sw.on i{left:23px}
       .zkss-field{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px}
       /* 【对齐统一 · v1.1.0】标签=固定左对齐列，控件=对齐的右列。
          ⚠ 之前只写 min-width:120px：长标签（如「API 地址（支持 {q} {tl} {key} 占位符）」）
@@ -8541,6 +9063,11 @@
     box.setAttribute('role', 'dialog');
     box.setAttribute('aria-modal', 'true');
     box.setAttribute('aria-label', '脚本设置');
+    // 明暗主题：类要同时挂在「宿主」和「面板盒子」上 ——
+    //   宿主上的类让 :host(.zk-nc-dark) 那套配色令牌生效（面板盒子和它的兄弟弹层都能继承到），
+    //   盒子上的类则给 `.zk-nc-dark .xxx` 这类后代选择器用。
+    if (uiTheme() === 'dark') box.classList.add('zk-nc-dark');
+    ncSyncUiDarkClass();
     const _prevFocus = document.activeElement;
     sr.addEventListener('keydown', function(e) {
       if (e.key !== 'Tab') return;
@@ -8552,16 +9079,29 @@
     });
     setTimeout(() => { const c = sr.querySelector('#zk-set-settings-close'); if (c) c.focus(); }, 30);
     sr.innerHTML = '<style>' + PANEL_CSS + '</style>' + `
-      <div id="zk-set-settings-box">
+      <div id="zk-set-settings-box"${uiTheme() === 'dark' ? ' class="zk-nc-dark"' : ''}>
         <div id="zk-set-settings-sidebar">
-          <div class="zk-set-logo">${t('panel.title')}<span class="zk-set-ver">v${VERSION}</span></div>
-          ${groups.map(g => `<div class="zk-set-cat" data-cat="${g.key}"><span class="zk-set-cat-icon">${g.icon}</span>${tp('cat.' + g.key, g.label)}</div>`).join('')}
-          <!-- 【i18n】界面语言选择器：放左栏底部明显位置（之前藏在"性能与高级→全局增强"里太难找） -->
-          <div class="zk-set-lang" title="${t('panel.langTip')}">
-            <label class="zk-set-lang-label">${t('panel.lang')}</label>
-            <select class="zk-set-select zk-set-lang-sel" data-key="uiLang">
-              ${UI_LANGS.map(([v, lbl]) => `<option value="${v}" ${(uiLang() === v) ? 'selected' : ''}>${lbl}</option>`).join('')}
-            </select>
+          <div class="zk-set-logo">${zkIconSvg('gear')}${t('panel.title').replace(/^[^\u4e00-\u9fa5A-Za-z0-9]+/u, '')}<span class="zk-set-ver">v${VERSION}</span></div>
+          ${groups.map(g => `<div class="zk-set-cat" data-cat="${g.key}">${zkIconSvg(g.key)}${tp('cat.' + g.key, g.label)}</div>`).join('')}
+          <!-- 【UI v1.4.1】左栏底部双联开关：左边语言（简/繁滑块）、右边明暗（太阳⇄月亮）。
+               两块等宽等高（flex:1 + 同 height），避免之前"一个大一个小"的观感。 -->
+          <div class="zk-ui-dock">
+            <div class="zk-ui-tile" title="${t('panel.langTip')}">
+              <span class="zk-ui-cap">${tp('ui.lang', '语言')}</span>
+              <div class="zk-ui-pill zk-ui-lang${uiLang() === 'zh-TW' ? ' alt' : ''}" role="group" aria-label="${tp('ui.lang', '语言')}">
+                <i class="zk-ui-thumb"></i>
+                <button type="button" class="zk-ui-opt${uiLang() === 'zh-CN' ? ' on' : ''}" data-lang="zh-CN" aria-label="简体中文">简</button>
+                <button type="button" class="zk-ui-opt${uiLang() === 'zh-TW' ? ' on' : ''}" data-lang="zh-TW" aria-label="繁體中文">繁</button>
+              </div>
+            </div>
+            <div class="zk-ui-tile" title="${tp('ui.themeTip', '切换控制面板的白天 / 夜间配色')}">
+              <span class="zk-ui-cap">${tp('ui.theme', '明暗')}</span>
+              <button type="button" class="zk-ui-pill zk-ui-theme${uiTheme() === 'dark' ? ' alt' : ''}" role="switch" aria-checked="${uiTheme() === 'dark' ? 'true' : 'false'}" aria-label="${tp('ui.theme', '明暗')}" title="${tp('ui.themeTip', '切换控制面板的白天 / 夜间配色')}">
+                <span class="zk-ui-tico l" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2M12 19.4v2M2.6 12h2M19.4 12h2M5.4 5.4l1.4 1.4M17.2 17.2l1.4 1.4M18.6 5.4l-1.4 1.4M6.8 17.2l-1.4 1.4"/></svg></span>
+                <span class="zk-ui-tico r" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg></span>
+                <i class="zk-ui-thumb">${zkThemeIconSvg()}</i>
+              </button>
+            </div>
           </div>
         </div>
         <div id="zk-set-settings-main">
@@ -8579,8 +9119,126 @@
           </div>
         </div>
       </div>
+      <!-- 切换明暗后主动询问：划词搜索条要不要跟着换配色（可勾「不再提示」）。
+           弹层放在 shadow root 内，颜色走同一套令牌，明暗两种主题下都不会突兀。 -->
+      <div class="zk-ask" id="zk-ask-theme" hidden role="dialog" aria-modal="true" aria-labelledby="zk-ask-title">
+        <div class="zk-ask-card">
+          <div class="zk-ask-h"><span class="zk-ask-ico"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5h.01"/></svg></span><span id="zk-ask-title">${tp('ui.followTitle', '划词搜索条要跟着变吗？')}</span></div>
+          <p class="zk-ask-p" id="zk-ask-desc">${tp('ui.followDesc', '控制面板已切换配色。划词工具条和翻译面板目前保持原样，可以让它跟着一起变。')}</p>
+          <label class="zk-ask-chk"><input type="checkbox" id="zk-ask-never"> ${tp('ui.followNever', '不再提示（以后自动跟随控制面板）')}</label>
+          <div class="zk-ask-acts">
+            <button type="button" class="zk-ask-btn" data-act="no">${tp('ui.followNo', '保持原样')}</button>
+            <button type="button" class="zk-ask-btn pri" data-act="yes">${tp('ui.followYes', '一起跟随')}</button>
+          </div>
+        </div>
+      </div>
     `;
+    try {
+      const _glass = document.createElement('style');
+      _glass.id = 'zk-glass-skin';
+      _glass.textContent = PANEL_GLASS_CSS + ZK_ICON_CSS;
+      sr.appendChild(_glass);
+    } catch (e) {}
     document.body.appendChild(box);
+
+    /* ===== 左栏底部：语言（简/繁滑块）+ 明暗（太阳⇄月亮）=====
+       两个开关都是「一枚胶囊 + 一个滑动滑块」的同款结构，宽高由 CSS 强制等分，
+       不会出现一个大一个小。明暗切换后主动询问划词搜索条是否跟随（可勾不再提示）。 */
+    (function wireUiDock() {
+      const boxEl = sr.querySelector('#zk-set-settings-box');
+      const langPill = sr.querySelector('.zk-ui-lang');
+      const themeBtn = sr.querySelector('.zk-ui-theme');
+      const ask = sr.querySelector('#zk-ask-theme');
+      const askDesc = sr.querySelector('#zk-ask-desc');
+      const askNever = sr.querySelector('#zk-ask-never');
+
+      // —— 语言：简 / 繁 ——
+      if (langPill) {
+        langPill.querySelectorAll('.zk-ui-opt[data-lang]').forEach(function (btn) {
+          btn.addEventListener('click', function (e) {
+            e.preventDefault(); e.stopPropagation();
+            const v = btn.getAttribute('data-lang');
+            if (v === uiLang()) return;
+            autoSave('uiLang', v, true);
+            try { toast(t('toast.langSwitched')); } catch (err) {}
+            // 面板文案全部来自 i18n，必须整个重建才能让新语言生效
+            setTimeout(function () { try { openSettings(true); } catch (err) {} }, 300);
+          });
+        });
+      }
+
+      // —— 划词搜索条配色：跟随面板（复用 initSelectionSearch 里的 applyTheme）——
+      //   ⚠ selSearchTheme 挂在配置的 baidu 命名空间下（getScriptCfg()），不是配置顶层；
+      //     写成 getConfig().selSearchTheme 会新建一个没人读的顶层键，看着"保存成功"其实无效。
+      function applySelBarTheme(mode) {
+        try {
+          const b = getScriptCfg();
+          if (!b.selSearchTheme) b.selSearchTheme = {};
+          b.selSearchTheme.mode = mode === 'dark' ? 'dark' : 'light';
+          setConfig(getConfig());
+          try { flushConfig(); } catch (e) {}   // 立即落盘：关标签页也不会丢
+          if (typeof ncSelThemeApply === 'function') ncSelThemeApply();
+        } catch (e) {}
+      }
+      function hideAsk() { if (ask) ask.hidden = true; }
+      function askVisible() { return !!ask && !ask.hidden; }
+
+      function askFollow(next) {
+        if (!ask) return;
+        if (askDesc) {
+          askDesc.textContent = next === 'dark'
+            ? tp('ui.followDescDark', '控制面板已切换到「夜间」。划词工具条和翻译面板目前仍是浅色，要不要一起变深？')
+            : tp('ui.followDescLight', '控制面板已切换到「白天」。划词工具条和翻译面板目前仍是深色，要不要一起变浅？');
+        }
+        if (askNever) askNever.checked = false;
+        ask.hidden = false;
+        const yes = ask.querySelector('[data-act="yes"]');
+        try { if (yes) yes.focus(); } catch (e) {}
+      }
+      if (ask) {
+        ask.addEventListener('click', function (e) {
+          if (e.target === ask) { hideAsk(); return; }             // 点遮罩空白 = 保持原样
+          const act = e.target && e.target.closest ? e.target.closest('[data-act]') : null;
+          if (!act) return;                                        // 点「不再提示」复选框本身：只改勾选，不关闭
+          if (askNever && askNever.checked) autoSave('uiThemeAskOff', true, true);
+          if (act.getAttribute('data-act') === 'yes') applySelBarTheme(uiTheme());
+          hideAsk();
+        });
+        ask.addEventListener('keydown', function (e) { if (e.key === 'Escape') { e.stopPropagation(); hideAsk(); } });
+      }
+
+      // —— 明暗 ——
+      function syncThemeUi() {
+        const dark = uiTheme() === 'dark';
+        if (themeBtn) {
+          themeBtn.classList.toggle('alt', dark);
+          themeBtn.setAttribute('aria-checked', dark ? 'true' : 'false');
+        }
+        // 宿主 + 盒子双挂：宿主负责配色令牌（:host(.zk-nc-dark)），盒子负责后代选择器
+        box.classList.toggle('zk-nc-dark', dark);
+        ncSyncUiDarkClass();
+        if (boxEl) boxEl.classList.toggle('zk-nc-dark', dark);
+      }
+      if (themeBtn) {
+        themeBtn.addEventListener('click', function (e) {
+          e.preventDefault(); e.stopPropagation();
+          const next = uiTheme() === 'dark' ? 'light' : 'dark';
+          autoSave('uiTheme', next, true);
+          syncThemeUi();
+          // 「柔和又有科技感」：整块面板亮度轻微回落再复原，像灯被拨了一下
+          if (boxEl) {
+            boxEl.classList.remove('zk-nc-switching');
+            void boxEl.offsetWidth; // 强制回流，让动画可重复触发
+            boxEl.classList.add('zk-nc-switching');
+            setTimeout(function () { try { boxEl.classList.remove('zk-nc-switching'); } catch (err) {} }, 560);
+          }
+          if (getScriptCfg().uiThemeAskOff) { applySelBarTheme(next); return; }
+          if (askVisible()) hideAsk();
+          askFollow(next);
+        });
+      }
+      syncThemeUi();
+    })();
 
     // 划词搜索 / 云端同步 / 视频下载 自定义面板
     sr.querySelectorAll('.zkss-root').forEach(root => {
@@ -9329,95 +9987,434 @@
           if (!(d > 0) || d === _zkDashRange) return;
           _zkDashRange = d;
           buildAboutDash(root);
+          try { tTree(host); } catch (e) {}   // 重绘出来的标签是简体源文，补一次转繁
         });
       });
+      // 首次渲染也可能晚于面板的 tTree（本函数在 buildAboutUI 内被调用，顺序靠前，
+      // 但保险起见这里也扫一遍：tTree 幂等，已转过的字不会被二次改动）
+      try { tTree(host); } catch (e) {}
     }
 
-    // ===== 关于面板（版本信息 + 全功能说明索引）=====
+      // ===== 「本页体检」：全部读本机运行时状态，不发任何请求 =====
+      //   为什么不再用「近期更新」：那份列表是写死在脚本里的，每次发版都要手工同步，
+      //   漏一次就出现「已经 v1.5.0 了，关于页还写着 v1.4.0 当前」这种事。
+      function renderDiag(root) {
+        if (!root) return;
+        const box = root.querySelector('#zk-aw-diag');
+        if (!box) return;
+        const cfg = getScriptCfg();
+        const modeMap = { all: '全部站点', only: '仅名单内生效', except: '名单内不生效' };
+        const mode = ncSiteScopeMode();
+        const ee = NC_EARLY_EXIT;
+        const statOn = cfg.adStats !== false;
+        // 已启用的开关数：只数布尔项，且排除 UI 偏好（uiTheme/uiThemeAskOff 之类不算「功能」）
+        const UI_KEYS = { uiTheme: 1, uiThemeAskOff: 1, shortcutPanel: 1, shortcutPause: 1, shortcutYtp: 1 };
+        let enabled = 0;
+        try {
+          Object.keys(cfg).forEach(function (k) {
+            if (UI_KEYS[k]) return;
+            if (typeof cfg[k] === 'boolean' && cfg[k]) enabled++;
+          });
+        } catch (e) {}
+        const errs = (NC_ERR_LOG || []).slice(-3).reverse();
+        const host = HOST || (location && location.hostname) || '—';
+        const rows = [
+          ['当前域名', escHtml(host)],
+          ['生效范围', escHtml(modeMap[mode] || mode)],
+          ['已启用功能', enabled + ' 项'],
+          ['本次拦截', statOn ? String(STATS.skippedAds || 0) + ' 条' : '统计已关闭'],
+          ['本站累计', statOn ? String(siteBlocked[host] || 0) + ' 条' : '—']
+        ];
+        const stCls = ee ? 'bad' : 'ok';
+        const stTitle = ee ? '本站已暂停（' + escHtml(ee.title || '早退') + '）' : '脚本在本站正常运行';
+        const stDesc = ee
+          ? escHtml(ee.hint || '') + (ee.match ? '<br>命中条目：<b>' + escHtml(ee.match) + '</b>' : '')
+          : '广告过滤 / 外观增强等已按左侧开关生效；改动即时保存。';
+        box.innerHTML = ''
+          + '<div class="zk-aw-diag-st ' + stCls + '">'
+          +   '<span class="zk-aw-diag-dot"></span>'
+          +   '<div><div class="zk-aw-diag-st-t">' + stTitle + '</div><div class="zk-aw-diag-st-d">' + stDesc + '</div></div>'
+          + '</div>'
+          + '<dl class="zk-aw-kv">' + rows.map(function (r) {
+                return '<dt>' + r[0] + '</dt><dd>' + r[1] + '</dd>';
+              }).join('') + '</dl>'
+          + '<div class="zk-aw-info zk-aw-diag-err">'
+          +   '<div class="zk-aw-info-t"><span class="zk-aw-info-dot tip"></span>最近错误</div>'
+          +   (errs.length
+                ? '<ul>' + errs.map(function (e) {
+                    const when = (function () { try { return new Date(e.t).toLocaleTimeString(); } catch (x) { return ''; } })();
+                    return '<li>' + escHtml(when) + ' · ' + escHtml(String(e.msg || '').slice(0, 90)) + '</li>';
+                  }).join('') + '</ul>'
+                : '<ul><li>无异常记录</li></ul>')
+          + '</div>'
+          + '<div class="zk-aw-diag-acts">'
+          +   (ee ? '<button class="zk-aw-back zk-aw-diag-fix" type="button">一键解除本站暂停</button>' : '')
+          +   '<button class="zk-aw-back zk-aw-diag-copy" type="button">复制诊断报告</button>'
+          + '</div>';
+        const copyBtn = box.querySelector('.zk-aw-diag-copy');
+        if (copyBtn) copyBtn.addEventListener('click', function () {
+          // 复用问题反馈里已经测过的「生成 + 复制」链路，不重复造
+          const gen = root.querySelector('#zk-fb-gen'), cp = root.querySelector('#zk-fb-copy');
+          if (gen) gen.click();
+          setTimeout(function () { if (cp) cp.click(); }, 80);
+        });
+        // 繁中模式：诊断内容是「构建后才生成」的，必须自己再扫一遍
+        try { tTree(box); } catch (e) {}
+        const fixBtn = box.querySelector('.zk-aw-diag-fix');
+        if (fixBtn) fixBtn.addEventListener('click', function () {
+          try { if (typeof ncOpenRescue === 'function') ncOpenRescue(); } catch (e) {}
+        });
+      }
+    // ===== 关于面板（三瓣圆盘导航：数据 / 反馈 / 体检）=====
     function buildAboutUI(root) {
-      const helpKeys = Object.keys(HELP);
-      const items = helpKeys.map(k => {
-        const h = HELP[k];
-        // 统一走 escHtml（此前只把 `<` 换成 &lt;，`&` / `>` 未处理；HELP 文案里会出现 `<video>` 等写法）
-        const sec = (title, val) => val ? `<div class="zk-help-sec"><h4>${escHtml(title)}</h4><p>${escHtml(String(val))}</p></div>` : '';
-        return `<div class="zk-about-item">
-          <div class="zk-about-q" data-k="${k}"><span>${escHtml(h.title || k)}</span><span class="zk-about-arrow">▸</span></div>
-          <div class="zk-about-a" data-a="${k}">
-            ${sec('🎯 功能作用', h.effect)}
-            ${sec('⚙️ 实现原理', h.impl)}
-            ${sec('🔧 失效维护', h.maintain)}
-            ${sec('⚠️ 开关风险', h.risk)}
-          </div>
-        </div>`;
+
+      const CX = 230, CY = 230, R1 = 96, R2 = 168;
+      function arc(a0, a1) {
+        function pt(r, a) { return [CX + r * Math.cos(a * Math.PI / 180), CY + r * Math.sin(a * Math.PI / 180)]; }
+        const p0 = pt(R2, a0), p1 = pt(R2, a1), p2 = pt(R1, a1), p3 = pt(R1, a0);
+        const large = (a1 - a0) > 180 ? 1 : 0;
+        return 'M' + p0[0].toFixed(2) + ',' + p0[1].toFixed(2)
+          + ' A' + R2 + ',' + R2 + ' 0 ' + large + ' 1 ' + p1[0].toFixed(2) + ',' + p1[1].toFixed(2)
+          + ' L' + p2[0].toFixed(2) + ',' + p2[1].toFixed(2)
+          + ' A' + R1 + ',' + R1 + ' 0 ' + large + ' 0 ' + p3[0].toFixed(2) + ',' + p3[1].toFixed(2) + ' Z';
+      }
+      // ⚠ 三个扇形必须严格「等大 + 等缝」，且 3×扇形 + 3×缝隙 必须刚好 360°，否则两段会在交界处重叠：
+      //   SVG 按文档顺序绘制，后画的扇形会盖住前一个（用户实测：悬浮「数据看板」时蓝色被紫色压掉一节）。
+      //   取 117° + 3° 缝 = 360°，三段中心正好落在 -90° / 30° / 150°（彼此差 120°），左右完全对称，
+      //   顶上那瓣的切线也就正好是水平方向（标签 rot=0）。
+      const sectors = [
+        { key: 'data', a0: -148.5, a1: -31.5, fill: 'url(#zk-aw-g1)', icon: '📊', title: '数据看板', sub: '拦截统计 · 趋势', accent: '#1677ff', desc: '累计拦截、来源占比、近 7 / 30 / 90 天趋势，只统计本机。' },
+        { key: 'feedback', a0: -28.5, a1: 88.5, fill: 'url(#zk-aw-g2)', icon: '💬', title: '问题反馈', sub: '一键报告 · 脱敏', accent: '#06b6d4', desc: '填一句现象生成脱敏报告，可直达 Gitee / 问卷，截图可粘贴。' },
+        { key: 'diag', a0: 91.5, a1: 208.5, fill: 'url(#zk-aw-g3)', icon: '🩺', title: '本页体检', sub: '状态 · 排障', accent: '#8b5cf6', desc: '看本站是否生效、启用了哪些功能、最近有没有报错，一键复制诊断报告。' }
+      ];
+      // 标签排版规则：文字沿扇形「切线」方向排（与半径成 90°），顶扇形就是水平、其余两瓣斜排，
+      // 三行文字则沿半径方向叠起来 —— 这样才不会像沿半径排时那样把长句子顶出扇环外。
+      // 切线有两个方向（差 180°），翻转的那一支会把文字倒过来，所以统一归一化到 (-90°, 90°] 保证从左往右可读。
+      function tangentRot(mid) {
+        let r = mid + 90;
+        while (r > 90) r -= 180;
+        while (r <= -90) r += 180;
+        return r;
+      }
+      const RM = (R1 + R2) / 2; // 标签块中心半径：取环带正中，三行文字上下留白才均匀
+      function radialPt(r, a) { return [CX + r * Math.cos(a * Math.PI / 180), CY + r * Math.sin(a * Math.PI / 180)]; }
+      const segHtml = sectors.map(function (s) {
+        const d = arc(s.a0, s.a1);
+        const mid = (s.a0 + s.a1) / 2;
+        const pos = radialPt(RM, mid);
+        const lx = +pos[0].toFixed(2), ly = +pos[1].toFixed(2);
+        const rot = +tangentRot(mid).toFixed(1);
+        // 三行「图标 / 标题 / 副标题」的叠放顺序**不随旋转翻转**：局部 -y 在三个扇形里映射到的
+        // 屏幕方向都偏「上」，所以图标始终显示在标题上方，和顶部扇形一致。若改成按半径内外翻转，
+        // 下方两瓣会变成「副标题在上、图标在下」，读起来像顺序反了。
+        return '<g class="zk-aw-g" data-sec="' + s.key + '" tabindex="0" role="button" aria-label="' + escAttr(s.title + '：' + s.sub) + '">'
+          + '<path class="zk-aw-seg" d="' + d + '" fill="' + s.fill + '"></path>'
+          + '<g class="zk-aw-label-g" transform="rotate(' + rot + ' ' + lx + ' ' + ly + ')">'
+          + '<text class="zk-aw-ico" x="' + lx + '" y="' + (ly - 20) + '" text-anchor="middle">' + s.icon + '</text>'
+          + '<text class="zk-aw-lab" x="' + lx + '" y="' + (ly + 4) + '" text-anchor="middle">' + escHtml(s.title) + '</text>'
+          + '<text class="zk-aw-sub" x="' + lx + '" y="' + (ly + 22) + '" text-anchor="middle">' + escHtml(s.sub) + '</text>'
+          + '</g>'
+          + '</g>';
       }).join('');
+
       root.innerHTML = `
-        <div class="zk-about">
-          <div class="zk-about-head">
-            <div class="zk-about-logo">⚡ 全网净化大师 NetClean</div>
-            <div class="zk-about-ver">当前版本 v${VERSION}</div>
+        <style>
+          .zk-aw{position:relative;padding:2px 0 18px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;color:#0f172a}
+          .zk-aw *{box-sizing:border-box}
+          .zk-aw-stage{position:relative;display:flex;justify-content:center;align-items:center;padding:14px 0 2px;min-height:430px;overflow:hidden}
+          .zk-aw-stage::before{content:'';position:absolute;width:440px;height:440px;border-radius:50%;background:radial-gradient(circle at 50% 44%,rgba(22,119,255,.16),rgba(6,182,212,.08) 45%,transparent 68%);filter:blur(8px);pointer-events:none}
+          .zk-aw-stage[hidden],.zk-aw-detail[hidden],.zk-aw-intro[hidden]{display:none!important}
+          .zk-aw-wheel{width:min(460px,84vw);height:auto;overflow:visible;animation:zk-aw-float 7s ease-in-out infinite}
+          @keyframes zk-aw-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+          .zk-aw-ring{transform-origin:230px 230px;animation:zk-aw-spin 30s linear infinite;opacity:.75}
+          @keyframes zk-aw-spin{to{transform:rotate(360deg)}}
+          .zk-aw-g{cursor:pointer;outline:none;transform-origin:230px 230px;transition:transform .3s cubic-bezier(.2,.8,.2,1),filter .3s}
+          .zk-aw-g:hover,.zk-aw-g:focus-visible{transform:scale(1.035);filter:brightness(1.06) drop-shadow(0 10px 22px rgba(22,119,255,.24))}
+          .zk-aw-g:focus-visible .zk-aw-seg{stroke:#fff;stroke-width:4}
+          .zk-aw-g,.zk-aw-core-g,.zk-aw-wheel{outline:none!important}
+          .zk-aw-g:focus,.zk-aw-g:focus-visible,.zk-aw-core-g:focus,.zk-aw-core-g:focus-visible{outline:none!important}
+          .zk-aw *{-webkit-tap-highlight-color:transparent}
+          .zk-aw-back:focus-visible{outline:2px solid rgba(22,119,255,.45);outline-offset:2px}
+          .zk-aw-seg{stroke:rgba(255,255,255,.72);stroke-width:2.5;stroke-linejoin:round}
+    #zk-set-settings-box.zk-nc-dark .zk-aw-seg{stroke:rgba(255,255,255,.34)}
+          .zk-aw-ico{font-size:22px;pointer-events:none}
+          .zk-aw-lab{fill:#fff;font-size:16px;font-weight:700;letter-spacing:.5px;pointer-events:none;text-shadow:0 1px 2px rgba(15,23,42,.18)}
+          .zk-aw-sub{fill:rgba(255,255,255,.82);font-size:11px;pointer-events:none}
+          .zk-aw-core-g{cursor:pointer;transform-origin:230px 230px;transition:transform .25s,filter .25s}
+          .zk-aw-core-g:hover,.zk-aw-core-g:focus-visible{transform:scale(1.03);filter:drop-shadow(0 10px 24px rgba(22,119,255,.22))}
+          .zk-aw-core-g:focus-visible .zk-aw-core{stroke:#1677ff;stroke-width:3}
+          .zk-aw-core-hint{transform-origin:230px 230px;animation:zk-aw-spin 40s linear infinite;transition:stroke .25s}
+          .zk-aw-core-g:hover .zk-aw-core-hint,.zk-aw-core-g:focus-visible .zk-aw-core-hint{stroke:rgba(22,119,255,.55)}
+          .zk-aw-core{fill:#fff;stroke:rgba(22,119,255,.18);stroke-width:2;filter:drop-shadow(0 8px 24px rgba(22,119,255,.18))}
+          .zk-aw-core-name{fill:#0f172a;font-size:20px;font-weight:800;letter-spacing:.3px}
+          .zk-aw-core-ver{fill:#64748b;font-size:11px}
+          .zk-aw-core-tag{fill:#94a3b8;font-size:10px;letter-spacing:2px}
+          .zk-aw-pane p{font-size:12px;line-height:1.75;color:#475569;margin:0 0 10px}
+          /* 「关于 NetClean」详情：一句导语 + 三张信息卡（标题点 + 短条目），不再堆长段落 */
+          .zk-aw-lead{font-size:12.5px;line-height:1.7;color:#475569;margin:0 0 14px}
+          .zk-aw-info{border:1px solid #e4eefb;border-radius:12px;padding:11px 13px 9px;margin:0 0 10px;background:linear-gradient(180deg,#fff,#f7fbff)}
+          .zk-aw-info-t{display:flex;align-items:center;gap:7px;font-size:12.5px;font-weight:700;color:#0f2740;margin-bottom:6px}
+          .zk-aw-info-dot{width:7px;height:7px;border-radius:50%;flex:none;box-shadow:0 0 0 3px rgba(22,119,255,.12)}
+          .zk-aw-info-dot.ok{background:#1677ff}
+          .zk-aw-info-dot.safe{background:#12b886}
+          .zk-aw-info-dot.tip{background:#f59e0b}
+          .zk-aw-info ul{margin:0;padding:0;list-style:none}
+          .zk-aw-info li{position:relative;font-size:12px;line-height:1.7;color:#475569;padding-left:13px;margin:0 0 3px}
+          .zk-aw-info li:before{content:'';position:absolute;left:2px;top:.62em;width:4px;height:4px;border-radius:50%;background:#a9c3e0}
+          .zk-aw-info li b{color:#0b5ed7;font-weight:600}
+          .zk-aw-pane p b{color:#0f172a}
+          .zk-aw-goto-fb{margin-top:14px;border-color:#1677ff;color:#1677ff}
+          .zk-aw-preview{position:absolute;z-index:8;width:238px;padding:12px 14px 11px;border-radius:14px;background:linear-gradient(135deg,rgba(255,255,255,.84),rgba(255,255,255,.56));backdrop-filter:blur(20px) saturate(1.7);-webkit-backdrop-filter:blur(20px) saturate(1.7);border:1px solid rgba(255,255,255,.92);box-shadow:0 20px 55px rgba(15,23,42,.18),inset 0 1px 0 rgba(255,255,255,.95);opacity:0;transform:translateY(6px) scale(.98);transition:opacity .18s,transform .18s;pointer-events:none}
+          .zk-aw-preview.show{opacity:1;transform:none}
+          .zk-aw-preview b{display:block;font-size:14px;margin-bottom:4px}
+          .zk-aw-preview b i{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:6px;vertical-align:middle}
+          .zk-aw-preview p{margin:0;font-size:12px;line-height:1.55;color:#475569}
+          .zk-aw-preview span{display:inline-block;margin-top:8px;font-size:11px;color:#1677ff;font-weight:600}
+          .zk-aw-tagline{text-align:center;color:#64748b;font-size:12px;margin:0 0 2px}
+          .zk-aw-tip{text-align:center;color:#94a3b8;font-size:11px;letter-spacing:.3px;margin:2px 0 4px}
+
+          /* 「本页体检」：状态条 + 键值表 + 最近错误 */
+          .zk-aw-diag-st{display:flex;gap:9px;align-items:flex-start;padding:11px 13px;border-radius:12px;border:1px solid var(--nc-card-bd);background:var(--nc-card);margin:0 0 12px}
+          .zk-aw-diag-st.ok{border-color:rgba(34,197,94,.38)}
+          .zk-aw-diag-st.bad{border-color:rgba(245,158,11,.48)}
+          .zk-aw-diag-dot{width:8px;height:8px;border-radius:50%;margin-top:5px;flex:none;box-shadow:0 0 0 3px rgba(34,197,94,.14)}
+          .zk-aw-diag-st.ok .zk-aw-diag-dot{background:#22c55e}
+          .zk-aw-diag-st.bad .zk-aw-diag-dot{background:#f59e0b;box-shadow:0 0 0 3px rgba(245,158,11,.16)}
+          .zk-aw-diag-st-t{font-size:12.5px;font-weight:700;color:var(--nc-ink)}
+          .zk-aw-diag-st-d{font-size:11.5px;line-height:1.65;color:var(--nc-ink2);margin-top:2px}
+          .zk-aw-diag-st-d b{color:var(--nc-accent)}
+          .zk-aw-kv{display:grid;grid-template-columns:86px 1fr;gap:7px 10px;margin:0 0 12px;font-size:12px}
+          .zk-aw-kv dt{color:var(--nc-ink3);margin:0}
+          .zk-aw-kv dd{margin:0;color:var(--nc-ink);font-weight:600;word-break:break-all}
+          .zk-aw-diag-err ul li{font-size:11.5px}
+          .zk-aw-diag-acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:2px}
+          .zk-aw-diag-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;padding-top:10px;border-top:1px dashed var(--nc-card-bd);flex-wrap:wrap}
+          .zk-aw-diag-ver{font-size:11.5px;color:var(--nc-ink3)}
+          .zk-aw-changelog{margin-top:0}
+          .zk-aw-detail{animation:zk-aw-in .28s ease both}
+          @keyframes zk-aw-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+          .zk-aw-dhead{display:flex;align-items:center;gap:10px;margin:0 0 12px;padding:8px 0 10px;border-bottom:1px solid #e2e8f0;position:sticky;top:0;z-index:6;background:rgba(255,255,255,.92);backdrop-filter:blur(8px)}
+          .zk-aw-back{border:1px solid #cbd5e1;background:#fff;color:#334155;border-radius:9px;padding:6px 11px;font-size:12px;cursor:pointer;transition:.18s}
+          .zk-aw-back:hover{border-color:#1677ff;color:#1677ff;background:#f0f7ff}
+          .zk-aw-dtitle{font-size:15px;font-weight:700;color:#0f172a}
+          .zk-aw-pane{display:none}
+          .zk-aw-pane.active{display:block}
+          .zk-aw-updates{display:flex;flex-direction:column;gap:10px}
+          .zk-aw-upd{border:1px solid #e2e8f0;border-radius:12px;padding:12px 14px;background:linear-gradient(180deg,#fff,#f8fafc)}
+          .zk-aw-upd-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+          .zk-aw-upd-head b{font-size:14px;color:#0f172a}
+          .zk-aw-upd-head span{font-size:11px;color:#94a3b8}
+          .zk-aw-upd-head em{font-style:normal;font-size:10px;color:#1677ff;background:#e8f1ff;border-radius:20px;padding:2px 8px}
+          .zk-aw-upd ul{margin:0;padding-left:18px;color:#475569;font-size:12px;line-height:1.7}
+          .zk-aw-more{display:inline-flex;align-items:center;gap:6px;margin-top:12px;border:1px solid #cbd5e1;background:#fff;color:#1677ff;border-radius:9px;padding:8px 13px;font-size:12px;cursor:pointer}
+          .zk-aw-more:hover{background:#f0f7ff;border-color:#1677ff}
+          .zk-aw-intro{margin-top:10px;border-top:1px dashed #e2e8f0;padding-top:10px}
+          .zk-aw-intro summary{cursor:pointer;color:#64748b;font-size:12px;outline:none}
+          .zk-aw-intro .zk-about-intro-body{font-size:12px;line-height:1.75;color:#475569;padding-top:8px}
+          .zk-aw-intro .zk-about-links{font-size:12px;color:#64748b}
+          .zk-aw-intro a{color:#1677ff;text-decoration:none}
+          .zk-aw-intro a:hover{text-decoration:underline}
+          .zk-about-sep{color:#cbd5e1;margin:0 4px}
+          @media (max-width:720px){.zk-aw-wheel{width:min(360px,92vw)}.zk-aw-preview{width:210px}.zk-aw-lab{font-size:14px}.zk-aw-sub{font-size:10px}}
+          @media (prefers-reduced-motion:reduce){.zk-aw-wheel,.zk-aw-ring{animation:none}.zk-aw-g{transition:none}}
+        </style>
+        <div class="zk-about zk-aw">
+          <div class="zk-aw-stage">
+            <svg class="zk-aw-wheel" viewBox="0 0 460 460" role="group" aria-label="关于 NetClean 的三个入口">
+              <defs>
+                <linearGradient id="zk-aw-g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1677ff"/><stop offset="1" stop-color="#5aa2ff"/></linearGradient>
+                <linearGradient id="zk-aw-g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06b6d4"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+                <linearGradient id="zk-aw-g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+              </defs>
+              <circle class="zk-aw-ring" cx="230" cy="230" r="192" fill="none" stroke="rgba(22,119,255,.30)" stroke-width="2" stroke-dasharray="2 11" stroke-linecap="round"/>
+              ${segHtml}
+              <g class="zk-aw-core-g" data-sec="about" tabindex="0" role="button" aria-label="关于 NetClean：脚本简介与隐私说明">
+                <circle class="zk-aw-core-hint" cx="230" cy="230" r="86" fill="none" stroke="rgba(22,119,255,.18)" stroke-width="1.4" stroke-dasharray="3 6"></circle>
+                <circle class="zk-aw-core" cx="230" cy="230" r="78"></circle>
+                <text class="zk-aw-core-name" x="230" y="224" text-anchor="middle">NetClean</text>
+                <text class="zk-aw-core-ver" x="230" y="246" text-anchor="middle">v${escHtml(VERSION)}</text>
+                <text class="zk-aw-core-tag" x="230" y="264" text-anchor="middle">点击了解</text>
+              </g>
+            </svg>
+            <div class="zk-aw-preview" role="status" aria-live="polite"></div>
           </div>
-          <div id="zk-about-dash"></div>
-          <p class="zk-about-desc">广告过滤 · 划词搜索 · 验证码识别 · 视频下载 一体化浏览器增强脚本。下方为<b>全部功能的详细说明</b>，可搜索关键词快速定位，点击展开查看作用 / 原理 / 维护 / 风险。</p>
-          <details class="zk-about-intro">
-            <summary>📖 这个脚本是做什么的？（点开看简介 · 隐私说明 · 反馈渠道）</summary>
-            <div class="zk-about-intro-body">
-              <p><b>能做什么</b>：① 过滤全站广告（含百度 / Google / B站 / 知乎 / 微博等 19 个站点，并自动跳过 YouTube、优酷、腾讯视频的贴片广告）；② 划词搜索与翻译（选中文字即弹出工具条）；③ 验证码自动识别填充；④ 视频下载与画质增强；⑤ 暗黑模式、护眼模式、搜索结果卡片美化等外观增强；⑥ linux.do 社区增强（帖子内楼层号 / 标题新标签 / 快捷分享）。所有功能都可在左侧分类逐项开关，改完自动保存。</p>
-              <p><b>不会做什么</b>：不收集、不上传你的任何浏览记录。所有过滤规则都在本地运行。仅当你<b>主动开启</b>验证码识别并填写了接口地址，或<b>使用划词翻译</b>时，相关图片 / 文字才会发送到<b>你自己选择</b>的第三方服务；云同步也只上传到<b>你自己填写的</b>服务器。</p>
-              <p><b>遇到问题</b>：想临时关掉某个站点的脚本，用油猴菜单「🚫 只暂停当前网站」（本站已暂停时，该项会自动变成「▶️ 恢复当前网站」）；想全局临时关掉，用「⏸️ 暂停全部网站净化」（已暂停时变为「▶️ 恢复全部网站净化」）；脚本在本站没生效时，用「🔍 本页为什么没净化？」查看原因。</p>
-              <p class="zk-about-links">项目主页 · 更新日志 · 问题反馈：<a href="https://greasyfork.org/scripts/594888/feedback" target="_blank" rel="noopener">GreasyFork</a><span class="zk-about-sep">｜</span><a href="https://github.com/bigoceans/NetClean/issues" target="_blank" rel="noopener">GitHub Issues</a></p>
+          <div class="zk-aw-tagline">广告过滤 · 划词搜索 · 验证码识别 · 视频下载 · 外观增强</div>
+          <div class="zk-aw-tip">悬停预览 · 点击进入</div>
+          <div class="zk-aw-detail" hidden>
+            <div class="zk-aw-dhead"><button class="zk-aw-back" type="button">← 返回导航</button><div class="zk-aw-dtitle"></div></div>
+            <div class="zk-aw-pane" data-aw-pane="data">
+              <div id="zk-about-dash"></div>
+              <p class="zk-about-desc">数据只统计本机，不上传。近 7 / 30 / 90 天趋势，按天数据保留 90 天；「节省时间」为估算值，仅供参考。</p>
             </div>
-          </details>
-          <div class="zk-fb" id="zk-fb">
-            <div class="zk-fb-title">🐞 问题反馈</div>
-            <p class="zk-fb-desc">遇到问题？填一句现象，点「生成报告」。报告只在本机生成、不会自动上传；密码 / Token / 名单内容会自动脱敏，确认后再发到反馈渠道。</p>
-            <textarea class="zk-fb-input" id="zk-fb-input" placeholder="简单描述发生了什么：哪个页面、点了什么、期望 vs 实际"></textarea>
-            <div class="zk-fb-opts">
-              <label><input type="checkbox" id="zk-fb-opt-url"> 包含完整 URL（默认去掉 ? 参数与 # 片段）</label>
-              <label><input type="checkbox" id="zk-fb-opt-cfg" checked> 包含开关快照（敏感项脱敏）</label>
-              <label><input type="checkbox" id="zk-fb-opt-err" checked> 包含最近错误日志</label>
-            </div>
-            <div class="zk-fb-actions">
-              <button class="zkss-btn" id="zk-fb-gen">生成报告</button>
-              <button class="zkss-btn" id="zk-fb-copy">复制</button>
-              <button class="zkss-btn" id="zk-fb-dl">下载 .txt</button>
-              <button class="zkss-btn" id="zk-fb-gitee">🔗 完整报告 → Gitee</button>
-              <button class="zkss-btn" id="zk-fb-form">📝 精简报告 → 问卷</button>
-              <button class="zkss-btn" id="zk-fb-github">GitHub（海外）</button>
-            </div>
-            <p class="zk-fb-tip">Gitee：完整报告 + 截图都能直接 Ctrl+V；问卷：短字段自动带上，精简报告粘贴到「诊断报告」，截图上传到「截图」题。</p>
-            <textarea class="zk-fb-out" id="zk-fb-out" readonly placeholder="生成的报告会出现在这里"></textarea>
-            <div class="zk-fb-shot" id="zk-fb-shot" tabindex="0">
-              <div class="zk-fb-shot-hint">📷 <b>截图</b>：按 <b>Win+Shift+S</b>（Windows）或 <b>Cmd+Shift+4</b>（Mac）截图，然后点这里按 <b>Ctrl+V</b> 粘贴预览。脚本无法读取你的屏幕，截图需你手动附到反馈里。</div>
-              <img class="zk-fb-shot-img" id="zk-fb-shot-img" alt="截图预览" style="display:none">
-              <div class="zk-fb-shot-acts">
-                <button class="zkss-btn" id="zk-fb-shot-save" style="display:none">下载截图</button>
-                <button class="zkss-btn" id="zk-fb-shot-clear" style="display:none">移除</button>
+            <div class="zk-aw-pane" data-aw-pane="feedback">
+              <div class="zk-fb" id="zk-fb">
+                <p class="zk-fb-desc">遇到问题？填一句现象，点「生成报告」。报告只在本机生成、不会自动上传；密码 / Token / 名单内容会自动脱敏，确认后再发到反馈渠道。</p>
+                <textarea class="zk-fb-input" id="zk-fb-input" placeholder="简单描述发生了什么：哪个页面、点了什么、期望 vs 实际"></textarea>
+                <div class="zk-fb-opts">
+                  <label><input type="checkbox" id="zk-fb-opt-url"> 包含完整 URL（默认去掉 ? 参数与 # 片段）</label>
+                  <label><input type="checkbox" id="zk-fb-opt-cfg" checked> 包含开关快照（敏感项脱敏）</label>
+                  <label><input type="checkbox" id="zk-fb-opt-err" checked> 包含最近错误日志</label>
+                </div>
+                <div class="zk-fb-actions">
+                  <button class="zkss-btn" id="zk-fb-gen">生成报告</button>
+                  <button class="zkss-btn" id="zk-fb-copy">复制</button>
+                  <button class="zkss-btn" id="zk-fb-dl">下载 .txt</button>
+                  <button class="zkss-btn" id="zk-fb-gitee">🔗 完整报告 → Gitee</button>
+                  <button class="zkss-btn" id="zk-fb-form">📝 精简报告 → 问卷</button>
+                  <button class="zkss-btn" id="zk-fb-github">GitHub（海外）</button>
+                </div>
+                <p class="zk-fb-tip">Gitee：完整报告 + 截图都能直接 Ctrl+V；问卷：短字段自动带上，精简报告粘贴到「诊断报告」，截图上传到「截图」题。</p>
+                <textarea class="zk-fb-out" id="zk-fb-out" readonly placeholder="生成的报告会出现在这里"></textarea>
+                <div class="zk-fb-shot" id="zk-fb-shot" tabindex="0">
+                  <div class="zk-fb-shot-hint">📷 <b>截图</b>：按 <b>Win+Shift+S</b>（Windows）或 <b>Cmd+Shift+4</b>（Mac）截图，然后点这里按 <b>Ctrl+V</b> 粘贴预览。脚本无法读取你的屏幕，截图需你手动附到反馈里。</div>
+                  <img class="zk-fb-shot-img" id="zk-fb-shot-img" alt="截图预览" style="display:none">
+                  <div class="zk-fb-shot-acts">
+                    <button class="zkss-btn" id="zk-fb-shot-save" style="display:none">下载截图</button>
+                    <button class="zkss-btn" id="zk-fb-shot-clear" style="display:none">移除</button>
+                  </div>
+                </div>
+                <p class="zk-fb-privacy">隐私：报告只在本机生成，不含密码 / Token / 验证码 API / 云同步地址 / 名单内容；是否发送、发到哪里由你决定。</p>
               </div>
             </div>
-            <p class="zk-fb-privacy">隐私：报告只在本机生成，不含密码 / Token / 验证码 API / 云同步地址 / 名单内容；是否发送、发到哪里由你决定。</p>
+            <div class="zk-aw-pane" data-aw-pane="about">
+              <p class="zk-aw-lead">一体化浏览器增强脚本，功能全部在左侧分类里逐项开关。</p>
+              <div class="zk-aw-info">
+                <div class="zk-aw-info-t"><span class="zk-aw-info-dot ok"></span>能做什么</div>
+                <ul>
+                  <li>全站广告与弹窗过滤（贴片 / 悬浮 / 内嵌框架）</li>
+                  <li>划词搜索与翻译 · 验证码识别 · 视频下载与画质</li>
+                  <li>暗黑 / 护眼 / 搜索结果美化等外观增强</li>
+                  <li>论坛社区增强：楼层号 / 新标签打开 / 快捷分享</li>
+                </ul>
+              </div>
+              <div class="zk-aw-info">
+                <div class="zk-aw-info-t"><span class="zk-aw-info-dot safe"></span>不会做什么</div>
+                <ul>
+                  <li>不上传任何浏览记录，过滤规则全部本地运行</li>
+                  <li>仅在你主动开启并填好接口后，验证码图片 / 翻译文字才会发往<b>你自己选的</b>第三方</li>
+                  <li>云同步只写进<b>你自己填的</b>服务器</li>
+                </ul>
+              </div>
+              <div class="zk-aw-info">
+                <div class="zk-aw-info-t"><span class="zk-aw-info-dot tip"></span>遇到问题</div>
+                <ul>
+                  <li>只停这一个站：油猴菜单「🚫 只暂停当前网站」</li>
+                  <li>全部暂停：菜单「⏸️ 暂停全部网站净化」</li>
+                  <li>本站没生效：菜单「🔍 本页为什么没净化？」</li>
+                </ul>
+              </div>
+              <button class="zk-aw-back zk-aw-goto-fb" type="button">去问题反馈 →</button>
+            </div>
+            <div class="zk-aw-pane" data-aw-pane="diag">
+              <div id="zk-aw-diag" class="zk-aw-diag"></div>
+              <div class="zk-aw-diag-foot">
+                <span class="zk-aw-diag-ver">NetClean v${escHtml(VERSION)}</span>
+                <button class="zk-aw-more zk-aw-changelog" type="button">完整更新日志（GitHub）→</button>
+              </div>
+            </div>
           </div>
-          <input class="zk-about-search" type="text" placeholder="搜索功能说明（如 广告 / 验证码 / 翻译 / 画质）">
-          <div class="zk-about-list">${items}</div>
+
         </div>`;
-      // 顶部数据看板（B6）：单独渲染，切换趋势天数时只重绘这一块
+
       buildAboutDash(root);
       ncWireFeedback(root);
-      const list = root.querySelector('.zk-about-list');
-      list.querySelectorAll('.zk-about-q').forEach(q => {
-        q.addEventListener('click', () => {
-          const a = q.nextElementSibling;
-          const open = a.classList.toggle('open');
-          q.querySelector('.zk-about-arrow').textContent = open ? '▾' : '▸';
+
+      const stage = root.querySelector('.zk-aw-stage');
+      const detail = root.querySelector('.zk-aw-detail');
+      const preview = root.querySelector('.zk-aw-preview');
+      const titleEl = root.querySelector('.zk-aw-dtitle');
+      const panes = Array.prototype.slice.call(root.querySelectorAll('.zk-aw-pane'));
+      const back = root.querySelector('.zk-aw-back');
+      const footEls = Array.prototype.slice.call(root.querySelectorAll('.zk-aw-tagline,.zk-aw-tip'));
+      const ABOUT = { key: 'about', title: '关于 NetClean', sub: '脚本简介 · 隐私', accent: '#1677ff', desc: '广告过滤 · 划词搜索 · 验证码识别 · 视频下载 · 外观增强。' };
+      const meta = { about: ABOUT };
+      sectors.forEach(function (s) { meta[s.key] = s; });
+      let activeKey = '';
+
+      function placePreview(e) {
+        const r = stage.getBoundingClientRect();
+        const pw = preview.offsetWidth || 238, ph = preview.offsetHeight || 96;
+        const localX = e ? e.clientX - r.left : r.width / 2;
+        // 朝鼠标外侧展开：右半边放右边，左半边放左边；放不下再翻边
+        let left = localX + (localX > r.width / 2 ? 18 : -pw - 18);
+        if (left < 8) left = localX + 18;
+        if (left + pw > r.width - 8) left = localX - pw - 18;
+        let top = (e ? e.clientY - r.top : r.height / 2) - 26;
+        left = Math.max(8, Math.min(left, r.width - pw - 8));
+        top = Math.max(8, Math.min(top, r.height - ph - 8));
+        preview.style.left = left + 'px';
+        preview.style.top = top + 'px';
+      }
+      function showPreview(key, e) {
+        const m = meta[key]; if (!m) return;
+        preview.innerHTML = '<b><i style="background:' + m.accent + '"></i>' + escHtml(m.title) + '</b><p>' + escHtml(m.desc) + '</p><span>查看详情 →</span>';
+        preview.classList.add('show');
+        placePreview(e);
+      }
+      function hidePreview() { preview.classList.remove('show'); }
+      // SVG 没有 z-index，绘制顺序就是文档顺序：被悬浮的扇形要临时「提到圆心之前」
+      // （即三个扇形里的最后一个），否则放大 1.035 时的外发光会被相邻扇形压住一节。
+      // ⚠ 只挪到 core 之前、不做 appendChild 到最后：圆心的 NetClean 必须始终盖在扇形上面。
+      const wheelEl = root.querySelector('.zk-aw-wheel');
+      const coreEl = root.querySelector('.zk-aw-core-g');
+      function raiseSector(g) {
+        if (!wheelEl || !coreEl || !g || g === coreEl) return;
+        if (g.nextElementSibling === coreEl) return; // 已在最上层，避免无意义的 DOM 变动
+        try { wheelEl.insertBefore(g, coreEl); } catch (e) {}
+      }
+      function openPane(key) {
+        const m = meta[key]; if (!m) return;
+        activeKey = key;
+        stage.hidden = true; detail.hidden = false;
+        footEls.forEach(function (el) { el.style.display = 'none'; });
+        titleEl.textContent = twText(m.title);   // 晚于 tTree 的动态写入，必须自己转繁
+        panes.forEach(function (p) { p.classList.toggle('active', p.getAttribute('data-aw-pane') === key); });
+        if (key === 'diag') { try { renderDiag(root); } catch (e) { dbg('[NetClean] 体检面板渲染失败', e); } }
+        hidePreview();
+        try { root.scrollTop = 0; } catch (e) {}
+        try { back.focus(); } catch (e) {}
+      }
+      function closePane(opts) {
+        const prev = activeKey;
+        activeKey = '';
+        detail.hidden = true; stage.hidden = false;
+        footEls.forEach(function (el) { el.style.display = ''; });
+        hidePreview();
+        // silent：由侧栏「关于」触发时不要抢焦点（否则面板会跟着滚动到扇形上）
+        if (opts && opts.silent) return;
+        const g = root.querySelector('[data-sec="' + (prev || 'data') + '"]');
+        try { if (g) g.focus(); } catch (e) {}
+      }
+      // 供侧栏「关于」复用：再次点击「关于」→ 回到圆形首页（三个扇形那一屏）
+      root._ncAwReset = function () {
+        try { closePane({ silent: true }); } catch (e) {}
+        try { root.scrollTop = 0; } catch (e) {}
+      };
+      function bindTarget(g, key) {
+        if (!g) return;
+        g.addEventListener('mouseenter', function (e) { raiseSector(g); showPreview(key, e); });
+        g.addEventListener('mousemove', placePreview);
+        g.addEventListener('mouseleave', hidePreview);
+        g.addEventListener('focus', function () {
+          raiseSector(g);
+          const r = g.getBoundingClientRect();
+          showPreview(key, { clientX: r.left + r.width / 2, clientY: r.top + r.height / 2 });
         });
-      });
-      const search = root.querySelector('.zk-about-search');
-      search.addEventListener('input', () => {
-        const v = search.value.trim().toLowerCase();
-        list.querySelectorAll('.zk-about-item').forEach(it => {
-          const t = it.querySelector('.zk-about-q').textContent.toLowerCase();
-          it.style.display = (!v || t.indexOf(v) >= 0) ? '' : 'none';
+        g.addEventListener('blur', hidePreview);
+        g.addEventListener('click', function () { openPane(key); });
+        g.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openPane(key); }
         });
+      }
+      root.querySelectorAll('.zk-aw-g').forEach(function (g) { bindTarget(g, g.getAttribute('data-sec')); });
+      bindTarget(root.querySelector('.zk-aw-core-g'), 'about');
+      back.addEventListener('click', function () { closePane(); });
+      const more = root.querySelector('.zk-aw-more');
+      if (more) more.addEventListener('click', function () {
+        try { window.open('https://github.com/bigoceans/NetClean/blob/main/CHANGELOG.md', '_blank', 'noopener'); } catch (e) {}
       });
+      const gotoFb = root.querySelector('.zk-aw-goto-fb');
+      if (gotoFb) gotoFb.addEventListener('click', function () { openPane('feedback'); });
     }
 
     // ===== 划词搜索自定义面板（引擎管理 / 外观 / 翻译）=====
@@ -9451,7 +10448,7 @@
             + '<div class="zkss-ename"><input class="zkss-n" value="' + escAttr(e.name) + '" placeholder="名称"></div>'
             + '<div class="zkss-eurl"><input class="zkss-u" value="' + escAttr(e.url) + '" placeholder="https://...{keyword}（留空=复制）"></div>'
             + '<div class="zkss-eicon"><input class="zkss-ico" value="' + escAttr(e.icon) + '" placeholder="图标名/SVG/图片"><span class="zkss-ico-prev">' + ssRenderIcon(e.icon) + '</span>'
-            + '<div class="zkss-ico-acts"><button class="zkss-fav" title="按搜索地址自动取该站 favicon.ico 并本地化">取favicon</button><button class="zkss-localize" title="把图标图片下载并缩放为 32px PNG 内联，之后不再依赖网络">本地化</button></div></div>'
+            + '<div class="zkss-ico-acts"><button class="zkss-fav" title="按搜索地址自动取该站图标（favicon.ico）并本地化">取图标</button><button class="zkss-localize" title="把图标图片下载并缩放为 32px PNG 内联，之后不再依赖网络">本地化</button></div></div>'
             + '<div class="zkss-eops"><button class="zkss-up" ' + ((i === 0) ? 'disabled' : '') + '>↑</button><button class="zkss-dn" ' + ((i >= arr.length - 1) ? 'disabled' : '') + '>↓</button><button class="zkss-del">删除</button></div>'
             + '</div>';
         }).join('');
@@ -9463,7 +10460,7 @@
         +   '<div class="zkss-actions"><button class="zkss-btn zkss-add">＋ 添加搜索</button><button class="zkss-btn zkss-reset">恢复默认</button></div>'
         +   '<div class="zkss-etable"><div class="zkss-ehead"><div>启用</div><div>名称</div><div>搜索地址（{keyword}=选中文字）</div><div>图标</div><div>排序/操作</div></div>'
         +     '<div class="zkss-elist">' + engineRowsHtml() + '</div></div>'
-        +   '<div class="zk-set-row-desc zkss-note">图标填写：留空=默认复制图标；图标名=内置 link/copy/baidu/google/bing/bilibili/youtube/weibo/wiki/translate/xiaohongshu；或粘贴 &lt;svg&gt; 代码 / 图片网址。<br>大多数网站可直接用根路径 favicon：<code>https://域名/favicon.ico</code>（如 <code>https://zhihu.com/favicon.ico</code>）。点「取favicon」会按搜索地址自动拼接并下载本地化；点「本地化」可把任意图片网址（ico/jpg/png）抓取并缩放为 32px PNG 内联存储，<b>之后完全不依赖网络</b>。<br>URL 中 <code>{keyword}</code> 自动替换为选中文字（已编码）。</div>'
+        +   '<div class="zk-set-row-desc zkss-note">图标填写：留空=默认复制图标；图标名=内置 link/copy/baidu/google/bing/bilibili/youtube/weibo/wiki/translate/xiaohongshu；或粘贴 &lt;svg&gt; 代码 / 图片网址。<br>大多数网站可直接用根路径 favicon：<code>https://域名/favicon.ico</code>（如 <code>https://zhihu.com/favicon.ico</code>）。点「取图标」会按搜索地址自动拼接并下载本地化；点「本地化」可把任意图片网址（ico/jpg/png）抓取并缩放为 32px PNG 内联存储，<b>之后完全不依赖网络</b>。<br>URL 中 <code>{keyword}</code> 自动替换为选中文字（已编码）。</div>'
         + '</div>'
         + '<div class="zk-set-group">'
         +   '<div class="zk-set-group-title"><svg class="zk-set-gicon" viewBox="0 0 24 24"><path d="M9.06 11.9l8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08"/><path d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z"/></svg> 工具栏外观</div>'
@@ -9501,7 +10498,7 @@
         + '</div>';
 
       const elist = root.querySelector('.zkss-elist');
-      function rerenderElist() { elist.innerHTML = engineRowsHtml(); }
+      function rerenderElist() { elist.innerHTML = engineRowsHtml(); try { tTree(elist); } catch (e) {} }
       function move(id, dir) {
         const sorted = [...engines].sort((a, b) => (a.order || 0) - (b.order || 0));
         const i = sorted.findIndex(x => x.id === id); if (i < 0) return;
@@ -9561,7 +10558,11 @@
         engines.push({ id: 'c' + Date.now(), name: '', icon: '', url: '', enabled: true, order: maxOrder + 1 });
         cfg.selSearchEngines = engines; persist(); rerenderElist();
         const rows = elist.querySelectorAll('.zkss-erow'); const last = rows[rows.length - 1];
-        if (last) { last.scrollIntoView({ behavior: 'smooth', block: 'center' }); const inp = last.querySelector('.zkss-n'); if (inp) inp.focus(); }
+        if (last) {
+          // scrollIntoView 不是所有环境都实现（jsdom / 部分内嵌 WebView 没有），包一层防止整段中断
+          try { last.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch (e) {}
+          const inp = last.querySelector('.zkss-n'); if (inp) inp.focus();
+        }
       };
       root.querySelector('.zkss-reset').onclick = async () => {
         if (await zkConfirm('恢复默认搜索引擎？当前自定义将被覆盖', { title: '恢复默认引擎', okText: '确定恢复', danger: true })) { engines = JSON.parse(JSON.stringify(DEFAULT_SEL_ENGINES)); cfg.selSearchEngines = engines; persist(); rerenderElist(); toast('已恢复默认引擎'); }
@@ -9596,6 +10597,7 @@
       const arr = cfg[listKey] || [];
       if (!arr.length) {
         container.innerHTML = '<div class="zk-set-list-empty">（暂无条目）</div>';
+        try { tTree(container); } catch (e) {}   // 重渲染晚于面板 tTree
         return;
       }
       container.innerHTML = arr.map((val, idx) =>
@@ -9609,6 +10611,7 @@
           `</span>` +
         `</div>`
       ).join('');
+      try { tTree(container); } catch (e) {}   // 条目文本/按钮 tooltip 重渲染后补转繁（名单值本身被 tTree 跳过）
       container.querySelectorAll('.zk-set-list-btn').forEach(btn => {
         btn.addEventListener('click', async () => {
           try {
@@ -9703,7 +10706,12 @@
     //   更糟的是模式为「仅名单内生效」时，银行站反而会从「不跑」翻转成「跑」，与意图完全相反。
     const blBox = sr.querySelector('.zk-set-list[data-list="siteScopeList"]');
     if (blBox) {
-      blBox.querySelectorAll('.zk-set-list-action-btn').forEach(btn => {
+      // ⚠ 批量按钮渲染在**卡片**（.zk-set-group）里、而不是 .zk-set-list 内部
+      //   （见 listSectionsHtml：`${moreHtml}${actions}` 与 listBlock 同级）。
+      //   之前用 blBox.querySelectorAll(...) 查，命中 0 个 → 一个监听都没挂上，
+      //   用户点「导入预设敏感站点 / 清空名单」毫无反应。必须从卡片层查。
+      const actScope = blBox.closest('.zk-set-group') || blBox.parentElement || blBox;
+      actScope.querySelectorAll('.zk-set-list-action-btn').forEach(btn => {
         btn.addEventListener('click', async () => {
           const act = btn.getAttribute('data-action');
           if (act === 'import-preset') {
@@ -10060,8 +11068,15 @@
         cats.forEach(c => c.classList.remove('active'));
         sections.forEach(s => s.classList.remove('active'));
         cat.classList.add('active');
-        const target = sr.querySelector(`.zk-set-section[data-section="${cat.getAttribute('data-cat')}"]`);
+        const catKey = cat.getAttribute('data-cat');
+        const target = sr.querySelector(`.zk-set-section[data-section="${catKey}"]`);
         if (target) target.classList.add('active');
+        // 「关于」页有二级视图（圆形首页 ⇄ 详情）。再次点侧栏「关于」应回到圆形首页，
+        // 否则用户从详情页切走再回来，会停在上次看的那块内容上，看着像「点不动」。
+        if (catKey === 'about') {
+          const aw = sr.querySelector('.zkss-root[data-zkss="about"]');
+          if (aw && typeof aw._ncAwReset === 'function') { try { aw._ncAwReset(); } catch (e) {} }
+        }
         sr.querySelector('#zk-set-settings-header h2').textContent = cat.textContent.trim();
       });
     });
@@ -10178,9 +11193,10 @@
     function updateStats() {
       const el = sr.querySelector('#zk-set-stats');
       if (el) {
-        if (getScriptCfg().adStats === false) { el.textContent = '统计已关闭'; return; }
+        if (getScriptCfg().adStats === false) { el.textContent = twText('统计已关闭'); return; }
         const site = siteBlocked[HOST] || 0;
-        el.textContent = '本次 ' + STATS.skippedAds + ' · 累计 ' + totalBlocked + ' · 当前站点 ' + site;
+        // 这行是 tTree 之后每 2 秒刷新的 → 必须自己转繁
+        el.textContent = twText('本次 ' + STATS.skippedAds + ' · 累计 ' + totalBlocked + ' · 当前站点 ' + site);
       }
     }
     updatePauseUI();
@@ -10343,6 +11359,8 @@
     //   菜单项标题/说明、分组名）统一转繁 —— 这正是「繁体不建第三份字典」的关键：
     //   新功能即使只写了简体中文，繁体模式下也会自动跟着转，永远不会漏翻。
     try { tTree(sr); } catch (e) { dbg('[NetClean] tTree 转换失败', e); }
+    // 自绘下拉必须在 tTree 之后：胶囊上显示的是 option 文本，早于转繁会残留简体
+    try { ncEnhanceSelects(sr, box); } catch (e) { dbg('[NetClean] 下拉增强失败', e); }
   }
 
   /* ================================================================
@@ -11210,6 +12228,9 @@
    *  - 配置统一读写 allconfig.selSearch*，便于设置页联动
    *  - selectionSearch 为 false 时整体不初始化
    * ================================================================ */
+  // 划词搜索条的「主题立即生效」钩子：initSelectionSearch 里的 applyTheme 是闭包内部函数，
+  // 面板（另一个作用域）改完 selSearchTheme 后需要它把 --sh-* 变量重新写一遍，否则要等下次刷新。
+  let ncSelThemeApply = null;
   function initSelectionSearch() {
     if (ncSkip('sel')) return;
     if (!getScriptCfg().selectionSearch) {
@@ -11324,6 +12345,7 @@
       r.style.setProperty('--sh-blur', t.glass ? '12px' : '0px');
       r.style.setProperty('--sh-border', p.border);
     }
+    ncSelThemeApply = applyTheme; // 暴露给控制面板（明暗切换后让搜索条立即跟随）
 
     /* —— 工具 —— */
     let bar = null, lastText = '', lastRAF = 0, barShownAt = 0;
