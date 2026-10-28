@@ -4,10 +4,10 @@
 > 全部配置仅保存在你本地浏览器，**零数据外传**。
 
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
-![version](https://img.shields.io/badge/version-1.3.2-brightgreen.svg)
+![version](https://img.shields.io/badge/version-1.4.0-brightgreen.svg)
 ![tampermonkey](https://img.shields.io/badge/Tampermonkey-4.19%2B-orange.svg)
-![size](https://img.shields.io/badge/size-~845KB-lightgrey.svg)
-![verified](https://img.shields.io/badge/verify-1048%2F1048-brightgreen.svg)
+![size](https://img.shields.io/badge/size-~859KB-lightgrey.svg)
+![verified](https://img.shields.io/badge/verify-1085%2F1085-brightgreen.svg)
 ![audit](https://img.shields.io/badge/audit-P0%3A0%20P1%3A0-blue.svg)
 
 ---
@@ -567,28 +567,27 @@ A: 欢迎 PR / Issue！
 > 📖 **完整版本史见 [CHANGELOG.md](CHANGELOG.md)** —— 那里记录每个版本的根因分析、实现要点与踩坑（含 CSS 破损定位、flex `basis:0` 陷阱、IIFE 顶层 TDZ、变异测试等），面向维护者与源码读者。
 > 本节只保留**最近两版的用户向摘要**，每条一行。
 
-### v1.3.2（当前版本 · 2026-10-27）
+### v1.4.0（当前版本 · 2026-10-28）
 
-CSDN 白屏根因修复版 —— 修掉「部分 CSDN 文章整页空白」的真正原因，并补上反馈报告脱敏。
+linux.do 增强定版 + 精简 —— 保留「帖子内楼层号 / 标题新标签 / 快捷分享」，移除「话题列表创建时间 / 回复数」。
 
-**🐞 根因与修复**
-- **根因**：通用 CSS 规则 `div[class*="-ad-"]` 命中了 CSDN 正文外层 `div.main_father.has-ad-slots`（class 含 `-ad-`），整篇文章被 `display:none` 隐藏。该规则**不受任何开关控制**，所以关掉全部 CSDN 设置仍白。
-- **改法**：删除 `div[class*="-ad-"]` / `_ad_` 宽泛规则，只保留 `div.ad-container`；`csdnAd` 不再碰 `.readall_box` / `.hide-article-box` / `.recommend-box` / `.article-info-box` / `.recommend-right`；`passiveAdBlock` 改非破坏性隐藏 + 内容守卫；`initRequestInterceptor` 在 `csdn.net` 让行。
-- **反馈脱敏**：`captchaPreciseId` / `captchaYunmaDev` / `captchaApiFast` / `captchaApiPrecise` / 自建翻译 URL / 云同步服务器地址全部 `***`。
+**🔧 变更**
+- **linux.do**：只保留三个默认关闭的开关：帖子内每个回复显示「N 楼」（楼主显示「楼主」）、标题新标签打开、帖子页「分享」。移除列表创建时间 / 回复数（读取 `#data-preloaded` 不稳定、维护成本高）。
+- 其余同 v1.3.3：干净复制真实现、通用自动展开、外链直达。
+- 全量回归 **41 个 verify 脚本 / 1085 项断言 / 失败 0 / EXIT=0**。
 
-**验证**：全量回归 **39 个 verify 脚本 / 1048 项断言 / 失败 0 / EXIT=0**（含口径守卫 `verify_doc_consistency.js` 25 项）。
+### v1.3.3（2026-10-28）
 
-### v1.3.1（2026-10-26）
+功能增强版 —— 修好一直空转的「干净复制」，并新增「通用自动展开」「外链直达」两个默认关闭的开关。
 
-反馈渠道接线版 —— 把 v1.3.0 的反馈面板真正接到 Gitee 与腾讯问卷，并加上「完整报告 / 精简报告」两条一键路径。
+**🆕 新增 / 修复**
+- **干净复制（修复）**：原先 copy 监听是空实现；现按站点清理末尾「本文链接 / 来源 / 作者 / 版权声明」等声明，并去掉 URL 里的 utm / spm 等追踪参数；只改 text/plain，HTML 保持原样。
+- **通用自动展开（新，默认关闭）**：简书 / 知乎 / B站专栏的折叠内容自动展开；站点选择器集中在 `AUTO_UNFOLD_SITES`，CSDN 仍由「CSDN 自动展开」负责。
+- **外链直达（新，默认关闭）**：跳过 link.zhihu.com / link.juejin.cn / link.weibo.com 等中间页，直接打开目标网址。
+- **linux.do 增强（新，四个开关默认关闭）**：话题列表显示创建时间 / 回复数（读页面内嵌 `data-preloaded`，零额外请求）；**帖子内每个回复显示「N 楼」**（楼主显示「楼主」）；标题新标签打开；帖子页「分享」按钮复制标题 / 分类 / 标签 / 链接。
+- 新开关都在面板里，右侧 `?` 可看「作用 / 原理 / 维护 / 风险」（通用两项在「① 通用防护」，linux.do 四项在「⑧ linux.do 增强」）。
 
-**🔗 反馈**
-- **Gitee**：点「🔗 完整报告 → Gitee」→ 完整报告进剪贴板 + 打开 Gitee 新建 Issue；截图可直接在 Issue 正文 `Ctrl+V`。
-- **腾讯问卷**：点「📝 精简报告 → 问卷」→ 精简报告进剪贴板 + 打开匿名问卷；Q4 网址 / Q5 浏览器 / Q6 管理器 / Q7 版本 / Q8 开关 / Q9 精简报告自动预填；截图上传到问卷「截图」题。
-- 新增 `ncBuildDiagnostics({ compact: true })`：≤1200 字精简诊断，适合问卷粘贴 / URL 预填；完整版仍走 Gitee。
-- 渠道地址已写入 `NC_FEEDBACK`，并加回归断言：必须 `https://`，且不含邮箱 / `mailto:` / `token` / `key=` / `password` / `secret`。
-
-**验证**：全量回归 **39 个 verify 脚本 / 1036 项断言 / 失败 0 / EXIT=0**（含口径守卫 `verify_doc_consistency.js` 25 项）。
+**验证**：全量回归 **41 个 verify 脚本 / 1090 项断言 / 失败 0 / EXIT=0**（含口径守卫 `verify_doc_consistency.js` 25 项）。
 
 ### 更早版本
 
@@ -685,6 +684,6 @@ SOFTWARE.
 
 ---
 
-**最后更新**：2026-10-27
-**当前版本**：v1.3.2
+**最后更新**：2026-10-28
+**当前版本**：v1.4.0
 **作者**：bigoceans

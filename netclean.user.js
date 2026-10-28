@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         全网净化大师 NetClean — 广告过滤 + 划词搜索 + 搜索美化
 // @namespace    https://github.com/bigoceans
-// @version      1.3.2
+// @version      1.4.0
 // @author       bigoceans
 // @description  全站广告/弹窗屏蔽（百度/Google/Bing/360/知乎/微博/B站/优酷/腾讯视频/微信公号/YouTube 等 19 个站点）+ 搜索结果卡片式美化、关键词网址过滤、干净复制、暗黑护眼模式 + 视频倍速、B站画质解锁、YouTube 旋转/翻转/填充+ 划词搜索（多引擎 + 划词翻译，默认开启）。支持配置导入/导出/WebDAV 同步、零数据外传；详细隐私声明与功能说明见主页 README。
 // @icon64       data:image/png;base64,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
@@ -90,7 +90,7 @@
   // 导致「#kw 里输入关键词 → 回车 → 进入 /s?wd=... 搜索结果页后脚本整体失效」的恶性 bug（B-划词-02）。
   const HREF = () => location.href;
   const IS_MOBILE = /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i.test(navigator.userAgent);
-  const VERSION = '1.3.2';
+  const VERSION = '1.4.0';
   // 免责声明指纹：仅当「条款正文」发生实质变化时才会改变，用于判断是否需要重新征询用户同意。
   // 修改免责声明文案时请同步更新此值（改一个字符即可）。
   const LEGAL_HASH = '2026-09-terms-v1';
@@ -570,7 +570,8 @@
       kgbilied: false, kgbiliLogin: false, kgbiliQuality: false,
       kgweiboed: false, kgweibomv: false,
       kgpingbis: 'known', kgpingbiiframe: false, contentBlock: true,
-      darkMode: false, cleanCopy: false, videoSpeed: '1',
+      darkMode: false, cleanCopy: false, autoUnfold: false, linkBypass: false,
+      ldNewTab: false, ldFloor: false, ldQuickShare: false, videoSpeed: '1',
       // v1.1.0：视频倍速悬浮球 —— 开启后自动识别当前页是否在播放视频，有 <video> 才在角落显示可拖动小球，
       //   点击展开「倍速 / 静默播放 / 恢复 1x」。位置用独立 GM key（nc_videofloat_pos）记忆，不污染 allconfig。
       videoSpeedFloat: false,
@@ -2576,6 +2577,11 @@
   //   广告/浮层一律用 display:none!important 隐藏，保留节点本身与框架的引用关系。
   function ncHideEl(el) {
     if (!el || !el.style || typeof el.style.setProperty !== 'function') return;
+    // 已经是隐藏态就不要再写一次：processCSDN 每轮都会调用，重复写 style 会触发
+    // 不必要的样式计算/重排，可能把正在展开的顶部搜索栏「顶」回去。
+    try {
+      if (el.style.display === 'none' && typeof el.style.getPropertyPriority === 'function' && el.style.getPropertyPriority('display') === 'important') return;
+    } catch (e) {}
     try { el.style.setProperty('display', 'none', 'important'); } catch (e) {}
   }
 
@@ -2588,7 +2594,6 @@
   const NC_ERR_LOG = [];
   const NC_CSDN_DIAG = { runs: 0, ads: 0, iframes: 0, overlays: 0, clean: 0, lastAt: 0 };
   const NC_PASSIVE_DIAG = { runs: 0, imgs: 0, fixed: 0, iframes: 0, skipped: 0, lastAt: 0 };
-
   // 排查用：URL hash 里带 nc_skip=css,obs,net,video,sel,copy 时跳过对应路径。
   //   例：.../155642283#nc_skip=css        → 不注入任何站点 CSS
   //       .../155642283#nc_skip=obs        → 不启动 MutationObserver / 站点处理器
@@ -5592,6 +5597,41 @@
   }
 
   // --- CSDN（2026 增强） ---
+  // CSDN 展开：每个按钮只点一次（data-nc-opened），且用户正在输入时绝不程序化点击。
+  //   - 参考 AutoUnfold：给按钮打 opened 标记，避免每轮 processCSDN 重复 click 抢焦点；
+  //     顶部搜索栏会因焦点被抢而「展开后又自动收回」。
+  //   - .btn_mod 是部分「关注博主阅读全文」模板的展开按钮；.hide-preCode-bt 是代码块展开。
+  function ncCsdnClickOnce(el) {
+    if (!el || el.getAttribute('data-nc-opened') === '1') return;
+    el.setAttribute('data-nc-opened', '1');
+    try { el.click(); } catch (e) {}
+  }
+
+  function ncUserTyping() {
+    try {
+      const ae = document.activeElement;
+      if (!ae) return false;
+      if (ae.isContentEditable) return true;
+      const tag = ae.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return true;
+      if (ae.closest && ae.closest('.toolbar-search')) return true;
+      const ts = document.querySelector('.toolbar-search');
+      if (ts && ts.querySelector('input:focus')) return true;
+    } catch (e) {}
+    return false;
+  }
+
+  let _csdnExpandUrl = '';
+  function ncCsdnExpandNow() {
+    if (ncUserTyping()) return; // 用户在输入 / 搜索栏聚焦：不要抢焦点
+    $$('.hide-preCode-bt,.btn_mod,.btn_comment_readmore,.hide-article-box .btn-readmore,.readall_box .btn-readmore').forEach(ncCsdnClickOnce);
+    $$('#article_content,.article_content,.blog-content-box').forEach(el => {
+      if (el.style.overflow !== 'auto') el.style.overflow = 'auto';
+      if (el.style.height !== 'auto') el.style.height = 'auto';
+      if (el.style.maxHeight !== 'none') el.style.maxHeight = 'none';
+    });
+  }
+
   function processCSDN() {
     if (!inHost('csdn.net')) return;
     const cfg = getScriptCfg();
@@ -5615,14 +5655,13 @@
 
     // 展开全文 + 代码块
     if (cfg.csdnExpand === true) {
-      // 【修复】这是「展开阅读全文」按钮，应当点击展开而不是删除
-      $$('.hide-preCode-bt').forEach(el => el.click());
-      $$('.hide-article-box .btn-readmore,.readall_box .btn-readmore').forEach(el => el.click());
-      $$('#article_content,.article_content,.blog-content-box').forEach(el => {
-        el.style.overflow = 'auto';
-        el.style.height = 'auto';
-        el.style.maxHeight = 'none';
-      });
+      ncCsdnExpandNow();
+      // SPA / 相关推荐进入新文章：按钮可能晚于本次 processCSDN 出现，URL 变化后补几次。
+      // 每个 URL 只排一次；opened 标记保证每个按钮只点一次，不会反复抢焦点。
+      if (_csdnExpandUrl !== location.href) {
+        _csdnExpandUrl = location.href;
+        [400, 1200, 2500].forEach(ms => setTimeout(ncCsdnExpandNow, ms));
+      }
     }
 
     // CSDN 外链重定向
@@ -5638,9 +5677,10 @@
       _cleanEls.forEach(ncHideEl);
       const main = $('#mainBox, main, .blog-content-box');
       if (main) {
-        main.style.margin = '0 auto';
-        main.style.maxWidth = '860px';
-        main.style.float = 'none';
+        // 只在值不同时写，避免 processCSDN 每轮重复触发布局
+        if (main.style.margin !== '0 auto') main.style.margin = '0 auto';
+        if (main.style.maxWidth !== '860px') main.style.maxWidth = '860px';
+        if (main.style.float !== 'none') main.style.float = 'none';
       }
     }
 
@@ -5728,6 +5768,141 @@
       $$('.video_ad,.ad_detail,.player_float_ad,.recommend_ad_area,.ad_feedback').forEach(el => el.remove());
     }
   }
+  // ── 通用自动展开（参考 AutoUnfold，只做「展开」不删除正文） ──
+  //   站点表集中维护；新增站点只加一行。CSDN 仍由 csdnExpand 负责，避免重复点击。
+  const AUTO_UNFOLD_SITES = [
+    { host: 'jianshu.com', hide: ['.collapse-tips'], height: ['.collapse-free-content'], overflow: ['body'] },
+    { host: 'zhihu.com', hide: ['.ContentItem-rightButton'], height: ['.RichContent-inner--collapsed'], zhihuCss: true },
+    { host: 'bilibili.com', hide: ['.opus-read-more'], classRemove: [['.opus-module-content', 'limit'], ['.opus-module-content', 'show-read-text']] }
+  ];
+
+  function processAutoUnfold() {
+    if (!getScriptCfg().autoUnfold) return;
+    const site = AUTO_UNFOLD_SITES.find(s => inHost(s.host));
+    if (!site) return;
+    if (site.zhihuCss && !document.getElementById('nc-auto-unfold-zhihu')) {
+      const st = document.createElement('style');
+      st.id = 'nc-auto-unfold-zhihu';
+      st.textContent = '.RichContent--unescapable.is-collapsed .RichContent-inner{mask-image:unset!important}.RichContent.is-collapsed{cursor:unset!important}';
+      (document.head || document.documentElement).appendChild(st);
+    }
+    (site.hide || []).forEach(sel => $$(sel).forEach(ncHideEl));
+    (site.height || []).forEach(sel => $$(sel).forEach(el => {
+      if (el.style.height !== 'auto') el.style.height = 'auto';
+      if (el.style.maxHeight !== 'none') el.style.maxHeight = 'none';
+      if (el.style.overflow !== 'visible') el.style.overflow = 'visible';
+    }));
+    (site.overflow || []).forEach(sel => $$(sel).forEach(el => {
+      if (el.style.overflow !== 'visible') el.style.overflow = 'visible';
+    }));
+    (site.classRemove || []).forEach(pair => $$(pair[0]).forEach(el => {
+      if (el.classList && el.classList.contains(pair[1])) el.classList.remove(pair[1]);
+    }));
+  }
+
+  // ── 外链直达（link.* 中转页 → 目标网址） ──
+  function ncDecodeRedirect(u) {
+    try {
+      const url = new URL(u);
+      const t = url.searchParams.get('target') || url.searchParams.get('url') || url.searchParams.get('to');
+      if (!t) return '';
+      const d = decodeURIComponent(t);
+      return /^https?:\/\//i.test(d) ? d : '';
+    } catch (e) { return ''; }
+  }
+
+  function processLinkBypass() {
+    if (!getScriptCfg().linkBypass) return;
+    if (!/^link\./i.test(location.hostname)) return;
+    const target = ncDecodeRedirect(location.href);
+    if (target && target !== location.href) {
+      try { location.replace(target); } catch (e) {}
+    }
+  }
+
+  // ── linux.do（Discourse）增强：只读 DOM，不额外发请求 ──
+  function processLinuxDo() {
+    if (!inHost('linux.do')) return;
+    const cfg = getScriptCfg();
+
+    if (cfg.ldNewTab) {
+      $$('.topic-list-item a.title, .topic-list-item a.raw-topic-link, .topic-list-item a[href^="/t/"]').forEach(function (a) {
+        if (!a || a.tagName !== 'A') return;
+        if (a.target !== '_blank') a.target = '_blank';
+        if (!/noopener/.test(a.rel || '')) a.rel = (a.rel ? a.rel + ' ' : '') + 'noopener';
+      });
+      // Discourse 的 Ember link-to 会拦截 click，只加 target 不一定生效：
+      // 在 document 捕获阶段拦下话题标题点击，直接开新标签，避免被 SPA 路由吃掉。
+      if (!document._ncLdTabBound) {
+        document._ncLdTabBound = true;
+        document.addEventListener('click', function (e) {
+          try {
+            if (!getScriptCfg().ldNewTab) return;
+            if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+            const a = e.target && e.target.closest && e.target.closest('.topic-list-item a[href^="/t/"]');
+            if (!a) return;
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            window.open(a.href, '_blank', 'noopener');
+          } catch (x) {}
+        }, true);
+      }
+    }
+
+    // 帖子内楼层号：只在 /t/ 帖子页，按 article[id^="post_"] 的 data-post-number 显示
+    if (cfg.ldFloor) {
+      $$('article[id^="post_"], .topic-post').forEach(function (post) {
+        if (post.querySelector('.nc-ld-floor')) return;
+        const n = post.getAttribute('data-post-number')
+          || (post.id && (post.id.match(/^post_(\d+)$/) || [])[1]);
+        if (!n) return;
+        const badge = document.createElement('span');
+        badge.className = 'nc-ld-floor';
+        badge.setAttribute('data-nc-ignore', '1');
+        badge.textContent = String(n) === '1' ? '楼主' : n + ' 楼';
+        badge.title = '第 ' + n + ' 楼';
+        badge.style.cssText = 'display:inline-flex;align-items:center;height:18px;padding:0 7px;margin-left:8px;border-radius:9px;background:#eef2f7;color:#57606a;font-size:11px;line-height:18px;vertical-align:middle;';
+        const target = post.querySelector('.post-infos, .topic-meta-data, .names') || post;
+        target.appendChild(badge);
+      });
+    }
+
+    const shareBtn = document.getElementById('nc-ld-share');
+    if (cfg.ldQuickShare) {
+      if (!/^\/t\//.test(location.pathname)) {
+        if (shareBtn) shareBtn.style.display = 'none';
+        return;
+      }
+      if (!shareBtn) {
+        const btn = document.createElement('button');
+        btn.id = 'nc-ld-share';
+        btn.type = 'button';
+        btn.textContent = '分享';
+        btn.setAttribute('data-nc-ignore', '1');
+        btn.style.cssText = 'position:fixed;right:18px;bottom:96px;z-index:2147483000;padding:8px 12px;border-radius:20px;border:1px solid #d0d7de;background:#fff;color:#24292f;font-size:13px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.12)';
+        btn.addEventListener('click', function () {
+          try {
+            const titleEl = document.querySelector('#topic-title h1, .fancy-title, h1[itemprop="name"]');
+            const title = titleEl ? (titleEl.textContent || '').trim() : (document.title || '').replace(/\s*-\s*LINUX DO\s*$/, '');
+            const catEl = document.querySelector('.topic-category .badge-category__name, .badge-category__name, .badge-category');
+            const cat = catEl ? (catEl.textContent || '').trim() : '';
+            const tags = $$('.topic-tags .discourse-tag, .discourse-tag').map(function (t) { return (t.textContent || '').trim(); }).filter(Boolean);
+            const meta = [cat ? '【' + cat + '】' : '', tags.length ? '【' + tags.join(', ') + '】' : ''].filter(Boolean).join('');
+            const text = title + (meta ? '\n' + meta : '') + '\n' + location.href;
+            if (typeof ncCopyText === 'function') ncCopyText(text);
+            else if (typeof GM_setClipboard === 'function') GM_setClipboard(text, 'text');
+            if (typeof zkToast === 'function') zkToast('已复制分享信息', { type: 'ok', dur: 1600 });
+          } catch (e) {}
+        });
+        document.body.appendChild(btn);
+      } else {
+        shareBtn.style.display = '';
+      }
+    } else if (shareBtn) {
+      shareBtn.style.display = 'none';
+    }
+  }
+
   function processOther() {
     // 简书
     if (inHref('www.jianshu.com/p')) {
@@ -7028,31 +7203,44 @@
   }
 
   // 干净复制（去除追踪参数）
+  const NC_COPY_TRACK = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'spm', 'from', 'source', 'ref', 'share_token', 'share_source', 'vd_source'];
+  const NC_COPY_SUFFIX = /^(本文为|本文链接|本文地址|文章地址|原文链接|来源[：:]|作者[：:]|版权声明|原标题[：:]|本文经授权|扫码关注|关注公众号|责任编辑[：:]|免责声明|本文来自|转载请注明|侵删|声明[：:])/;
+
+  // 干净复制：只改写 text/plain；HTML 保持原样。纯函数，便于回归测试。
+  function ncCleanCopiedText(text) {
+    let out = String(text == null ? '' : text);
+    // 1) 清理 URL 里的追踪参数
+    out = out.replace(/https?:\/\/[^\s"'<>]+/g, function (u) {
+      try {
+        const url = new URL(u);
+        NC_COPY_TRACK.forEach(function (k) { url.searchParams.delete(k); });
+        return url.toString();
+      } catch (e) { return u; }
+    });
+    // 2) 去掉末尾整行的网站声明（只删末尾，避免误伤正文中间）
+    const lines = out.split(/\r?\n/);
+    while (lines.length > 1 && NC_COPY_SUFFIX.test(lines[lines.length - 1].trim())) lines.pop();
+    return lines.join('\n').replace(/\n{3,}/g, '\n\n').trim();
+  }
+
   function initCleanCopy() {
     if (ncSkip('copy')) return;
     if (!getScriptCfg().cleanCopy) return;
     document.addEventListener('copy', function(e) {
-      const selection = window.getSelection();
-      if (!selection.toString().trim()) return;
-      // 从剪贴板中去除追踪参数（基础版本）
-      // 这里通过阻止事件冒泡让原始复制正常进行
-      // 更完整的实现需要clipboard API
-    });
-
-    // 为链接添加干净右键菜单
-    document.addEventListener('contextmenu', function(e) {
-      const target = e.target.closest('a');
-      if (!target || !target.href) return;
-      // 清理常见追踪参数
-      const cleaned = target.href
-        .replace(/[?&]utm_[^&]+/g, '')
-        .replace(/[?&]spm=[^&]+/g, '')
-        .replace(/[?&]from=[^&]+/g, '')
-        .replace(/[?&]source=[^&]+/g, '')
-        .replace(/[?&]ref=[^&]+/g, '')
-        .replace(/[?&]tracking=[^&]+/g, '')
-        .replace(/\?$/, '');
-      target.setAttribute('data-clean-url', cleaned);
+      try {
+        const sel = window.getSelection();
+        const text = sel ? sel.toString() : '';
+        if (!text || !text.trim()) return;
+        const cleaned = ncCleanCopiedText(text);
+        if (cleaned === text) return;
+        if (e.clipboardData) {
+          // 不 preventDefault：HTML 仍按原样复制，只替换纯文本
+          e.clipboardData.setData('text/plain', cleaned);
+        } else {
+          e.preventDefault();
+          if (typeof GM_setClipboard === 'function') GM_setClipboard(cleaned, 'text');
+        }
+      } catch (err) {}
     }, true);
   }
 
@@ -7349,7 +7537,12 @@
     kgweixined: { title: '微信公号广告过滤', effect: '过滤微信公众文章里插入的广告与底部推广区域。', impl: 'processWeixin 隐藏文章内广告卡片与底部推广容器。', maintain: '失效时在 processWeixin 更新广告容器选择器。', risk: '关闭恢复公号广告；个别原生推广位可能漏过。' },
     pojieSignIn: { title: '吾爱破解自动签到', effect: '进入吾爱破解论坛后自动完成每日打卡签到，无需手动点击。', impl: 'process52pojie 轮询签到入口链接（Discuz 任务 id=2），找到后用隐藏 iframe 打开签到页完成打卡，并弹出完成提示。', maintain: '站点改版时主要调整两处：SIGN_TASK_ID（任务 ID）与 selector（入口链接规则）；逻辑集中在 process52pojie()。', risk: '依赖论坛“每日打卡”任务入口存在；若论坛改版移除该任务或改 URL 规则会失效；仅当开启时生效，关闭则不签到。' },
     darkMode: { title: '暗黑模式', effect: '全站通用暗色主题，夜间护眼；可与「护眼模式」蒙版叠加（暗色+暖色）。百度/Google/Bing 走精修配色，其余站点整页反色适配。', impl: 'applyDarkMode() 在 html 上加 adc-dark-mode 类；injectDarkModeCSS() 两级注入——精修站点用选择器重配色（含卡内文字对比度修复），其余站点用 filter:invert+hue-rotate 整页反色，媒体与脚本自身 UI 二次反转还原；已检测到深色站点自动跳过。', maintain: '精修站点失效时检查 injectDarkModeCSS() 选择器；通用反色对个别 position:fixed 吸顶元素可能随页滚动。', risk: '整页反色为渲染级近似方案，个别半透明元素/含文字图片观感欠佳；关闭即恢复亮色。' },
-    cleanCopy: { title: '干净复制', effect: '复制链接/文本时自动去除 utm_/spm 等追踪参数。', impl: 'initCleanCopy() 监听 copy 事件并清理常见追踪参数。', maintain: '新增追踪参数规则时，在 initCleanCopy() 正则处追加。', risk: '关闭后复制内容带回原始追踪参数；当前为轻量实现，复杂场景可能清理不彻底。' },
+    cleanCopy: { title: '干净复制', effect: '复制文本 / 链接时自动去掉末尾的网站声明（本文链接 / 来源 / 作者 / 版权声明等）与 utm、spm 等追踪参数。', impl: 'initCleanCopy() 在 copy 捕获阶段调用 ncCleanCopiedText()，只改写 text/plain，HTML 保持原样。', maintain: '新增站点声明时在 ncCleanCopiedText 的 NC_COPY_SUFFIX 追加；新增追踪参数在 NC_COPY_TRACK 追加。', risk: '只删末尾整行声明，正文中间的声明不动；个别站点把声明写在末尾正文行内时可能漏过。关闭即回退。' },
+    autoUnfold: { title: '通用自动展开', effect: '自动展开简书、知乎、B站专栏等站点的折叠内容（CSDN 仍由「CSDN 自动展开」负责）。', impl: 'processAutoUnfold() 按 AUTO_UNFOLD_SITES 站点表对折叠容器做 height / overflow / classList 处理，每个元素只处理一次；只展开，不删除正文容器。', maintain: '站点改版时在 AUTO_UNFOLD_SITES 对应条目更新选择器；表格集中维护，新增站点只需加一行。', risk: '默认关闭；个别站点的「收起」按钮可能被误触，或展开后排版变化。关闭即回退。' },
+    linkBypass: { title: '外链直达', effect: '跳过 link.zhihu.com / link.juejin.cn / link.weibo.com 等外链中间页，直接打开目标网址。', impl: 'processLinkBypass() 读取 target / url / to 参数并 location.replace；仅在 link.* 域名生效，不会影响普通页面。', maintain: '新增中转站时在 processLinkBypass 的 host 判断与参数名里追加。', risk: '极少数必须经中转页鉴权的链接可能失败；关闭即回退。' },
+    ldNewTab: { title: 'linux.do 标题新标签打开', effect: '点击 linux.do 话题列表标题时在新标签页打开，保留列表页位置。', impl: 'processLinuxDo() 给 .topic-list-item 的标题链接补 target=_blank rel=noopener。', maintain: 'Discourse 改版时更新标题链接选择器。', risk: '默认关闭；只改链接打开方式，不拦截点击。' },
+    ldQuickShare: { title: 'linux.do 快捷分享', effect: 'linux.do 帖子页右下角显示「分享」按钮，一键复制标题 / 分类 / 标签 / 链接。', impl: 'processLinuxDo() 在 /t/ 帖子页挂一个悬浮按钮，点击时用 GM_setClipboard 复制；格式：标题 + 【分类】【标签】 + 链接。', maintain: 'Discourse 改版时更新 #topic-title / .badge-category__name / .discourse-tag 选择器。', risk: '默认关闭；按钮可忽略，不自动发请求。' },
+    ldFloor: { title: 'linux.do 帖子内楼层号', effect: '在帖子页每个回复头部显示「N 楼」，楼主显示「楼主」，方便按楼层引用与定位。', impl: 'processLinuxDo() 遍历 article[id^="post_"] / .topic-post，读 data-post-number（或从 id=post_N 解析），在 .post-infos / .topic-meta-data 追加 .nc-ld-floor 徽章。', maintain: 'Discourse 改版时更新 article[id^="post_"] / .post-infos / .topic-meta-data 选择器；徽章带 .nc-ld-floor 类便于定位。', risk: '默认关闭；只读 DOM，不额外发请求；楼层号来自页面自带 data-post-number，不会算错。' },
     kgpingbis: { title: '被动去广告', effect: '通用算法分析并过滤绝大部分网页的悬浮/弹窗牛皮癣广告；作用范围可选：仅已知站点（默认，轻）/ 全站（更重，慎开）/ 关闭。', impl: 'passiveAdBlock() 扫描页面大面积图片/固定定位元素，按尺寸与占比判定广告并移除。', maintain: '误杀或漏过时在 passiveAdBlock() 调整尺寸阈值与判定规则。', risk: '算法判定，偶尔可能误删正常大图或浮层（如登录二维码）；如对某站误杀，可关闭或用白名单。' },
     kgpingbiiframe: { title: '禁用第三方 iframe', effect: '屏蔽来自其他域名的嵌入式框架，阻断大量联盟广告与跟踪。', impl: 'passiveAdBlock() 移除 src 指向非本站且不在白名单的 iframe。', maintain: '误屏蔽正常功能时在 passiveAdBlock() 的 safeIframes 白名单追加域名。', risk: '可能误伤正常嵌入内容（如支付、验证码、地图）；如某功能异常，优先关闭此项并加白名单。' },
     baidueyecolor: { title: '护眼色', effect: '护眼蒙版暖色底（multiply 叠加让画面更柔和）。诚实说明：multiply 是「颜色相乘」视觉变换，不改变屏幕蓝光发射量；预设的昏黄/暖色调参考 Kindle/Night Shift/f.lux 经典「夜览/纸张色」配色，营造舒适阅读氛围，绝非「滤蓝光」。', impl: 'applyEyeCare() 用 ncColorToRgba() 取该色 rgb + 护眼强度 alpha；mix-blend-mode:multiply 混合到全屏。', maintain: '①组提供 5 个预设暖色调色板（羊皮纸黄/暖黄/米黄/淡橄榄绿/暖橙，参考 Kindle/Night Shift/f.lux 经典夜览配色）点一下即用，也可用取色器自定义。', risk: '仅颜色/强度偏好，无功能风险。' },
@@ -7472,7 +7665,9 @@
             //  而二者本质都是「显示外观」，用户找暗黑会直觉去外观相关处、不会想到点开「性能与高级」。
             //  现统一归入「① 通用防护（全站生效）」与护眼模式同框（该节标题已含"全站生效"语义）。
             { k: 'darkMode', t: '暗黑模式', d: '跟随系统自动切换暗黑模式（本站自带暗黑时脚本自动让行，可在油猴菜单强制接管）' },
-            { k: 'cleanCopy', t: '干净复制', d: '复制链接时自动去除追踪参数' },
+            { k: 'cleanCopy', t: '干净复制', d: '复制文本 / 链接时去掉末尾网站声明与追踪参数' },
+            { k: 'autoUnfold', t: '通用自动展开', d: '自动展开简书 / 知乎 / B站专栏等站点的折叠内容（默认关闭；CSDN 仍由「CSDN 自动展开」负责）' },
+            { k: 'linkBypass', t: '外链直达', d: '跳过知乎 / 掘金 / 微博等外链中间页，直接打开目标网址' },
             // B3（v1.1.0）：自定义选择器规则 —— 站点改版后内置选择器失效时，用户可自行补充（无需等发版）
             { k: 'customSelectors', t: '自定义选择器规则', d: '补充要隐藏的元素选择器（分号或换行分隔，也可写完整 CSS 规则）', type: 'text', tip: '.ad-banner; #promo' },
             // 【视频倍速补 UI】v1.1.0：应用逻辑 initVideoSpeedControl() 早已写好且已接入启动列表，
@@ -7532,6 +7727,11 @@
             { k: 'csdnClean', t: 'CSDN 纯净阅读', d: '隐藏侧边栏，文章居中显示' },
             { k: 'kgweibomv', t: '微博视频下载', d: '在微博视频旁添加下载按钮' },
             { k: 'pojieSignIn', t: '吾爱破解自动签到', d: '进入吾爱破解论坛后自动完成每日签到' }
+          ]},
+          { title: '⑧ linux.do 增强', items: [
+            { k: 'ldNewTab', t: '标题新标签打开', d: '点击 linux.do 话题标题时在新标签页打开' },
+            { k: 'ldFloor', t: '帖子内楼层号', d: '在 linux.do 帖子页每个回复头部显示「N 楼」（楼主显示「楼主」）' },
+            { k: 'ldQuickShare', t: '快捷分享', d: 'linux.do 帖子页右下角显示「分享」按钮，一键复制标题 / 分类 / 标签 / 链接' }
           ]}
           // ⑧ 内容屏蔽（关键词 / 网址）原在「净化增强」组，但它的**名单**（pingbikw / pingbiurl）
           //   一直挂在「名单管理」组 —— 开关与名单分居两处，用户按直觉去「名单管理」找开关会扑空。
@@ -12349,10 +12549,13 @@
         { fn: initYoutubeRotate,       hosts: ['youtube.com'] },
         { fn: processTwitter,          hosts: ['twitter.com', 'x.com'] },
         { fn: processCSDN,             hosts: ['csdn.net'] },
+        { fn: processLinuxDo,          hosts: ['linux.do'] },
         { fn: processWeixin,           hosts: ['weixin.qq.com'] },
         { fn: processYouku,            hosts: ['youku.com'] },
         { fn: processTencentVideo,     hosts: ['v.qq.com'] },
         { fn: processOther },            // 全局兜底（无 hosts）
+        { fn: processAutoUnfold },       // 通用自动展开（站点表内生效）
+        { fn: processLinkBypass },       // 外链直达（link.* 域名）
         { fn: processVideoDownloader },
         { fn: process52pojie },
         { fn: initHaokanPauseAd,       hosts: ['haokan.baidu.com'] },
