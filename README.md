@@ -6,8 +6,8 @@
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 ![version](https://img.shields.io/badge/version-1.4.0-brightgreen.svg)
 ![tampermonkey](https://img.shields.io/badge/Tampermonkey-4.19%2B-orange.svg)
-![size](https://img.shields.io/badge/size-~859KB-lightgrey.svg)
-![verified](https://img.shields.io/badge/verify-1085%2F1085-brightgreen.svg)
+![size](https://img.shields.io/badge/size-~863KB-lightgrey.svg)
+![verified](https://img.shields.io/badge/verify-1089%2F1089-brightgreen.svg)
 ![audit](https://img.shields.io/badge/audit-P0%3A0%20P1%3A0-blue.svg)
 
 ---
@@ -573,8 +573,9 @@ linux.do 增强定版 + 精简 —— 保留「帖子内楼层号 / 标题新标
 
 **🔧 变更**
 - **linux.do**：只保留三个默认关闭的开关：帖子内每个回复显示「N 楼」（楼主显示「楼主」）、标题新标签打开、帖子页「分享」。移除列表创建时间 / 回复数（读取 `#data-preloaded` 不稳定、维护成本高）。
+- **配置持久化修复**：开关 / 下拉 / 滑块松手立即落盘；刷新、关闭、多标签页不再回退；云同步自动下载仅在云端明显更新时执行，本地无时间戳或本地不早于云端一律跳过。
 - 其余同 v1.3.3：干净复制真实现、通用自动展开、外链直达。
-- 全量回归 **41 个 verify 脚本 / 1085 项断言 / 失败 0 / EXIT=0**。
+- 全量回归 **42 个 verify 脚本 / 1089 项断言 / 失败 0 / EXIT=0**。
 
 ### v1.3.3（2026-10-28）
 
