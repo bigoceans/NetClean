@@ -868,7 +868,26 @@
   // 尽早挂载落盘监听：不依赖启动阶段 6c（早退/暂停站点时也能保住用户在面板里的改动）。
   // pagehide + visibilitychange + beforeunload 三重兜底；flushConfig 幂等且很轻。
   try {
-    const _flushOnHide = function () { try { flushConfig(); } catch (e) {} };
+    const _flushOnHide = function () {
+      try {
+        // 面板是 Shadow DOM：从 host 逐层取真正聚焦的输入框。关标签页不会先 blur/change，
+        // 而不少自定义控件只在 change 时把值写回 cfg —— 这里补发一次，否则落盘的还是旧值。
+        let ae = document.activeElement;
+        while (ae && ae.shadowRoot && ae.shadowRoot.activeElement) ae = ae.shadowRoot.activeElement;
+        if (ae && /^(INPUT|TEXTAREA|SELECT)$/.test(ae.tagName)) {
+          try { ae.dispatchEvent(new Event('change', { bubbles: true })); } catch (e) {}
+        }
+      } catch (e) {}
+      try { flushConfig(); } catch (e) {}
+      // 云端：本地比上次上传新时尽力推一次（可能被卸载中断；下一次启动会补传）
+      try {
+        const c = getConfig();
+        const cs = c && c.cloudSync;
+        if (cs && cs.enabled && Number(c.modifiedAt || 0) > Number(cs.lastSync || 0)) {
+          cloudSyncUp(true).catch(function () {});
+        }
+      } catch (e) {}
+    };
     window.addEventListener('pagehide', _flushOnHide);
     window.addEventListener('beforeunload', _flushOnHide);
     document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'hidden') _flushOnHide(); });
@@ -1606,6 +1625,9 @@
         // 只有云端明显更新才自动覆盖；本地不早于云端一律跳过，避免把刚改的本地冲回旧云端。
         if (!cloudT || localT >= cloudT) {
           try { dbg('[NetClean] 自动同步：本地不早于云端（本地 ' + new Date(localT).toLocaleString() + ' / 云端 ' + (cloudT ? new Date(cloudT).toLocaleString() : '无') + '），跳过自动下载。'); } catch(e) {}
+          // 本地较新但云端落后（例如上次改完立刻关标签页，上传被中断）：
+          // 下一次启动时补传，让云端追上本地，而不是一直停在旧版。
+          try { scheduleCloudSyncUp(); } catch (e) {}
           return { ok: true, msg: '本地配置不早于云端，已跳过自动下载' };
         }
       }
@@ -8699,6 +8721,21 @@
       });
     });
 
+    // 自定义面板（云同步 / 视频下载 / 划词设置等）不走 autoSave：在面板根部兜底，
+    // 任何 input/change 后 300ms 落盘一次；关页前 _flushOnHide 还会补发 change + flush。
+    try {
+      let _panelFlushTimer = null;
+      const _panelFlush = function () {
+        if (_panelFlushTimer) return;
+        _panelFlushTimer = setTimeout(function () {
+          _panelFlushTimer = null;
+          try { flushConfig(); } catch (e) {}
+        }, 300);
+      };
+      sr.addEventListener('input', _panelFlush, true);
+      sr.addEventListener('change', _panelFlush, true);
+    } catch (e) {}
+
     // 【视频倍速滑块 · v1.1.0】拖动即时改当前页所有 <video> 的 playbackRate 并同步右侧读数，
     //   松手（change）才写配置 —— 拖动过程不写盘，避免 400ms 防抖被高频 input 反复重置。
     sr.querySelectorAll('.zk-set-range').forEach(function (box) {
@@ -10274,7 +10311,7 @@
     }
 
     // 关闭
-    function close() { clearInterval(statsTimer); document.removeEventListener('click', onDocClick, true); box.remove(); _syncPauseUI = null; if (_prevFocus && _prevFocus.focus) { try { _prevFocus.focus(); } catch (e) {} } }
+    function close() { clearInterval(statsTimer); document.removeEventListener('click', onDocClick, true); box.remove(); _syncPauseUI = null; try { flushConfig(); } catch (e) {} if (_prevFocus && _prevFocus.focus) { try { _prevFocus.focus(); } catch (e) {} } }
     box._close = close; // 供全局 Esc 监听复用，避免重复注册 keydown 造成泄漏
     box._doPauseToggle = doPauseToggle;
     box._doExport = doExport;
