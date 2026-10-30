@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         全网净化大师 NetClean — 广告过滤 + 划词搜索 + 搜索美化
 // @namespace    https://github.com/bigoceans
-// @version      1.5.0
+// @version      1.5.1
 // @author       bigoceans
 // @description  全站广告/弹窗屏蔽（百度/Google/Bing/360/知乎/微博/B站/优酷/腾讯视频/微信公号/YouTube 等 19 个站点）+ 搜索结果卡片式美化、关键词网址过滤、干净复制、暗黑护眼模式 + 视频倍速、B站画质解锁、YouTube 旋转/翻转/填充、linux.do 社区增强（楼层号 / 新标签 / 分享）+ 划词搜索（多引擎 + 划词翻译，默认开启）。支持配置导入/导出/WebDAV 同步、零数据外传；详细隐私声明与功能说明见主页 README。
 // @icon64       data:image/png;base64,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
@@ -49,8 +49,8 @@
 // @connect      api.mymemory.translated.net
 // @connect      jianguoyun.com
 // @connect      github.com
-// @connect      jfbym.com
-// @connect      like996.icu
+// 说明：本脚本不预授权任何第三方识别/解析服务。你在面板里自行填写的接口域名，
+//   首次调用时管理器会弹窗询问是否允许访问，选「允许」即可（不填则永不发起请求）。
 // @connect      dropboxapi.com
 // @connect      microsoft.com
 // @connect      yandex.net
@@ -91,7 +91,17 @@
   // 导致「#kw 里输入关键词 → 回车 → 进入 /s?wd=... 搜索结果页后脚本整体失效」的恶性 bug（B-划词-02）。
   const HREF = () => location.href;
   const IS_MOBILE = /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i.test(navigator.userAgent);
-  const VERSION = '1.5.0';
+  const VERSION = '1.5.1';
+  // 第三方服务文档入口：脚本自身**不内置任何第三方站点**（解析站 / OCR 接口等），
+  //   可用清单与填写方法统一写在 README「第三方服务」章节；面板里只放一个跳文档的按钮。
+  const NC_DOC = {
+    readme: 'https://github.com/bigoceans/netclean/blob/main/README.md',
+    thirdParty: 'https://github.com/bigoceans/netclean/blob/main/README.md#third-party',
+    greasy: 'https://greasyfork.org/scripts/594888'
+  };
+  // 面板里「手头没有合适站点？看文档」的统一按钮（走 sr 上的事件委托，重建面板也不会失效）
+  const NC_DOC_BTN = '<button type="button" class="zk-doc-btn" data-doc="thirdParty">'
+    + '手头没有合适的站点？查看可用清单 →</button>';
   // 免责声明指纹：仅当「条款正文」发生实质变化时才会改变，用于判断是否需要重新征询用户同意。
   // 修改免责声明文案时请同步更新此值（改一个字符即可）。
   const LEGAL_HASH = '2026-09-terms-v1';
@@ -607,12 +617,16 @@
       // —— 验证码（可选模块，默认关闭）——
       captchaEnabled: false, captchaEngine: 'auto', captchaTrigger: 'manual',
       captchaAutoFind: true, captchaShowHint: true, captchaSlide: true,
-      captchaPreciseId: '', captchaYunmaToken: '',
+      captchaPreciseId: '',
+      // 算术验证码（如 3+5=?）的识别接口地址：**脚本不内置任何服务商**，留空则算术图跳过识别。
+      captchaMathApi: '',
+      captchaYunmaToken: '',
       // 云码平台的「开发者标识」（developer_tag）：用于把识别调用归属到你的云码账号。留空则请求不带该字段，
       // 由云码平台自行归属。本脚本不内置任何开发者标识。
       captchaYunmaDev: '',
       // 识别接口地址：默认留空 = 不发起任何外部请求。本脚本不内置任何第三方打码平台地址，
-      // 需你自行在下方粘贴信任的接口（如 like996 公益接口或自建接口）；留空时「极速/精准」引擎直接跳过，不会上传任何图片。
+      // 需你自行在下方粘贴信任的接口（自建，或用社区 / 商业服务，清单见 README 第三方服务章节）；
+      //   留空时「极速/精准」引擎直接跳过，不会上传任何图片。
       captchaApiFast: '', captchaApiPrecise: '',
       // —— 划词搜索（默认开启，选中文字弹条多引擎搜索 + 划词翻译）——
       selectionSearch: true, selSearchShowTranslate: true, selSearchAlwaysShowOpenLink: false
@@ -629,7 +643,11 @@
     captchaBlacklist: [],
     // 划词搜索：引擎表 / 外观主题 / 翻译配置（独立于 baidu.* 的复杂对象）
     selSearchEngines: JSON.parse(JSON.stringify(DEFAULT_SEL_ENGINES)),
-    selSearchTheme: { mode: 'dark', opacity: 1, glass: false },
+    // opacity 在 v1.5.1+ 表示「透明度」（0 = 完全不透明，1 = 完全透明）；老配置由 schema 1→2 迁移翻转
+    selSearchTheme: { mode: 'dark', opacity: 0, glass: false },
+    // 翻译面板的独立外观：mode='follow' 时跟随划词工具栏（默认），也可单独指定深浅 + 透明度 + 毛玻璃。
+    //   落到 CSS 上是 --tr-* 变量；'follow' 时不写这些变量，#sh-trans 自动回落到 --sh-*。
+    selSearchTransLook: { mode: 'follow', opacity: 0, glass: false },
     selSearchTrans: { engine: 'iciba', auto: false, target: 'zh', deeplKey: '', baiduId: '', baiduKey: '', customUrl: '', customKey: '', proxyUrl: '', forceAutoTarget: true, autoSave: true },
     // 云端同步：支持 WebDAV（坚果云/Nextcloud/OwnCloud 等）
     cloudSync: {
@@ -643,20 +661,14 @@
       oauthToken: '', oauthFolder: '/netclean-backups',
       lastSync: 0
     },
-    // 视频下载：可配置下载站点（高速/稳定/自定义）。点击播放器「下载」按钮直接跳转并预填链接
-    videoDownload: {
-      active: 'cobalt',
-      sites: [
-        { key: 'cobalt',   name: 'Cobalt',   tpl: 'https://cobalt.tools/?u={url}',   tag: '稳定' },
-        { key: 'yt5s',     name: 'YT5s',     tpl: 'https://yt5s.biz/?url={url}',     tag: '高速' },
-        { key: 'savefrom', name: 'SaveFrom', tpl: 'https://savefrom.net/?url={url}', tag: '通用' },
-        { key: 'getfvid',  name: 'Getfvid',  tpl: 'https://getfvid.com/?url={url}',  tag: '通用' }
-      ]
-    },
+    // 视频下载：可配置下载站点（用户自建/自选）。点击播放器「下载」按钮直接跳转并预填链接
+    // ⚠ 刻意**不内置任何第三方解析站**：解析站是用户自选服务（可能收费、带广告、在境外），
+    //   写进源码就等于脚本在「推荐 / 导流」。可用清单与填写方法只放在 README「第三方服务」章节。
+    videoDownload: { active: '', sites: [] },
     // 配置修改时间戳（用于云同步冲突解决：本地较新时优先保留本地）
     modifiedAt: 0,
     // B4（v1.1.0）：配置 schema 语义化版本（与 CONFIG_SCHEMA_VERSION 对齐）
-    configVersion: 1
+    configVersion: 2
   };
 
   // v1.2.0 起移除 `CONFIG_TIME = 1770000000`：B4 引入 configVersion + MIGRATIONS 链后，
@@ -723,12 +735,12 @@
    *  - 为什么需要服务端：验证码识别依赖图像模型，纯本地算法无法完成自动填入，
    *    因此本模块提供「填入推荐」引导，由用户主动决定是否使用第三方公益接口。
    *  - 合规设计：脚本不内置任何第三方打码平台地址，默认留空、不自动发起任何请求。
-   *    识别接口需你自行粘贴（如 like996 公益接口或自建接口），地址仅在你填写并启用后才会被使用，使用时会明确提示数据流向。
+   *    识别接口需你自行粘贴（自建或第三方服务，清单见 README），地址仅在你填写并启用后才会被使用，使用时会明确提示数据流向。
    *  - 无障碍价值：对视障等有需要的用户，验证码自动识别是重要的辅助能力。
    *  - 注意：极速接口为 http 明文，介意者可只用精准接口或自行搭建服务。
    * ================================================================ */
   // 识别接口地址完全由用户自填：本脚本不内置任何第三方打码平台地址（避免向未知服务器上传验证码图片）。
-  // 下方「接口说明」按钮仅给出填写引导，不会自动写入任何地址。
+  // 下方「如何获取」按钮只跳文档说明，不会自动写入任何地址。
 
   function deepMerge(base, over) {
     if (over === undefined || over === null) return JSON.parse(JSON.stringify(base));
@@ -916,9 +928,65 @@
     _writeTimer = setTimeout(_flushConfigNow, 400);
     if (!skipSync) scheduleCloudSyncUp();
   }
+  // 当前打开面板的 shadowRoot（回读要用；面板关闭置 null）
+  let _panelSr = null;
+  let _panelSyncTimer = null;
+  /** 把配置值刷回面板控件。keys 为空 = 全部。
+   *  - 只改 DOM 属性，**不派发 input/change**，因此不会又写回配置（云同步 / 跟随主题都安全）
+   *  - 正在编辑的控件（document.activeElement）跳过，避免打断输入 */
+  function ncSyncPanelFromCfg(keys) {
+    const sr = _panelSr;
+    if (!sr) return;
+    let cfg = null;
+    try { cfg = getScriptCfg(); } catch (e) { return; }
+    const only = (keys && keys.length) ? keys : null;
+    let ae = null;
+    try { ae = sr.activeElement; } catch (e) {}
+    Array.prototype.forEach.call(sr.querySelectorAll('.zk-set-row[data-key]'), function (row) {
+      const k = row.getAttribute('data-key');
+      if (only && only.indexOf(k) < 0) return;
+      const v = cfg[k];
+      const cb = row.querySelector('input[type=checkbox]');
+      if (cb) { if (cb !== ae) cb.checked = !!v; return; }
+      const rng = row.querySelector('input[type=range]');
+      if (rng) {
+        if (rng === ae) return;
+        const num = k === 'videoSpeed' ? (parseFloat(v) || 1) : parseFloat(v);
+        rng.value = k === 'videoSpeed' ? ncVideoSpeedToSlider(num) : num;
+        const lab = row.querySelector('.zk-set-range-val');
+        if (lab) lab.textContent = k === 'videoSpeed' ? ncVideoSpeedLabel(num) : String(num);
+        return;
+      }
+      const sel = row.querySelector('select');
+      if (sel) {
+        const want = String(v == null ? '' : v);
+        if (sel.value !== want) sel.value = want;
+        const wrap = sel.closest('.zk-sel');
+        if (wrap && typeof wrap._ncSync === 'function') { try { wrap._ncSync(); } catch (e) {} }
+        return;
+      }
+      // 文本类：只处理非 color（color 存的是 rgba，写进 hex 输入框会坏）
+      const inp = row.querySelector('input[type=text],input[type=number],input:not([type])');
+      if (inp && inp !== ae) {
+        const want = String(v == null ? '' : v);
+        if (inp.value !== want) inp.value = want;
+      }
+    });
+  }
+  // 合并短时间内的多次写入，避免批量改配置时反复整面板回读
+  function ncSchedulePanelSync() {
+    if (!_panelSr || _panelSyncTimer) return;
+    _panelSyncTimer = setTimeout(function () { _panelSyncTimer = null; try { ncSyncPanelFromCfg(); } catch (e) {} }, 120);
+  }
+  // 透明度口径：配置里存的是 alpha（1 = 完全不透明，历史语义，不可改——老数据就这个格式）；
+  // 界面上显示的是「透明度 = (1 - alpha) * 100%」，越高越透明。两条换算只在这里定义，别处不许自己算。
+  function ncAlphaToTrans(a) { const v = (a == null ? 0 : Number(a)); return Math.max(0, Math.min(100, Math.round(v * 100))); }
+  function ncTransToAlpha(t) { const v = Number(t); return Math.max(0, Math.min(1, (isFinite(v) ? v : 0) / 100)); }
   function setConfig(cfg, skipSync) {
     cfg.modifiedAt = Date.now();
     writeConfig(cfg, skipSync);
+    // 程序化写配置后，让已打开的面板把控件值回读一遍（跟随主题 / 云同步 / 历史回滚都走这里）
+    try { ncSchedulePanelSync(); } catch (e) {}
   }
   // 取脚本配置：返回 getConfig().baidu 命名空间下的全部用户开关与偏好。
   //   * 历史命名：脚本早期只面向百度搜索结果页，所有配置都挂在 getConfig().baidu 子对象下；
@@ -943,7 +1011,6 @@
    *  用法：t('panel.title')；插值 t('toast.updated', { ver: '1.0.0' })
    *  注：界面语言只保留简 / 繁；新增文案只写 zh-CN，繁中运行时自动转。
    *  ================================================================ */
-  const UI_LANGS = [['zh-CN', '简体中文'], ['zh-TW', '繁體中文']];
   const I18N = {
     // ── 油猴菜单文案 ──
     //  ① 图标必须带变体选择符 U+FE0F：`⚙`(U+2699) / `⏸`(U+23F8) / `▶`(U+25B6) 默认是**文本呈现**，
@@ -995,7 +1062,7 @@
     'toast.langSwitched':  { 'zh-CN': '界面语言已切换，油猴菜单项需刷新页面后生效' }
 ,
     'panel.add': { 'zh-CN': '添加' },
-    'panel.apiGuide': { 'zh-CN': '接口说明' },
+    'panel.apiGuide': { 'zh-CN': '如何获取' },
     'panel.reset1x': { 'zh-CN': '恢复 1x 正常倍速' },
     'cat.adblock': { 'zh-CN': '净化增强' },
     'cat.captcha': { 'zh-CN': '验证码识别' },
@@ -1066,8 +1133,8 @@
     'item.t.captchaApiFast': { 'zh-CN': '极速接口地址' },
     'item.t.captchaApiPrecise': { 'zh-CN': '精准接口地址' },
     'item.t.captchaPreciseId': { 'zh-CN': '精准引擎识别码' },
-    'item.t.captchaYunmaToken': { 'zh-CN': '云码 Token' },
-    'item.t.captchaYunmaDev': { 'zh-CN': '云码开发者标识（可选）' },
+    'item.t.captchaYunmaToken': { 'zh-CN': '算术验证码 Token' },
+    'item.t.captchaYunmaDev': { 'zh-CN': '开发者标识（可选）' },
     'item.t.captchaAutoFind': { 'zh-CN': '自动查找验证码' },
     'item.t.captchaShowHint': { 'zh-CN': '显示提示条' },
     'item.t.captchaSlide': { 'zh-CN': '滑动验证码' },
@@ -1134,11 +1201,11 @@
     'item.d.captchaEnabled': { 'zh-CN': '总开关。默认关闭，按需开启；关闭后本页所有设置均不生效。⚠ 免责声明：本分组所接 OCR / 验证码识别服务（含极速 / 精准 / 云码）均为第三方提供，与本脚本无隶属或合作关系；填写接口后，验证码图片与识别码会发送至你所填写的服务器，请仅使用你信任的服务并自行保管账号凭证；脚本不内置任何接口、不收取任何费用，亦不对第三方服务做任何担保。' },
     'item.d.captchaTrigger': { 'zh-CN': '手动：点悬浮「识」按钮才扫描（零常驻开销，推荐）；白名单：仅下方名单站点自动扫描；全局：全站常驻扫描（最耗性能，不推荐）。' },
     'item.d.captchaEngine': { 'zh-CN': '自动：极速接口优先，失败后回退精准；极速：免识别码，但需填写下方接口地址（数英/算术）；精准：需下方识别码（支持滑块）。' },
-    'item.d.captchaApiFast': { 'zh-CN': '「极速」引擎调用的服务地址。留空 = 极速引擎直接跳过，不向任何外部服务器发送数据。请自行搭建或选用可信 OCR 服务后填写；验证码图片将上传至该地址。点击右侧「接口说明」查看填写方式。' },
-    'item.d.captchaApiPrecise': { 'zh-CN': '「精准」引擎（含滑块）调用的服务地址。留空 = 精准引擎直接跳过。填写后验证码图片、识别码与当前网页网址会发送给该服务器；常用 like996 公益接口（官网 https://www.like996.icu:1205/，第三方服务，与本脚本无关），点击右侧「接口说明」可直达注册页。' },
-    'item.d.captchaPreciseId': { 'zh-CN': '仅「精准 / 自动」模式需要，由你所填写的精准接口服务方提供（原 like996 为 32 位）。留空则精准模式跳过识别。' },
-    'item.d.captchaYunmaToken': { 'zh-CN': '仅「算术验证码」需要（如「3+5=?」图片）。在 jfbym.com 获取 Token（商业服务，按识别次数计费，需充值积分，官网 https://www.jfbym.com，第三方服务，与本脚本无关）；留空则算术图跳过识别。点击右侧「接口说明」可直达注册页。' },
-    'item.d.captchaYunmaDev': { 'zh-CN': '在 jfbym.com 后台获取的开发者标识（developer_tag），用于把识别调用归属到你的账号。可选，留空则请求不带该标识（由云码平台自行归属），不影响识别功能。' },
+    'item.d.captchaApiFast': { 'zh-CN': '「极速」引擎调用的服务地址。留空 = 极速引擎直接跳过，不向任何外部服务器发送数据。请自行搭建或选用可信 OCR 服务后填写；验证码图片将上传至该地址。脚本不内置任何服务商，点右侧「如何获取」查看可选服务与填写方式。' },
+    'item.d.captchaApiPrecise': { 'zh-CN': '「精准」引擎（含滑块）调用的服务地址。留空 = 精准引擎直接跳过。填写后验证码图片、识别码与当前网页网址会发送给该服务器；脚本不内置任何服务商，点右侧「如何获取」可在文档里挑一个可用接口。' },
+    'item.d.captchaPreciseId': { 'zh-CN': '仅「精准 / 自动」模式需要，由你所填写的接口服务方提供（位数见该服务说明）。留空则精准模式跳过识别。' },
+    'item.d.captchaYunmaToken': { 'zh-CN': '仅「算术验证码」需要（如「3+5=?」图片）。需你自备支持算术图的 OCR 服务 Token（多为按次计费），脚本不内置任何服务商；点右侧「如何获取」查看可选服务。留空则算术图跳过识别。' },
+    'item.d.captchaYunmaDev': { 'zh-CN': '你所选识别服务后台的「开发者标识」，用于把调用归属到你的账号。可选，留空则请求不带该标识（由服务方自行归属），不影响识别功能。具体字段名见文档里对应服务的说明。' },
     'item.d.captchaAutoFind': { 'zh-CN': '无手动规则时，按属性关键词（code/captcha/yzm…）自动定位验证码与输入框并填充。' },
     'item.d.captchaShowHint': { 'zh-CN': '顶部灰条显示识别状态（识别中 / 完成 / 错误）。' },
     'item.d.captchaSlide': { 'zh-CN': '启用滑动拼图 / 滑块行为验证码的自动识别与拖拽。需「精准引擎 + 识别码」。' },
@@ -1669,7 +1736,7 @@
       }
       const localSync = JSON.parse(JSON.stringify(localCfg.cloudSync || {}));
       const downed = Object.assign({}, cloudCfg, { cloudSync: Object.assign({}, localSync, cloudCfg.cloudSync || {}, { password: localSync.password }) });
-      const merged = ncNormalizeImportedConfig(deepMerge(DEFAULT_CONFIG, downed));
+      const merged = ncParseImported(downed).cfg;
       if (!cloudCfg.ui && localCfg.ui) merged.ui = JSON.parse(JSON.stringify(localCfg.ui));
       merged.cloudSync.lastSync = Date.now();
       // modifiedAt 取两者较大值：若直接沿用云端时间戳，本地时钟快于云端（或云端配置由旧设备上传）
@@ -2588,7 +2655,7 @@
       const localCfg = getConfig();
       const localSync = JSON.parse(JSON.stringify(localCfg.cloudSync || {}));
       const downed = Object.assign({}, cloudCfg, { cloudSync: Object.assign({}, localSync, cloudCfg.cloudSync || {}, { password: localSync.password }) });
-      const merged = ncNormalizeImportedConfig(deepMerge(DEFAULT_CONFIG, downed));
+      const merged = ncParseImported(downed).cfg;
       if (!cloudCfg.ui && localCfg.ui) merged.ui = JSON.parse(JSON.stringify(localCfg.ui));
       merged.cloudSync.lastSync = Date.now();
       merged.modifiedAt = cloudCfg.modifiedAt || Date.now();
@@ -3065,15 +3132,29 @@
   //   现改为 configVersion + MIGRATIONS 数组：启动时按 from→to 顺序执行到最新；
   //   每条带 deprecateAt，声明「这条迁移从哪个版本起可以删」，到期由 verify_b4_config_migrations.js
   //   的回归断言强制清理。注意：modifiedAt 仍专用于云同步冲突解决，不与本机制混用。
-  const CONFIG_SCHEMA_VERSION = 1;
+  const CONFIG_SCHEMA_VERSION = 2;
   // v1.2.0：唯一的历史迁移（from 0 → to 1）已在本版到期并排空 —— 它真正有价值的动作
   //   （删掉老配置里的废弃字段 baiduAutoNext）已降级为启动时的无条件幂等清理，见下方 IIFE。
   //   迁移链现在是空的，但机制完整保留：以后任何结构变更只需往这里追加一条
   //   { from, to, deprecateAt, fn }，到期由 verify_b4_config_migrations.js 的 S6 强制清理。
   const MIGRATIONS = [];
+  // schema 1 → 2：opacity 语义从「不透明度(alpha)」改为「透明度」。只翻转一次（版本盖到 2 后不再命中）
+  MIGRATIONS.push({
+    from: 1, to: 2,
+    fn: function (cfg) {
+      const flip = function (o) {
+        if (o && typeof o === 'object' && typeof o.opacity === 'number' && isFinite(o.opacity)) {
+          o.opacity = Math.max(0, Math.min(1, 1 - o.opacity));
+        }
+      };
+      try { flip(cfg.selSearchTheme); flip(cfg.selSearchTransLook); } catch (e) {}
+      return cfg;
+    }
+  });
   function ncRunMigrations(cfg) {
     if (!cfg || typeof cfg !== 'object') return cfg;
-    let v = (typeof cfg.configVersion === 'number') ? cfg.configVersion : 0;
+    // 没有版本号 = 最老的一批配置（v1.0.x 之前），按 schema 1 处理才能命中迁移
+    let v = (typeof cfg.configVersion === 'number') ? cfg.configVersion : 1;
     let ran = 0;
     for (let i = 0; i < MIGRATIONS.length; i++) {
       const m = MIGRATIONS[i];
@@ -3087,6 +3168,67 @@
     if (ran) { try { setConfig(cfg); } catch (e) {} }
     return cfg;
   }
+  /* ================================================================
+   *  配置格式契约（跨版本兼容）
+   *
+   *  这些承诺写进 README「配置格式与兼容」，改动它们等于破坏用户数据：
+   *   1. 配置**按 key 存储**，与面板分组/顺序无关 —— 调整 UI 布局不会动任何已有数据。
+   *   2. 只增不改：新增键随便加；**永不重命名、永不删除**既有键。要取代某个键就同时保留它并兼容读取。
+   *   3. 未知键必须原样保留：新版导出的文件导进旧版，旧版不认识也要留着，
+   *      否则「新 → 旧 → 再导出」一趟就把新字段吃掉了（deepMerge 对 over 独有键原样保留，正是靠这条）。
+   *   4. 结构变更（层级/类型变化）必须 +1 schema 版本，并在 MIGRATIONS 里补一条迁移；
+   *      纯新增字段不动 schema。
+   *   5. 导入与云同步走同一个解析入口 ncParseImported()，避免两套口径。
+   * ================================================================ */
+  const NC_EXPORT_APP = 'NetClean';
+  // 稳定序列化：顶层 key 排序，导出文件 diff 时不会因键序变化整篇飘红
+  function ncBuildExportPayload(cfg) {
+    const out = { _nc: { app: NC_EXPORT_APP, schema: CONFIG_SCHEMA_VERSION, version: VERSION, exportedAt: Date.now() } };
+    Object.keys(cfg || {}).sort().forEach(function (k) { out[k] = cfg[k]; });
+    return out;
+  }
+  /**
+   * 解析任意来源的配置（文件 / 云端 / 剪贴板）。
+   * 返回 { cfg, meta, warnings, unknownKeys }，调用方负责 setConfig 与提示。
+   * 抛错只用于「根本不是配置文件」，其余降级为 warnings。
+   */
+  function ncParseImported(raw) {
+    const warnings = [];
+    if (!raw || typeof raw !== 'object' || Array.isArray(raw)) throw new Error('文件内容不是 JSON 对象');
+    let meta = null;
+    const body = {};
+    Object.keys(raw).forEach(function (k) {
+      if (k === '_nc') { if (raw._nc && typeof raw._nc === 'object') meta = raw._nc; return; }
+      body[k] = raw[k];
+    });
+    if (!body.baidu || typeof body.baidu !== 'object') {
+      throw new Error('缺少 baidu 配置段，可能不是 NetClean 的配置文件');
+    }
+    const fromSchema = (meta && typeof meta.schema === 'number') ? meta.schema : 1;   // 老文件没有信封 → 视为 schema 1
+    if (meta && meta.app && meta.app !== NC_EXPORT_APP) {
+      warnings.push('文件来自「' + String(meta.app).slice(0, 24) + '」，仍按 NetClean 格式尝试导入');
+    }
+    if (fromSchema > CONFIG_SCHEMA_VERSION) {
+      warnings.push('配置来自更新版本（schema ' + fromSchema + '，当前支持 ' + CONFIG_SCHEMA_VERSION + '）：新增字段会完整保留，但本版本暂时读不到、不会生效');
+    } else if (fromSchema < CONFIG_SCHEMA_VERSION) {
+      warnings.push('配置来自旧版本（schema ' + fromSchema + '），已按迁移链升级到 ' + CONFIG_SCHEMA_VERSION);
+    }
+    const merged = ncNormalizeImportedConfig(deepMerge(JSON.parse(JSON.stringify(DEFAULT_CONFIG)), body));
+    // 迁移链兜底：老配置可能没有 configVersion，统一盖到当前版本
+    merged.configVersion = CONFIG_SCHEMA_VERSION;
+    // 未知键：DEFAULT_CONFIG 里没有的，保留下来（不删），只做提示
+    const unknownKeys = Object.keys(body).filter(function (k) { return !(k in DEFAULT_CONFIG); });
+    const unknownInBaidu = (body.baidu && typeof body.baidu === 'object')
+      ? Object.keys(body.baidu).filter(function (k) { return !(k in (DEFAULT_CONFIG.baidu || {})); })
+      : [];
+    if (unknownKeys.length || unknownInBaidu.length) {
+      warnings.push('保留了 ' + (unknownKeys.length + unknownInBaidu.length) + ' 个本版本不认识的字段（不会被删除，升级后会继续生效）');
+    }
+    return { cfg: merged, meta: meta, warnings: warnings, unknownKeys: unknownKeys.concat(unknownInBaidu) };
+  }
+
+  // 调试模式下暴露配置契约（仅 ?ncdebug 或 GM nc_debug=1 时挂载；守卫用它做端到端验证，生产默认不暴露）
+  if (window.__NC_DEBUG) { try { window.__ncCfgApi = { build: ncBuildExportPayload, parse: ncParseImported }; } catch (e) {} }
   // 配置版本迁移（启动执行）
   (function() {
     try {
@@ -3395,6 +3537,10 @@
   //   但用户仍可能在此类站点点油猴菜单打开设置面板 —— 若声明在闸后，let 处于永久 TDZ，
   //   面板内 `_syncPauseUI = ...` 赋值会抛 ReferenceError，导致面板「关闭」按钮绑定被中断、关不掉面板。
   let _syncPauseUI = null;
+  // 划词外观面板的刷新钩子：buildSelSearchUI 里赋值，控制面板「一起跟随」写入后调用。
+  //   ⚠ 必须声明在 openSettings 之外：wireUiDock 是个 IIFE，声明在它内部会变成另一个变量，
+  //     buildSelSearchUI 赋值后外面永远读到 null（踩过一次）。
+  let _refreshSelLookUI = null;
 
   /* ================================================================
    * 状态化油猴菜单（菜单名随状态刷新）
@@ -6052,7 +6198,12 @@
       const sites = (vd.sites && vd.sites.length) ? vd.sites : defaults.sites;
       const activeKey = vd.active || (sites[0] && sites[0].key) || defaults.active;
       let site = sites.find(s => s.key === activeKey) || sites[0];
-      let target = (site && (site.tpl || site.url)) || 'https://cobalt.tools';
+      if (!site || !(site.tpl || site.url)) {
+        // 没有配置站点：只提示，不擅自打开任何第三方页面
+        try { zkToast('还没添加下载站点：到「视频下载」里填一个解析站，或点该页「可用站点清单」看文档', { type: 'warn' }); } catch (e) {}
+        return;
+      }
+      let target = (site.tpl || site.url);
       if (target.indexOf('{url}') >= 0) {
         target = target.replace(/\{url\}/g, encodeURIComponent(videoUrl));
       } else {
@@ -6073,20 +6224,14 @@
     const sites = (cfg.videoDownload && cfg.videoDownload.sites && cfg.videoDownload.sites.length)
       ? cfg.videoDownload.sites : defaults.sites;
 
-    // 各站点已知的最佳选择器；不在表内的站点走通用兜底
-    const KNOWN = {
-      'cobalt.tools': { input: 'input[placeholder*="URL" i],input[placeholder*="链接" i],input[type="url"]', btn: 'button[type="submit"],button' },
-      'yt5s.biz':     { input: '#url,input[name="video"],input[type="url"],input[placeholder*="url" i]', btn: '#btn-submit,button[type="submit"],.btn-submit' },
-      'savefrom.net': { input: 'input[name="sf_url"],input[type="url"],input[placeholder*="url" i]', btn: 'button.submit,button[type="submit"]' },
-      'getfvid.com':  { input: 'input[name="url"],input[type="url"]', btn: '#btn_submit,button[type="submit"]' }
-    };
+    // 只用通用选择器自动填充：不按具体第三方域名做适配（避免源码里出现站点名单）
     const GENERIC = { input: 'input[type="url"],input[name*="url" i],input[placeholder*="url" i],input', btn: 'button[type="submit"],button' };
 
     for (const s of sites) {
       let host = '';
       try { host = new URL(s.tpl || s.url || '').host; } catch (e) { continue; }
       if (host && inHost(host)) {
-        const sel = KNOWN[host] || GENERIC;
+        const sel = GENERIC;
         setTimeout(() => {
           const inp = document.querySelector(sel.input);
           if (inp) {
@@ -7088,15 +7233,6 @@
     return false;
   }
 
-  // 当前域名是否命中用户手动名单（精确域名或父域）
-  function ncHostInList(list) {
-    try {
-      const host = String(HOST || location.hostname || '').toLowerCase();
-      if (!host || !Array.isArray(list)) return false;
-      return list.some(h => { const d = String(h || '').toLowerCase(); return !!d && (host === d || host.endsWith('.' + d)); });
-    } catch (e) { return false; }
-  }
-
   // B2（v1.1.0）：通用「站点级功能覆盖」解析器。把暗黑 darkSkip/darkForce 两套名单泛化为一份
   //   siteOverrides 表，覆盖所有功能键。结构：{ [功能键]: { skip:[hosts], force:[hosts] } }，
   //   host 小写，'*' 表示全部站点。skip=全局开时本功能在本站关；force=全局关时本站强制开。
@@ -7106,11 +7242,11 @@
   function ncGetSelectorRules() {
     try { const v = getScriptCfg().customSelectors; return (typeof v === 'string') ? v : ''; } catch (e) { return ''; }
   }
+  // 解析为 CSS 规则数组：按分号 / 换行切分（**不按逗号** —— 逗号在 :not(a,b) 里是合法语法）。
+  //   裸选择器自动补 {display:none!important}；已是完整规则（含 { ）则原样使用。
   function ncSaveSelectorRules(v) {
     try { const c = getConfig(); if (!c.baidu) c.baidu = {}; c.baidu.customSelectors = String(v || ''); setConfig(c); return true; } catch (e) { return false; }
   }
-  // 解析为 CSS 规则数组：按分号 / 换行切分（**不按逗号** —— 逗号在 :not(a,b) 里是合法语法）。
-  //   裸选择器自动补 {display:none!important}；已是完整规则（含 { ）则原样使用。
   function ncParseSelectorRules(raw) {
     var out = [];
     try { String(raw || '').split(/[;\n]+/).forEach(function (seg) {
@@ -7130,6 +7266,7 @@
       if (ncHostMatch(ov.skip, host)) return 'skip'; } catch (e) {}
     return undefined;
   }
+  // 站点级覆盖 + 全局开关的统一判定（B2 契约函数：ncSiteOverride 之上再并一次全局值）
   function ncEffOn(cfg, key, host) {
     var ov = ncSiteOverride(cfg, key, host);
     if (ov === 'force') return true; if (ov === 'skip') return false;
@@ -7625,6 +7762,10 @@
     baiducss: { title: '卡片式美化', effect: '把百度搜索结果改为白底圆角卡片，hover 上浮高亮，阅读更清爽。', impl: 'injectSearchBeautifyCSS() 仅向结果容器注入背景/边框/圆角/阴影，零 padding 侵入，绝不改动内部标题摘要布局。', maintain: '若新版百度改了结果容器 class，在 injectSearchBeautifyCSS() 百度分支的选择器处追加新容器名。', risk: '纯视觉层，关闭即恢复原生样式；不影响任何屏蔽功能。' },
     baiduhot: { title: '隐藏热搜/AI栏', effect: '隐藏百度首页与结果页右侧热搜榜、AI 辅助侧边栏等干扰内容。', impl: 'updateBaiduHotClass() 在 html 上切换 adc-hide-baiduhot 类，CSS 隐藏 .hot-news-wrapper 等右侧栏元素；可实时开关无需刷新。', maintain: '失效时检查 injectCSS() 中 adc-hide-baiduhot 规则对应的选择器是否随百度改版变动。', risk: '关闭后右侧热搜榜恢复显示；若你更想看热搜，关闭此项即可。' },
     baidueye: { title: '护眼模式', effect: '全站护眼蒙版 + 20-20-20 休息提醒：multiply 暖色层覆盖整页让画面柔和（缓解纯白刺眼与高对比度疲劳），并每 20 分钟提醒你远眺一次。诚实说明：multiply 是「颜色相乘」视觉变换，不改变屏幕蓝光发射量——真正减少蓝光需 OS 级护眼模式（Windows Night Light / macOS Night Shift / 屏幕硬件护眼）；本脚本的真实作用是「视觉柔和 + 定时休息」——后者是科学共识最有效的护眼手段。', impl: 'bootCore 阶段3 调 applyEyeCare() 注入 <div id=nc-eye-overlay>（position:fixed;inset:0;z-index:2147483640;mix-blend-mode:multiply;），颜色=baidueyecolor、深浅=baidueyestrength；并启动 setInterval 每 20 分钟 zkToast 提示远眺（20-20-20 法则）。', maintain: '颜色「护眼色」、深浅「护眼强度」均在①组调整，即时生效、刷新无需重开；推荐同时开启 OS 级护眼模式（互补）。', risk: 'multiply 不反色（白×暖=暖、黑×任意=黑），视频仅变暖；休息提醒为非阻塞 toast，不打扰操作；本功能绝不声称「降蓝光」。' },
+    baidueyeScheduleEnabled: { title: '护眼时间表', effect: '按固定时间段自动开关护眼模式：到「开始时间」自动开、到「结束时间」自动关（例：07:00 开、22:00 关，白天柔和些、睡前关掉不影响观感）。开启后由时间表接管，手动开关仍可临时覆盖，下一次跨过时间点会按表执行。', impl: 'applyEyeCare() 每次评估时先看 baidueyeScheduleEnabled：为真则取当前时:分与 baidueyeScheduleOn/Off 比较（支持跨零点，如 22:00 → 07:00），落在区间内即视为开启，并写回 baidueye 的实际状态供蒙版渲染。', maintain: '时间按本机 24 小时制 HH:MM 解析，填错格式会退化为「不自动」。跨零点场景（如 20:00–06:00）直接按起止填即可，无需分两段。', risk: '纯自动化开关，不改变护眼效果本身；若发现夜里仍开着，检查起止时间是否写成反序（应 开始 < 结束，跨零点除外）。' },
+    baidueyeScheduleOn: { title: '护眼开始时间', effect: '护眼模式每天自动开启的时间点（24 小时制 HH:MM）。', impl: '被 applyEyeCare() 的时间表判定读取，与结束时间组成区间。', maintain: '只填 HH:MM，例如 07:00；不填或格式错误则该次判定跳过。', risk: '仅影响自动开启时刻，手动点开关仍立即生效。' },
+    baidueyeScheduleOff: { title: '护眼结束时间', effect: '护眼模式每天自动关闭的时间点（24 小时制 HH:MM）。小于开始时间表示跨零点（如 20:00 开、06:00 关）。', impl: '同上，与开始时间组成区间。', maintain: '跨零点写法：开始 20:00、结束 06:00，不需要拆成两段。', risk: '写反且非跨零点时会导致区间不成立（即不自动开），按 HH:MM 检查即可。' },
+    baidueyerest: { title: '护眼休息提醒', effect: '开启后每 20 分钟弹一次轻提示，提醒你把视线移到 6 米外约 20 秒（20-20-20 法则）。这是护眼功能里唯一有科学共识的部分：缓解睫状肌紧张，比调色更有效。', impl: 'applyEyeCare() 内起 setInterval（20 分钟）调 zkToast 弹提示；关闭该开关即清掉定时器，不再打扰。', maintain: '若嫌提醒频繁，关掉本项即可；它与「护眼模式」是两条独立线——不开护眼蒙版也能单独用提醒。', risk: '纯提醒，不改变页面渲染；提示为非阻塞 toast，不影响操作。' },
     baidumenu: { title: '快捷入口', effect: '在百度页面右上角显示「⚙️ 控制面板」入口，一键打开设置。', impl: '启动时在 span[name="tj_settingicon"] 旁插入入口链接，点击调用 openSettings()。', maintain: '失效多为百度顶栏 DOM 结构改动，调整 processStartup 中的插入锚点选择器。', risk: '仅入口按钮，关闭不影响任何功能，只是少一个快捷打开面板的方式。' },
     videoSpeed: { title: '视频倍速', effect: '给全站 <video> 设定统一播放倍速，范围 0.1x~16x，1x 位于滑块正中间：左滑调慢（适合慢放学习）、右滑调快（适合刷课赶进度）。右侧「1x」按钮一键回到正常倍速。', impl: '滑块是 0~100 的分段指数刻度：左半 0.1x→1x、右半 1x→16x，两端各自等比，因此 1x 精确落在 50（线性刻度下 0.1x~1x 会被挤成一小段、极难拖准，这也是必须配一个「1x」复位按钮的原因）。拖动时通过 ncVideoSpeedToSpeed() 换算后直接写 video.playbackRate（含穿透 shadow DOM 的播放器），松手才落盘。', maintain: '站点自行改 playbackRate（如播放器记忆倍速）会覆盖脚本值，刷新或再拖动一次即可夺回；若某站点视频完全不响应，检查是否被「暂停名单」跳过。', risk: '极端倍速（>8x）部分站点可能音画不同步或直接拒绝播放；听不清内容时点右侧「1x」按钮即可恢复。' },
     videoSpeedFloat: { title: '视频倍速悬浮球', effect: '自动识别当前页面是否在播放视频：一旦检测到 <video>，就在页面角落显示一个可拖动的小球，点开即可调倍速、切静默播放、一键恢复 1x；没有视频的页面自动隐藏，不打扰浏览。', impl: 'ncInitVideoFloat() 在页面内建 #nc-video-float（独立于设置面板的常驻浮层），位置拖到哪记到哪（独立 GM key nc_videofloat_pos，不写进 allconfig）；页面无 <video> 时整球 display:none，用 MutationObserver 感知懒加载/切换视频源。', maintain: '小球被某些站点全屏播放器盖住时，可把小球拖到画面外区域；若完全找不到，检查本开关是否被关掉（关掉即移除节点）。', risk: '拖到页面边缘会贴边停住（已做边界钳制），不会跑出可视区；纯 UI 浮层，不影响任何净化功能。' },
@@ -7687,10 +7828,12 @@
     captchaApiPrecise: { title: '精准接口地址', effect: '「精准」引擎（含滑块）调用的服务地址。留空则精准引擎直接跳过，不会向任何外部服务器上传数据。', impl: 'recPrecise() 读取本项作为 base，拼 /hello 后 POST 图片与识别码；请求还会带上你的 idCard 与当前页面网址。', maintain: '需自行搭建或选用可信服务后填写，形如 https://your-server/ ；配合下方识别码使用。本脚本不内置任何第三方打码平台。', risk: '填写即表示你信任该服务器：验证码图片、你的识别码与当前网址都会发送。请确认可信与合规；留空最安全。' },
     captchaAutoFind: { title: '自动查找验证码', effect: '对无手动规则的网站，按属性关键词（code/captcha/yzm/验证码…）自动定位并填充。', impl: '扫描 img/canvas/div 背景图，结合宽高与可见性判定，再向上 4 层找输入框。', maintain: '规则见 HINTS 与 isCodeLike；网站改版漏识别时，用右键手动加规则更稳。', risk: '可能误判带 code 字样的普通图片；频繁误判可关闭或加黑名单。' },
     captchaShowHint: { title: '显示提示条', effect: '顶部提示条展示识别状态（识别中/完成/错误）。', impl: 'topNotice() 统一转发到全局 zkToast（top 变体），按文案自动选 ok/warn/err 配色，并以串行队列逐条播放，避免连续操作时提示互相覆盖。', maintain: '若提示被页面覆盖属 CSS 优先级问题，不影响功能。', risk: '仅视觉提示；关闭后无顶部提示但功能正常。' },
-    captchaSlide: { title: '滑动验证码', effect: '启用滑动拼图与滑块行为验证码的自动识别与拖拽。', impl: '对带 big/small/move 结构的滑块，识别距离后用原生 MouseEvent 模拟人工拖拽。', maintain: '依赖精准引擎（like996 识别码）；结构识别在 slideSolve / slideBehaviorSolve。', risk: '模拟拖拽有概率失败；部分站点有轨迹风控，失败请手动完成。需开启引擎=精准/自动且填识别码。' },
-    captchaPreciseId: { title: '精准引擎识别码', effect: '精准引擎（支持滑块）所需的识别码（原 like996 为 32 位）。', impl: '请求时作为 idCard 字段随「精准接口地址」一同发送。', maintain: '由你填写的精准接口服务方提供；未填则自动/精准模式跳过精准回退。本脚本不内置任何平台地址。', risk: '可向服务器标识你的配额；勿外泄。调试日志中已做掩码处理。' },
-    captchaYunmaToken: { title: '云码 Token', effect: '算术验证码（如「3+5=?」图片）识别所需的云码 Token（jfbym.com 商业服务，按识别次数计费）。', impl: '识别算术图时调用 jfbym.com 接口并携带本 Token。', maintain: 'Token 失效或余额不足时顶部提示；在设置面板重填即可。', risk: '仅算术验证码需要；不填则算术图跳过识别。Token 属个人凭证，勿泄露。' },
-    captchaYunmaDev: { title: '云码开发者标识（可选）', effect: '在 jfbym.com 后台获取的开发者标识（developer_tag），用于把识别调用归属到你的账号，便于在云码后台查看调用与消耗统计。属可选项，不是识别成功的必要条件。', impl: 'recMath() 在构造请求体时读取本项；用户填写后才附加 developer_tag 字段，留空则请求体中不含该字段（而非传空字符串）。', maintain: '留空不影响功能，仅影响云码后台的调用归属统计（缺失时云码按「无归属」记账）。在设置面板「② 识别引擎与凭证」中填写或清空即可，改动刷新页面后生效。', risk: '需与「云码 Token」配合使用；开启算术验证码识别时，验证码图片会上传至 jfbym.com（第三方商业服务）完成识别。开发者标识属个人账号信息，勿外泄；如担心归属信息被关联，可留空。' },
+    captchaMathApi: { title: '算术接口地址', effect: '「算术验证码」（如 3+5=? 的图片）识别所需的接口地址。脚本不内置任何服务商，留空则算术图直接跳过、不上传任何内容。', impl: 'recMath() 从 cap().captchaMathApi 取地址，POST JSON：{ image: <base64>, type: "50100", token: <你的 Token> }，成功返回 { msg: "识别成功", data: { data: "答案" } }。未填地址时直接 resolve 空串并提示，不发请求。', maintain: '到 README「第三方服务」章节挑一个兼容上述协议的识别服务（或自建），把完整地址粘进来，再填同一服务给出的 Token。首次调用时管理器会询问「是否允许访问该域名」，选允许即可。', risk: '图片会上传到你填的那台服务器；地址与 Token 属个人凭证，勿外泄。不填 = 该能力关闭，普通验证码仍可由极速/精准引擎处理。' },
+    siteScopeMode: { title: '生效范围模式', effect: '决定脚本在哪些站点运行，三种取值：全部站点（默认，不限制）/ 仅名单内生效（只有名单里的站点跑，其余注入后秒退，近零开销）/ 名单内不生效（名单里的站点整站暂停，适合银行、支付、政务、内网管理页）。', impl: '启动早期由 ncSiteScopeGate() 判定：except 且命中名单 → ncMarkEarlyExit()；only 且不在名单、也不是内置已知站点 → 同样早退。油猴 @match 是静态元数据、运行时改不了，所以用「注入后早退」实现整站停用。', maintain: '改动需刷新页面生效。误伤常用站点时改回「全部站点」即可；也可用每行右侧「仅本站」只影响单个功能，不必整站停。', risk: '选「名单内不生效」后，名单内站点所有功能（含划词、验证码、美化）全部停用；匹配是子串包含，填 gov.cn 这类短域名会覆盖其所有子域。' },
+    captchaSlide: { title: '滑动验证码', effect: '启用滑动拼图与滑块行为验证码的自动识别与拖拽。', impl: '对带 big/small/move 结构的滑块，识别距离后用原生 MouseEvent 模拟人工拖拽。', maintain: '依赖「精准」引擎的接口地址与识别码（服务自选，见 README 第三方服务章节）；结构识别在 slideSolve / slideBehaviorSolve。', risk: '模拟拖拽有概率失败；部分站点有轨迹风控，失败请手动完成。需开启引擎=精准/自动且填识别码。' },
+    captchaPreciseId: { title: '精准引擎识别码', effect: '精准引擎（支持滑块）所需的识别码，由你所选的接口服务方提供（位数见其说明）。', impl: '请求时作为 idCard 字段随「精准接口地址」一同发送。', maintain: '由你填写的精准接口服务方提供；未填则自动/精准模式跳过精准回退。本脚本不内置任何平台地址。', risk: '可向服务器标识你的配额；勿外泄。调试日志中已做掩码处理。' },
+    captchaYunmaToken: { title: '算术验证码服务 Token', effect: '算术验证码（如「3+5=?」图片）识别所需的服务 Token —— 服务由你自选（多为按次计费的商业接口），脚本不内置任何服务商。', impl: '识别算术图时向你填写的接口发起请求并携带本 Token。', maintain: 'Token 失效或余额不足时顶部提示；在设置面板重填即可。', risk: '仅算术验证码需要；不填则算术图跳过识别。Token 属个人凭证，勿泄露。' },
+    captchaYunmaDev: { title: '开发者标识（可选）', effect: '你所选识别服务后台的开发者标识，用于把识别调用归属到你的账号，便于在服务方后台查看调用与消耗统计。属可选项，不是识别成功的必要条件。', impl: 'recMath() 在构造请求体时读取本项；用户填写后才附加 developer_tag 字段，留空则请求体中不含该字段（而非传空字符串）。', maintain: '留空不影响功能，仅影响云码后台的调用归属统计（缺失时云码按「无归属」记账）。在设置面板「② 识别引擎与凭证」中填写或清空即可，改动刷新页面后生效。', risk: '需与「算术验证码服务 Token」配合使用；开启算术验证码识别时，验证码图片会上传至你填写的第三方服务完成识别。开发者标识属个人账号信息，勿外泄；如担心归属信息被关联，可留空。' },
     captchaWhitelist: { title: '验证码 · 自动扫描站点', effect: '② 验证码级：触发方式选「白名单站点」时，只有这些站点会自动扫描识别。仅作用于验证码模块，不影响广告净化等其他功能。', impl: 'initCaptcha() 的 whitelist 分支对条目做域名归一化（去掉 scheme/通配符/路径）后按 HOST.includes(主体) 决定是否挂载观察者，所以填完整 URL 或带 /* 也有效。', maintain: '例：example.com，或 https://www.example.com/、*.example.com 均可。留空则白名单模式无站点自动识别（仍可手动触发）。', risk: '仅控制验证码自动化的范围；填错只会让对应站不自动识别。' },
     captchaBlacklist: { title: '验证码 · 跳过识别站点', effect: '② 验证码级：URL 含其中字符串的网页将被跳过验证码识别，避免在无关页面反复出错打扰。仅作用于验证码模块。', impl: 'inBlacklist() 在识别前比对当前 URL，命中则直接跳过。', maintain: '在「名单管理 → ② 验证码级」页添加/删除条目即可。', risk: '仅影响验证码识别；误加会导致该站不识别，删除即恢复。' },
     adStats: { title: '广告拦截统计', effect: '统计并显示本次访问、今日、累计、以及当前站点已拦截的广告数量，并在「关于」页顶部生成数据看板：拦截来源占比扇形图 + 近 7 / 30 / 90 天趋势折线图 + 节省时间估算。', impl: '所有拦截点统一调用 ncBumpStats(n, kind) 单一入口，由它同时分发到三处：① STATS（会话计数，供角标与面板底部实时显示）② totalBlocked / siteBlocked[HOST]（跨会话累计）③ ncStatsDaily（按「YYYY-MM-DD」聚合的每日序列，含按来源维度的 k 拆分，仅保留最近 90 天）。看板图形全部用内联 SVG 自绘（扇形用 path 弧、折线用 polyline），不依赖任何外部图表库。', maintain: '关闭后不再扫描 DOM 统计（可略微降低开销），面板底部显示「统计已关闭」、「关于」页看板显示关闭提示；历史累计与按天序列仍完整保留，重新开启即继续累加。若发现看板数字与预期不符，先确认「adStats」与「adBadge」是否同时开启。', risk: '仅展示数据，不影响任何屏蔽功能。数据只写在本机油猴存储（独立 key adc_stats_daily_v1），不随配置同步上传，也不发往任何服务器。' },
@@ -7699,8 +7842,9 @@
     selSearchShowTranslate: { title: '显示翻译按钮', effect: '在划词工具条末尾显示「译」按钮，点按可对选中文字划词翻译。', impl: 'initSelectionSearch 依据 getScriptCfg().selSearchShowTranslate 决定是否插入翻译按钮。', maintain: '需先打开上方「启用划词搜索」总开关；刷新页面后生效。', risk: '仅控制按钮显隐；不影响搜索功能。' },
     selSearchTransAuto: { title: '自动翻译', effect: '划词后立即自动翻译，无需点「译」按钮（默认关闭以免打扰）。', impl: '本开关与「划词搜索 → 翻译设置」里的「自动翻译」是同一项（同读写 selSearchTrans.auto），两处任改一处即同步生效；划词完成后由 initSelectionSearch 判断该字段并调用 doTranslateAndShow()。', maintain: '若觉得自动弹出打扰，关闭本项改用手动点「译」。', risk: '仅影响翻译触发方式；开启会增加每次划词的翻译请求。' },
     selSearchAlwaysShowOpenLink: { title: '打开链接按钮常驻', effect: '无论选中内容是否像 URL，都在工具条最左侧显示「打开网站」按钮。', impl: 'showBar 中过滤引擎时，对 onlyURL 的 open 引擎跳过 looksLikeURL 判断并强制插入首位。', maintain: '若日常选中文本多为普通词汇而非网址，关闭本项可避免误点。', risk: '常驻时普通文字点该按钮会被浏览器当作搜索/失败地址处理。' },
-    selTheme: { title: '工具栏主题', effect: '划词工具条与翻译面板的配色：深色 / 浅色 / 跟随系统 / 跟随时间。', impl: 'applyThemeLive() 把主题映射为 CSS 变量（--sh-bg-rgb 等）写入 :root，运行时实时预览。', maintain: '选「跟随时间」按 6:00–18:00 为浅色、其余深色自动切换；修改即时生效无需刷新。', risk: '纯外观，关闭不影响功能。' },
-    selOpacity: { title: '工具栏透明度', effect: '工具条与翻译面板的背景不透明度（50%~100%，越低越通透）。', impl: '透明度写入 --sh-opacity 变量，实时作用于 #sh-bar / #sh-trans 背景。', maintain: '拖动滑块即时预览；若觉得文字看不清，调高到 90%~100%。', risk: '纯外观偏好，无任何功能风险。' },
+    customSelectors: { title: '自定义选择器规则', effect: '给脚本"补一条隐藏规则"：填一段 CSS 选择器，命中的元素会被隐藏（display:none!important）。用途只有一个——某个网站改版后，内置规则没跟上，页面上还剩广告/横幅/登录浮层时，你可以自己补一刀，不用等我发新版。\n对你的实际价值：不会写代码也能用。最省事的做法是在页面上右键「检查」，选中讨厌的那块，复制它的 class（形如 ad-banner），回来填 .ad-banner 即可，保存后立刻生效。', impl: 'ncGetSelectorRules() 读 cfg.baidu.customSelectors → ncParseSelectorRules() 按分号/换行切成规则数组（裸选择器自动补 display:none!important，已带 { } 的完整规则原样使用）→ injectCSS() 注入到页面顶部 <style>，随站点重绘自动重挂。', maintain: '多条用分号或换行分隔：.ad-banner; #promo。也可以直接写完整规则：.box{display:none!important}。注意**不要填过宽的规则**（如 div、a、img），会把正文一起藏掉；只填能唯一定位到那块广告的 class 或 id。填错了清空输入框保存即可全部撤销。', risk: '规则是「全局生效」的（所有站点都注入），过于宽泛会误伤正常内容；若页面变空白，第一件事就是清空这里。复杂站点（动态类名）改版频繁，class 可能下次变化，需重新取。' },
+    selTheme: { title: '工具栏主题', effect: '划词工具条的主题：深色 / 浅色 / 跟随系统 / 跟随时间。与下面「翻译面板外观」相互独立——翻译面板默认跟随这里，也可以单独固定深浅。', impl: 'applyThemeLive() 把主题映射为 CSS 变量（--sh-bg-rgb / --sh-text / --sh-border / --sh-opacity / --sh-blur）写入 :root；翻译面板另有一组 --tr-*，未设置时自动回落到 --sh-*。切换控制面板明暗时若两者不一致，会询问是否一起跟随（可勾「不再提示」）。', maintain: '选「跟随时间」按 6:00–18:00 为浅色、其余深色自动切换；改完即时生效，下方有实时预览可对照，不必来回开关面板。/ 若发现「面板是深色、划词条还是浅色」，说明这里被单独设成了固定值，选「跟随」或手动改一致即可。', risk: '纯外观，关闭不影响功能。' },
+    selOpacity: { title: '工具栏透明度', effect: '划词工具条的背景透明度：0% = 完全不透明（实心），100% = 完全透明（只剩字）。**越高越透明**，与直觉一致。翻译面板有自己的一项，默认跟随这里的视觉风格但可单独调。', impl: '配置直接存透明度（0 = 不透明，1 = 全透明）；旧版本遗留的 alpha 存储（1 = 不透明）会在加载时自动迁移翻转，老用户无需手动处理。滑块显示值 = 透明度 × 100（ncAlphaToTrans），保存时除回 100（ncTransToAlpha）；渲染按 alpha = 1 − 透明度 写入 --sh-opacity，作用于 #sh-bar / #sh-trans 背景。', maintain: '拖动即时生效，上方预览实时同步；透明度拉到 90% 以上背景几乎消失、文字可能看不清，建议 20%~60%。', risk: '纯外观偏好；极端值只影响可读性，不影响任何功能。' },
     selGlass: { title: '毛玻璃效果', effect: '给工具条 / 面板背景加背景模糊（backdrop-filter），更现代通透。', impl: '开启时 --sh-blur 设为 12px，关闭时为 0。', maintain: '低端设备或老浏览器可能卡顿 / 不支持，关闭即可。', risk: '视觉增强；个别浏览器不支持时自动忽略模糊，不影响使用。' },
     selTransEngine: { title: '翻译引擎', effect: '划词翻译后端：iciba 词典（免费免密钥，推荐）/ MyMemory（免费免密钥，国内直连）/ Google（免费，海外推荐）/ DeepL（需密钥）/ 百度翻译（需 AppID+密钥）/ 自定义 API。', impl: 'translateWith() 按此值路由到对应翻译函数；iciba 引擎查不到（短语/未收录词）时自动用 Google 与 MyMemory 双引擎竞速兜底，谁先返回用谁（国内 MyMemory 快、海外 Google 快）。', maintain: 'iciba 仅查词典（单词给音标/释义，短语自动走兜底）；DeepL/百度需在下方填密钥；自定义支持 {q}{tl}{key} 占位符；MyMemory 免费额度约 5000 字符/天/IP。若某引擎报错，优先检查网络是否可达该服务，或换用其他引擎。', risk: '划词翻译会把选中的文字发送给你所选的翻译服务商（iciba / Google / MyMemory / DeepL / 百度等第三方），请勿翻译敏感信息。免费引擎无需配置；填错密钥会导致对应引擎失败，改回 iciba 即可；MyMemory 超额当天会退化到 Google 或报错。' },
     selTransAuto: { title: '自动翻译（翻译设置）', effect: '开启后在翻译面板打开时自动执行一次翻译，省去点按钮。', impl: 'showTransPanel 末尾依据 tr.auto 自动调用 doTranslateAndShow()。', maintain: '与总开关里的「自动翻译」联动；不想自动翻可关闭。', risk: '仅影响翻译触发；增加翻译请求次数。' },
@@ -7901,10 +8045,7 @@
     .zk-aw-back:hover{background:rgba(22,119,255,.12)!important;border-color:var(--nc-accent)!important}
     .zk-aw-pane p,.zk-aw-pane li,.zk-about-desc{color:var(--nc-ink2)!important}
     .zk-aw-pane p b{color:var(--nc-ink)!important}
-    .zk-aw-upd,.zk-fb{background:var(--nc-card)!important;border-color:var(--nc-card-bd)!important}
-    .zk-aw-upd-head b{color:var(--nc-ink)!important}
-    .zk-aw-upd-head span{color:var(--nc-ink4)!important}
-    .zk-aw-upd ul{color:var(--nc-ink2)!important}
+.zk-fb{background:var(--nc-card)!important;border-color:var(--nc-card-bd)!important}
     .zk-aw-tagline{color:var(--nc-ink3)!important}
     .zk-aw-tip{color:var(--nc-ink4)!important}
     .zk-aw-preview{background:var(--nc-card)!important;border:1px solid var(--nc-card-bd)!important;box-shadow:0 20px 55px var(--nc-shadow),inset 0 1px 0 rgba(255,255,255,.34)!important;backdrop-filter:blur(22px) saturate(1.7);-webkit-backdrop-filter:blur(22px) saturate(1.7)}
@@ -7978,7 +8119,9 @@
     .zk-sel-face.open .zk-sel-arw{transform:rotate(180deg);color:var(--nc-accent)}
     /* 夜间：浮层用令牌，这里只需保证阴影/描边不消失在深背景里 */
     .zk-nc-dark .zk-sel-pop{box-shadow:0 22px 52px rgba(0,0,0,.62),inset 0 1px 0 rgba(255,255,255,.08)!important}
-    .zk-sel-pop{position:fixed;z-index:60;padding:6px;border-radius:13px;background:var(--nc-surface);border:1px solid var(--nc-card-bd);box-shadow:0 22px 52px var(--nc-shadow),inset 0 1px 0 rgba(255,255,255,.34);backdrop-filter:blur(22px) saturate(1.6);-webkit-backdrop-filter:blur(22px) saturate(1.6);max-height:264px;overflow:auto;animation:zk-sel-in .14s cubic-bezier(.2,.8,.2,1) both}
+    /* ⚠ 宿主 :host 是 pointer-events:none（为了不挡页面空白），而浮层是它的**直接子节点**，
+     必须显式 auto，否则整块浮层对鼠标不可点（键盘仍可用 → 表现为"只能上下键选择"）。 */
+    .zk-sel-pop{pointer-events:auto;position:fixed;z-index:60;padding:6px;border-radius:13px;background:var(--nc-surface);border:1px solid var(--nc-card-bd);box-shadow:0 22px 52px var(--nc-shadow),inset 0 1px 0 rgba(255,255,255,.34);backdrop-filter:blur(22px) saturate(1.6);-webkit-backdrop-filter:blur(22px) saturate(1.6);max-height:264px;overflow:auto;animation:zk-sel-in .14s cubic-bezier(.2,.8,.2,1) both}
     @keyframes zk-sel-in{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:none}}
     .zk-sel-opt{display:block;width:100%;padding:8px 11px;border:0;border-radius:8px;background:none;font:inherit;font-size:12.5px;text-align:left;color:var(--nc-ink);cursor:pointer;white-space:nowrap;transition:background .14s,color .14s}
     .zk-sel-opt:hover{background:rgba(22,119,255,.12);color:var(--nc-accent)}
@@ -8003,6 +8146,8 @@
     .zk-nc-dark .zkvd-dot{background:var(--nc-field)!important;border-color:#5a6f88}
     .zk-nc-dark .zkvd-del{background:rgba(239,68,68,.14)!important;border-color:rgba(248,113,113,.4)!important;color:#fca5a5!important}
     .zk-nc-dark .zkvd-reset{background:var(--nc-btn)!important;border-color:var(--nc-btn-bd)!important;color:var(--nc-btn-ink)!important}
+    .zk-nc-dark .zkss-subline{color:var(--nc-ink2)!important;border-top-color:var(--nc-line)!important}
+    .zk-nc-dark .zkss-pv-stage{box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)}
     .zk-nc-dark .zkvd-note,.zk-nc-dark .zkss-hint{color:var(--nc-ink3)!important}
     .zk-nc-dark .zkcs-type{background:var(--nc-field)!important;border-color:var(--nc-field-bd)!important;color:var(--nc-field-ink)!important}
     .zk-nc-dark .zkcs-note{background:var(--nc-field)!important;color:var(--nc-ink2)!important}
@@ -8038,16 +8183,26 @@
     .zk-nc-dark .zk-about-desc{background:var(--nc-field)!important;border-color:var(--nc-field-bd)!important;color:var(--nc-ink2)!important}
 
     /* 帮助弹层（#zk-set-help-pop 在 shadow 内、是面板盒子的兄弟 → 只能用宿主类命中） */
-    :host(.zk-nc-dark) #zk-set-help-backdrop{background:rgba(6,10,18,.62)!important}
-    :host(.zk-nc-dark) #zk-set-help-pop{background:linear-gradient(160deg,rgba(26,36,54,.98),rgba(15,23,37,.98))!important;border:1px solid rgba(120,170,225,.22)!important;box-shadow:0 26px 80px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.06)!important;color:#dbe7f5!important}
-    :host(.zk-nc-dark) #zk-set-help-pop .zk-set-help-head{background:linear-gradient(90deg,#1e3a63,#2b5a99)!important;color:#eaf3ff!important;box-shadow:0 2px 12px rgba(0,0,0,.35)!important}
-    :host(.zk-nc-dark) #zk-set-help-pop .zk-set-help-sec{border-bottom-color:rgba(140,175,215,.16)!important}
+    :host(.zk-nc-dark) #zk-set-help-backdrop{background:rgba(4,8,16,.5)!important}
+    :host(.zk-nc-dark) #zk-set-help-pop{background:rgba(15,23,40,.62)!important;border:1px solid rgba(120,170,225,.22)!important;box-shadow:0 26px 80px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.05) inset,0 1px 0 rgba(255,255,255,.08) inset!important;color:#dbe7f5!important}
+    :host(.zk-nc-dark) #zk-set-help-pop .zk-set-help-head{background:linear-gradient(90deg,rgba(43,90,153,.30),rgba(30,58,99,.16))!important;color:#eaf3ff!important;border-bottom:1px solid rgba(120,170,225,.18)!important;box-shadow:none!important}
+    :host(.zk-nc-dark) #zk-set-help-pop .zk-set-help-head button{background:rgba(255,255,255,.10)!important;border-color:rgba(140,175,215,.25)!important;color:#c2d4e8!important}
+    :host(.zk-nc-dark) #zk-set-help-pop .zk-set-help-head button:hover{background:rgba(255,255,255,.22)!important;color:#eaf3ff!important}
+    :host(.zk-nc-dark) #zk-set-help-pop .zk-set-help-sec{border-color:rgba(140,175,215,.16)!important;background:rgba(255,255,255,.05)!important;box-shadow:none!important}
     :host(.zk-nc-dark) #zk-set-help-pop .zk-set-help-sec b,
-    :host(.zk-nc-dark) #zk-set-help-pop .zk-set-help-sec strong{color:#eaf3ff!important}
+    :host(.zk-nc-dark) #zk-set-help-pop .zk-set-help-sec strong,
+    :host(.zk-nc-dark) #zk-set-help-pop .zk-set-help-sec h4{color:#9ecbff!important}
     :host(.zk-nc-dark) #zk-set-help-pop p,
     :host(.zk-nc-dark) #zk-set-help-pop div:not(.zk-set-help-head){color:#c2d4e8!important}
-    :host(.zk-nc-dark) #zk-set-help-pop code{background:rgba(255,255,255,.1)!important;color:#a9c9ff!important}
+    :host(.zk-nc-dark) #zk-set-help-pop code{background:rgba(120,170,225,.14)!important;border-color:rgba(120,170,225,.2)!important;color:#a9c9ff!important}
     :host(.zk-nc-dark) #zk-set-help-pop .zk-set-help-body{color:#c2d4e8!important}
+    /* 「第三方服务」引导按钮：出现在视频下载 / 验证码等需要用户自备站点的地方 */
+    .zk-doc-btn{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:9px;
+      border:1px dashed rgba(22,119,255,.45);background:rgba(22,119,255,.10);color:var(--nc-accent);font:inherit;font-size:12px;
+      font-weight:700;cursor:pointer;transition:border-color .18s,color .18s,background .18s,transform .18s}
+    .zk-doc-btn:hover{border-color:var(--nc-accent);background:rgba(22,119,255,.18);transform:translateY(-1px)}
+    .zk-vd-docrow{margin:12px 0 14px;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+    .zk-vd-docrow .zk-set-row-desc{margin:0}
     /* ===== 底栏改成浮动模块：圆角 + 留白，与内容区不再是一条直角横线 ===== */
     #zk-set-settings-footer{margin:0 14px 12px!important;padding:9px 14px!important;border-radius:15px!important;background:var(--nc-card)!important;border:1px solid var(--nc-card-bd)!important;box-shadow:0 12px 26px -18px var(--nc-shadow),inset 0 1px 0 rgba(255,255,255,.32)!important;backdrop-filter:blur(18px) saturate(1.5);-webkit-backdrop-filter:blur(18px) saturate(1.5)}
     @media (max-width:720px){.zk-ui-dock{margin:8px 10px 12px}.zk-ui-tile{height:60px}#zk-set-settings-footer{margin:0 10px 8px!important;padding:8px 10px!important}}
@@ -8055,7 +8210,7 @@
       #zk-set-settings-box{background:#f7fbff!important}
       #zk-set-settings-sidebar{background:#eef7ff!important}
       #zk-set-settings-main{background:#f4f9ff!important}
-      .zk-set-group,.zk-fb,.zk-aw-upd,.zk-dash-panel{background:#fff!important}
+      .zk-set-group,.zk-fb,.zk-dash-panel{background:#fff!important}
       #zk-set-settings-box.zk-nc-dark{background:#101827!important}
       #zk-set-settings-box.zk-nc-dark #zk-set-settings-sidebar{background:#151f31!important}
       #zk-set-settings-box.zk-nc-dark #zk-set-settings-main{background:#121a29!important}
@@ -8078,6 +8233,9 @@
         if (!activeClose) return;
         const path = e.composedPath ? e.composedPath() : [];
         if (activeClose.keep && activeClose.keep(path)) return;
+        // 保险：目标在浮层/选项内就绝不关闭（不同浏览器 composedPath 在 capture 阶段可能不含 shadow 内部节点）
+        const t = e.target;
+        if (t && t.closest && t.closest('.zk-sel-pop, .zk-sel-face')) return;
         closeActive();
       }, true);
     } catch (e) {}
@@ -8135,12 +8293,22 @@
         pop.style.left = Math.max(6, r.left - hr.left) + 'px';
         face.classList.add('open');
         Array.prototype.forEach.call(pop.querySelectorAll('.zk-sel-opt'), function (b) {
-          b.addEventListener('click', function (ev) {
-            ev.preventDefault();
+          // 选中走 pointerdown：真实鼠标/触控板下它先于 click，且不会被上层 capture 吞掉；
+          // click 作为兜底（键盘/老浏览器），用 done 标志避免重复触发。
+          let done = false;
+          function pick(ev) {
+            if (ev) { try { ev.preventDefault(); ev.stopPropagation(); } catch (e) {} }
+            if (done) return; done = true;
             const i = parseInt(b.getAttribute('data-i'), 10);
-            if (i !== sel.selectedIndex) { sel.selectedIndex = i; try { sel.dispatchEvent(new Event('change', { bubbles: true })); } catch (e) {} }
+            if (i !== sel.selectedIndex) {
+              sel.selectedIndex = i;
+              try { sel.dispatchEvent(new Event('change', { bubbles: true })); } catch (e) {}
+            }
             sync(); close();
-          });
+          }
+          b.addEventListener('pointerdown', pick);
+          b.addEventListener('mousedown', pick);   // 老环境/被 polyfill 时兜底
+          b.addEventListener('click', pick);
         });
         const cur = pop.querySelector('.zk-sel-opt.on');
         if (cur && typeof cur.scrollIntoView === 'function') { try { cur.scrollIntoView({ block: 'nearest' }); } catch (e) {} }
@@ -8164,6 +8332,7 @@
         }
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); if (pop) close(); else open(); }
       });
+      wrap._ncSync = sync;   // 供配置回读刷新胶囊文字（改 value 不触发 change，得手动同步）
       sel.addEventListener('change', sync);   // 其它代码改 select.value 时（如语言重建/守卫脚本），胶囊文本跟着变
       sync();
     });
@@ -8239,24 +8408,31 @@
     function readProxy(p) { const o = cfg[p[0]]; return o ? o[p[1]] : undefined; }
     function saveProxy(p, val) { if (!cfg[p[0]]) cfg[p[0]] = {}; cfg[p[0]][p[1]] = val; setConfig(cfg); try { flushConfig(); } catch (e) {} }
 
-    // 自填接口地址输入框的「接口说明」按钮文案与提示：按 key 区分，避免两个按钮内容完全相同且与实际接口性质不符
+    // 自填接口地址输入框的「如何获取」按钮文案与提示：按 key 区分，避免两个按钮内容完全相同且与实际接口性质不符
     const PRESET_HINTS = {
       captchaApiFast: {
-        title: '极速接口填写说明：需自行提供可信 OCR 服务地址，脚本不内置任何接口',
-        toast: '「极速」引擎用于识别普通数字、字母、算术验证码。脚本不内置任何接口，请在上方粘贴你信任的 OCR 服务地址（可自建、社区或商业接口）；验证码图片将上传至该地址，留空则极速引擎跳过。',
-        disclaimer: '免责声明：所接 OCR 服务均为第三方提供，与本脚本无隶属或合作关系；请勿上传含敏感信息的图片，账号与资费由你与服务提供方自行约定。'
+        title: '极速接口：需你自备一个 OCR 服务地址（脚本不内置任何服务商）',
+        url: NC_DOC.thirdParty,
+        toast: '「极速」引擎识别普通数字 / 字母 / 算术验证码，需要你自备一个可信的 OCR 服务地址（可自建，或用社区 / 商业服务）。将打开 README 的「第三方服务」章节，那里列了常见服务与填写方法；把地址粘到上方即可，留空则极速引擎跳过。',
+        disclaimer: '免责声明：接口服务均由第三方提供，与本脚本无隶属或合作关系；请勿上传含敏感信息的图片，账号与资费由你与服务提供方自行约定，本脚本不收取任何费用。'
       },
       captchaApiPrecise: {
-        title: '精准接口填写说明：常用 like996 公益接口，需注册获取 32 位识别码',
-        url: 'https://www.like996.icu:1205/',
-        toast: '「精准」引擎支持普通验证码与滑块，常用 like996 公益接口（免费、社区维护）。将在新标签页打开其官网 https://www.like996.icu:1205/ —— 注册账号后将「精准接口地址」与 32 位「识别码」分别填入上方两项；留空则精准引擎跳过。',
-        disclaimer: '免责声明：like996 为第三方公益服务，与本脚本无隶属或合作关系；使用即代表你同意其服务条款，相关账号、识别额度与上传的验证码图片由你自行负责。'
+        title: '精准接口：需自备支持滑块 / 图形的 OCR 服务（脚本不内置任何服务商）',
+        url: NC_DOC.thirdParty,
+        toast: '「精准」引擎支持普通验证码与滑块，需要你自备「接口地址」与「识别码」（可自建，或用社区 / 商业服务）。将打开 README 的「第三方服务」章节查看可选服务与填写方法；留空则精准引擎跳过。',
+        disclaimer: '免责声明：接口服务均由第三方提供，与本脚本无隶属或合作关系；使用即代表你同意其服务条款，上传的验证码图片、账号与额度由你自行负责。'
+      },
+      captchaMathApi: {
+        title: '算术接口地址：需自备支持算术图的识别服务（脚本不内置任何服务商）',
+        url: NC_DOC.thirdParty,
+        toast: '「算术验证码」识别需要你自备一个服务地址 + Token（多为按次计费的商业接口）。将打开 README 的「第三方服务」章节，那里列了常见服务、接口协议与填写示例；留空则算术图跳过识别。',
+        disclaimer: '免责声明：识别服务由第三方提供，与本脚本无隶属或合作关系；上传的验证码图片、账号与资费均由你与服务提供方自行约定，本脚本不收取任何费用。'
       },
       captchaYunmaToken: {
-        title: '云码 Token 获取说明：jfbym.com 商业服务（按识别次数计费）',
-        url: 'https://www.jfbym.com',
-        toast: '「算术验证码」识别需 jfbym.com 的云码 Token（商业服务，按识别次数计费，需充值积分）。将在新标签页打开其官网 https://www.jfbym.com —— 注册并充值后获取 Token 粘贴到上方「云码 Token」；留空则算术图跳过识别。',
-        disclaimer: '免责声明：jfbym 为第三方商业服务，与本脚本无隶属或合作关系；资费、账号与上传的验证码图片均由你与 jfbym 自行约定，本脚本不收取任何费用。'
+        title: '算术验证码 Token：需自备支持算术图的 OCR 服务（脚本不内置任何服务商）',
+        url: NC_DOC.thirdParty,
+        toast: '「算术验证码」识别需要一个支持算术图的 OCR 服务 Token（常见为按次计费的商业服务）。将打开 README 的「第三方服务」章节查看可选服务与获取方式；拿到 Token 后粘到上方，留空则算术图跳过识别。',
+        disclaimer: '免责声明：相关服务由第三方提供，与本脚本无隶属或合作关系；资费、账号与上传的验证码图片均由你与服务提供方自行约定，本脚本不收取任何费用。'
       }
     };
 
@@ -8264,56 +8440,37 @@
       {
         key: 'adblock', label: '净化增强', icon: '🛡',
         sections: [
-          { title: '① 通用防护（全站生效）', items: [
+                    { title: '① 通用防护与外观（全站生效）', items: [
             { k: 'kgpingbis', t: '被动去广告', d: '通用算法扫描悬浮/弹窗牛皮癣广告。作用范围可选：仅已知站点（默认，轻）/ 全站（更重，慎开）/ 关闭', type: 'select', opts: [['known','仅已知站点（默认）'],['all','全站（更重）'],['off','关闭']] },
             { k: 'kgpingbiiframe', t: '禁用第三方 iframe', d: '屏蔽来自其他域名的内嵌框架，阻断联盟广告与跟踪' },
-            // 【护眼色归位】护眼模式 + 护眼色原本被拆散：护眼模式开关在「③ 搜索引擎·美化与增强」，
-            //  护眼色取色器却被手动 append 到「① 通用防护（全站生效）」，前不着村后不着店。
-            //  现把两者都归到「① 通用防护（全站生效）」，护眼模式开关紧跟护眼色取色器，且走数据驱动渲染，
-            //  让「护眼色」被正常折叠容器包裹（此前它作为游离的特殊字段被挤出 .zk-set-group-body 之外）。
+            // 【护眼归位】护眼模式 + 护眼色 + 护眼强度同框（v1.1.0 起），避免开关与取色器分居两页
             { k: 'baidueye', t: '护眼模式', d: '全站护眼蒙版（视觉柔和）+ 20-20-20 休息提醒，覆盖全站、视频不反色' },
             { k: 'baidueyeScheduleEnabled', t: '护眼时间表', d: '按起止时间自动开关护眼模式（如 07:00–22:00 日间开、夜间关），开启后时间表接管手动开关' },
             { k: 'baidueyeScheduleOn', t: '开始时间', d: '护眼模式自动开启时间（HH:MM，24 小时制）', type: 'text', tip: 'HH:MM' },
             { k: 'baidueyeScheduleOff', t: '结束时间', d: '护眼模式自动关闭时间（HH:MM，24 小时制）', type: 'text', tip: 'HH:MM' },
             { k: 'baidueyecolor', t: '护眼色', d: '选预设暖色调（Kindle/Night Shift 风格）或用取色器自定义', type: 'color',
-              // 暖色调色板：昏黄/暖黄系（Kindle/Night Shift/f.lux 经典夜览配色），乘以 mix-blend-mode:multiply 让画面柔和
-              // （multiply 是颜色相乘视觉变换，不改变屏幕蓝光发射量；这仅是「夜览/纸张色」氛围，不是「滤蓝光」）
+              // 暖色调色板：昏黄/暖黄系（Kindle/Night Shift/f.lux 经典夜览配色），跟 mix-blend-mode:multiply 让画面更柔和
               presets: [
-                { name: '羊皮纸黄', rgb: '244,236,216' }, // Kindle 经典护眼，柔和
-                { name: '暖黄',     rgb: '255,236,179' }, // macOS Night Shift 同款
-                { name: '米黄',     rgb: '250,236,205' }, // 略温和
-                { name: '淡橄榄绿', rgb: '204,232,207' }, // 兼容旧默认
-                { name: '暖橙',     rgb: '255,221,170' }  // 更深暖色
-              ]
-            },
-            // 护眼强度：柔和/标准/增强 → 蒙版 alpha 0.16/0.26/0.38（用 select 非 switch，buildGroupToggle 已排除它）
-            { k: 'baidueyestrength', t: '护眼强度', d: '护眼蒙版深浅：柔和不刺眼，增强更暖画面（视觉柔和更强）', type: 'select', opts: [['soft','柔和'],['standard','标准'],['strong','增强']] },
-            // 【暗黑归位】暗黑模式原先被放在「性能与高级」分组的「全局增强」里，与「护眼模式」分属两类，
-            //  而二者本质都是「显示外观」，用户找暗黑会直觉去外观相关处、不会想到点开「性能与高级」。
-            //  现统一归入「① 通用防护（全站生效）」与护眼模式同框（该节标题已含"全站生效"语义）。
-            { k: 'darkMode', t: '暗黑模式', d: '跟随系统自动切换暗黑模式（本站自带暗黑时脚本自动让行，可在油猴菜单强制接管）' },
-            { k: 'cleanCopy', t: '干净复制', d: '复制文本 / 链接时去掉末尾网站声明与追踪参数' },
-            { k: 'autoUnfold', t: '通用自动展开', d: '自动展开简书 / 知乎 / B站专栏等站点的折叠内容（默认关闭；CSDN 仍由「CSDN 自动展开」负责）' },
-            { k: 'linkBypass', t: '外链直达', d: '跳过知乎 / 掘金 / 微博等外链中间页，直接打开目标网址' },
-            // B3（v1.1.0）：自定义选择器规则 —— 站点改版后内置选择器失效时，用户可自行补充（无需等发版）
-            { k: 'customSelectors', t: '自定义选择器规则', d: '补充要隐藏的元素选择器（分号或换行分隔，也可写完整 CSS 规则）', type: 'text', tip: '.ad-banner; #promo' },
-            // 【视频倍速补 UI】v1.1.0：应用逻辑 initVideoSpeedControl() 早已写好且已接入启动列表，
-            // 唯独缺这一行面板控件 → 用户永远改不了倍速（死功能 + README 不实宣传「在设置中调节」）。
-            // v1.1.0 改版：select 下拉（用户嫌丑且只能选固定档）→ 滑块横条：
-            //   0~100 分段指数刻度，1x 精确居中，左滑降到 0.1x、右滑升到 16x；拖动即时应用到当前页 <video>。
-            { k: 'videoSpeed', t: '视频倍速', d: '拖动滑块调节全站视频倍速（0.1x~16x，1x 居中），右侧「1x」一键复位', type: 'range', fmt: 'videoSpeed' },
-            // 悬浮球：翻找设置面板调倍速太麻烦，改由页面角落常驻小控件承担日常调节
-            { k: 'videoSpeedFloat', t: '视频倍速悬浮球', d: '页面角落显示可拖动的倍速悬浮球（倍速 / 静默播放）' }
+                { name: '羊皮纸黄', rgb: '244,236,216' },   // Kindle 经典护眼，柔和
+                { name: '暖黄',     rgb: '255,236,179' },   // 偏暖，接近 f.lux 的 3400K
+                { name: '米黄',     rgb: '250,236,205' },   // 米色纸感，明度略高
+                { name: '淡橄榄绿', rgb: '204,232,207' },   // 绿色系，原文护眼色（默认）
+                { name: '暖橙',     rgb: '255,221,170' }    // 黄昏感，最强暖调
+              ] },
+            { k: 'baidueyestrength', t: '护眼强度', d: '护眼蒙版的深浅：柔和 / 标准 / 增强，档位越高画面越柔和', type: 'select', opts: [['soft','柔和'],['standard','标准'],['strong','增强']] },
+            { k: 'baidueyerest', t: '护眼休息提醒', d: '开启护眼模式后，每 20 分钟提醒你远眺 20 秒（20-20-20 法则）' },
+            // —— 以下属于「外观 · 页面行为」，与护眼组分开；不要插进护眼那 6 项中间 ——
+            { k: 'darkMode', t: '暗黑模式', d: '全站深色主题（与护眼模式二选一即可，可同时开但建议只用一种）' },
+            { k: 'cleanCopy', t: '干净复制', d: '复制正文时去掉末尾声明与 utm / spm 等追踪参数' },
+            { k: 'autoUnfold', t: '通用自动展开', d: '自动展开简书 / 知乎 / B站专栏等站点的折叠内容（CSDN 由上方「CSDN 自动展开」负责）' },
+            { k: 'linkBypass', t: '外链直达', d: '跳过 link.zhihu.com / link.juejin.cn / link.weibo.com 等中转页，直接打开目标网址' },
+            { k: 'customSelectors', t: '自定义选择器规则', d: '补充要隐藏的元素选择器（分号或换行分隔，也可写完整 CSS 规则）；站点改版导致内置规则失效时用它兜底', type: 'text', tip: '.ad-banner; #promo' }
           ]},
-          { title: '② 搜索引擎 · 广告过滤', items: [
-            { k: 'kgbaidued', t: '百度广告过滤', d: '过滤百度搜索系全站广告（含知道 / 百科 / 文库 / 贴吧）' },
+          { title: '② 搜索引擎 · 净化与美化', items: [            { k: 'kgbaidued', t: '百度广告过滤', d: '过滤百度搜索系全站广告（含知道 / 百科 / 文库 / 贴吧）' },
             { k: 'kggoogleed', t: 'Google 广告过滤', d: '过滤 Google 搜索广告' },
             { k: 'kg360ed', t: '360 广告过滤', d: '过滤 360 搜索及子站广告' },
             { k: 'kgbinged', t: 'Bing 广告过滤', d: '过滤 Bing 搜索广告' },
-            { k: 'kgyandexed', t: 'Yandex 广告过滤', d: '过滤 Yandex 搜索广告' }
-          ]},
-          { title: '③ 搜索引擎 · 美化与增强', items: [
-            { k: 'baiducss', t: '百度卡片式美化', d: '百度搜索结果现代卡片式布局' },
+            { k: 'kgyandexed', t: 'Yandex 广告过滤', d: '过滤 Yandex 搜索广告' },            { k: 'baiducss', t: '百度卡片式美化', d: '百度搜索结果现代卡片式布局' },
             { k: 'googlecss', t: 'Google 卡片美化', d: 'Google 搜索结果现代卡片式布局' },
             { k: 'bingcss', t: 'Bing 卡片美化', d: 'Bing 搜索结果现代卡片式布局' },
             { k: 'yandexcss', t: 'Yandex 卡片美化', d: 'Yandex 搜索结果现代卡片式布局' },
@@ -8323,43 +8480,32 @@
             { k: 'baiduhot', t: '隐藏热搜 / AI 栏', d: '隐藏百度热搜推荐和 AI 辅助侧边栏' },
             { k: 'googleAI', t: '隐藏 AI 概述', d: '隐藏 Google AI Overview' },
             { k: 'bingAI', t: '隐藏 Bing Copilot', d: '隐藏 Bing 搜索页的 AI / Copilot 侧边栏与深度搜索区' },
-            { k: 'baidumenu', t: '页面快捷入口', d: '在百度页面显示控制面板入口' }
-          ]},
-          { title: '④ 视频平台 · 广告过滤', items: [
-            { k: 'kgyoued', t: 'YouTube / 优酷 / 腾讯 广告过滤', d: '自动跳过三家平台的贴片广告（同一开关，同时覆盖三家）' },
+            { k: 'baidumenu', t: '页面快捷入口', d: '在百度页面显示控制面板入口' }]},
+          { title: '③ 视频平台 · 净化与增强', items: [            { k: 'kgyoued', t: 'YouTube / 优酷 / 腾讯 广告过滤', d: '自动跳过三家平台的贴片广告（同一开关，同时覆盖三家）' },
             { k: 'kgbilied', t: 'B站广告过滤', d: '过滤 B站推广卡片、直播广告、小火箭广告' },
             { k: 'haokanPauseAd', t: '好看视频暂停广告', d: '自动关闭好看视频暂停时弹出的联盟暂停广告' },
-            { k: 'kgtwied', t: 'Twitter / X 推广过滤', d: '隐藏推广推文' }
-          ]},
-          { title: '⑤ 视频平台 · 增强与下载', items: [
-            { k: 'ytpRotate', t: 'YouTube 旋转 / 翻转', d: '嵌入旋转 / 翻转 / 填充工具栏（普通视频 + Shorts）' },
+            { k: 'kgtwied', t: 'Twitter / X 推广过滤', d: '隐藏推广推文' },            { k: 'ytpRotate', t: 'YouTube 旋转 / 翻转', d: '嵌入旋转 / 翻转 / 填充工具栏（普通视频 + Shorts）' },
             { k: 'kgbiliQuality', t: 'B站画质解锁', d: '未登录状态解锁 1080P 画质选项' },
             { k: 'kgbiliLogin', t: 'B站绕过登录', d: '关闭登录弹窗和"请登录后观看"提示' },
-            { k: 'kgyoumv', t: 'YouTube 视频下载', d: '播放器工具栏添加下载按钮，跳转设置页所选站点并预填链接' },
-            { k: 'kgtwimv', t: 'Twitter / X 视频下载', d: '在推文视频旁添加下载按钮' }
-          ]},
-          { title: '⑥ 社区内容 · 广告与登录墙', items: [
-            { k: 'kgzhihued', t: '知乎广告 + 登录弹窗', d: '过滤知乎广告、关闭登录弹窗并重定向登录页' },
+            { k: 'kgyoumv', t: 'YouTube 视频下载按钮', d: '在播放器工具栏加下载按钮，跳转到「视频下载」页里选中的解析站并预填链接' },
+            { k: 'kgtwimv', t: 'Twitter / X 视频下载按钮', d: '在推文视频旁添加下载按钮' },
+            { k: 'videoSpeed', t: '视频倍速', d: '全站视频统一播放倍速，1x 位于滑块正中；右侧「1x」一键复位', type: 'range' },
+            { k: 'videoSpeedFloat', t: '倍速悬浮球', d: '页面有视频时在角落显示可拖动小球，点开即可切倍速 / 静默播放 / 恢复 1x；无视频页面自动隐藏' }]},
+          { title: '④ 社区内容 · 广告与登录墙', items: [            { k: 'kgzhihued', t: '知乎广告 + 登录弹窗', d: '过滤知乎广告、关闭登录弹窗并重定向登录页' },
             { k: 'kgdoubaned', t: '豆瓣广告 + 登录墙', d: '过滤广告并关闭登录弹窗' },
             { k: 'kgweiboed', t: '微博广告过滤', d: '过滤微博信息流广告' },
             { k: 'kgweixined', t: '微信公号广告过滤', d: '过滤微信公众文章里插入的广告和推广' },
             { k: 'csdnAd', t: 'CSDN 广告过滤', d: '去除 CSDN 广告和登录弹窗' },
             { k: 'xhsclean', t: '小红书广告清理', d: '清理信息流推广、侧栏广告与登录墙' },
             { k: 'juejinclean', t: '掘金广告清理', d: '清理掘金信息流与侧栏广告' },
-            { k: 'sfclean', t: '思否广告清理', d: '清理思否广告位与登录墙' }
-          ]},
-          { title: '⑦ 社区内容 · 增强', items: [
-            { k: 'csdnLink', t: 'CSDN 外链直达', d: '跳过 CSDN 外链重定向' },
+            { k: 'sfclean', t: '思否广告清理', d: '清理思否广告位与登录墙' }]},
+          { title: '⑤ 社区内容 · 增强', items: [            { k: 'csdnLink', t: 'CSDN 外链直达', d: '跳过 CSDN 外链重定向' },
             { k: 'csdnExpand', t: 'CSDN 自动展开', d: '自动展开全文和代码块' },
             { k: 'csdnClean', t: 'CSDN 纯净阅读', d: '隐藏侧边栏，文章居中显示' },
             { k: 'kgweibomv', t: '微博视频下载', d: '在微博视频旁添加下载按钮' },
-            { k: 'pojieSignIn', t: '吾爱破解自动签到', d: '进入吾爱破解论坛后自动完成每日签到' }
-          ]},
-          { title: '⑧ linux.do 增强', items: [
-            { k: 'ldNewTab', t: '标题新标签打开', d: '点击话题标题时在新标签页打开' },
-            { k: 'ldFloor', t: '帖子内楼层号', d: '在帖子页每个回复头部显示「N 楼」（楼主显示「楼主」）' },
-            { k: 'ldQuickShare', t: '快捷分享', d: '帖子页右下角显示「分享」按钮，一键复制标题 / 分类 / 标签 / 链接' }
-          ]}
+            { k: 'pojieSignIn', t: '吾爱破解自动签到', d: '进入吾爱破解论坛后自动完成每日签到' },            { k: 'ldNewTab', t: 'linux.do 标题新标签', d: '点击话题标题时在新标签页打开' },
+            { k: 'ldFloor', t: 'linux.do 帖子内楼层号', d: '在帖子页每个回复头部显示「N 楼」（楼主显示「楼主」）' },
+            { k: 'ldQuickShare', t: 'linux.do 快捷分享', d: '帖子页右下角显示「分享」按钮，一键复制标题 / 分类 / 标签 / 链接' }]},
           // ⑧ 内容屏蔽（关键词 / 网址）原在「净化增强」组，但它的**名单**（pingbikw / pingbiurl）
           //   一直挂在「名单管理」组 —— 开关与名单分居两处，用户按直觉去「名单管理」找开关会扑空。
           //   v1.1.0：整节迁到「名单管理」，与③内容级名单同页，开关与名单终于同框。
@@ -8374,11 +8520,12 @@
           ]},
           { title: '② 识别引擎与凭证', items: [
             { k: 'captchaEngine', t: '识别引擎', d: '自动：极速接口优先，失败后回退精准；极速：免识别码，但需填写下方接口地址（数英/算术）；精准：需下方识别码（支持滑块）。', type: 'select', opts: [['auto','自动（极速优先）'],['fast','极速（免识别码·需接口地址）'],['precise','精准（需识别码·含滑块）']] },
-            { k: 'captchaApiFast', t: '极速接口地址', d: '「极速」引擎调用的服务地址。留空 = 极速引擎直接跳过，不向任何外部服务器发送数据。请自行搭建或选用可信 OCR 服务后填写；验证码图片将上传至该地址。点击右侧「接口说明」查看填写方式。', type: 'text', tip: '粘贴你信任的 OCR 服务地址（可自建/社区/商业接口）', preset: 'captchaApiFast' },
-            { k: 'captchaApiPrecise', t: '精准接口地址', d: '「精准」引擎（含滑块）调用的服务地址。留空 = 精准引擎直接跳过。填写后验证码图片、识别码与当前网页网址会发送给该服务器；常用 like996 公益接口（官网 https://www.like996.icu:1205/，第三方服务，与本脚本无关），点击右侧「接口说明」可直达注册页。', type: 'text', tip: '粘贴精准接口地址（如 like996）', preset: 'captchaApiPrecise' },
-            { k: 'captchaPreciseId', t: '精准引擎识别码', d: '仅「精准 / 自动」模式需要，由你所填写的精准接口服务方提供（原 like996 为 32 位）。留空则精准模式跳过识别。', type: 'text', tip: '精准引擎识别码' },
-            { k: 'captchaYunmaToken', t: '云码 Token', d: '仅「算术验证码」需要（如「3+5=?」图片）。在 jfbym.com 获取 Token（商业服务，按识别次数计费，需充值积分，官网 https://www.jfbym.com，第三方服务，与本脚本无关）；留空则算术图跳过识别。点击右侧「接口说明」可直达注册页。', type: 'text', tip: '算术验证码用', preset: 'captchaYunmaToken' },
-            { k: 'captchaYunmaDev', t: '云码开发者标识（可选）', d: '在 jfbym.com 后台获取的开发者标识（developer_tag），用于把识别调用归属到你的账号。可选，留空则请求不带该标识（由云码平台自行归属），不影响识别功能。', type: 'text', tip: '云码 developer_tag（可留空）' }
+            { k: 'captchaApiFast', t: '极速接口地址', d: '「极速」引擎调用的服务地址。留空 = 极速引擎直接跳过，不向任何外部服务器发送数据。请自行搭建或选用可信 OCR 服务后填写；验证码图片将上传至该地址。脚本不内置任何服务商，点右侧「如何获取」查看可选服务与填写方式。', type: 'text', tip: '粘贴你信任的 OCR 服务地址（可自建/社区/商业接口）', preset: 'captchaApiFast' },
+            { k: 'captchaApiPrecise', t: '精准接口地址', d: '「精准」引擎（含滑块）调用的服务地址。留空 = 精准引擎直接跳过。填写后验证码图片、识别码与当前网页网址会发送给该服务器；脚本不内置任何服务商，点右侧「如何获取」在文档里挑一个可用接口。', type: 'text', tip: '粘贴你选定的接口地址', preset: 'captchaApiPrecise' },
+            { k: 'captchaPreciseId', t: '精准引擎识别码', d: '仅「精准 / 自动」模式需要，由你所填写的接口服务方提供（位数见该服务说明）。留空则精准模式跳过识别。', type: 'text', tip: '服务方给你的识别码' },
+            { k: 'captchaMathApi', t: '算术接口地址', d: '仅「算术验证码」（如「3+5=?」图片）需要。脚本不内置任何服务商，请填入一个支持 {image, type, token} JSON 协议的识别接口地址；留空则算术图跳过识别，不会上传任何内容。', type: 'text', tip: '如 https://你的服务/api/ocr', preset: 'captchaMathApi' },
+            { k: 'captchaYunmaToken', t: '算术验证码 Token', d: '仅「算术验证码」需要（如「3+5=?」图片）。需你自备支持算术图的 OCR 服务 Token（多为按次计费），脚本不内置任何服务商；点右侧「如何获取」查看可选服务。留空则算术图跳过识别。', type: 'text', tip: '服务方给你的 Token', preset: 'captchaYunmaToken' },
+            { k: 'captchaYunmaDev', t: '开发者标识（可选）', d: '你所选识别服务后台的「开发者标识」，用于把调用归属到你的账号。可选，留空则请求不带该标识（由服务方自行归属），不影响识别功能。', type: 'text', tip: '服务方的开发者标识（可留空）' }
           ]},
           { title: '③ 智能与防护', items: [
             { k: 'captchaAutoFind', t: '自动查找验证码', d: '无手动规则时，按属性关键词（code/captcha/yzm…）自动定位验证码与输入框并填充。' },
@@ -8518,13 +8665,13 @@
           `</select>`;
       } else if (item.type === 'text') {
         ctrl = `<input type="text" class="zk-set-text" data-key="${item.k}" placeholder="${tp('ph.' + item.k, item.tip || '')}" value="${val || ''}">`;
-        // 自填接口地址的输入框：附一个「接口说明」引导按钮（不内置任何第三方地址，仅展示填写引导）。
+        // 自填接口地址的输入框：附一个「如何获取」引导按钮（不内置任何第三方地址，仅展示填写引导）。
         if (item.preset) {
           const ph = PRESET_HINTS[item.k];
           const phTitle = ph ? ph.title : tp('panel.apiGuide', '接口填写说明');
-          // 按钮**显示文本**固定为「接口说明」（避免把超长 ph.title 当按钮文本撑爆布局），
+          // 按钮**显示文本**固定为「如何获取」（避免把超长 ph.title 当按钮文本撑爆布局），
           // 完整说明放进 title tooltip。
-          const phLabel = t('panel.apiGuide') || '接口说明';
+          const phLabel = t('panel.apiGuide') || '如何获取';
           if (ph && ph.url) {
             ctrl += `<a class="zk-set-preset-btn" href="${ph.url}" target="_blank" rel="noopener noreferrer" data-preset="${item.k}" title="${phTitle}">${phLabel}</a>`;
           } else {
@@ -8836,20 +8983,25 @@
       @keyframes zkSetSectionIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
       .zk-set-help{display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:50%;background:linear-gradient(135deg,#1677ff,#38bdf8);color:#fff;font-size:10px;font-weight:700;font-family:Georgia,serif;cursor:pointer;margin-left:6px;flex-shrink:0;vertical-align:middle;transition:all .2s;box-shadow:0 2px 5px rgba(22,119,255,.2)}
       .zk-set-help:hover{transform:scale(1.1);box-shadow:0 3px 8px rgba(22,119,255,.3)}
-      #zk-set-help-backdrop{position:fixed;inset:0;background:rgba(15,23,42,.55);z-index:${NC_Z_TOP};display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px);pointer-events:auto}
+      /* 【v1.5.1 蒙版圆角】宿主带 transform → position:fixed 的遮罩以宿主为包含块，
+         恰好盖住面板矩形；边角必须与面板盒同为 20px 圆角，否则四角露出直角暗块（用户实测反馈）。 */
+      #zk-set-help-backdrop{position:fixed;inset:0;background:rgba(15,23,42,.45);z-index:${NC_Z_TOP};display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(14px) saturate(1.3);pointer-events:auto;border-radius:20px;overflow:hidden}
       #zk-set-help-backdrop.show{display:flex}
-      /* 【帮助弹层收白 · v1.1.0】四段（作用/原理/维护/风险）每段都带 16px 上下留白 ×4 + body 22px 底留白，
-         一段一句话时整屏近半是空白。统一压到 10px 行距，宽度 460→420，信息密度显著提升。 */
-      #zk-set-help-pop{position:relative;width:420px;max-width:92vw;max-height:74vh;overflow-y:auto;background:rgba(255,255,255,.98);border-radius:14px;box-shadow:0 24px 80px rgba(0,0,0,.35),0 0 0 1px rgba(255,255,255,.2) inset;border:1px solid rgba(255,255,255,.15);animation:zkSetFadeIn .25s ease}
-      #zk-set-help-pop .zk-set-help-head{padding:11px 16px;background:linear-gradient(90deg,#1677ff,#38bdf8);color:#fff;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center;border-radius:14px 14px 0 0;position:sticky;top:0;box-shadow:0 2px 10px rgba(22,119,255,.2)}
-      #zk-set-help-pop .zk-set-help-head button{background:rgba(255,255,255,.2);border:none;color:#fff;width:24px;height:24px;border-radius:50%;cursor:pointer;font-size:16px;line-height:24px;flex-shrink:0;transition:all .2s}
-      #zk-set-help-pop .zk-set-help-head button:hover{background:rgba(255,255,255,.35);transform:rotate(90deg)}
-      #zk-set-help-pop .zk-set-help-body{padding:12px 16px 14px}
-      #zk-set-help-pop .zk-set-help-sec{margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f1f5f9}
-      #zk-set-help-pop .zk-set-help-sec:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
-      #zk-set-help-pop .zk-set-help-sec h4{margin:0 0 5px;font-size:12.5px;color:#1677ff;display:flex;align-items:center;gap:7px;font-weight:700}
-      #zk-set-help-pop .zk-set-help-sec h4:before{content:'';display:inline-block;width:5px;height:5px;border-radius:50%;background:#38bdf8}
-      #zk-set-help-pop .zk-set-help-sec p{margin:0;font-size:12.5px;color:#475569;line-height:1.65}
+      /* 【v1.5.1 帮助弹层 · 液态玻璃重构】半透玻璃 + saturate 提亮；四段改为圆角子卡片，
+         去掉生硬的下划分隔线。⚠ text-align/direction 必须显式重置：弹层是面板盒子的兄弟节点，
+         Shadow DOM 只隔离选择器、可继承属性照样从页面漏进来（站点 body{text-align:center} 会把帮助文字顶成居中）。 */
+      #zk-set-help-pop{position:relative;width:440px;max-width:92vw;max-height:74vh;overflow-y:auto;background:rgba(255,255,255,.66);backdrop-filter:blur(28px) saturate(1.7);-webkit-backdrop-filter:blur(28px) saturate(1.7);border-radius:18px;box-shadow:0 24px 80px rgba(15,23,42,.30),0 0 0 1px rgba(255,255,255,.35) inset,0 1px 0 rgba(255,255,255,.55) inset;border:1px solid rgba(255,255,255,.55);animation:zkSetFadeIn .25s ease;text-align:left;direction:ltr;color:#1e293b}
+      #zk-set-help-pop .zk-set-help-head{padding:13px 18px;background:linear-gradient(90deg,rgba(22,119,255,.14),rgba(56,189,248,.07));color:#0b57d0;font-weight:700;font-size:14px;display:flex;justify-content:space-between;align-items:center;gap:10px;border-radius:18px 18px 0 0;position:sticky;top:0;backdrop-filter:blur(24px) saturate(1.6);-webkit-backdrop-filter:blur(24px) saturate(1.6);border-bottom:1px solid rgba(255,255,255,.5);box-shadow:0 1px 0 rgba(15,23,42,.04)}
+      #zk-set-help-pop .zk-set-help-head button{background:rgba(255,255,255,.55);border:1px solid rgba(148,163,184,.28);color:#475569;width:26px;height:26px;border-radius:50%;cursor:pointer;font-size:15px;line-height:22px;flex-shrink:0;transition:all .2s;backdrop-filter:blur(8px)}
+      #zk-set-help-pop .zk-set-help-head button:hover{background:#fff;color:#0b57d0;transform:rotate(90deg)}
+      #zk-set-help-pop .zk-set-help-body{padding:14px 16px 16px}
+      #zk-set-help-pop .zk-set-help-sec{margin-bottom:10px;padding:10px 13px;border:1px solid rgba(148,163,184,.16);border-radius:12px;background:rgba(255,255,255,.5);box-shadow:0 1px 3px rgba(15,23,42,.04)}
+      #zk-set-help-pop .zk-set-help-sec:last-child{margin-bottom:0}
+      #zk-set-help-pop .zk-set-help-sec h4{margin:0 0 6px;font-size:12.5px;color:#0b57d0;display:flex;align-items:center;gap:7px;font-weight:700;letter-spacing:.3px}
+      #zk-set-help-pop .zk-set-help-sec h4:before{content:'';display:inline-block;width:6px;height:6px;border-radius:50%;background:linear-gradient(135deg,#1677ff,#38bdf8);box-shadow:0 0 6px rgba(56,189,248,.55)}
+      #zk-set-help-pop .zk-set-help-sec p{margin:0;font-size:12.5px;color:#475569;line-height:1.75;word-break:break-word}
+      #zk-set-help-pop .zk-set-help-sec p b{color:#0b57d0;font-weight:700}
+      #zk-set-help-pop code{background:rgba(22,119,255,.08);border:1px solid rgba(22,119,255,.12);color:#0b57d0;border-radius:5px;padding:1px 5px;font-size:11.5px}
       /* —— 划词搜索自定义面板样式（安东蓝主题 #1677ff）—— */
       .zkss-root{font-size:13px}
       .zkss-hint-inline{margin-left:auto;font-size:11px;font-weight:400;color:#1677ff;opacity:.75}
@@ -8867,6 +9019,7 @@
       /* —— 移动端响应式（≤640px）：侧边栏折叠为顶部横向 tab —— */
       @media (max-width:640px){
         #zk-set-settings-box{flex-direction:column;width:100%;height:100%;max-width:100vw;max-height:100vh;border-radius:0;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+        #zk-set-help-backdrop{border-radius:0;padding:0}
         #zk-set-settings-sidebar{width:100%!important;flex-direction:row!important;overflow-x:auto;overflow-y:hidden;flex-shrink:0;padding:0;border-bottom:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,#16273f,#0f1d31)}
         #zk-set-settings-sidebar .zk-set-logo{display:none}
         #zk-set-settings-sidebar .zk-set-cat{padding:13px 14px;white-space:nowrap;border-left:none;border-bottom:3px solid transparent}
@@ -8946,6 +9099,39 @@
       .zkss-val{color:#1677ff;font-weight:600;min-width:auto!important}
       .zkss-tip{font-size:11px;color:#999}
       .zkss-note{margin-top:10px;color:#666;font-size:12px;line-height:1.7;background:#f7f9fc;border-radius:8px;padding:12px}
+      /* 翻译面板外观：分组副标题 + 实时预览 */
+      .zkss-subline{margin:14px 0 8px;padding-top:10px;border-top:1px dashed #dbe6f3;font-size:12px;font-weight:700;color:#3b5170}
+      .zkss-pv{margin:12px 0 4px}
+      .zkss-pv-stage{position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--nc-card-bd);padding:11px 13px;display:flex;flex-direction:column;gap:10px;
+        background:linear-gradient(120deg,#e8f1fb 0%,#f7f2ec 38%,#eef7f0 66%,#f3eefb 100%);transition:box-shadow .2s,border-color .2s}
+      /* 深色面板下的模拟背景：整体压暗，浮层靠描边/阴影区分，不会刺眼 */
+      .zk-nc-dark .zkss-pv-stage{background:linear-gradient(120deg,#3b465c 0%,#44506a 38%,#3b4762 66%,#47405e 100%);border-color:rgba(150,185,225,.30)}
+      .zk-nc-dark .zkss-pv-stage:before{opacity:.55}
+      .zk-nc-dark .zkss-pv-tag{color:#9fb4cc}
+      .zk-nc-dark .zkss-pv-sum{background:rgba(22,119,255,.20);border-color:rgba(96,165,250,.45);color:#a9c9ff}
+      .zk-nc-dark .zkss-pv-cap{color:#8fa3b8}
+      .zkss-pv-stage:before{content:'';position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle at 82% 22%,rgba(22,119,255,.20) 0 20px,transparent 21px),radial-gradient(circle at 92% 74%,rgba(239,68,68,.18) 0 24px,transparent 25px),radial-gradient(circle at 68% 92%,rgba(16,185,129,.18) 0 16px,transparent 17px)}
+      .zkss-pv-row{position:relative;display:flex;align-items:center;gap:8px}
+      /* 底层正文 + 浮层叠放：浮层 alpha 变化时，下层文字透出程度随之变化 —— 这就是最直观的透明度反馈 */
+      .zkss-pv-cell{position:relative;flex:1 1 auto;min-width:0;min-height:44px}
+      /* 底层正文两行铺满；浮层只盖住上半 —— 半透明时上排字透出、下排始终清晰，对比很直观 */
+      .zkss-pv-under{position:absolute;inset:0;padding:3px 9px;font-size:10.5px;line-height:1.55;color:#7b8ca3;
+        overflow:hidden;white-space:normal;word-break:break-all}
+      .zk-nc-dark .zkss-pv-under{color:#9fb2c8}
+      .zkss-pv-tag{flex:0 0 68px;font-size:10.5px;font-weight:700;color:#64748b;letter-spacing:.02em}
+      .zkss-pv-bar{position:absolute;left:6px;top:5px;z-index:1;display:flex;gap:5px;padding:5px;border-radius:10px;border:1px solid transparent;font-size:11px;font-weight:600;box-shadow:0 4px 14px rgba(0,0,0,.14)}
+      .zkss-pv-bar span{padding:2px 7px;border-radius:6px;background:rgba(128,128,128,.18)}
+      .zkss-pv-bar .zkss-pv-more{opacity:.6}
+      .zkss-pv-trans{position:absolute;left:6px;top:5px;z-index:1;padding:7px 9px;border-radius:10px;border:1px solid transparent;font-size:11px;line-height:1.5;box-shadow:0 6px 18px rgba(0,0,0,.14);max-width:300px}
+      .zkss-pv-trans b{display:block;font-size:11.5px;margin-bottom:2px}
+      .zkss-pv-trans i{font-style:normal;opacity:.85}
+      .zkss-pv-meta{margin-top:7px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+      .zkss-pv-sum{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:999px;background:rgba(22,119,255,.12);border:1px solid rgba(22,119,255,.28);font-size:12px;font-weight:700;color:var(--nc-accent);letter-spacing:.01em}
+      .zkss-pv-cap{font-size:11px;color:var(--nc-ink4)}
+      /* 参数变化时给预览一次明显的边框脉冲，让"我改了哪里"有反馈 */
+      .zkss-pv-stage.pv-flash{animation:zk-pv-flash .45s ease}
+      @keyframes zk-pv-flash{0%{box-shadow:0 0 0 0 rgba(22,119,255,.55)}60%{box-shadow:0 0 0 5px rgba(22,119,255,.10)}100%{box-shadow:0 0 0 0 rgba(22,119,255,0)}}
+      .zkss-trfollow{color:#94a3b8}
       .zkss-note code{background:#eef2f7;padding:2px 6px;border-radius:4px;font-family:Consolas,monospace;color:#c7254e}
       /* 云同步表单：与划词面板同口径（固定左对齐标签列 132px + 对齐的控件列），
          避免两个自定义面板「同一件事看起来两套排版」。 */
@@ -8967,9 +9153,6 @@
       .zkcs-note{margin-bottom:14px;color:#666;font-size:12px;line-height:1.7;background:#f7f9fc;border-radius:8px;padding:12px}
       /* —— 关于面板 —— */
       .zk-about{font-size:13px}
-      .zk-about-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;gap:12px}
-      .zk-about-logo{font-size:16px;font-weight:700;color:#0f172a}
-      .zk-about-ver{font-size:11px;color:#1677ff;background:rgba(22,119,255,.12);padding:4px 12px;border-radius:12px;border:1px solid rgba(22,119,255,.25);font-weight:600;flex-shrink:0}
       .zk-about-desc{font-size:13px;color:#475569;line-height:1.7;background:#eef4ff;border:1px solid #dbeafe;border-radius:10px;padding:12px 14px;margin:0 0 14px}
       .zk-about-desc b{color:#1677ff}
       .zk-about-intro{margin:0 0 14px;border:1px solid #e2e8f0;border-radius:10px;background:#f8fafc;overflow:hidden}
@@ -8977,12 +9160,6 @@
       .zk-about-intro>summary::-webkit-details-marker{display:none}
       .zk-about-intro>summary:before{content:'▸ ';color:#94a3b8}
       .zk-about-intro[open]>summary:before{content:'▾ '}
-      .zk-about-intro-body{padding:0 14px 12px;font-size:12.5px;color:#475569;line-height:1.75}
-      .zk-about-intro-body p{margin:0 0 8px}
-      .zk-about-intro-body b{color:#1677ff}
-      .zk-about-links a{color:#1677ff;text-decoration:none}
-      .zk-about-links a:hover{text-decoration:underline}
-      .zk-about-sep{color:#cbd5e1;margin:0 6px;-webkit-user-select:none;user-select:none}
       /* ===== 「关于」页顶部数据看板（B6 统计汇总）===== */
       .zk-dash{margin:0 0 14px;border:1px solid #dbeafe;border-radius:12px;background:linear-gradient(180deg,#f8fbff 0%,#f3f8ff 100%);padding:14px 16px}
       .zk-dash-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
@@ -9020,22 +9197,9 @@
         .zk-dash-grid{grid-template-columns:minmax(0,1fr)}
         .zk-dash-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
       }
-      .zk-about-search{width:100%;padding:10px 14px;border:1px solid #cbd5e1;border-radius:10px;font-size:13px;outline:none;margin-bottom:12px;box-sizing:border-box;background:#fff}
-      .zk-about-search:focus{border-color:#1677ff;box-shadow:0 0 0 3px rgba(22,119,255,.1)}
-      .zk-about-list{max-height:430px;overflow-y:auto;padding-right:4px}
-      .zk-about-item{border:1px solid #e2e8f0;border-radius:10px;margin-bottom:8px;overflow:hidden;background:#fff}
-      .zk-about-q{display:flex;justify-content:space-between;align-items:center;padding:11px 14px;cursor:pointer;font-size:13px;font-weight:600;color:#1e293b;transition:background .15s}
-      .zk-about-q:hover{background:#f1f5f9}
-      .zk-about-arrow{color:#94a3b8;font-size:12px}
-      .zk-about-a{display:none;padding:4px 14px 14px;border-top:1px solid #f1f5f9}
       .zk-about-a.open{display:block;animation:zkSetSectionIn .2s ease}
-      .zk-about-a .zk-help-sec{margin-bottom:10px}
-      .zk-about-a .zk-help-sec:last-child{margin-bottom:0}
-      .zk-about-a h4{margin:0 0 4px;font-size:12px;color:#1677ff}
-      .zk-about-a p{margin:0;font-size:12px;color:#475569;line-height:1.65}
       /* —— 问题反馈（About 页）—— */
       .zk-fb{margin:0 0 14px;border:1px solid #dbeafe;border-radius:12px;background:linear-gradient(180deg,#f8fbff,#f3f8ff);padding:14px 16px}
-      .zk-fb-title{font-size:14px;font-weight:700;color:#0f172a;margin-bottom:6px}
       .zk-fb-desc{font-size:12px;color:#475569;line-height:1.7;margin:0 0 10px}
       .zk-fb-input{width:100%;min-height:64px;resize:vertical;border:1px solid #cbd5e1;border-radius:8px;padding:8px 10px;font-size:12.5px;line-height:1.6;outline:none;box-sizing:border-box;background:#fff;color:#1e293b;font-family:inherit}
       .zk-fb-input:focus{border-color:#1677ff;box-shadow:0 0 0 3px rgba(22,119,255,.1)}
@@ -9059,6 +9223,7 @@
     const box = document.createElement('div');
     box.id = 'zk-set-cleaner-settings';
     const sr = box.attachShadow({ mode: 'open' });
+    _panelSr = sr;   // 供 setConfig 之后的面板回读使用
     // 无障碍：对话框语义 + Tab 焦点陷阱 + 焦点还原
     box.setAttribute('role', 'dialog');
     box.setAttribute('aria-modal', 'true');
@@ -9167,18 +9332,34 @@
         });
       }
 
-      // —— 划词搜索条配色：跟随面板（复用 initSelectionSearch 里的 applyTheme）——
-      //   ⚠ selSearchTheme 挂在配置的 baidu 命名空间下（getScriptCfg()），不是配置顶层；
-      //     写成 getConfig().selSearchTheme 会新建一个没人读的顶层键，看着"保存成功"其实无效。
+      // —— 划词搜索条 / 翻译面板配色：跟随控制面板 ——
+      //   ⚠ 层级必须与「运行期读取方」一致：initSelectionSearch 里的 ssTheme() 读的是
+      //     getConfig().selSearchTheme（**配置根层**，与 selSearchEngines / selSearchTrans 同级）。
+      //     曾经误写到 getScriptCfg().selSearchTheme（baidu 层）→ 面板里点「一起跟随」看着成功，
+      //     运行时却读不到，划词条与翻译面板纹丝不动。改这里务必回头看一眼 ssTheme()。
       function applySelBarTheme(mode) {
         try {
-          const b = getScriptCfg();
-          if (!b.selSearchTheme) b.selSearchTheme = {};
-          b.selSearchTheme.mode = mode === 'dark' ? 'dark' : 'light';
-          setConfig(getConfig());
+          const c = getConfig();
+          if (!c.selSearchTheme || typeof c.selSearchTheme !== 'object') c.selSearchTheme = {};
+          c.selSearchTheme.mode = mode === 'dark' ? 'dark' : 'light';
+          setConfig(c);
           try { flushConfig(); } catch (e) {}   // 立即落盘：关标签页也不会丢
-          if (typeof ncSelThemeApply === 'function') ncSelThemeApply();
+          if (typeof ncSelThemeApply === 'function') ncSelThemeApply();   // 已存在的划词条立即换色
+          // 面板里「工具栏外观」的主题下拉与预览必须跟着改，否则显示与实际相反
+          try { if (_refreshSelLookUI) _refreshSelLookUI(); } catch (e) {}
         } catch (e) {}
+      }
+
+      // 划词条当前「实际」呈现的主题：mode 可能是 auto / time，按运行期同一套规则解析。
+      //   不能假设它与控制面板一致 —— 很多人面板是深色、划词条仍是浅色。
+      function selBarCur() {
+        try {
+          const t = getConfig().selSearchTheme || {};
+          const m = t.mode || 'dark';
+          if (m === 'auto') return matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          if (m === 'time') { const h = new Date().getHours(); return (h < 6 || h >= 18) ? 'dark' : 'light'; }
+          return m === 'light' ? 'light' : 'dark';
+        } catch (e) { return 'dark'; }
       }
       function hideAsk() { if (ask) ask.hidden = true; }
       function askVisible() { return !!ask && !ask.hidden; }
@@ -9186,9 +9367,13 @@
       function askFollow(next) {
         if (!ask) return;
         if (askDesc) {
-          askDesc.textContent = next === 'dark'
-            ? tp('ui.followDescDark', '控制面板已切换到「夜间」。划词工具条和翻译面板目前仍是浅色，要不要一起变深？')
-            : tp('ui.followDescLight', '控制面板已切换到「白天」。划词工具条和翻译面板目前仍是深色，要不要一起变浅？');
+          const cur = selBarCur();
+          const curTxt = cur === 'dark' ? '深色' : '浅色';
+          const nextTxt = next === 'dark' ? '深色' : '浅色';
+          askDesc.textContent = (next === 'dark'
+            ? tp('ui.followDescDark', '控制面板已切换到「夜间」。')
+            : tp('ui.followDescLight', '控制面板已切换到「白天」。'))
+            + '划词工具条和翻译面板当前是' + curTxt + '，要一起变成' + nextTxt + '吗？';
         }
         if (askNever) askNever.checked = false;
         ask.hidden = false;
@@ -9232,6 +9417,8 @@
             boxEl.classList.add('zk-nc-switching');
             setTimeout(function () { try { boxEl.classList.remove('zk-nc-switching'); } catch (err) {} }, 560);
           }
+          // 划词条已经是目标主题 → 不必询问（否则会出现「确认了却什么都没变」的困惑）
+          if (selBarCur() === next) { if (askVisible()) hideAsk(); return; }
           if (getScriptCfg().uiThemeAskOff) { applySelBarTheme(next); return; }
           if (askVisible()) hideAsk();
           askFollow(next);
@@ -9325,14 +9512,16 @@
       });
     });
 
-    // 「接口说明」引导按钮：仅展示填写引导，不会自动写入任何第三方地址（脚本不内置任何接口）。
+    // 「如何获取」引导按钮：只跳 README 的第三方服务章节，不会自动写入任何地址（脚本不内置任何服务商）。
     sr.querySelectorAll('.zk-set-preset-btn').forEach(btn => {
       btn.addEventListener('click', function() {
         const key = this.getAttribute('data-preset');
         const ph = PRESET_HINTS[key];
         if (!ph) { toast('本脚本不内置任何第三方接口。请在上方粘贴你信任的接口地址；留空则对应引擎跳过。'); return; }
+        // 现在 url 多数指向 README 的「第三方服务」章节（脚本不内置任何服务商），措辞要区分开
+        const isDoc = !!ph.url && /github\.com\/.+README\.md/i.test(ph.url);
         const msg = ph.url
-          ? '已在新标签页打开官网：' + ph.url + '。' + (ph.disclaimer || '')
+          ? (isDoc ? '已在新标签页打开说明文档（含可选服务与填写示例）：' : '已在新标签页打开官网：') + ph.url + '。' + (ph.disclaimer || '')
           : ((ph.toast || '') + ' ' + (ph.disclaimer || ''));
         toast(msg, 'ok');
       });
@@ -9716,7 +9905,7 @@
         + '.zkvd-fields input:focus{border-color:#1677ff}'
         + '.zkvd-del{flex-shrink:0;display:inline-flex;align-items:center;gap:4px;background:#fff;border:1px solid #ffc9c9;color:#ff4d4f;border-radius:6px;padding:5px 11px;font-size:12px;cursor:pointer;transition:background .15s}'
         + '.zkvd-del:hover{background:#fff1f0}'
-        + '.zkvd-add{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding-top:4px;border-top:1px dashed #e6eaf0}'
+        + '.zkvd-add{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding-top:10px;margin-top:2px;border-top:1px dashed #e6eaf0}'
         + '.zkvd-add input{padding:6px 9px;border:1px solid #d6dce5;border-radius:6px;font-size:12px;outline:none;background:#fff}'
         + '.zkvd-add-name{flex:0 0 130px;min-width:100px}'
         + '.zkvd-add-tpl{flex:1;min-width:200px}'
@@ -9726,7 +9915,7 @@
         + '.zkvd-reset:hover{background:#f2f5f9}';
 
       function rowsHtml() {
-        if (!vd.sites.length) return '<div class="zk-set-row-desc">暂无站点，点下方「＋ 添加站点」。</div>';
+        if (!vd.sites.length) return '<div class="zk-set-row-desc">还没有站点。手头没有合适的解析站？先点下方「查看可用清单」看文档，再把地址粘到「＋ 添加站点」里（模板保留 <code>{url}</code> 占位符）。</div>';
         return vd.sites.map(s => {
           const active = (s.key === vd.active);
           return '<div class="zkvd-row' + (active ? ' active' : '') + '" data-key="' + escAttr(s.key) + '">'
@@ -9746,11 +9935,15 @@
           +   '<div class="zk-set-group-title"><svg class="zk-set-gicon" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg> 视频下载站点</div>'
           +   '<div class="zk-set-row-desc zkvd-note">点击播放器上的「下载」按钮会<b>直接跳转到这里选中的站点</b>，并把当前视频链接拼入地址（模板里的 <code>{url}</code> 会被替换为编码后的视频链接）。跳转后脚本会自动把链接填入站点输入框并点击解析/下载，无需回原页面复制粘贴。<br>若某站点不支持地址栏预填，脚本仍会记住链接并在站点页面自动填入。可添加自定义站点，模板中保留 <code>{url}</code> 即可。</div>'
           +   '<div class="zkvd-list">' + rowsHtml() + '</div>'
+          +   '<div class="zk-vd-docrow">'
+          +     '<div class="zk-set-row-desc zkvd-note">本脚本<b>不内置任何第三方解析站</b>：用哪个由你自己决定（可自建，或用公开服务）。</div>'
+          +     NC_DOC_BTN
+          +   '</div>'
           +   '<div class="zkvd-add">'
           +     '<input class="zkvd-add-name" placeholder="新站点名称">'
           +     '<input class="zkvd-add-tpl" placeholder="模板 https://站点/?url={url}">'
           +     '<button class="zkvd-add-btn">＋ 添加站点</button>'
-          +     '<button class="zkvd-reset">恢复默认</button>'
+          +     '<button class="zkvd-reset">清空全部</button>'
           +   '</div>'
           + '</div>';
         bind();
@@ -9789,9 +9982,10 @@
           render();
         };
         root.querySelector('.zkvd-reset').onclick = async () => {
-          if (!(await zkConfirm('将恢复为内置默认下载站点，你添加的自定义站点会被移除。确定继续？', { title: '恢复默认站点', okText: '确定恢复', danger: true }))) return;
-          vd.sites = JSON.parse(JSON.stringify(DEFAULT_CONFIG.videoDownload.sites));
-          vd.active = DEFAULT_CONFIG.videoDownload.active;
+          if (!vd.sites.length) { zkToast('站点列表已经是空的', { type: 'warn' }); return; }
+          if (!(await zkConfirm('将清空全部下载站点（共 ' + vd.sites.length + ' 个），确定继续？', { title: '清空站点列表', okText: '确定清空', danger: true }))) return;
+          vd.sites = [];
+          vd.active = '';
           persist(); render();
         };
       }
@@ -10199,13 +10393,6 @@
           .zk-aw-dtitle{font-size:15px;font-weight:700;color:#0f172a}
           .zk-aw-pane{display:none}
           .zk-aw-pane.active{display:block}
-          .zk-aw-updates{display:flex;flex-direction:column;gap:10px}
-          .zk-aw-upd{border:1px solid #e2e8f0;border-radius:12px;padding:12px 14px;background:linear-gradient(180deg,#fff,#f8fafc)}
-          .zk-aw-upd-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
-          .zk-aw-upd-head b{font-size:14px;color:#0f172a}
-          .zk-aw-upd-head span{font-size:11px;color:#94a3b8}
-          .zk-aw-upd-head em{font-style:normal;font-size:10px;color:#1677ff;background:#e8f1ff;border-radius:20px;padding:2px 8px}
-          .zk-aw-upd ul{margin:0;padding-left:18px;color:#475569;font-size:12px;line-height:1.7}
           .zk-aw-more{display:inline-flex;align-items:center;gap:6px;margin-top:12px;border:1px solid #cbd5e1;background:#fff;color:#1677ff;border-radius:9px;padding:8px 13px;font-size:12px;cursor:pointer}
           .zk-aw-more:hover{background:#f0f7ff;border-color:#1677ff}
           .zk-aw-intro{margin-top:10px;border-top:1px dashed #e2e8f0;padding-top:10px}
@@ -10214,7 +10401,6 @@
           .zk-aw-intro .zk-about-links{font-size:12px;color:#64748b}
           .zk-aw-intro a{color:#1677ff;text-decoration:none}
           .zk-aw-intro a:hover{text-decoration:underline}
-          .zk-about-sep{color:#cbd5e1;margin:0 4px}
           @media (max-width:720px){.zk-aw-wheel{width:min(360px,92vw)}.zk-aw-preview{width:210px}.zk-aw-lab{font-size:14px}.zk-aw-sub{font-size:10px}}
           @media (prefers-reduced-motion:reduce){.zk-aw-wheel,.zk-aw-ring{animation:none}.zk-aw-g{transition:none}}
         </style>
@@ -10423,6 +10609,8 @@
       let engines = cfg.selSearchEngines;
       const theme = cfg.selSearchTheme;
       const tr = cfg.selSearchTrans;
+      if (!cfg.selSearchTransLook || typeof cfg.selSearchTransLook !== 'object') cfg.selSearchTransLook = { mode: 'follow', opacity: 1, glass: false };
+      const look = cfg.selSearchTransLook;
       function persist() { setConfig(getConfig()); }
       let _persistTimer = null;
       function persistLater() { clearTimeout(_persistTimer); _persistTimer = setTimeout(persist, 400); }
@@ -10437,7 +10625,21 @@
         let m = t.mode; if (m === 'auto') m = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; else if (m === 'time') { const h = new Date().getHours(); m = (h < 6 || h >= 18) ? 'dark' : 'light'; }
         const p = P[m] || P.dark; const r = document.documentElement;
         r.style.setProperty('--sh-bg-rgb', p.bg); r.style.setProperty('--sh-text', p.text); r.style.setProperty('--sh-hover-rgb', p.hover); r.style.setProperty('--sh-hover-op', p.hop);
-        r.style.setProperty('--sh-opacity', t.opacity != null ? t.opacity : 1); r.style.setProperty('--sh-blur', t.glass ? '12px' : '0px'); r.style.setProperty('--sh-border', p.border);
+        // 存的透明度 → CSS alpha（applyThemeLive 里这一行同时负责 blur / border，不能拆断）
+        r.style.setProperty('--sh-opacity', 1 - (t.opacity != null ? t.opacity : 0));
+        r.style.setProperty('--sh-blur', t.glass ? '12px' : '0px');
+        r.style.setProperty('--sh-border', p.border);
+        // 翻译面板独立外观：有独立设置就写 --tr-*，跟随则清掉让其回落到 --sh-*
+        try {
+          const lk = look;
+          const KEYS = ['--tr-bg-rgb', '--tr-text', '--tr-border', '--tr-op', '--tr-blur'];
+          if (lk.mode === 'dark' || lk.mode === 'light') {
+            const tp = P[lk.mode] || P.dark;
+            r.style.setProperty('--tr-bg-rgb', tp.bg); r.style.setProperty('--tr-text', tp.text); r.style.setProperty('--tr-border', tp.border);
+            r.style.setProperty('--tr-op', 1 - (lk.opacity != null ? lk.opacity : 0));
+            r.style.setProperty('--tr-blur', lk.glass ? '12px' : '0px');
+          } else { KEYS.forEach(function (k) { try { r.style.removeProperty(k); } catch (e) {} }); }
+        } catch (e) {}
       }
       function engineRowsHtml() {
         const sorted = [...engines].sort((a, b) => (a.order || 0) - (b.order || 0));
@@ -10463,15 +10665,41 @@
         +   '<div class="zk-set-row-desc zkss-note">图标填写：留空=默认复制图标；图标名=内置 link/copy/baidu/google/bing/bilibili/youtube/weibo/wiki/translate/xiaohongshu；或粘贴 &lt;svg&gt; 代码 / 图片网址。<br>大多数网站可直接用根路径 favicon：<code>https://域名/favicon.ico</code>（如 <code>https://zhihu.com/favicon.ico</code>）。点「取图标」会按搜索地址自动拼接并下载本地化；点「本地化」可把任意图片网址（ico/jpg/png）抓取并缩放为 32px PNG 内联存储，<b>之后完全不依赖网络</b>。<br>URL 中 <code>{keyword}</code> 自动替换为选中文字（已编码）。</div>'
         + '</div>'
         + '<div class="zk-set-group">'
-        +   '<div class="zk-set-group-title"><svg class="zk-set-gicon" viewBox="0 0 24 24"><path d="M9.06 11.9l8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08"/><path d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z"/></svg> 工具栏外观</div>'
+        +   '<div class="zk-set-group-title"><svg class="zk-set-gicon" viewBox="0 0 24 24"><path d="M9.06 11.9l8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08"/><path d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z"/></svg> 外观</div>'
+        +   '<div class="zkss-pv" id="zkss-pv">'
+        +     '<div class="zkss-pv-stage">'
+        +       '<div class="zkss-pv-row"><span class="zkss-pv-tag">划词工具条</span>'
+        +         '<div class="zkss-pv-cell">'
+        +           '<div class="zkss-pv-under">这行网页正文透过工具条可见 · 透明度越高越透</div>'
+        +           '<div class="zkss-pv-bar"><span>百度</span><span>Google</span><span>必应</span><span class="zkss-pv-more">⋯</span></div>'
+        +         '</div>'
+        +       '</div>'
+        +       '<div class="zkss-pv-row"><span class="zkss-pv-tag">翻译面板</span>'
+        +         '<div class="zkss-pv-cell">'
+        +           '<div class="zkss-pv-under">这段正文的可见程度 = 翻译面板的透明度，调高就能看穿</div>'
+        +           '<div class="zkss-pv-trans"><b>划词翻译</b><i>这是一段示例译文，用来观察字号与对比度。</i></div>'
+        +         '</div>'
+        +       '</div>'
+        +     '</div>'
+        +     '<div class="zkss-pv-meta"><span class="zkss-pv-sum">—</span><span class="zkss-pv-cap">实时预览 · 改任意一项立刻生效</span></div>'
+        +   '</div>'
+        +   '<div class="zkss-subline">划词工具条</div>'
         +   '<div class="zkss-field"><label>主题<span class="zk-set-help" data-help="selTheme">?</span></label><select class="zkss-mode">'
         +     '<option value="dark"' + (theme.mode === 'dark' ? ' selected' : '') + '>深色</option>'
         +     '<option value="light"' + (theme.mode === 'light' ? ' selected' : '') + '>浅色</option>'
         +     '<option value="auto"' + (theme.mode === 'auto' ? ' selected' : '') + '>跟随系统</option>'
         +     '<option value="time"' + (theme.mode === 'time' ? ' selected' : '') + '>跟随时间</option>'
         +   '</select></div>'
-        +   '<div class="zkss-field"><label>透明度<span class="zk-set-help" data-help="selOpacity">?</span> <span class="zkss-val">' + Math.round((theme.opacity || 1) * 100) + '%</span></label><input type="range" class="zkss-opacity" min="0.5" max="1" step="0.05" value="' + (theme.opacity || 1) + '"></div>'
+        +   '<div class="zkss-field"><label>透明度<span class="zk-set-help" data-help="selOpacity">?</span> <span class="zkss-val">' + ncAlphaToTrans(theme.opacity) + '%</span></label><input type="range" class="zkss-opacity" min="0" max="100" step="1" value="' + ncAlphaToTrans(theme.opacity) + '"></div>'
         +   '<div class="zkss-field zkss-inline"><label>毛玻璃效果<span class="zk-set-help" data-help="selGlass">?</span></label><div class="zkss-sw ' + (theme.glass ? 'on' : '') + '" id="zkss-glass"><i></i></div><span class="zkss-tip">低端设备可能卡顿</span></div>'
+        +   '<div class="zkss-subline">翻译面板外观（可与工具栏不同）</div>'
+        +   '<div class="zkss-field"><label>主题</label><select class="zkss-trmode">'
+        +     '<option value="follow"' + (look.mode === 'follow' ? ' selected' : '') + '>跟随工具栏</option>'
+        +     '<option value="dark"' + (look.mode === 'dark' ? ' selected' : '') + '>固定深色</option>'
+        +     '<option value="light"' + (look.mode === 'light' ? ' selected' : '') + '>固定浅色</option>'
+        +   '</select></div>'
+        +   '<div class="zkss-field"><label>透明度 <span class="zkss-trval">' + ncAlphaToTrans(look.opacity) + '%</span></label><input type="range" class="zkss-tropacity" min="0" max="100" step="1" value="' + ncAlphaToTrans(look.opacity) + '"></div>'
+        +   '<div class="zkss-field zkss-inline"><label>毛玻璃效果</label><div class="zkss-sw ' + (look.glass ? 'on' : '') + '" id="zkss-trglass"><i></i></div><span class="zkss-tip zkss-trfollow">选「跟随工具栏」时，以下两项随工具栏走</span></div>'
         + '</div>'
         + '<div class="zk-set-group">'
         +   '<div class="zk-set-group-title"><svg class="zk-set-gicon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> 划词翻译设置</div>'
@@ -10567,9 +10795,146 @@
       root.querySelector('.zkss-reset').onclick = async () => {
         if (await zkConfirm('恢复默认搜索引擎？当前自定义将被覆盖', { title: '恢复默认引擎', okText: '确定恢复', danger: true })) { engines = JSON.parse(JSON.stringify(DEFAULT_SEL_ENGINES)); cfg.selSearchEngines = engines; persist(); rerenderElist(); toast('已恢复默认引擎'); }
       };
-      root.querySelector('.zkss-mode').onchange = function () { theme.mode = this.value; persist(); applyThemeLive(theme); };
-      root.querySelector('.zkss-opacity').oninput = function () { theme.opacity = parseFloat(this.value); root.querySelector('.zkss-val').textContent = Math.round(theme.opacity * 100) + '%'; persist(); applyThemeLive(theme); };
-      root.querySelector('#zkss-glass').onclick = function () { theme.glass = !theme.glass; this.classList.toggle('on', theme.glass); persist(); applyThemeLive(theme); };
+      // 三个控件都要写 pvRender()：只调 applyThemeLive 只会改真实浮层的变量，预览块不会重绘
+      // （用户实测：拖工具栏透明度时预览不动，非要点一下毛玻璃才刷新）
+      root.querySelector('.zkss-mode').onchange = function () { theme.mode = this.value; persist(); applyThemeLive(theme); pvRender(); };
+      root.querySelector('.zkss-opacity').oninput = function () {
+        const tr = parseFloat(this.value);
+        theme.opacity = ncTransToAlpha(tr);                 // 存 alpha，界面显示透明度
+        root.querySelector('.zkss-val').textContent = Math.round(tr) + '%';
+        persist(); applyThemeLive(theme); syncTrFollow(); pvRender();
+      };
+      root.querySelector('#zkss-glass').onclick = function () { theme.glass = !theme.glass; this.classList.toggle('on', theme.glass); persist(); applyThemeLive(theme); syncTrFollow(); pvRender(); };
+
+      // —— 翻译面板独立外观 ——
+      function pvResolve(mode) {
+        if (mode === 'auto') return matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        if (mode === 'time') { const h = new Date().getHours(); return (h < 6 || h >= 18) ? 'dark' : 'light'; }
+        return mode === 'light' ? 'light' : 'dark';
+      }
+      // bd 是预览里的描边：深色浮层在深色模拟背景上必须靠一圈浅描边分层，否则糊成一块
+      const PV_PALETTE = { dark: { bg: '42,42,46', text: '#fff', bd: 'rgba(255,255,255,.26)' }, light: { bg: '255,255,255', text: '#333', bd: 'rgba(0,0,0,.10)' } };
+      // 实时预览：直接按当前参数算颜色，写内联样式（不依赖全局 --sh-*/--tr-*，不影响真实浮层）
+      function pvRender() {
+        const bm = pvResolve(theme.mode || 'dark');
+        const bp = PV_PALETTE[bm] || PV_PALETTE.dark;
+        const bOp = 1 - (theme.opacity != null ? theme.opacity : 0);   // 预览用 alpha
+        const bar = root.querySelector('.zkss-pv-bar');
+        if (bar) {
+          bar.style.background = 'rgba(' + bp.bg + ',' + bOp + ')';
+          bar.style.color = bp.text;
+          bar.style.borderColor = bp.bd;
+          bar.style.backdropFilter = 'blur(' + (theme.glass ? '6px' : '0px') + ')';
+          bar.style.webkitBackdropFilter = bar.style.backdropFilter;
+        }
+        // 翻译面板：follow 时与工具栏同参，否则用自己的三件套
+        const follow = look.mode === 'follow';
+        const tm = follow ? bm : pvResolve(look.mode);
+        const tp = PV_PALETTE[tm] || PV_PALETTE.dark;
+        const tOp = follow ? bOp : (1 - (look.opacity != null ? look.opacity : 0));
+        const tGlass = follow ? !!theme.glass : !!look.glass;
+        const trEl = root.querySelector('.zkss-pv-trans');
+        if (trEl) {
+          trEl.style.background = 'rgba(' + tp.bg + ',' + tOp + ')';
+          trEl.style.color = tp.text;
+          trEl.style.borderColor = tp.bd;
+          trEl.style.backdropFilter = 'blur(' + (tGlass ? '6px' : '0px') + ')';
+          trEl.style.webkitBackdropFilter = trEl.style.backdropFilter;
+        }
+        // 参数摘要 + 变化高亮：让人一眼看出"工具栏是深色 60% 有毛玻璃 / 翻译面板跟着走"
+        const sum = root.querySelector('.zkss-pv-sum');
+        if (sum) {
+          const name = function (m) { return m === 'dark' ? '深色' : m === 'light' ? '浅色' : (m === 'auto' ? '跟随系统' : m === 'time' ? '跟随时间' : m); };
+          sum.textContent = '工具条：' + name(bm) + ' · 透明度 ' + ncAlphaToTrans(bOp) + '% · 毛玻璃' + (theme.glass ? '开' : '关')
+            + '　|　翻译面板：' + (follow ? '跟随' : name(look.mode)) + ' · 透明度 ' + ncAlphaToTrans(tOp) + '% · 毛玻璃' + (tGlass ? '开' : '关');
+        }
+        const stage = root.querySelector('.zkss-pv-stage');
+        if (stage && pvRender._last !== sumKey(bm, bOp, theme.glass, tm, tOp, tGlass)) {
+          pvRender._last = sumKey(bm, bOp, theme.glass, tm, tOp, tGlass);
+          if (pvRender._ready) {
+            stage.classList.remove('pv-flash');
+            void stage.offsetWidth;
+            stage.classList.add('pv-flash');
+          }
+          pvRender._ready = true;
+        }
+      }
+      function sumKey(a, b, c, d, e, f) { return [a, b, c, d, e, f].join('|'); }
+      // 「跟随工具栏」= 真正的跟随：两项自动取工具栏的值，并**置灰不可改**。
+      //   要单独调，先把明暗切成「固定深色 / 固定浅色」——这样"跟随"与"自定义"边界清楚，
+      //   不会出现"我明明选了跟随，透明度却跟工具栏不一致"的怪状态。
+      function syncTrFollow() {
+        const follow = look.mode === 'follow';
+        const opEl = root.querySelector('.zkss-tropacity');
+        const tv = root.querySelector('.zkss-trval');
+        const gEl = root.querySelector('#zkss-trglass');
+        const lock = function (el) {
+          if (!el) return;
+          el.style.opacity = follow ? '.45' : '';
+          el.style.pointerEvents = follow ? 'none' : '';
+          if ('disabled' in el) { try { el.disabled = follow; } catch (e) {} }
+        };
+        if (follow) {
+          // 值也同步成工具栏的（不是只灰掉还显示旧值）
+          if (opEl) opEl.value = String(ncAlphaToTrans(theme.opacity));
+          if (tv) tv.textContent = ncAlphaToTrans(theme.opacity) + '%';
+          if (gEl) gEl.classList.toggle('on', !!theme.glass);
+        } else {
+          if (opEl) opEl.value = String(ncAlphaToTrans(look.opacity));
+          if (tv) tv.textContent = ncAlphaToTrans(look.opacity) + '%';
+          if (gEl) gEl.classList.toggle('on', !!look.glass);
+        }
+        lock(opEl); lock(gEl);
+        const tip = root.querySelector('.zkss-trfollow');
+        if (tip) tip.textContent = follow
+          ? '跟随中：与工具栏一致，选「固定深/浅」后才可单独调'
+          : '已独立：与工具栏各自设置';
+      }
+      const trModeSel = root.querySelector('.zkss-trmode');
+      if (trModeSel) trModeSel.onchange = function () { look.mode = this.value; persist(); applyThemeLive(theme); syncTrFollow(); pvRender(); };
+      const trOp = root.querySelector('.zkss-tropacity');
+      if (trOp) trOp.oninput = function () {
+        const tr = parseFloat(this.value);
+        look.opacity = ncTransToAlpha(tr);
+        persist(); applyThemeLive(theme); syncTrFollow(); pvRender();
+      };
+      const trGlass = root.querySelector('#zkss-trglass');
+      if (trGlass) trGlass.onclick = function () {
+        look.glass = !look.glass; this.classList.toggle('on', look.glass);
+        persist(); applyThemeLive(theme); syncTrFollow(); pvRender();
+      };
+
+      // 暴露给「切换控制面板明暗 → 一起跟随」：跟随写入后，本面板的控件与预览要同步刷新，
+      //   否则会出现「已选深色、面板里还显示浅色」的自相矛盾。
+      _refreshSelLookUI = function () {
+        try {
+          // 主题下拉是自绘胶囊：只改 select.value 不会更新胶囊文字（用户实测「仍显示浅色」）
+          const sel = root.querySelector('.zkss-mode');
+          if (sel) {
+            sel.value = theme.mode || 'dark';
+            const sw = sel.closest('.zk-sel');
+            if (sw && typeof sw._ncSync === 'function') { try { sw._ncSync(); } catch (e) {} }
+          }
+          const tm = root.querySelector('.zkss-trmode');
+          if (tm) {
+            tm.value = look.mode || 'follow';
+            const tw = tm.closest('.zk-sel');
+            if (tw && typeof tw._ncSync === 'function') { try { tw._ncSync(); } catch (e) {} }
+          }
+          const val = root.querySelector('.zkss-val');
+          if (val) val.textContent = ncAlphaToTrans(theme.opacity) + '%';
+          const g = root.querySelector('#zkss-glass');
+          if (g) g.classList.toggle('on', !!theme.glass);
+          const tv = root.querySelector('.zkss-trval');
+          if (tv) tv.textContent = ncAlphaToTrans(look.opacity) + '%';
+          const tg = root.querySelector('#zkss-trglass');
+          if (tg) tg.classList.toggle('on', !!look.glass);
+          syncTrFollow();
+          pvRender();
+        } catch (e) {}
+      };
+      syncTrFollow();
+      pvRender();
       const keysDiv = root.querySelector('#zkss-keys');
       function bindKeys(div) { div.querySelectorAll('input').forEach(inp => { inp.onchange = function () { if (inp.classList.contains('zkss-deepl')) tr.deeplKey = inp.value; else if (inp.classList.contains('zkss-bid')) tr.baiduId = inp.value; else if (inp.classList.contains('zkss-bkey')) tr.baiduKey = inp.value; else if (inp.classList.contains('zkss-curl')) tr.customUrl = inp.value; else if (inp.classList.contains('zkss-ckey')) tr.customKey = inp.value; persist(); }; }); }
       root.querySelector('.zkss-trengine').onchange = function () { tr.engine = this.value; persist(); keysDiv.innerHTML = trKeysHtml(tr); bindKeys(keysDiv); };
@@ -11151,13 +11516,16 @@
       //   直接塞进 innerHTML 时，浏览器会把 `<video>` 解析成一个真实的空视频元素
       //   —— 它默认约 300×150，并把紧随其后的整段说明文字吞成自己的 fallback 内容：
       //   表现出来就是「帮助弹层里出现一大片空白 + 文字排版全乱」（用户实测反馈）。
+      //   【v1.5.1】另支持 **加粗** 标记：转义后把 **x** 渲染成 <b>x</b>，
+      //   否则星号原样显示在弹层里（selOpacity / customSelectors 都踩过）。
+      const escHelp = s => escHtml(s || '-').replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/\n/g, '<br>');
       helpPop.innerHTML = `
-        <div class="zk-set-help-head">${escHtml(data.title || key)}<button id="zk-set-help-close">&times;</button></div>
+        <div class="zk-set-help-head"><span>${escHtml(data.title || key)}</span><button id="zk-set-help-close" aria-label="关闭">&times;</button></div>
         <div class="zk-set-help-body">
-          <div class="zk-set-help-sec"><h4>🎯 功能作用</h4><p>${escHtml(data.effect || '-')}</p></div>
-          <div class="zk-set-help-sec"><h4>⚙️ 实现原理</h4><p>${escHtml(data.impl || '-')}</p></div>
-          <div class="zk-set-help-sec"><h4>🔧 失效维护</h4><p>${escHtml(data.maintain || '-')}</p></div>
-          <div class="zk-set-help-sec"><h4>⚠️ 开关风险</h4><p>${escHtml(data.risk || '-')}</p></div>
+          <div class="zk-set-help-sec"><h4>🎯 功能作用</h4><p>${escHelp(data.effect)}</p></div>
+          <div class="zk-set-help-sec"><h4>⚙️ 实现原理</h4><p>${escHelp(data.impl)}</p></div>
+          <div class="zk-set-help-sec"><h4>🔧 失效维护</h4><p>${escHelp(data.maintain)}</p></div>
+          <div class="zk-set-help-sec"><h4>⚠️ 开关风险</h4><p>${escHelp(data.risk)}</p></div>
         </div>`;
       // 【i18n】点击 ? 弹窗是动态创建、在 tTree(sr) 之后渲染的，必须单独转繁
       //   头部的"功能作用/实现原理/失效维护/开关风险"是硬编码简中（保持中文按方案 C 约束），
@@ -11186,6 +11554,17 @@
         pauseBtn.style.color = BLOCKING_PAUSED ? '#ff5252' : '';
       }
     }
+    // 「第三方服务」引导按钮：统一委托，文档地址只在 NC_DOC 一处维护
+    try {
+      sr.addEventListener('click', function (e) {
+        const b = e.target && e.target.closest ? e.target.closest('.zk-doc-btn') : null;
+        if (!b) return;
+        e.preventDefault(); e.stopPropagation();
+        const key = b.getAttribute('data-doc') || 'thirdParty';
+        const url = NC_DOC[key] || NC_DOC.thirdParty;
+        try { window.open(url, '_blank', 'noopener'); } catch (err) { try { location.href = url; } catch (e2) {} }
+      }, true);
+    } catch (e) {}
     // 供模块级的 ncTogglePauseGlobal 反向调用：快捷键/菜单切换暂停后，面板若开着需同步按钮态。
     // 面板关闭后 _syncPauseUI 置空，避免闭包持有已卸载的 DOM。
     // 用 try 包裹：此行若抛错会中断其后的「关闭」按钮绑定（面板将无法关闭），绝不能让它逃逸。
@@ -11211,7 +11590,9 @@
       ncTogglePauseGlobal(true);
     }
     function doExport() {
-      const blob = new Blob([JSON.stringify(cfg, null, 2)], { type: 'application/json' });
+      // 导出带 _nc 信封：旧版本读到 schema 更高时会提示「新增字段保留但不生效」，而不是静默吃掉
+      const payload = ncBuildExportPayload(cfg);
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url; a.download = 'ad-cleaner-config-v6.json'; a.click();
@@ -11229,11 +11610,15 @@
         const reader = new FileReader();
         reader.onload = () => {
           try {
-            const imported = JSON.parse(reader.result);
-            if (!imported.baidu) throw new Error('格式错误');
-            setConfig(ncNormalizeImportedConfig(deepMerge(DEFAULT_CONFIG, imported)));
+            const res = ncParseImported(JSON.parse(reader.result));
+            setConfig(res.cfg);
             flushConfig();
-            toast('导入成功，面板将刷新');
+            // 有警告（旧版本迁移 / 来自更高版本 / 保留未知字段）时逐条说明，避免"导入了但好像少了什么"
+            if (res.warnings && res.warnings.length) {
+              toast('导入成功（有 ' + res.warnings.length + ' 条提示）：' + res.warnings[0]);
+            } else {
+              toast('导入成功，面板将刷新');
+            }
             setTimeout(() => { close(); openSettings(); }, 800);
           } catch(e) { toast('导入失败：' + e.message, 'err'); }
         };
@@ -11327,7 +11712,7 @@
     }
 
     // 关闭
-    function close() { clearInterval(statsTimer); document.removeEventListener('click', onDocClick, true); box.remove(); _syncPauseUI = null; try { flushConfig(); } catch (e) {} if (_prevFocus && _prevFocus.focus) { try { _prevFocus.focus(); } catch (e) {} } }
+    function close() { clearInterval(statsTimer); document.removeEventListener('click', onDocClick, true); box.remove(); _syncPauseUI = null; _panelSr = null; try { flushConfig(); } catch (e) {} if (_prevFocus && _prevFocus.focus) { try { _prevFocus.focus(); } catch (e) {} } }
     box._close = close; // 供全局 Esc 监听复用，避免重复注册 keydown 造成泄漏
     box._doPauseToggle = doPauseToggle;
     box._doExport = doExport;
@@ -11404,11 +11789,11 @@
       const _apiBase = (v) => String(v || '').trim().replace(/\/+$/, '');
       const API_FAST = () => _apiBase(cap().captchaApiFast);
       const API_PRECISE = () => _apiBase(cap().captchaApiPrecise);
-      // like996 服务端会根据 postData.version 做版本校验，原 crab 脚本（@version 7.0）固定传 "7.0"，
-      // 与本脚本自身版本号（VERSION）解耦，避免服务端误判"版本过低"。
-      const LIKE996_API_VERSION = '7.0';
-      const API_YUNMA = 'https://www.jfbym.com/api/YmServer/customApi';
-      // 云码「开发者标识」(developer_tag) 由用户在「设置 → 验证码识别」中自行填写，本脚本不内置。
+      // 部分识别服务会在请求体里校验协议版本字段，固定传一个兼容值（与本脚本 VERSION 解耦）。
+      const OCR_API_VERSION = '7.0';
+      // 算术验证码的接口地址由用户填写（本脚本不内置任何服务商）；空 = 该能力直接跳过。
+      const API_MATH = () => _apiBase(cap().captchaMathApi);
+      // 「开发者标识」(developer_tag) 同样是用户自填的可选项，本脚本不内置。
       const cache = {};
       const cacheGet = (k) => { const v = cache[k]; if (v && v.exp > Date.now()) return v.val; return null; };
       const cacheSet = (k,  v, ttl) => { cache[k] = { val: v, exp: Date.now() + (ttl || 600000) }; };
@@ -11596,7 +11981,7 @@
               dbg('[NetClean:recFast] recFast onload status=' + r.status + ' response=', r.response);
               if (r.status === 200 && r.response && r.response.result) resolve(r.response.result);
               else {
-                if (r.status === 503 && !fast503Warned) { fast503Warned = true; topNotice('fast 接口服务暂不可用（503），建议填写 like996 识别码切换到 precise 接口', 6000); }
+                if (r.status === 503 && !fast503Warned) { fast503Warned = true; topNotice('极速接口暂不可用（503），建议改用「精准」引擎并填写接口地址与识别码', 6000); }
                 else if (r.status !== 200 || (r.response && r.response.msg)) dbg('[NetClean:recFast] 无有效结果：status=' + r.status + ' msg=' + (r.response && r.response.msg ? r.response.msg : '空'));
                 resolve('');
               }
@@ -11622,7 +12007,7 @@
             headers: { 'Content-Type': 'application/json; charset=UTF-8', 'path': window.location.href }, responseType: 'json', timeout: 20000,
             onload: (r) => {
               const d = r.response || {};
-              // like996 成功时返回 code=200，同时 description 可能附带版本警告/升级链接
+              // 成功时返回 code=200，description 可能附带版本警告/升级链接
               const isSuccess = d.valid === true || d.code === 200 || (d.data && !d.msg);
               if (isSuccess) {
                 const desc = String(d.description || '');
@@ -11630,7 +12015,7 @@
                   const linkMatch = desc.match(/href=["']([^"']+)["']/);
                   const link = linkMatch ? linkMatch[1] : '';
                   dbg('[NetClean:recPrecise] 服务端返回版本过低警告：', desc);
-                  if (cap().captchaShowHint) topNotice('like996 提示：' + (link ? '当前版本过低，请升级 ' + link : desc), 8000);
+                  if (cap().captchaShowHint) topNotice('识别服务提示：' + (link ? '当前版本过低，请升级 ' + link : desc), 8000);
                 }
                 resolve(d); return;
               }
@@ -11646,18 +12031,20 @@
       }
       function recMath(code) {
         return new Promise((resolve) => {
+          const api = API_MATH();
+          if (!api) { topNotice('算术验证码需先在设置里填写「接口地址」（见文档第三方服务）'); resolve(''); return; }
           const token = (cap().captchaYunmaToken || '').replace(/\+/g, '%2B');
-          if (!token) { topNotice('算术验证码请先填写云码 Token'); resolve(''); return; }
+          if (!token) { topNotice('算术验证码请先填写服务 Token'); resolve(''); return; }
           // 开发者标识为可选项：用户未填写时请求体不含 developer_tag 字段（而非传空值），
-          // 缺失时由云码平台按「无归属」记账，属预期行为。
+          // 缺失时由服务方按「无归属」记账，属预期行为。
           const yunmaDev = String(cap().captchaYunmaDev || '').trim();
           const yunmaData = { image: String(code), type: '50100', token: token };
           if (yunmaDev) yunmaData.developer_tag = yunmaDev;
-          GM_xmlhttpRequest({ method: 'POST', url: API_YUNMA, data: JSON.stringify(yunmaData),
+          GM_xmlhttpRequest({ method: 'POST', url: api, data: JSON.stringify(yunmaData),
             headers: { 'Content-Type': 'application/json' }, responseType: 'json', timeout: 15000,
             onload: (r) => { const d = r.response || {}; if (d.msg === '识别成功' && d.data && d.data.data) resolve(String(d.data.data));
-              else if (d.msg === '余额不足') { topNotice('云码积分不足，请自行充值'); resolve(''); } else { topNotice('请检查云码 Token 是否正确'); resolve(''); } },
-            onerror: () => resolve(''), ontimeout: () => { topNotice('云码接口超时，请稍后重试'); resolve(''); } });
+              else if (d.msg === '余额不足') { topNotice('识别服务余额不足，请自行充值'); resolve(''); } else { topNotice('请检查服务 Token 是否正确'); resolve(''); } },
+            onerror: () => resolve(''), ontimeout: () => { topNotice('识别接口超时，请稍后重试'); resolve(''); } });
         });
       }
       async function recognizeText(code, isMath) {
@@ -11674,7 +12061,7 @@
         }
         if (!ans && (eng === 'precise' || eng === 'auto')) {
           if (!cap().captchaPreciseId) {
-            if (eng === 'precise') topNotice('未设置 like996 识别码，请到设置填写');
+            if (eng === 'precise') topNotice('未设置「精准」识别码，请到设置填写');
             else if (eng === 'auto') dbg('[NetClean:ocr] auto 模式 fast 未识别，未配置 precise 识别码，跳过 precise');
           } else {
             const d = await recPrecise({ img: code, ocr_type: 1 });
@@ -12248,6 +12635,28 @@
       const c = getConfig().selSearchTheme;
       return (c && typeof c === 'object') ? c : { mode: 'dark', opacity: 1, glass: false };
     }
+    function ssTransLook() {
+      const c = getConfig().selSearchTransLook;
+      return (c && typeof c === 'object') ? c : { mode: 'follow', opacity: 1, glass: false };
+    }
+    // 把翻译面板外观写进 --tr-*（mode='follow' 则清空，让 #sh-trans 回落到 --sh-*）
+    function ncApplyTransLook(r) {
+      try {
+        const lk = ssTransLook();
+        const root = r || document.documentElement;
+        const KEYS = ['--tr-bg-rgb', '--tr-text', '--tr-border', '--tr-op', '--tr-blur'];
+        if (lk.mode === 'dark' || lk.mode === 'light') {
+          const p = THEME_PRESETS[lk.mode] || THEME_PRESETS.dark;
+          root.style.setProperty('--tr-bg-rgb', p.bg);
+          root.style.setProperty('--tr-text', p.text);
+          root.style.setProperty('--tr-border', p.border);
+          root.style.setProperty('--tr-op', 1 - (lk.opacity != null ? lk.opacity : 0));
+          root.style.setProperty('--tr-blur', lk.glass ? '12px' : '0px');
+        } else {
+          KEYS.forEach(function (k) { try { root.style.removeProperty(k); } catch (e) {} });
+        }
+      } catch (e) {}
+    }
     function ssTrans() {
       const c = getConfig().selSearchTrans;
       return (c && typeof c === 'object') ? c : { engine: 'iciba', auto: false, target: 'zh', deeplKey: '', baiduId: '', baiduKey: '', customUrl: '', customKey: '', proxyUrl: '', forceAutoTarget: true, autoSave: true };
@@ -12341,9 +12750,10 @@
       r.style.setProperty('--sh-text', p.text);
       r.style.setProperty('--sh-hover-rgb', p.hover);
       r.style.setProperty('--sh-hover-op', p.hop);
-      r.style.setProperty('--sh-opacity', t.opacity != null ? t.opacity : 1);
+      r.style.setProperty('--sh-opacity', 1 - (t.opacity != null ? t.opacity : 0));   // 存的透明度 → CSS alpha
       r.style.setProperty('--sh-blur', t.glass ? '12px' : '0px');
       r.style.setProperty('--sh-border', p.border);
+      ncApplyTransLook(r);
     }
     ncSelThemeApply = applyTheme; // 暴露给控制面板（明暗切换后让搜索条立即跟随）
 
@@ -12645,11 +13055,12 @@
         'pointer-events:auto;' +
         'top:0;left:0;' +
         'min-width:280px;max-width:420px;' +
-        'background:rgba(var(--sh-bg-rgb),var(--sh-opacity));' +
-        'border:1px solid var(--sh-border);' +
+        // 翻译面板可独立配色：--tr-* 有值就用它，否则回落到工具栏的 --sh-*
+        'background:rgba(var(--tr-bg-rgb,var(--sh-bg-rgb)),var(--tr-op,var(--sh-opacity)));' +
+        'border:1px solid var(--tr-border,var(--sh-border));' +
         'border-radius:14px;' +
         'box-shadow:0 8px 28px rgba(0,0,0,.25);' +
-        'color:var(--sh-text);' +
+        'color:var(--tr-text,var(--sh-text));' +
         'opacity:0;' +
         'transform:translateX(-50%) translateY(6px);' +
         'transition:opacity .15s,transform .2s cubic-bezier(.25,.8,.25,1);' +
@@ -13214,7 +13625,7 @@
 #sh-bar{position:absolute;z-index:${NC_Z_TOP};display:flex;gap:6px;padding:8px;background:rgba(var(--sh-bg-rgb),var(--sh-opacity));border:1px solid var(--sh-border);border-radius:14px;box-shadow:0 6px 22px rgba(0,0,0,.22);font-size:13px;opacity:0;transform:translateY(6px) scale(.96);transition:opacity .12s ease,transform .16s cubic-bezier(.25,.8,.25,1);will-change:opacity,transform;-webkit-backdrop-filter:blur(var(--sh-blur));backdrop-filter:blur(var(--sh-blur));color:var(--sh-text)}
 #sh-bar.sh-show{opacity:1;transform:translateY(0) scale(1)}
 #sh-bar.sh-hide{opacity:0;transform:translateY(4px) scale(.98)}
-#sh-trans{position:absolute;z-index:2147483646;min-width:280px;max-width:420px;background:rgba(var(--sh-bg-rgb),var(--sh-opacity));border:1px solid var(--sh-border);border-radius:14px;box-shadow:0 8px 28px rgba(0,0,0,.25);color:var(--sh-text);opacity:0;transform:translateY(6px);transition:opacity .15s,transform .2s cubic-bezier(.25,.8,.25,1);-webkit-backdrop-filter:blur(var(--sh-blur));backdrop-filter:blur(var(--sh-blur));overflow:hidden}
+#sh-trans{position:absolute;z-index:2147483646;min-width:280px;max-width:420px;background:rgba(var(--tr-bg-rgb,var(--sh-bg-rgb)),var(--tr-op,var(--sh-opacity)));border:1px solid var(--tr-border,var(--sh-border));border-radius:14px;box-shadow:0 8px 28px rgba(0,0,0,.25);color:var(--tr-text,var(--sh-text));opacity:0;transform:translateY(6px);transition:opacity .15s,transform .2s cubic-bezier(.25,.8,.25,1);-webkit-backdrop-filter:blur(var(--sh-blur));backdrop-filter:blur(var(--sh-blur));overflow:hidden}
 #sh-trans.sh-show{opacity:1;transform:translateY(0)}
 .sh-toast{position:fixed;left:50%;bottom:80px;background:rgba(0,0,0,.78);color:#fff;padding:8px 18px;border-radius:20px;z-index:${NC_Z_TOP};font-size:14px;opacity:0;transform:translateX(-50%) translateY(8px);transition:opacity .2s,transform .25s}
 .sh-toast.sh-show{opacity:1;transform:translateX(-50%) translateY(0)}

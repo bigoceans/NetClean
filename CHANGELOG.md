@@ -10,7 +10,43 @@
 
 ---
 
-### v1.5.0（当前版本 · 2026-10-28）
+### v1.5.1（当前版本 · 2026-10-30）
+
+**第三方站点全面外置** —— 脚本里不再出现任何「可选第三方服务」的域名，清单与填写方法只写在文档里。
+
+**🔧 变更**
+- **视频下载**：删除预置的 4 个解析站（Cobalt / YT5s / SaveFrom / Getfvid）、删除 `cobalt.tools` 兜底、删除按域名硬编码的自动填充选择器表（改通用选择器）。未配置站点时**只提示不跳转**；「恢复默认」改为「清空全部」。
+- **验证码**：算术验证码的接口地址（原硬编码 `api/YmServer/customApi`）改为新配置项 `captchaMathApi`，留空即跳过且**不发起任何请求**；`@connect` 移除 jfbym / like996 预授权，改由管理器在首次调用时询问。
+- **修复「一起跟随」失效（根因）**：`applySelBarTheme()` 把主题写进 `getScriptCfg().selSearchTheme`（= `config.baidu.`），而运行期 `ssTheme()` 读的是 `getConfig().selSearchTheme`（配置**根层**）→ 面板确认后配置写进去了、运行时读不到，划词工具条与翻译面板毫无变化。现统一写根层（保留 opacity/glass），并在写入后调用 `ncSelThemeApply()` 让已存在的浮层立即换色。
+- **询问改为按实际状态**：新增 `selBarCur()`（按运行期同一套 `resolveTheme` 规则解析 `mode`，含 auto/time），文案变成「当前是浅色 / 深色，要一起变成 X 吗」；两者已经一致时**不再弹**询问。
+- **面板控件与预览同步**：`applySelBarTheme()` 末尾刷新 `#zkss-mode` 下拉与预览（`_refreshSelLookUI` 钩子）。该钩子必须声明在 `openSettings` 外层 —— 声明在 `wireUiDock` IIFE 内会变成另一个变量，外面永远读到 `null`（踩过一次）。
+- **翻译面板独立外观**：新增 `selSearchTransLook: { mode:'follow'|'dark'|'light', opacity, glass }`；`applyTheme()` / `applyThemeLive()` 写 `--tr-*`，`follow` 时清空让 `#sh-trans` 回落到 `--sh-*`（`var(--tr-bg-rgb,var(--sh-bg-rgb))`）。
+- **外观实时预览**：`#zkss-pv` 迷你舞台（渐变 + 色块模拟网页），工具条与翻译卡各自按参数算 rgba/模糊并写内联样式，不依赖全局变量、不影响真实浮层；跟随模式下独立项自动置灰。
+- **面板引导**：视频下载页新增「手头没有合适的站点？查看可用清单 →」（`NC_DOC_BTN` + `sr` 上事件委托 + 令牌样式，日夜都可见）；验证码三处「接口说明」升级为「如何获取」，统一指向 README `#third-party`；toast 文案区分「打开文档 / 打开官网」。
+- **文档**：README 新增「🔗 第三方服务（可选，需自行获取）」章节（显式锚点 `#third-party`，含解析站模板表、三种 OCR 字段说明与 JSON 协议、WebDAV 服务商），GreasyFork 说明同步摘要并链回锚点。
+- **文案**：`item.d.*` / HELP / 面板行描述里所有服务商名与网址移除，改为「服务自选」「不内置任何服务商」。
+- **透明度语义重写**：滑块 0~100、**越高越透明**；配置改存透明度（0 = 不透明，1 = 全透明），`CONFIG_SCHEMA_VERSION` 1→2 迁移翻转旧 alpha（`1-old`）；渲染按 `alpha = 1 − 透明度` 写 `--sh-opacity`。⚠ `applyThemeLive` 里的替换行不能带行内注释——会把后续 `--sh-blur` / `--sh-border` 吞进注释（踩过）。
+- **翻译面板跟随锁定**：`syncTrFollow()` 取代 `ensureManualLook()`——`follow` 时把 theme 的 opacity/glass 同步进 look 并锁定（`disabled` + `pointer-events:none` + 0.45 视觉弱化），提示「跟随中 / 已独立」。
+- **面板即时回读**：`ncSyncPanelFromCfg()` + `ncSchedulePanelSync()`（`setConfig` 末尾 120ms 合并）：只改 DOM、不派发 input/change、跳过 `activeElement`——云同步 / 跟随确认后面板立刻显示新值，且不会与云同步形成回环。
+- **分组与帮助全量体检**：护眼 7 项归拢（cleanCopy / darkMode 移出中间）；`autoUnfold / linkBypass / videoSpeed / videoSpeedFloat / baidueyerest / customSelectors` 6 个漏面板的功能补齐；HELP 新增 / 更新 7 条（`baidueyeSchedule*`、`captchaMathApi`、`customSelectors`、`siteScopeMode` 等）；外观区加「划词工具条 / 翻译面板外观」小标题分栏。
+- **配置契约**：`ncBuildExportPayload()`（`_nc` 信封 + key 排序）与 `ncParseImported()`（文件导入 / 云端恢复 / 历史回滚统一入口），未知字段保留、迁移链兜底；README 新增「🧩 配置格式与兼容性」章节（锚点 `config-contract`）。
+- **实时预览上移**：预览块移到外观区顶部（「划词工具条」小标题之上）；`.zkss-mode` / `.zkss-opacity` 接入 `pvRender()`（此前只有毛玻璃开关会刷新预览）。
+- **帮助弹层液态玻璃重构**：宿主带 transform → fixed 遮罩以宿主为包含块、恰好盖住面板矩形，补 `border-radius:20px + overflow:hidden` 修掉四角直角暗块（移动端全屏同步取消圆角）；弹窗改半透玻璃（`blur(28px) saturate(1.7)`）并显式 `text-align:left;direction:ltr`——弹层是面板盒子的兄弟节点，Shadow DOM 只隔离选择器、可继承属性照样从站点漏进来（站点 `body{text-align:center}` 会把帮助文字顶成居中）；四段说明改圆角子卡片；新增 `escHelp()`：`**x**` 渲染为加粗、`\n` 渲染为换行（此前星号原样漏出）；`selOpacity` 帮助更新为透明度语义（旧文案还写着「存 alpha、未做迁移」）；夜间态整套 `:host(.zk-nc-dark)` 玻璃覆盖。
+
+**✅ 验证**
+- 新增 `verify_no_vendor.js`：锁死「源码零第三方域名 + 默认站点为空 + 端点由用户填写 + 引导按钮存在 + 文档确有清单」。
+- `verify_captcha_urls.js` 契约升级：按钮必须指向文档锚点，并**反向断言**源码不含 like996 / jfbym 域名。
+- A6 冻结基线 11 → 12：`captchaMathApi` 是把硬编码端点换成用户自填的必要字段，不属功能扩张。
+- 新增 `verify_config_contract.js`（27 项：信封 / 老格式 / 未知字段保留 / round-trip / 非配置文件报错）、`verify_config_compat.js`（32 项：v1.5.0 形态配置喂入，站点 / 凭证 / 名单 / 偏好全保留）、`verify_cfg_panel_sync.js`（16 项：面板分组与配置键对账）、`verify_help_coverage.js`（26 项：帮助全覆盖）。
+- `verify_ui_controls.js` 扩到 44 项：蒙版 20px 圆角 + 裁切、弹窗玻璃与 text-align 重置、夜间态覆盖、`escHelp` 契约、四段禁走裸 `escHtml`。
+- `verify_b4_config_migrations.js` R1 升到 `configVersion=2`（透明度迁移）。
+- 全量回归 **51 个 verify 脚本 / 1403 项断言 / 失败 0 / EXIT=0**。
+
+**⚠️ 升级提示**
+- 视频下载列表会变空（不再预置解析站），需自行添加一次；可用清单见 README「第三方服务」。
+- 用到「算术验证码」的话，需新填一次「算术接口地址」。
+
+### v1.5.0（2026-10-28）
 
 界面重构：控制面板改为「配色令牌 + 明暗双主题」，左栏底部双联开关，并修复一批交互失效。
 
@@ -33,7 +69,7 @@
 - **`scrollIntoView` 兼容**：jsdom / 部分内嵌 WebView 没有该方法，`.zkss-add` 里包 try/catch，避免中断后续 focus。
 
 **✅ 验证**
-- **45 个 verify 脚本 / 1211 项断言 / 失败 0 / EXIT=0**
+- **45 个 verify 脚本 / 1210 项断言 / 失败 0 / EXIT=0**
 - 新增 `verify_panel_theme.js`（48 项）、`verify_i18n_tw_coverage.js`（13 项）、`verify_ui_controls.js`（27 项）
 - 变异测试 14 条（令牌漏配 / 等分失效 / 宿主不挂类 / 命名空间写错 / 复选框当确认 / 字表失效 / 动态文本不转繁 / 批量按钮作用域回退 / 下拉不写回 …）全部 RED
 - 300+ 控件逐个点击审计（`_audit_buttons.js`）：除已修的批量按钮外，全部产生可观测副作用
