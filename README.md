@@ -54,9 +54,11 @@
 [设置面板截图：① 通用防护 · ② 搜索净化 · ③ 视频 · ④ 划词翻译 4 大组]
 ```
 
-![](https://i.imgs.ovh/2026/09/08/d9e4321cdc5c6b90728321457365ff25.png)
-![](https://i.imgs.ovh/2026/09/08/f176ae6b10969146cae8a77f9422440a.png)
-![](https://i.imgs.ovh/2026/09/08/7028976878b22633b42632bdde2583bc.png)
+![](https://i.hd-r.cn/8c1f2c76-e185-4e0f-b67c-af471f8dcbd3.png)
+![](https://i.hd-r.cn/320d142a-a072-47d0-a32e-c1b58833a449.png)
+![](https://i.hd-r.cn/fe334c65-31f1-419a-87df-a216b18198d5.png)
+![](https://i.hd-r.cn/6ffeeb7e-fa1e-411d-bcc2-07540b693360.png)
+![](https://i.hd-r.cn/5128108c-dcea-450c-af3e-41d5b29c61a8.png)
 
 ### 护眼模式效果对比
 
