@@ -10,7 +10,20 @@
 
 ---
 
-### v1.5.1（当前版本 · 2026-10-30）
+### v1.5.2（当前版本 · 2026-11-17）
+
+**知乎「收起」失效** —— 自动展开与用户操作互相打架，长回答收不起来。
+
+**🔧 变更**
+- **根因一（主因，点击循环）**：`processZhihu()` 的自动展开原为 `$('.Button.ContentItem-expandButton').forEach(btn => btn.click())` —— 不看文本、不看状态、不做去重。知乎的「展开 / 收起」是**同一个按钮**（`.ContentItem-expandButton`，文案随状态切换），用户点「收起」→ DOM 变动 → 全局 observer 触发 `scheduleProcess` 重跑 → 又对同一个按钮 `click()` → 回答立刻被顶回展开态。表现即「点了收起没效果、还自动展开」。
+- **根因二（按钮被藏）**：`AUTO_UNFOLD_SITES` 中 zhihu 行的 `hide: ['.ContentItem-rightButton']` 会 `display:none` 掉回答卡片右侧按钮区，该容器正是「收起」按钮的宿主。
+- **根因三（折叠态被抹掉）**：同一行的 `height: ['.RichContent-inner--collapsed']` 把已折叠节点强改 `height/max-height: auto`、`overflow: visible`，视觉上与展开无异。
+- **识别用户意图**：新增 `zhihuHookUserCollapse()`，document 捕获阶段监听 click，命中 `[data-zop-retract-question]`（知乎「收起」按钮）即把回答根节点记入 `ZHIHU_USER_COLLAPSED`（WeakSet）；此后自动展开对该节点一律让位。
+- **每条回答只展开一次**：新增 `zhihuAnswerRoot(el)`（`closest('.RichContent, .AnswerItem, .List-item, .Card.AnswerCard')`），把记账粒度从「按钮」提升到「回答」，配 `ZHIHU_EXPANDED`（WeakSet）记账 —— observer 反复触发也不会来回抖动。
+- **收紧匹配**：点击前按 `textContent` 判定 —— 含「收起」直接跳过，必须含「展开」或「阅读全文」才点。
+- **精简站点表**：zhihu 行收敛为 `{ host: 'zhihu.com', zhihuCss: true }`，仅保留 `zhihuCss` 的 mask / 光标修正。
+
+### v1.5.1（2026-10-30）
 
 **第三方站点全面外置** —— 脚本里不再出现任何「可选第三方服务」的域名，清单与填写方法只写在文档里。
 
